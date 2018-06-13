@@ -83,4 +83,5 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
 	item:transform(item.itemid == 1946 and 1945 or 1946)
 	return true
-	end
+end
+	

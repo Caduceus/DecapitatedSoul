@@ -1,6 +1,5 @@
 local storage = 2239
 
-
 local msg = ''
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
     if player:getStorageValue(storage) == -1 then

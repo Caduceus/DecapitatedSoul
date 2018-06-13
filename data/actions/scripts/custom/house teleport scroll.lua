@@ -14,4 +14,5 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		player:teleportTo(house:getExitPosition())
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
     return true
-	end
+end
+	

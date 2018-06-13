@@ -37,5 +37,5 @@
            player:sendTextMessage(MESSAGE_INFO_DESCR, "Access Granted!")
            return true
         end
-     end        
-        
+     end
+     

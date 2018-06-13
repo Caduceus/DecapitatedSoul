@@ -4,17 +4,6 @@ local config = {
 
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	--[[local monsterNames = config[item.itemid]
-	if not monsterNames then
-		return false
-	end
-	
-	--doSetMonsterOutfit(player, monsterNames[math.random(#monsterNames)],30 * 1000)
-	doSetCreatureOutfit(player, monsterNames[math.random(#monsterNames)],30 * 1000)
-	item:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
-	item:remove(1)
-	return true
-end]]
 local pos = player:getPosition()
 if getTilePzInfo(pos) == true then 
 		player:say('You cannot use this item in a protection zone.', TALKTYPE_MONSTER_SAY)

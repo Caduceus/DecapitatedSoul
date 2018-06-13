@@ -1,4 +1,3 @@
-   
    local config = {
 	requiredLevel = 80,
 	requiredMaxLevel = 150,

@@ -101,5 +101,3 @@
             player:sendTextMessage(MESSAGE_INFO_DESCR, "Reward Chamber is now open!")
             return true
         end
-        
-        

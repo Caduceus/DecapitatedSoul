@@ -16,3 +16,4 @@ local addCoins = math.random(1, 10)
 		Item(item.uid):remove(1)
 		return true
 	end
+	

@@ -63,6 +63,6 @@ end
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'All the Maps are Burnt. Return to Quest Giver!')
 	end
 	return false
+		end
 	end
-end
 end

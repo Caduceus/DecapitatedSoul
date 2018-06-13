@@ -30,4 +30,5 @@ local stairPos = {
            Game.createItem(8379, 1, stairPos[2])
            player:sendTextMessage(MESSAGE_INFO_DESCR, "Access Granted!")
            return true
-        end
+    end
+        

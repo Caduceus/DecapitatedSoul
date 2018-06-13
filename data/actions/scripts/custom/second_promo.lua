@@ -28,4 +28,3 @@ function onUse(player, item, fromPosition, target, toPosition)
     player:save()
     return true
 end
- 

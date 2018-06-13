@@ -1,4 +1,4 @@
-function onUse(cid, item, fromPosition, itemEx, toPosition)
+function onUse(cid, item, fromPosition, itemEx, toPosition) --needs rewritten
 if item.uid == 10034 then 
 if item.itemid == 1740 then
 local storage = 10034
