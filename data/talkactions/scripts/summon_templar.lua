@@ -26,10 +26,6 @@ player:sendCancelMessage('Your vocation cannot use this spell.')
 return true
 end
 
---if(not isInArray(canBeSummoned, param)) then
---player:sendCancelMessage('You cannot summon this creature.')
---return true
---end
 local monster = Monster("templar")
 doSummonCreature((isInArray(canBeSummoned, param)), orig)
 monster:setMaster(player)
