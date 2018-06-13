@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Braindeath" nameDescription="Braindeath" race="fire" experience="30000" speed="340" manacost="0">
+    <health now="100000" max="100000"/>
+    <look type="256" head="0" body="0" legs="0" feet="0" corpse="7256"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="65" defense="5"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="1"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag canpushcreatures="1"/>
+      <flag targetdistance="1"/>
+      <flag staticattack="90"/>
+      <flag runonhealth="30000"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" skill="150" attack="400" poison="800"/>
+      <attack name="lifedrain" interval="1000" chance="13" radius="8" target="0" min="-500" max="-1000">
+        <attribute key="areaEffect" value="firearea"/>
+      </attack>
+      <attack name="fire" interval="1000" chance="34" range="10" radius="10" target="8" min="-500" max="-1000">
+        <attribute key="shootEffect" value="fire"/>
+        <attribute key="areaEffect" value="firearea"/>
+      </attack>
+      <attack name="manadrain" interval="1000" chance="7" length="0" spread="3" min="-600" max="-1100">
+        <attribute key="areaEffect" value="firearea"/>
+      </attack>
+      <attack name="physical" interval="1000" chance="70" length="8" spread="3" min="-500" max="-1000"/>
+      <attack name="energy" interval="1000" chance="95" length="8" spread="0" min="-500" max="-1500">
+        <attribute key="areaEffect" value="redshimmer"/>
+      </attack>
+      <attack name="lifedrain" interval="2000" chance="15" length="10" spread="0" min="-500" max="-1500">
+        <attribute key="areaEffect" value="redshimmer"/>
+      </attack>
+    </attacks>
+    <defenses armor="188" defense="145">
+      <defense name="healing" interval="1000" chance="15" min="1000" max="3000">
+        <attribute key="areaEffect" value="blueshimmer"/>
+      </defense>
+      <defense name="speed" interval="2000" chance="8" speedchange="360" duration="6000">
+        <attribute key="areaEffect" value="redshimmer"/>
+      </defense>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="1"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <voices interval="5000" chance="10">
+      <voice sentence="Let your Brain Be mine!" yell="1"/>
+      <voice sentence="Free Trips to Temple!" yell="1"/>
+      <voice sentence="Come One, Come All" yell="1"/>
+      <voice sentence="DEATH TO ALL!" yell="1"/>
+    </voices>
+    <loot capacity="5000">
+    
+    </loot>
+  </monster>

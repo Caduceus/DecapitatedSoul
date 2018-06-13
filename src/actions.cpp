@@ -318,19 +318,20 @@ ReturnValue Actions::internalUseItem(Player* player, const Position& pos, uint8_
 			openContainer = container;
 		}
 
+		
 		//reward chest
 		if (container->getRewardChest()) {
 			RewardChest* myRewardChest = player->getRewardChest();
 			if (myRewardChest->size() == 0) {
 				return RETURNVALUE_REWARDCHESTISEMPTY;
 			}
-			
+
 			myRewardChest->setParent(container->getParent()->getTile());
 			for (auto& it : player->rewardMap) {
 				it.second->setParent(myRewardChest);
 			}
 
-				openContainer = myRewardChest;
+			openContainer = myRewardChest;
 		}
 
 		//reward container proxy created when the boss dies
@@ -338,18 +339,20 @@ ReturnValue Actions::internalUseItem(Player* player, const Position& pos, uint8_
 			if (Reward* reward = player->getReward(container->getIntAttr(ITEM_ATTRIBUTE_DATE), false)) {
 				reward->setParent(container->getRealParent());
 				openContainer = reward;
-			} else {
+			}
+			else {
 				return RETURNVALUE_THISISIMPOSSIBLE;
 			}
 		}
-		
+
 		uint32_t corpseOwner = container->getCorpseOwner();
 		if (container->isRewardCorpse()) {
-				//only players who participated in the fight can open the corpse
-				if (!player->getReward(container->getIntAttr(ITEM_ATTRIBUTE_DATE), false)) {
+			//only players who participated in the fight can open the corpse
+			if (!player->getReward(container->getIntAttr(ITEM_ATTRIBUTE_DATE), false)) {
 				return RETURNVALUE_YOUARENOTTHEOWNER;
 			}
-		} else if (corpseOwner != 0 && !player->canOpenCorpse(corpseOwner)) {
+		}
+		else if (corpseOwner != 0 && !player->canOpenCorpse(corpseOwner)) {
 			return RETURNVALUE_YOUARENOTTHEOWNER;
 		}
 
@@ -358,7 +361,8 @@ ReturnValue Actions::internalUseItem(Player* player, const Position& pos, uint8_
 		if (oldContainerId != -1) {
 			player->onCloseContainer(openContainer);
 			player->closeContainer(oldContainerId);
-		} else {
+		}
+		else {
 			player->addContainer(index, openContainer);
 			player->onSendContainer(openContainer);
 		}
@@ -442,7 +446,7 @@ void Actions::showUseHotkeyMessage(Player* player, const Item* item, uint32_t co
 	} else {
 		ss << "Using one of " << count << ' ' << item->getPluralName() << "...";
 	}
-	player->sendTextMessage(MESSAGE_INFO_DESCR, ss.str());
+	player->sendTextMessage(MESSAGE_INFO_DESCR, ss.str());  //MESSAGE_STATUS_SMALL
 }
 
 Action::Action(LuaScriptInterface* interface) :

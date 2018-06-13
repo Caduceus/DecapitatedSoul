@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Novice Nekomancer" nameDescription="a novice nekomancer" race="blood" experience="1000" speed="100" manacost="0" script="catmagenovice.lua">
+        <health now="2000" max="2000"/>
+        <look type="324" head="57" body="114" legs="57" feet="38" addons="1" corpse="20363"/>
+        <targetchange interval="4000" chance="10"/>
+        <flags>
+                <flag summonable="0"/>
+                <flag attackable="1"/>
+                <flag hostile="1"/>
+                <flag illusionable="0"/>
+                <flag convinceable="0"/>
+                <flag pushable="0"/>
+                <flag canpushitems="1"/>
+                <flag canpushcreatures="1"/>
+                <flag targetdistance="4"/>
+                <flag staticattack="90"/>
+                <flag runonhealth="0"/>
+        </flags>
+        <attacks>
+                <!-- ai -->
+        </attacks>
+        <defenses armor="25" defense="25">
+                <defense name="healing" interval="2000" chance="15" min="50" max="200">
+                        <attribute key="areaEffect" value="blueshimmer"/>
+                </defense>
+        </defenses>
+        <elements>
+                <element energyPercent="-50"/>
+                <element earthPercent="30"/>
+                <element deathPercent="20"/>
+                <element physicalPercent="-50"/>
+                <element firePercent="30"/>
+                <element icePercent="-50"/>
+                <element holyPercent="-50"/>
+        </elements>
+        <immunities>
+                <immunity invisible="1"/>
+                <immunity drown="1"/>
+        </immunities>
+        <loot>
+                <item id="2148" countmax="100" chance="35000"/> <!-- gold coin -->
+                <item id="2148" countmax="100" chance="25000"/> <!-- gold coin -->
+                <item id="2148" countmax="100" chance="15000"/> <!-- gold coin -->
+                <item id="2152" countmax="50" chance="2000"/> <!-- platinum coin -->
+ 
+                <item id="13297" countmax="2" chance="1000"/> <!-- haunch of boar -->
+                <item id="2666" countmax="5" chance="8000"/> <!-- meat -->
+                <item id="2667" countmax="5" chance="8000"/> <!-- fish -->
+                <item id="2671" countmax="5" chance="2000"/> <!-- ham -->
+                <item id="2668" countmax="5" chance="8000"/> <!-- salmon -->
+               
+                <item id="11209" chance="7000"/> <!-- silky fur -->
+                <item id="12431" chance="7000"/> <!-- necromantic robe -->
+                <item id="11324" chance="7000"/> <!-- shaggy tail -->
+                <item id="13027" chance="500"/> <!-- panther paw -->
+               
+                <item id="7589" countmax="2" chance="4000"/> <!-- strong mana potion -->
+                <item id="7620" countmax="2" chance="6000"/> <!-- mana potion -->
+                <item id="7588" countmax="2" chance="6000"/> <!-- strong health potion -->
+                <item id="7618" countmax="2" chance="4000"/> <!-- health potion -->
+               
+                <item id="5944" chance="10000"/> <!-- soul orb -->
+ 
+                <item id="2150" countmax="4" chance="500"/> <!-- small amethyst -->
+                <item id="2147" countmax="4" chance="500"/> <!-- small ruby -->
+                <item id="7762" countmax="4" chance="500"/> <!-- small enchanted amethyst -->
+                <item id="7760" countmax="4" chance="500"/> <!-- small enchanted ruby -->
+               
+                <item id="2231" chance="15000"/> <!-- big bone -->
+                <item id="2230" chance="15000"/> <!-- bone -->
+                <item id="2227" chance="15000"/> <!-- rotten meat -->
+ 
+                <item id="2661" chance="2000"/> <!-- scarf -->
+                <item id="2171" chance="500"/> <!-- platinum amulet -->
+                <item id="2197" chance="500"/> <!-- stone skin amulet -->
+                <item id="2198" chance="500"/> <!-- elven amulet -->
+                <item id="2168" chance="500"/> <!-- life ring -->
+                <item id="2169" chance="500"/> <!-- time ring -->
+                <item id="2165" chance="500"/> <!-- stealth ring -->
+                <item id="2214" chance="500"/> <!-- ring of healing -->
+                <item id="2164" chance="500"/> <!-- might ring -->
+                <item id="5468" chance="1000"/> <!-- fire bug -->
+                <item id="7890" chance="500"/> <!-- magma amulet -->
+                <item id="2412" chance="1500"/> <!-- katana -->
+                <item id="2419" chance="500"/> <!-- scimitar -->
+                <item id="2420" chance="1500"/> <!-- machete -->       
+                <item id="8892" chance="1000"/> <!-- ethno coat -->
+                <item id="7457" chance="500"/> <!-- fur boots -->
+                <item id="2323" chance="500"/> <!-- hat of the mad -->
+                <item id="2662" chance="500"/> <!-- magician hat -->
+                <item id="2457" chance="1500"/> <!-- steel helmet -->
+                <item id="2515" chance="500"/> <!-- guardian shield -->
+                <item id="2033" chance="1000"/> <!-- golden mug -->
+                <item id="2260" chance="1000"/> <!-- blank rune -->
+                <item id="2449" chance="1000"/> <!-- bone club -->
+               
+                <item id="2179" chance="100"/> <!-- gold ring -->
+                <item id="10218" chance="100"/> <!-- bonfire amulet -->
+                <item id="10221" chance="100"/> <!-- shockwave amulet -->
+                <item id="7408" chance="100"/> <!-- wyvern fang -->
+                <item id="7424" chance="100"/> <!-- lunar staff -->
+                <item id="2189" chance="100"/> <!-- wand of cosmic energy -->
+                <item id="2392" chance="100"/> <!-- fire sword -->
+                <item id="2497" chance="100"/> <!-- crusader helmet -->
+                <item id="7900" chance="100"/> <!-- magma monocle -->
+                <item id="2491" chance="100"/> <!-- crown helmet -->
+                <item id="8871" chance="100"/> <!-- focus cape -->
+               
+                <item id="12608" chance="80"/> <!-- broken key ring -->
+                <item id="7426" chance="80"/> <!-- amber staff -->
+                <item id="7456" chance="80"/> <!-- noble axe -->
+                <item id="8920" chance="80"/> <!-- wand of starstorm -->
+               
+                <item id="8902" chance="70"/> <!-- spellbook of mind control -->
+ 
+                <item id="2466" chance="50"/> <!-- golden armor -->
+                <item id="7899" chance="50"/> <!-- magma coat -->
+                <item id="2487" chance="50"/> <!-- crown armor -->
+                <item id="2488" chance="50"/> <!-- crown legs -->
+                <item id="7891" chance="50"/> <!-- magma boots -->
+               
+                <item id="5480" chance="30"/> <!-- cat's paw -->
+                <item id="2123" chance="30"/> <!-- ring of the sky -->
+                <item id="10570" chance="30"/> <!-- witch hat -->
+               
+                <item id="8298" chance="25"/> <!-- natural soil -->
+                <item id="8301" chance="25"/> <!-- holy soil -->
+                <item id="8300" chance="25"/> <!-- flawless ice crystal -->
+ 
+                <item id="18422" chance="25"/> <!-- minor crystalline token -->
+ 
+                <item id="2153" chance="25"/> <!-- violet gem -->
+                <item id="7735" chance="25"/> <!-- spellwand -->
+               
+                <item id="13293" chance="15"/> <!-- leather whip -->
+ 
+        </loot>
+</monster>

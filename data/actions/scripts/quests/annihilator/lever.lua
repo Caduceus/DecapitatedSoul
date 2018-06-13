@@ -1,32 +1,34 @@
 local config = {
-	requiredLevel = 1,
-	daily = false,
-	centerDemonRoomPosition = Position(1060, 670, 9),
+	requiredLevel = 150,
+	daily = true,
+	centerDemonRoomPosition = Position(777, 697, 8),
 	playerPositions = {
-		Position(1064, 683, 9),
-		Position(1064, 684, 9),
-		Position(1064, 685, 9),
-		Position(1064, 686, 9)
+		Position(704, 683, 6),
+		Position(703, 683, 6),
+		Position(702, 683, 6),
+		Position(701, 683, 6)
 	},
 	newPositions = {
-		Position(1061, 670, 9),
-		Position(1060, 670, 9),
-		Position(1059, 670, 9),
-		Position(1058, 670, 9)
+		Position(768, 697, 8),
+		Position(767, 697, 8),
+		Position(766, 697, 8),
+		Position(765, 697, 8)
 	},
 	demonPositions = {
-		Position(1058, 668, 9),
-		Position(1060, 668, 9),
-		Position(1059, 672, 9),
-		Position(1061, 672, 9),
-		Position(1062, 670, 9),
-		Position(1063, 670, 9)
+		Position(764, 695, 8),
+		Position(766, 695, 8),
+		Position(765, 699, 8),
+		Position(767, 699, 8)
+	},
+	orshPositions = {
+		Position(769, 697, 8),
+		Position(764, 697, 8)
 	}
 }
 
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	if item.itemid == 1946 then
+	if item.itemid == 1945 then
 		local storePlayers, playerTile = {}
 
 		for i = 1, #config.playerPositions do
@@ -44,7 +46,8 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			storePlayers[#storePlayers + 1] = playerTile
 		end
 
-		local specs, spec = Game.getSpectators(config.centerDemonRoomPosition, false, false, 3, 3, 2, 2)
+		--Game.getSpectators(position[, multifloor = false[, onlyPlayer = false[, minRangeX = 0[, maxRangeX = 0[, minRangeY = 0[, maxRangeY = 0]]]]]])
+		local specs, spec = Game.getSpectators(config.centerDemonRoomPosition, false, false, 15, 15, 15, 15)
 		for i = 1, #specs do
 			spec = specs[i]
 			if spec:isPlayer() then
@@ -57,6 +60,10 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
 		for i = 1, #config.demonPositions do
 			Game.createMonster("Demon", config.demonPositions[i])
+		end
+		
+		for i = 1, #config.orshPositions do
+			Game.createMonster("Orshabaal", config.orshPositions[i])
 		end
 
 		local players

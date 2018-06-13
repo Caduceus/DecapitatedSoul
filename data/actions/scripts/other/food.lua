@@ -1,4 +1,4 @@
-local foods = {
+local FOODS = {
 	[2362] = {5, "Crunch."}, -- carrot
 	[2666] = {15, "Munch."}, -- meat
 	[2667] = {12, "Munch."}, -- fish
@@ -38,7 +38,7 @@ local foods = {
 	[2794] = {3, "Munch."}, -- some mushrooms
 	[2795] = {36, "Munch."}, -- fire mushroom
 	[2796] = {5, "Munch."}, -- green mushroom
-	[5097] = {4, "Yum."}, -- mango
+	[5097] = {80, "Yum."}, -- mango
 	[6125] = {8, "Gulp."}, -- tortoise egg
 	[6278] = {10, "Mmmm."}, -- cake
 	[6279] = {15, "Mmmm."}, -- decorated cake
@@ -51,7 +51,7 @@ local foods = {
 	[6544] = {6, "Gulp."}, -- coloured egg (green)
 	[6545] = {6, "Gulp."}, -- coloured egg (purple)
 	[6569] = {1, "Mmmm."}, -- candy
-	[6574] = {5, "Mmmm."}, -- bar of chocolate
+	[6574] = {1, "Mmmmmmmmmm, soooo GOOOD."}, -- bar of chocolate
 	[7158] = {15, "Munch."}, -- rainbow trout
 	[7159] = {13, "Munch."}, -- green perch
 	[7372] = {2, "Yum."}, -- ice cream cone (crispy chocolate chips)
@@ -67,7 +67,7 @@ local foods = {
 	[8838] = {10, "Gulp."}, -- potato
 	[8839] = {5, "Yum."}, -- plum
 	[8840] = {1, "Yum."}, -- raspberry
-	[8841] = {1, "Urgh."}, -- lemon
+	[8841] = {50, "Urgh."}, -- lemon
 	[8842] = {7, "Munch."}, -- cucumber
 	[8843] = {5, "Crunch."}, -- onion
 	[8844] = {1, "Gulp."}, -- jalapeño pepper
@@ -75,7 +75,7 @@ local foods = {
 	[8847] = {11, "Yum."}, -- chocolate cake
 	[9005] = {7, "Slurp."}, -- yummy gummy worm
 	[9114] = {5, "Crunch."}, -- bulb of garlic
-	[9996] = {0, "Slurp."}, -- banana chocolate shake
+	[9996] = {1, "Slurp."}, -- banana chocolate shake
 	[10454] = {0, "Your head begins to feel better."}, -- headache pill
 	[11246] = {15, "Yum."}, -- rice ball
 	[11370] = {3, "Urgh."}, -- terramite eggs
@@ -89,7 +89,7 @@ local foods = {
 	[12639] = {2, "Munch."}, -- peas
 	[13297] = {20, "Crunch."}, -- haunch of boar
 	[15405] = {55, "Munch."}, -- sandfish
-	[15487] = {14, "Urgh."}, -- larvae
+	[15487] = {75, "Crunch"}, -- larvae
 	[15488] = {15, "Munch."}, -- deepling filet
 	[16014] = {60, "Mmmm."}, -- anniversary cake
 	[18397] = {33, "Munch."}, -- mushroom pie
@@ -99,12 +99,13 @@ local foods = {
 }
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	local food = foods[item.itemid]
+	local food = FOODS[item.itemid]
 	if food == nil then
 		return false
 	end
 
 	local condition = player:getCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT)
+		
 	if condition and math.floor(condition:getTicks() / 1000 + food[1]) >= 1200 then
 		player:sendTextMessage(MESSAGE_STATUS_SMALL, "You are full.")
 	else

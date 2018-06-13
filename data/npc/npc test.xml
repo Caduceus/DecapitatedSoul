@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="npc test" script="second_promo.lua" walkinterval="2000" floorchange="0" speechbubble="2">
+  <health now="100" max="100" />
+  <look type="155" head="77" body="98" legs="87" feet="114" addons="0" />
+<parameters>
+<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="stone skin amulet,2197,50000,100" />
+</parameters>
+</npc>

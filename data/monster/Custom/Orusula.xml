@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Orusula" nameDescription="an Orusula" race="fire" experience="40000" speed="280" manacost="0">
+	<health now="40500 " max="40500 "/>
+	<look type="418" corpse="13969"/>
+	<targetchange interval="2000" chance="9"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="250"/>
+		<attack name="Paralyze" interval="2000" chance="10" range="7" min="-500" max="-720"/>
+		<attack name="fire" interval="2000" chance="10"  range="7" radius="7" target="1" min="-475" max="-640">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="Great Fireball" interval="1500" chance="10"  range="1" radius="1" target="1" min="-625" max="-860">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="dragon firebomb" interval="7000" chance="40" min="-800" max="-1800"/>
+		<attack name="Orusula burst" interval="4000" chance="100" min="-1000" max="-1800"/>
+	</attacks>
+	<defenses armor="80" defense="180">
+		<defense name="healing" interval="4000" chance="40"  min="4500" max="7500">
+			<attribute key="areaEffect" value="fire"/>
+		</defense>
+		<defense name="healing" interval="3000" chance="80"  min="3500" max="4500">
+			<attribute key="areaEffect" value="fire"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="10" speedchange="360" duration="20000">
+			<attribute key="areaEffect" value="fire"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="100"/>
+		<element earthPercent="100"/>
+		<element deathPercent="50"/>
+		<element icePercent="-20"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="50">
+		<voice sentence="Orusula or DEATH!!" yell="0"/>
+		<voice sentence="POWER TO THE MIGHTY ORUSULA!!!" yell="1"/>
+	</voices>
+	<summons maxSummons="4">
+		<summon name="nightmare scion" interval="1000" chance="10" max="4"/>
+	</summons>
+	<loot>
+		<item id="2160" countmax="10" chance="5000" /> <!-- crystal coin -->
+		<item id="7393" chance="5000"/><!-- demon trophy -->
+		<item id="2472" chance="850"/><!-- magic plate armor -->
+		<item id="2470" countmax="1" chance="5000"/><!-- golden legs -->
+		<item id="2471" countmax="1" chance="100"/><!-- golden helm -->
+		<item id="2646" countmax="1" chance="200"/><!-- golden boots -->
+		<item id="2514" chance="950"/><!-- mastermind shield -->
+		<item id="9810" chance="1000" /> <!-- rare rusty armor  -->
+		<item id="9819" chance="1000" /> <!-- rare rusty boots  -->
+		<item id="7589" chance="7000" /> <!-- Strong Mana Potion  -->
+		<item id="7588" chance="7000" /> <!-- Strong Health Potion -->
+		<item id="8819" chance="200" /> <!-- magician's robe -->
+		<item id="2147" countmax="5" chance="700" /> <!-- Small Rubies  -->
+    <item id="10518" chance="800"> <!--demon backpack-->
+      <inside>
+        <item id="13530" chance="100000" /> <!-- Demonic Finger -->
+        <item id="2495" chance="1000" /> <!-- demon legs  -->
+      </inside>
+    </item>
+  </loot>
+
+</monster>

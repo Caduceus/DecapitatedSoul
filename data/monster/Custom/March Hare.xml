@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<monster name="March Hare" nameDescription="a March Hare" level="99" experience="30000" manacost="0" speed="300" race="2">
+  <health now="39000" max="39000"/>
+  <strategy attack="110" defense="35"/>
+  <targetchange speed="300" chance="75"/>
+  <flags canpushitems="0" summonable="0" hostile="1" attackable="1" illusionable="0" convinceable="0" pushable="1" staticattack="0" targetdistance="0" runonhealth="0"/>
+   <look type="262" head="69" body="66" legs="69" feet="66" corpse="7338"/>
+  <attacks>
+    <attack name="melee" chance="0" speed="990" skill="800" attack="80" min="-400" max="-700"/>
+    <attack name="dragon lord firewave" chance="65" speed="980" min="-900" max="-1200"/>
+    <attack name="orshabaal berserk" chance="75" speed="900" min="-700" max="-900"/>
+  </attacks>
+  <defenses defense="45" armor="10">
+    <defense name="Ultimate Healing" chance="40" speed="1500" min="500" max="1200"/>
+    <defense name="dragon lord firewave" chance="0" speed="0"/>
+  </defenses>
+  <immunities>
+    <immunity name="energy"/>
+    <immunity name="poison"/>
+    <immunity name="lifedrain"/>
+    <immunity name="paralyze"/>
+    <immunity name="outfit"/>
+    <immunity name="drunk"/>
+    <immunity name="invisible"/>
+  </immunities>
+  <voices speed="2000" chance="50">
+    <voice sentence="I like Kerrets. "/>
+    <voice sentence="HerHerHerHer!"/>
+  </voices>
+  <loot>
+    <item id="2335" chance="75000"/>
+    <item id="2336" chance="75000"/>
+    <item id="2337" chance="75000"/>
+    <item id="2338" chance="75000"/>
+    <item id="2339" chance="75000"/>
+    <item id="2340" chance="75000"/>
+    <item id="2341" chance="75000"/>
+  </loot>
+</monster>

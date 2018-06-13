@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<npc name="Eryn" script="runes.lua" walkinterval="2000" floorchange="0">
-	<health now="100" max="100" />
-	<look type="130" head="39" body="122" legs="125" feet="57" addons="0" />
+<npc name="Eryn-[potions]" script="runes.lua" walkinterval="2000" speed="100" walkradius="4" floorchange="0" speechbubble="1">
+	<health max="100" now="100"/>
+	<look type="634" head="76" body="95" legs="68" feet="95" addons="3"/>
 	<parameters>
-		<parameter key="message_greet" value="Hello |PLAYERNAME|. I sell runes, potions, wands and rods." />
-		<parameter key="message_decline" value="Is |TOTALCOST| gold coins too much for you? Get out of here!" />
+		<parameter key="message_decline" value="Be gone, Peasant! I have no time for you."/>
+		<parameter key="message_walkaway_male" value="Thank you. Come again, Sir."/>
+		<parameter key="message_walkaway_female" value="Thank you. Come again, Madam."/>
 	</parameters>
 </npc>

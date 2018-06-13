@@ -25,6 +25,7 @@
 #include "iologindata.h"
 #include "tile.h"
 #include "outputmessage.h"
+#include "monster.h"
 
 extern ConfigManager g_config;
 extern Game g_game;
@@ -122,7 +123,14 @@ void ProtocolGameBase::AddCreature(NetworkMessage& msg, const Creature* creature
 		msg.add<uint32_t>(remove);
 		msg.add<uint32_t>(creature->getID());
 		msg.addByte(creatureType);
-		msg.addString(creature->getName());
+		//msg.addString(creature->getName());
+		const Monster* monster = creature->getMonster();
+		if (monster && monster->getLevel() > 0) {
+			msg.addString(monster->getName() + " [" + g_config.getString(ConfigManager::MONSTERLEVEL_PREFIX) + " " + std::to_string(monster->getLevel()) + "]");
+		}
+		else {
+			msg.addString(creature->getName());
+		}
 	}
 
 	if (creature->isHealthHidden()) {
@@ -142,10 +150,10 @@ void ProtocolGameBase::AddCreature(NetworkMessage& msg, const Creature* creature
 
 	LightInfo lightInfo;
 	creature->getCreatureLight(lightInfo);
-	msg.addByte(player->isAccessPlayer() ? 0xFF : lightInfo.level);
+	msg.addByte(lightInfo.level);
 	msg.addByte(lightInfo.color);
 
-	msg.add<uint16_t>(creature->getStepSpeed() / 2);
+	msg.add<uint16_t>(creature->getStepSpeed() / 2); // 156 & 219 //Speed_edit
 
 	msg.addByte(player->getSkullClient(creature));
 	msg.addByte(player->getPartyShield(otherPlayer));
@@ -208,7 +216,7 @@ void ProtocolGameBase::AddPlayerStats(NetworkMessage& msg)
 
 	msg.add<uint16_t>(player->getStaminaMinutes());
 
-	msg.add<uint16_t>(player->getBaseSpeed() / 2);
+	msg.add<uint16_t>(player->getBaseSpeed() / 2); // 156 & 219 //Speed_edit
 
 	Condition* condition = player->getCondition(CONDITION_REGENERATION);
 	msg.add<uint16_t>(condition ? condition->getTicks() / 1000 : 0x00);
@@ -235,7 +243,7 @@ void ProtocolGameBase::AddPlayerSkills(NetworkMessage& msg)
 void ProtocolGameBase::AddWorldLight(NetworkMessage& msg, const LightInfo& lightInfo)
 {
 	msg.addByte(0x82);
-	msg.addByte((player->isAccessPlayer() ? 0xFF : lightInfo.level));
+	msg.addByte(lightInfo.level);
 	msg.addByte(lightInfo.color);
 }
 
@@ -246,9 +254,10 @@ void ProtocolGameBase::AddCreatureLight(NetworkMessage& msg, const Creature* cre
 
 	msg.addByte(0x8D);
 	msg.add<uint32_t>(creature->getID());
-	msg.addByte((player->isAccessPlayer() ? 0xFF : lightInfo.level));
+	msg.addByte(lightInfo.level);
 	msg.addByte(lightInfo.color);
 }
+
 
 bool ProtocolGameBase::canSee(const Creature* c) const
 {

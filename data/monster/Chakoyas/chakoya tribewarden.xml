@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chakoya Tribewarden" nameDescription="a chakoya tribewarden" race="blood" experience="25000" speed="200" manacost="305">
+	<health now="20000" max="20000"/>
+	<look type="259" corpse="7320"/>
+	<targetchange interval="60000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag passive="1" />
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="80"/>
+		<flag lightlevel="3"/>
+		<flag lightcolor="69"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-1360" max="-1500"/>
+		<attack name="Fierce Berserk" interval="2000" chance="50" target="1" min="-900" max="-1000"/>
+		<attack name="physical" interval="2000" chance="50" range="7" radius="3" target="1" min="-900" max="-1500">
+			<attribute key="shootEffect" value="smallice"/>
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="10" target="0" length="8" spread="3" min="-575" max="-880">
+			<attribute key="areaEffect" value="poff"/>
+		</attack>
+	</attacks>
+	<defenses armor="90" defense="100"/>
+	<elements>
+		<element firePercent="25"/>
+		<element holyPercent="10"/>
+		<element energyPercent="-15"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity ice="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Quisavu tukavi!"/>
+		<voice sentence="Si siyoqua jamjam!"/>
+		<voice sentence="Achuq! jinuma!"/>
+		<voice sentence="Si ji jusipa!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="300" chance="60000"/><!-- gold coin -->
+		<item id="2667" chance="20000"/><!-- fish -->
+		<item id="2396" chance="4000"/><!-- ice rapier -->
+		<item id="7381" chance="3500"/><!-- mammoth whopper -->
+		<item id="7158" chance="2700"/><!-- rainbow trout -->
+		<item id="7159" chance="3000"/><!-- green perch -->
+		<item id="2669" chance="4000"/><!-- northern pike -->
+	</loot>
+</monster>

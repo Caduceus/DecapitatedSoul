@@ -1,0 +1,13 @@
+local combat = Combat()
+combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_MAGIC_BLUE)
+combat:setParameter(COMBAT_PARAM_AGGRESSIVE, 0)
+
+local condition = Condition(CONDITION_MANASHIELD)
+condition:setParameter(CONDITION_PARAM_TICKS, 200000)
+combat:setCondition(condition)
+
+function onCastSpell(creature, var)
+    creature:setStorageValue(75004, 1)
+    creature:registerEvent('ManaMessage')
+    return combat:execute(creature, var)
+end

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Devlin" script="default.lua" walkinterval="2000" speed="100" walkradius="10" floorchange="0">
+	<health max="100" now="100"/>
+	<look type="666" head="114" body="115" legs="0" feet="123" addons="3" mount="426"/>
+	<parameters>
+		<!--MESSAGES-->
+		<!--parameter key="message_greet" value="Greetings, |PLAYERNAME|. I sell {10 day}, {30 day}, and {90 day} VIP tokens. Which version fancies your needs?"/-->
+		<parameter key="message_greet" value="Greetings, |PLAYERNAME|. I can only sell {1 day},{5 day}, and {10 day} VIP tokens! As always, {Decapitated Soul} Thanks you for playing!"/>
+		<!--SHOP-->
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="1dayVIP,10135,1000000;5dayVIP,10134,5000000;10dayVIP,10133,10000000;"/>
+	</parameters>
+</npc>

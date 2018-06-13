@@ -1,13 +1,16 @@
 local deathListEnabled = true
-local maxDeathRecords = 5
+local maxDeathRecords = 1000
 
 function onDeath(player, corpse, killer, mostDamageKiller, unjustified, mostDamageUnjustified)
 	local playerId = player:getId()
 	if nextUseStaminaTime[playerId] ~= nil then
 		nextUseStaminaTime[playerId] = nil
 	end
-
-	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You are dead.")
+	
+	player:setStorageValue(1233, -1)
+	player:setStorageValue(1234, -1)
+	player:removeCondition(CONDITION_PARAM_BUFF_SPELL)
+	player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "You are dead. Do not fret, failure is part of succeeding. Get up and try again.")
 	if not deathListEnabled then
 		return
 	end

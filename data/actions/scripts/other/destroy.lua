@@ -1,3 +1,7 @@
-function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	return destroyItem(player, target, toPosition)
+function onUse(cid, item, fromPosition, target, toPosition, isHotkey)
+if item:isItem() == nil then
+return false
+else
+	return destroyItem(cid, target, toPosition)
+	end
 end

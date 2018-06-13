@@ -74,7 +74,7 @@ GameStore.DefaultDescriptions = {
 			"The first rider of this mount became the leader of his country! legends say that."},
 	NAMECHANGE = {"Are you hunted? Tired of that? Get a new name, a new life!",
 			"A new name to suit your needs!"},
-	SEXCHANGE = {"Bored of your character's sex? Get a new sex for him now!!"}
+	SEXCHANGE = {"Bored of your character's sex? Get a new sex for it now!!"}
 }
 --==Parsing==--
 GameStore.isItsPacket = function(byte)
@@ -374,9 +374,9 @@ function sendShowStoreOffers(player, category)
 									disabled = 1
 									disabledReason = "You already have this addon."
 								end
-							else
+							--[[else
 								disabled = 1
-								disabledReason = "You don't have the outfit, you can't buy the addon."
+								disabledReason = "You don't have the outfit, you can't buy the addon."]]--
 							end
 						end
 					else
@@ -516,7 +516,8 @@ GameStore.insertHistory = function(accountId, mode, description, amount)
 end
 GameStore.retrieveHistoryEntries = function(accountId)
 	local entries = {}
-	local resultId = db.storeQuery("SELECT * FROM `store_history` WHERE `account_id` = " .. accountId .. " ORDER BY `time` DESC")
+	local resultId = db.storeQuery("SELECT * FROM `store_history` WHERE `account_id` = " .. accountId .. " ORDER BY `time` DESC LIMIT 15;")
+	--local resultId = db.storeQuery("SELECT * FROM `store_history` WHERE `account_id` = " .. accountId .. " ORDER BY `time` DESC")
 	if resultId ~= false then
 		repeat
 			local entry = {
@@ -552,12 +553,12 @@ GameStore.canChangeToName = function(name)
 		ability = false
 	}
 	if name:len() < 3 or name:len() > 14 then
-		result.reason = "Your new name's length should be lower than 3 or higher than 14."
+		result.reason = "Your new name's length should not be lower than 3 or higher than 14 letters."
 		return result
 	end
 	
 	-- just copied from znote aac.
-	local words = {"owner", "gamemaster", "hoster", "admin", "staff", "tibia", "account", "god", "anal", "ass", "fuck", "sex", "hitler", "pussy", "dick", "rape", "cm", "gm", "tutor", "counsellor"}
+	local words = {"abuse", "owner", "gamemaster", "gm", "hoster", "admin", "staff", "tibia", "account", "god", "anal", "ass", "fuck", "sex", "hitler", "pussy", "clit", "dick", "rape", "cm", "tutor", "counsellor", "caduceus", "pantiecakes", "vlad"}
 	local split = name:split(" ")
 	for k, word in ipairs(words) do
 		for k, nameWord in ipairs(split) do

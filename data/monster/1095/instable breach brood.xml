@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Instable Breach Brood" nameDescription="a instable breach brood" race="energy" experience="1100" speed="180" manacost="390">
+	<health now="2200" max="2200"/>
+	<look type="878" corpse="20323"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="3"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="10"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-230"/>
+		<attack name="energy" interval="2000" chance="105" range="4" radius="5" target="0" min="-100" max="-480">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="42" defense="42"/>
+	<elements>
+		<element physicalPercent="0"/>
+		<element holyPercent="0"/>
+		<element earthPercent="20"/>
+		<element deathPercent="-10"/>
+		<element icePercent="-30"/>
+		<element firePercent="-40"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="0"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Whirr!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="20" chance="40000"/><!-- gold coin -->
+		<item id="2229" countmax="2" chance="80000"/><!-- skull -->
+		<item id="2379" chance="80000"/><!-- dagger -->
+		<item id="12400" chance="5000"/><!-- Protective Charm -->
+		<item id="2691" chance="30333"/><!-- brown bread -->
+		<item id="2385" chance="23000"/><!-- sabre -->
+		<item id="12399" chance="10000"/><!-- Girlish Hair Decoration -->
+		<item id="2050" chance="1005"/><!-- torch -->
+		<item id="2125" chance="287"/><!-- crystal necklace -->
+		<item id="2147" chance="161"/><!-- small ruby -->
+	</loot>
+</monster>

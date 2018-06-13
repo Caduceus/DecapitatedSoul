@@ -25,6 +25,7 @@
 #include "weapons.h"
 #include "configmanager.h"
 #include "events.h"
+#include "monster.h"
 
 extern Game g_game;
 extern Weapons* g_weapons;
@@ -441,6 +442,11 @@ bool Combat::setParam(CombatParam_t param, uint32_t value)
 			params.useCharges = (value != 0);
 			return true;
 		}
+	
+		case COMBAT_PARAM_PVPDAMAGE: {
+			params.pvpDamage = value;
+			return true;
+		}
 	}
 	return false;
 }
@@ -502,8 +508,24 @@ void Combat::CombatHealthFunc(Creature* caster, Creature* target, const CombatPa
 		Player* targetPlayer = target->getPlayer();
 		if (targetPlayer && caster->getPlayer() && targetPlayer->getSkull() != SKULL_BLACK) {
 			damage.primary.value /= 2;
+			damage.primary.value *= params.pvpDamage / 100.;
+
 			damage.secondary.value /= 2;
+			damage.secondary.value *= params.pvpDamage / 100.;
 		}
+	}
+
+	// Monster level damage bonuses
+
+	Monster* monster = caster ? caster->getMonster() : nullptr;
+	if (monster && damage.primary.value < 0) {
+		double dmgBonus = g_config.getDouble(ConfigManager::MONSTERLEVEL_BONUSDMG);
+		if (dmgBonus > 0) {
+			damage.primary.value += damage.primary.value * (dmgBonus * monster->getLevel());
+			damage.secondary.value += damage.secondary.value * (dmgBonus * monster->getLevel());
+			
+		}
+		
 	}
 
 	if (g_game.combatChangeHealth(caster, target, damage)) {
@@ -519,7 +541,21 @@ void Combat::CombatManaFunc(Creature* caster, Creature* target, const CombatPara
 	if (damage.primary.value < 0) {
 		if (caster && caster->getPlayer() && target->getPlayer()) {
 			damage.primary.value /= 2;
+			damage.primary.value *= params.pvpDamage / 100.;
 		}
+	}
+
+	// Monster level damage bonuses
+
+	Monster* monster = caster ? caster->getMonster() : nullptr;
+	if (monster && damage.primary.value < 0) {
+		double dmgBonus = g_config.getDouble(ConfigManager::MONSTERLEVEL_BONUSDMG);
+		if (dmgBonus > 0) {
+			damage.primary.value += damage.primary.value * (dmgBonus * monster->getLevel());
+			damage.secondary.value += damage.secondary.value * (dmgBonus * monster->getLevel());
+			
+		}
+		
 	}
 
 	if (g_game.combatChangeMana(caster, target, damage.primary.value, damage.origin)) {
@@ -665,6 +701,9 @@ void Combat::addDistanceEffect(Creature* caster, const Position& fromPos, const 
 			case WEAPON_CLUB:
 				effect = CONST_ANI_WHIRLWINDCLUB;
 				break;
+			case WEAPON_FIST:
+                effect = CONST_ANI_SMALLSTONE;
+                break;
 			default:
 				effect = CONST_ANI_NONE;
 				break;

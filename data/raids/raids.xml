@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <raids>
+	<raid name="RatsDrogheda" file="normal/ratsDrogheda.xml" interval2="250" margin="60"/>
+	<!--raid name="demonPurg" file="normal/demonPurg.xml" interval2="250" margin="60"/>
 	<!--
-		<raid name="Testraid" file="testraid.xml" interval2="30" margin="0" />
+		<raid name="Testraid" file="testraid.xml" interval2="30" margin="0"/>
 		executed on average once every 30 minutes
 	-->
 </raids>

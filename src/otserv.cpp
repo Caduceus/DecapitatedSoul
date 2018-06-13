@@ -94,7 +94,7 @@ int main(int argc, char* argv[])
 	g_loaderSignal.wait(g_loaderUniqueLock);
 
 	if (serviceManager.is_running()) {
-		std::cout << ">> " << g_config.getString(ConfigManager::SERVER_NAME) << " Server Online!" << std::endl << std::endl;
+		std::cout << ">> " << g_config.getString(ConfigManager::SERVER_NAME) << " is Online!" << std::endl << std::endl;
 #ifdef _WIN32
 		SetConsoleCtrlHandler([](DWORD) -> BOOL {
 			g_dispatcher.addTask(createTask([]() {
@@ -131,7 +131,7 @@ void mainLoader(int, char*[], ServiceManager* services)
 #ifdef _WIN32
 	SetConsoleTitle(STATUS_SERVER_NAME);
 #endif
-	std::cout << STATUS_SERVER_NAME << " - Version " << STATUS_SERVER_VERSION << std::endl;
+	std::cout << STATUS_SERVER_NAME << " - TFS " << STATUS_SERVER_VERSION << std::endl;
 	std::cout << "Compiled with " << BOOST_COMPILER << std::endl;
 	std::cout << "Compiled on " << __DATE__ << ' ' << __TIME__ << " for platform ";
 

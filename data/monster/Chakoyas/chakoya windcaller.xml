@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chakoya Windcaller" nameDescription="a chakoya windcaller" race="blood" experience="25000" speed="200" manacost="305">
+	<health now="20000" max="20000"/>
+	<look type="260" corpse="7320"/>
+	<targetchange interval="60000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag passive="1" />
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="90"/>
+		<flag lightlevel="3"/>
+		<flag lightcolor="23"/>
+		<flag targetdistance="4"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="100" attack="100"/>
+		<attack name="eternal winter" interval="3000" chance="55" range="7" spread="8" target="1" min="-700" max="-1000"/>
+		<attack name="ice" interval="2000" chance="25" range="7" min="-900" max="-1200">
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+		<attack name="freezecondition" interval="2000" chance="50" target="1" radius="3" min="-730" max="-960">
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+		<attack name="ice" interval="2000" chance="30" target="1" radius="3" min="-400" max="-600">
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="25" defense="20">
+		<defense name="invisible" interval="5000" chance="5" duration="3000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="50"/>
+		<element holyPercent="20"/>
+		<element energyPercent="-15"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity ice="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Mupi! Si siyoqua jinuma!"/>
+		<voice sentence="Siqsiq ji jusipa!"/>
+		<voice sentence="Jagura taluka taqua!"/>
+		<voice sentence="Quatu nguraka!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="26" chance="50000"/><!-- gold coin -->
+		<item id="2667" countmax="3" chance="29000"/><!-- fish -->
+		<item id="7159" chance="3000"/><!-- green perch -->
+		<item id="7158" chance="2700"/><!-- rainbow trout -->
+		<item id="2669" chance="3250"/><!-- northern pike -->
+	</loot>
+</monster>

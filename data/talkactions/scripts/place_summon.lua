@@ -7,14 +7,15 @@ function onSay(player, words, param)
 		return false
 	end
 
-	local position = player:getPosition()
-	local monster = Game.createMonster(param, position)
-	if monster ~= nil then
+	local orig = player:getPosition()
+	local creatureId = doSummonCreature(param, orig)
+	if creatureId ~= false then
+		local monster = Monster(creatureId)
 		monster:setMaster(player)
-		position:sendMagicEffect(CONST_ME_MAGIC_RED)
+		orig:sendMagicEffect(CONST_ME_MAGIC_RED)
 	else
 		player:sendCancelMessage("There is not enough room.")
-		position:sendMagicEffect(CONST_ME_POFF)
+		orig:sendMagicEffect(CONST_ME_POFF)
 	end
 	return false
 end

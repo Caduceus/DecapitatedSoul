@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Alfreda" script="Aldo.lua" walkinterval="2000" speed="100" walkradius="4" floorchange="0">
+	<health max="100" now="100"/>
+	<look type="157" head="40" body="95" legs="77" feet="39" addons="0" mount="0"/>
+	<parameters>
+		<!--MESSAGES-->
+		<parameter key="message_greet" value="Just great, another ... 'customer'.  Hello, |PLAYERNAME|.  If you want to do business, let's get it over with."/>
+		<parameter key="message_farewell" value="That's music in my ears."/>
+		<parameter key="message_noshop" value="The only trading we will be doin is from your coin collection to mine, ole pal."/>
+		<parameter key="message_walkaway_male" value="Yeah, get lost asshole."/>
+		<parameter key="message_walkaway_female" value="Yeah, get lost bitchface."/>
+	<!--SHOP-->
+		<parameter key="module_shop" value="1"/>
+	</parameters>
+</npc>

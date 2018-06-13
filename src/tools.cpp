@@ -922,6 +922,7 @@ std::string getWeaponName(WeaponType_t weaponType)
 		case WEAPON_DISTANCE: return "distance";
 		case WEAPON_WAND: return "wand";
 		case WEAPON_AMMO: return "ammunition";
+		case WEAPON_FIST: return "fist";
 		default: return std::string();
 	}
 }
@@ -1052,7 +1053,7 @@ const char* getReturnMessage(ReturnValue value)
 {
 	switch (value) {
 		case RETURNVALUE_REWARDCHESTISEMPTY:
-			return "The chest is currently empty. You did not take part in any battles in the last seven days or already claimed your reward.";
+			return "The chest is currently empty. You have not taken part in any battles in the last seven days or already claimed your reward.";
 			
 		case RETURNVALUE_DESTINATIONOUTOFREACH:
 			return "Destination is out of reach.";

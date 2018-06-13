@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<npc name="Riona" script="default.lua" walkinterval="2000" floorchange="0">
-	<health now="100" max="100" />
-	<look type="138" head="57" body="59" legs="40" feet="76" addons="0" />
+<npc name="Riona" script="default.lua" walkinterval="2000" speed="100" walkradius="4" floorchange="0" speechbubble="2">
+	<health max="100" now="100"/>
+	<look type="156" head="114" body="96" legs="96" feet="95" addons="0" mount="0"/>
 	<parameters>
-		<parameter key="module_shop" value="1" />
-		<parameter key="shop_buyable" value="backpack,1988,20;pick,2553,10;shovel,2554,20;rope,2120,50" />
+		<!--MESSAGES-->
+		<parameter key="message_greet" value="Hi there, |PLAYERNAME|! I didn't expect to see you again so soon."/>
+		<parameter key="message_needmoney" value="You don't have enough money for that...sigh."/>
+		<parameter key="message_idletimeout" value="I don't have time to fool with you!"/>
+		<parameter key="message_sendtrade" value="Of course, just browse through my wares. Maybe I can interest you in some &quot;other goods&quot; in the back?"/>
+		<parameter key="message_walkaway_male" value="You'll be back."/>
+		<parameter key="message_walkaway_female" value="You'll be back."/>
+		<!--SHOP-->
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="amuletofloss,2173,25000;
+											 aol,2173,25000;
+											 fishingrod,2580,2000;
+											 backpack,1988,2000;
+											 green backpack,1998,10000;
+											 yellow backpack,1999,10000;
+											 red backpack,2000,10000;
+											 purple backpack,2001,10000;
+											 blue backpack,2002,10000;
+											 grey backpack,2003,10000;
+											 golden backpack,2004,10000;
+											 pick,2553,1000;
+											 shovel,2554,2000;
+											 torch,2050,2000;
+											 obsidianknife,5908,50000;
+											 rope,2120,5000"
+											 />
 	</parameters>
 </npc>

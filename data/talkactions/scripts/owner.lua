@@ -7,8 +7,7 @@ function onSay(player, words, param)
 		return false
 	end
 
-	local tile = Tile(player:getPosition())
-	local house = tile and tile:getHouse()
+	local house = House(getTileHouseInfo(player:getPosition()))
 	if house == nil then
 		player:sendCancelMessage("You are not inside a house.")
 		return false
@@ -19,12 +18,12 @@ function onSay(player, words, param)
 		return false
 	end
 
-	local targetPlayer = Player(param)
-	if targetPlayer == nil then
+	local tguid = getPlayerGUIDByName(param)
+	if tguid == 0 then
 		player:sendCancelMessage("Player not found.")
 		return false
 	end
 
-	house:setOwnerGuid(targetPlayer:getGuid())
+	house:setOwnerGuid(tguid)
 	return false
 end

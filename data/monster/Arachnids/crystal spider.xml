@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Crystal Spider" nameDescription="a crystal spider" race="undead" experience="10000" speed="220" manacost="0">
+	<health now="10250" max="10250"/>
+	<look type="263" corpse="7344"/>
+	<targetchange interval="4000" chance="15"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="80"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-800" max="-1250" poison="160"/>
+		<attack name="ice" interval="1000" chance="45" range="7" target="1" min="-800" max="-1200">
+			<attribute key="shootEffect" value="ice"/>
+			<attribute key="areaEffect" value="icearea"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="speed" interval="2000" chance="15" speedchange="250" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="20"/>
+		<element energyPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity ice="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Screeech!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="50" chance="100000"/><!-- platinum coin -->
+		<item id="7591" countmax="100" chance="2440"/><!-- great mana potion -->
+		<item id="7590" countmax="100" chance="2440"/><!-- great health potion -->
+		<item id="2463" chance="5263"/><!-- ice cube -->
+		<item id="2125" chance="1730"/><!-- crystal necklace -->
+		<item id="2124" chance="1560"/><!-- crystal ring -->
+		<!--item id="5879" chance="1950"/><!-- spider silk-->
+		<item id="2169" chance="5800"/><!-- time ring -->
+		<item id="7290" chance="750"/><!-- shard -->
+		<item id="7902" chance="6500"/><!-- glacier mask -->
+		<item id="2171" chance="120"/><!-- platinum amulet -->
+		<item id="7450" chance="3000"/><!-- hammer of prophecy -->
+		<item id="18394" chance="200"/><!-- crystal backpack -->
+		<item id="11117" chance="500"/><!-- crystal boots -->
+		<item id="2396" chance="5500"/><!-- ice rapier -->
+	</loot>
+</monster>

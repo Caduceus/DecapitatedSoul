@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+ <monster name="Dragon Leader" nameDescription="Dragon Leader" race="undead" experience="25000" speed="440" manacost="0">
+  <health now="50000" max="50000" /> 
+ <look type="248" head="20" body="30" legs="40" feet="50" corpse="7091"/>
+  <targetchange interval="2000" chance="5" /> 
+  <strategy attack="70" defense="10" />
+
+ <flags>
+  <flag summonable="0" /> 
+  <flag attackable="1" /> 
+  <flag hostile="1" /> 
+  <flag illusionable="1" /> 
+  <flag convinceable="0" /> 
+  <flag pushable="0" /> 
+  <flag canpushitems="1" /> 
+  <flag canpushcreatures="1" /> 
+  <flag lightlevel="5"/>
+  <flag lightcolor="4"/>
+  <flag targetdistance="1"/>
+  <flag targetdistance="1" /> 
+  <flag runonhealth="0" /> 
+  </flags>
+
+<attacks>
+      <attack name="melee" interval="2000" skill="200" attack="650"/>
+      <attack name="frost smokewave" interval="2000" chance="100" min="-300" max="-400"/>
+      <attack name="frost exori bomb" interval="5000" chance="100" min="-275" max="-400"/>
+      <attack name="frost smoke berserk" interval="3500" chance="100" min="-300" max="-400"/>
+      <attack name="firecondition" interval="1000" chance="7" range="2" min="-800" max="-1000">
+        <attribute key="shootEffect" value="fire"/>
+        <attribute key="areaEffect" value="yellowspark"/>
+      </attack>
+      <attack name="physical" interval="1000" chance="7" radius="6" target="0" min="-450" max="-750">
+        <attribute key="areaEffect" value="explosion"/>
+      </attack>
+      <attack name="fire" interval="1000" chance="50" radius="5" target="0" min="-300" max="-500">
+        <attribute key="areaEffect" value="yellowspark"/>
+      </attack>
+      <attack name="firefield" interval="1000" chance="4" radius="8" target="0">
+        <attribute key="areaEffect" value="explosion"/>
+      </attack>
+      <attack name="fire" interval="1000" chance="34" range="7" radius="7" target="1" min="-350" max="-850">
+        <attribute key="shootEffect" value="fire"/>
+        <attribute key="areaEffect" value="firearea"/>
+      </attack>
+      <attack name="fire" interval="1000" chance="13" length="8" spread="0" min="-500" max="-600">
+        <attribute key="areaEffect" value="explosion"/>
+      </attack>
+      <attack name="fire" interval="1000" chance="10" length="8" spread="3" min="-300" max="-1000">
+        <attribute key="areaEffect" value="firearea"/>
+      </attack>
+    <attack name="melee" interval="2000" skill="120" attack="100"/>
+    <attack name="fire" interval="2000" chance="34" range="7" radius="7" target="1" min="-250" max="-450">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+
+<attack name="fire" interval="2000" chance="20" range="7" radius="4" target="1" min="-850" max="-900">
+  <attribute key="shootEffect" value="fire"/>
+  <attribute key="areaEffect" value="firearea"/>
+</attack>
+
+    <attack name="manadrain" interval="1000" chance="17" range="7" min="-35" max="-75"/>
+    <attack name="physical" interval="1000" chance="25" range="7" min="-55" max="-95">
+      <attribute key="shootEffect" value="suddendeath"/>
+    </attack>
+</attacks>
+  <defenses armor="40" defense="35">
+    <defense name="healing" interval="1000" chance="15" min="90" max="250">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+
+ <immunities>
+  <immunity physical="0" /> 
+  <immunity energy="1" /> 
+  <immunity fire="1" /> 
+  <immunity poison="1" /> 
+  <immunity lifedrain="1" /> 
+  <immunity paralyze="1" /> 
+  <immunity outfit="1" /> 
+  <immunity drunk="1" /> 
+  <immunity invisible="1" /> 
+  </immunities>
+
+ <voices interval="5000" chance="10">
+  <voice sentence="I HATE THE GROUND YOU WALK ON!" yell="1" /> 
+  <voice sentence="YOU WILL NEVER LIVE TO TELL YOUR LIES!" yell="1" /> 
+  </voices>
+
+ <loot capacity="1400">
+    	<item id="4328" countmax="1" chance1="100000" chancemax="0" /> Out of Room
+    	<item id="4328" countmax="1" chance1="100000" chancemax="0" /> Out of Room
+    	<item id="4328" countmax="1" chance1="100000" chancemax="0" /> Out of Room
+    	<item id="4328" countmax="1" chance1="100000" chancemax="0" /> Out of Room
+  	<item id="2672" countmax="5" chance1="82000" chancemax="0" /> dragon ham
+  	<item id="2033" chance="3200" /> golden mug
+  	<item id="1976" chance="5500" /> book
+  	<item id="2413" chance="12000" /> broad sword
+  	<item id="2498" chance="4000" /> royal h
+  	<item id="2492" chance="800" />  dsm
+	<item id="2147" countmax="1" chance1="3000" chancemax="0" /> small ruby
+	<item id="2547" countmax="5" chance1="3200" chancemax="0" /> power bolt
+  	<item id="2796" countmax="1" chance1="5600" chancemax="0" /> green m
+  	<item id="5948" countmax="1" chance1="1600" chancemax="0" /> red dragon leather
+  	<item id="5882" countmax="1" chance1="1400" chancemax="0" /> red dragon scale
+  	<item id="2191" chance="6500" /> dragonbreath
+  	<item id="2177" chance="8888" /> life crystal
+ 	<item id="1987" chance="1000000">
+<inside>
+  	<item id="2167" chance="6666" /> energy ring
+  	<item id="2149" countmax="2" chance1="6500" chancemax="0" /> small emerald
+  	<item id="2479" chance="4300" /> strange h
+  	<item id="2392" chance="4300" /> fire sword
+  	<item id="2146" countmax="2" chance1="6666" chancemax="0" /> small sapphire
+  	<item id="2528" chance="2300" /> tower shield
+  </inside>
+  </item>
+  </loot>
+  </monster>

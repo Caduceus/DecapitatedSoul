@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Javy Dones" script="pirate_task.lua" walkinterval="2000" floorchange="0" speechbubble="3">
+  <health now="100" max="100" />
+  <look type="593" head="77" body="98" legs="87" feet="114" addons="0" />
+</npc>

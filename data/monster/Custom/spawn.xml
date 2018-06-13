@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="spawn" nameDescription="A Spawn" race="blood" experience="30000" speed="250" manacost="0">
+  <health now="45000" max="45000"/>
+  <look type="242" head="0" body="0" legs="0" feet="0" corpse="6546"/>
+  <targetchange interval="200" chance="200"/>
+  <strategy attack="60" defense="50"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="2"/>
+    <flag staticattack="10"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="900" attack="400" min="-300" max="-400"/>
+    <attack name="great fireball" chance="850" speed="980" min="-600" max="-1000"/>
+    <attack name="orshabaal berserk" interval="8000" chance="25"/>
+    <attack name="imitate" interval="1000" chance="500" range="7" min="0" max="0">
+      <attribute key="shootEffect" value="poison"/>
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+  </attacks>
+  <defenses armor="999" defense="999">
+    <defense name="outfit" interval="2000" chance="6" monster="braindeath" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+      <defense name="invisible" interval="1" chance="1" duration="1">
+        <attribute key="areaEffect" value="blueshimmer"/>
+      </defense>
+    <defense name="outfit" interval="2000" chance="5" monster="Bazir" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="5" monster="diablo" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="5" monster="Vanir" duration="600">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="6" monster="dark force" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="10" item="2396" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="5" monster="juggernaut" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="5" monster="lost soul" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="5" monster="spectre" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="10" item="2352" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="5" monster="fire devil" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="10" item="2453" duration="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="healing" interval="1000" chance="500" min="500" max="1000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+
+</monster>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mounts>
 	<mount id="1" clientid="368" name="Widow Queen" speed="20" premium="yes" />
-	<mount id="2" clientid="369" name="Racing Bird" speed="20" premium="yes" />
+	<mount id="2" clientid="369" name="Chocobo" speed="50" premium="yes" />
 	<mount id="3" clientid="370" name="War Bear" speed="20" premium="yes" />
 	<mount id="4" clientid="371" name="Black Sheep" speed="20" premium="yes" />
 	<mount id="5" clientid="372" name="Midnight Panther" speed="20" premium="yes" />
@@ -74,30 +74,33 @@
 	<mount id="72" clientid="685" name="Shadow Hart" speed="20" premium="yes" />
 	<mount id="73" clientid="686" name="Black Stag" speed="20" premium="yes" />
 	<mount id="74" clientid="687" name="Emperor Deer" speed="20" premium="yes" />
-	<mount id="75" clientid="726" name="Flitterkatzen" speed="20" premium="yes" />
-	<mount id="76" clientid="727" name="Venompaw" speed="20" premium="yes" />
-	<mount id="77" clientid="728" name="Batcat" speed="20" premium="yes" />
-	<mount id="78" clientid="734" name="Sea Devil" speed="20" premium="yes" />
-	<mount id="79" clientid="735" name="Coralripper" speed="20" premium="yes" />
-	<mount id="80" clientid="736" name="Plumfish" speed="20" premium="yes" />
-	<mount id="87" clientid="596" name="Dominus Draptor" speed="20" premium="yes" />
-	<mount id="81" clientid="738" name="Gorongra" speed="20" premium="yes" />
-	<mount id="82" clientid="739" name="Noctungra" speed="20" premium="yes" />
-	<mount id="83" clientid="740" name="Silverneck" speed="20" premium="yes" />
-	<mount id="84" clientid="761" name="Slagsnare" speed="20" premium="yes" />
-	<mount id="85" clientid="762" name="Nightstinger" speed="20" premium="yes" />
-	<mount id="86" clientid="763" name="Razorcreep" speed="20" premium="yes" />
-	<mount id="88" clientid="848" name="Rift Runner" speed="20" premium="yes" />
-	<mount id="89" clientid="849" name="Nightdweller" speed="20" premium="yes" />
-	<mount id="90" clientid="850" name="Frostflare" speed="20" premium="yes" />
-	<mount id="91" clientid="851" name="Cinderhoof" speed="20" premium="yes" />
-	<mount id="92" clientid="868" name="Moldpincer" speed="20" premium="yes" />
-	<mount id="93" clientid="869" name="Bloodcurl" speed="20" premium="yes" />
-	<mount id="94" clientid="870" name="Leafscuttler" speed="20" premium="yes" />
-	<mount id="95" clientid="883" name="Sparkion" speed="20" premium="yes" />
-	<mount id="96" clientid="886" name="Swamp Snapper" speed="20" premium="yes" />
-	<mount id="97" clientid="887" name="Mould Shell" speed="20" premium="yes" />
-	<mount id="98" clientid="888" name="Reed Lurker" speed="20" premium="yes" />
-	<mount id="99" clientid="889" name="Neon Sparkid" speed="20" premium="yes" />
-	<mount id="100" clientid="890" name="Vortexion" speed="20" premium="yes" />
+	<mount id="75" clientid="351" name="Ghastly Dragon" speed="100" premium="yes" />
+	<mount id="76" clientid="272" name="Dragon Lord Hatchling" speed="50" premium="yes" />
+	<mount id="77" clientid="726" name="Flitterkatzen" speed="20" premium="yes" />
+	<mount id="78" clientid="727" name="Venompaw" speed="20" premium="yes" />
+	<mount id="79" clientid="728" name="Batcat" speed="20" premium="yes" />
+	<mount id="80" clientid="734" name="Sea Devil" speed="20" premium="yes" />
+	<mount id="81" clientid="735" name="Coralripper" speed="20" premium="yes" />
+	<mount id="82" clientid="736" name="Plumfish" speed="20" premium="yes" />
+	<mount id="83" clientid="596" name="Dominus Draptor" speed="20" premium="yes" />
+	<mount id="84" clientid="738" name="Gorongra" speed="20" premium="yes" />
+	<mount id="85" clientid="739" name="Noctungra" speed="20" premium="yes" />
+	<mount id="86" clientid="740" name="Silverneck" speed="20" premium="yes" />
+	<mount id="87" clientid="761" name="Slagsnare" speed="20" premium="yes" />
+	<mount id="88" clientid="762" name="Nightstinger" speed="20" premium="yes" />
+	<mount id="89" clientid="763" name="Razorcreep" speed="20" premium="yes" />
+	<mount id="90" clientid="271" name="Dragon Hatchling" speed="50" premium="yes" />
+	<mount id="91" clientid="848" name="Rift Runner" speed="20" premium="yes" />
+	<mount id="92" clientid="849" name="Nightdweller" speed="20" premium="yes" />
+	<mount id="93" clientid="850" name="Frostflare" speed="20" premium="yes" />
+	<mount id="94" clientid="851" name="Cinderhoof" speed="20" premium="yes" />
+	<mount id="95" clientid="868" name="Moldpincer" speed="20" premium="yes" />
+	<mount id="96" clientid="869" name="Bloodcurl" speed="20" premium="yes" />
+	<mount id="97" clientid="870" name="Leafscuttler" speed="20" premium="yes" />
+	<mount id="98" clientid="883" name="Sparkion" speed="20" premium="yes" />
+	<mount id="99" clientid="886" name="Swamp Snapper" speed="20" premium="yes" />
+	<mount id="100" clientid="887" name="Mould Shell" speed="20" premium="yes" />
+	<mount id="101" clientid="888" name="Reed Lurker" speed="20" premium="yes" />
+	<mount id="102" clientid="889" name="Neon Sparkid" speed="20" premium="yes" />
+	<mount id="103" clientid="890" name="Vortexion" speed="20" premium="yes" />
 </mounts>

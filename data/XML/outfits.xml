@@ -2,16 +2,16 @@
 <outfits>
 	<!-- Female outfits -->
 	<outfit type="0" looktype="136" name="Citizen" premium="no" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="137" name="Hunter" premium="no" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="138" name="Mage" premium="no" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="139" name="Knight" premium="no" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="140" name="Noblewoman" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="141" name="Summoner" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="142" name="Warrior" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="147" name="Barbarian" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="148" name="Druid" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="149" name="Wizard" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="0" looktype="150" name="Oriental" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="137" name="Hunter" premium="no" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="138" name="Mage" premium="no" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="139" name="Knight" premium="no" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="140" name="Noblewoman" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="141" name="Summoner" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="142" name="Warrior" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="147" name="Barbarian" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="148" name="Druid" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="149" name="Wizard" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="0" looktype="150" name="Oriental" premium="yes" unlocked="no" enabled="yes" />
 	<outfit type="0" looktype="155" name="Pirate" premium="yes" unlocked="no" enabled="yes" />
 	<outfit type="0" looktype="156" name="Assassin" premium="yes" unlocked="no" enabled="yes" />
 	<outfit type="0" looktype="157" name="Beggar" premium="yes" unlocked="no" enabled="yes" />
@@ -52,20 +52,20 @@
 	<outfit type="0" looktype="759" name="Pumpkin Head" premium="yes" unlocked="0" enabled="1" />
 	<outfit type="0" looktype="845" name="Rift Warrior" premium="yes" unlocked="0" enabled="1" />
 	<outfit type="0" looktype="852" name="Winter Warden" premium="yes" unlocked="0" enabled="1" />
-	<outfit type="0" looktype="873" name="Philosopher" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="0" looktype="874" name="Philosopher" premium="yes" unlocked="0" enabled="1" />
 
 	<!-- Male outfits -->
 	<outfit type="1" looktype="128" name="Citizen" premium="no" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="129" name="Hunter" premium="no" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="130" name="Mage" premium="no" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="131" name="Knight" premium="no" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="132" name="Nobleman" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="133" name="Summoner" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="134" name="Warrior" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="143" name="Barbarian" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="144" name="Druid" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="145" name="Wizard" premium="yes" unlocked="yes" enabled="yes" />
-	<outfit type="1" looktype="146" name="Oriental" premium="yes" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="129" name="Hunter" premium="no" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="130" name="Mage" premium="no" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="131" name="Knight" premium="no" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="132" name="Nobleman" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="133" name="Summoner" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="134" name="Warrior" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="143" name="Barbarian" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="144" name="Druid" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="145" name="Wizard" premium="yes" unlocked="no" enabled="yes" />
+	<outfit type="1" looktype="146" name="Oriental" premium="yes" unlocked="no" enabled="yes" />
 	<outfit type="1" looktype="151" name="Pirate" premium="yes" unlocked="no" enabled="yes" />
 	<outfit type="1" looktype="152" name="Assassin" premium="yes" unlocked="no" enabled="yes" />
 	<outfit type="1" looktype="153" name="Beggar" premium="yes" unlocked="no" enabled="yes" />
@@ -106,5 +106,7 @@
 	<outfit type="1" looktype="760" name="Pumpkin Head" premium="yes" unlocked="0" enabled="1" />
 	<outfit type="1" looktype="846" name="Rift Warrior" premium="yes" unlocked="0" enabled="1" />
 	<outfit type="1" looktype="853" name="Winter Warden" premium="yes" unlocked="0" enabled="1" />
-	<outfit type="1" looktype="874" name="Philosopher" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="1" looktype="873" name="Philosopher" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="1" looktype="193" name="Vlad Outfit" premium="0" unlocked="0" enabled="1" />
+	<outfit type="1" looktype="309" name="Yalahari" premium="0" unlocked="0" enabled="1" />
 </outfits>

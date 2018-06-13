@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Dark Hunter" species="human" nameDescription="a dark hunter" race="blood" experience="3000" speed="210" manacost="0">
+    <health now="20000" max="20000"/>
+    <look type="129" head="95" body="114" legs="114" feet="114" corpse="3128"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="5"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="peircing bolt" interval="40" chance="100" min="-800" max="-1200"/>
+      <attack name="kgm" interval="1000" chance="40" range="10" radius="12" target="1" min="-800" max="-1200"/>
+    </attacks>
+     <defenses armor="28" defense="29">
+      <defense name="ultimate healing" interval="3000" chance="60" min="1000" max="1500"/>
+      <defense name="haste" interval="4000" chance="60"/>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="0"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <voices interval="1000" chance="5">
+      <voice sentence="Out For Blood"/>
+    </voices>
+    <loot>
+     
+      <item id="2465" chance="10000"/>
+      <item id="2461" chance="10000"/>
+      <item id="2649" chance="10000"/>
+      <item id="2671" countmax="2" chance1="20000" chancemax="0"/>
+      <item id="1988" chance="100000">
+        <inside>
+          <item id="2456" chance="6666"/>
+          <item id="2544" countmax="15" chance1="10000" chancemax="0"/>
+          <item id="2546" countmax="5" chance1="10000" chancemax="0"/>
+          <item id="2675" countmax="4" chance1="6666" chancemax="0"/>
+          <item id="2050" chance="20000"/>
+          <item id="2478" chance="3333"/>
+          <item id="2652" chance="2222"/>
+          <item id="2201" chance="2500"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

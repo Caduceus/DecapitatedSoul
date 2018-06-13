@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="traveling matt" script="default.lua" walkinterval="2000" floorchange="1" speechbubble="2">
+  <health now="100" max="100" />
+  <look type="750" head="57" body="116" legs="116" feet="116" addons="0" />
+<parameters>
+		<parameter key="message_greet" value="Hello there fellow thrill-seeker. I sell all sorts of articles, but I tend to need help sometimes. If I do not sell your item, you may put in a request with Caduceus. Thank you, for playing with us here at Decapitated Soul."/>
+		<parameter key="message_decline" value="Fine, get the hell outta here!"/>
+		<parameter key="message_sendtrade" value="of course, always apt to help others, when in need! Ha Ha! For a fee.."/>
+		<parameter key="message_walkaway_male" value="Good Day. Sir."/>
+		<parameter key="message_walkaway_female" value="Cheerio! Madam. Do come again."/>
+<!--SHOP-->
+<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="stone skin amulet,2197,250000,1000" />
+		
+		<parameter key="shop_sellable" value="ring of the sky,2123,30000"/>
+</parameters>
+</npc>
+

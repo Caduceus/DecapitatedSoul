@@ -1,0 +1,3 @@
+<flag canwalkonenergy="0" />
+<flag canwalkonfire="0" />
+<flag canwalkonpoison="0" />

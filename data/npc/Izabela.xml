@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Izabela" script="IzabelaMission.lua" walkinterval="2000" speed="100" walkradius="0" floorchange="0" speechbubble="3">
+	<health max="100" now="100"/>
+	<look type="157" head="116" body="57" legs="86" feet="114" addons="0" mount="0"/>
+	<parameters>
+		<!--MESSAGES-->
+		<parameter key="message_greet" value="Shhh, Keep your voice down! You want to end up in here too?"/>
+		<parameter key="message_noshop" value="Where am I supposed to get anything to sell you?"/>
+		<parameter key="message_walkaway_male" value="Hope your day is better than mine, Sir."/>
+		<parameter key="message_walkaway_female" value="Hope your day is better than mine, Madam."/>
+		<!--SHOP-->
+		<parameter key="module_shop" value="1"/>
+	</parameters>
+</npc>

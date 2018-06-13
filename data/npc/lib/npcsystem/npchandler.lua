@@ -33,6 +33,7 @@ if NpcHandler == nil then
 	MESSAGE_ALREADYFOCUSED = 21 -- When the player already has the focus of this npc.
 	MESSAGE_WALKAWAY_MALE = 22 -- When a male player walks out of the talkRadius of the npc.
 	MESSAGE_WALKAWAY_FEMALE = 23 -- When a female player walks out of the talkRadius of the npc.
+	MESSAGE_WTF = 24 -- No money, WTF.
 
 	-- Constant indexes for callback functions. These are also used for module callback ids.
 	CALLBACK_CREATURE_APPEAR = 1
@@ -83,7 +84,8 @@ if NpcHandler == nil then
 			[MESSAGE_BOUGHT] = "Bought |ITEMCOUNT|x |ITEMNAME| for |TOTALCOST| gold.",
 			[MESSAGE_SELL] = "Do you want to sell |ITEMCOUNT| |ITEMNAME| for |TOTALCOST| gold coins?",
 			[MESSAGE_ONSELL] = "Here you are, |TOTALCOST| gold.",
-			[MESSAGE_SOLD] = "Sold |ITEMCOUNT|x |ITEMNAME| for |TOTALCOST| gold.",
+			[MESSAGE_SOLD] = "Sold |ITEMCOUNT|x |ITEMNAME|. |TOTALCOST| gold deposited into your bank. ",
+			[MESSAGE_WTF] = "Sorry |PLAYERNAME|, but I only only accept cash for my backpacks of supplies.",
 			[MESSAGE_MISSINGMONEY] = "You don't have enough money.",
 			[MESSAGE_NEEDMONEY] = "You don't have enough money.",
 			[MESSAGE_MISSINGITEM] = "You don't have so many.",

@@ -22,17 +22,13 @@ function onSay(player, words, param)
 	if count ~= nil then
 		if itemType:isStackable() then
 			count = math.min(10000, math.max(1, count))
-		elseif not itemType:isFluidContainer() then
+		elseif not itemType:hasSubType() then
 			count = math.min(100, math.max(1, count))
 		else
-			count = math.max(0, count)
+			count = math.max(1, count)
 		end
 	else
-		if not itemType:isFluidContainer() then
-			count = 1
-		else
-			count = 0
-		end
+		count = 1
 	end
 
 	local result = player:addItem(itemType:getId(), count)

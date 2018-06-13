@@ -845,11 +845,16 @@ bool MoveEvent::executeStep(Creature* creature, Item* item, const Position& pos,
 
 uint32_t MoveEvent::fireEquip(Player* player, Item* item, slots_t slot, bool boolean)
 {
-	if (scripted) {
-		return executeEquip(player, item, slot);
-	} else {
-		return equipFunction(this, player, item, slot, boolean);
-	}
+    if (scripted) {
+        if (getEventType() == MOVE_EVENT_EQUIP) {
+            EquipItem(this, player, item, slot, boolean);
+        } else if (getEventType() == MOVE_EVENT_DEEQUIP) {
+            DeEquipItem(this, player, item, slot, boolean);
+        }
+        return executeEquip(player, item, slot);
+    } else {
+        return equipFunction(this, player, item, slot, boolean);
+    }
 }
 
 bool MoveEvent::executeEquip(Player* player, Item* item, slots_t slot)

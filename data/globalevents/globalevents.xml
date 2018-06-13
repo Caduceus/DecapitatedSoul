@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <globalevents>
-	<globalevent type="startup" name="ServerStartup" script="startup.lua" />
-	<globalevent type="record" name="PlayerRecord" script="record.lua" />
-	<globalevent name="Server Save" time="09:55:00" script="serversave.lua" />
+	<globalevent type="startup" name="ServerStartup" script="startup.lua"/>
+	<globalevent type="startup" name="traveling_matt_spawn" script="spawn/traveling_matt_spawn.lua"/>
+	<globalevent type="record" name="PlayerRecord" script="record.lua"/>
+	<globalevent name="save" interval="7200000" script="save.lua"/>
+	<globalevent name="text" interval="5000" script="text.lua"/>
+	<globalevent name="autoBroadcast" interval="3600000" script="broadcast.lua" />
+	<globalevent name="PowerGamers" interval="60000" script="powergamers.lua"/>
+	<!--globalevent type="startup" name="CleanHouses" script="cleanhouses.lua" /-->
+	<!--globalevent type="startup" name="CleanPlayers" script="cleanplayers.lua"/-->
+	<!--globalevent name="effect" interval="3000" script="effect.lua"/-->
+	<!--globalevent name="Server Save" time="23:55:00" script="serversave.lua" /> --reactivate
+	<!--globalevent name="zombieEvent" interval="14400000" script="zombieEvent.lua"/>
+	
+	<!-- Demon Oak Quest -->
+	<globalevent name="DemonOakVoices" interval="15000" script="demon oak quest/voices.lua"/>
+	
+	<!-- World Changes -->
+	<globalevent name="Drogheda" type="startup" script="worldchanges/test.lua" />
+	
+	<!--globalevent name="BossSystem" interval="3600000" script="spawn/BossSpawn.lua"/>
+
 	<!--
-	<globalevent name="timer_example" time="12:00:00" script="my_script.lua" />
+	<globalevent name="timer_example" time="12:00:00" script="my_script.lua"/>
 	-->
 </globalevents>
+
+

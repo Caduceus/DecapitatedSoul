@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Templar Guardian" nameDescription="a templar guardian" race="blood" experience="0" speed="500" manacost="300">
+    <health now="5000" max="5000"/>
+    <look type="134" head="95" body="79" legs="115" feet="95" corpse="0"/>
+    <targetchange interval="0" chance="0"/>
+    <strategy attack="0" defense="100"/>
+    <flags>
+        <flag summonable="0"/>
+        <flag attackable="1"/>
+        <flag hostile="0"/>
+        <flag illusionable="0"/>
+        <flag convinceable="1"/>
+        <flag pushable="1"/>
+        <flag canpushitems="0"/>
+        <flag canpushcreatures="0"/>
+        <flag targetdistance="4"/>
+        <flag runonhealth="400"/>
+    </flags>
+
+    <script>
+        <event name="Templar"/>
+    </script>
+
+    <attacks>
+    </attacks>
+    <defenses armor="20" defense="14">
+    <defense name="healing" interval="2000" chance="40" min="100" max="300">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    </defenses>
+    <immunities>
+        <immunity physical="0"/>
+        <immunity energy="0"/>
+        <immunity fire="0"/>
+        <immunity poison="0"/>
+        <immunity lifedrain="0"/>
+        <immunity paralyze="1"/>
+        <immunity outfit="1"/>
+        <immunity drunk="1"/>
+        <immunity invisible="1"/>
+    </immunities>
+    <voices interval="40000" chance="30">
+        <voice sentence="" />
+    </voices>
+</monster>

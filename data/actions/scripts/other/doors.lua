@@ -18,11 +18,11 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		return true
 	elseif isInArray(keys, itemId) then
 		if target.actionid > 0 then
-			if item.actionid == target.actionid and doors[target.itemid] then
+			if item.actionid == target.actionid and doors[target.itemid] and player:getStorageValue(item.actionid) ~= -1 then
 				target:transform(doors[target.itemid])
 				return true
 			end
-			player:sendTextMessage(MESSAGE_STATUS_SMALL, "The key does not match.")
+			player:sendTextMessage(MESSAGE_STATUS_SMALL, "The key does not work.")
 			return true
 		end
 		return false

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Frost Giant" nameDescription="a frost giant" race="blood" experience="20000" speed="200" manacost="490">
+	<health now="20000" max="20000"/>
+	<look type="257" corpse="7330"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="80"/>
+		<flag lightlevel="4"/>
+		<flag lightcolor="14"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="120" attack="140"/>
+		<attack name="physical" interval="2000" chance="45" range="7" min="-1000" max="-1500">
+			<attribute key="shootEffect" value="ice"/>
+		</attack>
+	</attacks>
+	<defenses armor="60" defense="60">
+		<defense name="speed" interval="2000" chance="15" speedchange="300" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity ice="1"/>
+	</immunities>
+	<summons maxSummons="2">
+		<summon name="winter wolf" interval="2000" chance="20" max="2"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hmm Humansoup"/>
+		<voice sentence="Stand still ya tasy snack!"/>
+		<voice sentence="Joh Thun!"/>
+		<voice sentence="Brore Smode!"/>
+		<voice sentence="Horre Sjan Flan!"/>
+		<voice sentence="Forle Bramma!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="50" chance="100000"/><!-- platinum coin -->
+		<item id="2666" countmax="2" chance="4970"/><!-- meat -->
+		<item id="7441" chance="2180"/><!-- ice cube -->
+		<item id="7460" chance="2500"/><!-- norse shield -->
+		<item id="2431" chance="5500"/><!-- stonecutter axe -->
+		<item id="7290" chance="1000"/><!-- shard -->
+		<item id="2209" chance="8300"/><!-- club ring -->
+		<item id="7590" countmax="100" chance="2440"/><!-- great health potion -->
+		<!--item id="10575" chance="5000"/><!-- Frost Giant Pelt -->
+	</loot>
+</monster>

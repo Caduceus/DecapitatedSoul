@@ -17,13 +17,13 @@ condition:setOutfit(0, 243, 0, 0, 0, 0)
 condition:setOutfit(0, 244, 0, 0, 0, 0)
 condition:setOutfit(0, 245, 0, 0, 0, 0)
 condition:setOutfit(0, 246, 0, 0, 0, 0)
-condition:setOutfit(0, 247, 0, 0, 0, 0)
+--condition:setOutfit(0, 247, 0, 0, 0, 0)
 
 local combat = Combat()
 combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_MAGIC_GREEN)
-combat:setArea(createCombatArea(AREA_SQUARE1X1))
+combat:setArea(createCombatArea((AREA_CIRCLE2X2)))
 combat:setCondition(condition)
 
-function onCastSpell(creature, variant, isHotkey)
-	return combat:execute(creature, variant)
+function onCastSpell(creature, var, isHotkey)
+	return combat:execute(creature, var)
 end

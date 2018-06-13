@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Vanir" nameDescription="a vanir" race="undead" experience="2500000" speed="600" manacost="1000">
+<health now="450000" max="450000"/>
+<look type="12" head="20" body="82" legs="40" feet="50" corpse="6068"/>
+<targetchange interval="5000" chance="8"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="1"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="1"/>
+<flag staticattack="90"/>
+<flag targetdistance="1"/>
+<flag runonhealth="0"/>
+<flag lightlevel="10"/>
+<flag lightcolor="85"/>
+</flags>
+<attacks>
+<attack name="melee" interval="1000" skill="150" attack="300"/>
+<attack name="vanir death" interval="2500" chance="90" min="-666" max="-900"/>
+<attack name="heavy magic missile" interval="4000" chance="90" min="-500" max="-800"/>
+<attack name="lifedrain" interval="2000" chance="80" radius="8" target="0" min="-666" max="-700">
+        <attribute key="areaEffect" value="bluebubble"/>
+      </attack>
+ <attack name="outfit" interval="6000" chance="80" radius="8" target="0" item="460" duration="2000">
+        <attribute key="areaEffect" value="greenshimmer"/>
+      </attack>
+</attacks>
+<defenses armor="40" defense="30">
+<defense name="healing" interval="10000" chance="80" min="1000" max="2000">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+<defense name="Invisible" interval="4000" chance="40"/>
+<defense name="outfit" interval="2000" chance="50" monster="dark force" duration="10000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+</defenses>
+	<elements>
+		<element energyPercent="10"/>
+		<element firePercent="-15"/>
+		<element icePercent="-15"/>
+		<element physicalPercent="40"/>
+	</elements>
+	<immunities>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+		<immunity earth="1"/>
+	</immunities>
+<voices interval="5000" chance="40">
+<voice sentence="You cannot handle me!"/>
+<voice sentence=""/>
+</voices>
+  <loot>
+    <item id="5926" chance="100000"> --Bag
+      <inside>
+        <item id="2159" countmax="6" chance1="100000" chancemax="80"/> --Scarab Coins
+        <item id="6103" text="Please be fair to those in your hunting party, share loot evenly!" chance="100000"/>   
+      </inside>
+    </item>
+  </loot>
+</monster>

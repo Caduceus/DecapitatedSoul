@@ -123,7 +123,7 @@ struct Skill {
 
 typedef std::map<uint32_t, uint32_t> MuteCountMap;
 
-#define PLAYER_MAX_SPEED 1500
+#define PLAYER_MAX_SPEED 5000 // 1500 = default max 65535
 #define PLAYER_MIN_SPEED 10
 
 class Player final : public Creature, public Cylinder

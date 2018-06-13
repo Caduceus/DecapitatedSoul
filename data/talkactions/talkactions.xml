@@ -9,7 +9,7 @@
 	<talkaction words="/c" separator=" " script="teleport_creature_here.lua" />
 	<talkaction words="/goto" separator=" " script="teleport_to_creature.lua" />
 	<talkaction words="/owner" separator=" " script="owner.lua" />
-	<talkaction words="/t" script="teleport_home.lua" />
+	<talkaction words="/t" separator=" " script="teleport_home.lua" />
 	<talkaction words="/town" separator=" " script="teleport_to_town.lua" />
 	<talkaction words="/a" separator=" " script="teleport_ntiles.lua" />
 	<talkaction words="/pos" separator=" " script="position.lua" />
@@ -18,6 +18,8 @@
 	<talkaction words="/kick" separator=" " script="kick.lua" />
 	<talkaction words="/openserver" script="openserver.lua" />
 	<talkaction words="/closeserver" separator=" " script="closeserver.lua" />
+	<!--/closeserver shutdown -->
+	<talkaction words="/shutdown" separator=" " script="shutdown.lua" />
 	<talkaction words="/B" separator=" " script="broadcast.lua" />
 	<talkaction words="/m" separator=" " script="place_monster.lua" />
 	<talkaction words="/i" separator=" " script="create_item.lua" />
@@ -28,26 +30,72 @@
 	<talkaction words="/summon" separator=" " script="place_summon.lua" />
 	<talkaction words="/chameleon" separator=" " script="chameleon.lua" />
 	<talkaction words="/addskill" separator=" " script="add_skill.lua" />
+	
+	<!--
+	/addskill richux, level ----gives you lvl
+	/addskill richux, mlvl ----gives player mlvl
+	/addskill richux, axe ----gives player axe fighting
+	/addskill richux, sword ----gives player sword fighting
+	/addskill richux, club ----gives player club fighting
+	/addskill richux, distance ---------gives player distance-->
+	<talkaction words="/mounts" separator=" " script="allmounts.lua"/>
+	<talkaction words="/addons" separator=" " script="alladdons.lua"/>
 	<talkaction words="/mccheck" script="mccheck.lua" />
 	<talkaction words="/ghost" script="ghost.lua" />
 	<talkaction words="/clean" script="clean.lua" />
+	<talkaction words="/houseclean" script="house_clean.lua" />
 	<talkaction words="/hide" script="hide.lua" />
-	<talkaction words="/test" script="test.lua" />
+	<talkaction words="/vip" separator=" " script="vipcommand.lua" />
+	<talkaction words="/jail" separator=" " script="jail.lua" />
+    <talkaction words="/unjail" separator=" " script="jail.lua" />
+    <talkaction words="/test" script="test.lua" />
+	<!-- 
+	- /vip adddays, PlayerName, 5
+	- Adds 5 vip days to PlayerName.
+	- /vip removedays, PlayerName, 5
+	- Removes 5 vip days from PlayerName.
+	- /vip remove, PlayerName
+	- Remove all vip days from PlayerName.
+	- /vip check, PlayerName
+	- Check how many vip days PlayerName has.
+	- /vip addinfinite, PlayerName
+	- Add infinite vip time to PlayerName.-->
+	
 
 	<!-- player talkactions -->
-	<talkaction words="!buypremium" script="buyprem.lua" />
-	<talkaction words="!buyhouse" script="buyhouse.lua" />
-	<talkaction words="!leavehouse" script="leavehouse.lua" />
-	<talkaction words="!changesex" script="changesex.lua" />
-	<talkaction words="!uptime" script="uptime.lua" />
-	<talkaction words="!deathlist" script="deathlist.lua" />
-	<talkaction words="!kills" script="kills.lua" />
-	<talkaction words="!online" script="online.lua" />
-	<talkaction words="!serverinfo" script="serverinfo.lua" />
- 	<talkaction words="!cast" separator=" " script="start_cast.lua" />
+	<talkaction words="!aol" script="aol.lua"/>
+	<talkaction words="!bless" script="bless_rune.lua"/>
+	<talkaction words="!broadcast" separator=" " script="player_broadcast.lua"/>
+	<!--talkaction words="!buypremium" script="buyprem.lua"/-->
+	<talkaction words="!buyhouse" script="buyhouse.lua"/>
+	<talkaction words="!coin" script="coinTime.lua"/>
+	<talkaction words="!leavehouse" script="leavehouse.lua"/>
+	<!--talkaction words="!changesex" script="changesex.lua"/-->
+	<talkaction words="!uptime" script="uptime.lua"/>
+	<talkaction words="!deathlist" separator=" " script="deathlist.lua"/>
+	<talkaction words="!kills" script="kills.lua"/>
+	<talkaction words="!online" script="online.lua"/>
+	<talkaction words="!set" script="starlighttp.lua"/>
+	<talkaction words="!serverinfo" script="serverinfo.lua"/>
+	<talkaction words="!spells" script="spellbook.lua"/>
+	<talkaction words="!portal" script="portal.lua"/>
+	<talkaction words="!report" separator=" " script="adminreport.lua"/>
+	<talkaction words="!checkvip" separator=" " script="checkvip.lua"/>
+	<talkaction words="!afk" separator=" " script="afk.lua"/>
+	<talkaction words="!commands" script="commands.lua"/>
+	<talkaction words="!god" script="commands_god.lua"/>
+	<talkaction words="!cast" separator=" " script="start_cast.lua" />
 	<talkaction words="!stopcast" script="stop_cast.lua" />
-
+	<talkaction words="!shop" script="znoteshop.lua"/>
+	<talkaction words="!save" script="playerSave.lua"/>
+	<talkaction words="!t" script="temple.lua"/>
+	<talkaction words="!zombie" separator=" " script="zombieEventCommands.lua" />
+	<talkaction words="!minfo" separator=" " script="monster_info.lua" />
+	<talkaction words="!mloot" separator=" " script="monster_loot.lua" />
+	<talkaction words="!rank" separator=" " script="rank.lua"/>
+	<talkaction words="!autoloot" separator=" " script="autoloot.lua"/>
+		
 	<!-- test talkactions -->
-	<talkaction words="!z" separator=" " script="magiceffect.lua" />
-	<talkaction words="!x" separator=" " script="animationeffect.lua" />
+	<talkaction words="!z" separator=" " script="magiceffect.lua"/>
+	<talkaction words="!x" separator=" " script="animationeffect.lua"/>
 </talkactions>

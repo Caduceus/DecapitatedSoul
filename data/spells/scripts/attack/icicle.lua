@@ -1,7 +1,8 @@
 local combat = Combat()
 combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_ICEDAMAGE)
-combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_ICEATTACK)
-combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_SMALLICE)
+combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_ICEAREA)
+combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_ICE)
+combat:setParameter(COMBAT_PARAM_PVPDAMAGE, 300)
 
 function onGetFormulaValues(player, level, maglevel)
 	local min = (level / 5) + (maglevel * 1.8) + 12
@@ -11,6 +12,6 @@ end
 
 combat:setCallback(CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 
-function onCastSpell(creature, variant, isHotkey)
-	return combat:execute(creature, variant)
+function onCastSpell(creature, var, isHotkey)
+	return combat:execute(creature, var)
 end

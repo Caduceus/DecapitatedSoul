@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<monster name="Trainer" nameDescription="a training monk" level="0" experience="0" manacost="0" speed="350" race="2">
+  <health now="9999999" max="9999999"/>
+  <strategy attack="100" defense="0"/>
+  <targetchange speed="1" chance="0"/>
+  <flags canpushitems="0" summonable="0" hostile="1" attackable="1" illusionable="0" convinceable="0" pushable="1" staticattack="0" targetdistance="0" runonhealth="0"/>
+  <look type="57" head="20" body="30" legs="40" feet="50" addons="0" corpse="3128"/>
+  <attacks>
+    <attack name="throwing knife" chance="120" speed="250" max="1" range="1"/>
+  </attacks>
+  <defenses defense="0" armor="0">
+   <defense name="invisible" interval="10000" chance="0" duration="100">
+			<attribute key="areaEffect" value="redshimmer"/>
+			</defense>
+    <defense name="ultimate healing" chance="2000" speed="10000" min="500000000" max="500000000"/>
+  </defenses>
+<attacks>
+<attack name="imitate" interval="1000" chance="500" range="20" min="0" max="0">
+  </attack>
+  </attacks>
+<loot>
+    <item id="2148" countmax="20" chancemax="0" chance1="100000"/>
+    <item id="1949" chance="10000"/>
+    <item id="2467" chance="10000"/>
+    <item id="2642" chance="6666"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2044" chance="6666"/>
+        <item id="2689" countmax="3" chancemax="0" chance1="20000"/>
+        <item id="2401" chance="3333"/>
+        <item id="2166" chance="1428"/>
+      </inside>
+    </item>
+  </loot>
+
+
+</monster>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Sandra" script="furniture.lua" walkinterval="4000" speed="100" walkradius="2" floorchange="0">
+	<health max="100" now="100"/>
+	<look type="431" head="96" body="45" legs="114" feet="114" addons="0" mount="0"/>
+	<parameters>
+		<!--MESSAGES-->
+		<parameter key="message_greet" value="Hi there, |PLAYERNAME|."/>
+		<parameter key="message_farewell" value="See ya, |PLAYERNAME|."/>
+		<parameter key="message_walkaway_male" value="AND GOOD BYE YOU TOO!"/>
+		<parameter key="message_walkaway_female" value="AND GOOD BYE YOU TOO!"/>
+		<!--SHOP-->
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="k,3901,15;k,3902,55;k,3903,40;k,3904,40;k,3905,25;k,3906,25;k,3907,25;k,2093,40;k,3908,25;k,3909,3000;k,3910,25;k,3911,25;k,3912,20;k,3913,30;k,3914,25;k,3915,10;k,3916,12;k,3917,50;k,3918,50;k,3919,25;k,3920,20;k,3921,18;k,3922,30;k,3923,30;k,3924,30;k,2107,300;k,2100,5;k,2104,5;k,2103,5;k,2102,6;k,3925,10;k,3926,200;k,3927,50;k,3928,25;k,3929,8;k,3930,10;k,3931,50;k,3932,25;k,3933,75;k,3934,30;k,3935,7;k,3936,40;k,3937,35;k,3938,70;k,5086,10;k,5087,10;k,5088,12;k,6114,90;k,6115,90;k,6372,10;k,6373,50;k,5928,50;k,8692,200;k,1872,25;k,1860,25;k,1866,25;k,1857,25;k,1869,25;k,1880,25;k,1863,25;k,9959,80;k,1678,20;k,1679,20;k,1680,20;k,1681,20;k,1682,500;k,1683,20;k,1684,20;k,1685,30;k,1686,25;k,1687,25;k,1688,25;k,1689,25;k,1690,25;k,1691,25;k,1692,25;k,1693,25;k,1845,40;k,1848,40;k,1851,40;k,7904,80;k,7905,80;k,7906,80;k,7907,80;k,9974,100;k,11126,100;k,11133,100;k,11205,500;k,14328,10;k,14329,10;k,16075,50;k,16099,500;k,20252,100;k,20254,100;k,20255,100;k,20257,100;k,1852,50;k,1853,50;k,1854,50"/>
+	</parameters>
+</npc>

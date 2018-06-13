@@ -1,14 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quests>
-	<quest name="Example Quest I" startstorageid="1001" startstoragevalue="1">
-		<mission name="Example Mission 1" storageid="1001" startvalue="1" endvalue="3">
-			<missionstate id="1" description="Example description 1" />
-			<missionstate id="2" description="Example description 2" />
-			<missionstate id="3" description="Example description 3" />
-		</mission>
-		<mission name="Example Mission 2" storageid="1001" startvalue="4" endvalue="5">
-			<missionstate id="4" description="Example description 1" />
-			<missionstate id="5" description="Example description 2" />
+<quest name="Benjis Plans" startstorageid="12555" startstoragevalue="1">
+                <mission name="Find Benjis Stolen Plans" storageid="12555" startvalue="1" endvalue="2">
+                        <missionstate id="1" description="You have been sent to find Benjis stolen ship building plans." />
+                        <missionstate id="2" description="You have found Benjis plans and returned them!" />
+                </mission>
+    </quest>
+
+<quest name="Hungry man." startstorageid="45555" startstoragevalue="1">
+		<mission name= "Search & destroy" storageid="45555" startvalue="1" endvalue="2">
+			<missionstate id="1" description="Hello there stranger. Might you do a quest for me? I obviously cannot get out of here. \nExcellent, you can:\n Kill: \n15 Skeleton \n\nCollect: \n12 Bat Wings"/>
+			<missionstate id="2" description="You have finished this quest."/>
 		</mission>
 	</quest>
+
+<quest name="Pick it, Pick it good." startstorageid="45552" startstoragevalue="1">
+		<mission name="Search & destroy" storageid="45552" startvalue="1" endvalue="2" description="Kill: \n10 Carrion Worms \n\nCollect: \n10 Carrion Worm Fang" />
+		<mission name="Complete" storageid="45552" startvalue="2" endvalue="2" description="You have completed this quest" />
+	</quest>
+	
+	<quest name="Rat, tat, tat...Tits" startstorageid="45553" startstoragevalue="1">
+		<mission name= "Johns list." storageid="45553" startvalue="1" endvalue="2">
+			<missionstate id="1" description="Collect: 12 Little Black Books, 10 Red Cloths, 1 Red Rose | Kill: 20 Heros"/>
+			<missionstate id="2" description="You have finished this quest."/>
+		</mission>
+	</quest>
+	
+		<quest name="Soraya's Vengeance" startstorageid="45551" startstoragevalue="0" endvalue="7">
+			<mission name="Vengeance: Cyclops" storageid="45551" startvalue="1" endvalue="7" description="Great, for your first quest you need to collect some items, I need. \n\nCollect: \n10 Cyclops Toes" />
+			<mission name="Vengeance: Hatchlings" storageid="45551" startvalue="2" endvalue="7" description="Thanks, for your next quest kill.\n\nKill: \n20 Dragon Lord Hatchling \n20 Dragon Hatchling" />
+			<mission name="Vengeance: Dragons" storageid="45551" startvalue="3" endvalue="7" description="Now that you've taken care of those pesky hatchlings. Go kill some dragons and bring me..\n\nCollect: \n40 Green Dragon Leather \n40 Green Dragon Scales" />
+			<mission name="Vengeance: Vampires" storageid="45551" startvalue="4" endvalue="7" description="Good job, now kill off those damned blood suckers and bring me: \n\nCollect: \n20 Vampire Teeth \n20 Blood Preservation" />
+			<mission name="Vengeance: Dragon Lords" storageid="45551" startvalue="5" endvalue="7" description="Good, there are a few more items you need to get. \n\nCollect: \n40 Red Dragon Leather \n40 Red Dragon Scales" />
+			<mission name="Vengeance: Stormblast" storageid="45551" startvalue="6" endvalue="7" description="Good job, now rid us of.. \n\nKill: \nStormblast" />
+			<mission name="Vengeance: Complete" storageid="45551" startvalue="7" endvalue="7" description="You have completed Soraya's Vengeance. Thank you for playing with us on Decapitated Soul." />
+	</quest>
+	
+	<quest name="Lilith's Reign of Terror" startstorageid="45556" startstoragevalue="0" endvalue="11">
+		<mission name="Reign of Terror: Hydra" storageid="45556" startvalue="1" endvalue="2" description="For your first stop, use the gargoyle statue just above Riona. Make your way to Queimada.\n\nKill: \n100 Hydra \n\nCollect: \n40 Hydra Head \n40 Hydra Tongues" />
+		<mission name="Reign of Terror: Demodras" storageid="45556" startvalue="2" endvalue="9" description="Ok, next you will have to pass beyond the dragons of Droghead to...\n\nKill: \n100 Demodras \n\nCollect: \n50 Dragon Tears" />
+		<mission name="Reign of Terror: Sorcerer Genocide" storageid="45556" startvalue="3" endvalue="9" description="Within the Queimada forests, you will find a circle of casting. Use this to..\n\nKill: \n100 Warlocks \n50 Infernalists \n50 Fury \n\nCollect: \n20 Luminous Orb \n20 Magic Sulphur" />
+		<mission name="Reign of Terror: Venture Into The Underworld" storageid="45556" startvalue="4" endvalue="9" description="The figures from the past stand tall. \n\n Kill: \n100 Lost Souls \n20 Dark Torturers \n\n Collect: \n40 Unholy Bones \n5 Cat's Paws" />
+		<mission name="Reign of Terror: Demon" storageid="45556" startvalue="5" endvalue="9" description="Time to face your fears. Infernal punishments must pursue. \n\nKill: \n100 Demons \n\nCollect: \n40 Demon Dust \n40 Demon Horn \n40 Talon" />
+		<mission name="Reign of Terror: Orshabaal" storageid="45556" startvalue="6" endvalue="9" description="Like the Bermuda Triangle, she swallows her victims whole. \n\nKill: \n50 Orshabaal \n\nCollect: \n20 Mangled Hands" />
+		<mission name="Reign of Terror: Juggernaut" storageid="45556" startvalue="7" endvalue="9" description="I Have Suffered For Your Sins, But Now Is When The Fun Begins. \n\nKill: \n50 Juggernauts \n\nCollect: \n20 Juggernaut Teeth" />
+		<mission name="Reign of Terror: Ghastly Dragon" storageid="45556" startvalue="8" endvalue="9" description="We venture now to Alexandria, a land of rebellion. \n\nKill: \n50 Ghastly Dragons \n\nCollect: \n20 Broken halbert \n20 Undead Hearts" />
+		<mission name="Reign of Terror: Frost Dragon" storageid="45556" startvalue="9" endvalue="10" description="Your time has come. Venture deep into the Frozen Wastes.\n\nKill: \n50 Frost Dragons \n\nCollect: \n20 Frosty Hearts" />
+		<mission name="Reign of Terror: Enter Frozen Hell" storageid="45556" startvalue="10" endvalue="11" description="Your soul is now intune with the evil at hand. Time to face your greatest fears. Make your way deep into the Frozen Wastes. The labyrinth awaits! \n\nKill: \n20 Soul Reapers \n1 Angel of Death" />
+		<mission name="Reign of Terror: Enter Frozen Hell" storageid="45556" startvalue="11" endvalue="11" description="Congratulations on your completion of my quest chain. I have brought you through Hell and back. Thank you for taking the time to take the adventures presented to you! ~ Caduceus" />
+	</quest>
+
+
+<!--quest name="Lilith's Reign of Terror" startstorageid="45556" startstoragevalue="1">
+		<mission name= "Terror Strikes." storageid="45556" startvalue="1" endvalue="9">
+			<missionstate id="1" description="For your first stop, use the gargoyle statue just above Riona. Make your way to Queimada.\n\nKill: \n100 Hydra \n\nCollect: \n40 Hydra Head \n40 Hydra Tongues" />
+			<missionstate id="2" description="test 2"/>
+			<missionstate id="3" description="test 3"/>
+			<missionstate id="4" description="test 4"/>
+			<missionstate id="5" description="test 5"/>
+			<missionstate id="6" description="test 6"/>
+			<missionstate id="7" description="test 7"/>
+			<missionstate id="8" description="test 8"/>
+			<missionstate id="9" description="Your time has come. Venture deep into the Frozen Wastes.\n\nKill: \n50 Frost Dragons \n\nCollect: \n20 Frosty Hearts" />
+		</mission>
+	</quest-->
+	
 </quests>

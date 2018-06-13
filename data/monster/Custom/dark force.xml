@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="dark force" nameDescription="a Dark Force" race="blood" experience="125000" speed="800" manacost="0">
+<health now="200000" max="200000"/>
+<look type="12" head="20" body="87" legs="40" feet="50" corpse="6080"/>
+<targetchange interval="5000" chance="8"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="1"/>
+<flag pushable="1"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag staticattack="90"/>
+<flag targetdistance="2"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" skill="200" attack="800"/>
+<attack name="fire" interval="100" chance="98" range="7" radius="7" target="1" min="-650" max="-950">
+<attribute key="shootEffect" value="fire"/>
+<attribute key="areaEffect" value="firearea"/>
+</attack>
+<attack name="fire" interval="500" chance="20" range="7" radius="4" target="1" min="-355" max="-500">
+<attribute key="shootEffect" value="fire"/>
+<attribute key="areaEffect" value="firearea"/>
+</attack>
+<attack name="manadrain" interval="1000" chance="17" range="7" min="-535" max="-875"/>
+<attack name="physical" interval="1000" chance="25" range="7" min="-355" max="-395">
+<attribute key="shootEffect" value="suddendeath"/>
+</attack>
+</attacks>
+<defenses armor="40" defense="35">
+<defense name="healing" interval="1000" chance="250" min="500" max="1000">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+<defense name="invisible" interval="1000" chance="50" duration="6000"/>
+<defense name="invisible" interval="1000" chance="87" duration="2000"/>
+<defense name="outfit" interval="2000" chance="50" monster="cave rat" duration="10000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+</defenses>
+<immunities>
+<immunity physical="0"/>
+<immunity energy="1"/>
+<immunity fire="1"/>
+<immunity poison="1"/>
+<immunity lifedrain="1"/>
+<immunity paralyze="1"/>
+<immunity outfit="1"/>
+<immunity drunk="1"/>
+<immunity invisible="1"/>
+</immunities>
+<summons maxSummons="0">
+<summon name="dark torturer" interval="1000" chance="4000"/>
+</summons>
+<voices interval="5000" chance="10">
+<voice sentence="Go to Hell!"/>
+<voice sentence="This is my house, get the hell out!"/>
+</voices>
+<loot>
+
+<item id="2393" chance="6600"/> <!--giantsword-->
+<item id="2514" chance="1000"/> <!--mastermind shield-->
+<item id="2432" chance="6000"/> <!--fire axe-->
+<item id="2472" chance="3000"/> <!--magic plate armor-->
+<item id="5906" countmax="1" chance1="10000" chancemax="0"/> <!-- demon dust-->
+<item id="5954" countmax="1" chance1="1000" chancemax="0"/> <!-- demon horn-->
+<item id="2678" countmax="3" chance1="10000" chancemax="0"/>
+<item id="2462" chance="555"/> <!--devil helmet-->
+<item id="2149" countmax="3" chance1="1428" chancemax="0"/>
+<item id="2171" chance="8000"/> <!--platinum amulet-->
+<item id="2387" chance="6666"/> <!--double axe-->
+<item id="2470" chance="8800"/> <!--golden legs-->
+<item id="2520" chance="3000"/> <!--demon shield-->
+<item id="2418" chance="8330"/> <!--golden sickle-->
+<item id="2377" chance="3333"/> <!--two-handed sword-->
+<item id="7452" chance="2000"/> <!--spiked squelcher-->
+
+</loot>
+</monster>

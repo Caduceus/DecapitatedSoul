@@ -7,12 +7,12 @@ function onSay(player, words, param)
 
 	local i = 0
 	local msg = ""
-	for k, targetPlayer in ipairs(players) do
-		if hasAccess or not targetPlayer:isInGhostMode() then
+	for k, tmpPlayer in ipairs(players) do
+		if hasAccess or not tmpPlayer:isInGhostMode() then
 			if i > 0 then
 				msg = msg .. ", "
 			end
-			msg = msg .. targetPlayer:getName() .. " [" .. targetPlayer:getLevel() .. "]"
+			msg = msg .. tmpPlayer:getName() .. " [" .. tmpPlayer:getLevel() .. "]"
 			i = i + 1
 		end
 

@@ -297,6 +297,7 @@ function getPlayerFood(cid)
 	if player == nil then
 		return false
 	end
+		
 	local c = player:getCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT) return c ~= nil and math.floor(c:getTicks() / 1000) or 0
 end
 function canPlayerLearnInstantSpell(cid, name) local p = Player(cid) return p ~= nil and p:canLearnSpell(name) or false end
@@ -994,14 +995,47 @@ function getSpectators(centerPos, rangex, rangey, multifloor, onlyPlayers)
 	return result
 end
 
-function broadcastMessage(message, messageType)
-	Game.broadcastMessage(message, messageType)
-	print("> Broadcasted message: \"" .. message .. "\".")
-end
-
 function Guild.addMember(self, player)
 	return player:setGuild(guild)
 end
 function Guild.removeMember(self, player)
 	return player:getGuild() == self and player:setGuild(nil)
 end
+
+function broadcastMessage(message, messageType)
+	Game.broadcastMessage(message, messageType)
+	--print("> Broadcasted message: \"" .. message .. "\".")
+end
+
+function isInRange(position, fromPosition, toPosition)
+     return (position.x >= fromPosition.x and position.y >= fromPosition.y and position.z >= fromPosition.z and position.x <= toPosition.x and position.y <= toPosition.y and position.z <= toPosition.z)
+end
+
+function Player.setExhaustion(self, value, time)
+    self:setStorageValue(value, time + os.time())
+end
+
+function Player.getExhaustion(self, value)
+    local storage = self:getStorageValue(value)
+    if not storage or storage <= os.time() then
+        return 0
+    end
+
+    return storage - os.time()
+end
+
+function Player:hasExhaustion(value)
+    return self:getExhaustion(value) >= os.time() and true or false
+end
+
+function iterateArea(func, from, to)
+    for z = from.z, to.z do
+        for y = from.y, to.y do
+            for x = from.x, to.x do
+                func(Position(x, y, z))
+            end
+        end
+    end
+end
+
+

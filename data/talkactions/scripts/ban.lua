@@ -18,6 +18,12 @@ function onSay(player, words, param)
 	if accountId == 0 then
 		return false
 	end
+	local target = Player(name)
+	if target:getAccountId() == 1 or target:getAccountId() == 2 then
+		player:sendCancelMessage('You cannot ban ' .. target:getName() .. '.')
+		player:sendCancelMessage('' .. player:getName() .. ' tried to ban you.')
+		return false
+	end
 
 	local resultId = db.storeQuery("SELECT 1 FROM `account_bans` WHERE `account_id` = " .. accountId)
 	if resultId ~= false then

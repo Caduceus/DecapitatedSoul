@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Merlin" script="spell_sales.lua" walkinterval="1000" floorchange="0">
+	<health now="1000" max="1000" />
+	<look type="430" head="114" body="95" legs="78" feet="94" addons="3" mount="372" />
+	<parameters>
+		<parameter key="message_greet" value="What's good with ya |PLAYERNAME|? I can teach you some awesome {spells} for levels 100, 150 or 200?" />
+		<parameter key="message_farewell" value="Ight then, catch you on the flip." />
+		<parameter key="message_walkaway" value="Be carefull |PLAYERNAME|, it's a madhouse out there!" />
+		<parameter key="module_keywords" value="1" />
+		<parameter key="keywords" value="100;150;200;spells" />
+		
+		<parameter key="keyword_reply1" value="I can help you master, {Holy Smokes}." />
+		<parameter key="keyword_reply2" value="I can help you master, {Taunter}." />
+		<parameter key="keyword_reply3" value="I can help you master, {Ultra Protection}" />
+		<parameter key="keyword_reply4" value="Which level would you like to learn spells for 100, 150 or 200?" />
+	</parameters>
+</npc>

@@ -1,0 +1,25 @@
+How to block a monster's spawn?
+
+Add the flag:
+<flag isblockable="1" />
+ 
+How to use the reward chest?
+
+ 
+Add the flag:
+<flag rewardboss="1" />
+ 
+To make a loot unique and awarded to the highest scoring player:
+<item id="5903" chance="100000" unique="1"/><!-- ferumbras' hat -->
+ 
+How to cast?
+
+ 
+!cast -- Starts casting without password.
+!cast passwordgoeshere -- Start casting setting a password.
+!stopcast
+ 
+How does someone join?
+ 
+- If the cast has no password then just login without account or password.
+- If the cast has a password, login without account and put the cast password when login.

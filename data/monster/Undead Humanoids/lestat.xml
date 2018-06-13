@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lestat de Lioncourt" nameDescription="A Vampire Chronicle" race="blood" experience="50000" speed="500" manacost="0">
+	<health now="55000" max="55000"/>
+		<look type="555" corpse="21275"/>
+	<targetchange interval="1000" chance="10"/>
+	<flags>
+		<!--flag rewardchest="1" /-->
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="100"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-500" max="-700"/>
+		<attack name="teleport to player" interval="5000" chance="50"/>
+		<attack name="death" interval="1500" chance="55" radius="3" range="6" target="1" min="-800" max="-1200">
+			<attribute key="shootEffect" value="death"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="bleedcondition" interval="2000" chance="60" radius="6" min="-820" max="-1060">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="death" interval="2000" chance="40" radius="4" target="0" min="-1025" max="-1275">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="55" defense="45">
+		<defense name="outfit" interval="2000" chance="1" monster="Vicious Manbat" duration="1000"/>
+		<defense name="speed" interval="2000" chance="55" speedchange="300" duration="4000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="50" min="500" max="1500">
+			<attribute key="areaEffect" value="redspark"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-5"/>
+		<element firePercent="-5"/>
+		<element physicalPercent="5"/>
+		<element icePercent="5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Prepare to BLEED!"/>
+		<voice sentence="Don't struggle. We don't want to waste a drop of blood now, do we?"/>
+		<voice sentence="Ah, refreshments have arrived!"/>
+	</voices>
+	<summons maxSummons="4">
+		<summon name="Vampire" interval="5000" chance="30"/>
+	</summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="Feel the hungry kiss of death!"/>
+		<voice sentence="The monsters in the mirror will come eat your dreams."/>
+		<voice sentence="Your pitiful life has come to an end!"/>
+		<voice sentence="Yield to the inevitable!"/>
+	</voices>
+	<loot>
+		<item id="24774" chance="100"/>	<!-- tibia coin -->
+		<item id="9948" chance="5000"/>   <!-- dracoyle statue -->
+
+	</loot>
+</monster>

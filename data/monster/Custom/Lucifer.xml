@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lucifer" nameDescription="the prohpet" race="fire" experience="85000" speed="650" manacost="0">
+<level min="1" max="20"/>
+  <health now="77777" max="77777"/>
+  <look type="130" head="114" body="132" legs="112" feet="115" corpse="5809"/>
+  <targetchange interval="5000" chance="0"/>
+  <strategy attack="65" defense="5"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="3000"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="500" skill="280" attack="200" poison="900"/>
+  <attack name="vanir death" interval="1000" chance="10" range="7" radius="4" target="1" min="-380" max="-420"/>
+    <attack name="speed" interval="10" chance="10" radius="6" target="0" speedchange="-850" duration="600">
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="fire" interval="1000" chance="34" range="9" radius="7" target="1" min="-300" max="-1200">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+     <attack name="firefield" interval="1000" chance="20" range="7" radius="8" target="0">
+        <attribute key="shootEffect" value="fire"/>
+      </attack>
+      <attack name="fire" interval="1000" chance="80" range="7" min="-850" max="-1115">
+        <attribute key="shootEffect" value="fire"/>
+      </attack>
+    <attack name="manadrain" interval="1000" chance="65" length="0" spread="3" min="-700" max="-900">
+      <attribute key="areaEffect" value="energyarea"/>
+    </attack>
+    <attack name="physical" interval="600" chance="120" length="8" spread="3" min="-300" max="-1000"/>
+    <attack name="energy" interval="10000" chance="800" length="8" spread="2" min="-500" max="-900">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="poisoncondition" interval="1000" chance="10" length="0" spread="0" min="-800" max="-1000">
+      <attribute key="areaEffect" value="greenspark"/>
+    </attack>
+    <attack name="lifedrain" interval="1000" chance="150" length="8" spread="0" min="-800" max="-900">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+  </attacks>
+  <defenses armor="350" defense="450">
+    <defense name="healing" interval="1000" chance="150" min="1000" max="6000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="100" chance="80" speedchange="360" duration="600">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="10" chance="10">
+    <voice sentence="Turn To Me I'll See You Through!" yell="1"/>
+    <voice sentence="kneel to me, I'll give You Eternal Life!" yell="1"/>
+    <voice sentence="God Does Not Belong In Your Heart, Choose Me!" yell="1"/>
+    <voice sentence="Sacrifice All, I will Spare Your Pathetic Life!" yell="1"/>
+  </voices>
+  
+</monster>

@@ -346,10 +346,10 @@ void Party::broadcastPartyMessage(MessageClasses msgClass, const std::string& ms
 
 void Party::broadcastPartyLoot(const std::string& loot)
 {
-	leader->sendTextMessage(MESSAGE_INFO_DESCR, loot);
+	leader->sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, loot);
 
 	for (Player* member : memberList) {
-		member->sendTextMessage(MESSAGE_INFO_DESCR, loot);
+		member->sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, loot);
 	}
 }
 

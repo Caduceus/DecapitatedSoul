@@ -1412,7 +1412,7 @@ int64_t Creature::getStepDuration() const
 
 	int32_t stepSpeed = getStepSpeed();
 	if (stepSpeed > -Creature::speedB) {
-		calculatedStepSpeed = floor((Creature::speedA * log((stepSpeed / 2) + Creature::speedB) + Creature::speedC) + 0.5);
+		calculatedStepSpeed = floor((Creature::speedA * log((stepSpeed / 2) + Creature::speedB) + Creature::speedC) + 0.5); //Speed_edit
 		if (calculatedStepSpeed <= 0) {
 			calculatedStepSpeed = 1;
 		}

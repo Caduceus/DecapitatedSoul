@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Undead" tp="1" species="human"  nameDescription="a undead" race="blood" experience="6000" speed="220" manacost="0">
+    <health now="15000" max="15000"/>
+    <look type="33" head="20" body="30" legs="40" feet="50" corpse="2843"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="30"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="5"/>
+      <flag runonhealth="800"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-600" max="-1000"/>
+      <attack name="dragon firebomb" interval="4000" min="-200" max="-600" chance="100"/>
+      <attack name="Combustion" interval="2000" chance="50" min="-300" max="-550"/>
+      <attack name="sudden death" interval="7000" chance="85" min="-500" max="-950"/>
+      <attack name="sudden death" interval="3500" chance="35" min="-800" max="-950"/>
+      <attack name="assassin star" interval="1000" chance="45" min="-800" max="-1000"/>
+      <attack name="assassin star" interval="1000" chance="50" min="-500" max="-950"/>
+    </attacks>
+    <defenses armor="40" defense="45">
+      <defense name="Invisible" interval="100" chance="5"/>
+      <defense name="Ultimate Healing" interval="4000" chance="5" min="500" max="400"/>
+     <defense name="healing" interval="1000" chance="25" min="2000" max="500">
+        <attribute key="areaEffect" value="blueshimmer"/>
+      </defense>
+      <defense name="speed" interval="1000" chance="8" speedchange="1901" duration="5000">
+        <attribute key="areaEffect" value="redshimmer"/>
+      </defense>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="1"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <loot>
+      <item id="2148" countmax="10" chance1="90000" chancemax="0"/>
+      <item id="2480" chance="6666"/>
+      <item id="1987" chance="100000">
+        <inside>
+          <item id="2388" chance="10000"/>
+          <item id="2398" chance="10000"/>
+          <item id="2511" chance="5000"/>
+          <item id="2473" chance="5000"/>
+          <item id="2376" chance="3333"/>
+          <item id="2050" chance="20000"/>
+        </inside>
+      </item>
+    </loot>
+  </monster>

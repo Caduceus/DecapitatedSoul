@@ -441,6 +441,7 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 			it.showCount = valueAttribute.as_bool();
 		} else if (tmpStrValue == "armor") {
 			it.armor = pugi::cast<int32_t>(valueAttribute.value());
+		} else if (tmpStrValue == "magicpointspercent") {
 		} else if (tmpStrValue == "defense") {
 			it.defense = pugi::cast<int32_t>(valueAttribute.value());
 		} else if (tmpStrValue == "extradef") {
@@ -449,12 +450,16 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 			it.attack = pugi::cast<int32_t>(valueAttribute.value());
 		} else if (tmpStrValue == "rotateto") {
 			it.rotateTo = pugi::cast<int32_t>(valueAttribute.value());
+		} else if (tmpStrValue == "wrapto") {
+			it.wrapTo = pugi::cast<int32_t>(valueAttribute.value());
 		} else if (tmpStrValue == "moveable" || tmpStrValue == "movable") {
 			it.moveable = valueAttribute.as_bool();
 		} else if (tmpStrValue == "blockprojectile") {
 			it.blockProjectile = valueAttribute.as_bool();
 		} else if (tmpStrValue == "allowpickupable" || tmpStrValue == "pickupable") {
 			it.allowPickupable = valueAttribute.as_bool();
+		} else if (tmpStrValue == "forceserialize" || tmpStrValue == "forcesave") {
+			it.forceSerialize = valueAttribute.as_bool();
 		} else if (tmpStrValue == "floorchange") {
 			tmpStrValue = asLowerCaseString(valueAttribute.as_string());
 			if (tmpStrValue == "down") {
@@ -559,6 +564,8 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 				it.weaponType = WEAPON_WAND;
 			} else if (tmpStrValue == "ammunition") {
 				it.weaponType = WEAPON_AMMO;
+			}else if (tmpStrValue == "fist") {
+                it.weaponType = WEAPON_FIST;
 			} else {
 				std::cout << "[Warning - Items::parseItemNode] Unknown weaponType: " << valueAttribute.as_string() << std::endl;
 			}
@@ -907,6 +914,18 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 			Abilities& abilities = it.getAbilities();
 			abilities.elementDamage = pugi::cast<uint16_t>(valueAttribute.value());
 			abilities.elementType = COMBAT_ENERGYDAMAGE;
+			} else if (tmpStrValue == "elementholy") {
+			Abilities& abilities = it.getAbilities();
+			abilities.elementDamage = pugi::cast<uint16_t>(valueAttribute.value());
+			abilities.elementType = COMBAT_HOLYDAMAGE;
+		} else if (tmpStrValue == "elementdeath") {
+			Abilities& abilities = it.getAbilities();
+			abilities.elementDamage = pugi::cast<uint16_t>(valueAttribute.value());
+			abilities.elementType = COMBAT_DEATHDAMAGE;
+		} else if (tmpStrValue == "elementphysical") {
+			Abilities& abilities = it.getAbilities();
+			abilities.elementDamage = pugi::cast<uint16_t>(valueAttribute.value());
+			abilities.elementType = COMBAT_PHYSICALDAMAGE;
 		} else if (tmpStrValue == "walkstack") {
 			it.walkStack = valueAttribute.as_bool();
 		} else if (tmpStrValue == "blocking") {

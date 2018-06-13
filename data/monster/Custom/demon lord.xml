@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="demon lord" nameDescription="a demon lord" race="blood" experience="15000" speed="460" manacost="0">
+  <health now="65500" max="65500"/>
+  <look type="107" head="20" body="30" legs="40" feet="50" corpse="1492"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="1000"/>
+  </flags>
+<attacks>
+    <attack name="melee" interval="2000" skill="420" attack="600"/>
+    <attack name="fire" interval="2000" chance="34" range="7" radius="7" target="1" min="-310" max="-500">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+
+<attack name="fire" interval="2000" chance="50" range="9" radius="4" target="1" min="-355" max="-405">
+  <attribute key="shootEffect" value="fire"/>
+  <attribute key="areaEffect" value="firearea"/>
+</attack>
+
+    <attack name="manadrain" interval="1000" chance="17" range="7" min="-435" max="-575"/>
+    <attack name="physical" interval="1000" chance="25" range="7" min="-355" max="-495">
+      <attribute key="shootEffect" value="suddendeath"/>
+    </attack>
+</attacks>
+  <defenses armor="40" defense="35">
+    <defense name="healing" interval="1000" chance="15" min="390" max="450">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <summons maxSummons="2">
+    <summon name="banshe" interval="1000" chance="4000"/>
+  </summons>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="3">
+    <summon name="banshee" interval="1000" chance="5000"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="Turn Back, you Can't Handle Me!"/>
+    <voice sentence="Burn, Bitch, Burn!"/>
+  </voices>
+</monster>

@@ -98,6 +98,7 @@ bool ConfigManager::load()
 	string[LOCATION] = getGlobalString(L, "location", "");
 	string[MOTD] = getGlobalString(L, "motd", "");
 	string[WORLD_TYPE] = getGlobalString(L, "worldType", "pvp");
+	string[MONSTERLEVEL_PREFIX] = getGlobalString(L, "monsterPrefix", "");
 	string[STORE_IMAGES_URL] = getGlobalString(L, "storeImagesUrl", "");
 
 	integer[MAX_PLAYERS] = getGlobalNumber(L, "maxPlayers");
@@ -128,6 +129,12 @@ bool ConfigManager::load()
 	integer[MAX_PACKETS_PER_SECOND] = getGlobalNumber(L, "maxPacketsPerSecond", 25);
 	integer[LIVE_CAST_PORT] = getGlobalNumber(L, "liveCastPort", 7173);
 	integer[STORE_COIN_PACKET] = getGlobalNumber(L, "storeCoinPacket", 5);
+
+	decimal[MONSTERLEVEL_BONUSDMG] = getGlobalDouble(L, "monsterLevelDamage", .0);
+	decimal[MONSTERLEVEL_BONUSEXP] = getGlobalDouble(L, "monsterLevelExp", .0);
+	decimal[MONSTERLEVEL_BONUSSPEED] = getGlobalDouble(L, "monsterLevelSpeed", .0);
+	decimal[MONSTERLEVEL_BONUSHEALTH] = getGlobalDouble(L, "monsterLevelHealth", .0);
+	decimal[MONSTERLEVEL_BONUSLOOT] = getGlobalDouble(L, "monsterLevelLoot", .0);
 
 	loaded = true;
 	lua_close(L);
@@ -170,6 +177,16 @@ bool ConfigManager::getBoolean(boolean_config_t what) const
 	return boolean[what];
 }
 
+double ConfigManager::getDouble(double_config_t what) const
+{
+	if (what >= LAST_DOUBLE_CONFIG) {
+		std::cout << "[Warning - ConfigManager::getDouble] Accessing invalid index: " << what << std::endl;
+		return 0.0;
+		
+	}
+	return decimal[what];
+	}
+
 std::string ConfigManager::getGlobalString(lua_State* L, const char* identifier, const char* defaultValue)
 {
 	lua_getglobal(L, identifier);
@@ -194,6 +211,18 @@ int32_t ConfigManager::getGlobalNumber(lua_State* L, const char* identifier, con
 	lua_pop(L, 1);
 	return val;
 }
+
+double ConfigManager::getGlobalDouble(lua_State* L, const char* identifier, const double defaultValue)
+{
+	lua_getglobal(L, identifier);
+	if (!lua_isnumber(L, -1)) {
+		return defaultValue;
+	}
+	
+		double val = lua_tonumber(L, -1);
+	lua_pop(L, 1);
+	return val;
+	}
 
 bool ConfigManager::getGlobalBoolean(lua_State* L, const char* identifier, const bool defaultValue)
 {

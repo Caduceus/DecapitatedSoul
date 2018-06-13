@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Flamethrower" nameDescription="a flamethrower" race="fire" experience="1800" speed="200" manacost="0">
+    <health now="8000" max="8000"/>
+    <look type="242" head="114" body="114" legs="0" feet="0" corpse="1492"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="0"/>
+      <flag canpushcreatures="1"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+     <attack name="melee" interval="2000" skill="100" attack="250" fire="400"/>
+      <attack name="firefield" interval="4000" chance="20" range="7" radius="8" target="0">
+        <attribute key="shootEffect" value="fire"/>
+      </attack>
+      <attack name="fire" interval="9000" chance="80" range="7" min="-850" max="-900">
+        <attribute key="shootEffect" value="fire"/>
+      </attack>
+      <attack name="lifedrain" interval="8000" chance="15" length="8" spread="0" min="-200" max="-300">
+        <attribute key="areaEffect" value="redshimmer"/>
+      </attack>
+    </attacks>
+    <defenses armor="1" defense="1"/>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="1"/>
+      <immunity poison="0"/>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="1"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+  </monster>

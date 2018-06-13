@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="LaVeyan" nameDescription="a LaVeyan" race="blood" experience="12500" speed="400" manacost="0">
+  <health now="36660" max="36660"/>
+  <look type="145" head="20" body="114" legs="40" feet="114" addons="2" corpse="3128"/>
+  <targetchange interval="2000" chance="5"/>
+  <strategy attack="100" defense="100"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="0"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="5"/>
+    <flag runonhealth="4500"/>
+  </flags>
+  <attacks>
+     <attack name="outfit" interval="1000" chance="80" range="10" item="1487" duration="6500">
+       <attribute key="areaEffect" value="blueshimmer"/>
+     </attack>
+     <attack name="Explosive Arrow" interval="2000" chance="80" min="-800" max="-1120"/>
+    <attack name="melee" interval="2000" min="-500" max="-1200"/>
+    <attack name="paralyze" interval="3500" chance="65"/>
+     <attack name="energy" interval="2000" chance="80" length="8" spread="10" min="-500" max="-820">
+        <attribute key="areaEffect" value="redspark"/>
+      </attack>
+      <attack name="physical" interval="1000" chance="80" range="10" min="-770" max="-800">
+        <attribute key="shootEffect" value="fire"/>
+        <attribute key="areaEffect" value="poff"/>
+       </attack>
+       <attack name="frost smokewave" interval="2000" chance="100" min="-200" max="-600"/>
+    <attack name="frost exori bomb" interval="5000" chance="100" min="-75" max="-100"/>
+    <attack name="frost smoke berserk" interval="3500" chance="100" min="-575" max="-1000"/>
+  </attacks>
+  <defenses armor="90" defense="80">
+    <defense name="light healing" interval="2000" chance="60" min="550" max="950"/>
+  </defenses>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="2000" chance="5">
+    <voice sentence="So, you think you are bad?"/>
+    <voice sentence="Join my followers, in the Church of Satan."/>
+    <voice sentence="Burn With Me!"/>
+  </voices>
+  <loot>
+    <item id="2436" chance="1222"/> --Skull Staff
+    <item id="7449" chance="1222"/> --Crystal Sword
+    <item id="7387" chance="1444"/> --Diamond Sceptre
+    <item id="2000" chance="3000"> --Backpack
+      <inside>
+        <item id="2195" chance="1444"/> --Boots of Haste
+        <item id="2445" chance="1333"/> --Crystal Mace
+        <item id="2423" chance="2999"/> --Clerical Mace
+        <item id="2796" countmax="3" chance1="9999" chancemax="0"/> --Green Mushrooms
+      </inside>
+    </item>
+  </loot>
+</monster>

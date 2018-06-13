@@ -1,5 +1,5 @@
 function canJoin(player)
-	return player:getGuildLevel() == 3 or player:getGroup():getAccess()
+	return player:getGuildLevel() == 3 or player:getAccountType() >= ACCOUNT_TYPE_GOD
 end
 
 function onSpeak(player, type, message)
@@ -11,6 +11,8 @@ function onSpeak(player, type, message)
 	if staff then
 		if guild then
 			info =  info .. "][" .. guild:getName()
+		else
+			info =  info .. "
 		end
 		type = TALKTYPE_CHANNEL_O
 	else

@@ -59,6 +59,7 @@ enum itemAttrTypes : uint32_t {
 	ITEM_ATTRIBUTE_CHARGES = 1 << 20,
 	ITEM_ATTRIBUTE_FLUIDTYPE = 1 << 21,
 	ITEM_ATTRIBUTE_DOORID = 1 << 22,
+	ITEM_ATTRIBUTE_FORCESERIALIZE = 1 << 23,
 };
 
 enum VipStatus_t : uint8_t {
@@ -168,6 +169,7 @@ enum CombatParam_t {
 	COMBAT_PARAM_AGGRESSIVE,
 	COMBAT_PARAM_DISPEL,
 	COMBAT_PARAM_USECHARGES,
+	COMBAT_PARAM_PVPDAMAGE,
 };
 
 enum CallBackParam_t {

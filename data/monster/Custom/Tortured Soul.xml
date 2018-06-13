@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+ <monster name="Tortured Soul" nameDescription="Tortured Soul" race="undead" experience="18750" speed="250" manacost="0">
+  <health now="1350" max="1350" /> 
+  <look type="235" head="0" body="0" legs="0" feet="0" corpse="6349" /> 
+  <targetchange interval="2000" chance="5" /> 
+  <strategy attack="100" defense="0" />
+
+ <flags>
+  <flag summonable="0" /> 
+  <flag attackable="1" /> 
+  <flag hostile="1" /> 
+  <flag illusionable="0" /> 
+  <flag convinceable="0" /> 
+  <flag pushable="1" /> 
+  <flag canpushitems="1" /> 
+  <flag canpushcreatures="1" /> 
+  <flag targetdistance="1" /> 
+  <flag runonhealth="0" /> 
+  </flags>
+
+<attacks>
+   <attack name="melee" interval="2000" skill="550" attack="500" />
+  <attack name="melee" interval="2000" min="500" max="-800" /> 
+  <attack name="mana drain" interval="6500" min="220" max="-300" /> 
+  <attack name="poison spit" interval="5500" min="700" max="-800" /> 
+  <attack name="banshee sonar" interval="5500" chance="100" min="800" max="-900" /> 
+  </attacks>
+
+  <defenses armor="55" defense="45" />
+
+ <immunities>
+  <immunity physical="0" /> 
+  <immunity energy="1" /> 
+  <immunity fire="0" /> 
+  <immunity poison="1" /> 
+  <immunity lifedrain="0" /> 
+  <immunity paralyze="1" /> 
+  <immunity outfit="0" /> 
+  <immunity drunk="0" /> 
+  <immunity invisible="1" /> 
+  </immunities>
+
+ <voices interval="2000" chance="5">
+  <voice sentence="Torture the weak, Kill The soul." /> 
+  <voice sentence="Let Me polute your mind with filth and discust!" /> 
+  </voices>
+
+ <loot>
+	  
+  	<item id="5909" countmax="1" chance1="3200" chancemax="0" /> white piece
+	  <item id="2260" chance="5000" /> blank r
+	  <item id="2260" chance="5000" /> blank r
+  	<item id="2134" chance="4000" /> silver b
+  	<item id="2642" chance="11818" /> sandals
+  	<item id="2071" chance="12588" /> lyre
+ 	<item id="1987" chance="100000">
+ <inside>
+  	<item id="6500" countmax="1" chance1="10000" chancemax="0" /> demoniac
+  	<item id="2189" chance="4200" /> wans cosmic
+  	<item id="5944" countmax="1" chance1="3600" chancemax="0" /> soul orb
+    	 <item id="6300" chance="1200" /> death r
+  	<item id="2136" chance="800" /> demonbone
+  </inside>
+  </item>
+  </loot>
+
+</monster>

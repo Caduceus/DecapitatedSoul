@@ -4,26 +4,25 @@ function onSay(player, words, param)
 	end
 
 	local effect = tonumber(param)
-	local position = player:getPosition()
-	local toPositionLow = {z = position.z}
-	local toPositionHigh = {z = position.z}
+	local orig = player:getPosition()
+	local d1, d2 = {z = orig.z}, {z = orig.z}
 
-	toPositionLow.x = position.x - 7
-	toPositionHigh.x = position.x + 7
+	d1.x = orig.x - 7
+	d2.x = orig.x + 7
 	for i = -5, 5 do
-		toPositionLow.y = position.y + i
-		toPositionHigh.y = toPositionLow.y
-		position:sendDistanceEffect(toPositionLow, effect)
-		position:sendDistanceEffect(toPositionHigh, effect)
+		d1.y = orig.y + i
+		d2.y = d1.y
+		orig:sendDistanceEffect(d1, effect)
+		orig:sendDistanceEffect(d2, effect)
 	end
 
-	toPositionLow.y = position.y - 5
-	toPositionHigh.y = position.y + 5
+	d1.y = orig.y - 5
+	d2.y = orig.y + 5
 	for i = -6, 6 do
-		toPositionLow.x = position.x + i
-		toPositionHigh.x = toPositionLow.x
-		position:sendDistanceEffect(toPositionLow, effect)
-		position:sendDistanceEffect(toPositionHigh, effect)
+		d1.x = orig.x + i
+		d2.x = d1.x
+		orig:sendDistanceEffect(d1, effect)
+		orig:sendDistanceEffect(d2, effect)
 	end
 	return false
 end

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="soul reaper" nameDescription="a soul reaper" race="undead" experience="45000" speed="500" manacost="0">
+	<health now="35000" max="35000"/>
+	<look type="635" head="116" body="10" legs="86" feet="0" addons="3" mount="630" corpse="20423"/>
+	
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag passive="1" />
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" min="-1100" max="-1400"/>
+		<attack name="ice" interval="2000" chance="50" length="2" spread="3" min="-600" max="-1300">
+			<attribute key="areaEffect" value="icetornado"/>
+		</attack>
+		<attack name="ice" interval="2000" chance="50" range="5" target="1" min="-550" max="-1150">
+			<attribute key="shootEffect" value="smallice"/>
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+		<attack name="ice" interval="1000" chance="15" range="7" min="-400" max="-500">
+			<attribute key="shootEffect" value="smallice"/>
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+	</attacks>
+	<defenses armor="45" defense="45">
+		<defense name="healing" interval="2000" chance="55" min="600" max="720">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="50"/>
+		<element earthPercent="40"/>
+		<element holyPercent="30"/>
+		<element energyPercent="-10"/>
+		<element deathPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity ice="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="0">
+		<voice sentence="I will devour your soul."/>
+		<voice sentence="I will feed on you."/>
+	</voices>
+	<loot>
+		
+		<item id="2160" countmax="5" chance="33400" /><!-- crystal coin -->
+		
+	</loot>
+</monster>

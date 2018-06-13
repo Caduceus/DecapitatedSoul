@@ -114,12 +114,14 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <WarningLevel>Level4</WarningLevel>
+      <AdditionalIncludeDirectories>C:\local\boost_1_60_0;C:\Open Tibia\compile\tfs-sdk-3.2\mysql-connector-c\include;C:\Open Tibia\compile\tfs-sdk-3.2\mpir\include;C:\Open Tibia\compile\tfs-sdk-3.2\LuaJIT\include;C:\Open Tibia\compile\tfs-sdk-3.2\pugixml\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\local\boost_1_60_0\lib64-msvc-14.0;C:\Open Tibia\compile\tfs-sdk-3.2\mysql-connector-c\lib64;C:\Open Tibia\compile\tfs-sdk-3.2\mpir\lib64;C:\Open Tibia\compile\tfs-sdk-3.2\LuaJIT\lib64;C:\Open Tibia\compile\tfs-sdk-3.2;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -161,7 +163,7 @@
     <ClCompile Include="..\src\luascript.cpp" />
     <ClCompile Include="..\src\mailbox.cpp" />
     <ClCompile Include="..\src\map.cpp" />
-	<ClCompile Include="..\src\modules.cpp" />
+    <ClCompile Include="..\src\modules.cpp" />
     <ClCompile Include="..\src\monster.cpp" />
     <ClCompile Include="..\src\monsters.cpp" />
     <ClCompile Include="..\src\mounts.cpp" />
@@ -183,10 +185,10 @@
     <ClCompile Include="..\src\position.cpp" />
     <ClCompile Include="..\src\protocol.cpp" />
     <ClCompile Include="..\src\protocolgame.cpp" />
-	<ClCompile Include="..\src\protocolgamebase.cpp" />
+    <ClCompile Include="..\src\protocolgamebase.cpp" />
     <ClCompile Include="..\src\protocollogin.cpp" />
     <ClCompile Include="..\src\protocolold.cpp" />
-	<ClCompile Include="..\src\protocolspectator.cpp" />
+    <ClCompile Include="..\src\protocolspectator.cpp" />
     <ClCompile Include="..\src\quests.cpp" />
     <ClCompile Include="..\src\raids.cpp" />
     <ClCompile Include="..\src\rsa.cpp" />
@@ -255,7 +257,7 @@
     <ClInclude Include="..\src\luascript.h" />
     <ClInclude Include="..\src\mailbox.h" />
     <ClInclude Include="..\src\map.h" />
-	<ClInclude Include="..\src\modules.h" />
+    <ClInclude Include="..\src\modules.h" />
     <ClInclude Include="..\src\monster.h" />
     <ClInclude Include="..\src\monsters.h" />
     <ClInclude Include="..\src\mounts.h" />
@@ -270,15 +272,15 @@
     <ClInclude Include="..\src\position.h" />
     <ClInclude Include="..\src\protocol.h" />
     <ClInclude Include="..\src\protocolgame.h" />
-	<ClInclude Include="..\src\protocolgamebase.h" />
+    <ClInclude Include="..\src\protocolgamebase.h" />
     <ClInclude Include="..\src\protocollogin.h" />
     <ClInclude Include="..\src\protocolold.h" />
-	<ClInclude Include="..\src\protocolspectator.h" />
+    <ClInclude Include="..\src\protocolspectator.h" />
     <ClInclude Include="..\src\pugicast.h" />
     <ClInclude Include="..\src\quests.h" />
     <ClInclude Include="..\src\raids.h" />
     <ClInclude Include="..\src\reward.h" />
-	<ClInclude Include="..\src\rewardchest.h" />
+    <ClInclude Include="..\src\rewardchest.h" />
     <ClInclude Include="..\src\rsa.h" />
     <ClInclude Include="..\src\scheduler.h" />
     <ClInclude Include="..\src\scriptmanager.h" />

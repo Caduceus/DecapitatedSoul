@@ -73,6 +73,7 @@ struct CombatParams {
 		impactEffect = CONST_ME_NONE;
 		distanceEffect = CONST_ANI_NONE;
 		useCharges = false;
+		pvpDamage = 100;
 
 		origin = ORIGIN_SPELL;
 	}
@@ -84,6 +85,8 @@ struct CombatParams {
 	std::unique_ptr<TargetCallback> targetCallback;
 
 	uint16_t itemId;
+	
+	uint32_t pvpDamage;
 
 	ConditionType_t dispelType;
 	CombatType_t combatType;

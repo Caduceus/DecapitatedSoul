@@ -388,6 +388,11 @@ int32_t Player::getWeaponSkill(const Item* item) const
 			attackSkill = getSkillLevel(SKILL_DISTANCE);
 			break;
 		}
+		
+		case WEAPON_FIST: {
+			attackSkill = getSkillLevel(SKILL_FIST);
+			break;
+		}
 
 		default: {
 			attackSkill = 0;
@@ -1755,6 +1760,12 @@ void Player::addExperience(Creature* source, uint64_t exp, bool sendText/* = fal
 		levelPercent = 0;
 		sendStats();
 		return;
+	}
+
+	Monster* monster = source ? source->getMonster() : nullptr;
+	if (monster) {
+		double factor = (g_config.getDouble(ConfigManager::MONSTERLEVEL_BONUSEXP) * monster->getLevel());
+		exp += (exp * factor);
 	}
 
 	g_events->eventPlayerOnGainExperience(this, source, exp, rawExp);
@@ -3284,7 +3295,7 @@ void Player::postRemoveNotification(Thing* thing, const Cylinder* newParent, int
 bool Player::updateSaleShopList(const Item* item)
 {
 	uint16_t itemId = item->getID();
-	if (itemId != ITEM_GOLD_COIN && itemId != ITEM_PLATINUM_COIN && itemId != ITEM_CRYSTAL_COIN) {
+	if (itemId != ITEM_GOLD_COIN && itemId != ITEM_PLATINUM_COIN && itemId != ITEM_CRYSTAL_COIN && itemId != ITEM_GOLD_BAR && itemId != ITEM_SCARAB_COIN) {
 		auto it = std::find_if(shopItemList.begin(), shopItemList.end(), [itemId](const ShopInfo& shopInfo) { return shopInfo.itemId == itemId && shopInfo.sellPrice != 0; });
 		if (it == shopItemList.end()) {
 			const Container* container = item->getContainer();
@@ -3409,16 +3420,18 @@ void Player::doAttacking(uint32_t)
 		Item* tool = getWeapon();
 		const Weapon* weapon = g_weapons->getWeapon(tool);
 		if (weapon) {
-			if (!weapon->interruptSwing()) {
+			//*if (!weapon->interruptSwing()) {
+			uint32_t delay;
+ 
+ 			if (!weapon->interruptSwing() || canDoAction()) {
 				result = weapon->useWeapon(this, tool, attackedCreature);
-			} else if (!canDoAction()) {
-				uint32_t delay = getNextActionTime();
-				SchedulerTask* task = createSchedulerTask(delay, std::bind(&Game::checkCreatureAttack,
-				                      &g_game, getID()));
-				setNextActionTask(task);
+					delay = getAttackSpeed();
 			} else {
-				result = weapon->useWeapon(this, tool, attackedCreature);
+				delay = getNextActionTime();
 			}
+			SchedulerTask* task = createSchedulerTask(delay, std::bind(&Game::checkCreatureAttack,
+ 									 &g_game, getID()));
+ 			setNextActionTask(task);
 		} else {
 			result = Weapon::useFist(this, attackedCreature);
 		}
@@ -4320,6 +4333,7 @@ bool Player::toggleMount(bool mount)
 			sendOutfitWindow();
 			return false;
 		}
+		
 
 		Mount* currentMount = g_game.mounts.getMountByID(currentMountId);
 		if (!currentMount) {

@@ -1099,6 +1099,7 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(COMBAT_PARAM_AGGRESSIVE)
 	registerEnum(COMBAT_PARAM_DISPEL)
 	registerEnum(COMBAT_PARAM_USECHARGES)
+	registerEnum(COMBAT_PARAM_PVPDAMAGE)
 
 	registerEnum(CONDITION_NONE)
 	registerEnum(CONDITION_POISON)
@@ -1443,6 +1444,8 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(ITEM_GOLD_COIN)
 	registerEnum(ITEM_PLATINUM_COIN)
 	registerEnum(ITEM_CRYSTAL_COIN)
+	registerEnum(ITEM_GOLD_BAR)
+	registerEnum(ITEM_SCARAB_COIN)
 	registerEnum(ITEM_REWARD_CHEST)
 	registerEnum(ITEM_REWARD_CONTAINER)
 	registerEnum(ITEM_AMULETOFLOSS)
@@ -2503,6 +2506,7 @@ void LuaScriptInterface::registerFunctions()
 	registerMethod("MonsterType", "isSummonable", LuaScriptInterface::luaMonsterTypeIsSummonable);
 	registerMethod("MonsterType", "isIllusionable", LuaScriptInterface::luaMonsterTypeIsIllusionable);
 	registerMethod("MonsterType", "isHostile", LuaScriptInterface::luaMonsterTypeIsHostile);
+	registerMethod("MonsterType", "isPassive", LuaScriptInterface::luaMonsterTypeIsPassive);
 	registerMethod("MonsterType", "isPushable", LuaScriptInterface::luaMonsterTypeIsPushable);
 	registerMethod("MonsterType", "isHealthShown", LuaScriptInterface::luaMonsterTypeIsHealthShown);
 	registerMethod("MonsterType", "isRewardBoss", LuaScriptInterface::luaMonsterTypeIsRewardBoss);
@@ -6349,6 +6353,10 @@ int LuaScriptInterface::luaItemTransform(lua_State* L)
 	if (newItem && newItem != item) {
 		env->insertItem(uid, newItem);
 	}
+	
+	if (item && item->hasAttribute(ITEM_ATTRIBUTE_DECAYSTATE)) {
+        g_game.startDecay(item);
+    }
 
 	item = newItem;
 	pushBoolean(L, true);
@@ -7683,12 +7691,11 @@ int LuaScriptInterface::luaPlayerGetReward(lua_State* L)
 	}
 
 	uint32_t rewardId = getNumber<uint32_t>(L, 2);
-	bool autoCreate = getBoolean(L, 3, false);
+	bool autoCreate = getBoolean(L, 3, false);	
 	if (Reward* reward = player->getReward(rewardId, autoCreate)) {
 		pushUserdata<Item>(L, reward);
 		setItemMetatable(L, -1, reward);
-	}
-	else {
+	} else {
 		pushBoolean(L, false);
 	}
 	return 1;
@@ -7729,7 +7736,6 @@ int LuaScriptInterface::luaPlayerGetRewardList(lua_State* L)
 	}
 	return 1;
 }
-
 int LuaScriptInterface::luaPlayerGetDepotChest(lua_State* L)
 {
 	// player:getDepotChest(depotId[, autoCreate = false])
@@ -11559,13 +11565,27 @@ int LuaScriptInterface::luaMonsterTypeIsHostile(lua_State* L)
 	return 1;
 }
 
+int LuaScriptInterface::luaMonsterTypeIsPassive(lua_State* L)
+{
+	// monsterType:isPassive()
+	MonsterType* monsterType = getUserdata<MonsterType>(L, 1);
+	if (monsterType) {
+		pushBoolean(L, monsterType->isPassive);
+	}
+	else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
 int LuaScriptInterface::luaMonsterTypeIsPushable(lua_State* L)
 {
 	// monsterType:isPushable()
 	MonsterType* monsterType = getUserdata<MonsterType>(L, 1);
 	if (monsterType) {
 		pushBoolean(L, monsterType->pushable);
-	} else {
+	}
+	else {
 		lua_pushnil(L);
 	}
 	return 1;
@@ -11589,8 +11609,7 @@ int LuaScriptInterface::luaMonsterTypeIsRewardBoss(lua_State* L)
 	MonsterType* monsterType = getUserdata<MonsterType>(L, 1);
 	if (monsterType) {
 		pushBoolean(L, monsterType->isRewardBoss);
-	}
-	else {
+	} else {
 		lua_pushnil(L);
 	}
 	return 1;

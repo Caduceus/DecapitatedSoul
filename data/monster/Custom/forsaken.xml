@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Forsaken" tp="1" species="undead" nameDescription="A Static Charge" race="undead" experience="1000" speed="150" manacost="0">
+    <health now="3500" max="3500"/>
+    <look type="293" corpse="1491"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="0"/>
+      <flag staticattack="2"/>
+      <flag lightlevel="5"/>
+      <flag lightcolor="15"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="500"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" min="-80" max="-150"/>
+      <attack name="heavy magic missile" interval="2500" chance="40" range="7" min="-80" max="-190"/>
+	  <attack name="warlock skill reducer" range="5" interval="2000" chance="5"/>
+      <attack name="manadrain" interval="2000" chance="30" target="1" radius="3" min="-100" max="-200">
+			<attribute key="areaEffect" value="yellowbubble"/>
+		</attack>
+		<attack name="energy" interval="2000" chance="25" length="8" spread="0" min="-200" max="-300">
+			<attribute key="areaEffect" value="bigclouds"/>
+		</attack>
+		<attack name="energyfield" interval="2000" chance="40" range="5" radius="4" target="1">
+			<attribute key="shootEffect" value="energy"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="50" range="7" speedchange="-500" duration="15000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+    </attacks>
+    <defenses armor="29" defense="30">
+      <defense name="ultimate healing" interval="5000" chance="40" min="170" max="250"/>
+      <defense name="speed" interval="1000" chance="20" speedchange="300" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+			</defense>
+      <defense name="invisible" interval="2000" chance="15" duration="1500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+			</defense>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="1"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="0"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="0"/>
+      <immunity drunk="0"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <voices interval="2000" chance="50">
+      <voice sentence="Don't be afraid to take a little charge!"/>
+      <voice sentence=""/>
+      <voice sentence=""/>
+    </voices>
+    <loot>
+	</loot>
+  </monster>
+  
+  
+  

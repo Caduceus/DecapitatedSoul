@@ -1007,9 +1007,24 @@ uint32_t Map::clean() const
 						}
 
 						++tiles;
+						Tile* toPosition = getTile(1016, 955, 7);
+						std::vector<int> relocateItems = { 3058,3065 };
 						for (Item* item : *itemList) {
-							if (item->isCleanable()) {
-								toRemove.push_back(item);
+							bool willRelocate = false;
+							for (int relocateItem : relocateItems) {
+								if (item->getID() == relocateItem) {
+									willRelocate = true;
+									break;
+								}
+							}
+
+							if (willRelocate) {
+								g_game.internalMoveItem(item->getParent(), toPosition, INDEX_WHEREEVER, item, item->getItemCount(), nullptr, FLAG_NOLIMIT);
+							}
+							else {
+								if (item->isCleanable()) {
+									toRemove.push_back(item);
+								}
 							}
 						}
 

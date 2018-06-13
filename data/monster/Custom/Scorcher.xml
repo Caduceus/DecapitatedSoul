@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Scorcher" tp="1" nameDescription="a Scorcher" race="fire" experience="6000" speed="280" manacost="0">
+    <health now="12000" max="12000"/>
+    <look type="149" head="95" body="96" legs="76" feet="76" addons="1" corpse="3128"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="200" defense="45"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag canpushcreatures="1"/>
+      <flag targetdistance="1"/>
+      <flag staticattack="90"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" skill="60" attack="85" fire="90"/>
+      <attack name="physical" interval="1000" chance="17" range="7" min="-620" max="-800">
+        <attribute key="shootEffect" value="fire"/>
+      </attack>
+      <attack name="Scorcher Flam" interval="3000" chance="50" range="7" radius="10" target="1" min="-800" max="-1200"/>
+      <attack name="dragon firebomb" interval="7000" chance="40" min="-400" max="-500"/>
+  <attack name="melee" interval="1000" chance="10" range="7" radius="2" target="0" min="-115" max="-155">
+    <attribute key="areaEffect" value="blackspark"/>
+  </attack>
+      <attack name="firefield" interval="1000" chance="15" range="7" radius="2" target="1">
+        <attribute key="shootEffect" value="fire"/>
+      </attack>
+      <attack name="fire" interval="1000" chance="20" range="7" min="-700" max="-900">
+        <attribute key="shootEffect" value="fire"/>
+      </attack>
+    </attacks>
+  <defenses armor="100" defense="25">
+      <defense name="Invisible" interval="4000" chance="40"/>
+      <defense name="Ultimate Healing" interval="4000" chance="5" min="50" max="200"/>
+    <defense name="outfit" interval="1000" chance="20" item="6560" duration="7000">
+        <attribute key="areaEffect" value="blueshimmer"/>
+        </defense>
+    </defenses>
+    <immunities>
+      <immunity physical="0"/>
+      <immunity energy="0"/>
+      <immunity fire="1"/>
+      <immunity poison="1"/>
+      <immunity lifedrain="1"/>
+      <immunity paralyze="1"/>
+      <immunity outfit="1"/>
+      <immunity drunk="1"/>
+      <immunity invisible="1"/>
+    </immunities>
+    <summons maxSummons="1">
+      <summon name="Flamethrower" interval="4000" chance="80"/>
+    </summons>
+    <voices interval="5000" chance="50">
+      <voice sentence="Fire hot!"/>
+      <voice sentence="Burn!"/>
+      <voice sentence="See you in Hell!"/>
+    </voices>
+    <loot>
+     <item id="2148" countmax="83" chance1="100000" chancemax="0"/> --Gold Coin
+     <item id="2645" chance="400"/> --Steel Boots
+     <item id="6558" countmax="3" chance1="5555" chancemax="0"/> --Concentrated Demonic Blood
+     <item id="2666" countmax="1" chance1="25000" chancemax="0"/> --Meat
+     <item id="6500" countmax="1" chance1="2500" chancemax="0"/> --Demonic Essence
+     <item id="5944" chance="8888"/> --Soul Orb
+     <item id="1987" chance="100000"> --Bag
+         <inside>
+             <item id="2487" chance="600"/> --Crown Armor
+             <item id="2181" chance="2222"/> --Quagmire Rod
+             <item id="2143" countmax="1" chance1="12000" chancemax="0"/> --White Pearl
+             <item id="2156" chance="1900"/> --Red Gem
+             <item id="5911" chance="1800"/> --Red Piece of Cloth
+         </inside>
+     </item>
+  
+   </loot>
+  </monster>

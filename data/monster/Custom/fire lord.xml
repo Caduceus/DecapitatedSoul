@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Fire Lord" tp="1" nameDescription="a fire lord" race="blood" experience="9000" speed="300" manacost="0">
+    <health now="20000" max="20000"/>
+     <look type="242" corpse="8964"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="1"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag canpushcreatures="1"/>
+      <flag targetdistance="1"/>
+      <flag staticattack="2"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+		<attack name="melee" interval="2000" skill="80" attack="250"/>
+		<attack name="fire" interval="2000" chance="10"  range="7" radius="7" target="1" min="-675" max="-940">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="manadrain" interval="1000" chance="63" range="7" min="-300" max="-600"/>
+		<attack name="manadrain" interval="1000" chance="40" radius="5" target="0" min="-350" max="-550">
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+		<attack name="Great Fireball" interval="1500" chance="10"  range="1" radius="1" target="1" min="-625" max="-860">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+		<attack name="outfit" interval="2000" radius="3" chance="5" monster="hellfire fighter" duration="6000">
+			<attribute key="areaEffect" value="yellowspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="80" defense="80">
+		<defense name="healing" interval="5000" chance="40"  min="500" max="1500">
+			<attribute key="areaEffect" value="fire"/>
+		</defense>
+		<defense name="healing" interval="4000" chance="50"  min="1500" max="2500">
+			<attribute key="areaEffect" value="fire"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="10" speedchange="360" duration="20000">
+			<attribute key="areaEffect" value="fire"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="15"/>
+		<element energyPercent="25"/>
+		<element icePercent="-15"/>
+		<element deathPercent="20"/>
+	</elements>
+	<immunities>
+		<immunity physical="0"/>
+		<immunity energy="0"/>
+		<immunity fire="1"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<loot>
+		<item id="2152" countmax="20" chance="100000"/><!-- platinum coin -->
+		<item id="8877" chance="900"/><!-- lavos armor -->
+		<item id="7899" chance="1250"/><!-- magma coat -->
+		<item id="8304" chance="100000"/><!-- eternal flames -->
+	</loot>
+</monster>

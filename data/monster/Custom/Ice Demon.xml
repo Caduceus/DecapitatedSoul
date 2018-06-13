@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ice Demon" nameDescription="an ice demon" race="undead" experience="60000" speed="395" manacost="0">
+	<health now="35000" max="35000"/>
+	<look type="261" corpse="7282"/>
+	<targetchange interval="2000" chance="5"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-800" max="-1500"/>
+		<attack name="ice_exori" interval="4000" chance="30" target="1" min="-1000" max="-1500"/>
+		<attack name="ice" interval="1000" chance="55" range="7" min="-800" max="-1000">
+			<attribute key="shootEffect" value="smallice"/>
+			<attribute key="areaEffect" value="iceattack"/>
+		</attack>
+	</attacks>
+	<defenses armor="90" defense="80"/>
+	<elements>
+		<element physicalPercent="25"/>
+		<element firePercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity holy="1"/>
+		<immunity death="1"/>
+		<immunity fire="1"/>
+		<immunity ice="1"/>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+		<immunity drunk="1"/>
+	</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="Chrrr."/>
+		<voice sentence="Crrrrk."/>
+		<voice sentence="Gnarr."/>
+	</voices>
+	<loot>
+		<item id="2160" countmax="10" chance="10000" /><!-- crystal coin -->
+		<item id="7441" chance="10000"/><!-- ice cube -->
+		<item id="2146" chance="5780"/><!-- small sapphire -->
+		<item id="2479" chance="10440"/><!-- strange helmet -->
+		<item id="7591" countmax="200" chance="1440"/><!-- great mana potion -->
+		<item id="7590" countmax="200" chance="1440"/><!-- great health potion -->
+		<item id="7290" chance="2660"/><!-- shard -->
+		<item id="7449" chance="1000"/><!-- crystal sword -->
+		<item id="7902" chance="5120"/><!-- glacier mask -->
+		<item id="2145" chance="666"/><!-- small diamond -->
+		<item id="8878" chance="500"/><!-- crystalline armor -->
+		<item id="8891" chance="500"/><!-- paladin armor -->
+		<item id="18465" chance="5000"/><!-- shiny blade -->
+		<item id="7381" chance="8000"/><!-- mammoth whopper -->
+	</loot>
+</monster>

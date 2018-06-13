@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="chocobo warrior" nameDescription="a chocobo warrior" race="undead" experience="4000" speed="250" manacost="0">
+	<health now="3500" max="3500"/>
+	<look type="143" head="116" body="116" legs="40" feet="114" addons="3" mount="369" corpse="6080"/>
+	
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" chance="40" min="-390" max="-510"/>
+		<attack name="melee" interval="1800" chance="40" range="7" radius="5" target="0" min="-310" max="-500">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="18" defense="14">
+		<defense name="speed" interval="1000" chance="7" speedchange="260" duration="3000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element holyPercent="-10"/>
+		<element icePercent="50"/>
+		<element firePercent="-10"/>
+		<element energyPercent="-10"/>
+		<element physicalPercent="40"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<voices interval="5000" chance="0">
+		<voice sentence="I will devour your soul."/>
+		<voice sentence="I will feed on you."/>
+	</voices>
+	<loot>
+		
+		<item id="2152" countmax="5" chance="33400" /><!-- platinum coin -->
+		<item id="2430" chance="3857"/><!-- knight axe -->
+		<item id="2383" chance="3500"/><!-- spike sword -->
+		<item id="2517" chance="500"/><!-- shield of honour -->
+		<item id="18454" chance="200"/><!-- Mythical bow -->
+		<item id="5891" countmax="1" chance="300" /><!-- enchanted chicken wing -->
+		
+	</loot>
+</monster>

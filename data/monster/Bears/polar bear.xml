@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Polar Bear" nameDescription="a polar bear" race="blood" experience="2200" speed="200" manacost="315">
+	<health now="2885" max="2885"/>
+	<look type="42" corpse="5987"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="5"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="100" attack="100"/>
+	</attacks>
+	<defenses armor="10" defense="10"/>
+	<elements>
+		<element icePercent="40"/>
+		<element firePercent="-10"/>
+		<element deathPercent="-10"/>
+		<element energyPercent="-1"/>
+	</elements>
+	<voices interval="5000" chance="10">
+		<voice sentence="GROARRR!" yell="1"/>
+	</voices>
+	<loot>
+	    <item id="2152" countmax="10" chance="10000"/><!-- platinum coins-->
+		<item id="2671" countmax="2" chance="50000"/><!-- ham -->
+		<item id="2666" countmax="4" chance="5000"/><!-- meat -->
+		<!--item id="10567" chance="50"/><!-- polar bear paw -->
+	</loot>
+</monster>

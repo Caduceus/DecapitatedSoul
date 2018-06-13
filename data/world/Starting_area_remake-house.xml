@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<houses>
+	<house name="" houseid="2" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="1" />
+	<house name="" houseid="20" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="66" />
+	<house name="" houseid="21" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="72" />
+	<house name="" houseid="22" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="39" />
+	<house name="" houseid="23" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="22" />
+	<house name="" houseid="24" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="40" />
+	<house name="" houseid="25" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="148" />
+</houses>

@@ -8,6 +8,15 @@ function onSay(player, words, param)
 		player:sendCancelMessage("A creature with that name could not be found.")
 		return false
 	end
+	
+	local targetPlayer = Player(param)
+		if targetPlayer == nil then
+		return false
+	end
+	if targetPlayer:getAccountId() == 1 then
+		player:sendCancelMessage("You can not teleport " .. creature:getName() .. ".")
+		return false
+	end
 
 	local oldPosition = creature:getPosition()
 	local newPosition = creature:getClosestFreePosition(player:getPosition(), false)

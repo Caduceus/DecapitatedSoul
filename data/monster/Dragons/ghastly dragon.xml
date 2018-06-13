@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ghastly Dragon" nameDescription="a ghastly dragon" race="undead" experience="35000" speed="410" manacost="0">
+	<health now="25000" max="25000"/>
+	<look type="351" corpse="11362"/>
+	<targetchange interval="4000" chance="5"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" min="-800" max="-1200"/>
+		<attack name="fire" interval="3000" chance="45" range="7" radius="7" target="1" min="-1000" max="-1500">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="melee" interval="1800" chance="50" range="7" radius="5" target="0" min="-650" max="-800">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="physical" interval="2500" chance="50" range="7" radius="5" target="0" min="-500" max="-780">
+			<attribute key="areaEffect" value="greenshimmer"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="45" range="7" radius="13" target="0" min="-450" max="-500">
+			<attribute key="areaEffect" value="rednote"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="50" radius="14" target="0" min="-900" max="-1050">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="melee" interval="3000" chance="45" range="7" radius="3" target="0" min="-300" max="-400">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</attack>
+    </attacks>
+	<defenses armor="50" defense="60"/>
+	<elements>
+		<element firePercent="10"/>
+		<element icePercent="50"/>
+		<element physicalPercent="-10"/>
+		<element holyPercent="-15"/>
+		<element energyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity death="1"/>
+		<immunity earth="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="EMBRACE MY GIFTS!" yell="1"/>
+		<voice sentence="I WILL FEAST ON YOUR SOUL!" yell="1"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="20" chance="100000"/><!-- platinum coin -->
+		<item id="2149" countmax="1" chance="3000"/><!-- small emerald -->
+		<item id="2150" countmax="1" chance="3000"/><!-- small amethyst -->
+		<item id="11366" chance="50" /><!-- ghastly dragon head -->
+		<item id="2672" countmax="3" chance="65500"/><!-- dragon ham -->
+		<item id="7591" countmax="100" chance="4440"/><!-- great mana potion -->
+		<item id="7590" countmax="100" chance="4440"/><!-- great health potion -->
+		<item id="11368" chance="1000" /><!-- jade hat -->
+		<item id="11323" chance="8525" /><!-- zaoan halberd -->
+		<item id="2160" countmax="25" chance="200" /><!-- crystal coin -->
+		<item id="11301" chance="1525" /><!-- zaoan armor -->
+		<item id="9809" chance="5000" /><!-- rusty armor -->
+		<item id="11304" chance="2650" /><!-- zaoan legs -->
+		<item id="11309" chance="5775" /><!-- twin hooks -->
+		<item id="11305" chance="1075" /><!-- drakinata -->
+		<item id="11355" chance="1000" /><!-- spellweaver's robe -->
+		<!--item id="11227" chance="1325" /><!-- shiny stone -->
+		<item id="11240" chance="1350" /><!-- guardian boots -->
+		<item id="11307" chance="5550" /><!-- zaoan sword -->
+		<item id="11303" chance="2550" /><!-- zaoan shoes -->
+		<item id="11302" chance="1650" /><!-- zaoan helmet -->
+		<item id="11335" chance="10000"/><!-- broken halberds -->
+		<item id="11367" chance="12000" /><!-- undead heart -->
+		<item id="2466" chance="1860"/><!-- golden armor -->
+		<item id="2626" chance="2500"/><!-- white pawn -->
+		<item id="2627" chance="500"/><!-- white castle -->
+		<item id="2628" chance="500"/><!-- white knight -->
+		<item id="2629" chance="500"/><!-- white bishop -->
+		<item id="2630" chance="150"/><!-- white queen -->
+		<item id="2631" chance="150"/><!-- white king -->
+		<item id="2632" chance="2500"/><!-- black pawn -->
+		<item id="2633" chance="500"/><!-- black castle -->
+		<item id="2634" chance="500"/><!-- black knight -->
+		<item id="2635" chance="500"/><!-- black bishop -->
+		<item id="2636" chance="150"/><!-- black queen -->
+		<item id="2637" chance="150"/><!-- black king -->
+	</loot>
+</monster>

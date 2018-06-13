@@ -106,6 +106,14 @@ function doPlayerSellItem(cid, itemid, count, cost)
 	return false
 end
 
+local function doPlayerRemoveMoney(cid, amount)
+    local player = Player(cid)
+    if player then
+        return player:removeMoneyNpc(amount)
+    end
+    return false
+end
+
 function doPlayerBuyItemContainer(cid, containerid, itemid, count, cost, charges)
 	if not doPlayerRemoveMoney(cid, cost) then
 		return false

@@ -1,0 +1,12 @@
+<npc name="The Beggar" script="beggar.lua" floorchange="0" walkinterval="10000" speed="120" walkradius="4" floorchange="1" speechbubble="3">
+   <health now="100" max="100"/>
+   <look type="153" head="116" body="123" legs="32" feet="40" addons="2"/>
+   <parameters>
+<parameter key="idletime" value="60"/>
+<parameter key="message_greet" value="Hello |PLAYERNAME|. I am a poor man. Please {help} me."/>
+<parameter key="message_placedinqueue" value="Please wait, |PLAYERNAME|."/>
+<parameter key="message_walkaway" value="Have a nice day."/>
+<parameter key="message_farewell" value="Have a nice day."/>
+<parameter key="message_idletimeout" value="Have a nice day."/>
+   </parameters>
+</npc>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<monster name="Beelzabubba" nameDescription="Beelzabubba" level="99" experience="22800" manacost="0" speed="420" race="2">
+  <health now="52000" max="52000"/>
+  <strategy attack="110" defense="35"/>
+  <targetchange speed="420" chance="75"/>
+  <flags canpushitems="0" summonable="0" hostile="1" attackable="1" illusionable="0" convinceable="0" pushable="1" staticattack="0" targetdistance="0" runonhealth="0"/>
+  <look type="12" head="0" body="0" legs="0" feet="0" addons="0" corpse="5995"/>
+  <attacks>
+    <attack name="melee" chance="75" speed="990" skill="800" attack="60" min="-500" max="-1200"/>
+  </attacks>
+  <defenses defense="45" armor="10">
+    <defense name="Ultimate Healing" chance="35" speed="2300" min="1337" max="1337"/>
+    <defense name="Strong Haste" chance="50" speed="4200"/>
+  </defenses>
+  <immunities>
+    <immunity name="energy"/>
+    <immunity name="fire"/>
+    <immunity name="poison"/>
+    <immunity name="lifedrain"/>
+    <immunity name="paralyze"/>
+    <immunity name="outfit"/>
+    <immunity name="drunk"/>
+    <immunity name="invisible"/>
+  </immunities>
+  <voices speed="2000" chance="50">
+    <voice sentence="I am creator of DEATH!"/>
+    <voice sentence="You will never see the blade I guard!"/>
+  </voices>
+  <loot>
+  <item id="2147" countmax="1" chance1="3000" chancemax="0" /> small ruby
+  <item id="2520" chance="100000"/>
+  <item id="2494" chance="10000"/>
+  <item id="2495" chance="10000"/>
+  <item id="2273" chance="200000"/>
+  </loot>
+</monster>

@@ -108,6 +108,10 @@ if NpcSystem == nil then
 		if ret ~= nil then
 			npcHandler:setMessage(MESSAGE_ONSELL, ret)
 		end
+		local ret = NpcSystem.getParameter('message_wtf')
+		if ret ~= nil then
+			npcHandler:setMessage(MESSAGE_WTF, ret)
+		end
 		local ret = NpcSystem.getParameter('message_missingmoney')
 		if ret ~= nil then
 			npcHandler:setMessage(MESSAGE_MISSINGMONEY, ret)

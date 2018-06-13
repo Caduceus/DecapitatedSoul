@@ -104,6 +104,10 @@ class Monster final : public Creature
 			return mType->isAttackable;
 		}
 
+		uint16_t getLevel() const {
+			return level;
+		}
+
 		bool canPushItems() const {
 			return mType->canPushItems;
 		}
@@ -112,6 +116,9 @@ class Monster final : public Creature
 		}
 		bool isHostile() const {
 			return mType->isHostile;
+		}
+		bool isPassive() const {
+			return mType->isPassive;
 		}
 		bool canSee(const Position& pos) const final;
 		bool canSeeInvisibility() const final {
@@ -195,6 +202,7 @@ class Monster final : public Creature
 		int32_t maxCombatValue;
 		int32_t targetChangeCooldown;
 		int32_t stepDuration;
+		uint16_t level;
 
 		Position masterPos;
 

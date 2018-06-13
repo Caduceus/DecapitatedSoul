@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Botanist" script="default.lua" walkinterval="2000" speed="100" walkradius="2" floorchange="0">
+<health now="150" max="150"/>
+<look type="144" head="0" body="78" legs="75" feet="97" corpse="6080" addons = "1"/>
+<parameters>
+<parameter key="message_greet" value="Hello |PLAYERNAME|. I am an specialist on flower care."/>
+<parameter key="module_keywords" value="1" />
+        <parameter key="keywords" value="flower;seeds;water;help" />
+        <parameter key="keyword_reply1" value="I am selling a very special flower pot, you will have to take care of it to make it sprout beautiful." />
+        <parameter key="keyword_reply2" value="I am selling the most unique seeds in this server! They sprout the most beutiful flowers you can get!" />
+        <parameter key="keyword_reply3" value="I have an special watering can that will help you to water the pot, its recomanded to put the seeds in the pot, then water it to make it sprout." />
+        <parameter key="keyword_reply4" value="In order to take care of your flower, you need a pot, some seeds which will become the flower, and a watering can in order to water the pot." />
+<parameter key="module_shop" value="1"/>
+    <parameter key="shop_buyable" value="flower pot,7655,50000;watering can,7734,50000;seeds,7732,50000"/>
+    <parameter key="message_needmoremoney" value="You need more money"/>
+</parameters>
+</npc>

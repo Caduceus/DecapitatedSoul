@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Trigama" nameDescription="a trigama" race="blood" experience="80000" speed="400" manacost="0">
+	<health now="60000" max="60000"/>
+	<look type="563" corpse="21291"/>
+	<targetchange interval="3000" chance="10"/>
+	<flags>
+		<flag rewardboss="0" />
+		<flag isblockable="1" />
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="300"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="5000" min="-2000" max="-2500"/>
+		<attack name="physical" interval="2000" chance="60" radius="14" target="0" min="-1200" max="-3500">
+			<attribute key="areaEffect" value="bluebubble"/>
+		</attack>
+		<attack name="manadrain" interval="1000" chance="40" length="0" spread="3" min="-700" max="-900">
+      <attribute key="areaEffect" value="energyarea"/>
+    </attack>
+    <attack name="physical" interval="1000" chance="40" length="8" spread="3" min="-800" max="-1000"/>
+    <attack name="energy" interval="10000" chance="30" length="8" spread="2" min="-1500" max="-2500">
+      <attribute key="areaEffect" value="energyarea"/>
+    </attack>
+    <attack name="poisoncondition" interval="1000" chance="50" length="0" spread="0" min="-1000" max="-1500">
+      <attribute key="areaEffect" value="greenspark"/>
+    </attack>
+    <attack name="lifedrain" interval="1000" chance="50" length="8" spread="0" min="-800" max="-900">
+      <attribute key="areaEffect" value="energy"/>
+    </attack>
+    <attack name="strength" interval="2500" chance="60" radius="14" target="0" min="-1900" max="-2500">
+		<attribute key="areaEffect" value="blackspark"/>
+	</attack>
+	</attacks>
+	<defenses armor="100" defense="100">
+		<defense name="healing" interval="3000" chance="40" min="1000" max="2000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="speed" interval="2000" chance="40" speedchange="480" duration="6000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="50"/>
+		<element holyPercent="30"/>
+		<element physicalPercent="-5"/>
+		<element energyPercent="40"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="FCHHHHH"/>
+		<voice sentence="HISSSS"/>
+	</voices>
+	<loot>
+		<item id="2160" countmax="5" chance="12000"/><!-- crystal coins-->
+		<item id="5097" countmax="4" chance="8000"/><!-- mango -->
+		<item id="7591" countmax="100" chance="4440"/><!-- great mana potion -->
+		<item id="7590" countmax="100" chance="4440"/><!-- great health potion -->
+		<item id="7405" chance="500"/><!-- havoc blade -->
+		<item id="2474" chance="700"/><!-- winged helmet -->
+		<item id="2498" chance="8000"/><!-- royal helmet -->
+		<item id="2195" chance="5000"/><!-- boots of haste -->
+		<item id="12646" chance="500"/><!-- draken boots -->
+		<item id="8869" chance="500"/><!-- greenwood coat -->
+		<item id="2518" chance="200" unique="0" /><!-- bonelord shield -->
+		<item id="7887" subtype="5" chance="900"/><!-- terra amulet -->
+	</loot>
+</monster>

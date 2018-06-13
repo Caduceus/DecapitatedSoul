@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Guard" script="black Knight Guard.lua" walkinterval="0" floorchange="0">
+    <health now="100" max="100" />
+    <look type="131" head="95" body="95" legs="95" feet="95" addons="3" />
+<parameters>
+		<!--MESSAGES-->
+		<parameter key="message_greet" value="Shove off!"/>
+		<parameter key="message_noshop" value="Nothing for you here."/>
+		<parameter key="message_walkaway_male" value="Keep moving. Nothing to see here, Sir."/>
+		<parameter key="message_walkaway_female" value="Keep moving. Nothing to see here, Madam."/>
+		<!--SHOP-->
+		<parameter key="module_shop" value="1"/>
+	</parameters>
+</npc>

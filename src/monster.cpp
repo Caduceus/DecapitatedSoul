@@ -22,9 +22,11 @@
 #include "monster.h"
 #include "game.h"
 #include "spells.h"
+#include "configmanager.h"
 
 extern Game g_game;
 extern Monsters g_monsters;
+extern ConfigManager g_config;
 
 int32_t Monster::despawnRange;
 int32_t Monster::despawnRadius;
@@ -47,14 +49,18 @@ Monster::Monster(MonsterType* mtype) :
 	isMasterInRange = false;
 	mType = mtype;
 	spawn = nullptr;
+	level = uniform_random(mType->minLevel, mType->maxLevel);
 	defaultOutfit = mType->outfit;
 	currentOutfit = mType->outfit;
 
 	skull = mType->skull;
 
-	health = mType->health;
-	healthMax = mType->healthMax;
-	baseSpeed = mType->baseSpeed;
+	//health = mType->health;
+	//healthMax = mType->healthMax;
+	//baseSpeed = mType->baseSpeed;
+	health = mType->health + (mType->health * (g_config.getDouble(ConfigManager::MONSTERLEVEL_BONUSHEALTH) * level));
+	healthMax = mType->healthMax + (mType->healthMax * (g_config.getDouble(ConfigManager::MONSTERLEVEL_BONUSHEALTH) * level));
+	baseSpeed = mType->baseSpeed + (mType->baseSpeed * (g_config.getDouble(ConfigManager::MONSTERLEVEL_BONUSSPEED) * level));
 	internalLight.level = mType->lightLevel;
 	internalLight.color = mType->lightColor;
 
@@ -633,7 +639,11 @@ bool Monster::selectTarget(Creature* creature)
 	if (!isTarget(creature)) {
 		return false;
 	}
-
+	
+	if (isPassive() && !hasBeenAttacked(creature->getID())) {
+    	return false;
+	}
+	
 	auto it = std::find(targetList.begin(), targetList.end(), creature);
 	if (it == targetList.end()) {
 		//Target not found in our target list.
@@ -1892,7 +1902,8 @@ void Monster::updateLookDirection()
 void Monster::dropLoot(Container* corpse, Creature*)
 {
 	if (corpse && lootDrop) {
-		mType->createLoot(corpse);
+		//mType->createLoot(corpse);
+		mType->createLoot(corpse, g_config.getDouble(ConfigManager::MONSTERLEVEL_BONUSLOOT) * level);
 	}
 }
 
