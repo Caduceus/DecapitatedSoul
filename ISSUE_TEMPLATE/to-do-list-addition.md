@@ -1,8 +1,8 @@
 
-<!-- Welcome to the Project To Do List. -->
+<!-- Welcome to the To Do List! -->
 
-### Before creating an issue, please ensure:
-- [ ] This Project currently in Development.
+### Before creating a new To Do, please ensure: <!--Do not mark these boxes, Admin will check accordingly on submission-->
+- [ ] This currently exists in server, but needs updated.
 - [ ] This project is **not** in development, but we need to implement.
 
 ### Steps to achieve this project
