@@ -339,8 +339,7 @@ ReturnValue Actions::internalUseItem(Player* player, const Position& pos, uint8_
 			if (Reward* reward = player->getReward(container->getIntAttr(ITEM_ATTRIBUTE_DATE), false)) {
 				reward->setParent(container->getRealParent());
 				openContainer = reward;
-			}
-			else {
+			} else {
 				return RETURNVALUE_THISISIMPOSSIBLE;
 			}
 		}
@@ -351,8 +350,7 @@ ReturnValue Actions::internalUseItem(Player* player, const Position& pos, uint8_
 			if (!player->getReward(container->getIntAttr(ITEM_ATTRIBUTE_DATE), false)) {
 				return RETURNVALUE_YOUARENOTTHEOWNER;
 			}
-		}
-		else if (corpseOwner != 0 && !player->canOpenCorpse(corpseOwner)) {
+		} else if (corpseOwner != 0 && !player->canOpenCorpse(corpseOwner)) {
 			return RETURNVALUE_YOUARENOTTHEOWNER;
 		}
 
@@ -361,8 +359,7 @@ ReturnValue Actions::internalUseItem(Player* player, const Position& pos, uint8_
 		if (oldContainerId != -1) {
 			player->onCloseContainer(openContainer);
 			player->closeContainer(oldContainerId);
-		}
-		else {
+		} else {
 			player->addContainer(index, openContainer);
 			player->onSendContainer(openContainer);
 		}

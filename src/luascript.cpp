@@ -7691,7 +7691,7 @@ int LuaScriptInterface::luaPlayerGetReward(lua_State* L)
 	}
 
 	uint32_t rewardId = getNumber<uint32_t>(L, 2);
-	bool autoCreate = getBoolean(L, 3, false);	
+	bool autoCreate = getBoolean(L, 3, false);
 	if (Reward* reward = player->getReward(rewardId, autoCreate)) {
 		pushUserdata<Item>(L, reward);
 		setItemMetatable(L, -1, reward);
@@ -11584,8 +11584,7 @@ int LuaScriptInterface::luaMonsterTypeIsPushable(lua_State* L)
 	MonsterType* monsterType = getUserdata<MonsterType>(L, 1);
 	if (monsterType) {
 		pushBoolean(L, monsterType->pushable);
-	}
-	else {
+	} else {
 		lua_pushnil(L);
 	}
 	return 1;

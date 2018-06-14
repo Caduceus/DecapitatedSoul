@@ -55,9 +55,6 @@ Monster::Monster(MonsterType* mtype) :
 
 	skull = mType->skull;
 
-	//health = mType->health;
-	//healthMax = mType->healthMax;
-	//baseSpeed = mType->baseSpeed;
 	health = mType->health + (mType->health * (g_config.getDouble(ConfigManager::MONSTERLEVEL_BONUSHEALTH) * level));
 	healthMax = mType->healthMax + (mType->healthMax * (g_config.getDouble(ConfigManager::MONSTERLEVEL_BONUSHEALTH) * level));
 	baseSpeed = mType->baseSpeed + (mType->baseSpeed * (g_config.getDouble(ConfigManager::MONSTERLEVEL_BONUSSPEED) * level));
@@ -1902,7 +1899,6 @@ void Monster::updateLookDirection()
 void Monster::dropLoot(Container* corpse, Creature*)
 {
 	if (corpse && lootDrop) {
-		//mType->createLoot(corpse);
 		mType->createLoot(corpse, g_config.getDouble(ConfigManager::MONSTERLEVEL_BONUSLOOT) * level);
 	}
 }

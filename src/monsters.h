@@ -166,9 +166,6 @@ class MonsterType
 		bool hiddenHealth;
 		bool isBlockable;
 
-		//void createLoot(Container* corpse);
-		//bool createLootContainer(Container* parent, const LootBlock& lootblock);
-		//std::vector<Item*> createLootItem(const LootBlock& lootBlock);
 		void createLoot(Container* corpse, double bonus = 1.0);
 		bool createLootContainer(Container* parent, const LootBlock& lootblock, double bonus = 1.0);
 		std::vector<Item*> createLootItem(const LootBlock& lootBlock, double bonus = 1.0);

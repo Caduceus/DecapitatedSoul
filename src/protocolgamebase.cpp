@@ -123,7 +123,6 @@ void ProtocolGameBase::AddCreature(NetworkMessage& msg, const Creature* creature
 		msg.add<uint32_t>(remove);
 		msg.add<uint32_t>(creature->getID());
 		msg.addByte(creatureType);
-		//msg.addString(creature->getName());
 		const Monster* monster = creature->getMonster();
 		if (monster && monster->getLevel() > 0) {
 			msg.addString(monster->getName() + " [" + g_config.getString(ConfigManager::MONSTERLEVEL_PREFIX) + " " + std::to_string(monster->getLevel()) + "]");
@@ -153,7 +152,7 @@ void ProtocolGameBase::AddCreature(NetworkMessage& msg, const Creature* creature
 	msg.addByte(lightInfo.level);
 	msg.addByte(lightInfo.color);
 
-	msg.add<uint16_t>(creature->getStepSpeed() / 2); // 156 & 219 //Speed_edit
+	msg.add<uint16_t>(creature->getStepSpeed() / 2);
 
 	msg.addByte(player->getSkullClient(creature));
 	msg.addByte(player->getPartyShield(otherPlayer));
@@ -216,7 +215,7 @@ void ProtocolGameBase::AddPlayerStats(NetworkMessage& msg)
 
 	msg.add<uint16_t>(player->getStaminaMinutes());
 
-	msg.add<uint16_t>(player->getBaseSpeed() / 2); // 156 & 219 //Speed_edit
+	msg.add<uint16_t>(player->getBaseSpeed() / 2);
 
 	Condition* condition = player->getCondition(CONDITION_REGENERATION);
 	msg.add<uint16_t>(condition ? condition->getTicks() / 1000 : 0x00);
@@ -257,7 +256,6 @@ void ProtocolGameBase::AddCreatureLight(NetworkMessage& msg, const Creature* cre
 	msg.addByte(lightInfo.level);
 	msg.addByte(lightInfo.color);
 }
-
 
 bool ProtocolGameBase::canSee(const Creature* c) const
 {
