@@ -1,13 +1,8 @@
----
-name: To Do List Addition
-about: Proposed Project Ideas
 
----
+<!-- Welcome to the To Do List! -->
 
-<!-- Welcome to the issues section if it's your first time! -->
-
-### Before creating an issue, please ensure:
-- [ ] This Project currently in Development.
+### Before creating a new To Do, please ensure:
+- [ ] This currently in exists in server, but needs updated.
 - [ ] This project is **not** in development, but we need to implement.
 
 ### Steps to achieve this project
