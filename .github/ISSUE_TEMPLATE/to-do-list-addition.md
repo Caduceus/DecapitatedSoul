@@ -1,7 +1,7 @@
 
 <!-- Welcome to the To Do List! -->
 
-### Before creating a new To Do, please ensure: <!--Do not mark these boxes, Admin will check accordingly on submission-->
+### Before creating a new To Do, please ensure:
 - [ ] This currently exists in server, but needs updated.
 - [ ] This project is **not** in development, but we need to implement.
 
