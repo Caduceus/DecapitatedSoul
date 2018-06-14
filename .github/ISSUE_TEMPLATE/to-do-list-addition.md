@@ -4,18 +4,19 @@ about: Proposed Project Ideas
 
 ---
 
-<!-- Welcome to the To Do List! -->
+<!-- Welcome to the To Do List! use [x] to check below-->
 
-### Before creating a new To Do, please ensure:
-- [ ] This currently exists in server, but needs updated.
+### What is this for:
+- [ ] This currently exists in server, but needs an update.
 - [ ] This project is **not** in development, but we need to implement.
 - [ ] Brainstorm Idea.
 
 ### Steps to achieve this project
 
-- Proposed Idea: <!--Main Idea to implement-->
-  - Sub Idea: <!--Details on how to achieve project-->
-  - Sub Idea: <!--Details on how to achieve project-->
+- **Proposed Idea**
+  - Details on how to achieve idea.
+    - Additional info. 
+  - Additional details on how to achieve idea.
 
 ### Expected behavior
 <!-- Tell us what should happen -->
