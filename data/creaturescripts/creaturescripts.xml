@@ -26,10 +26,11 @@
     <event type="modalwindow" name="modalMD" script="modalMD.lua"/>
     <!--event type="kill" name="RewardLoot" script="rewardloot.lua"/>
     <!--event type="healthChange" name="RewardHealth" script="custom/reward_health_change.lua"/-->
-    <event type="think" name="medusaHealth" script="quests/medusa/medusa.lua"/>
-    <event type="death" name="creature_advance" script="quests/medusa/creature_advance.lua"/>
-    <event type="kill" name="sistersDeath" script="quests/medusa/sistersDeath.lua"/>
-    <event type="kill" name="medusaDeath" script="quests/medusa/medusaDeath.lua"/>
+    <event type="think" name="medusaHealth" script="quests/Medusa/medusa.lua"/>
+    <event type="death" name="creature_advance" script="quests/Medusa/creature_advance.lua"/>
+    <event type="kill" name="sistersDeath" script="quests/Medusa/sistersDeath.lua"/>
+    <event type="kill" name="medusaDeath" script="quests/Medusa/medusaDeath.lua"/>
+    <event type="kill" name="stormblastDeath" script="quests/Catacombs/stormblastDeath.lua"/>
     <event type="think" name="Templar" script="monster/templar.lua"/>
     <event type="think" name="addPointTimer" script="custom/addpointTimer.lua" />
     <event type="think" name="AuraPz" script="custom/aura_pz.lua" />
