@@ -87,8 +87,9 @@
 	2000 - 2500 almost all the time
 	3000 > All the time
 	-- Loot Chance -->
-    <loot>
-		<item id="2148" countmax="1" chance="40000"/><!-- gold coin -->
-        <item id="5943" chance="800"/> <!-- Heart of Stormblast-->
+     <loot>
+		<item id="2160" countmax="5" chance="10000"/><!-- crystal coin -->
+		<item id="2804" countmax="5" chance="800"/><!-- shadow herb -->
+        <item id="5943" chance="750" unique="1"/> <!-- Heart of Stormblast-->
     </loot>
   </monster>

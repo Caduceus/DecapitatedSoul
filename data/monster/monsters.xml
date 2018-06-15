@@ -24,7 +24,7 @@
 	<monster name="Vanir" file="Custom/Vanir.xml"/>
 	<monster name="Lestat de Lioncourt" file="Undead Humanoids/lestat.xml"/>
 	<monster name="angel of death" file="Undead Humanoids/angel of death.xml"/>
-	<monster name="headless horseman" file="Undead Humanoids/Headless Horseman.xml"/>
+	<monster name="headless horseman" file="Undead Humanoids/headless horseman.xml"/>
 
 	<!-- AI -->
 	<monster name="Master Nekomancer" file="AI/master nekomancer.xml"/>
