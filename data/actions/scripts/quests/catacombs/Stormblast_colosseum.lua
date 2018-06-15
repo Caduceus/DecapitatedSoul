@@ -1,16 +1,16 @@
 local config = {  
 	requiredLevel = 75,
 	daily = false,
-	centerStormblastChamber = Position(82, 71, 6),
+	centerStormblastChamber = Position(329, 49, 6),
 	playerPositions = {
 		Position(1034, 867, 2),
-		Position(1036, 867, 2) --how to make 2nd player optional?
+		Position(1036, 867, 2)
 	},
 	newPositions = {
-		Position(314, 57, 7),
-		Position(326, 57, 7) --how to make 2nd player optional?
+		Position(329, 54, 6),
+		Position(329, 45, 6)
 	},
-	monsterSpawnPosition = Position(320, 57, 7),
+	monsterSpawnPosition = Position(329, 50, 6),
 	monsterName = {
         [1] = "Stormblast2",
         [2] = "Stormblast",
@@ -36,11 +36,11 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 
 		--Game.getSpectators(position[, multifloor = false[, onlyPlayer = false[, minRangeX = 0[, maxRangeX = 0[, minRangeY = 0[, maxRangeY = 0]]]]]])
-		local specs, spec = Game.getSpectators(config.centerStormblastChamber, true, false, 37, 37, 23, 26)
+		local specs, spec = Game.getSpectators(config.centerStormblastChamber, false, false, 9, 9, 10, 10)
 		for i = 1, #specs do
 			spec = specs[i]
 			if spec:isPlayer() then
-				player:sendTextMessage(MESSAGE_STATUS_SMALL, "A player is already inside the quest area. Please try again later.")
+				player:sendTextMessage(MESSAGE_STATUS_SMALL, "A battle is currently in progress. Please try again later.")
 				return true
 			end
 

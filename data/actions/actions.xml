@@ -107,7 +107,7 @@
 	<action uniqueid="15001" script="quests/catacombs/sorc_druid_pally_chest.lua"/>
 	<action fromuid="15002" touid="15005" script="quests/catacombs/knight_templar_chest.lua"/>
 	<action uniqueid="15101" script="quests/catacombs/Catacomb quest Id door.lua"/>
-	<action uniqueid="15102" script="quests/catacombs/Stormblast_remake.lua"/>  <!--Stormblast Summon_switch.lua"/>-->
+	<action uniqueid="15102" script="quests/catacombs/Stormblast_colosseum.lua"/>
 	<action uniqueid="15105" script="quests/catacombs/Soraya_task_id.lua"/>
 	<action uniqueid="15112" script="quests/catacombs/catacombs_entrance_switch.lua"/>
 	
