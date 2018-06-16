@@ -6,7 +6,7 @@ function onCastSpell(player, variant)
             deSpawn = 2 * 60
             }
 
-                if #player:getSummons() >= 1 then
+                if #player:getSummons() == 1 then
                         player:sendCancelMessage("You already have a guardian.")
                         player:sendMagicEffect(CONST_ME_POFF)
                         return false
@@ -27,7 +27,9 @@ function onCastSpell(player, variant)
         -- Place the monster
          monster:setMaster(player)
          local hp = monster:getMaster():getMaxHealth()
+         local outfit = monster:getMaster():getOutfit()
 			if hp > monster:getMaxHealth() then
+				monster:setOutfit(outfit)
 				monster:setMaxHealth(hp)
 				monster:addHealth(hp)
 				monster:say("".. player:getName() .."'s Guardian to the rescue!", TALKTYPE_MONSTER_YELL)
