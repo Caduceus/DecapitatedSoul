@@ -121,7 +121,7 @@ function creatureSayCallback(cid, type, msg)
         if doPlayerRemoveMoney(cid, count[cid]) then
             doPlayerSetBalance(cid, getPlayerBalance(cid) + count[cid])
             updatePlayerBalance(getPlayerName(cid), getPlayerBalance(cid))
-            npcHandler:say('Alright, we have added the amount of {{' .. count[cid] .. '}} gold to your balance. Your account balance is now {' .. getPlayerBalance(cid) .. '} gold,.', cid)
+            npcHandler:say('Alright, we have added the amount of {{' .. count[cid] .. '}} gold to your balance. Your account balance is now {' .. getPlayerBalance(cid) .. '} gold.', cid)
         else
             npcHandler:say('I am inconsolable, but it seems you have lost your gold. I hope you get it back.', cid)
         end
