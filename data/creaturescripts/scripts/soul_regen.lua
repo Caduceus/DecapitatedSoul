@@ -1,6 +1,9 @@
 function onKill(player, target)
-	if isMonster(target) == true then
-		player:addSoul(1)
+	if isInArray({"rotworm","rat","cave rat","dog","cat","chicken"}, target:getName():lower()) then
+	return false
 end
-return true
+	if target:isMonster() == true then
+		player:addSoul(1)
+	end
+	return true
 end
