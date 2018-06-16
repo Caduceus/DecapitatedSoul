@@ -263,7 +263,7 @@ Storage = {
 			lvl100 = 54787
 		},
 		skillMagTemp = {
-			lvl50 = 54776
+			lvl25 = 54788
 		}
 	},
 	manaMessage = 75004,
