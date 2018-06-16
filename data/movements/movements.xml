@@ -35,7 +35,7 @@
 	<movevent event="StepIn" actionid="16020" script="starting_area/keaton_help.lua"/>
 		
 		<!-- Map Mark -->
-	<movevent event="StepIn" actionid="16007" script="map_marks.lua"/>
+	<movevent event="StepIn" actionid="16007" script="starting_area/map_marks.lua"/>
 	
 	<!-- Not Worthy-->
 	<movevent event="StepIn" itemid="3198" script="not_worthy.lua"/>

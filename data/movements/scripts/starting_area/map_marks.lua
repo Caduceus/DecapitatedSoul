@@ -6,18 +6,18 @@ local marks = {
     [4]={{x=1136,y=1152,z=7},"Dragons",MAPMARK_STAR},
     [5]={{x=941,y=1136,z=7},"Vampires",MAPMARK_STAR},
     [6]={{x=1163,y=1184,z=7},"Dragon Lords",MAPMARK_STAR},
-    [7]={{x=1136,y=1139,z=7},"Catacombs",MAPMARK_EXCLAMATION},
+    [7]={{x=1041,y=903,z=8},"Catacombs Entrance",MAPMARK_EXCLAMATION},
     [8]={{x=970,y=1050,z=7},"Heros",MAPMARK_STAR},
     [9]={{x=1015,y=933,z=7},"Shops - Upstairs",MAPMARK_BAG},
     [10]={{x=1031,y=940,z=9},"Banker",MAPMARK_DOLLAR},
     
 }
 
-function onStepIn(cid, item, position, fromPosition)
- local player = Player(cid)
-     if not player then
-		return true
-     end
+function onStepIn(creature, item, position, fromPosition)
+    local player = creature:getPlayer()
+    if not player then
+        return true
+    end
      
      
 	if player:getStorageValue(storage) == 3 then
