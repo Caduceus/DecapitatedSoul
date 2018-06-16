@@ -67,7 +67,7 @@ local rewards = {
             {lvl = 100, items = {{24340, 1}}, storage = 54787}
         },
         [SKILL_MAGLEVEL] = {
-        {lvl = 25, items = {{12424, 1}}, storage = 54776}
+        {lvl = 25, items = {{12424, 1}}, storage = 54788}
         }
     }
 }
