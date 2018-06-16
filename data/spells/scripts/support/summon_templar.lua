@@ -26,8 +26,13 @@ function onCastSpell(player, variant)
 										
         -- Place the monster
          monster:setMaster(player)
-         monster:say("".. player:getName() .."'s Guardian to the rescue!", TALKTYPE_MONSTER_YELL)
-         config.playerPos:sendMagicEffect(CONST_ME_MAGIC_BLUE)
-        return true
+         local hp = monster:getMaster():getMaxHealth()
+			if hp > monster:getMaxHealth() then
+				monster:setMaxHealth(hp)
+				monster:addHealth(hp)
+				monster:say("".. player:getName() .."'s Guardian to the rescue!", TALKTYPE_MONSTER_YELL)
+				config.playerPos:sendMagicEffect(CONST_ME_MAGIC_BLUE)
+		return true
+        end
 	end
 end
