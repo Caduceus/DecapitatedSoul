@@ -36,6 +36,12 @@ setPlayerStorageValue(player, estr, -1)
             player:addBlessing(freeBless.blesses[i])
         end
     end
+    
+    if player:getLevel() > freeBless.level and player:hasBlessing(5) then
+			player:sendTextMessage(MESSAGE_EVENT_ORANGE, "You are Blessed.")
+    elseif not isPlayer or not player:hasBlessing(5) then
+			player:sendTextMessage(MESSAGE_EVENT_ORANGE, "You do not have Blessings!")
+		end
 
 	-- Stamina
 	nextUseStaminaTime[player.uid] = 0
