@@ -1,7 +1,7 @@
 tp_pads = {
     [8300] = {price = 0, name = "Caduceus Manor", storage = 99586},
-   [8301] = {price = 0, name = "Cromwell Castle", storage = 99598},
-   [8302] = {price = 0, name = "Targovista", storage = 99587},
+   [8301] = {price = 0, name = "Targovista", storage = 99587},
+   [8302] = {price = 0, name = "Poenari", storage = 99598},
    [8303] = {price = 250, name = "Temple", storage = 99588},
    [8304] = {price = 10000, name = "Demon Section", storage = 99589},
    [8305] = {price = 10000, name = "Juggernaught Section", storage = 99590},
