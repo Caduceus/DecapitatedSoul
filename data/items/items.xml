@@ -2113,7 +2113,18 @@
 		<attribute key="weight" value="870" />
 	</item>
 	<item id="2141" article="a" name="holy falcon">
-		<attribute key="weight" value="840" />
+		<attribute key="absorbPercentDeath" value="5" />
+		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="slotType" value="ring" />
+		<attribute key="weight" value="10" />
+		<attribute key="healthGain" value="20" />
+		<attribute key="healthTicks" value="10000" />
+		<attribute key="manaGain" value="30" />
+		<attribute key="manaTicks" value="10000" />
+		<attribute key="maxmanapointspercent" value="120"/>
+		<attribute key="maxhitpointspercent" value="120"/>
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2142" article="an" name="ancient amulet">
 		<attribute key="weight" value="840" />

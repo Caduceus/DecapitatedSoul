@@ -617,6 +617,13 @@
 		</movevent>
 	<movevent event="DeEquip" itemid="24340" slot="ring" function="onDeEquipItem"/>
 	
+	<movevent event="Equip" itemid="2141" slot="ring" level="100" script="onEquip_trinket.lua"> <!-- Templar Skill Reward Magic-->
+        <vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+        <vocation name="Warlord Templar" showInDescription="0"/>
+		</movevent>
+	<movevent event="DeEquip" itemid="2141" slot="ring" function="onDeEquipItem"/>
+	
 	<!--Multi Voc Items-->
 	<movevent event="Equip" itemid="10048" slot="head" level="40" script="multiVocItem.lua"/>  <!--Buckethead-->
 	<movevent event="DeEquip" itemid="10048" slot="head" level="40" script="multiVocItem.lua"/> 
