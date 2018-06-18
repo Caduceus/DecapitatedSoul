@@ -57,12 +57,6 @@
         <vocation name="Warlord Templar"/>
 	</instant>
 	
-	<!--instant group="attack" spellid="62" name="wtf" words="exori wtf" lvl="500" maglv="20" mana="250" exhaustion="1000" prem="0" needlearn="0" blockwalls="0" aggressive="1" script="attack/wtf.lua">
-		<vocation name="Knight"/>
-        <vocation name="Elite Knight"/>
-        <vocation name="Warlord Knight"/>
-	</instant-->
-	
 	<!--Custom Sorcerer Spells-->
 	<instant group="attack" spellid="177" name="Static wave" words="exori mas vis" lvl="250" mana="1000" prem="1" cooldown="6000" groupcooldown="4000" selftarget="1" needlearn="1" script="custom/static_wave.lua">
 		<vocation name="Sorcerer"/>
@@ -117,6 +111,12 @@
 	</instant>
 	
 	<instant group="attack" name="Holy Smokes" words="exevo san hur" lvl="50" mana="160" range="4" needtarget="0" needweapon="1" direction="1" aggressive="1" cooldown="4000" groupcooldown="4000" needlearn="0" script="custom/holy_smokes.lua">
+		<vocation name="Templar"/>
+        <vocation name="Noble Templar"/>
+        <vocation name="Warlord Templar"/>
+	</instant>
+	
+	<instant group="attack" name="Templar Berserk" words="absolution" lvl="90" mana="340" prem="1" needweapon="1" cooldown="4000" groupcooldown="2000" needlearn="0" script="attack/templar_berserk.lua">
 		<vocation name="Templar"/>
         <vocation name="Noble Templar"/>
         <vocation name="Warlord Templar"/>
@@ -311,7 +311,7 @@
         <vocation name="Royal Paladin"/>
         <vocation name="Warlord Paladin"/>
 	</instant>
-	<instant group="attack" spellid="105" name="Fierce Berserk" words="exori gran" lvl="90" mana="340" prem="1" needweapon="1" cooldown="6000" groupcooldown="2000" needlearn="0" script="attack/fierce berserk.lua">
+	<instant group="attack" spellid="105" name="Fierce Berserk" words="exori gran" lvl="90" mana="340" prem="1" needweapon="1" cooldown="4000" groupcooldown="2000" needlearn="0" script="attack/fierce berserk.lua">
 		<vocation name="Knight"/>
         <vocation name="Elite Knight"/>
         <vocation name="Warlord Knight"/>
