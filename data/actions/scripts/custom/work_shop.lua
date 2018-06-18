@@ -1,7 +1,7 @@
-        local storage = 666
+local storage = 666
         local stairPos = {
-           [1] = {x=1075, y=998, z=8, stackpos=0},
-           [2] = {x=1075, y=998, z=8, stackpos=1}     
+           [1] = {x=1077, y=1001, z=8, stackpos=0},
+           [2] = {x=1077, y=1001, z=8, stackpos=1}     
             }
 
         local time_ = 10 -- seconds
@@ -14,7 +14,7 @@
                 -- remove stairs
                 for _, pos in ipairs(stairPos) do
                    doRemoveItem(getTileThingByPos(pos).uid)
-                   Game.createItem(406, 1, stairPos[2])
+                   Game.createItem(23259, 1, stairPos[2])
                 end
             end
 
@@ -33,9 +33,8 @@
            addEvent(reset, time_ * 1000)
       
            -- create steps, send message and effect
-           Game.createItem(3219, 1, stairPos[1])
+           Game.createItem(433, 1, stairPos[1])
            player:sendTextMessage(MESSAGE_INFO_DESCR, "Access Granted!")
            return true
         end
      end
-     
