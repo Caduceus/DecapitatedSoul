@@ -473,5 +473,6 @@
 	<action fromid="18488" toid="18492" script="other/skilltrainer.lua" />
 	<action fromid="22815" toid="22822" script="other/doors.lua" />
 	<action fromid="22824" toid="22831" script="other/doors.lua" />
+	<action fromid="25283" toid="25296" script="other/doors.lua" />
 	
 </actions>

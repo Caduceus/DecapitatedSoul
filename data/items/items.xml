@@ -31951,11 +31951,67 @@
 	<item id="25172" article="a" name="silver token" plural="silver tokens">
 		<attribute key="weight" value="20" />
 	</item>
+	<item id="25200" article="a" name="stone wall" />
+	<item id="25201" article="a" name="stone wall" />
+	<item id="25202" article="a" name="stone wall" />
+	<item id="25203" article="a" name="stone wall" />
+	<item id="25204" article="a" name="stone wall" />
+	<item id="25205" article="a" name="stone wall" />
 	<item id="25221" name="stairs">
 		<attribute key="floorchange" value="north" />
 	</item>
 	<item id="25222" name="stairs">
 		<attribute key="floorchange" value="west" />
+	</item>
+	<item id="25283" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item id="25284" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item id="25285" article="an" name="open door">
+		<attribute key="type" value="door" />
+	</item>
+	<item id="25286" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item id="25287" article="an" name="open door">
+		<attribute key="type" value="door" />
+	</item>
+	<item id="25288" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item id="25289" article="an" name="open door">
+		<attribute key="type" value="door" />
+	</item>
+	<item id="25290" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item id="25291" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item id="25292" article="an" name="open door">
+		<attribute key="type" value="door" />
+	</item>
+	<item id="25293" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item id="25294" article="an" name="open door">
+		<attribute key="type" value="door" />
+	</item>
+	<item id="25295" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item id="25296" article="an" name="open door">
+		<attribute key="type" value="door" />
 	</item>
 	<item id="25376" article="a" name="token" plural="tokens">
 		<attribute key="weight" value="20" />
