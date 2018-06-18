@@ -13534,7 +13534,7 @@
     <item id="7674" name="withered plant">
         <attribute key="description" value="This plant urgently needs some water, else it will wither away and disappear completely."/>
         <attribute key="weight" value="150"/>
-        <attribute key="decayTo" value="0"/>
+        <attribute key="decayTo" value="7655"/>
         <attribute key="duration" value="86400"/>
     </item>
     <item id="7675" name="withered plant">
