@@ -19,6 +19,7 @@ local book = player:addItem(6103, 1)
                 msg = 'You earned a new weapon.'
             end
         end
+        player:addItem(24774, 1)
         book:setAttribute(ITEM_ATTRIBUTE_TEXT, "Congrats on completion of the Catacombs Quest! Thank you for playing with us on Decapitated Soul!")
         player:setStorageValue(storage, 1)
     else

@@ -24,11 +24,13 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:getVocation():getBase():getId() == 9 then
 			player:addItem(7383, 1)
 			player:addItem(chest.itemid, chest.count)
+			player:addItem(24774, 1)
 			book:setAttribute(ITEM_ATTRIBUTE_TEXT, "Congrats on completion of the Catacombs Quest! Thank you for playing with us on Decapitated Soul!")
 			player:setStorageValue(storage, 1)
 			player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Relic Sword is for healing only.')
 		else
 			player:addItem(chest.itemid, chest.count)
+			player:addItem(24774, 1)
 			book:setAttribute(ITEM_ATTRIBUTE_TEXT, "Congrats on completion of the Catacombs Quest! Thank you for playing with us on Decapitated Soul!")
 			player:setStorageValue(storage, 1)
 		end

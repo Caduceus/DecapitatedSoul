@@ -10,7 +10,6 @@ function onStepIn(cid, item, position, fromPosition)
 				player:getPosition():sendMagicEffect(CONST_ME_POFF)
 	  else
 	if isInArray({1,2,3}, player:getVocation():getBase():getId()) then 
-			player:addItem(24774, 1)
             player:sendTextMessage(MESSAGE_INFO_DESCR, "You have completed the Catacombs Quest!")
             player:teleportTo(pos)
    			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
