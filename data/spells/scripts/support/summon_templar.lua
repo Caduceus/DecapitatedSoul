@@ -8,7 +8,6 @@ function onCastSpell(player, variant)
 
                 if #player:getSummons() == 1 then
                         player:sendTextMessage(MESSAGE_INFO_DESCR, "You already have a guardian.")
-                        player:getPosition()sendMagicEffect(CONST_ME_POFF)
                         return false
                 end
                 
