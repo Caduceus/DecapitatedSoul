@@ -7,7 +7,7 @@ end
 ze_zombieName = "Zombie Event" -- Zombie name
 ze_timeToStartInvasion = 5 -- When should the first zombie be summoned [seconds]
 ze_zombieSpawnInerval = 1 -- The interval of each zombie that will get summoned
-ze_zombieMaxSpawn = 70 -- Max zombies in the arena
+ze_zombieMaxSpawn = 100 -- Max zombies in the arena
 ze_zombieCountGlobalStorage = 100 -- Use empty global storage
  
 -- Player Variables
