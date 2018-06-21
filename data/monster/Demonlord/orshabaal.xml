@@ -14,6 +14,9 @@
 		<flag canpushcreatures="1"/>
 		<flag targetdistance="1"/>
 		<flag runonhealth="1000"/>
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
 		<attack name="melee" interval="1500" min="-560" max="-1000"/>

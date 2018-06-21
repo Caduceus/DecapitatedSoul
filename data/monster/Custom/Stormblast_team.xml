@@ -19,6 +19,9 @@
 		<flag lightcolor="5"/>
 		<flag targetdistance="3"/>
 		<flag runonhealth="10"/>
+		<flag canwalkonenergy="1" />
+		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="0" />
     </flags>
     <attacks>
 		<attack name="melee" interval="2000" skill="70" attack="30"/>

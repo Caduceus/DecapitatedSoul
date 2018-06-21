@@ -481,7 +481,7 @@
 	<monster name="Cave Rat" file="Glires/cave rat.xml"/>
 	<monster name="The Halloween Hare" file="Glires/halloweenhare.xml"/>
 	<monster name="Rabbit" file="Glires/rabbit.xml"/>
-	<monster name="Rat" file="Glires/rat.xml"/>
+	<monster name="Rat" file="Glires/Rat.xml"/>
 	<monster name="Silver Rabbit" file="Glires/silver rabbit.xml"/>
 	<monster name="Squirrel" file="Glires/squirrel.xml"/>
 	<monster name="Killer Rabbit" file="Glires/killer rabbit.xml"/>
