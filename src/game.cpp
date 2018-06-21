@@ -3235,6 +3235,11 @@ void Game::playerChangeOutfit(uint32_t playerId, Outfit_t outfit)
 	if (!player) {
 		return;
 	}
+	
+	const Outfit* playerOutfit = Outfits::getInstance()->getOutfitByLookType(player->getSex(), outfit.lookType);
+	if (!playerOutfit) {
+		outfit.lookMount = 0;
+	}
 
 	if (outfit.lookMount != 0) {
 		Mount* mount = mounts.getMountByClientID(outfit.lookMount);
