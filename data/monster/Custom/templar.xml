@@ -15,6 +15,9 @@
         <flag canpushcreatures="0"/>
         <flag targetdistance="3"/>
         <flag runonhealth="0"/>
+        <flag canwalkonenergy="1" />
+		<flag canwalkonfire="1" />
+		<flag canwalkonpoison="1" />
     </flags>
 
     <script>

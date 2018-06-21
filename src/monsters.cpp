@@ -886,6 +886,12 @@ bool Monsters::loadMonster(const std::string& file, const std::string& monsterNa
 				mType->hiddenHealth = attr.as_bool();
 			} else if (strcasecmp(attrName, "isblockable") == 0) {
 				mType->isBlockable = attr.as_bool();
+			} else if (strcasecmp(attrName, "canwalkonenergy") == 0) {
+				mType->canWalkOnEnergy = attr.as_bool();
+			} else if (strcasecmp(attrName, "canwalkonfire") == 0) {
+				mType->canWalkOnFire = attr.as_bool();
+			} else if (strcasecmp(attrName, "canwalkonpoison") == 0) {
+				mType->canWalkOnPoison = attr.as_bool();
 			} else {
 				std::cout << "[Warning - Monsters::loadMonster] Unknown flag attribute: " << attrName << ". " << file << std::endl;
 			}
