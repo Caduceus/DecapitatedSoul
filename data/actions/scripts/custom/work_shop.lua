@@ -25,10 +25,10 @@ local storage = 666
            end
       
            -- transform lever, and add reset
-           if player:getStorageValue(storage) < 1 then
+           if player:getAccountStorageValue(storage) < 1 then
             player:sendTextMessage(MESSAGE_INFO_DESCR, "Access Denied")
             
-           elseif player:getStorageValue(storage) == 1 then
+           elseif player:getAccountStorageValue(storage) == 1 then
            item:transform(15128)
            addEvent(reset, time_ * 1000)
       
