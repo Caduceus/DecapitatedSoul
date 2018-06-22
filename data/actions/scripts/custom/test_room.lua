@@ -1,37 +1,35 @@
   local wallPos = {
-            [1] = {x=1096, y=991, z=8, stackpos=3},
-            [2] = {x=1096, y=992, z=8, stackpos=3},
-            [3] = {x=1096, y=996, z=8, stackpos=3},
-            [4] = {x=1096, y=997, z=8, stackpos=3}
+            [1] = {x=1095, y=991, z=8, stackpos=1}, --22578
+            [2] = {x=1095, y=992, z=8, stackpos=1},
+            [3] = {x=1095, y=996, z=8, stackpos=1},
+            [4] = {x=1095, y=997, z=8, stackpos=1}  
         }
         
 
        local time_ = 10 -- seconds
 
         function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-            local function reset()
-                -- reset switch
-            item:transform(1945)
-                -- reset walls
-                    Game.createItem(22769, 1, wallPos[1])
-                    Game.createItem(22769, 1, wallPos[2])
-                    Game.createItem(22769, 1, wallPos[3])
-                    Game.createItem(22769, 1, wallPos[4])                
+        
+            local function reset() --reset walls
+            item:transform(1946)
+                    Game.createItem(22578, 1, wallPos[1])
+                    Game.createItem(22578, 1, wallPos[2])
+                    Game.createItem(22578, 1, wallPos[3])
+                    Game.createItem(22578, 1, wallPos[4])                
                 end
 
-           -- check if lever is currently used
-            if item.itemid == 1946 then
-				item:transform(1945)
-					Game.createItem(22769, 1, wallPos[1])
-                    Game.createItem(22769, 1, wallPos[2])
-                    Game.createItem(22769, 1, wallPos[3])
-                    Game.createItem(22769, 1, wallPos[4])
+            if item.itemid == 1945 then --
+				item:transform(1946)
+					Game.createItem(22578, 1, wallPos[1])
+                    Game.createItem(22578, 1, wallPos[2])
+                    Game.createItem(22578, 1, wallPos[3])
+                    Game.createItem(22578, 1, wallPos[4])
                 player:sendTextMessage(MESSAGE_INFO_DESCR, "closed.")
                 return true
             end
    
             -- transform lever, and add reset
-            item:transform(1946)
+            item:transform(1945)
            -- addEvent(reset, time_ * 1000)
    
             -- remove walls, send message
