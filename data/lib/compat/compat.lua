@@ -1038,4 +1038,44 @@ function iterateArea(func, from, to)
     end
 end
 
+function getPlayerGUIDByName(name)
+	local player = Player(name)
+	if player ~= nil then
+		return player:getGuid()
+	end
 
+	local resultId = db.storeQuery("SELECT `account_id` FROM `account_storage` WHERE `value` = " .. db.escapeString(value))
+	if resultId ~= false then
+		local guid = result.getDataInt(resultId, "value")
+		result.free(resultId)
+		return guid
+	end
+	return 0
+end
+
+function Player.getAccountStorageValue(self, key)
+    if type(key) ~= "number" then
+        return false
+    end
+    local query = db.storeQuery("SELECT `value` FROM `account_storage` WHERE `account_id` = ".. self:getAccountId() .." AND `key` = ".. key)
+    if not query then
+        return false
+    end
+ 
+    local value = result.getDataInt(query, "value")
+    result.free(query)
+    return value
+end
+ 
+function Player.setAccountStorageValue(self, key, value)
+    if type(key) ~= "number" then
+        return false
+    end
+    local query = ""
+    if self:getAccountStorageValue(key) then
+        query = ("UPDATE `account_storage` SET `value` = %d WHERE `account_id` = %d AND `key` = %d"):format(value, self:getAccountId(), key)
+    else
+        query = ("INSERT INTO `account_storage` (`account_id`, `key`, `value`) VALUES (%d, %d, %d)"):format(self:getAccountId(), key, value)
+    end
+    return db.query(query)
+end
