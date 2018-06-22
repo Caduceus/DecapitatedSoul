@@ -3,10 +3,9 @@ local effects = {
     {position = Position(832, 878, 6), text = '', effect = CONST_ME_STUN}, --Checkers
     {position = Position(1022, 931, 8), text = 'Teleport Room'},
     {position = Position(1024, 931, 8), text = 'Home'},
-    {position = Position(1098, 998, 9), text = 'Teleport Room', effect = CONST_ME_PURPLEENERGY},--Test arena portal
+    {position = Position(1097, 994, 9), text = 'Teleport Room'},--Test arena portal
     {position = Position(1039, 910, 8), text = '', effect = CONST_ME_TUTORIALARROW},
-    {position = Position(991, 890, 6), text = 'Free Items'}, -- starting area
-    --{position = Position(555, 631, 9), text = 'Coming Soon! Maybe.. If you might be lucky-ish.'},
+    {position = Position(1046, 862, 7), text = 'Free Items'}, -- starting area
     {position = Position(1062, 995, 6), text = 'Skill Rewards'}, --Caduceus House
     {position = Position(1068, 995, 6), text = 'Quest Rewards'}, --Caduceus House
 	{position = Position(1150, 818, 6), text = '', effect = CONST_ME_STUN},
