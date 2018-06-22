@@ -1038,21 +1038,6 @@ function iterateArea(func, from, to)
     end
 end
 
-function getPlayerGUIDByName(name)
-	local player = Player(name)
-	if player ~= nil then
-		return player:getGuid()
-	end
-
-	local resultId = db.storeQuery("SELECT `account_id` FROM `account_storage` WHERE `value` = " .. db.escapeString(value))
-	if resultId ~= false then
-		local guid = result.getDataInt(resultId, "value")
-		result.free(resultId)
-		return guid
-	end
-	return 0
-end
-
 function Player.getAccountStorageValue(self, key)
     if type(key) ~= "number" then
         return false
