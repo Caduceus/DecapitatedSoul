@@ -1,7 +1,11 @@
 -- STORAGES --
 -- (HIGHLY RECOMMENDED -> ONE mission per STORAGE) --
 -- Sort it in Values -
-
+accountStorage = {
+	workShop = 666,
+	doubleXpGrant = 1000,
+	returnPlayerPromo = 1001,
+	}
 Storage = {
 	
 	zombieEvent = {
