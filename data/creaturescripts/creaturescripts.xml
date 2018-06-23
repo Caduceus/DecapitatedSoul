@@ -42,7 +42,7 @@
     <event type="advance" name="onadvance_reward" script="RewardSkillandPromotion.lua"/>
     <event type="death" name="prevent_death_amulet" script="prevent_death_amulet.lua"/>
     <event type="kill" name="AutoLoot" script="custom/autoloot.lua" />
-    <!--event type="think" name="starve" script="starve.lua" />
+    <event type="login" name="returnPromo" script="custom/promo.lua" />
 
 	 <!-- Zombie Event -->
     <event type="preparedeath" name="ZombiePlayerDeath" script="zombieEventDeath.lua" />
