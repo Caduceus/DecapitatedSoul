@@ -69,6 +69,54 @@
 	<movevent event="StepIn" actionid="16014" script="quests/medusa/medusa_room_check.lua"/>
 	<movevent event="StepIn" actionid="16015" script="quests/medusa/medusa_completion_storage.lua"/>
 	
+	<!-- Medusa Loot-->
+	
+	<movevent event="Equip" itemid="3971" slot="head" level="350" function="onEquipItem">
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin" showInDescription="0"/>
+        <vocation name="Warlord Paladin" showInDescription="0"/>
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+        <vocation name="Templar" />
+		<vocation name="Noble Templar" showInDescription="0" />
+		<vocation name="Warlord Templar" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="3971" slot="head" function="onDeEquipItem"/>
+	
+	<movevent event="Equip" itemid="8857" slot="hand" level="350" function="onEquipItem">
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin" showInDescription="0"/>
+        <vocation name="Warlord Paladin" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="8857" slot="hand" level="350" function="onDeEquipItem"/>
+	
+	<movevent event="Equip" itemid="8880" slot="armor" level="350" function="onEquipItem">
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin" showInDescription="0"/>
+        <vocation name="Warlord Paladin" showInDescription="0"/>
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+        <vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+        <vocation name="Warlord Templar" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="8880" slot="armor" function="onDeEquipItem"/>
+	
+	<movevent event="Equip" itemid="8904" slot="shield" level="350" function="onEquipItem">
+		<vocation name="Sorcerer"/>
+		<vocation name="Master Sorcerer" showInDescription="0"/>
+		<vocation name="Warlord Sorcerer" showInDescription="0"/>
+		<vocation name="Druid"/>
+		<vocation name="Elder Druid" showInDescription="0"/>
+        <vocation name="Warlord Druid" showInDescription="0"/>
+        <vocation name="Templar" />
+		<vocation name="Noble Templar" showInDescription="0" />
+		<vocation name="Warlord Templar" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="8904" slot="shield" function="onDeEquipItem"/>
+	
 	<!-- annihilator -->
 	<movevent event="StepIn" itemid="3756" script="quests/annihilator/room_check.lua"/>
 	
@@ -1703,18 +1751,6 @@
         <vocation name="Warlord Templar" showInDescription="0"/>
 	</movevent>
 	<movevent event="DeEquip" itemid="8879" slot="armor" function="onDeEquipItem"/>
-	<movevent event="Equip" itemid="8880" slot="armor" level="60" function="onEquipItem">
-		<vocation name="Paladin"/>
-		<vocation name="Royal Paladin" showInDescription="0"/>
-        <vocation name="Warlord Paladin" showInDescription="0"/>
-		<vocation name="Knight"/>
-		<vocation name="Elite Knight" showInDescription="0"/>
-        <vocation name="Warlord Knight" showInDescription="0"/>
-        <vocation name="Templar"/>
-		<vocation name="Noble Templar" showInDescription="0"/>
-        <vocation name="Warlord Templar" showInDescription="0"/>
-	</movevent>
-	<movevent event="DeEquip" itemid="8880" slot="armor" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="8881" slot="armor" level="100" function="onEquipItem">
 		<vocation name="Knight"/>
 		<vocation name="Elite Knight" showInDescription="0"/>
@@ -2324,15 +2360,6 @@
         <vocation name="Warlord Druid" showInDescription="0"/>
 	</movevent>
 	<movevent event="DeEquip" itemid="8903" slot="shield" function="onDeEquipItem"/>
-	<movevent event="Equip" itemid="8904" slot="shield" level="70" function="onEquipItem">
-		<vocation name="Sorcerer"/>
-		<vocation name="Master Sorcerer" showInDescription="0"/>
-		<vocation name="Warlord Sorcerer" showInDescription="0"/>
-		<vocation name="Druid"/>
-		<vocation name="Elder Druid" showInDescription="0"/>
-        <vocation name="Warlord Druid" showInDescription="0"/>
-	</movevent>
-	<movevent event="DeEquip" itemid="8904" slot="shield" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="8918" slot="shield" level="250" function="onEquipItem">
 		<vocation name="Sorcerer"/>
 		<vocation name="Master Sorcerer" showInDescription="0"/>

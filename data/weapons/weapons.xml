@@ -926,7 +926,7 @@
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="8857" level="40" unproperly="1"> <!-- Silkweaver Bow -->
+	<distance id="8857" level="350" unproperly="1"> <!-- Silkweaver Bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />

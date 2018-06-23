@@ -7444,10 +7444,16 @@
 		<attribute key="armor" value="2" />
 		<attribute key="slotType" value="head" />
 	</item>
-	<item id="3971" article="a" name="charmer's tiara">
+	<item id="3971" article="a" name="charmer's tiara"> 
 		<attribute key="weight" value="2200" />
-		<attribute key="armor" value="2" />
+		<attribute key="armor" value="50" />
 		<attribute key="slotType" value="head" />
+		<attribute key="skillSword" value="5" />
+		<attribute key="skillAxe" value="5" />
+		<attribute key="skillClub" value="5" />
+        <attribute key="absorbPercentEarth" value="5" />
+        <attribute key="absorbPercentPhysical" value="5" />
+        <attribute key="showattributes" value="1" />
 	</item>
 	<item id="3972" article="a" name="beholder helmet">
 		<attribute key="weight" value="600" />
@@ -16096,7 +16102,9 @@
 		<attribute key="weaponType" value="distance" />
 		<attribute key="ammoType" value="arrow" />
 		<attribute key="range" value="6" />
-		<attribute key="hitChance" value="3" />
+		<attribute key="skillDist" value="5"/>
+		<attribute key="attack" value="40" />
+		<attribute key="hitChance" value="30" />
 	</item>
 	<item id="8858" name="Elemental bow">
 		<attribute key="weight" value="4400" />
@@ -16222,10 +16230,11 @@
 	</item>
 	<item id="8880" article="a" name="swamplair armor">
 		<attribute key="weight" value="8450" />
-		<attribute key="armor" value="13" />
-		<attribute key="absorbPercentEarth" value="3" />
-		<attribute key="absorbPercentFire" value="-3" />
+		<attribute key="armor" value="25" />
+		<attribute key="absorbPercentEarth" value="10" />
+		<attribute key="absorbPercentPhysical" value="5" />
 		<attribute key="slotType" value="body" />
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="8881" article="a" name="fireborn giant armor">
 		<attribute key="weight" value="12000" />
@@ -16349,9 +16358,12 @@
 	<item id="8904" article="a" name="spellscroll of prophecies">
 		<attribute key="description" value="It shows your spells and can also shield against attacks when worn." />
 		<attribute key="weight" value="2650" />
-		<attribute key="magiclevelpoints" value="3" />
-		<attribute key="defense" value="12" />
+		<attribute key="magiclevelpoints" value="20" />
+		<attribute key="absorbpercentmagic" value="10"/>
+	    <attribute key="absorbPercentEarth" value="10" />
+		<attribute key="defense" value="15" />
 		<attribute key="weaponType" value="shield" />
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="8905" article="a" name="rainbow shield">
 		<attribute key="description" value="Strange elemental magic flows over this shield." />
@@ -21608,11 +21620,12 @@
 	</item>
 	<item id="12630" article="a" name="cobra crown">
 		<attribute key="weight" value="850" />
-		<attribute key="armor" value="3" />
-		<attribute key="magiclevelpoints" value="2" />
-		<attribute key="absorbPercentFire" value="-5" />
-		<attribute key="absorbPercentEarth" value="5" />
+		<attribute key="armor" value="20" />
+		<attribute key="magiclevelpoints" value="20" />
+		<attribute key="absorbPercentEarth" value="10" />
+		<attribute key="absorbpercentmagic" value="10" />
 		<attribute key="slotType" value="head" />
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="12631" article="a" name="dissolved souleater">
 		<attribute key="containerSize" value="10" />
