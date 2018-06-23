@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Medusa" nameDescription="a medusa" race="blood" experience="5" speed="180" manacost="0">
+<monster name="Medusa" nameDescription="a medusa" race="blood" experience="150000" speed="180" manacost="0">
 	<health now="145000" max="145000"/>
 	<look type="330" corpse="10524"/>
 	<targetchange interval="4000" chance="20"/>
@@ -19,8 +19,6 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="80" attack="100" poison="840"/>
-		<!--attack name="Kaiser Gran" interval="8000" skill="80" attack="100" poison="840"/>
-		<!--attack name="flam_wave" interval="3000" chance="30" target="0" min="-2000" max="-4000"/-->
 		<attack name="lifedrain" interval="2000" chance="20" count="3" range="7" target="0" min="-2100" max="-5500">
 			<attribute key="shootEffect" value="earth"/>
 			<attribute key="areaEffect" value="carniphila"/>
@@ -31,9 +29,6 @@
 		<attack name="manadrain" interval="3000" chance="50" radius="10" target="0" min="-800" max="-1800">
 			<attribute key="areaEffect" value="greenshimmer"/>
 		</attack>
-		<!--attack name="speed" interval="4000" chance="50" range="7" speedchange="-1500" duration="15000">
-			<attribute key="areaEffect" value="poff"/>
-		</attack-->
 		<attack name="poisoncondition" interval="5000" chance="80" length="0" spread="1" min="-5800" max="-8000">
 			<attribute key="areaEffect" value="greenspark"/>
 		</attack>
@@ -59,26 +54,26 @@
 		<immunity lifedrain="1"/>
 		<immunity drown="1"/>
 	</immunities>
-	<!--voices interval="5000" chance="10">
-		<voice sentence="You will make ssuch a ffine yaard gnome!"/>
-		<voice sentence="There isss no chhhanccce of esscape, Darling."/>
-		<voice sentence="Stay away fffrom me.!"/>
-	</voices-->
 	<script>
                 <event name ="medusaHealth"/>
-        </script>
+    </script>
+    <!-- Loot Chance --
+	100 - x =   rare
+	500 - 800   semi rare
+	1000 - 1200 common
+	2000 - 2500 almost all the time
+	3000 > All the time
+	-- Loot Chance --> 
 	<loot>
-		<!--item id="2160" countmax="2" chance="60000"/> <!-- Crystal Coin >
-		<item id="7761" countmax="2" chance="4440"/><!-- small enchanted emerald >
-		<item id="2536" chance="50000" /><!-- medusa shield >
-		<item id="11226" chance="200" /><!-- strand of medusa hair >
-		<item id="8880" chance="1920" /><!-- swamplair armor >
-		<item id="8857" chance="1920" /><!-- silkweaver bow >
-		<item id="8904" chance="1920" /><!-- spellscroll of prophecies >
-		<item id="7885" chance="19420" /><!-- terra legs >
-		<item id="7884" chance="18870" /><!-- terra mantle >
-		<!--item id="10219" chance="850" /><!-- sacred tree amulet >
-		<item id="45472" countmax="500" chance="4440"/><!-- master mana potion >
-		<item id="50473" countmax="500" chance="4440"/><!-- master health potion -->
+		<item id="2160" countmax="10" chance="3000"/> <!-- Crystal Coin -->
+		<item id="2536" chance="2500" /><!-- medusa shield -->
+		<item id="3971" chance="350"/> <!-- charmer's tiara -->
+		<item id="7761" countmax="2" chance="400"/><!-- small enchanted emerald -->
+		<item id="8857" chance="320" /><!-- silkweaver bow -->
+		<item id="8880" chance="320" /><!-- swamplair armor -->
+		<item id="8904" chance="320" /><!-- spellscroll of prophecies -->
+		<item id="11226" countmax="2" chance="1500" /><!-- strand of medusa hair -->
+		<item id="12630" chance="350"/> <!-- cobra crown -->
+		<item id="12651" chance="400"/> <!-- black jade cobra -->
 	</loot>
 </monster>
