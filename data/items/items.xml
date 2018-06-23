@@ -18614,7 +18614,7 @@
 		<attribute key="description" value="Its leaves stretch out to cover your whole body if you receive earth damage." />
 		<attribute key="weight" value="700" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="charges" value="5" />
+		<attribute key="charges" value="20" />
 		<attribute key="showcharges" value="1" />
 		<attribute key="absorbPercentPhysical" value="60" />
 		<attribute key="absorbPercentEarth" value="40" />
@@ -24742,7 +24742,12 @@
 		<attribute key="defense" value="0" />
 		<attribute key="weaponType" value="shield" />
 	</item>
-	<item fromid="16105" toid="16106" article="a" name="medusa skull">
+	<item id="16105" article="a" name="medusa skull">
+		<attribute key="description" value="Her hair's snakes are still alive." />
+		<attribute key="weight" value="1000" />
+		<attribute key="slotType" value="ring" />
+	</item>
+	<item id="16106" article="a" name="medusa skull upgrade">
 		<attribute key="description" value="Her hair's snakes are still alive." />
 		<attribute key="weight" value="1000" />
 		<attribute key="slotType" value="ring" />
