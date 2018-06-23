@@ -1,4 +1,4 @@
-local storage = 666
+local storage = accountStorage.workShop
         local stairPos = {
            [1] = {x=1077, y=1001, z=8, stackpos=0},
            [2] = {x=1077, y=1001, z=8, stackpos=1}     

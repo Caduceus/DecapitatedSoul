@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
-
+	
+	<!--Account storage-->
+	<action uniqueid="1000" script="quests/account/account_xp_grant.lua"/>
 	<!--Custom-->  
 	<!--action itemid="1738" script="custom/loot_crate_box.lua"/>
 	<action itemid="1739" script="custom/loot_crate_box.lua"/-->
