@@ -138,6 +138,7 @@
 	
 	<!-- Mount -->
 	<action itemid="5891" script="mount/chocobo mount.lua"/>
+	<action uniqueid="10034" script="mount/DL-hatchling.lua"/>
 	<action itemid="11366" script="mount/ghastly.lua"/>
 	<action itemid="12413" script="mount/hatchling.lua"/>
 
