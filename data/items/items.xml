@@ -30830,6 +30830,12 @@
 	<item id="22699" article="a" name="cake tapestry">
 		<attribute key="weight" value="1000" />
 	</item>
+	<item fromid="22763" toid="22770" article="a" name="dark stone wall" />
+	<item fromid="22778" toid="22789" article="a" name="dark stone rail" />
+	<item fromid="22790" toid="22793" article="a" name="dark stone pillar" />
+	<item fromid="22796" toid="22797" article="a" name="dark stone archway" />
+	<item fromid="22806" toid="22811" article="a" name="dark stone archway" />
+	<item fromid="22812" toid="22813" article="a" name="dark stone window" />
 	<item id="22814" article="a" name="closed door">
 		<attribute key="type" value="door" />
 		<attribute key="blockprojectile" value="1" />
@@ -30894,9 +30900,12 @@
 	<item id="22831" article="an" name="open door">
 		<attribute key="type" value="door" />
 	</item>
+	<item fromid="22832" toid="22839" article="a" name="dark stone ornate window" />
 	<item fromid="22840" toid="22842" article="a" name="hole">
 		<attribute key="floorchange" value="down" />
 	</item>
+	<item fromid="22849" toid="22850" article="a" name="dark stone pillar" />
+	<item fromid="22851" toid="22856" article="a" name="dark stone archway" />
 	<item fromid="22859" toid="22860" article="a" name="hole">
 		<attribute key="floorchange" value="down" />
 	</item>
@@ -30914,6 +30923,8 @@
 	<item id="22867" article="a" name="stair">
 		<attribute key="floorchange" value="east" />
 	</item>
+	<item fromid="23033" toid="23035" article="a" name="dark stone archway" />
+	<item fromid="23118" toid="23119" article="a" name="dark stone pillar" />
 	<item id="23121" article="a" name="stair">
 		<attribute key="floorchange" value="north" />
 	</item>
@@ -30928,10 +30939,10 @@
 	<item id="23126" article="a" name="stair">
 		<attribute key="floorchange" value="east" />
 	</item>
-	<item id="23316" article="a" name="midnight panther doll">
-		<attribute key="description" value="It is said to be a symbol of perseverance and luck." />
-		<atribute key="weight" value="170" />
-	</item>
+	<item id="23312" article="a" name="gate" />
+	<item id="23314" article="a" name="gate" />
+	<item id="23316" article="a" name="gate" />
+	<item id="23318" article="a" name="gate" />
 	<item id="23343" article="a" name="dead glooth golem">
 		<attribute key="containerSize" value="20" />
 		<attribute key="decayTo" value="23344" />
@@ -31983,18 +31994,18 @@
 	<item id="25172" article="a" name="silver token" plural="silver tokens">
 		<attribute key="weight" value="20" />
 	</item>
-	<item id="25200" article="a" name="stone wall" />
-	<item id="25201" article="a" name="stone wall" />
-	<item id="25202" article="a" name="stone wall" />
-	<item id="25203" article="a" name="stone wall" />
-	<item id="25204" article="a" name="stone wall" />
-	<item id="25205" article="a" name="stone wall" />
+	<item fromid="25200" toid="25205" article="a" name="stone wall" />
+	<item fromid="25211" toid="25213" article="a" name="broken stone wall" />
+	<item fromid="25214" toid="25217" article="a" name="stone rail" />
+	<item fromid="25218" toid="25220" article="a" name="broken stone wall" />
 	<item id="25221" name="stairs">
 		<attribute key="floorchange" value="north" />
 	</item>
 	<item id="25222" name="stairs">
 		<attribute key="floorchange" value="west" />
 	</item>
+	<item fromid="25223" toid="25226" article="a" name="broken stone wall" />
+	<item fromid="25235" toid="25240" article="a" name="broken stone wall" />
 	<item id="25283" article="a" name="closed door">
 		<attribute key="type" value="door" />
 		<attribute key="blockprojectile" value="1" />
@@ -33304,6 +33315,11 @@
 		<attribute key="stopduration" value="1" />
 		<attribute key="showduration" value="1" />
 	</item>
+	<item id="26145" article="a" name="Little Black Demon Statue" /> 
+	<item id="26146" article="a" name="Little Green Demon Statue" />	
+	<item id="26147" article="a" name="Little Blue Demon Statue" />
+	<item id="26148" article="a" name="Little Grey Demon Statue" />
+	<item id="26149" article="a" name="Little Red Demon Statue" /> 
 	<item id="26181" article="a" name="energetic backpack">
 		<attribute key="weight" value="800" />
 		<attribute key="containerSize" value="20" />
