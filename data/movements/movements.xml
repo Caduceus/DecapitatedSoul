@@ -117,6 +117,13 @@
 	</movevent>
 	<movevent event="DeEquip" itemid="8904" slot="shield" function="onDeEquipItem"/>
 	
+	<!--Medusa Multivoc Trinkets-->
+	<movevent event="Equip" itemid="16105" slot="ring" level="350" script="quests/medusa/medusa_skull.lua"/> 
+	<movevent event="DeEquip" itemid="16105" slot="ring" script="quests/medusa/medusa_skull.lua"/> 
+	
+	<movevent event="Equip" itemid="16106" slot="ring" level="350" script="quests/medusa/medusa_skull.lua"/> 
+	<movevent event="DeEquip" itemid="16106" slot="ring" script="quests/medusa/medusa_skull.lua"/> 
+	
 	<!-- annihilator -->
 	<movevent event="StepIn" itemid="3756" script="quests/annihilator/room_check.lua"/>
 	
@@ -678,8 +685,6 @@
 	<!--Multi Voc Items-->
 	<movevent event="Equip" itemid="10048" slot="head" level="40" script="multiVocItem.lua"/>  <!--Buckethead-->
 	<movevent event="DeEquip" itemid="10048" slot="head" level="40" script="multiVocItem.lua"/> 
-	<movevent event="Equip" itemid="16105" slot="ring" level="3" script="multiVocItem.lua"/> 
-	<movevent event="DeEquip" itemid="16105" slot="ring" script="multiVocItem.lua"/>
 	
 	<!-- Starter Gear -->
 	<movevent event="Equip" itemid="2662" slot="head" level="15" function="onEquipItem">

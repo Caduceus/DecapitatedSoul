@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<npc name="Grumpy Old Man" script="shop.lua" walkinterval="0" speed="0" walkradius="4" floorchange="0">
+<npc name="Grumpy Old Man" script="medusa_hair.lua" walkinterval="0" speed="0" walkradius="4" floorchange="0">
 	<health max="100" now="100"/>
 	<look type="130" head="20" body="39" legs="45" feet="7" addons="0" mount="0"/>
 	<parameters>
-		<!--MESSAGES-->
-		<parameter key="message_greet" value="I suppose you want one of those ole {Promotion}, huh?"/>
-
-		<!--SHOP-->
-		<parameter key="module_shop" value="1"/>
-		<parameter key="shop_buyable" value="red apple,2674,100"/>
-		<parameter key="shop_sellable" value="ham,2671,20"/>
-	</parameters>
+         <parameter key="message_greet" value="Hello there youngin. I'm trading my special {trinkets} in exchange for your Medusa hair."/>
+     </parameters>
 </npc>

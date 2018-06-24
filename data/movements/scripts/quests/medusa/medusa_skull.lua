@@ -61,24 +61,6 @@ local params = {
 itemBonusConfig = {
     -- string = -int
     -- strings = +int
-    [10048] = {
-        [1] = {
-            {param = CONDITION_PARAM_STAT_MAGICPOINTS, value = 3, strings = {"Magic Level"}},
-        },
-        [2] = {
-            {param = CONDITION_PARAM_STAT_MAGICPOINTS, value = 3, strings = {"Magic Level"}},
-        },
-        [3] = {
-            {param = CONDITION_PARAM_SKILL_DISTANCE, value = 3, strings = {"Distance"}},
-        },
-        [4] = {
-            {param = CONDITION_PARAM_SKILL_MELEE, value = 3, strings = {"Sword", "Axe", "Club"}},
-        },
-        [9] = {
-            {param = CONDITION_PARAM_SKILL_MELEE, value = 2, strings = {"Sword", "Axe", "Club"}},
-            {param = CONDITION_PARAM_STAT_MAGICPOINTS, value = 2, strings = {"Magic Level"}},
-        },
-    },
     [16105] = {
         [1] = {
             {param = CONDITION_PARAM_STAT_MAGICPOINTS, value = 10, strings = {"Magic Level"}},
@@ -124,6 +106,12 @@ function onEquip(player, item, slot)
     if not vocStats then
         return true
     end
+    
+    if player:getCondition(CONDITION_INFIGHT, CONDITIONID_DEFAULT) then
+        player:sendTextMessage(MESSAGE_STATUS_WARNING,"You cannot equip this item while in battle!")
+        player:getPosition():sendMagicEffect(CONST_ME_POFF)
+        return false
+    end
  
     local condition = conditionSlots[slot].condition
  
@@ -138,7 +126,9 @@ function onEquip(player, item, slot)
     end
  
     player:addCondition(condition)
-    --player:getPosition():sendMagicEffect(CONST_ME_FIREAREA)
+    player:addHealth(player:getMaxHealth())
+	player:addMana(player:getMaxMana())
+    player:getPosition():sendMagicEffect(CONST_ME_HITBYPOISON)
  
     return true
 end

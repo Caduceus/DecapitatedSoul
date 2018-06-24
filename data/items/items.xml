@@ -24746,11 +24746,25 @@
 		<attribute key="description" value="Her hair's snakes are still alive." />
 		<attribute key="weight" value="1000" />
 		<attribute key="slotType" value="ring" />
+		<attribute key="healthGain" value="20" />
+		<attribute key="healthTicks" value="10000" />
+		<attribute key="manaGain" value="30" />
+		<attribute key="manaTicks" value="10000" />
+		<attribute key="maxmanapointspercent" value="120"/>
+		<attribute key="maxhitpointspercent" value="120"/>
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="16106" article="a" name="medusa skull upgrade">
 		<attribute key="description" value="Her hair's snakes are still alive." />
 		<attribute key="weight" value="1000" />
 		<attribute key="slotType" value="ring" />
+		<attribute key="healthGain" value="20" />
+		<attribute key="healthTicks" value="10000" />
+		<attribute key="manaGain" value="30" />
+		<attribute key="manaTicks" value="10000" />
+		<attribute key="maxmanapointspercent" value="120"/>
+		<attribute key="maxhitpointspercent" value="120"/>
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item fromid="16107" toid="16108" article="a" name="doll of Durin The Almighty">
 		<attribute key="weight" value="4000" />
