@@ -82,6 +82,7 @@
 	<talkaction words="!report" separator=" " script="adminreport.lua"/>
 	<talkaction words="!checkvip" separator=" " script="checkvip.lua"/>
 	<talkaction words="!afk" separator=" " script="afk.lua"/>
+	<talkaction words="!work" separator=" " script="working.lua"/>
 	<talkaction words="!commands" script="commands.lua"/>
 	<talkaction words="!god" script="commands_god.lua"/>
 	<talkaction words="!cast" separator=" " script="start_cast.lua" />

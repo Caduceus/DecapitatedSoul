@@ -24,50 +24,6 @@ local config = {
         '!zombie start, min,max,start time',
         ' '
     },
-    godCommands = {
-		'/ban',
-		'/ipban',
-		'/unban',
-		'/up',
-        '/down',
-        '/c',
-        '/goto',
-        '/owner',
-        '/t',
-        '/town',
-        '/a',
-        '/pos',
-        '/info',
-        '/r',
-        '/kick',
-        '/openserver',
-        '/closeserver',
-        '/closeserver shutdown',
-        '/shutdown #',
-        '/B',
-        '/m',
-        '/i',
-        '/s',
-        '/addtutor',
-        '/removetutor',
-        '/looktype',
-        '/summon',
-        '/chameleon',
-        '/addskill name, skill',
-        '/mccheck',
-        '/ghost',
-        '/clean',
-        '/hide',
-        '/vip adddays, PlayerName, #',
-		'/vip removedays, PlayerName, #',
-		'/vip remove, PlayerName',
-		'/vip check, PlayerName',
-		'/vip addinfinite, PlayerName',
-		'/jail PlayerName',
-        '/unjail PlayerName',
-        '!zombie start, min,max,start time',
-        ' '
-    },
     playerCommands = {
 		'!afk (on/off)',
 		'!autoloot add, itemId or name',
@@ -109,7 +65,7 @@ function onSay(cid, words, param)
         for i = 1, #config.staffCommands do
             storeCommands[#storeCommands + 1] = config.staffCommands[i]
         end
-		
+
         for i = 1, #config.playerCommands do
             storeCommands[#storeCommands + 1] = config.playerCommands[i]
         end       
@@ -133,4 +89,4 @@ function onSay(cid, words, param)
         player:showTextDialog(6103, text)   
     end
     return false
-	end
+end

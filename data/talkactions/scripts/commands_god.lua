@@ -42,36 +42,7 @@ local config = {
         '/unjail playerName',
         '!zombie start, min,max,start time',
         ' '
-    },
-    playerCommands = {
-		'!afk (on/off)',
-		'!autoloot add, itemId or name',
-		'!autoloot remove, itemId or name',
-		'!autoloot show',
-		'!autoloot clear',
-		'!buyhouse',
-		'!coin',
-		'!checkvip',
-		'!deathlist playerName',
-		'!cast (pasword optional)',
-		'!kills',
-        '!leavehouse',
-        '!online',
-        '!report (add message)',
-        '!save',
-        '!serverinfo',
-        '!shop',
-        '!spells',
-        '!stopcast',
-        '!uptime',
-        '!zombie join',
-        ' ',
-        'VIP Only:',
-        '!aol',
-        '!bless',
-		'!t',
-		'!portal'
-    },
+    }
 }
 
 function onSay(cid, words, param)
@@ -80,14 +51,10 @@ function onSay(cid, words, param)
     local text = ''
     local line = ''
 
-    if player:getGroup():getId() == 4 then
+    if player:getAccountType() == ACCOUNT_TYPE_GOD then
 		for i = 1, #config.godCommands do
             storeCommands[#storeCommands + 1] = config.godCommands[i]
-		end
-		
-        for i = 1, #config.playerCommands do
-            storeCommands[#storeCommands + 1] = config.playerCommands[i]
-        end       
+		end       
 
         text = text .. 'Commands:'
         for _, t in ipairs(storeCommands) do
@@ -96,8 +63,8 @@ function onSay(cid, words, param)
         end
         player:showTextDialog(6103, text)
     else
-        for i = 1, #config.playerCommands do
-            storeCommands[#storeCommands + 1] = config.playerCommands[i]
+        for i = 1, #config.godCommands do
+            storeCommands[#storeCommands + 1] = config.godCommands[i]
         end
         text = text .. 'Commands:'
         for _, t in ipairs(storeCommands) do
