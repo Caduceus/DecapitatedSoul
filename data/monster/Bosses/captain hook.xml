@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Captain Hook" tp="1" nameDescription="a fury" race="blood" experience="8000" speed="250" manacost="0" script="boss.lua">
-	<health now="5100" max="5100"/>
+	<level min="1" max="2"/>
+	<health now="10000" max="10000"/>
 	<look type="750" head="0" body="95" legs="114" feet="132" addons="3" corpse="15280"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
@@ -19,13 +20,13 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="50" attack="170"/>
-		<attack name="fire" interval="2000" chance="30" length="8" spread="3" min="-200" max="-300">
+		<attack name="fire" interval="2000" chance="30" length="8" spread="3" min="-200" max="-600">
 			<attribute key="areaEffect" value="explosionarea"/>
 		</attack>
 		<attack name="death" interval="2000" chance="25" length="8" spread="0" min="-120" max="-700">
 			<attribute key="areaEffect" value="redspark"/>
 		</attack>
-		<attack name="death" interval="2000" chance="40" radius="4" target="0" min="-120" max="-300">
+		<attack name="death" interval="2000" chance="40" radius="4" target="0" min="-120" max="-400">
 			<attribute key="areaEffect" value="redspark"/>
 		</attack>
 		<attack name="fury skill reducer" interval="2000" chance="5"/>

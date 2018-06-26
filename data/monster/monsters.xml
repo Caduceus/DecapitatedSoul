@@ -4,7 +4,7 @@
 	<monster name="Euryale" file="Custom/Euryale.xml"/>
 	<monster name="Mnemosyne" file="Custom/Mnemosyne.xml"/>
 	<monster name="Sthenno" file="Custom/Sthenno.xml"/>
-	<monster name="captain hook" file="Bosses/catain hook.xml"/>
+	<monster name="captain hook" file="Bosses/captain hook.xml"/>
 	<monster name="templar" file="Custom/templar.xml"/>
 	<monster name="Prison Guard" file="Custom/Prison_Guard.xml"/>
 	<monster name="Chocobo Warrior" file="Custom/chocobo warrior.xml"/>
@@ -709,7 +709,10 @@
 	<monster name="Pirate Ghost" file="Pirates/pirate ghost.xml"/>
 	<monster name="Pirate Marauder" file="Pirates/pirate marauder.xml"/>
 	<monster name="Pirate Skeleton" file="Pirates/pirate skeleton.xml"/>
-
+	
+	<monster name="Dungeon Ghost" file="Pirates/dungeon/pirate ghost.xml"/>
+	<monster name="Dungeon Skeleton" file="Pirates/dungeon/pirate skeleton.xml"/>
+	
 	<!-- Pyro-Elementals -->
 	<monster name="Blazing Fire Elemental" file="Pyro-Elementals/blazing fire elemental.xml"/>
 	<monster name="Blistering Fire Elemental" file="Pyro-Elementals/blistering fire elemental.xml"/>
