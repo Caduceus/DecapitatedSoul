@@ -92,7 +92,7 @@ function creatureSayCallback(cid, type, msg)
         elseif getCount(msg) ~= -1 then
             if getPlayerMoney(cid) >= getCount(msg) then
                 count[cid] = getCount(msg)
-                npcHandler:say('Would you really like to deposit {{' .. count[cid] .. '}} gold?', cid)
+                npcHandler:say('Would you really like to deposit {' .. count[cid] .. '} gold?', cid)
                 Topic[cid] = 2
             else
                 npcHandler:say('You do not have enough gold.', cid)
@@ -111,7 +111,7 @@ function creatureSayCallback(cid, type, msg)
             Topic[cid] = 1
         elseif getPlayerMoney(cid) >= getCount(msg) then
             count[cid] = getCount(msg)
-            npcHandler:say('Would you really like to deposit {{' .. count[cid] .. '}} gold?', cid)
+            npcHandler:say('Would you really like to deposit {' .. count[cid] .. '} gold?', cid)
             Topic[cid] = 2
         else
             npcHandler:say('You do not have enough gold.', cid)
@@ -121,7 +121,7 @@ function creatureSayCallback(cid, type, msg)
         if doPlayerRemoveMoney(cid, count[cid]) then
             doPlayerSetBalance(cid, getPlayerBalance(cid) + count[cid])
             updatePlayerBalance(getPlayerName(cid), getPlayerBalance(cid))
-            npcHandler:say('Alright, we have added the amount of {{' .. count[cid] .. '}} gold to your balance. Your account balance is now {' .. getPlayerBalance(cid) .. '} gold.', cid)
+            npcHandler:say('Alright, we have added the amount of {' .. count[cid] .. '} gold to your balance. Your account balance is now {' .. getPlayerBalance(cid) .. '} gold.', cid)
         else
             npcHandler:say('I am inconsolable, but it seems you have lost your gold. I hope you get it back.', cid)
         end
