@@ -66,7 +66,7 @@
 		<item id="5882" countmax="3" chance="18000"/><!-- red dragon scale -->
 		<item id="2498" chance="1500"/><!-- royal helmet -->
 		<item id="7378" countmax="1" chance="8800"/><!-- royal spear -->
-		<item id="2146" chance="5300"/><!-- small sapphire -->
+		<item id="2146" chance="2300"/><!-- small sapphire -->
 		<item id="2479" chance="3600"/><!-- strange helmet -->
 		<item id="7591" countmax="10" chance="2440"/><!-- great mana potion -->
 		<item id="7590" countmax="10" chance="2440"/><!-- great health potion -->
