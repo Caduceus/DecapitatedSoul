@@ -133,8 +133,8 @@
 	<action uniqueid="9956" script="quests/pirate/torch_quest.lua" />
 	<action itemid="9956" script="quests/pirate/maps.lua" />
 	<action fromuid="9012" touid="9015" script="quests/pirate/maps.lua" />
-	<action uniqueid="15200" script="quests/pirate/red_beard_event_start.lua"/>
-	<action uniqueid="15201" script="quests/pirate/red_beard_boss_fight.lua"/>
+	<action uniqueid="15200" script="quests/pirate/captain_hook_event_start.lua"/>
+	<action uniqueid="15201" script="quests/pirate/captain_hook_boss_fight.lua"/>
 	
 	<!-- Mount -->
 	<action itemid="5891" script="mount/chocobo mount.lua"/>
