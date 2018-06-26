@@ -4,7 +4,7 @@
 	<monster name="Euryale" file="Custom/Euryale.xml"/>
 	<monster name="Mnemosyne" file="Custom/Mnemosyne.xml"/>
 	<monster name="Sthenno" file="Custom/Sthenno.xml"/>
-	<monster name="red beard" file="Bosses/Red Beard.xml"/>
+	<monster name="captain hook" file="Bosses/catain hook.xml"/>
 	<monster name="templar" file="Custom/templar.xml"/>
 	<monster name="Prison Guard" file="Custom/Prison_Guard.xml"/>
 	<monster name="Chocobo Warrior" file="Custom/chocobo warrior.xml"/>
@@ -24,7 +24,7 @@
 	<monster name="Vanir" file="Custom/Vanir.xml"/>
 	<monster name="Lestat de Lioncourt" file="Undead Humanoids/lestat.xml"/>
 	<monster name="angel of death" file="Undead Humanoids/angel of death.xml"/>
-	<monster name="headless horseman" file="Undead Humanoids/headless horseman.xml"/>
+	<monster name="headless horseman" file="Undead Humanoids/headless horseman.xml"/> 
 
 	<!-- AI -->
 	<monster name="Master Nekomancer" file="AI/master nekomancer.xml"/>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Captain Hook" nameDescription="a fury" race="blood" experience="4500" speed="250" manacost="0">
+	<health now="5100" max="5100"/>
+	<look type="750" head="0" body="95" legs="114" feet="132" addons="3" corpse="15280"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="70"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="50" attack="170"/>
+		<attack name="fire" interval="2000" chance="30" length="8" spread="3" min="-200" max="-300">
+			<attribute key="areaEffect" value="explosionarea"/>
+		</attack>
+		<attack name="death" interval="2000" chance="25" length="8" spread="0" min="-120" max="-700">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		<attack name="death" interval="2000" chance="40" radius="4" target="0" min="-120" max="-300">
+			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		<attack name="fury skill reducer" interval="2000" chance="5"/>
+		<attack name="lifedrain" interval="2000" chance="40" radius="3" target="0" min="-120" max="-300">
+			<attribute key="areaEffect" value="blackspark"/>
+		</attack>
+		<attack name="death" interval="2000" chance="40" range="7" min="-125" max="-250">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="areaEffect" value="smallclouds"/>
+		</attack>
+		<attack name="speed" interval="2000" chance="45" range="7" speedchange="-800" duration="30000">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="areaEffect" value="smallclouds"/>
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="50">
+		<defense name="speed" interval="2000" chance="15" speedchange="800" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element icePercent="30"/>
+		<element holyPercent="30"/>
+		<element deathPercent="-10"/>
+		<element energyPercent="-10"/>
+		<element earthPercent="-10"/>
+		<element physicalPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+		<immunity fire="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Ahhhhrrrr!"/>
+		<voice sentence="Waaaaah!"/>
+		<voice sentence="Arg!"/>
+		<voice sentence="Dieee land lover!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="100" chance="30000"/><!-- plat coin -->
+		<item id="6097" chance="1000"/><!-- hook -->
+	</loot>
+</monster>

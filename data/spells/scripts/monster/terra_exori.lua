@@ -56,7 +56,7 @@ local combat = {}
 
      function executeCombat(p, i)
         if not p.creature then
-            return false
+            return true
         end
         if not p.creature:isCreature() then
              return false

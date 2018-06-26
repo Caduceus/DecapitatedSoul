@@ -23,7 +23,7 @@
 		Position(1266, 1293, 6),
 		Position(1278, 1293, 6)
 	},]]--
-	red_beardPositions = {
+	captain_hookPositions = {
 		Position(1256, 1244, 4)
 	}
 }
@@ -75,7 +75,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			Game.createMonster("pirate skeleton", config.pirate_skeletonPositions[i])
 		end]]--
 		
-		Game.createMonster("red beard", Position(1256, 1244, 4))
+		Game.createMonster("captain hook", Position(1256, 1244, 4))
 				
 		local players
 		for i = 1, #storePlayers do

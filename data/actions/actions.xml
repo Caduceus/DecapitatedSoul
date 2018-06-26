@@ -128,7 +128,7 @@
 	<action uniqueid="15012" script="quests/frozen hell/FH_point_of_entry_chest_2.lua"/>
 	
 	<!-- Pirates -->
-	<action actionid="2239" script="quests/pirate/message_bottle.lua" />
+	<action uniqueid="15199" script="quests/pirate/message_bottle.lua" />
 	<action itemid="5810" script="quests/pirate/pirate_voodoo_doll.lua" />
 	<action uniqueid="9956" script="quests/pirate/torch_quest.lua" />
 	<action itemid="9956" script="quests/pirate/maps.lua" />

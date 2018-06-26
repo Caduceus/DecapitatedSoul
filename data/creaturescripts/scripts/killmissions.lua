@@ -28,7 +28,7 @@ local config = {
 	--Keaton
 	['rotworm'] = {amount = 20, storage = 21922, startstorage = 45557, startvalue = 1},
 	--Javy Dones
-	['red beard'] = {amount = 1, storage = 21923, startstorage = 2239, startvalue = 4},
+	['captain hook'] = {amount = 1, storage = 21923, startstorage = 2239, startvalue = 4},
 	--Keaton
 	['black knight'] = {amount = 20, storage = 21927, startstorage = 45559, startvalue = 1},
 							

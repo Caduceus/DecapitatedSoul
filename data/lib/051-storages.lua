@@ -185,7 +185,7 @@ Storage = {
 	pirate = {
 		pirateTask = {
 		mission = 2239,
-		redBeard = 21923
+		captainHook = 21923
 		},
 
 		mapStorage = {

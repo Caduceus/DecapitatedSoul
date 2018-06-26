@@ -61,9 +61,14 @@ function onSpeak(player, type, message)
 			type = TALKTYPE_CHANNEL_R1
 		end
     
-    if playerAccountType == ACCOUNT_TYPE_TUTOR then
+    if playerAccountType == ACCOUNT_TYPE_SENIORTUTOR then
         nameTags = nameTags .. " † ".. player:getLevel() .." † [Staff]" 
             type = TALKTYPE_CHANNEL_O
+        end
+        
+    if playerAccountType == ACCOUNT_TYPE_TUTOR then
+        nameTags = nameTags .. " † ".. player:getLevel() .." † [Tutor]" 
+            type = TALKTYPE_CHANNEL_Y
         end
         
     if playerAccountType < ACCOUNT_TYPE_TUTOR then

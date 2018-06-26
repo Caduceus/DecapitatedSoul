@@ -5,7 +5,5 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
         player:sendTextMessage(MESSAGE_INFO_DESCR, "You have found a pair of hydra scale legs!")
         player:addItem(9928, 1)
         player:setStorageValue(9928, 1)
-    else
-        player:sendTextMessage(MESSAGE_INFO_DESCR, "Something went wrong.")
        end
 end

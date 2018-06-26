@@ -24,7 +24,5 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
         for i = 1, #marks do
         player:addMapMark(marks[i][1],marks[i][3],marks[i][2])
         end
-    else
-        player:sendTextMessage(MESSAGE_INFO_DESCR, "Something went wrong.")
-       end
+    end
 end

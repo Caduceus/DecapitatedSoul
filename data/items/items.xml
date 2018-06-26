@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- corpseType
+<attribute key="corpseType" value="blood" />
+<attribute key="corpseType" value="undead" />
+<attribute key="corpseType" value="fire" />
+<attribute key="corpseType" value="energy" />
+-->
 <items>
 	<item id="100" name="void" />
 	<item id="101" name="earth" />
@@ -631,7 +636,7 @@
 	<item id="1489" article="a" name="fire field">
 		<attribute key="type" value="magicfield" />
 		<attribute key="decayTo" value="0" />
-		<attribute key="duration" value="120" />
+		<attribute key="duration" value="20" />
 		<attribute key="field" value="fire" />
 	</item>
 	<item id="1490" article="a" name="poison field">
@@ -16764,18 +16769,21 @@
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="8968" />
 		<attribute key="duration" value="10" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="8966" name="the remains of an elemental">
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="8967" />
 		<attribute key="duration" value="10" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item fromid="8967" toid="8968" name="the remains of an elemental">
 		<attribute key="weight" value="10000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="0" />
-		<attribute key="duration" value="500" />
+		<attribute key="duration" value="200" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="8969" name="the remains of an elemental">
 		<attribute key="containerSize" value="11" />
@@ -35113,25 +35121,29 @@
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="26045" />
-		<attribute key="duration" value="40" />
+		<attribute key="duration" value="100" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26045" article="a" name="slain sparkion">
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="26046" />
 		<attribute key="duration" value="10" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26046" article="a" name="slain sparkion">
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="26047" />
 		<attribute key="duration" value="10" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26047" article="a" name="slain sparkion">
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="10" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26052" article="your" name="store inbox">
 		<attribute key="containerSize" value="20" />
@@ -35177,12 +35189,14 @@
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="26069" />
 		<attribute key="duration" value="40" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26069" article="a" name="slain reality reaver">
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="26071" />
 		<attribute key="duration" value="40" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26070" article="a" name="Ferocious Table">
 		<attribute key="rotateTo" value="26067" />
@@ -35193,12 +35207,14 @@
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="26072" />
 		<attribute key="duration" value="40" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26072" article="a" name="slain reality reaver">
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="30" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26073" article="a" name="Magnificent Table">
 		<attribute key="rotateTo" value="26074" />
@@ -35671,19 +35687,22 @@
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="26210" />
-		<attribute key="duration" value="40" />
+		<attribute key="duration" value="100" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26210" article="a" name="slain breach brood">
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="26211" />
-		<attribute key="duration" value="10" />
+		<attribute key="duration" value="100" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26211" article="a" name="slain breach brood">
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="26212" />
 		<attribute key="duration" value="10" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26212" article="a" name="slain breach brood">
 		<attribute key="weight" value="25000" />
@@ -35695,25 +35714,29 @@
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="26214" />
-		<attribute key="duration" value="40" />
+		<attribute key="duration" value="50" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26214" article="a" name="slain dread intruder">
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="26215" />
 		<attribute key="duration" value="40" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26215" article="a" name="slain dread intruder">
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="26216" />
 		<attribute key="duration" value="30" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26216" article="a" name="slain dread intruder">
 		<attribute key="weight" value="25000" />
 		<attribute key="containerSize" value="14" />
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="30" />
+		<attribute key="corpseType" value="energy" />
 	</item>
 	<item id="26220" article="a" name="dead boss">
 		<attribute key="containerSize" value="20" />
@@ -35725,7 +35748,7 @@
 	<item id="26221" article="a" name="dead boss">
 		<attribute key="containerSize" value="20" />
 		<attribute key="decayTo" value="26222" />
-		<attribute key="duration" value="20" />
+		<attribute key="duration" value="200" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>

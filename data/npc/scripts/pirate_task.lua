@@ -1,6 +1,4 @@
--- Collecting items and monster missions by Limos (Modified by Xagul to support both monsters and items in the same task)
-
-
+-- Collecting items and monster quests by Limos
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 NpcSystem.parseParameters(npcHandler)
@@ -10,23 +8,40 @@ function onCreatureDisappear(cid)  npcHandler:onCreatureDisappear(cid) end
 function onCreatureSay(cid, type, msg)  npcHandler:onCreatureSay(cid, type, msg) end
 function onThink()  npcHandler:onThink() end
 
-npcHandler:setMessage(MESSAGE_GREET, "Grrreat to see you, |PLAYERNAME|. I take it you found my {quest} in the bottle?")
+local lastSound = 0
+function onThink()
+    if lastSound < os.time() then
+        lastSound = (os.time() + 5)
+        if math.random(100) < 20 then
+            Npc():say("HELP! PLEASE!!", TALKTYPE_MONSTER_YELL)
+        end
+    end
+    npcHandler:onThink()
+end
 
-local missions = {
-  --[[ [1] = {
+npcHandler:setMessage(MESSAGE_GREET, "Greetings |PLAYERNAME|. Are you up for a {quest}?")
+
+local quests = {
+   [1] = {
+     items = {
+       {id = 2239, count = 1} -- pirate boots
+     },
+     monsters = {
+     },
      message = "Did you find my message in a bottle?",
      level = 80, -- minimum level for this mission
      rewarditems = {
-       {id = 2160, count = 5}
+       {id = 2160, count = 1}
      },
      rewardexp = 10
-   },]]
+   },
    [2] = {
      items = {
        {id = 5462, count = 1}, -- pirate boots
        {id = 6098, count = 1}, -- eye patch
        {id = 6095, count = 1}, -- pirate shirt
-       {id = 6126, count = 1} -- peg leg
+       {id = 6126, count = 1}, -- peg leg
+       {id = 6097, count = 1} -- hook
      },
      monsters = {
      },
@@ -35,9 +50,9 @@ local missions = {
      rewarditems = {
        {id = 2160, count = 2}
      },
-     rewardexp = 10000
+     rewardexp = 1000
    },
-   [3] = {
+    [3] = {
      items = {
        {id = 9956, count = 1} -- magical torch
      },
@@ -50,9 +65,10 @@ local missions = {
    },
    [4] = {
 	items = {
+	{id = 20107, count = 1} -- beard
      },
 	 monsters = {
-       {name = "red beard", count = 1, storage = 21923},
+       {name = "captain hook", count = 1, storage = 21923},
      },
      message = "kill..", 
      level = 80, -- minimum level for this mission
@@ -60,14 +76,13 @@ local missions = {
        {id = 2160, count = 2},
        {id = 1988, count = 1}
      },
-     rewardexp = 800
+     rewardexp = 8000
 		}
    }
-   
 
 local storage = 2239
 
-local function getItemsMonstersFromTable(imtable, imtype)
+local function getItemsMonstersFromTable(imtable)
      local text = ""
      for v = 1, #imtable do
          local ret = ", "
@@ -85,10 +100,6 @@ local function getItemsMonstersFromTable(imtable, imtype)
              text = text .. count .." "..imtable[v].name
          end
      end
-
-    if(text ~= "") then
-        text = ((imtype == "monsters" and "Kill: ") or "Collect: ") .. text
-    end
      return text
 end
 
@@ -98,96 +109,39 @@ function creatureSayCallback(cid, type, msg)
      end
 
      local player = Player(cid)
-     local x = missions[player:getStorageValue(storage)]
+     local x = quests[player:getStorageValue(storage)]
 
      if msgcontains(msg, 'mission') or msgcontains(msg, 'quest') then
          if player:getStorageValue(storage) == 1 then
-             selfSay("will you do something, for me?!?! line 101", cid)
+             selfSay("will you do something, for me?!?!", cid)
              npcHandler.topic[cid] = 1
          elseif x then
              if player:getLevel() >= x.level then
-                local missionstr = ""
-              if(x.monsters) then
-                   missionstr = getItemsMonstersFromTable(x.monsters, "monsters")
-                end
-                if(x.items) then
-                   missionstr = missionstr .. ((missionstr ~= "" and "\n") or "") .. getItemsMonstersFromTable(x.items, "items")
-                end
-                 selfSay("Did you complete my task?\n".. missionstr, cid)
+                 selfSay("Did you "..(x.items and "get "..getItemsMonstersFromTable(x.items) or "kill "..getItemsMonstersFromTable(x.monsters)).."?", cid)
                  npcHandler.topic[cid] = 1
              else
-                 selfSay("The mission I gave you is for level "..x.level..", come back later.", cid)
+                 selfSay("The quest I gave you is for level "..x.level..", come back later.", cid)
              end
          else
              selfSay("Go away! You faul land lover.", cid)
              npcHandler:releaseFocus(cid)
          end
      elseif msgcontains(msg, 'yes') and npcHandler.topic[cid] == 1 then
-         if player:getStorageValue(storage) == -1 then
-             player:setStorageValue(storage, 1)
-             local x = missions[player:getStorageValue(storage)]
-        
-            local missionstr = ""
-            if(x.monsters) then
-                missionstr = getItemsMonstersFromTable(x.monsters, "monsters")
-            end
-            if(x.items) then
-                missionstr = missionstr .. ((missionstr ~= "" and "\n") or "") .. getItemsMonstersFromTable(x.items, "items")
-            end
-             selfSay(x.message.."\n".. missionstr ..".", cid)
+         if player:getStorageValue(storage) == 1 then
+             player:setStorageValue(storage, 2)
+             local x = quests[player:getStorageValue(storage)]
+             selfSay(x.message.." "..getItemsMonstersFromTable(x.items or x.monsters)..".", cid)
          elseif x then
              local imtable = x.items or x.monsters
              local amount = 0
-        
-            local failed = false
-            local failstr = ""
-            -- Check Monsters
-            for i, monster in ipairs(x.monsters) do
-                local mstorage = player:getStorageValue(monster.storage)
-                if(mstorage < 0) then
-                   mstorage = 0
-                end
-          
-                if(#x.monsters > 1 and i == #x.monsters) then
-                    failstr = failstr .." and "
-                elseif(i ~= 1) then
-                    failstr = failstr ..", "
-                else
-                    failstr = "I think you may want to check that questlog again.\nYou have killed: "
-                end
-                failstr = failstr .. mstorage .."/".. monster.count .." ".. monster.name
-          
-               if(mstorage < monster.count) then
-                    failed = true
-                end
-            end
-        
-            -- Check Items
-            for i, item in ipairs(x.items) do
-                local icount = player:getItemCount(item.id)          
-          
-                if(#x.items > 1 and i == #x.items) then
-                    failstr = failstr .." and "
-                elseif(i ~= 1) then
-                    failstr = failstr ..", "
-                elseif(failstr == "") then
-                    failstr = "Umm, nooo.. Try again.. \nYou have collected: "
-                else
-                    failstr = failstr .."\nYou have collected: "
-                end
-          
-                local itemInfo = ItemType(item.id)
-                failstr = failstr .. ((icount > item.count and item.count) or icount) .."/".. (item.count > 1 and item.count or itemInfo:getArticle()).." "..(item.count > 1 and itemInfo:getPluralName() or itemInfo:getName())
-          
-                if(icount < item.count) then
-                    failed = true
-               end
-            end
-        
-            if(failed) then
-               selfSay(failstr, cid)
-            else
-               if x.items then
+             for it = 1, #imtable do
+                 local check = x.items and player:getItemCount(imtable[it].id) or player:getStorageValue(imtable[it].storage)
+                 if check >= imtable[it].count then
+                     amount = amount + 1
+                 end
+             end
+             if amount == #imtable then
+                 if x.items then
                      for it = 1, #x.items do
                          player:removeItem(x.items[it].id, x.items[it].count)
                      end
@@ -196,39 +150,61 @@ function creatureSayCallback(cid, type, msg)
                      for r = 1, #x.rewarditems do
                          player:addItem(x.rewarditems[r].id, x.rewarditems[r].count)
                      end
-                     player:sendTextMessage(MESSAGE_EVENT_DEFAULT, "You received "..getItemsMonstersFromTable(x.rewarditems)..".")
+                     player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You received "..getItemsMonstersFromTable(x.rewarditems)..".")
                  end
                  if x.rewardexp then
                      player:addExperience(x.rewardexp)
-                     player:sendTextMessage(MESSAGE_EVENT_DEFAULT, "You received "..x.rewardexp.." experience.")
+                     player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "You received "..x.rewardexp.." experience.")
                  end
                  player:setStorageValue(storage, player:getStorageValue(storage) + 1)
-                 local x = missions[player:getStorageValue(storage)]
-                 if x then                
-                    local missionstr = ""
-                      if(x.monsters) then
-                        missionstr = getItemsMonstersFromTable(x.monsters, "monsters")
-                    end
-                    if(x.items) then
-                        missionstr = missionstr .. ((missionstr ~= "" and "\n") or "") .. getItemsMonstersFromTable(x.items, "items")
-                    end
-                     selfSay(x.message.."\n".. missionstr ..".", cid)
+                 local x = quests[player:getStorageValue(storage)]
+                 if x then
+                     selfSay(x.message.." "..getItemsMonstersFromTable(x.items or x.monsters)..".", cid)
                  else
-					 --Game.broadcastMessage("Congratulations to ".. player:getName() .." for completing all of Lilith's questline.")
-                     selfSay("Congratulations on your completion of my quest chain. I have brought you through Hell and back. Thank you for taking the time to take the adventures presented to you! ~Caduceus", cid)
-
+                     selfSay("Well done! You did a great job on all your quests.", cid)
                  end
-            end
+             else
+                 local n = 0
+                 for i = 1, #imtable do
+                     local check = x.items and player:getItemCount(imtable[i].id) or player:getStorageValue(imtable[i].storage)
+                     if check < imtable[i].count then
+                         n = n + 1
+                     end
+                 end
+                 local text = ""
+                 local c = 0
+                 for v = 1, #imtable do
+                     local check = x.items and player:getItemCount(imtable[v].id) or player:getStorageValue(imtable[v].storage)
+                     if check < imtable[v].count then
+                         c = c + 1
+                         local ret = ", "
+                         if c == 1 then
+                             ret = ""
+                         elseif c == n then
+                             ret = " and "
+                         end
+                         text = text .. ret
+                         if x.items then
+                             local count, info = imtable[v].count - player:getItemCount(imtable[v].id), ItemType(imtable[v].id)
+                             text = text .. (count > 1 and count or info:getArticle()).." "..(count > 1 and info:getPluralName() or info:getName())
+                         else
+                             local count = imtable[v].count - (player:getStorageValue(imtable[v].storage) + 1)
+                             text = text .. count.." "..imtable[v].name
+                         end
+                     end
+                 end
+                 selfSay(x.items and "You don't have all items, you still need to get "..text.."." or "You didn't kill all monsters, you still need to kill "..text..".", cid)
+             end
          end
          npcHandler.topic[cid] = 0
      elseif msgcontains(msg, 'no') and npcHandler.topic[cid] == 1 then
-         selfSay("Whatever.", cid)
+         selfSay("Quit wasting my time then.", cid)
          npcHandler.topic[cid] = 0
      end
      return true
 end
 
-npcHandler:setMessage(MESSAGE_FAREWELL, "Bye!")
-npcHandler:setMessage(MESSAGE_WALKAWAY, "Good bye, have a nice day!")
+npcHandler:setMessage(MESSAGE_FAREWELL, "farewell!")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "you'll be sorry...")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new())
