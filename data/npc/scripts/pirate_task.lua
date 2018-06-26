@@ -40,8 +40,7 @@ local quests = {
        {id = 5462, count = 1}, -- pirate boots
        {id = 6098, count = 1}, -- eye patch
        {id = 6095, count = 1}, -- pirate shirt
-       {id = 6126, count = 1}, -- peg leg
-       {id = 6097, count = 1} -- hook
+       {id = 6126, count = 1} -- peg leg
      },
      monsters = {
      },
@@ -65,7 +64,7 @@ local quests = {
    },
    [4] = {
 	items = {
-	{id = 20107, count = 1} -- beard
+	{id = 6097, count = 1} -- hook
      },
 	 monsters = {
        {name = "captain hook", count = 1, storage = 21923},
@@ -74,7 +73,7 @@ local quests = {
      level = 80, -- minimum level for this mission
      rewarditems = {
        {id = 2160, count = 2},
-       {id = 1988, count = 1}
+       {id = 5810, count = 1}
      },
      rewardexp = 8000
 		}

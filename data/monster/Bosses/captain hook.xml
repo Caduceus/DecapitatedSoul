@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Captain Hook" nameDescription="a fury" race="blood" experience="4500" speed="250" manacost="0">
+<monster name="Captain Hook" tp="1" nameDescription="a fury" race="blood" experience="8000" speed="250" manacost="0" script="boss.lua">
 	<health now="5100" max="5100"/>
 	<look type="750" head="0" body="95" legs="114" feet="132" addons="3" corpse="15280"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
+		<flag rewardboss="1"/>
 		<flag summonable="0"/>
 		<flag attackable="1"/>
 		<flag hostile="1"/>
@@ -66,8 +67,15 @@
 		<voice sentence="Arg!"/>
 		<voice sentence="Dieee land lover!"/>
 	</voices>
+	<!-- Loot Chance --
+	100 - x =   rare
+	500 - 800   semi rare
+	1000 - 1200 common
+	2000 - 2500 almost all the time
+	3000 > All the time
+	-- Loot Chance -->
 	<loot>
-		<item id="2152" countmax="100" chance="30000"/><!-- plat coin -->
-		<item id="6097" chance="1000"/><!-- hook -->
+		<item id="2160" countmax="5" chance="30000"/><!-- crystal coin -->
+		<item id="6097" chance="90000"/><!-- hook -->
 	</loot>
 </monster>
