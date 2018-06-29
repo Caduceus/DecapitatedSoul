@@ -77,6 +77,41 @@ GameStore.Categories = {
 			{name = "Trapped Lightning", thingId = 21699, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Trapped_Lightning.png"}, description = "Buy this item to explore the dark caves!"}
         }
     },   
+{    name = "Mounts",
+        state = GameStore.States.STATE_NEW,
+        icons = {"decap.png"},
+        offers = {
+            -- Item Example : thingId = itemId
+            {name = "Widow Queen", thingId = 1, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_WidowQueen.png"}, description = "Widow Queen Mount!"},
+            {name = "War bear", thingId = 3, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_WarBear.png"}, description = "War Bear Mount!"},
+            {name = "Black sheep", thingId = 4, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_BlackSheep.png"}, description = "Black Sheep Mount!"},
+            {name = "Midnight Panther", thingId = 5, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_MidnightPanther.png"}, description = "Midnight Panther Mount!"},
+            {name = "Draptor", thingId = 6, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_Draptor.png"}, description = "Draptor Mount!"},
+            {name = "Titanica", thingId = 7, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_Titanica.png"}, description = "Titanica Mount!"},
+            {name = "Tin Lizard", thingId = 8, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_TinLizzard.png"}, description = "Tin Lizzard Mount!"},
+            {name = "Blazebringer", thingId = 9, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_Blazebringer.png"}, description = "Blazebringer Mount!"},
+            {name = "Rapid Boar", thingId = 10, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_RapidBoar.png"}, description = "Rapid Boar Mount!"},
+            {name = "Stampor", thingId = 11, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_Stampor.png"}, description = "Stampor Mount!"},
+            {name = "Undead Cavebear", thingId = 12, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_UndeadCavebear.png"}, description = "Undead Cavebear Mount!"},
+            {name = "Donkey", thingId = 13, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_Donkey.png"}, description = "Donkey Mount!"},
+            {name = "Tiger Slug", thingId = 14, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_TigerSlug.png"}, description = "Tiger Slug Mount!"},
+            {name = "Uniwheel", thingId = 15, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_Uniwheel.png"}, description = "Uniwheel Mount!"},
+            {name = "Crystal Wolf", thingId = 16, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_CrystalWolf.png"}, description = "Crystal Wolf Mount!"},
+            {name = "War Horse", thingId = 17, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_WarHorse.png"}, description = "War Horse Mount!"},
+            {name = "Kingly Deer", thingId = 18, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_KinglyDeer.png"}, description = "Kingly Deer Mount!"},
+            {name = "Tamed Panda", thingId = 19, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_TamedPanda.png"}, description = "Tamed Panda Mount!"},
+            {name = "Dromedary", thingId = 20, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_Dromedary.png"}, description = "Dromedary Mount!"},
+            {name = "King Scorpion", thingId = 21, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_KingScorpion.png"}, description = "King Scorpion Mount!"},
+            {name = "Armoured War Horse", thingId = 23, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_ArmouredWarHorse.png"}, description = "Armoured War Horse Mount!"},
+            {name = "Shadow Draptor", thingId = 24, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_ShadowDraptor.png"}, description = "Shadow Draptor Mount!"},
+            {name = "Ladybug", thingId = 27, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_Ladybug.png"}, description = "Ladybug Mount!"},
+            {name = "Manta Ray", thingId = 28, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_MantaRay.png"}, description = "Manta Ray Mount!"},
+            {name = "Ironblight", thingId = 29, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_Ironblight.png"}, description = "Ironblight Mount!"},
+            {name = "Magma Crawler", thingId = 30, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_MagmaCrawler.png"}, description = "Magma Crawler Mount!"},
+            {name = "Dragonling", thingId = 31, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_Dragonling.png"}, description = "Dragonling Mount!"},
+            {name = "Gnarlhound", thingId = 32, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_Gnarlhound.png"}, description = "Gnarlhound Mount!"}
+        }
+    },
 {    name = "Other Items",
         state = GameStore.States.STATE_NEW,
         icons = {"decap.png"},
@@ -142,48 +177,7 @@ GameStore.Categories = {
 			{name = "Philosopher Addon", thingId = {male=873,female=874}, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 80, icons = {"Product_Outfit_Philosopher_Male.png", "Product_Outfit_Philosopher_Female.png"}},
         }
     },
---[[{    name = "FREE Mounts",
-        state = GameStore.States.STATE_NEW,
-        icons = {"Category_FreeMounts.png"},
-        offers = {
-            -- Item Example : thingId = itemId
-            {name = "Donkey", thingId = 13, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 0, icons = {"Product_Mount_Titanica.png"}, description = "Free mount!"},
-            {name = "War Horse", thingId = 17, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 0, icons = {"Product_Mount_Titanica.png"}, description = "Free mount!"},
-            {name = "Lady Bug", thingId = 27, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 0, icons = {"Product_Mount_Titanica.png"}, description = "Free mount!"},
-            {name = "War Bear", thingId = 3, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 0, icons = {"Product_Mount_Titanica.png"}, description = "Free mount!"}
-        }
-    },
-{    name = "10.90 Mounts",
-        state = GameStore.States.STATE_NEW,
-        icons = {"Category_1090Mounts.png"},
-        offers = {
-            -- Item Example : thingId = itemId
-            {name = "Rift Runner", thingId = 87, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 12, icons = {"Product_Mount_Titanica.png"}, description = "New 10.90 mount!"},
-            {name = "Nightdweller", thingId = 88, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 12, icons = {"Product_Mount_Titanica.png"}, description = "New 10.90 mount!"},
-            {name = "Frostflare", thingId = 89, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 12, icons = {"Product_Mount_Titanica.png"}, description = "New 10.90 mount!"},
-            {name = "Cinderhoof", thingId = 90, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 12, icons = {"Product_Mount_Titanica.png"}, description = "New 10.90 mount!"}
-        }
-    },
-{    name = "10.91 Mounts",
-        state = GameStore.States.STATE_NEW,
-        icons = {"Category_1091Mounts.png"},
-        offers = {
-            -- Item Example : thingId = itemId
-            {name = "Mouldpincer", thingId = 91, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 15, icons = {"Product_Mount_Titanica.png"}, description = "New 10.91 mount!"},
-            {name = "Bloodcurl", thingId = 92, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 15, icons = {"Product_Mount_Titanica.png"}, description = "New 10.91 mount!"},
-            {name = "Leafscuttler", thingId = 93, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 15, icons = {"Product_Mount_Titanica.png"}, description = "New 10.91 mount!"}
-        }
-    },
-{    name = "10.94 Mounts",
-        state = GameStore.States.STATE_NEW,
-        icons = {"Category_1094Mounts.png"},
-        offers = {
-            -- Item Example : thingId = itemId
-            {name = "Sparkion", thingId = 94, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_Titanica.png"}, description = "New 10.94 mount!"},
-            {name = "Neon Sparkid", thingId = 95, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_Titanica.png"}, description = "New 10.94 mount!"},
-            {name = "Vortexion", thingId = 96, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_Titanica.png"}, description = "New 10.94 mount!"}
-        }
-    },]]
+
 {   name = "VIP Tokens",
         state = GameStore.States.STATE_NEW,
         icons = {"decap.png"},
