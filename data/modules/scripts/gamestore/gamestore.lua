@@ -81,7 +81,7 @@ GameStore.Categories = {
         state = GameStore.States.STATE_NEW,
         icons = {"decap.png"},
         offers = {
-            -- Item Example : thingId = itemId all mounts price 10 less than speed there you go unless you want to do each mount works for me
+            -- Item Example : thingId = itemId all mounts price 10 less than speed
             {name = "Widow Queen", thingId = 1, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_WidowQueen.png"}, description = "Widow Queen Mount! +20 speed"},
             {name = "War bear", thingId = 3, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_WarBear.png"}, description = "War Bear Mount! +20 Speed"},
             {name = "Black sheep", thingId = 4, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_BlackSheep.png"}, description = "Black Sheep Mount! +20 Speed"},
