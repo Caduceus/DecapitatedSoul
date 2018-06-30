@@ -12660,7 +12660,7 @@
 	</item>
 	<item id="7384" article="a" name="mystic blade">
 		<attribute key="description" value="This sword is only granted to those who have completed Catacombs Quest." />
-		<attribute key="weight" value="3500" />
+		<attribute key="weight" value="1500" />
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="75" />
 		<attribute key="skilllifechance" value="15" />
@@ -13826,7 +13826,7 @@
 		<attribute key="decayTo" value="7383" />
 	</item>
 	<item id="7746" article="a" name="fiery mystic blade">
-		<attribute key="weight" value="3500" />
+		<attribute key="weight" value="1500" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="85" />
 		<attribute key="weaponType" value="sword" />
@@ -14026,7 +14026,7 @@
 		<attribute key="decayTo" value="7383" />
 	</item>
 	<item id="7765" article="an" name="icy mystic blade">
-		<attribute key="weight" value="3500" />
+		<attribute key="weight" value="1500" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="85" />
 		<attribute key="weaponType" value="sword" />
@@ -14551,7 +14551,7 @@
 		<attribute key="decayTo" value="7383" />
 	</item>
 	<item id="7856" article="an" name="earth mystic blade">
-		<attribute key="weight" value="3500" />
+		<attribute key="weight" value="1500" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="85" />
 		<attribute key="weaponType" value="sword" />
@@ -14738,7 +14738,7 @@
 		<attribute key="decayTo" value="7383" />
 	</item>
 	<item id="7871" article="an" name="energy mystic blade">
-		<attribute key="weight" value="3500" />
+		<attribute key="weight" value="1500" />
 		<attribute key="defense" value="35" />
 		<attribute key="attack" value="85" />
 		<attribute key="weaponType" value="sword" />
@@ -16968,7 +16968,12 @@
 	<item id="9098" article="a" name="roof">
 		<attribute key="floorchange" value="south" />
 	</item>
-	<item fromid="9099" toid="9106" article="a" name="roof" />
+	<item id="9099" article="a" name="roof" />
+	<item fromid="9100" toid="9101" article="a" name="stone ledge" />
+	<item fromid="9102" toid="9103" article="a" name="roof" />
+	<item id="9104" article="a" name="stone ledge" />
+	<item id="9105" article="a" name="stone buttress" />
+	<item id="9106" article="a" name="chimney" />
 	<item id="9107" article="a" name="dead mutated human">
 		<attribute key="containerSize" value="10" />
 		<attribute key="decayTo" value="10007" />
@@ -17015,7 +17020,7 @@
 		<attribute key="description" value="Julius gave it to you to have at least five unusual spots on Vengoth marked." />
 	</item>
 	<item fromid="9118" toid="9133" article="a" name="stone wall" />
-	<item id="9134" article="a" name="roof" />
+	<item id="9134" article="a" name="chimney" />
 	<item fromid="9135" toid="9139" article="a" name="stone wall" />
 	<item id="9140" article="an" name="archway" />
 	<item id="9141" article="a" name="blood crystal">
@@ -18967,8 +18972,10 @@
 	</item>
 	<item fromid="10325" toid="10340" article="a" name="roof" />
 	<item fromid="10341" toid="10342" article="a" name="funnel" />
+	<item id="10343" article="a" name="stone buttress" />
 	<item id="10344" article="a" name="stone ledge" />
 	<item fromid="10345" toid="10346" article="a" name="pillar" />
+	<item fromid="10347" toid="10348" article="a" name="stone buttress" />
 	<item fromid="10349" toid="10354" article="a" name="statue" />
 	<item fromid="10355" toid="10356" article="a" name="statue of Fafnar" />
 	<item fromid="10357" toid="10358" name="spider webs" />

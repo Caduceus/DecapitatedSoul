@@ -112,7 +112,7 @@ GameStore.Categories = {
             {name = "Gnarlhound", thingId = 32, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_Gnarlhound.png"}, description = "Gnarlhound Mount! +30 Speed"},
             {name = "Crimson Ray", thingId = 33, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_CrimsonRay.png"}, description = "Crimson Ray Mount! +30 Speed"},
             {name = "Steelbeak", thingId = 34, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_Steelbeak.png"}, description = "Steelbeak Mount! +30 Speed"},
-            {name = "Water Buffalo", thingId = 35, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_Water_Buffalo.png"}, description = "Water Buffalo Mount!"}.
+            {name = "Water Buffalo", thingId = 35, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_Water_Buffalo.png"}, description = "Water Buffalo Mount!"},
             {name = "Armoured Scorpion", thingId = 36, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_ArmouredScorpion.png"}, description = "Armoured Scorpion Mount! +30 Speed"},
             {name = "Armoured Dragonling", thingId = 37, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_ArmouredDragonling.png"}, description = "Armoured Dragonling Mount! +30 Speed"},
             {name = "Armoured Cavebear", thingId = 38, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 20, icons = {"Product_Mount_ArmouredCavebear.png"}, description = "Armoured Cavebear Mount! +30 Speed"},
