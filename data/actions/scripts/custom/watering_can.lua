@@ -8,7 +8,7 @@ local plantspecies = {7680, 7682, 7684, 7686, 9982, 9986}
 local lastphase = {7689, 7691, 7693, 7695, 9991, 9989} 
 
 --Whitered plants Id's and the plant's they will become when recovered
-local witheredplants = {[7674] = 7688, [7675] = 7690, [7676] = 7692, [7677] = 7694, [9984] = 9990, [9985] = 9988} 
+local witheredplants = {[7674] = 7680, [7675] = 7682, [7676] = 7684, [7677] = 7686, [9984] = 9982, [9985] = 9986} 
 
 --In what will it transforms to if it advances or not
 local plantadvances = {[7679] = {7670, 7673}, [7681] = {7688, 7680}, [7683] = {7690, 7682}, [7685] = {7692, 7684}, [7687] = {7694, 7686}, [9983] = {9990, 9982}, [9987] = {9988, 9986}} 
