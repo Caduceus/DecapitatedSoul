@@ -1064,3 +1064,25 @@ function Player.setAccountStorageValue(self, key, value)
     end
     return db.query(query)
 end
+
+function Player.doRemoveSummon(self)
+    local summons = self:getSummons()
+    local summon = Creature(summons[1])
+    local summonPos = summon:getPosition()
+    local attackers = Game.getSpectators(summonPos, true, false)
+    for i = 1, #attackers do
+        local attacker = attackers[i]
+        if attacker and attacker:isMonster() then
+            local targetList = attacker:getTargetList()
+            for j = 1, #targetList do
+                if targetList[j] == summon then
+                    attacker:removeTarget(summon)
+                    attacker:setIdle()
+                end
+            end
+        end
+    end
+    summonPos:sendMagicEffect(CONST_ME_POFF)
+    summon:remove()
+    return true
+end
