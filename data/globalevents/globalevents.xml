@@ -7,6 +7,7 @@
 	<globalevent name="text" interval="5000" script="text.lua"/>
 	<globalevent name="autoBroadcast" interval="3600000" script="broadcast.lua" />
 	<globalevent name="PowerGamers" interval="60000" script="powergamers.lua"/>
+	<globalevent name="SummonTeleport" interval="1000" script="summon_teleport.lua"/>
 	<!--globalevent type="startup" name="CleanHouses" script="cleanhouses.lua" /-->
 	<!--globalevent type="startup" name="CleanPlayers" script="cleanplayers.lua"/-->
 	<!--globalevent name="effect" interval="3000" script="effect.lua"/-->
