@@ -20,8 +20,8 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="-560" max="-700"/>
-		<attack name="fire" interval="3000" chance="40" range="4" radius="4" target="1" min="-750" max="-900">
+		<attack name="melee" interval="2000" min="-360" max="-500"/>
+		<attack name="fire" interval="3000" chance="40" range="4" radius="4" target="1" min="-550" max="-700">
 			<attribute key="shootEffect" value="fire"/>
 			<attribute key="areaEffect" value="firearea"/>
 		</attack>
@@ -47,8 +47,7 @@
 		<summon name="Dragon" interval="1000" chance="17" max="0"/>
 	</summons>
 	<voices interval="5000" chance="10">
-		<voice sentence="I WILL SET THE WORLD ON FIRE!" yell="1"/>
-		<voice sentence="I WILL PROTECT MY BROOD!" yell="1"/>
+		<voice sentence="I WILL SET THE WORLD ON FIRE!"/>
 	</voices>
 	<loot>
 		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->

@@ -17,7 +17,7 @@
 		<flag runonhealth="300"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" skill="100" attack="80"/>
+		<attack name="melee" interval="2000" skill="80" attack="80"/>
 		<attack name="speed" interval="2000" chance="25" range="4" radius="4" target="1" speedchange="-200" duration="2000">
 			<attribute key="shootEffect" value="poison"/>
 			<attribute key="areaEffect" value="greenbubble"/>
@@ -25,8 +25,8 @@
 		<attack name="ice" interval="2000" chance="50" length="5" spread="3" min="-250" max="-400">
 			<attribute key="areaEffect" value="bluebubble"/>
 		</attack>
-		<attack name="icicle" interval="2000" chance="40" target="1" min="-380" max="-500"/>
-		<attack name="earth" interval="2000" chance="60" length="5" spread="3" min="-266" max="-320">
+		<attack name="icicle" interval="2000" chance="20" target="1" min="-280" max="-500"/>
+		<attack name="earth" interval="2000" chance="40" length="5" spread="3" min="-266" max="-320">
 			<attribute key="areaEffect" value="carniphila"/>
 		</attack>
 	</attacks>
