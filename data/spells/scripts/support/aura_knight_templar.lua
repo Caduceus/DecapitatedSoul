@@ -1,7 +1,7 @@
 local aurastr = 25950 -- storage of aura
 local estr = 25951 -- storage for exhaust
-local porcentagem = 80 -- chance to heal in every turn of the aura, in percentage
-local quantheal = 20 -- percentage of the maximum hp each healing will heal . (In the case, will cure 10% of maximum hp each cure)
+local porcentagem = 90 -- chance to heal in every turn of the aura, in percentage
+local quantheal = 15 -- max health will be divided by this number
 local tempo = 1180 -- time to go around the player (this time was what I found most visually pleasing, it is recommended not to change)
 local tipoaura = 38 -- effect of number aura (distance effect, can be identified by !x in the game) 37
 local efeitocura = 49 -- effect curing when the number reaches the player (fixed position effect, can be identified with !z in the game)
