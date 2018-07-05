@@ -33,10 +33,12 @@ function onCastSpell(player, variant)
          monster:setMaster(player)
          local hp = monster:getMaster():getMaxHealth()
          local outfit = monster:getMaster():getOutfit()
+         local speed = monster:getMaster():getBaseSpeed()
 			if hp > monster:getMaxHealth() then
-				monster:setOutfit(outfit)
 				monster:setMaxHealth(hp)
 				monster:addHealth(hp)
+				monster:setOutfit(outfit)
+				monster:changeSpeed(speed)
 				config.playerPos:sendMagicEffect(CONST_ME_MAGIC_BLUE)
 		return true
         end
