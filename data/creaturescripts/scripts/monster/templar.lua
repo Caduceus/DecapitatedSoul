@@ -1,7 +1,6 @@
 function onThink(creature)
 local master = creature:getMaster()
 local conditions = {CONDITION_POISON, CONDITION_FIRE, CONDITION_ENERGY, CONDITION_PARALYZE, CONDITION_DRUNK, CONDITION_DROWN, CONDITION_CURSED}
-local party = master:getParty()
 local heal = master:getMaxHealth() / 10
 	if math.random(1, 100) <= 30 then
 		if master then

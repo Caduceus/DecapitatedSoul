@@ -32,6 +32,7 @@
     <event type="kill" name="medusaDeath" script="quests/Medusa/medusaDeath.lua"/>
     <event type="kill" name="stormblastDeath" script="quests/Catacombs/stormblastDeath.lua"/>
     <event type="think" name="Templar" script="monster/templar.lua"/>
+    <event type="think" name="playerSummon" script="monster/summon.lua"/>
     <event type="think" name="addPointTimer" script="custom/addpointTimer.lua" />
     <event type="think" name="AuraPz" script="custom/aura_pz.lua" />
     <event type="think" name="removeSummon" script="custom/removeSummon.lua" />
