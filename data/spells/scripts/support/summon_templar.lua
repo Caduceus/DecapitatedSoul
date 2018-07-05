@@ -24,7 +24,7 @@ function onCastSpell(player, variant)
 					if monster == nil then
 					return false
 				end
-					monster:say("UNTIL WE MEET AGAIN!", TALKTYPE_MONSTER_YELL)
+					monster:say("UNTIL WE MEET AGAIN!", TALKTYPE_MONSTER_SAY)
 					monster:getPosition():sendMagicEffect(CONST_ME_POFF)
 					monster:remove()
 					end, config.deSpawn * 1000, monster:getId())
@@ -37,7 +37,6 @@ function onCastSpell(player, variant)
 				monster:setOutfit(outfit)
 				monster:setMaxHealth(hp)
 				monster:addHealth(hp)
-				monster:say("".. player:getName() .."'s Guardian to the rescue!", TALKTYPE_MONSTER_YELL)
 				config.playerPos:sendMagicEffect(CONST_ME_MAGIC_BLUE)
 		return true
         end
