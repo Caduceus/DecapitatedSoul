@@ -48,8 +48,8 @@
 		<immunity fire="1"/>
 	</immunities>
 	<voices interval="5000" chance="10">
-		<voice sentence="ZCHHHHH" yell="1"/>
-		<voice sentence="YOU WILL BURN!" yell="1"/>
+		<voice sentence="ZCHHHHH"/>
+		<voice sentence="YOU WILL BURN!"/>
 	</voices>
 	<loot>
 		<item id="2148" countmax="45" chance="33750"/><!-- gold coin -->

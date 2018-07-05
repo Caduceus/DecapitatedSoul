@@ -22,6 +22,9 @@
 			<attribute key="areaEffect" value="redspark"/>
 		</attack>
 	</attacks>
+	<script>
+        <event name="playerSummon"/>
+    </script>
 	<defenses armor="15" defense="15">
 		<defense name="healing" interval="2000" chance="10" min="30" max="50">
 			<attribute key="areaEffect" value="blueshimmer"/>

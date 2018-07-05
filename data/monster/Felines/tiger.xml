@@ -16,6 +16,9 @@
 		<flag staticattack="70"/>
 		<flag runonhealth="0"/>
 	</flags>
+	<script>
+        <event name="playerSummon"/>
+    </script>
 	<attacks>
 		<attack name="melee" interval="2000" skill="30" attack="20"/>
 	</attacks>
