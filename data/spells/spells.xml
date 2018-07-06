@@ -92,13 +92,13 @@
 	</instant>
 	
 	<!--Custom Templar Spells-->
-	<instant group="special" spellid="9" name="Summon Templar" words="guardian angel" lvl="150" mana="1000" params="1" aggressive="0" cooldown="30000" groupcooldown="30000" needlearn="0" script="support/summon_templar.lua">
+	<instant group="special" spellid="9" name="Summon Templar" words="guardian angel" lvl="150" mana="1000" params="1" aggressive="0" cooldown="3000" groupcooldown="3000" needlearn="0" script="support/summon_templar.lua">
 		<vocation name="Templar"/>
         <vocation name="Noble Templar"/>
         <vocation name="Warlord Templar"/>
 	</instant>
 	
-	<instant group="special" spellid="9" name="Aura Sphere" words="aura of protection" lvl="80" mana="400" params="0" aggressive="0" cooldown="180000" groupcooldown="180000" needlearn="0" script="support/aura_knight_templar.lua">
+	<instant group="healing" spellid="9" name="Aura Sphere" words="aura of protection" lvl="80" mana="400" params="0" aggressive="0" cooldown="180000" groupcooldown="5000" needlearn="0" script="support/aura_knight_templar.lua">
 		<vocation name="Templar"/>
         <vocation name="Noble Templar"/>
         <vocation name="Warlord Templar"/>
@@ -642,7 +642,7 @@
         <vocation name="Elder Druid"/>
         <vocation name="Warlord Druid"/>
 	</instant>
-	<instant group="support" spellid="9" name="Summon Creature" words="utevo res" lvl="25" params="1" cooldown="2000" groupcooldown="2000" needlearn="0" function="summonMonster">
+	<instant group="support" spellid="9" name="Summon Creature" words="utevo res" level="25" params="1" cooldown="2000" groupcooldown="2000" needlearn="0" function="summonMonster">
 		<vocation name="Sorcerer"/>
         <vocation name="Master Sorcerer"/>
         <vocation name="Warlord Sorcerer"/>
