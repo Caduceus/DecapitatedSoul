@@ -8830,12 +8830,12 @@
 	<item fromid="5505" toid="5512" article="a" name="pulley" />
 	<item id="5513" article="a" name="distilling machine">
 		<attribute key="decayTo" value="5469" />
-		<attribute key="duration" value="15" />
+		<attribute key="duration" value="20" />
 		<attribute key="fluidSource" value="rum" />
 	</item>
 	<item id="5514" article="a" name="distilling machine">
 		<attribute key="decayTo" value="5470" />
-		<attribute key="duration" value="15" />
+		<attribute key="duration" value="20" />
 		<attribute key="fluidSource" value="rum" />
 	</item>
 	<item id="5515" article="a" name="closed door">
@@ -17218,7 +17218,10 @@
 	</item>
 	<item fromid="9449" toid="9459" article="a" name="tapestry" />
 	<item fromid="9460" toid="9465" article="an" name="eaves gutter" />
-	<item fromid="9466" toid="9469" article="a" name="rain barrel" />
+	<item fromid="9466" toid="9467" article="a" name="rain barrel" >
+		<attribute key="fluidSource" value="water" />
+	</item>
+	<item fromid="9468" toid="9469" article="a" name="rain barrel" />
 	<item id="9470" article="a" name="palisade" />
 	<item fromid="9471" toid="9486" article="a" name="gate" />
 	<item fromid="9487" toid="9494" article="a" name="stone gargoyle" />
@@ -27016,11 +27019,12 @@
 		<attribute key="weight" value="4500" />
 		<attribute key="skillcriticalchance" value="20" />
 		<attribute key="skillcriticaldamage" value="150" />
-		<attribute key="elementphysical" value="300"/>
+		<attribute key="elementphysical" value="30"/>
 		<attribute key="armor" value="25" />
-		<attribute key="attack" value="300" />
+		<attribute key="attack" value="200" />
 		<attribute key="weaponType" value="fist" />
 		<attribute key="slotType" value="two-handed" />
+		<attribute key="description" value="This item is not implemented. Stats will change!" />
 	</item>
 	<item id="20109" article="a" name="buckle">
 		<attribute key="weight" value="7500" />
@@ -29275,7 +29279,7 @@
 	<item fromid="20776" toid="20781" name="forest floor" />
 	<item fromid="20787" toid="20797" name="branches" />
 	<item fromid="20799" toid="20802" name="bookcase">
-		<attribute key="containerSize" value="6" />
+		<attribute key="containerSize" value="40" />
 	</item>
 	<item fromid="20803" toid="20827" article="a" name="tree branch" />
 	<item fromid="20828" toid="20831" article="a" name="twig" />

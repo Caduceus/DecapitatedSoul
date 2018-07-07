@@ -36,6 +36,7 @@
 	<action itemid="20136" script="custom/second_promo.lua" />
 	<action itemid="7735" script="custom/ded_ass.lua"/>
 	<action itemid="8300" script="other/upgrading.lua"/>
+	<action itemid="8717" script="quests/thieves_guild/lock_pick.lua"/>
 	<!--action itemid="8982" script="custom/modalAD.lua"/>
     <action itemid="9019" script="custom/modalMD.lua"/-->
 	<action uniqueid="9928" script="custom/hydra_scale_legs.lua"/>
@@ -55,8 +56,8 @@
 	<action uniqueid="15108" script="custom/Lilith_Piano.lua"/>
 	<action uniqueid="15110" script="quests/medusa/entrance.lua"/>
 	<action uniqueid="15111" script="quests/medusa/medusa_arena.lua"/>
-	<!--action uniqueid="15112" script="quests/thieve_guild/thievesGuildStarter.lua"/-->
-	<!--action uniqueid="15112" script="quests/thieve_guild/door_test.lua"/-->
+	<!--action uniqueid="15112" script="quests/thieves_guild/thievesGuildStarter.lua"/-->
+	<!--action uniqueid="15112" script="quests/thieves_guild/door_test.lua"/-->
 	<action itemid="19663" script="other/counter.lua"/>
 	<action itemid="19666" script="other/counter.lua"/>
 	<action itemid="20305" script="other/counter.lua"/>
@@ -420,8 +421,10 @@
 	<action itemid="21245" script="other/potions.lua"/>
 	<action itemid="22472" script="other/potions.lua"/>
 	<action itemid="22473" script="other/potions.lua"/>
-	<action itemid="2692" script="other/createbread.lua"/>
-	<action itemid="2694" script="other/createbread.lua"/>
+	<action itemid="6277" script="other/baking.lua" />
+	<action itemid="8846" script="other/baking.lua" /> 
+	<action fromid="2692" toid="2694" script="other/baking.lua" />
+	<action itemid="5467" script="other/distilling.lua" />
 	<action fromid="6436" toid="6447" script="other/windows.lua"/>
 	<action fromid="6450" toid="6473" script="other/windows.lua"/>
 	<action fromid="6788" toid="6791" script="other/windows.lua"/>
