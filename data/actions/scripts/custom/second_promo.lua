@@ -23,7 +23,7 @@ function onUse(player, item, fromPosition, target, toPosition)
     end
  
     player:setVocation(vocs.setPromotion[vocId])
-    item:remove()
+    item:remove(1)
     player:sendTextMessage(MESSAGE_EVENT_ORANGE, "You were promoted to a Warlord " ..vocName.. "!")
     player:save()
     return true
