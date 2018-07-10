@@ -7830,19 +7830,19 @@
 	<item id="4295" article="a" name="dead elephant">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="4296" />
-		<attribute key="duration" value="900" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
 	<item id="4296" article="a" name="dead elephant">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="4297" />
-		<attribute key="duration" value="600" />
+		<attribute key="duration" value="200" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="4297" article="a" name="dead elephant">
 		<attribute key="decayTo" value="0" />
-		<attribute key="duration" value="600" />
+		<attribute key="duration" value="100" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="4298" article="a" name="dead bat">
@@ -9073,7 +9073,9 @@
 	<item fromid="5652" toid="5654" article="a" name="stone wall" />
 	<item fromid="5655" toid="5658" article="a" name="map" />
 	<item id="5659" article="a" name="blooming griffinclaw" />
-	<item fromid="5660" toid="5665" article="a" name="water trickle" />
+	<item fromid="5660" toid="5665" article="a" name="water trickle" >
+		<attribute key="fluidSource" value="water" />
+	</item>	
 	<item id="5666" article="a" name="dead mammoth">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="5667" />
@@ -10315,7 +10317,7 @@
 	<item id="6052" article="a" name="dead elephant">
 		<attribute key="containerSize" value="15" />
 		<attribute key="decayTo" value="4295" />
-		<attribute key="duration" value="10" />
+		<attribute key="duration" value="100" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>

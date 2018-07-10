@@ -33,6 +33,9 @@ local config = {
 
         -- Bone Beasts
         [3031] = {value = 25000, newItem = 5925},
+        
+        -- Elephant tusk
+        [6052] = {value = 38000, newItem = 3956},
 
         -- The Mutated Pumpkin
         [8961] = { { value = 5000, newItem = 7487 }, { value = 10000, newItem = 7737 }, { value = 20000, 6492 }, { value = 30000, newItem = 8860 }, { value = 45000, newItem = 2683 }, { value = 60000, newItem = 2096 }, { value = 90000, newItem = 9005, amount = 50 } },
@@ -122,8 +125,11 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
         end
     end
  
+	if target.itemid == 6052 then
+		target:transform(4295)
+	end
     toPosition:sendMagicEffect(effect)
-    if transform then
+    if transform and target.itemid ~= 4295 then
         target:transform(skin.after or (target.itemid == 7442 and target.itemid+2 or target.itemid+1))
     end
  
