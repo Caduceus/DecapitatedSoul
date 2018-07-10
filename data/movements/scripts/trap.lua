@@ -1,11 +1,12 @@
-local traps = {
-	[1510] = {transformTo = 1511, damage = {-50, -100}},
-	[1512] = {transformTo = 1513, damage = {-50, -100}},
-	[2579] = {transformTo = 2578, damage = {-15, -30}, ignorePlayer = true},
-	[4208] = {transformTo = 4209, damage = {-100, -150}, type = COMBAT_EARTHDAMAGE}
-}
-
 function onStepIn(creature, item, position, fromPosition)
+local min = creature:getMaxHealth() / 20
+local max = creature:getMaxHealth() / 10
+local traps = {
+	[1510] = {transformTo = 1511, damage = {-min, -max}},
+	[1512] = {transformTo = 1513, damage = {-min, -max}},
+	[2579] = {transformTo = 2578, damage = {-min, -max}, ignorePlayer = true},
+	[4208] = {transformTo = 4209, damage = {-min, -max}, type = COMBAT_EARTHDAMAGE}
+}
 	local trap = traps[item.itemid]
 	if not trap then
 		return true
