@@ -22,6 +22,7 @@
 	<action uniqueid="3940" script="custom/camo_bp.lua"/>
 	<action itemid="4850" script="custom/hydra_egg.lua"/>
 	<action fromaid="5000" toaid="5003" script="custom/wagon.lua" />
+	<action itemid="5468" script="other/firebug.lua" />
 	<action itemid="5908" script="tools/skinning.lua"/>
 	<action itemid="5957" script="other/lottery_ticket.lua"/>
 	<action itemid="5958" script="custom/minor_expboost.lua"/>
@@ -36,7 +37,7 @@
 	<action itemid="20136" script="custom/second_promo.lua" />
 	<action itemid="7735" script="custom/ded_ass.lua"/>
 	<action itemid="8300" script="other/upgrading.lua"/>
-	<action itemid="8717" script="quests/thieves_guild/lock_pick.lua"/>
+	<action itemid="8717" script="quests/the thieves guild/lock_pick.lua"/>
 	<!--action itemid="8982" script="custom/modalAD.lua"/>
     <action itemid="9019" script="custom/modalMD.lua"/-->
 	<action uniqueid="9928" script="custom/hydra_scale_legs.lua"/>
@@ -57,8 +58,8 @@
 	<action uniqueid="15108" script="custom/Lilith_Piano.lua"/>
 	<action uniqueid="15110" script="quests/medusa/entrance.lua"/>
 	<action uniqueid="15111" script="quests/medusa/medusa_arena.lua"/>
-	<!--action uniqueid="15112" script="quests/thieves_guild/thievesGuildStarter.lua"/-->
-	<!--action uniqueid="15112" script="quests/thieves_guild/door_test.lua"/-->
+	<!--action uniqueid="15112" script="quests/the thieves guild/thievesGuildStarter.lua"/-->
+	<!--action uniqueid="15112" script="quests/the thieves guild/door_test.lua"/-->
 	<action itemid="19663" script="other/counter.lua"/>
 	<action itemid="19666" script="other/counter.lua"/>
 	<action itemid="20305" script="other/counter.lua"/>
