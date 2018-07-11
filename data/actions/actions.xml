@@ -37,7 +37,6 @@
 	<action itemid="20136" script="custom/second_promo.lua" />
 	<action itemid="7735" script="custom/ded_ass.lua"/>
 	<action itemid="8300" script="other/upgrading.lua"/>
-	<action itemid="8717" script="quests/the thieves guild/lock_pick.lua"/>
 	<!--action itemid="8982" script="custom/modalAD.lua"/>
     <action itemid="9019" script="custom/modalMD.lua"/-->
 	<action uniqueid="9928" script="custom/hydra_scale_legs.lua"/>
@@ -58,8 +57,6 @@
 	<action uniqueid="15108" script="custom/Lilith_Piano.lua"/>
 	<action uniqueid="15110" script="quests/medusa/entrance.lua"/>
 	<action uniqueid="15111" script="quests/medusa/medusa_arena.lua"/>
-	<!--action uniqueid="15112" script="quests/the thieves guild/thievesGuildStarter.lua"/-->
-	<!--action uniqueid="15112" script="quests/the thieves guild/door_test.lua"/-->
 	<action itemid="19663" script="other/counter.lua"/>
 	<action itemid="19666" script="other/counter.lua"/>
 	<action itemid="20305" script="other/counter.lua"/>
@@ -154,7 +151,16 @@
 	<!-- Quests -->
 	<action itemid="1740" script="quests/quests.lua"/>
 	<action fromid="1747" toid="1749" script="quests/quests.lua"/>
-	<!--action uniqueid="30015" script="quests/annihilator.lua"/-->
+
+	<!-- Thieves Guild Quest -->
+	<action itemid="8693" script="quests/the thieves guild/dwarfDisguiseKit.lua" />
+	<action itemid="8701" script="quests/the thieves guild/note.lua" />
+	<action itemid="8717" script="quests/the thieves guild/lockPick.lua"/>
+	<action itemid="8762" script="quests/the thieves guild/fishnappingKey.lua" />
+	<action fromaid="12501" toaid="12502" script="quests/the thieves guild/climbingVine.lua" />
+	<action actionid="12505" script="quests/the thieves guild/fishnappingDoor.lua" />
+	<!--action uniqueid="15112" script="quests/the thieves guild/thievesGuildStarter.lua"/-->
+	<!--action uniqueid="15112" script="quests/the thieves guild/door_test.lua"/-->
 	
 	<!-- Weapons enchanting (Gems) -->
 	<action fromid="2146" toid="2147" script="other/enchanting.lua"/>
@@ -409,6 +415,7 @@
 	<action fromid="2031" toid="2034" script="other/fluids.lua"/>
 	<action fromid="2574" toid="2577" script="other/fluids.lua"/>
 	<action itemid="3942" script="other/fluids.lua"/>
+	<action itemid="5553" script="other/fluids.lua"/>
 	<action fromid="5792" toid="5797" script="other/dice.lua"/>
 	<action itemid="10150" script="other/fluids.lua"/>
 	<action itemid="7588" script="other/potions.lua"/>

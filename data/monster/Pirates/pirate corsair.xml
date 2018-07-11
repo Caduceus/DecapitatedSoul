@@ -49,7 +49,7 @@
 		<!--item id="6096" chance="1150"/><!-- pirate hat -->
 		<item id="2114" chance="150"/><!-- piggy bank -->
 		<!--item id="11219" chance="11050"/><!-- compass -->
-		<item id="5553" chance="130"/><!-- rum flask -->
+		<item id="5553" subtype="27" chance="130"/><!-- rum flask -->
 		<!--item id="11219" chance="11020"/><!-- compass -->
 		<item id="6095" chance="1200"/><!-- pirate shirt -->
 		<item id="6126" chance="2600"/><!-- peg leg -->

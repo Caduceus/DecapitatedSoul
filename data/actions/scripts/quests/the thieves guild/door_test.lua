@@ -8,8 +8,6 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
         player:sendTextMessage(MESSAGE_INFO_DESCR, "You have found a note for Draven in Drogheda!")
         --player:setStorageValue(thieveGuildId, 1)
         player:setStorageValue(2092, 1) --find storage id not used
-    else
-        player:sendTextMessage(MESSAGE_INFO_DESCR, "Get lost.")
        end
 end
 

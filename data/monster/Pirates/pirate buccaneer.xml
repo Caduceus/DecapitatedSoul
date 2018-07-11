@@ -52,7 +52,7 @@
 		<!--item id="5926" chance="430"/><!-- pirate backpack -->
 		<!--item id="5792" chance="40"/><!-- dice -->
 		<!--item id="11219" chance="9780"/><!-- compass -->
-		<item id="5553" chance="120"/><!-- rum flask -->
+		<item id="5553" subtype="27" chance="120"/><!-- rum flask -->
 		<item id="6095" chance="10"/><!-- pirate shirt -->
 		<item id="6126" chance="10"/><!-- peg leg -->
 		<item id="6098" chance="10"/><!-- eye patch -->
