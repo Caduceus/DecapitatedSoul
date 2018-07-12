@@ -35161,6 +35161,22 @@
 	<item id="26052" article="your" name="store inbox">
 		<attribute key="containerSize" value="20" />
 	</item>
+	<item id="26055" article="a" name="mailbox">
+		<attribute key="rotateTo" value="26056" />
+		<attribute key="type" value="mailbox" />
+	</item>
+	<item id="26056" article="a" name="mailbox">
+		<attribute key="rotateTo" value="26055" />
+		<attribute key="type" value="mailbox" />
+	</item>
+	<item id="26057" article="a" name="mailbox">
+		<attribute key="rotateTo" value="26058" />
+		<attribute key="type" value="mailbox" />
+	</item>
+	<item id="26058" article="a" name="mailbox">
+		<attribute key="rotateTo" value="26057" />
+		<attribute key="type" value="mailbox" />
+	</item>
 	<item id="26059" article="a" name="Magnificent Chair">
 		<attribute key="rotateTo" value="26060" />
 		<attribute key="wrapTo" value="26114" />
@@ -36125,7 +36141,7 @@
 	<item id="30019" name="mud" />
 	<item id="30021" name="fruit juice" />
 	<item id="30026" name="lava" />
-	<item id="30027" name="rum" />
+	<item id="30027" name="rum" /> <!-- Fluid type 27-->
 	<item id="30028" name="swamp" />
 	<item id="30035" name="tea" />
 	<item id="30043" name="mead" />
