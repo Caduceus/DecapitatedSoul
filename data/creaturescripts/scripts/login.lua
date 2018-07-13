@@ -76,7 +76,7 @@ setPlayerStorageValue(player, estr, -1)
 	local time = 1*60*60 -- 1s*60s = 60s * 60s = 60min
     player:setStorageValue(455577, os.time() + time)
     player:save()
-    --player:sendTextMessage(MESSAGE_EVENT_ORANGE, "For every 1 hour online, you will receive 1 coin to use in the store.")
+    player:sendTextMessage(MESSAGE_EVENT_ORANGE, "For every 1 hour online, you will receive 1 coin to use in the store.")
 
 	-- Events
 	player:registerEvent("addPointTimer")
@@ -100,11 +100,10 @@ setPlayerStorageValue(player, estr, -1)
 	player:registerEvent("sistersDeath")
 	player:registerEvent("medusaDeath")
 	player:registerEvent("stormblastDeath")
+	player:registerEvent("ThievesGuildNomad")
 	player:registerEvent("returnPromo")
 	player:registerEvent("removeSummon")
-	--player:registerEvent("starve")
 	player:setStorageValue(MAY_NOT_MOVE, -1)
 	player:setOutfit(player:getOutfit())
 	return true
 end
-

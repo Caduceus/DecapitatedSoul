@@ -159,6 +159,8 @@
 	<action itemid="8762" script="quests/the thieves guild/fishnappingKey.lua" />
 	<action fromaid="12501" toaid="12502" script="quests/the thieves guild/climbingVine.lua" />
 	<action actionid="12505" script="quests/the thieves guild/fishnappingDoor.lua" />
+	<action uniqueid="12511" script="quests/the thieves guild/stolenGoldenGoblet.lua" />
+	<action uniqueid="12514" script="quests/the thieves guild/theatreScript.lua" />
 	<!--action uniqueid="15112" script="quests/the thieves guild/thievesGuildStarter.lua"/-->
 	<!--action uniqueid="15112" script="quests/the thieves guild/door_test.lua"/-->
 	

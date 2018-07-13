@@ -121,6 +121,21 @@ Storage = {
 		fourthSlot = 10003,
 		fifthSlot = 10004
 	},
+	thievesGuild = {
+		Quest = 12501,
+		Mission01 = 12502,
+		Mission02 = 12503,
+		Mission03 = 12504,
+		Mission04 = 12505,
+		Mission05 = 12506,
+		Mission06 = 12507,
+		Mission07 = 12508,
+		Mission08 = 12509,
+		Door = 12510,
+		Goblet = 12511,
+		Reward = 12513,
+		TheatreScript = 12514
+	},
 	dragonLordHatchlingMount = 10034,
 	expeditionBp = 11241,
 	weaponDamage = 10009,
@@ -822,20 +837,6 @@ Storage = {
 		TravelEdron = 252,
 		TravelVenore = 253,
 		TravelCormaya = 254
-	},
-	thievesGuild = {
-		Quest = 12501,
-		Mission01 = 12502,
-		Mission02 = 12503,
-		Mission03 = 12504,
-		Mission04 = 12505,
-		Mission05 = 12506,
-		Mission06 = 12507,
-		Mission07 = 12508,
-		Mission08 = 12509,
-		Door = 12510,
-		Reward = 12513,
-		TheatreScript = 12514
 	},
 	CaptainHaba = 12540,
 	secretService = {
