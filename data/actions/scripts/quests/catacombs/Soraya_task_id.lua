@@ -14,6 +14,11 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
                 player:sendTextMessage(MESSAGE_INFO_DESCR, "The door is already open.")
                 return false
         end
+        
+        if player:getLevel() < 50 then
+			player:sendTextMessage(MESSAGE_STATUS_WARNING, "Warning: This area is not setup for a player of your level.")
+			return true
+		end
             
         if player:getStorageValue(15001) == 1 or player:getStorageValue(45551) == 7 then
             player:sendTextMessage(MESSAGE_INFO_DESCR, "You have already completed the catacombs quest.")
