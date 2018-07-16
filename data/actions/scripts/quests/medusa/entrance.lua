@@ -106,6 +106,12 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
 			storePlayers[#storePlayers + 1] = playerTile
 		end
+		
+		local spectators = Game.getSpectators(config.centerDemonRoomPosition, true, true, 37, 37, 23, 26)
+			if #spectators > 0 then
+				player:say('Wait for the current team to exit.', TALKTYPE_MONSTER_SAY, false, 0, Position(1216, 643, 9))
+			return true
+		end
 
 		--Game.getSpectators(position[, multifloor = false[, onlyPlayer = false[, minRangeX = 0[, maxRangeX = 0[, minRangeY = 0[, maxRangeY = 0]]]]]])
 		local specs, spec = Game.getSpectators(config.centerDemonRoomPosition, true, false, 37, 37, 23, 26)
