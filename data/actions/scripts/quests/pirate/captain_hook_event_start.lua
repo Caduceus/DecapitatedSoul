@@ -2,18 +2,22 @@ local config = {
 	requiredLevel = 80,
 	requiredMaxLevel = 150,
 	daily = true,
-	centerIslandPosition = Position(1259, 1274, 6),
+	centerIslandPosition = Position(72, 195, 7),
 	playerPositions = {
 		Position(1216, 1290, 5),
-		Position(1218, 1290, 5)
+		--Position(1218, 1290, 5)
 	},
 	newPositions = {
-		Position(1267, 1294, 5),
-		Position(1279, 1294, 5)
+		Position(73, 223, 5),
+		--Position(85, 223, 5)
+	},
+	pirate_ghostPositions = {
+		Position(72, 220, 6),
+		Position(84, 220, 6)
 	},
 	pirate_skeletonPositions = {
-		Position(1266, 1293, 6),
-		Position(1278, 1293, 6)
+		Position(75, 219, 6),
+		Position(82, 219, 6)
 	}
 }
 
@@ -45,21 +49,29 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
 			storePlayers[#storePlayers + 1] = playerTile
 		end
+		local spectators = Game.getSpectators(config.centerIslandPosition, true, true, 45, 45, 45, 45)
+			if #spectators > 0 then
+				player:say('Wait for the current team to exit.', TALKTYPE_MONSTER_SAY, false, 0, Position(1217, 1290, 5))
+			return true
+		end
 
-		--Game.getSpectators(position[, multifloor = false[, onlyPlayer = false[, minRangeX = 0[, maxRangeX = 0[, minRangeY = 0[, maxRangeY = 0]]]]]])
-		local specs, spec = Game.getSpectators(config.centerIslandPosition, true, false, 20, 20, 20, 20)
+								--multifloor = false, onlyPlayer = false, minRangeX, maxRangeX, minRangeY, maxRangeY)
+		local specs, spec = Game.getSpectators(config.centerIslandPosition, true, false, 45, 45, 45, 45)
 		for i = 1, #specs do
 			spec = specs[i]
 			if spec:isPlayer() then
 				player:sendTextMessage(MESSAGE_STATUS_SMALL, "A team is already inside the quest area.")
 				return true
 			end
-
 			spec:remove()
+		end
+		
+		for i = 1, #config.pirate_skeletonPositions do
+			Game.createMonster("dungeon ghost", config.pirate_skeletonPositions[i])
 		end
 
 		for i = 1, #config.pirate_skeletonPositions do
-			Game.createMonster("pirate skeleton", config.pirate_skeletonPositions[i])
+			Game.createMonster("dungeon skeleton", config.pirate_skeletonPositions[i])
 		end
 		
 

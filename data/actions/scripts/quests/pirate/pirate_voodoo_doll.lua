@@ -7,8 +7,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
         player:addOutfitAddon(750, 3)
         msg = "You received the pirate addon!"
         player:setStorageValue(storage, -1)
-        --player:removeItem(5810, 1)
-        item:remove()
+        item:remove(1)
     else
         msg = " Good try."
     end
