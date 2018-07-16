@@ -134,7 +134,8 @@ Storage = {
 		Door = 12510,
 		Goblet = 12511,
 		Reward = 12513,
-		TheatreScript = 12514
+		TheatreScript = 12514,
+		BarbarianQueenChest = 12515
 	},
 	dragonLordHatchlingMount = 10034,
 	expeditionBp = 11241,
