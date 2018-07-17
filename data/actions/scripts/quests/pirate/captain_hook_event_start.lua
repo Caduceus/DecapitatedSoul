@@ -12,12 +12,46 @@ local config = {
 		--Position(85, 223, 5)
 	},
 	pirate_ghostPositions = {
+		Position(76, 202, 7),
 		Position(72, 220, 6),
-		Position(84, 220, 6)
+		Position(84, 220, 6),
+		Position(80, 213, 6),
+		Position(87, 209, 6),
+		Position(92, 209, 6),
+		Position(76, 202, 6),
+		Position(79, 202, 6),
+		Position(62, 191, 6),
+		Position(79, 210, 5),
+		Position(92, 204, 5),
+		Position(89, 198, 5),
+		Position(74, 189, 5),
+		Position(64, 191, 5),
+		Position(90, 209, 4),
+		Position(86, 201, 4),
+		Position(62, 185, 4),
+		Position(76, 184, 4),
+		Position(71, 177, 4),
+		Position(62, 172, 4)
 	},
 	pirate_skeletonPositions = {
+		Position(78, 203, 7),
 		Position(75, 219, 6),
-		Position(82, 219, 6)
+		Position(79, 212, 6),
+		Position(82, 219, 6),
+		Position(90, 208, 6),
+		Position(77, 197, 6),
+		Position(82, 196, 6),
+		Position(60, 189, 6),
+		Position(65, 188, 6),
+		Position(91, 206, 5),
+		Position(75, 191, 5),
+		Position(60, 192, 5),
+		Position(80, 210, 4),
+		Position(82, 201, 4),
+		Position(67, 183, 4),
+		Position(75, 179, 4),
+		Position(67, 176, 4),
+		Position(74, 195, 3)
 	}
 }
 
@@ -66,8 +100,8 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			spec:remove()
 		end
 		
-		for i = 1, #config.pirate_skeletonPositions do
-			Game.createMonster("dungeon ghost", config.pirate_skeletonPositions[i])
+		for i = 1, #config.pirate_ghostPositions do
+			Game.createMonster("dungeon ghost", config.pirate_ghostPositions[i])
 		end
 
 		for i = 1, #config.pirate_skeletonPositions do
