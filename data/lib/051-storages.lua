@@ -135,7 +135,8 @@ Storage = {
 		Goblet = 12511,
 		Reward = 12513,
 		TheatreScript = 12514,
-		BarbarianQueenChest = 12515
+		BarbarianQueenChest = 12515,
+		BarbarianQueenCooldown = 12516
 	},
 	dragonLordHatchlingMount = 10034,
 	expeditionBp = 11241,
