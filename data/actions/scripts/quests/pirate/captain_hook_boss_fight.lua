@@ -4,17 +4,28 @@
 	centerIslandPosition = Position(72, 195, 7),
 	playerPositions = {
 		Position(55, 171, 5),
-		--Position(57, 171, 5)
+		Position(57, 171, 5)
 	},
 	newPositions = {
 		Position(47, 177, 5),
-		--Position(60, 178, 5)
+		Position(60, 178, 5)
 	},
 	pirate_skeletonPositions = {
-		Position(48, 177, 5)
+		Position(49, 178, 5),
+		Position(56, 179, 5),
+		Position(47, 185, 7),
+		Position(55, 184, 7),
+		Position(64, 185, 7),
+		Position(76, 191, 7)
 	},
 	pirate_ghostPositions = {
-		Position(57, 178, 5)
+		Position(50, 179, 5),
+		Position(57, 178, 5),
+		Position(48, 187, 7),
+		Position(55, 187, 7),
+		Position(48, 187, 7),
+		Position(62, 186, 7),
+		Position(69, 186, 7)
 	}
 }
 
@@ -65,7 +76,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			config.playerPositions[i]:sendMagicEffect(CONST_ME_POFF)
 			players:teleportTo(config.newPositions[i])
 			config.newPositions[i]:sendMagicEffect(CONST_ME_POFF)
-			players:sendTextMessage(MESSAGE_INFO_DESCR, "test")
+			players:sendTextMessage(MESSAGE_STATUS_WARNING, "Blimey! More bilge-sucking Scallywag after me booty? Hang 'im from the yardarm!")
 			players:setDirection(DIRECTION_SOUTH)
 			return true
 		end

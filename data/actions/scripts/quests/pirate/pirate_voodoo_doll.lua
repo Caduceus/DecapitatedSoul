@@ -9,7 +9,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
         player:setStorageValue(storage, -1)
         item:remove(1)
     else
-        msg = " Good try."
+        msg = "This character already has the pirate addon."
     end
 
     player:sendTextMessage(MESSAGE_INFO_DESCR, msg)

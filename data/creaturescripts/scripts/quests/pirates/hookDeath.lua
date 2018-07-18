@@ -1,5 +1,5 @@
 local config = {
-   ["captain hook"] = {time = 180, wallPos = {x = 78, y = 191, z = 7}}
+   ["captain hook"] = {time = 120, wallPos = {x = 78, y = 191, z = 7}}
 }
 
 local function openGate(tp)

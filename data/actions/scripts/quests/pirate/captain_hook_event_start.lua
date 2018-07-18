@@ -5,11 +5,11 @@ local config = {
 	centerIslandPosition = Position(72, 195, 7),
 	playerPositions = {
 		Position(1216, 1290, 5),
-		--Position(1218, 1290, 5)
+		Position(1218, 1290, 5)
 	},
 	newPositions = {
 		Position(73, 223, 5),
-		--Position(85, 223, 5)
+		Position(85, 223, 5)
 	},
 	pirate_ghostPositions = {
 		Position(76, 202, 7),
@@ -69,14 +69,12 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				return true
 			end
 			
-			--[[if playerTile:getItemCount(18422) < 10 then
+			if playerTile:getItemCount(18422) < 10 then
 				player:say('Each team member must sacrifice 10 daily tokens to enter!', TALKTYPE_MONSTER_SAY)
 				return true
-			end]]
+			end
 			
-			--or playerTile:getLevel() > config.requiredMaxLevel then
-			
-			if playerTile:getLevel() < config.requiredLevel then 
+			if playerTile:getLevel() < config.requiredLevel or playerTile:getLevel() > config.requiredMaxLevel then 
 				player:sendTextMessage(MESSAGE_STATUS_SMALL, "Both players need to be between level ".. config.requiredLevel .." and ".. config.requiredMaxLevel ..".")
 				return true
 			end
@@ -112,7 +110,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		local players
 		for i = 1, #storePlayers do
 			players = storePlayers[i]
-			--players:removeItem(18422, 10)
+			players:removeItem(18422, 10)
 			config.playerPositions[i]:sendMagicEffect(CONST_ME_POFF)
 			players:teleportTo(config.newPositions[i])
 			config.newPositions[i]:sendMagicEffect(CONST_ME_TELEPORT)
