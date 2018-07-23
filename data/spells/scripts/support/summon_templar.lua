@@ -14,7 +14,7 @@ function onCastSpell(player, variant)
                 if #player:getSummons() == 1 then
 						player:getPosition():sendMagicEffect(CONST_ME_POFF)
                         player:sendTextMessage(MESSAGE_INFO_DESCR, "You already have a guardian.")
-                        return false -- true allows casting of spell, false has been producing errors on sendMagicEffect. 
+                        return false
                 end
                 
         local monster = Game.createMonster(config.guardian, config.playerPos)

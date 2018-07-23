@@ -22,23 +22,19 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if target:getId() == 7655 then
 		player:sendTextMessage(TALKTYPE_ORANGE_1, "You should plant a seed first.")
 		return true
-    end
-   if target:getId() == 7665 then
+    elseif target:getId() == 7665 then
 		target:transform(target.itemid + 8)
         player:sendTextMessage(TALKTYPE_ORANGE_1, "You watered your plant..")
         return true
-    end
-	if isInArray(watered, target.itemid) then
+	elseif isInArray(watered, target.itemid) then
 		player:sendTextMessage(TALKTYPE_ORANGE_1, "Your plant doesn't need water.")
 		return true
-    end
-   if withered ~= nil then
+    elseif withered ~= nil then
 		target:transform(withered)
-		player:sendTextMessage(TALKTYPE_ORANGE_1, "You finally remembered to water your plant and it recovered.")
+		player:sendTextMessage(TALKTYPE_ORANGE_1, "You finally remembered to water your plant and it recovered, slightly.")
 		fromPosition:sendMagicEffect(CONST_ME_POFF)
 		return true
-    end
-    if target:getId() == 7678 then
+    elseif target:getId() == 7678 then
         if random <= chances then
             player:sendTextMessage(TALKTYPE_ORANGE_1, "Your plant has grown to the next stage!")
             target:transform(plantspecies[math.random(#plantspecies)], 1)
@@ -51,13 +47,11 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
     elseif isInArray(lastphase, item.itemid) == true then
         player:sendTextMessage(TALKTYPE_ORANGE_1, "You watered your plant.")
         doTransformItem(item.uid,item.itemid-1)
-    end
-    if isInArray(lastphase, target.itemid) == true then
+    elseif isInArray(lastphase, target.itemid) == true then
         player:sendTextMessage(TALKTYPE_ORANGE_1, "You watered your plant.")
         target:transform(target.itemid -1)
         return true
-        end
-    if plantadvances[target.itemid] ~= nil then 
+    elseif plantadvances[target.itemid] ~= nil then 
         if random <= chances then
             target:transform(plantadvances[target.itemid][1])
             player:sendTextMessage(TALKTYPE_ORANGE_1, "Your plant has grown to the next stage!")

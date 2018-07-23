@@ -11,3 +11,4 @@ function onThink(creature)
 			creature:sendTextMessage(MESSAGE_INFO_DESCR, "Your 1 hour of double XP has ended!") 
         end
     end
+    

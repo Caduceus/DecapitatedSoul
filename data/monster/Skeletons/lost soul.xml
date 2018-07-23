@@ -69,7 +69,7 @@
 		<item id="6526" chance="1250"/><!-- skeleton decoration -->
 		<item id="2436" chance="3850"/><!-- skull staff -->
 		<item id="5741" chance="1170"/><!-- skull helmet -->
-		<item id="7407" chance="2440"/><!-- haunted blade -->
+		<item id="7407" chance="540"/><!-- haunted blade -->
 		<item id="11233" chance="16000"/><!--unholy bone -->
 		<item id="2528" chance="740"/><!--tower shield -->
 	</loot>

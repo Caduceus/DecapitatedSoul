@@ -1,0 +1,10 @@
+function onUse(player, item, fromPosition, target, toPosition, isHotkey)
+    if player:getStorageValue(Storage.thievesGuild.TheatreScript) == 1 then
+        player:sendTextMessage(MESSAGE_INFO_DESCR, "this chest is empty.")
+    elseif player:getStorageValue(Storage.thievesGuild.TheatreScript) == 0 then
+    local item = player:addItem(14346, 1)
+        item:setAttribute(ITEM_ATTRIBUTE_TEXT, "Knight Brave: At last we meet face-to-face!\n\nDoctor Darkness: Too late, puny knight. You can\'t stop my master plan anymore!\n\n1st Knave: Watch out! It\'s a trap!\n\nKnight Brave: Don\'t quail, my faithful follower! We have mastered worse obstacles to get here!\n\nDoctor Darkness: Haha! You may not fear for your own life, but how about hers!?\n\n2nd Knave: Oh no! Look! It's Princess Buttercup! He\'s holding her hostage!\n\nDoctor Darkness: Indeed I do! Wouldn\'t it be a pity for such a beautiful young lady to die so tragically?\n\nPrincess Buttercup: Don\'t care about me! Save the world!\n\nDoctor Darkness: Keep quiet! Else your hair will make the acquaintance of these scissors!\n\nAll: You\'re such a monster!\n\nDoctor Darkness: Hahaha! Now drop your weapons or else...\n\n1st Knave: Never!\n\n2nd Knave: But what about the princess?\n\nKnight Brave: Trust me, my loyal minions. Drop your weapons.\n\nDoctor Darkness: At last! The brave Knight Brave in my hands! Your death is near!\n\nKnight Brave: Not that fast, Doctor Dumbness!\n\nDoctor Darkness: How dare you? Are you mad? I hold the princess hostage and you drop your weapons. You\'re all lost!\n\nKnight Brave: I don\'t think so, dear doctor!\n\n1st Knave: What\'s this? Behind the doctor?\n\n2nd Knave: Look! It\'s Lucky, the wonder dog!\n\nLucky: Woof! Woof!\n\nDoctor Darkness: Noooooo!\n\nKnight Brave: Get him, boy!\n\nLucky: Grrr!\n\nDoctor Darkness: Ahhhhhh!\n\nAll: Hooray!\n\nKnight Brave: Lucky, once again you saved the day!\n\nLucky: Woof!")
+        player:sendTextMessage(MESSAGE_INFO_DESCR, "You have found a theatre script.")
+        player:setStorageValue(Storage.thievesGuild.TheatreScript, 1)
+       end
+end

@@ -159,8 +159,10 @@
 	<action itemid="8762" script="quests/the thieves guild/fishnappingKey.lua" />
 	<action fromaid="12501" toaid="12502" script="quests/the thieves guild/climbingVine.lua" />
 	<action actionid="12505" script="quests/the thieves guild/fishnappingDoor.lua" />
+	<action uniqueid="12507" script="quests/the thieves guild/fishnapping.lua" />
 	<action uniqueid="12511" script="quests/the thieves guild/stolenGoldenGoblet.lua" />
 	<action uniqueid="12514" script="quests/the thieves guild/theatreScript.lua" />
+	<action uniqueid="12515" script="quests/the thieves guild/BarbarianQueenChest.lua" />
 	<!--action uniqueid="15112" script="quests/the thieves guild/thievesGuildStarter.lua"/-->
 	<!--action uniqueid="15112" script="quests/the thieves guild/door_test.lua"/-->
 	
@@ -460,7 +462,8 @@
 	<action fromid="5098" toid="5145" script="other/doors.lua"/>
 	<action fromid="5278" toid="5295" script="other/doors.lua"/>
 	<action fromid="5515" toid="5518" script="other/doors.lua"/>
-	<action fromid="5732" toid="5737" script="other/doors.lua"/>
+	<action fromid="5733" toid="5734" script="other/doors.lua"/>
+	<action fromid="5736" toid="5737" script="other/doors.lua"/>
 	<action fromid="5745" toid="5749" script="other/doors.lua"/>
 	<action fromid="6192" toid="6209" script="other/doors.lua"/>
 	<action fromid="6249" toid="6266" script="other/doors.lua"/>

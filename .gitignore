@@ -170,3 +170,4 @@ pip-log.txt
 *~
 .*.swp
 .*.swo
+data/items/item attribute list.lua

@@ -766,6 +766,7 @@
         <vocation name="Warlord Knight" showInDescription="0" />
 		<vocation name="Templar"/>
 		<vocation name="Noble Templar" showInDescription="0"/>
+		<vocation name="Warlord Templar" showInDescription="0"/>
 	</melee>
 	<melee id="8929" level="100" unproperly="1">
 		<vocation name="Knight" />
@@ -787,17 +788,26 @@
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
         <vocation name="Warlord Knight" showInDescription="0" />
+        <vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+		<vocation name="Warlord Templar" showInDescription="0"/>
 	</melee>
 	<melee id="20139" level="20" unproperly="1" />
 	<melee id="22410" level="75" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
         <vocation name="Warlord Knight" showInDescription="0" />
+        <vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+		<vocation name="Warlord Templar" showInDescription="0"/>
 	</melee>
 	<melee id="22411" level="120" unproperly="1">
 		<vocation name="Knight" />
 		<vocation name="Elite Knight" showInDescription="0" />
         <vocation name="Warlord Knight" showInDescription="0" />
+        <vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+		<vocation name="Warlord Templar" showInDescription="0"/>
 	</melee>
 	<melee id="22412" level="250" unproperly="1">
 		<vocation name="Knight" />

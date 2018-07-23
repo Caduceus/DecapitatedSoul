@@ -22,10 +22,6 @@
 	<!--Starlight Portal-->
 	<movevent event="StepIn" actionid="2361" script="ownertp.lua"/>
 	
-	<!-- super vocation transformation ring -->
-	<!--movevent event="Equip" itemid="2179" slot="ring" script="superVocationTransformationRing.lua" />
-    <movevent event="DeEquip" itemid="2179" slot="ring" script="superVocationTransformationRing.lua" /-->
-
 	<!-- Starting Zone-->
 	<movevent event="StepIn" actionid="16004" script="starting_area/gatekeeper_storage_west.lua"/>
 	<movevent event="StepIn" actionid="16019" script="starting_area/gatekeeper_storage_east.lua"/>
@@ -39,6 +35,9 @@
 	
 	<!--targo tracks-->
 	<movevent event="StepIn" actionid="16021" script="targo_tracks.lua"/>
+	
+	<!-- the thieves guild -->
+	<movevent event="StepIn" actionid="16022" script="quests/theThievesGuild/chest_timer.lua"/>
 		
 	<!-- Not Worthy-->
 	<movevent event="StepIn" itemid="3198" script="not_worthy.lua"/>

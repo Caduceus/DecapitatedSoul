@@ -13,14 +13,14 @@ local spawnByDay = true
 
 function onStartup()
 	if spawnByDay then
-		local npc = Game.createNpc('traveling matt', config[os.date('%A')], false, true)
+		local npc = Game.createNpc('Traveling Matt', config[os.date('%A')], false, true)
 		if npc then
 			npc:setMasterPos(config[os.date('%A')])
 		end
 	else
 		local npc
 		for k, position in pairs(config) do
-			npc = Game.createNpc('traveling matt', position, false, true)
+			npc = Game.createNpc('Traveling Matt', position, false, true)
 			if npc then
 				npc:setMasterPos(position)
 			end

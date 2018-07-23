@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <npc name="Grumpy Old Man" script="medusa_hair.lua" walkinterval="0" speed="0" walkradius="4" floorchange="0">
 	<health max="100" now="100"/>
-	<look type="130" head="20" body="39" legs="45" feet="7" addons="0" mount="0"/>
+	<look type="853" head="114" body="100" legs="98" feet="97" addons="2" mount="626"/>
 	<parameters>
          <parameter key="message_greet" value="Hello there youngin. I'm trading my special {trinkets} in exchange for your Medusa hair."/>
      </parameters>

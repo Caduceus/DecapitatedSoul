@@ -104,6 +104,7 @@ setPlayerStorageValue(player, estr, -1)
 	player:registerEvent("ThievesGuildNomad")
 	player:registerEvent("returnPromo")
 	player:registerEvent("removeSummon")
+	player:registerEvent("chestTimer")
 	player:setStorageValue(MAY_NOT_MOVE, -1)
 	player:setOutfit(player:getOutfit())
 	return true
