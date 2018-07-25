@@ -50,6 +50,7 @@
     <!-- Thieves Guild Quest -->
 	<event type="kill" name="ThievesGuildNomad" script="quests/the thieves guild/nomad.lua" />
 	<event type="think" name="chestTimer" script="quests/the thieves guild/chestTimer.lua" />
+	<event type="kill" name="LBQDeath" script="quests/the thieves guild/LBQDeath.lua"/>
 
 	 <!-- Zombie Event -->
     <event type="preparedeath" name="ZombiePlayerDeath" script="zombieEventDeath.lua" />
