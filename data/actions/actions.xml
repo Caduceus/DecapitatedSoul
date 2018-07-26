@@ -484,6 +484,8 @@
 	<action fromid="12188" toid="12190" script="other/doors.lua" />
 	<action fromid="12193" toid="12199" script="other/doors.lua" />
 	<action fromid="12202" toid="12205" script="other/doors.lua" />
+	<action itemid="16016" script="other/paintBrush.lua" />
+	<action itemid="16019" script="other/paintBrush.lua" />
 	<action fromid="19840" toid="19857" script="other/doors.lua" />
 	<action fromid="19980" toid="19997" script="other/doors.lua" />
 	<action fromid="20273" toid="20290" script="other/doors.lua" />

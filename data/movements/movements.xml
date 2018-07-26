@@ -951,6 +951,10 @@
 	<!-- Flower Pots -->
 	<movevent event="AddItem" tileitem="1" itemid="7655" script="seeds.lua" />
 	
+	<!-- Easel -->
+	<movevent event="AddItem" tileitem="1" itemid="16020" script="easel.lua" />
+	<movevent event="AddItem" tileitem="1" itemid="16021" script="easel.lua" />
+	
 	<!-- Pumpkinhead-->
 	<movevent event="AddItem" tileitem="1" itemid="24342" script="pumpkinhead.lua" />
 
