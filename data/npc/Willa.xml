@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Willa" script="default.lua" walkinterval="2000" floorchange="0" speechbubble="2">
+  <health now="100" max="100" />
+  <look type="136" head="116" body="19" legs="87" feet="57" addons="2" />
+<parameters>
+<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="canvas,16018,10000;easelkit,16075,15000;brush,16016,50000;palette,16017,50000;" />
+</parameters>
+</npc>
