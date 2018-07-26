@@ -24703,28 +24703,62 @@
 		<attribute key="weight" value="100" />
 		<attribute key="description" value="Paint is dripping from its tip." />
 	</item>
-	<item fromid="16020" toid="16021" article="an" name="artist's easel">
-		<attribute key="weight" value="1600" />
-		<attribute key="wrapTo" value="16075" />
+	<item id="16020" article="an" name="artist's easel">
+		<attribute key="rotateTo" value="16021" />
+		<attribute key="weight" value="100" />
 	</item>
-	<item fromid="16022" toid="16023" article="an" name="artist's easel">
-		<attribute key="weight" value="1600" />
+	<item id="16021" article="an" name="artist's easel">
+		<attribute key="rotateTo" value="16020" />
+		<attribute key="weight" value="100" />
+	</item>
+	<item id="16022" article="an" name="artist's easel">
+		<attribute key="rotateTo" value="16023" />
+		<attribute key="weight" value="100" />
 		<attribute key="description" value="An empty canvas has been placed on it." />
 	</item>
-	<item fromid="16024" toid="16025" article="a" name="masterpiece of a muse">
-		<attribute key="weight" value="1600" />
+	<item id="16023" article="an" name="artist's easel">
+		<attribute key="rotateTo" value="16022" />
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="An empty canvas has been placed on it." />
+	</item>
+	<item id="16024" article="an" name="masterpiece of a muse">
+		<attribute key="rotateTo" value="16025" />
+		<attribute key="weight" value="100" />
 		<attribute key="description" value="It was painted in the style of Penciljack." />
 	</item>
-	<item fromid="16026" toid="16027" article="a" name="painting of a muse">
-		<attribute key="weight" value="1600" />
+	<item id="16025" article="an" name="masterpiece of a muse">
+		<attribute key="rotateTo" value="16024" />
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="It was painted in the style of Penciljack." />
+	</item>
+	<item id="16026" article="an" name="masterpiece of a muse">
+		<attribute key="rotateTo" value="16027" />
+		<attribute key="weight" value="100" />
 		<attribute key="description" value="It was painted in the style of Penciljack. Unfortunately, there are some blue pixels in this piece." />
 	</item>
-	<item fromid="16028" toid="16029" article="a" name="masterpiece of a gozzler">
-		<attribute key="weight" value="1600" />
+	<item id="16027" article="an" name="masterpiece of a muse">
+		<attribute key="rotateTo" value="16026" />
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="It was painted in the style of Penciljack. Unfortunately, there are some blue pixels in this piece." />
+	</item>
+	<item id="16028" article="an" name="painting of a gozzler">
+		<attribute key="rotateTo" value="16029" />
+		<attribute key="weight" value="100" />
 		<attribute key="description" value="It was painted in the style of Lyxoph." />
 	</item>
-	<item fromid="16030" toid="16031" article="a" name="painting of a gozzler">
-		<attribute key="weight" value="1600" />
+	<item id="16029" article="an" name="painting of a gozzler">
+		<attribute key="rotateTo" value="16028" />
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="It was painted in the style of Lyxoph." />
+	</item>
+	<item id="16030" article="an" name="painting of a gozzler">
+		<attribute key="rotateTo" value="16031" />
+		<attribute key="weight" value="100" />
+		<attribute key="description" value="It was painted in the style of Lyxoph. Unfortunately, there are some blue pixels in this piece." />
+	</item>
+	<item id="16031" article="an" name="painting of a gozzler">
+		<attribute key="rotateTo" value="16030" />
+		<attribute key="weight" value="100" />
 		<attribute key="description" value="It was painted in the style of Lyxoph. Unfortunately, there are some blue pixels in this piece." />
 	</item>
 	<item id="16075" article="an" name="easel kit">
