@@ -3,8 +3,8 @@ function onAddItem(moveitem, tileitem, position)
 		return false
 	end
     if tileitem.itemid == 7655 then
-        moveitem:transform(7673)
-        tileitem:remove()
+        tileitem:transform(7673)
+        moveitem:remove(1)
         position:sendMagicEffect(CONST_ME_MAGIC_BLUE)
     end
     return true

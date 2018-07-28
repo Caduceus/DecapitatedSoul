@@ -948,6 +948,18 @@
 	<movevent event="StepOut" itemid="19988" script="closingdoor.lua"/>
 	<movevent event="StepOut" itemid="20281" script="closingdoor.lua"/>
 	
+	<!-- Oven -->
+	<movevent event="AddItem" tileitem="1" itemid="6357" script="oven.lua" />
+	<movevent event="AddItem" tileitem="1" itemid="6359" script="oven.lua" />
+	<movevent event="AddItem" tileitem="1" itemid="6361" script="oven.lua" />
+	<movevent event="AddItem" tileitem="1" itemid="6363" script="oven.lua" />
+	
+	<!-- Percolator -->
+	<movevent event="AddItem" tileitem="1" itemid="6356" script="percolator.lua" />
+	<movevent event="AddItem" tileitem="1" itemid="6358" script="percolator.lua" />
+	<movevent event="AddItem" tileitem="1" itemid="6360" script="percolator.lua" />
+	<movevent event="AddItem" tileitem="1" itemid="6362" script="percolator.lua" />
+	
 	<!-- Flower Pots -->
 	<movevent event="AddItem" tileitem="1" itemid="7655" script="seeds.lua" />
 	
