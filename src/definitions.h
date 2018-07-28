@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2018  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@
 
 #define STATUS_SERVER_NAME "Decapitated Soul"
 #define STATUS_SERVER_VERSION "1.2"
-#define STATUS_SERVER_DEVELOPERS "God Caduceus"
+#define STATUS_SERVER_DEVELOPERS "Caduceus"
 
 #define CLIENT_VERSION_MIN 1095
 #define CLIENT_VERSION_MAX 1095

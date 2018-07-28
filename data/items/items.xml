@@ -4339,7 +4339,7 @@
 	<item fromid="2571" toid="2573" article="a" name="bowl">
 		<attribute key="weight" value="1850" />
 	</item>
-	<item id="2574" article="an" name="ewer">
+	<item id="2574" article="a" name="percolator">
 		<attribute key="weight" value="1750" />
 		<attribute key="pickupable" value="1" />
 	</item>
@@ -11214,29 +11214,33 @@
 		<attribute key="corpseType" value="undead" />
 	</item>
 	<item id="6356" article="an" name="oven">
-		<attribute key="rotateTo" value="6358" />
 		<attribute key="wrapTo" value="6372" />
+		<attribute key="decayTo" value="6357" />
+		<attribute key="duration" value="90" />
 	</item>
 	<item id="6357" article="an" name="oven">
 		<attribute key="rotateTo" value="6359" />
 	</item>
 	<item id="6358" article="an" name="oven">
-		<attribute key="rotateTo" value="6360" />
 		<attribute key="wrapTo" value="6372" />
+		<attribute key="decayTo" value="6359" />
+		<attribute key="duration" value="90" />
 	</item>
 	<item id="6359" article="an" name="oven">
 		<attribute key="rotateTo" value="6361" />
 	</item>
 	<item id="6360" article="an" name="oven">
-		<attribute key="rotateTo" value="6362" />
 		<attribute key="wrapTo" value="6372" />
+		<attribute key="decayTo" value="6361" />
+		<attribute key="duration" value="90" />
 	</item>
 	<item id="6361" article="an" name="oven">
 		<attribute key="rotateTo" value="6363" />
 	</item>
 	<item id="6362" article="an" name="oven">
-		<attribute key="rotateTo" value="6356" />
 		<attribute key="wrapTo" value="6372" />
+		<attribute key="decayTo" value="6363" />
+		<attribute key="duration" value="90" />
 	</item>
 	<item id="6363" article="an" name="oven">
 		<attribute key="rotateTo" value="6357" />
@@ -36178,6 +36182,7 @@
 	<item id="30014" name="coconut milk" />
 	<item id="30015" name="wine" />
 	<item id="30019" name="mud" />
+	<item id="30020" name="coffee" />
 	<item id="30021" name="fruit juice" />
 	<item id="30026" name="lava" />
 	<item id="30027" name="rum" /> <!-- Fluid type 27-->

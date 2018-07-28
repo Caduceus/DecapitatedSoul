@@ -1,6 +1,9 @@
 local drunk = Condition(CONDITION_DRUNK)
 drunk:setParameter(CONDITION_PARAM_TICKS, 60000)
 
+local haste = Condition(CONDITION_HASTE)
+haste:setParameter(CONDITION_PARAM_TICKS, 60000)
+
 local poison = Condition(CONDITION_POISON)
 poison:setParameter(CONDITION_PARAM_DELAYED, true)
 poison:setParameter(CONDITION_PARAM_MINVALUE, -50)
@@ -9,8 +12,8 @@ poison:setParameter(CONDITION_PARAM_STARTVALUE, -5)
 poison:setParameter(CONDITION_PARAM_TICKINTERVAL, 4000)
 poison:setParameter(CONDITION_PARAM_FORCEUPDATE, true)
 
-local fluidType = {3, 4, 5, 7, 10, 11, 13, 15, 19}
-local fluidMessage = {"Aah...", "Urgh!", "Mmmh.", "Aaaah...", "Aaaah...", "Urgh!", "Urgh!", "Aah...", "Urgh!"}
+local fluidType = {3, 4, 5, 7, 10, 11, 13, 15, 19, 20}
+local fluidMessage = {"Aah...", "Urgh!", "Mmmh.", "Aaaah...", "Aaaah...", "Urgh!", "Urgh!", "Aah...", "Urgh!", "Ahhhh"}
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
     local targetItemType = ItemType(target.itemid)
@@ -34,6 +37,8 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
                 player:addCondition(drunk)
             elseif item.type == 4 then
                 player:addCondition(poison)
+            elseif item.type == 20 then
+                player:addCondition(haste)
             elseif item.type == 7 then
                 player:addMana(math.random(50, 150))
                 fromPosition:sendMagicEffect(CONST_ME_MAGIC_BLUE)
@@ -43,7 +48,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
             end
             item:transform(item:getId(), 0)
             for i = 0, #fluidType do
-                if item.type == fluidType[i] then
+                if item.type == fluidType[i] or item.type == 20 then
                     player:say(fluidMessage[i], TALKTYPE_MONSTER_SAY)
                     return true
                 end

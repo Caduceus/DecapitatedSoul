@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2018  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -256,6 +256,8 @@ enum FluidTypes_t : uint8_t {
 	FLUID_TEA = FLUID_BROWN + 32,
 
 	FLUID_MEAD = FLUID_BROWN + 40,
+
+	FLUID_COFFEE = FLUID_BROWN + 48,
 };
 
 const uint8_t reverseFluidMap[] = {
@@ -269,6 +271,7 @@ const uint8_t reverseFluidMap[] = {
 	FLUID_EMPTY,
 	FLUID_LEMONADE,
 	FLUID_MILK,
+	FLUID_COFFEE,
 };
 
 const uint8_t clientToServerFluidMap[] = {
@@ -277,6 +280,7 @@ const uint8_t clientToServerFluidMap[] = {
 	FLUID_MANA,
 	FLUID_BEER,
 	FLUID_MUD,
+	FLUID_COFFEE,
 	FLUID_BLOOD,
 	FLUID_SLIME,
 	FLUID_RUM,

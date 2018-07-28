@@ -1,6 +1,6 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2016  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2018  Mark Samman <mark.samman@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -536,6 +536,8 @@ void Items::parseItemNode(const pugi::xml_node& itemNode, uint16_t id)
 				it.fluidSource = FLUID_TEA;
 			} else if (tmpStrValue == "mead") {
 				it.fluidSource = FLUID_MEAD;
+			} else if (tmpStrValue == "coffee") {
+				it.fluidSource = FLUID_COFFEE;
 			} else {
 				std::cout << "[Warning - Items::parseItemNode] Unknown fluidSource: " << valueAttribute.as_string() << std::endl;
 			}
