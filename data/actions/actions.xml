@@ -29,6 +29,7 @@
 	<action uniqueid="6040" script="custom/arenapvp.lua"/>	
 	<action fromuid="6297" touid="6303" script="custom/Slot_Machine.lua"/>
 	<action itemid="6558" script="other/concentrated_demonic_blood.lua" />
+	<action actionid="6901" script="custom/movingboat.lua"/>
 	<action uniqueid="7004" script="custom/hydra_lever.lua"/>
 	<action itemid="7439" script="other/strengthening_potions.lua" />
 	<action itemid="7440" script="other/strengthening_potions.lua" />
