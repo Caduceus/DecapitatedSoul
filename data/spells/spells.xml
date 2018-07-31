@@ -1141,4 +1141,5 @@
 	<instant name="static wave" words="static gran wave" direction="1" aggressive="1" blockwalls="1" needtarget="0" needlearn="1" script="monster/static_wave.lua"/>
 	<instant name="medusa wave" words="medusa sister wave" direction="1" aggressive="1" blockwalls="1" needtarget="0" needlearn="1" script="monster/medusa_sister_wave.lua"/>
 	<instant name="medusa swirl" words="medusa sister swirl" direction="1" aggressive="1" blockwalls="1" needtarget="0" needlearn="1" script="monster/medusa_sister_swirl.lua"/>
+	<instant name="stun" words="stun" aggressive="1" blockwalls="1" needtarget="1" needlearn="1" script="monster/stun.lua"/>
 </spells>
