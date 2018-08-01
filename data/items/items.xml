@@ -17383,6 +17383,7 @@
 	<item id="9689" article="a" name="cask of brown ale">
 		<attribute key="weight" value="30000" />
 		<attribute key="description" value="It contains dwarven brown ale brewed by a human." />
+		<attribute key="fluidSource" value="beer" />
 	</item>
 	<item id="9690" article="a" name="gear wheel">
 		<attribute key="weight" value="5" />
@@ -29308,6 +29309,7 @@
 		<attribute key="weight" value="1500" />
 	</item>
 	<item id="20668" article="a" name="shadowy statue" />
+	<item fromid="20746" toid="20751" article="a" name="conveyor" />
 	<item fromid="20753" toid="20758" article="a" name="hedge" />
 	<item id="20759" article="a" name="lurking tree" />
 	<item id="20760" article="a" name="small birch" />
@@ -33135,7 +33137,9 @@
 	<item id="24983" article="a" name="stone spiked club" />
 	<item id="24986" article="a" name="large totem pole" />
 	<item id="24990" article="a" name="clay hut" />
-	<item id="24992" article="a" name="clay hut entrance" />
+	<item id="24991" article="a" name="clay hut" />
+	<item fromid="24992" toid="24993" article="a" name="clay hut entrance">
+	</item>
 	<item id="24994" article="a" name="chimney" />
 	<item id="24997" article="a" name="painted tusks" />
 	<item id="25004" article="a" name="ground" />
