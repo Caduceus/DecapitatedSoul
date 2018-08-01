@@ -11,14 +11,15 @@
 	<action itemid="1957" script="custom/book_learn.lua"/>
 	<action itemid="2087" script="custom/tp_item.lua"/>
 	<action itemid="2099" script="custom/water_pipe.lua"/>
-	<action uniqueid="7590" script="custom/starter_pots.lua"/>
+	<action actionid="2215" script="other/elevator.lua" />
+	<action actionid="2216" script="other/elevatorTemple.lua" />
 	<action itemid="2361" script="other/starlighttp.lua"/>
-	<action itemid="2300" script="custom/bless_rune.lua"/>
-	<action uniqueid="3001" script="quests/dailyquest.lua"/>
-	<action uniqueid="3002" script="quests/dailyquest_apoc.lua"/>
 	<action uniqueid="2260" script="quests/trick_or_treat_daily.lua"/>
 	<action uniqueid="2261" script="quests/trick_or_treat_daily2.lua"/>
 	<action uniqueid="2262" script="quests/trick_or_treat_daily3.lua"/> <!--3003-->
+	<action itemid="2300" script="custom/bless_rune.lua"/>
+	<action uniqueid="3001" script="quests/dailyquest.lua"/>
+	<action uniqueid="3002" script="quests/dailyquest_apoc.lua"/>
 	<action uniqueid="3940" script="custom/camo_bp.lua"/>
 	<action itemid="4850" script="custom/hydra_egg.lua"/>
 	<action fromaid="5000" toaid="5003" script="custom/wagon.lua" />
@@ -34,6 +35,7 @@
 	<action itemid="7439" script="other/strengthening_potions.lua" />
 	<action itemid="7440" script="other/strengthening_potions.lua" />
 	<action itemid="7443" script="other/strengthening_potions.lua" />
+	<action uniqueid="7590" script="custom/starter_pots.lua"/>
 	<action itemid="7734" script="custom/watering_can.lua" />
 	<action itemid="20136" script="custom/second_promo.lua" />
 	<action itemid="7735" script="custom/ded_ass.lua"/>
