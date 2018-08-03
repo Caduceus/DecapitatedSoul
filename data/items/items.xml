@@ -21844,13 +21844,13 @@
 	<item id="12687" name="timbers" />
 	<item id="12688" article="a" name="timber" />
 	<item fromid="12689" toid="12691" article="a" name="timber wall" />
-	<item id="12692" article="a" name="closed door">
-		<attribute key="type" value="door" />
-		<attribute key="blockprojectile" value="1" />
+	<item id="12692" name="hand made stairs">
+		<attribute key="floorchange" value="north" />
 	</item>
 	<item id="12693" article="a" name="timber wall" />
-	<item id="12694" name="hand made stairs">
-		<attribute key="floorchange" value="north" />
+	<item id="12694" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
 	</item>
 	<item id="12695" article="an" name="open door">
 		<attribute key="type" value="door" />
@@ -21860,11 +21860,11 @@
 	</item>
 	<item id="12697" article="a" name="timber wall" />
 	<item fromid="12698" toid="12700" article="a" name="lush grass" />
-	<item id="12701" article="a" name="closed door">
+	<item id="12701" article="a" name="lush grass" />
+	<item id="12702" article="a" name="closed door">
 		<attribute key="type" value="door" />
 		<attribute key="blockprojectile" value="1" />
 	</item>
-	<item id="12702" article="a" name="lush grass" />
 	<item id="12703" article="an" name="open door">
 		<attribute key="type" value="door" />
 	</item>
