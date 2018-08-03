@@ -487,6 +487,9 @@
 	<action fromid="12188" toid="12190" script="other/doors.lua" />
 	<action fromid="12193" toid="12199" script="other/doors.lua" />
 	<action fromid="12202" toid="12205" script="other/doors.lua" />
+	<action fromid="12694" toid="12695" script="other/doors.lua" />
+	<action fromid="12702" toid="12703" script="other/doors.lua" />
+	<action fromid="13020" toid="13023" script="other/doors.lua" />
 	<action itemid="16016" script="other/paintBrush.lua" />
 	<action itemid="16019" script="other/paintBrush.lua" />
 	<action fromid="19840" toid="19857" script="other/doors.lua" />
@@ -494,7 +497,6 @@
 	<action fromid="20273" toid="20290" script="other/doors.lua" />
 	<action fromid="17235" toid="17238" script="other/doors.lua" />
 	<action fromid="18208" toid="18209" script="other/doors.lua" />
-	<action fromid="13020" toid="13023" script="other/doors.lua" />
 	<action itemid="14405" function="market"/>
 	<action fromid="18488" toid="18492" script="other/skilltrainer.lua" />
 	<action fromid="22815" toid="22822" script="other/doors.lua" />
