@@ -21,7 +21,6 @@ local effects = {
 	{position = Position(1078, 1197, 7), text = '', effect = CONST_ME_FIREATTACK}, --Demon Oak
 	{position = Position(1085, 1194, 7), text = '', effect = CONST_ME_FIREATTACK}, --Demon Oak
 	{position = Position(1019, 935, 8), text = '', effect = CONST_ME_STUN}, -- Drogheda Temple Spawn
-	{position = Position(1023, 927, 9), text = '', effect = CONST_ME_SOUND_WHITE}, -- Piano (Lilith's Chamber)
 	{position = Position(705, 708, 7), text = 'Demon Helmet Quest'}, --Demon Helmet quest
 	{position = Position(704, 708, 7), text = '', effect = CONST_ME_FIREATTACK}, --Demon Helmet quest
 	{position = Position(706, 708, 7), text = '', effect = CONST_ME_FIREATTACK}, --Demon Helmet quest
