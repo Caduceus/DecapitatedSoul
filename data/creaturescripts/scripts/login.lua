@@ -106,6 +106,7 @@ setPlayerStorageValue(player, estr, -1)
 	player:registerEvent("returnPromo")
 	player:registerEvent("removeSummon")
 	player:registerEvent("chestTimer")
+	player:registerEvent("lightBearer")
 	player:setStorageValue(MAY_NOT_MOVE, -1)
 	player:setOutfit(player:getOutfit())
 	return true

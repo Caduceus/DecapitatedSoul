@@ -609,7 +609,22 @@
 		<attribute key="wrapTo" value="3928" />
 	</item>
 	<item fromid="1479" toid="1480" article="a" name="street lamp" />
-	<item fromid="1481" toid="1484" article="a" name="coal basin" />
+	<item id="1481" article="a" name="coal basin" >
+		<attribute key="decayTo" value="1485" />
+		<attribute key="duration" value="600" />
+	</item>
+	<item id="1482" article="a" name="coal basin" >
+		<attribute key="decayTo" value="1481" />
+		<attribute key="duration" value="600" />
+	</item>
+	<item id="1483" article="a" name="coal basin" >
+		<attribute key="decayTo" value="1482" />
+		<attribute key="duration" value="600" />
+	</item>
+	<item id="1484" article="a" name="coal basin" >
+		<attribute key="decayTo" value="1483" />
+		<attribute key="duration" value="600" />
+	</item>
 	<item id="1485" article="an" name="empty coal basin" />
 	<item id="1486" article="a" name="stone coal basin" />
 	<item id="1487" article="a" name="fire field">
@@ -18884,19 +18899,19 @@
 	<item id="10309" name="claw of 'The Noxious Spawn'">
 		<attribute key="description" value="It feels tight and uncomfortable on your hand." />
 		<attribute key="weight" value="500" />
-		<attribute key="slotType" value="ring" />
+		<attribute key="weaponType" value="fist" />
 		<attribute key="transformDeEquipTo" value="10310" />
 	</item>
 	<item id="10310" name="claw of 'The Noxious Spawn'">
 		<attribute key="description" value="It's like a glove and you can't wear a ring on it. You are not sure if you should really put it on." />
 		<attribute key="weight" value="500" />
-		<attribute key="slotType" value="ring" />
+		<attribute key="weaponType" value="fist" />
 		<attribute key="transformEquipTo" value="10309" />
 	</item>
 	<item id="10311" name="claw of 'The Noxious Spawn'">
 		<attribute key="description" value="Its power is depleted at the moment." />
 		<attribute key="weight" value="500" />
-		<attribute key="decayTo" value="10309" />
+		<!--attribute key="decayTo" value="10309" /-->
 		<attribute key="duration" value="10" />
 		<attribute key="transformDeEquipTo" value="10315" />
 	</item>
@@ -18916,7 +18931,7 @@
 	<item id="10314" article="a" name="claw of 'The Noxious Spawn'">
 		<attribute key="description" value="Its power is depleted at the moment." />
 		<attribute key="weight" value="500" />
-		<attribute key="slotType" value="ring" />
+		<attribute key="weaponType" value="fist" />
 		<attribute key="transformDeEquipTo" value="10315" />
 	</item>
 	<item id="10315" article="a" name="claw of 'The Noxious Spawn'">

@@ -22,8 +22,18 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			target:transform(5465)
 			target:decay()
 		elseif target.itemid == 1485 then --Light Up empty coal basins
-			toPosition:sendMagicEffect(CONST_ME_HITBYFIRE)
-			target:transform(1484)
+			if player:getStorageValue(Storage.lightBearerComplete) ~= 1 then
+			local stor = player:getStorageValue(Storage.lightBearer)+1
+			local storage = player:getStorageValue(Storage.lightBearer)
+				toPosition:sendMagicEffect(CONST_ME_HITBYFIRE)
+				target:transform(1484)
+				player:setStorageValue(Storage.lightBearer, storage +1)
+				player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'Task message: '..(stor +1)..' '..target:getName()..'s lit.')
+			else
+				toPosition:sendMagicEffect(CONST_ME_HITBYFIRE)
+				target:transform(1484)
+				player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'The all mighty Light Bearer. Still lighting up the day.')
+			end
 		elseif target.actionid == 12550 or target.actionid == 12551 then -- Secret Service Quest
 			if player:getStorageValue(Storage.secretService.TBIMission01) == 1 then
 				Game.createItem(1487, 1, Position(32893, 32012, 6))
