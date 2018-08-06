@@ -1,5 +1,5 @@
 function onLogin(player)
-	if player:getAccountStorageValue(accountStorage.returnPlayerPromo) == -1 or player:getAccountStorageValue(accountStorage.returnPlayerPromo) == 2 then
+	if player:getAccountStorageValue(accountStorage.returnPlayerPromo) == false or player:getAccountStorageValue(accountStorage.returnPlayerPromo) == 2 then
 	return true
 end
 	if player:getAccountStorageValue(accountStorage.returnPlayerPromo) == 1 then
