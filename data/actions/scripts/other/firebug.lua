@@ -28,7 +28,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				toPosition:sendMagicEffect(CONST_ME_HITBYFIRE)
 				target:transform(1484)
 				player:setStorageValue(Storage.lightBearer, storage +1)
-				player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'Task message: '..(stor +1)..' '..target:getName()..'s lit.')
+				player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'Task message: '..(stor +1)..'/100 '..target:getName()..'s lit.')
 			else
 				toPosition:sendMagicEffect(CONST_ME_HITBYFIRE)
 				target:transform(1484)
