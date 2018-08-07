@@ -1,4 +1,4 @@
-local array_guildhall = {5}
+local array_guildhall = {5,46}
  
 function onSay(player, words, param)
     local housePrice = configManager.getNumber(configKeys.HOUSE_PRICE)
