@@ -32,7 +32,7 @@
 		<attack name="poisoncondition" interval="5000" chance="80" length="0" spread="1" min="-5800" max="-8000">
 			<attribute key="areaEffect" value="greenspark"/>
 		</attack>
-		<attack name="stun" interval="4000" chance="50" range="3" radius="4" min="-210" max="-300">
+		<attack name="stun" interval="4000" chance="50" range="3" radius="4" min="-1" max="-2">
 		</attack>
 		<attack name="outfit" interval="10000" chance="30" target="1" range="7" monster="snake" duration="5000"/>
 	</attacks>

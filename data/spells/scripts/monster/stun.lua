@@ -1,10 +1,11 @@
 local combat = Combat()
+local condition = Condition()
     combat:setParameter(COMBAT_PARAM_BLOCKARMOR, 1)
     combat:setParameter(COMBAT_PARAM_BLOCKSHIELD, 1)
-    combat:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
     combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_STUN)
-    combat:setParameter(COMBAT_FORMULA_SKILL, 0, 0, 1.0, 0)
     combat:setArea(createCombatArea(AREA_CIRCLE3X3))
+	combat:setParameter(COMBAT_PARAM_DISPEL, CONDITION_MANASHIELD)
+	combat:setCondition(condition)
  
 function onTargetCreature(creature, target)
     local speed = target:getSpeed(creature)
@@ -13,7 +14,8 @@ function onTargetCreature(creature, target)
     local function speedChange()
 		target:changeSpeed(newSpeed)
 	end
-	
+	local manaDrain = target:getMaxMana()
+	target:addMana(-manaDrain/10)
     target:changeSpeed(-speed)
     addEvent(speedChange, 8000)
 end
