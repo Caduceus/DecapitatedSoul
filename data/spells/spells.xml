@@ -548,6 +548,17 @@
         <vocation name="Royal Paladin"/>
         <vocation name="Warlord Paladin"/>
 	</instant>
+		<instant group="support" spellid="44" name="Cancel Magic Shield" words="utamo vita dis" lvl="14" mana="50" aggressive="0" selftarget="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="custom/cancelManaShield.lua">
+		<vocation name="Sorcerer"/>
+        <vocation name="Master Sorcerer"/>
+        <vocation name="Warlord Sorcerer"/>
+		<vocation name="Druid"/>
+        <vocation name="Elder Druid"/>
+        <vocation name="Warlord Druid"/>
+		<vocation name="Paladin"/>
+        <vocation name="Royal Paladin"/>
+        <vocation name="Warlord Paladin"/>
+	</instant>
 	<instant group="healing" spellid="82" name="Mass Healing" words="exura gran mas res" lvl="36" mana="150" prem="1" aggressive="0" cooldown="2000" groupcooldown="1000" needlearn="0" script="healing/mass healing.lua">
 		<vocation name="Druid"/>
         <vocation name="Elder Druid"/>

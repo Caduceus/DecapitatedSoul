@@ -21,4 +21,3 @@ function onThink(creature)
 		creature:save()
     end
 end
-
