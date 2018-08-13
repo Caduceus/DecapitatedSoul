@@ -31,6 +31,8 @@ exhaust:setParameter(CONDITION_PARAM_TICKS, (configManager.getNumber(configKeys.
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if target == nil or not target:isPlayer() then
+		player:addCondition(exhaust)
+		player:sendTextMessage(MESSAGE_STATUS_WARNING, "You cannot use a potion on a creature.")
 		return false
 	end
 	
