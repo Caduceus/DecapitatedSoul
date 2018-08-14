@@ -179,7 +179,7 @@ function creatureSayCallback(cid, type, msg)
                     end
                      selfSay(x.message.."\n".. missionstr ..".", cid)
                  else
-                     selfSay("Great job, young adventurer. Be sure to open the chest to your left. Keep your eyes open for other quests along the route.", cid)
+                     selfSay("Great job, young adventurer. Be sure to open the chest to your left. Keep your eyes open for other quests along the route. Hint: Head South, towards the gate. There is an open door on the east side.", cid)
                  end
             end
          end
