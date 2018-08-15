@@ -25,7 +25,7 @@
 												bonesword,2450,25000;
 												bootsofhaste,2195,40000;
 												brassarmor,2465,200;
-												brasslegs,2487,100;
+												brasslegs,2478,100;
 												brightsword,2407,6000;
 												broadsword,2413,500;
 												butcheraxe,7412,55000;
@@ -150,6 +150,7 @@
 												spikesword,2383,800;
 												spikedsquelcher,7452,55000;
 												steelboots,2645,40000;
+												steelhelmet,2457,75;
 												steelshield,2509,300;
 												stonecutteraxe,2431,60000;
 												strangehelmet,2479,1500;
