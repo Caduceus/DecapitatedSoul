@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Skerik" script="default.lua" walkinterval="0" speed="0"  floorchange="0">
+	<health now="100" max="100"/>
+	<look type="128" head="20" body="30" legs="40" feet="50" addons="2"/>
+	<parameters>
+   <parameter key="module_shop" value="1" />
+	 <parameter key="message_greet" value="Hello |PLAYERNAME|. How can I asist you?" />
+	 <parameter key="shop_sellable" value="crossbow,2455,50;bow,2456,30;burst arrow,2546,50;power bolt,2547,10;bolt,2543,10" />
+	 <parameter key="shop_buyable" value="crossbow,2455,100;bow,2456,100;spear,2389,100;power bolt,2547,200;burst arrow,2546,100;poison arrow,2545,50;bolt,2543,100;sniper arrow,7364,100" />
+	</parameters>
+</npc>
