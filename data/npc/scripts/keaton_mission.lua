@@ -9,7 +9,12 @@ NpcSystem.parseParameters(npcHandler)
 function onCreatureAppear(cid)  npcHandler:onCreatureAppear(cid) end
 function onCreatureDisappear(cid)  npcHandler:onCreatureDisappear(cid) end
 function onCreatureSay(cid, type, msg)  npcHandler:onCreatureSay(cid, type, msg) end
-function onThink()  npcHandler:onThink() end
+function onThink()
+    if not npcHandler:isFocused(cid) then
+            Npc():setDirection(DIRECTION_EAST)
+        end
+    npcHandler:onThink()
+end
 
 npcHandler:setMessage(MESSAGE_GREET, "Ohh young |PLAYERNAME|, I am sure happy to see you! Care to {help} me kill some of these rotworms? I am sort of chained up here.")
 
@@ -85,7 +90,7 @@ function creatureSayCallback(cid, type, msg)
                  selfSay("The mission I gave you is for level "..x.level..", come back later.", cid)
              end
          else
-             selfSay("I recommend you go speak with {Damon}. He is having some of the same issues as me.", cid)
+             selfSay("I recommend you go speak with {Damon}. He is having some of the same issues as me. I deem you worth of using my wagon, please, feel free.", cid)
              npcHandler:releaseFocus(cid)
          end
      elseif msgcontains(msg, 'yes') and npcHandler.topic[cid] == 1 then

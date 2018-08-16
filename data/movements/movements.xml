@@ -29,6 +29,9 @@
 	<movevent event="StepIn" actionid="16017" script="starting_area/chamber_door_east.lua"/>
 	<movevent event="StepIn" actionid="16018" script="starting_area/chamber_door_west.lua"/>
 	<movevent event="StepIn" actionid="16020" script="starting_area/keaton_help.lua"/>
+	
+	<!-- the thieves guild -->
+	<movevent event="StepIn" actionid="16023" script="quests/keatonsDoorStorageCheck.lua"/>
 		
 	<!-- Map Mark -->
 	<movevent event="StepIn" actionid="16007" script="starting_area/map_marks.lua"/>
@@ -1039,8 +1042,8 @@
 	<movevent event="AddItem" itemid="7360" function="onAddField"/>
 
 	<!-- Swimming -->
-	<movevent event="StepIn" fromid="4621" toid="4625" script="swimming.lua"/>
-	<movevent event="StepOut" fromid="4621" toid="4625" script="swimming.lua"/>
+	<movevent event="StepIn" fromid="4620" toid="4625" script="swimming.lua"/>
+	<movevent event="StepOut" fromid="4620" toid="4625" script="swimming.lua"/>
 	<movevent event="StepIn" itemid="5405" script="drowning.lua"/>
 	<movevent event="StepOut" itemid="5405" script="drowning.lua"/>
 
@@ -2190,6 +2193,51 @@
         <vocation name="Warlord Templar" showInDescription="0"/>
 	</movevent>
 	<movevent event="DeEquip" itemid="8928" slot="hand" level="250" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="10309" slot="hand" level="300" function="onEquipItem">
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+		<vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+        <vocation name="Warlord Templar" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="10309" slot="hand" level="300" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="10310" slot="hand" level="300" function="onEquipItem">
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+		<vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+        <vocation name="Warlord Templar" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="10310" slot="hand" level="300" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="10311" slot="hand" level="300" function="onEquipItem">
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+		<vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+        <vocation name="Warlord Templar" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="10311" slot="hand" level="300" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="10314" slot="hand" level="300" function="onEquipItem">
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+		<vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+        <vocation name="Warlord Templar" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="10314" slot="hand" level="300" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="10315" slot="hand" level="300" function="onEquipItem">
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+		<vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+        <vocation name="Warlord Templar" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="10315" slot="hand" level="300" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="18409" slot="hand" level="160" function="onEquipItem">
 		<vocation name="Sorcerer"/>
 		<vocation name="Master Sorcerer" showInDescription="0"/>

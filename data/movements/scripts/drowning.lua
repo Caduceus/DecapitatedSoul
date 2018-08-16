@@ -1,5 +1,5 @@
 local condition = Condition(CONDITION_DROWN)
-condition:setParameter(CONDITION_PARAM_PERIODICDAMAGE, -20)
+condition:setParameter(CONDITION_PARAM_PERIODICDAMAGE, -100)
 condition:setParameter(CONDITION_PARAM_TICKS, -1)
 condition:setParameter(CONDITION_PARAM_TICKINTERVAL, 2000)
 

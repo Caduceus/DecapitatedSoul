@@ -60,6 +60,7 @@
 	<action actionid="15108" script="custom/Lilith_Piano.lua"/>
 	<action uniqueid="15110" script="quests/medusa/entrance.lua"/>
 	<action uniqueid="15111" script="quests/medusa/medusa_arena.lua"/>
+	<action uniqueid="15113" script="quests/keatonsDoor.lua"/>
 	<action itemid="19663" script="other/counter.lua"/>
 	<action itemid="19666" script="other/counter.lua"/>
 	<action itemid="20305" script="other/counter.lua"/>
