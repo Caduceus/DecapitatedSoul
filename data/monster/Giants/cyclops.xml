@@ -21,9 +21,9 @@
         <event name="playerSummon"/>
     </script>
 	<attacks>
-		<attack name="melee" interval="2000" skill="70" attack="50"/>
+		<attack name="melee" interval="2000" skill="70" attack="40"/>
 	</attacks>
-	<defenses armor="25" defense="25"/>
+	<defenses armor="20" defense="20"/>
 	<elements>
 		<element energyPercent="25"/>
 		<element holyPercent="20"/>

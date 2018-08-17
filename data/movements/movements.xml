@@ -56,7 +56,7 @@
 	<movevent event="StepIn" actionid="16009" script="finding_soraya.lua"/>
 	
 	<!-- Keaton Complete -->
-	<movevent event="StepIn" actionid="16010" script="keaton_complete.lua"/>
+	<movevent event="StepIn" actionid="16010" script="damonComplete.lua"/>
 	
 	<!-- Training Monk Unlock -->
 	<movevent event="StepIn" actionid="16011" script="training_monk_unlock.lua"/>

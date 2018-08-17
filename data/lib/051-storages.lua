@@ -138,6 +138,8 @@ Storage = {
 		BarbarianQueenChest = 12515,
 		BarbarianQueenCooldown = 12516
 	},
+	lightBearer = 12517,
+	lightBearerComplete = 12518,
 	dragonLordHatchlingMount = 10034,
 	expeditionBp = 11241,
 	weaponDamage = 10009,
@@ -156,7 +158,7 @@ Storage = {
 		effectStorage = 18010
 	},
 	carrionMission = {
-		mission = 45552,
+		mission = 45560,
 		carrionWorm = 21904
 	},
 	heroMission = {
@@ -254,7 +256,7 @@ Storage = {
 		storage = 45396,
 		exstorage = 40826
 	},
-	lowLevelGear = 45552,
+	lowLevelGear = 45561,
 	vocationAddon = 45554,
 	rewardSkill = {
 		skillMagicLevel = {

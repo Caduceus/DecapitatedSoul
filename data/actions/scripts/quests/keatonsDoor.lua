@@ -34,6 +34,6 @@
                 doRemoveItem(getThingfromPos(wallPos[1]).uid)
             end
                         
-            player:sendTextMessage(MESSAGE_INFO_DESCR, "The train entrance is now open!")
+            player:sendTextMessage(MESSAGE_INFO_DESCR, "The wagon entrance is now open!")
             return true
         end
