@@ -118,7 +118,7 @@ shopModule:addSellableItem({'underworld rod', 'underworld'}, 8910, 11000, 'under
 shopModule:addSellableItem({'northwind rod', 'northwind'}, 8911, 60000, 'northwind rod')
 
 
-keywordHandler:addKeyword({'help'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'To buy backpacks of supplies, try one of these: Scaling Health Potions ({buy bp smp}), Scaling Mana Potions ({buy bp smp}), Scaling Spirit Potions ({buy bp ssp}), Sudden Death Runes ({buy bp sd}).'})
+keywordHandler:addKeyword({'help'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'To buy backpacks of supplies, try one of these: Scaling Health Potions ({buy bp shp}), Scaling Mana Potions ({buy bp smp}), Scaling Spirit Potions ({buy bp ssp}), Sudden Death Runes ({buy bp sd}).'})
 
 
 npcHandler:addModule(FocusModule:new())
