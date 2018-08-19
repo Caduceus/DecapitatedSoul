@@ -44,7 +44,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	local itemId = item:getId()
 
 	if itemId == healthPot then
-		local MIN,MAX = target:getMaxHealth() / 10, target:getMaxHealth() / 3.5
+		local MIN,MAX = target:getMaxHealth() / 8, target:getMaxHealth() / 3.5
 			 if not doTargetCombatHealth(0, target.uid, COMBAT_HEALING, MIN, MAX, CONST_ME_MAGIC_BLUE) then
 			 return false
 		 end
