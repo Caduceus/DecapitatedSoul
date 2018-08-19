@@ -1,25 +1,25 @@
 local config = {
     manaCost = 300,
-    soulCost = 10,
+    soulCost = 20,
 }
-
+ 
 local spheres = {
     [7759] = {3, 7},
     [7760] = {1, 5},
     [7761] = {2, 6},
     [7762] = {4, 8}
 }
-
+ 
 local enchantableGems = {2147, 2146, 2149, 2150}
 local enchantableItems = {2383, 7383, 7384, 7406, 7402, 2429, 2430, 7389, 7380, 2454, 2423, 2445, 7415, 7392, 2391, 7364, 8905}
-
+ 
 local enchantingAltars = {
     {7504, 7505, 7506, 7507},
     {7508, 7509, 7510, 7511},
     {7516, 7517, 7518, 7519},
     {7512, 7513, 7514, 7515}
 }
-
+ 
 local enchantedGems = {7760, 7759, 7761, 7762}
 local enchantedItems = {
     [2383] = {7744, 7763, 7854, 7869},
@@ -47,7 +47,7 @@ function table.find(tab, value)
         end
     end
 end
-
+ 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
     if isInArray({33268, 33269}, toPosition.x) and toPosition.y == 31830 and toPosition.z == 10 and player:getStorageValue(Storage.ElementalSphere.QuestLine) > 0 then
         if not isInArray(spheres[item.itemid], player:getVocation():getId()) then
@@ -62,7 +62,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
             return true
         end
     end
-
+ 
     if item.itemid == 7760 and target.itemid == 2342 then
         target:transform(2343)
         target:decay()
@@ -70,37 +70,37 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
         target:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
         return true
     end
-
+ 
     if item.itemid == 7760 and isInArray({9934, 10022}, target.itemid) then
         target:transform(9933)
         item:remove(1)
         toPosition:sendMagicEffect(CONST_ME_MAGIC_RED)
         return true
     end
-
+ 
     if isInArray(enchantableGems, item.itemid) then
         local subtype = item.type
         if subtype == 0 then
             subtype = 1
         end
-
+ 
         local mana = config.manaCost * subtype
         if player:getMana() < mana then
             player:sendCancelMessage(RETURNVALUE_NOTENOUGHMANA)
             return true
         end
-
+ 
         local soul = config.soulCost * subtype
         if player:getSoul() < soul then
             player:sendCancelMessage(RETURNVALUE_NOTENOUGHSOUL)
             return true
         end
-
+ 
         local targetId = table.find(enchantableGems, item.itemid)
         if not targetId or not isInArray(enchantingAltars[targetId], target.itemid) then
             return true
         end
-
+ 
         player:addMana(-mana)
         player:addSoul(-soul)
         item:transform(enchantedGems[targetId])
@@ -108,7 +108,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
         player:getPosition():sendMagicEffect(CONST_ME_HOLYDAMAGE)
         return true
     end
-
+ 
     if item.itemid == 7761 and isInArray({9949, 9954}, target.itemid) then
         target:transform(target.itemid - 1)
         target:decay()
@@ -116,30 +116,28 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
         toPosition:sendMagicEffect(CONST_ME_MAGIC_GREEN)
         return true
     end
-
+ 
     if isInArray(enchantedGems, item.itemid) then
         if not isInArray(enchantableItems, target.itemid) then
             fromPosition:sendMagicEffect(CONST_ME_POFF)
             return true
         end
-
+ 
         local targetId = table.find(enchantedGems, item.itemid)
         if not targetId then
             return true
         end
-
+ 
         local subtype = target.type
-        if not isInArray({7364, 7383, 8905}, target.itemid) then
+        if not isInArray({7364, 8905}, target.itemid) then
             subtype = 1000
         end
-
+ 
         target:transform(enchantedItems[target.itemid][targetId], subtype)
         target:getPosition():sendMagicEffect(CONST_ME_MAGIC_RED)
-        if target:hasAttribute(ITEM_ATTRIBUTE_DECAYSTATE) then
-            target:decay()
-        end
+        target:decay()
         item:remove(1)
-        
+        return true
     end
     return true
 end
