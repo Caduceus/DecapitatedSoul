@@ -21,12 +21,14 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'You have found ' .. (#article > 0 and article .. ' ' or '') .. itemType:getName() .. '.')
 		end
 		if player:getVocation():getBase():getId() == 9 then
-			player:addItem(8932, 1)
-			player:addItem(chest.itemid, chest.count)
+			local weapon = player:addItem(chest.itemid, chest.count)
+			local tempWeapon = player:addItem(8932, 1)
+			tempWeapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for the completion of Frozen Hell on " .. os.date("%B %d, %Y") .. ".")
+			weapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for the completion of Frozen Hell on " .. os.date("%B %d, %Y") .. ".")
 			player:setStorageValue(storage, 1)
 			player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'The Calamity is for healing only.')
 		else
-			player:addItem(chest.itemid, chest.count)
+			weapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for the completion of Frozen Hell on " .. os.date("%B %d, %Y") .. ".")
 			player:setStorageValue(storage, 1)
 		end
 		return true

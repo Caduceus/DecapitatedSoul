@@ -24,16 +24,16 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if player:getVocation():getBase():getId() == 9 then
 		local weapon = player:addItem(chest.itemid, chest.count)
 		local tempWeapon = player:addItem(7383, 1)
-			tempWeapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for completing the Catacombs on " .. os.date("%B %d, %Y") .. ".")
-			weapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for completing the Catacombs on " .. os.date("%B %d, %Y") .. ".")
+			tempWeapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for the completion of the Catacombs on " .. os.date("%B %d, %Y") .. ".")
+			weapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for the completion of the Catacombs on " .. os.date("%B %d, %Y") .. ".")
 			player:addItem(24774, 1)
-			book:setAttribute(ITEM_ATTRIBUTE_TEXT, "Congrats ".. player:getName() ..", on completion of the Catacombs Quest on " .. os.date("%B %d, %Y") .. "! Thank you for playing with us on Decapitated Soul!")
+			book:setAttribute(ITEM_ATTRIBUTE_TEXT, "Congrats ".. player:getName() ..", on the completion of the Catacombs Quest on " .. os.date("%B %d, %Y") .. "! Thank you for playing with us on Decapitated Soul!")
 			player:setStorageValue(storage, 1)
 			player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Relic Sword is for healing only.')
 		else
-			weapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for completing the Catacombs on " .. os.date("%B %d, %Y") .. ".")
+			weapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for the completion of the Catacombs on " .. os.date("%B %d, %Y") .. ".")
 			player:addItem(24774, 1)
-			book:setAttribute(ITEM_ATTRIBUTE_TEXT, "Congrats ".. player:getName() ..", on completion of the Catacombs Quest on " .. os.date("%B %d, %Y") .. "! Thank you for playing with us on Decapitated Soul!")
+			book:setAttribute(ITEM_ATTRIBUTE_TEXT, "Congrats ".. player:getName() ..", on the completion of the Catacombs Quest on " .. os.date("%B %d, %Y") .. "! Thank you for playing with us on Decapitated Soul!")
 			player:setStorageValue(storage, 1)
 		end
 		return true

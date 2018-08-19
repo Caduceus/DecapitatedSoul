@@ -12,8 +12,9 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
     if player:getStorageValue(storage) < 1 then
         for vocId, items in ipairs(vocations) do
             if player:getVocation():getBase():getId() == vocId then
-                for i = 1, #items do
-                    player:addItem(items[i])
+				for i = 1, #items do
+					local weapon = player:addItem(items[i])
+						weapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for the completion of Frozen Hell on " .. os.date("%B %d, %Y") .. ".")
                 end
                 msg = 'Congratulations on the completion of Frozen Hell!'
             end

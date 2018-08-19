@@ -15,13 +15,13 @@ local book = player:addItem(6103, 1)
             if player:getVocation():getBase():getId() == vocId then
                 for i = 1, #items do
 					local weapon = player:addItem(items[i])
-					weapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for completing the Catacombs on " .. os.date("%B %d, %Y") .. ".")
+						weapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for the completion of the Catacombs on " .. os.date("%B %d, %Y") .. ".")
                 end
                 msg = 'You earned a new weapon.'
             end
         end
         player:addItem(24774, 1)
-        book:setAttribute(ITEM_ATTRIBUTE_TEXT, "Congrats ".. player:getName() ..", on completion of the Catacombs Quest on " .. os.date("%B %d, %Y") .. "! Thank you for playing with us on Decapitated Soul!")
+        book:setAttribute(ITEM_ATTRIBUTE_TEXT, "Congrats ".. player:getName() ..", on the completion of the Catacombs Quest on " .. os.date("%B %d, %Y") .. "! Thank you for playing with us on Decapitated Soul!")
         player:setStorageValue(storage, 1)
     else
         msg = "chest is empty."
