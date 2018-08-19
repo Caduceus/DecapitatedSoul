@@ -57,7 +57,7 @@
 	<action uniqueid="15100" script="custom/jugg_switch.lua"/>
 	<action uniqueid="15104" script="custom/test_room.lua"/>
 	<action uniqueid="15107" script="custom/warlock_tp.lua"/>
-	<action actionid="15108" script="custom/Lilith_Piano.lua"/>
+	<action uniqueid="15108" script="custom/Lilith_Piano.lua"/>
 	<action uniqueid="15110" script="quests/medusa/entrance.lua"/>
 	<action uniqueid="15111" script="quests/medusa/medusa_arena.lua"/>
 	<action uniqueid="15113" script="quests/keatonsDoor.lua"/>
