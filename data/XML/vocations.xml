@@ -106,7 +106,7 @@
 		<skill id="6" multiplier="1.1"/>
 	</vocation>
 	<!-- Custom Vocations-->
-	<vocation id="9" clientid="9" name="Templar" description="a Templar" gaincap="35" gainhp="15" gainmana="15" gainhpticks="3" gainhpamount="5" gainmanaticks="6" gainmanaamount="5" manamultiplier="1.3" attackspeed="900" basespeed="220" soulmax="100" gainsoulticks="12" fromvoc="9">
+	<vocation id="9" clientid="9" name="Templar" description="a Templar" gaincap="35" gainhp="20" gainmana="15" gainhpticks="3" gainhpamount="5" gainmanaticks="6" gainmanaamount="5" manamultiplier="1.3" attackspeed="900" basespeed="220" soulmax="100" gainsoulticks="12" fromvoc="9">
 		<formula meleeDamage="1.1" distDamage="1.0" defense="1.0" armor="1.0"/>
 		<skill id="0" multiplier="1.1"/>
 		<skill id="1" multiplier="1.1"/>
@@ -116,7 +116,7 @@
 		<skill id="5" multiplier="1.1"/>
 		<skill id="6" multiplier="1.1"/>
 	</vocation>
-	<vocation id="10" clientid="9" name="Noble Templar" description="a Noble Templar" gaincap="35" gainhp="20" gainmana="20" gainhpticks="10" gainhpamount="5" gainmanaticks="10" gainmanaamount="5" manamultiplier="1.3" attackspeed="700" basespeed="220" soulmax="200" gainsoulticks="12" fromvoc="9">
+	<vocation id="10" clientid="9" name="Noble Templar" description="a Noble Templar" gaincap="35" gainhp="30" gainmana="20" gainhpticks="10" gainhpamount="10" gainmanaticks="10" gainmanaamount="5" manamultiplier="1.3" attackspeed="700" basespeed="220" soulmax="200" gainsoulticks="12" fromvoc="9">
 		<formula meleeDamage="1.1" distDamage="1.0" defense="1.1" armor="1.1"/>
 		<skill id="0" multiplier="1.1"/>
 		<skill id="1" multiplier="1.1"/>
@@ -169,7 +169,7 @@
 		<skill id="5" multiplier="1.1"/>
 		<skill id="6" multiplier="1.1"/>
 	</vocation>
-	<vocation id="15" clientid="9" name="Warlord Templar" description="a Warlord Templar" gaincap="35" gainhp="20" gainmana="20" gainhpticks="3" gainhpamount="5" gainmanaticks="20" gainmanaamount="5" manamultiplier="1.3" attackspeed="500" basespeed="220" soulmax="200" gainsoulticks="12" fromvoc="9">
+	<vocation id="15" clientid="9" name="Warlord Templar" description="a Warlord Templar" gaincap="35" gainhp="40" gainmana="20" gainhpticks="3" gainhpamount="20" gainmanaticks="20" gainmanaamount="5" manamultiplier="1.3" attackspeed="500" basespeed="220" soulmax="200" gainsoulticks="12" fromvoc="9">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.8" armor="1.8"/>
 		<skill id="0" multiplier="1.1"/>
 		<skill id="1" multiplier="1.1"/>
