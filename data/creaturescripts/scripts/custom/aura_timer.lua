@@ -5,3 +5,4 @@ function onThink(creature)
 			creature:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your aura has worn off!")
         end
     end
+    

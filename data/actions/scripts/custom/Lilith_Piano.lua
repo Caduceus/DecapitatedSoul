@@ -1,8 +1,8 @@
   local storage = 15001
   local wallPos = {
             [1] = {x=1024, y=926, z=9, stackpos=2},
-            [2] = {x=1024, y=927, z=9, stackpos=3},
-            [3] = {x=1023, y=927, z=9, stackpos=2}
+            [2] = {x=1024, y=927, z=9, stackpos=3}, --piano start pos
+            [3] = {x=1023, y=927, z=9, stackpos=2} --piano open pos
         }
 
         local time_ = 5 -- 5 seconds

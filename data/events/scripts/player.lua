@@ -105,7 +105,7 @@ function Player:onLookInShop(itemType, count)
 end
 
 function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, toCylinder)
-	if item:getActionId() == NOT_MOVEABLE_ACTION then
+	if item:getActionId() == NOT_MOVEABLE_ACTION or item:getActionId() == LILITH_PIANO then
 		self:sendCancelMessage('Quit trying to thieve the ' .. item:getName() .. '!')
 		self:say('The ' .. item:getName() .. ' is not yours!', TALKTYPE_MONSTER_SAY)
 		return false

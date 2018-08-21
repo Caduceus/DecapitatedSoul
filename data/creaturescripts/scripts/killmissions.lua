@@ -4,7 +4,7 @@ local config = {
 	--['vampire'] = {amount = 50, storage = 21902, startstorage = 45551, startvalue = 4},
 	['stormblast'] = {amount = 1, storage = 21903, startstorage = 45551, startvalue = 5},
      -- Damon
-    ['carrion worm'] = {amount = 10, storage = 21904, startstorage = 45552, startvalue = 1},
+    ['carrion worm'] = {amount = 10, storage = 21904, startstorage = 45560, startvalue = 1},
      -- Tits
     ['hero'] = {amount = 20, storage = 21905, startstorage = 45553, startvalue = 1},
      -- addon

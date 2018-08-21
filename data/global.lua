@@ -6,6 +6,7 @@ dofile('data/lib/weapon_damage.lua')
 
 
 NOT_MOVEABLE_ACTION = 100
+LILITH_PIANO = 15108
 PARTY_PROTECTION = 1 -- Set to 0 to disable.
 ADVANCED_SECURE_MODE = 1 -- Set to 0 to disable.
 STORAGEVALUE_PROMOTION = 30018

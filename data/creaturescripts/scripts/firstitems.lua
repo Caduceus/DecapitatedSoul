@@ -2,10 +2,6 @@ local firstItems = {2120, 2132, 2175, 2461, 2649, 2643, 2382, 20624}
 
 function onLogin(player)
 
-	local function admin()
-		sendChannelMessage(3, TALKTYPE_CHANNEL_R1, "Caduceus † 999 † [Dev]: Welcome to Decapitated Soul, " .. player:getName() .. "!")
-	end
-	
 	if player:getLastLoginSaved() == 0 then
 	
 		if player:getVocation():getBase():getId() == 1 then
@@ -29,7 +25,6 @@ function onLogin(player)
 		player:setStorageValue(9999, player:getVipDays())
 		player:save()
 		addEvent(broadcastMessage, 15 * 1000, "Welcome Our Newest Player: " .. player:getName() .. "", MESSAGE_STATUS_CONSOLE_ORANGE)
-		addEvent(admin, 60 * 1000)
 	end
 	return true
 end
