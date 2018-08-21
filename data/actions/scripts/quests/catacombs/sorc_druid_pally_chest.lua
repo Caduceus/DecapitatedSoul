@@ -23,6 +23,7 @@ local book = player:addItem(6103, 1)
         player:addItem(24774, 1)
         book:setAttribute(ITEM_ATTRIBUTE_TEXT, "Congrats ".. player:getName() ..", on the completion of the Catacombs Quest on " .. os.date("%B %d, %Y") .. "! Thank you for playing with us on Decapitated Soul!")
         player:setStorageValue(storage, 1)
+        addEvent(broadcastMessage, 15 * 1000, "Congratulations to ".. player:getName() .." for completing the Catacombs Quest", MESSAGE_STATUS_WARNING)
     else
         msg = "chest is empty."
     end

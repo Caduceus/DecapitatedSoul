@@ -5,11 +5,9 @@ function onStepIn(cid, item, position, fromPosition)
         return true
     end
  
-    if item.actionid == 16011 then
      if player:getStorageValue(storage) < 2 then
    			player:sendTextMessage(MESSAGE_INFO_DESCR, "You must first show your loyalty to Soraya. You may not enter!")
 				player:teleportTo(fromPosition, false)
-                return true
-			end
+            return true
 		end
 	end
