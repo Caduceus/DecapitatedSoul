@@ -21,7 +21,6 @@
             end
             
             if player:getStorageValue(Storage.keatonMisson.mission) < 2 then
-            print(player:getStorageValue(Storage.keatonMisson.mission))
 				player:sendTextMessage(MESSAGE_STATUS_SMALL, "Keaton has this door locked.")
 				return true
 			end
