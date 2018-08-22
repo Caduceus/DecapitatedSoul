@@ -22,7 +22,7 @@
 	<attack name="melee" interval="1000" min="-0" max="-0"/>
 	<attack name="physical" interval="2000" chance="100" min="-0" max="-0">
 		</attack>
-		<attack name="earth" interval="5000" chance="90" range="10" min="-0" max="-0">
+		<attack name="earth" interval="5000" chance="90" range="5" min="-0" max="-0">
 			<attribute key="shootEffect" value="smallearth"/>
 		</attack>
   </attacks>
