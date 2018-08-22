@@ -10,6 +10,12 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if not tile then
 		return false
 	end
+	
+	if target:getActionId() == 16008 and player:getStorageValue(Storage.carrionMission.mission) < 3 then
+			player:sendTextMessage(MESSAGE_INFO_DESCR, "You have not completed Damon's quest. You may not enter.")
+			player:teleportTo(fromPosition, false)
+        return true
+	end
 
 	if isInArray(ropeSpots, tile:getGround():getId()) or tile:getItemById(14435) then
 		if Tile(toPosition:moveUpstairs()):hasFlag(TILESTATE_PROTECTIONZONE) and player:isPzLocked() then
