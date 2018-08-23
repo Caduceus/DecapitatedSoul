@@ -13,7 +13,7 @@ function onThink()
     if lastSound < os.time() then
         lastSound = (os.time() + 5)
         if math.random(100) < 20 then
-            Npc():say("HELP! PLEASE!!", TALKTYPE_MONSTER_YELL)
+            Npc():say("Where is all that good help when you need it?!", TALKTYPE_MONSTER_SAY)
         end
     end
     npcHandler:onThink()
