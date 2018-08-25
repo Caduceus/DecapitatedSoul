@@ -35,7 +35,7 @@ local missions = {
     monsters = {
        {name = "Demodras", count = 100, storage = 21909}
      },
-     message = "Ok, next you will have to pass beyond the dragons of Droghead to...",
+     message = "Ok, next you will have to pass beyond the dragons of Drogheda to...",
      level = 110, -- minimum level for this mission
      rewarditems = {
        {id = 2160, count = 10}
