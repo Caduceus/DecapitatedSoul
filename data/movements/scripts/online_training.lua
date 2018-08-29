@@ -1,11 +1,11 @@
 local training_exit = {
-   [831] = {x = 1036, y = 933, z = 9}, -- Drogheda Trainers
-   [832] = {x = 1034, y = 1029, z = 14}, -- Training Room
+   [831] = {x = 1036, y = 933, z = 9, free = false}, -- Drogheda Trainers
+   [832] = {x = 1280, y = 1178, z = 3}, -- Port Lonrich Temple
    [833] = {x = 98, y = 95, z = 6, free = false} -- no sp will be charged, useful if you want to execute anti-exit only
 }
 local confirm = false -- anti-exit
 local usecode = false -- confirm with code
-local antiafk_interval = 20 * 60 * 1000 -- 20 minutes after training started
+local antiafk_interval = 15 * 60 * 1000 -- 20 minutes after training started
 local words = "!continue" -- command to continue
 local prefix = "[AntiAfk]: "
 local minutes_to_reply = 5 -- minutes to rewrite code
