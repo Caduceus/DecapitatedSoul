@@ -74,10 +74,15 @@ setPlayerStorageValue(player, estr, -1)
 	
 	-- points for online time
 	local time = 1*60*60 -- 1s*60s = 60s * 60s = 60min
-    player:setStorageValue(455577, os.time() + time)
-    player:save()
-    player:sendTextMessage(MESSAGE_EVENT_ORANGE, "For every 1 hour online, you will receive 1 coin to use in the store.")
-
+	if player:getAccountId() == 1 or player:getAccountId() == 2 then
+		player:setStorageValue(455577, -1)
+		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "Admin Account")
+	else
+		player:setStorageValue(455577, os.time() + time)
+		player:save()
+		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "For every 1 hour online, you will receive 1 coin to use in the store.")
+	end
+	
 	-- Events
 	player:registerEvent("addPointTimer")
 	player:registerEvent("PlayerDeath")
