@@ -20,9 +20,10 @@ end
 	
     if creature:getStorageValue(455577) == os.time() then
 		db.query("UPDATE `accounts` SET `coins` = `coins` + " .. count .. " WHERE `id` = " .. creature:getAccountId() .. ";")
-		creature:sendTextMessage(MESSAGE_EVENT_ORANGE, "You gained " .. count .. " coin for being online for 1 hour. Your new coin balance is ".. player:getCoinsBalance() ..".")
+		creature:sendTextMessage(MESSAGE_EVENT_ORANGE, "You gained " .. count .. " coin for being online for 1 hour. Your new coin balance is ".. creature:getCoinsBalance() ..".")
 		creature:setStorageValue(455577, os.time() + time)
 		creature:save()
 		doWriteLogFile(file, logs)
+		print(">> Coin awarded: " .. creature:getName() .. " recieved " .. count .. " coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
     end
 end
