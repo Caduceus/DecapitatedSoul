@@ -18,5 +18,6 @@ function onLogout(player)
 		end
 	end
 
+	print("" .. os.date("%H:%M:%S") .. " - " .. player:getName() .. " logged out.")
 	return true
 end
