@@ -3,8 +3,10 @@ local t, i = {
 "[Server]: Set your Ambient Light to approximately 10-15%, for best visual experience.",
 --"[Server]: Decapitated Soul needs your help! The server cannot continue without donations to cover host cost. Without your help, we cannot stay alive! ",
 "[Server]: Knight: weapons are setup as follows: Axe (pure dmg), Club (defensive), & Sword (neutral)",
-"[Server]: Sorcerer|Druid: Wands|Rods allow the use several damage types by right clicking on your weapon. ", 
+"[Server]: Sorcerer|Druid: Wands|Rods allow the use of several damage types by right clicking on your weapon. ", 
 "[Server]: Blessings - [Free until level 80] Blessing Runes can be purchased from Brevans, located in the bottom of Purgatory Isle Temple. ", 
+"[Server]: Daily Tokens can be used to purchase Bless and VIP. See Adonai or Zagorim to earn tokens!",
+"[Server]: Coin timer resets on death, as well as logout. ",
 }, 1
 
 function onThink(interval)
