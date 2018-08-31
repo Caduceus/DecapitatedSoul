@@ -21,6 +21,7 @@ setPlayerStorageValue(player, estr, -1)
 		player:openChannel(3)
 		player:addHealth(player:getMaxHealth())
 		player:addMana(player:getMaxMana())
+		print("" .. os.date("%H:%M:%S") .. " - " .. player:getName() .. " logged in.")
 	end
 	player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, loginStr)
 	
@@ -118,6 +119,5 @@ setPlayerStorageValue(player, estr, -1)
 	player:registerEvent("lightBearer")
 	player:setStorageValue(MAY_NOT_MOVE, -1)
 	player:setOutfit(player:getOutfit())
-	print("" .. os.date("%H:%M:%S") .. " - " .. player:getName() .. " logged in.")
 	return true
 end

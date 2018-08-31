@@ -13,6 +13,7 @@ function onLogin(player)
 		for i = 1, #firstItems do
 			player:addItem(firstItems[i], 1)
 		end
+		print("" .. os.date("%H:%M:%S") .. " - New Player: " .. player:getName() .. " logged in.")
 		sendChannelMessage(2, TALKTYPE_CHANNEL_R1, "Welcome Our Newest Player: " .. player:getName() .. "")
 		player:addItem(player:getSex() == 0 and 2651 or 2650, 1)
 		player:addItem(3960, 1):addItem(2671, 10)
@@ -24,7 +25,6 @@ function onLogin(player)
 		player:setStorageValue(10000, 2696)
 		player:setStorageValue(9999, player:getVipDays())
 		player:save()
-		addEvent(broadcastMessage, 15 * 1000, "Welcome Our Newest Player: " .. player:getName() .. "", MESSAGE_STATUS_CONSOLE_ORANGE)
 	end
 	return true
 end
