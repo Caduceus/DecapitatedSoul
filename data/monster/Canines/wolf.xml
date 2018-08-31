@@ -10,7 +10,7 @@
 		<flag illusionable="1"/>
 		<flag convinceable="0"/>
 		<flag pushable="1"/>
-		<flag canpushitems="1"/>
+		<flag canpushitems="0"/>
 		<flag canpushcreatures="0"/>
 		<flag targetdistance="3"/>
 		<flag staticattack="90"/>

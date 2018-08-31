@@ -81,7 +81,6 @@ setPlayerStorageValue(player, estr, -1)
 		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "[Admin Account]: Your current coin balance is ".. player:getCoinsBalance() ..".")
 	elseif offlineTime < 300 then
 		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your coin timer did not reset! Try !coin to see your time remaining.")
-		return true
 	else
 		player:setStorageValue(455577, os.time() + time)
 		player:save()
