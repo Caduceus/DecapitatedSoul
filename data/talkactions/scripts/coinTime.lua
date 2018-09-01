@@ -19,8 +19,10 @@ function onSay(player, words, param)
 if(not checkExhausted(player, 554, 10)) then
     return false
 end
- 
-	if player:getStorageValue(455577) > os.time() then
+	
+	if player:getStorageValue(455577)== -1 then
+		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "Something went wrong or Admin.")
+	elseif player:getStorageValue(455577) > os.time() then
          local time = player:getStorageValue(455577) - os.time()
          local hours, minutes, seconds = math.floor (time / 3600), math.floor ((time - ((math.floor (time / 3600)) * 3600))/ 60), time - ((math.floor (time/60)) * 60)
          if time >= 3600 then
