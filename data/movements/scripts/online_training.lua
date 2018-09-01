@@ -205,6 +205,10 @@ end
 local waitTime = os.time() + 10
 function onStepIn(player, item, position, fromPosition)
 
+if player:getGroup():getAccess() then
+		return true
+	end
+	
 if player:getStorageValue(830) > os.time() then
 		player:teleportTo(fromPosition, false)
    			player:sendTextMessage(MESSAGE_INFO_DESCR, "You cannot enter yet!")
@@ -244,6 +248,9 @@ end
 function onStepOut(creature, item, position, fromPosition)
 	local player = creature:getPlayer()
 	if player == nil then
+		return true
+	end
+	if player:getGroup():getAccess() then
 		return true
 	end
 

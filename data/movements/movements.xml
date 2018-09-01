@@ -792,9 +792,10 @@
 	<movevent event="StepIn" itemid="8753" script="mwstep.lua"/>
 	
 	<!--Trainer Tiles-->
-	<movevent event="StepOut" actionid="831" script="online_training.lua"/>
 	<movevent event="StepIn" actionid="831" script="online_training.lua"/>
+	<movevent event="StepOut" actionid="831" script="online_training.lua"/>
     <movevent event="StepIn" actionid="832" script="online_training.lua"/>
+    <movevent event="StepOut" actionid="832" script="online_training.lua"/>
     <movevent event="StepIn" actionid="833" script="online_training.lua"/>
 	
 	<!--VIP Tiles-->
