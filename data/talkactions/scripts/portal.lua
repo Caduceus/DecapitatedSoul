@@ -14,7 +14,6 @@ tp_pads = {
    [8312] = {price = 10000, name = "Demodras Section", storage = 99597},
    [8313] = {price = 10000, name = "Warlock Section", storage = 99599},
    
-
 }
 
 function onSay(cid, word, param)

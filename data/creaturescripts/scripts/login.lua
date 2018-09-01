@@ -3,7 +3,6 @@ local aurastr = 25950 -- storage of aura
 local estr = 25951 -- storage for exhaust
 setPlayerStorageValue(player, aurastr, -1)
 setPlayerStorageValue(player, estr, -1)
-	--local loginStr = "Welcome to " .. configManager.getString(configKeys.SERVER_NAME) .. " 10.9!"
 	local loginStr = "Thank you for playing on " .. configManager.getString(configKeys.SERVER_NAME) .. ", " .. player:getName() .. "!"
 	if player:getLastLoginSaved() <= 0 then
 		loginStr = loginStr .. " Please choose your outfit."
@@ -73,22 +72,8 @@ setPlayerStorageValue(player, estr, -1)
 		stats.playerId = player:getId()
 	end
 	
-	local lastLogout = player:getLastLogout()
-	local offlineTime = lastLogout ~= 0 and math.min(os.time() - lastLogout, 86400 * 21) or 0
-	local time = 1*60*60 -- 1s*60s = 60s * 60s = 60min
-	if player:getAccountId() == 1 or player:getAccountId() == 2 then
-		player:setStorageValue(455577, -1)
-		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "[Admin Account]: Your current coin balance is ".. player:getCoinsBalance() ..".")
-	elseif offlineTime < 300 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your coin timer did not reset! Try !coin to see your time remaining.")
-	else
-		player:setStorageValue(455577, os.time() + time)
-		player:save()
-		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "For every 1 hour online, you will receive 1 coin to use in the store. Your current coin balance is ".. player:getCoinsBalance() ..".")
-	end
-	
 	-- Events
-	player:registerEvent("addPointTimer")
+	player:registerEvent("addCoinTimer")
 	player:registerEvent("PlayerDeath")
 	player:registerEvent("DropLoot")
 	player:registerEvent("Missions")
@@ -100,7 +85,6 @@ setPlayerStorageValue(player, estr, -1)
 	player:registerEvent("AoD_Servants")
 	player:registerEvent("modalAD")
 	player:registerEvent("modalMD")
-	--player:registerEvent("RewardLoot")
 	player:registerEvent("creature_advance")
 	player:registerEvent("PlayerPromo")
 	player:registerEvent("MapStorage")
