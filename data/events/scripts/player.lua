@@ -56,18 +56,22 @@ function Player:onLook(thing, position, distance)
 			if thing:getMaxMana() > 0 then
 				str = string.format("%s, Mana: %d / %d", str, thing:getMana(), thing:getMaxMana())
 			end
-			description = string.format(str, description, thing:getHealth(), thing:getMaxHealth()) .. "."
+			description = string.format(str, description, thing:getHealth(), thing:getMaxHealth()) .. "." 
 		end
-
+				
 		local position = thing:getPosition()
 		description = string.format(
 			"%s\nPosition: %d, %d, %d",
 			description, position.x, position.y, position.z
 		)
+		
+		if thing:isPlayer() then
+			description = string.format("%s\nSoul: %s", description, thing:getSoul())
+		end
 
 		if thing:isCreature() then
 			if thing:isPlayer() then
-				description = string.format("%s\nIP: %s.", description, Game.convertIpToString(thing:getIp()))
+				description = string.format("%s\nIP: %s", description, Game.convertIpToString(thing:getIp()))
 			end
 		end
 	end
