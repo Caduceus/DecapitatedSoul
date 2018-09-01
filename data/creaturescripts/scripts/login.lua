@@ -21,6 +21,7 @@ setPlayerStorageValue(player, estr, -1)
 		player:addHealth(player:getMaxHealth())
 		player:addMana(player:getMaxMana())
 		print("" .. os.date("%H:%M:%S") .. " - " .. player:getName() .. " logged in.")
+		sendChannelMessage(9, TALKTYPE_CHANNEL_Y, "" .. os.date("%H:%M:%S") .. " - " .. player:getName() .. " logged in.")
 	end
 	player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, loginStr)
 	

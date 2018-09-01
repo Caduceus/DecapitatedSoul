@@ -1,5 +1,6 @@
 function onLogout(player)
 	player:getPosition():sendMagicEffect(CONST_ME_EXPLOSIONHIT)
+	sendChannelMessage(9, TALKTYPE_CHANNEL_Y, "" .. os.date("%H:%M:%S") .. " - " .. player:getName() .. " logged out.")
 	local playerId = player:getId()
 	if nextUseStaminaTime[playerId] ~= nil then
 		nextUseStaminaTime[playerId] = nil

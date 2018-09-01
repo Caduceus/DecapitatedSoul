@@ -27,6 +27,7 @@ end
 			creature:addItem(24774, 1)
 			creature:save()
 			doWriteLogFile(file, logsBonus)
+			sendChannelMessage(9, TALKTYPE_CHANNEL_R1, ">> Coin and bonus awarded: " .. creature:getName() .. " recieved " .. count .. " coin and 1 tibia coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
 			print(">> Coin and bonus awarded: " .. creature:getName() .. " recieved " .. count .. " coin and 1 tibia coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
 		elseif random <= 9 then
 			db.query("UPDATE `accounts` SET `coins` = `coins` + " .. count .. " WHERE `id` = " .. creature:getAccountId() .. ";")
@@ -34,6 +35,7 @@ end
 			creature:setStorageValue(455577, os.time() + time)
 			creature:save()
 			doWriteLogFile(file, logs)
+			sendChannelMessage(9, TALKTYPE_CHANNEL_R1, ">> Coin awarded: " .. creature:getName() .. " recieved " .. count .. " coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
 			print(">> Coin awarded: " .. creature:getName() .. " recieved " .. count .. " coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
 		end
     end
