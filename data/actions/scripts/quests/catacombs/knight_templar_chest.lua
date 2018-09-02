@@ -31,7 +31,8 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			player:setStorageValue(storage, 1)
 			player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, 'Relic Sword is for healing only.')
 			addEvent(broadcastMessage, 15 * 1000, "Congratulations to ".. player:getName() .." for completing the Catacombs Quest", MESSAGE_STATUS_WARNING)
-		else
+		elseif player:getVocation():getBase():getId() == 4 then
+		local weapon = player:addItem(chest.itemid, chest.count)
 			weapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for the completion of the Catacombs on " .. os.date("%B %d, %Y") .. ".")
 			player:addItem(24774, 1)
 			book:setAttribute(ITEM_ATTRIBUTE_TEXT, "Congrats ".. player:getName() ..", on the completion of the Catacombs Quest on " .. os.date("%B %d, %Y") .. "! Thank you for playing with us on Decapitated Soul!")
