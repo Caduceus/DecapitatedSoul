@@ -46,6 +46,7 @@
     <event type="kill" name="AutoLoot" script="custom/autoloot.lua" />
     <event type="login" name="returnPromo" script="custom/promo.lua" />
     <event type="think" name="lightBearer" script="custom/lightBearer.lua"/>
+    <event type="think" name="xLog" script="custom/xLog.lua" />
     
     <!-- Thieves Guild Quest -->
 	<event type="kill" name="ThievesGuildNomad" script="quests/the thieves guild/nomad.lua" />

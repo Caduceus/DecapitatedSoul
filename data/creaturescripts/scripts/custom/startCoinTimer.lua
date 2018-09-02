@@ -3,7 +3,7 @@ local lastLogout = player:getLastLogout()
 local offlineTime = lastLogout ~= 0 and math.min(os.time() - lastLogout, 86400 * 21) or 0
 local time = 1*60*60 -- 1s*60s = 60s * 60s = 60min
 	if player:getAccountId() == 1 or player:getAccountId() == 2 then
-		player:setStorageValue(455577, -1)
+		--player:setStorageValue(455577, -1)
 		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "[Admin Account]: Your current coin balance is ".. player:getCoinsBalance() ..".")
 	elseif player:getLastLoginSaved() <= 0 then
 		player:setStorageValue(455577, os.time() + time)
