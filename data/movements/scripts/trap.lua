@@ -1,4 +1,8 @@
 function onStepIn(creature, item, position, fromPosition)
+if creature:isMonster() then
+	return false
+end
+
 local min = creature:getMaxHealth() / 20
 local max = creature:getMaxHealth() / 10
 local traps = {
