@@ -29,6 +29,7 @@
 	<movevent event="StepIn" actionid="16017" script="starting_area/chamber_door_east.lua"/>
 	<movevent event="StepIn" actionid="16018" script="starting_area/chamber_door_west.lua"/>
 	<movevent event="StepIn" actionid="16020" script="starting_area/keaton_help.lua"/>
+	<movevent event="StepIn" actionid="16024" script="starting_area/keaton_door_north.lua"/>
 	
 	<!-- the thieves guild -->
 	<movevent event="StepIn" actionid="16023" script="quests/keatonsDoorStorageCheck.lua"/>

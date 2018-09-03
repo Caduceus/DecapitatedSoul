@@ -60,7 +60,7 @@
 	<action actionid="15108" script="custom/Lilith_Piano.lua"/>
 	<action uniqueid="15110" script="quests/medusa/entrance.lua"/>
 	<action uniqueid="15111" script="quests/medusa/medusa_arena.lua"/>
-	<action uniqueid="15113" script="quests/keatonsDoor.lua"/>
+	<action actionid="15113" script="quests/keatonsDoor.lua"/>
 	<action itemid="25376" script="quests/screwup.lua"/>
 	<action itemid="19663" script="other/counter.lua"/>
 	<action itemid="19666" script="other/counter.lua"/>
@@ -168,6 +168,7 @@
 	<action uniqueid="12511" script="quests/the thieves guild/stolenGoldenGoblet.lua" />
 	<action uniqueid="12514" script="quests/the thieves guild/theatreScript.lua" />
 	<action uniqueid="12515" script="quests/the thieves guild/BarbarianQueenChest.lua" />
+	<action uniqueid="12516" script="quests/the thieves guild/hiddenChamber.lua" />
 	<!--action uniqueid="15112" script="quests/the thieves guild/thievesGuildStarter.lua"/-->
 	<!--action uniqueid="15112" script="quests/the thieves guild/door_test.lua"/-->
 	
