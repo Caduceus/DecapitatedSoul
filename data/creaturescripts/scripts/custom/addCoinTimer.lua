@@ -20,6 +20,7 @@ end
 	local random = math.random(10)
 	
     if creature:getStorageValue(455577) == os.time() then
+		sendChannelMessage(9, TALKTYPE_CHANNEL_Y, ">> WTF is wrong with this shit: " .. creature:getName() .. "")
 		if random == 10 then
 			db.query("UPDATE `accounts` SET `coins` = `coins` + " .. count .. " WHERE `id` = " .. creature:getAccountId() .. ";")
 			creature:sendTextMessage(MESSAGE_EVENT_ORANGE, "You gained " .. count .. " coin and 1 tibia coin, for being online for 1 hour. Your new coin balance is ".. creature:getCoinsBalance() ..".")
