@@ -1,5 +1,5 @@
 local config = {
-	['Monday'] = Position(947, 981, 6),
+	['Monday'] = Position(1151, 816, 6),
 	['Tuesday'] = Position(947, 1046, 6),
 	['Wednesday'] = Position(1122, 878, 6),
 	['Thursday'] = Position(819, 835, 6),

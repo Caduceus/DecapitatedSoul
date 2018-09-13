@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Rotworm" nameDescription="a rotworm" race="blood" experience="40" speed="150" manacost="305">
+<monster name="Rotworm" nameDescription="a rotworm" race="blood" experience="50" speed="150" manacost="305">
 	<health now="165" max="165"/>
 	<look type="26" corpse="5967"/>
 	<targetchange interval="4000" chance="0"/>

@@ -90,7 +90,7 @@ function creatureSayCallback(cid, type, msg)
                  selfSay("The mission I gave you is for level "..x.level..", come back later.", cid)
              end
          else
-             selfSay("I recommend you go speak with {Damon}. He is having some of the same issues as me. I deem you worth of using my wagon, please, feel free.", cid)
+             selfSay("I don't have anymore quests for you. Ride out of here, on my wagon!", cid)
              npcHandler:releaseFocus(cid)
          end
      elseif msgcontains(msg, 'yes') and npcHandler.topic[cid] == 1 then
@@ -185,7 +185,7 @@ function creatureSayCallback(cid, type, msg)
                     end
                      selfSay(x.message.."\n".. missionstr ..".", cid)
                  else
-                     selfSay("Thank you!", cid)
+                     selfSay("I recommend you go speak with {Damon}. He is having some of the same issues as me. I deem you worthy of using my wagon, please, feel free.", cid)
                  end
             end
          end

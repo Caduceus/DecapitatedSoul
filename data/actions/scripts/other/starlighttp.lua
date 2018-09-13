@@ -45,6 +45,9 @@ function onUse(cid, item, fromPosition, itemEx, toPosition, isHotkey, player)
     end
 
     local tile = Tile(toPosition)
+    if tile == nil then
+		return false
+	end
     local ground = tile:getGround()
     if ground and isInArray(groundIds, ground:getId())
             or tile:getItemById(14435)

@@ -6,6 +6,6 @@ function onThink(creature)
 		sendChannelMessage(9, TALKTYPE_CHANNEL_R1, ">> " .. creature:getName() .. " was kicked for X log or lost connection. " .. os.date("%m/%d/%Y at %H:%M:%S") .. "")
 		print(">> " .. creature:getName() .. " was kicked for X log or lost connection. " .. os.date("%m/%d/%Y at %H:%M:%S") .. "")
 		creature:remove()
-		return true
 	end
+	return true
 end

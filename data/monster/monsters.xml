@@ -12,6 +12,7 @@
 	<monster name="Diablo" file="Custom/Diablo.xml"/>
 	<monster name="Dark Force" file="Custom/dark force.xml"/>
 	<monster name="Bull Worm" file="Custom/bull worm.xml"/>
+	<monster name="Lost Barbarian Queen" file="Bosses/lost barbarian queen.xml"/>
 	<monster name="Stormblast" file="Custom/Stormblast.xml"/>
 	<monster name="Stormblast2" file="Custom/Stormblast_caster.xml"/>
 	<monster name="Stormblast3" file="Custom/Stormblast_team.xml"/>

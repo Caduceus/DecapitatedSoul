@@ -5,14 +5,16 @@
         combat[i]:setParameter(COMBAT_PARAM_TYPE, COMBAT_PHYSICALDAMAGE)
         combat[i]:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_HITAREA) 
 		combat[i]:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_SMALLHOLY)
-        combat[i]:setFormula(COMBAT_FORMULA_LEVELMAGIC, -0.2, -0.5, -0.2, 0)
+		combat[i]:setParameter(COMBAT_PARAM_PVPDAMAGE, 250)
+        combat[i]:setFormula(COMBAT_FORMULA_LEVELMAGIC, -1.8, -1.8, -1.8, 0)
     end
 	
 	for i = 2, 2 do
         combat[i] = Combat()
         combat[i]:setParameter(COMBAT_PARAM_TYPE, COMBAT_HOLYDAMAGE)
         combat[i]:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_HOLYDAMAGE)
-        combat[i]:setFormula(COMBAT_FORMULA_LEVELMAGIC, -0.3, -0.5, -0.5, 0)
+        combat[i]:setParameter(COMBAT_PARAM_PVPDAMAGE, 250)
+        combat[i]:setFormula(COMBAT_FORMULA_LEVELMAGIC, -1.5, -1.5, -1.5, 0)
     end
 	
     local area = {

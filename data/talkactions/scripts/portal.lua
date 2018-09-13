@@ -27,18 +27,21 @@ if player:getCondition(CONDITION_INFIGHT, CONDITIONID_DEFAULT) then
         return false
     end
 
-   if not player:isVip() then 
-   player:sendTextMessage(MESSAGE_STATUS_WARNING,"You do not have a VIP account.")
-   return false
-   end
-   
+    if not player:isVip() then 
+		player:sendTextMessage(MESSAGE_STATUS_WARNING,"You do not have a VIP account.")
+    return false
+end
+      
    if player:isPzLocked() then
      player:teleportTo(fromPosition)
      player:say("The pad is not responding.", TALKTYPE_ORANGE_1, true, player, player:getPosition())
    else   
      local padWindow = ModalWindow(1860, "portal system", "Key:\n[*] = new\n[~] = moving\n\nSelect destination:")
      for i = 8300, 8313 do
-         if tp_pads[i].price then
+		 if player:getGroup():getAccess() then
+				tp_pads[i].price = 0
+				padWindow:addChoice(i - 8300, tp_pads[i].name .. (""))
+        elseif tp_pads[i].price then
            if tp_pads[i].storage then
              if player:getStorageValue(tp_pads[i].storage) > 0 then
                padWindow:addChoice(i - 8300, tp_pads[i].name .. (tp_pads[i].price > 0 and " [" .. tp_pads[i].price .. " gold]" or ""))

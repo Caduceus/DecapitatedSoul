@@ -18,20 +18,20 @@ tp_pads = {
 }
 
 function onStepIn(player, item, position, fromPosition)
-   if not tp_pads[item.uid] then return true end
-   if not player:isVip() then 
-   player:sendTextMessage(MESSAGE_STATUS_WARNING,"You do not have a VIP account.")
-   return true 
-   end
+    if not tp_pads[item.uid] then return true end
+    if not player:isVip() then 
+		player:sendTextMessage(MESSAGE_STATUS_WARNING,"You do not have a VIP account.")
+    return true 
+end
 
    if not isInRange(position, {x = fromPosition.x - 1, y = fromPosition.y - 1, z = fromPosition.z}, {x = fromPosition.x + 1, y = fromPosition.y + 1, z = fromPosition.z}) then
-     -- player got there from another pad
-     return true
-   end
+		player:say("Decapitated Soul!", TALKTYPE_MONSTER_SAY, true, player, player:getPosition())
+    return true
+end
 
-   if not player:isPlayer() then
-     return true
-   end
+    if not player:isPlayer() then
+        return true
+    end
    
    if tp_pads[item.uid].storage then
      if player:getStorageValue(tp_pads[item.uid].storage) < 1 then
@@ -47,10 +47,13 @@ function onStepIn(player, item, position, fromPosition)
      local padWindow = ModalWindow(1860, "portal system", "Key:\n[*] = new\n[~] = moving\n\nSelect destination:")
      for i = 8300, 8313 do
        if i ~= item.uid then
-         if tp_pads[i].price then
-           if tp_pads[i].storage then
-             if player:getStorageValue(tp_pads[i].storage) > 0 then
-               padWindow:addChoice(i - 8300, tp_pads[i].name .. (tp_pads[i].price > 0 and " [" .. tp_pads[i].price .. " gold]" or ""))
+        if player:getGroup():getAccess() then
+				tp_pads[i].price = 0
+				padWindow:addChoice(i - 8300, tp_pads[i].name .. (""))
+        elseif tp_pads[i].price then
+            if tp_pads[i].storage then
+                if player:getStorageValue(tp_pads[i].storage) > 0 then
+					padWindow:addChoice(i - 8300, tp_pads[i].name .. (tp_pads[i].price > 0 and " [" .. tp_pads[i].price .. " gold]" or ""))
              end
            else
              padWindow:addChoice(i - 8300, tp_pads[i].name .. (tp_pads[i].price > 0 and " [" .. tp_pads[i].price .. " gold]" or ""))

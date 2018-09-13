@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Gozzler" nameDescription="a gozzler" race="undead" experience="180" speed="190" manacost="800">
-	<health now="240" max="240"/>
+<monster name="Gozzler" nameDescription="a gozzler" race="undead" experience="12000" speed="190" manacost="800">
+	<health now="45000" max="45000"/>
 	<look type="313" corpse="9938"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
-		<flag summonable="1"/>
+		<flag summonable="0"/>
 		<flag attackable="1"/>
 		<flag hostile="1"/>
 		<flag illusionable="1"/>
@@ -17,19 +17,25 @@
 		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" skill="45" attack="40"/>
-		<attack name="lifedrain" interval="2000" chance="15" range="1" min="-32" max="-135">
+		<attack name="melee" interval="2000" skill="145" attack="140"/>
+		<attack name="lifedrain" interval="2000" chance="15" range="1" min="-3200" max="-4350">
 			<attribute key="areaEffect" value="redspark"/>
+		</attack>
+		<attack name="fire" interval="3000" chance="30" length="8" spread="0" min="-4000" max="-6000">
+			<attribute key="areaEffect" value="fire"/>
+		</attack>
+		<attack name="physical" interval="2500" chance="20" range="7" radius="5" target="0" min="-1200" max="-1480">
+			<attribute key="areaEffect" value="greenshimmer"/>
 		</attack>
 	</attacks>
 	<script>
         <event name="playerSummon"/>
     </script>
-	<defenses armor="15" defense="15">
-		<defense name="healing" interval="2000" chance="10" min="30" max="50">
+	<defenses armor="105" defense="105">
+		<defense name="healing" interval="2000" chance="50" min="3000" max="5000">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
-		<defense name="speed" interval="2000" chance="15" speedchange="210" duration="5000">
+		<defense name="speed" interval="2000" chance="15" speedchange="610" duration="5000">
 			<attribute key="areaEffect" value="redshimmer"/>
 		</defense>
 	</defenses>
@@ -48,15 +54,8 @@
 		<voice sentence="I'll bite you! Nyehehehehe!"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="70" chance="52500"/><!-- gold coin -->
-		<item id="2378" chance="3100"/><!-- battle axe -->
-		<item id="2015" chance="8750"/><!-- brown flask -->
-		<item id="2423" chance="900"/><!-- clerical mace -->
-		<item id="2394" chance="5000"/><!-- morning star -->
-		<item id="2510" chance="10000"/><!-- plate shield -->
-		<item id="2385" chance="8250"/><!-- sabre -->
-		<item id="2409" chance="250"/><!-- serpent sword -->
-		<item id="2213" chance="190"/><!-- dwarven ring -->
+		<item id="2152" countmax="100" chance="10000"/> <!-- Platinum Coin -->
+		<item id="2015" subtype="27" chance="2000"/><!-- brown flask -->
 		<item id="2146" chance="360"/><!-- small sapphire -->
 	</loot>
 </monster>

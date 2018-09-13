@@ -1086,3 +1086,52 @@ function Player.doRemoveSummon(self)
     summon:remove()
     return true
 end
+
+function Player:isCreatureFriend(creature, tarCheck) --tarCheck true/false
+local player = Player(creature)
+local monster = Monster(creature)
+local PID
+local GID
+  if self:getParty() then
+    PID = self:getParty():getId()
+  end
+  if self:getGuild() then
+    GID = self:getGuild():getId()
+  end
+  if player then
+    if player:getParty() then
+      if player:getParty():getId() == PID then
+        return true
+      end
+    elseif player:getGuild() then
+      if player:getGuild():getId() == GID then
+        return true
+      else return false end
+    else
+      return false
+    end
+  end
+  if monster then
+    local master = monster:getMaster()
+    if master then
+      if master:getId() == self:getId() then
+        return true
+      end
+      if master:getParty() and master:getParty():getId() == PID then
+        return true
+      end
+      if master:getGuild() and master:getGuild():getId() == GID then
+        return true
+      end
+      return false
+    end
+    if self:getTarget() and self:getTarget():getId() == monster:getId() then
+    --- If you want a return of true on monsters that aren't summons, but
+    ---- also aren't your target, set tarCheck in parameter as false
+      if tarCheck == true then
+        return false
+      end
+      return true
+    end
+  end
+end

@@ -46,6 +46,7 @@ MagicEffectNames magicEffectNames[] = {
     {"stones",        CONST_ME_STONES},
     {"smallplants",        CONST_ME_SMALLPLANTS},
     {"carniphila",        CONST_ME_CARNIPHILA},
+    {"carniphila",        CONST_ME_CARNIPHILA},
     {"purpleenergy",    CONST_ME_PURPLEENERGY},
     {"yellowenergy",    CONST_ME_YELLOWENERGY},
     {"holyarea",        CONST_ME_HOLYAREA},

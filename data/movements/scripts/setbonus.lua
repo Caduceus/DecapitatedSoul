@@ -5,7 +5,11 @@ local sets = {
     [1] = {'Lava Set', 7900, 7899, 7894, 7891},
     [2] = {'Ice Set', 7902, 7897, 7896, 7892},
     [3] = {'Energy Set', 7901, 7898, 7895, 7893},
-    [4] = {'Tera Set', 7903, 7884, 7885, 7886}
+    [4] = {'Tera Set', 7903, 7884, 7885, 7886},
+    [5] = {'Set', 9735, 15489, 15490, 26133}, --pally
+    [6] = {'Set', 23536, 23538, 23539, 23540}, --knight
+    [7] = {'Set', 18403, 18404, 18405, 18406, 18410}, --templar
+    [8] = {'Set', 9778, 9776, 9777, 6132} --sorc/druid
 }
 
 local speed1 = Condition(CONDITION_HASTE)
@@ -61,12 +65,12 @@ function onDeEquip(cid, item, slot)
         
             if (setBonus[i]).maxHealth ~= nil then
                 player:setMaxHealth(player:getMaxHealth() - (setBonus[i]).maxHealth)
-                --player:addHealth(-(setBonus[i]).maxHealth)
+                player:addHealth(-(setBonus[i]).maxHealth)
             end
         
             if (setBonus[i]).maxMana ~= nil then
                 player:setMaxMana(player:getMaxMana() - (setBonus[i]).maxMana)
-                --player:addMana(-(setBonus[i]).maxMana)
+                player:addMana(-(setBonus[i]).maxMana)
             end
         
             if (setBonus[i]).condition ~= nil then

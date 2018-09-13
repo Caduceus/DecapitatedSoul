@@ -6,7 +6,7 @@ local t, i = {
 "[Server]: Sorcerer|Druid: Wands|Rods allow the use of several damage types by right clicking on your weapon. ", 
 "[Server]: Blessings - [Free until level 80] Blessing Runes can be purchased from Brevans, located in the bottom of Purgatory Isle Temple. ", 
 "[Server]: Daily Tokens can be used to purchase Bless and VIP. See Adonai or Zagorim to earn tokens!",
-"[Server]: Coin timer resets on death, as well as logout. ",
+"[Server]: Coin timer will reset if logged out for more than 5 minutes. ",
 }, 1
 
 function onThink(interval)

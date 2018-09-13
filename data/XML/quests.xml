@@ -14,9 +14,9 @@
 		</mission>
 	</quest>
 
-<quest name="Pick it, Pick it good." startstorageid="45552" startstoragevalue="1">
-		<mission name="Search & destroy" storageid="45552" startvalue="1" endvalue="2" description="Kill: \n10 Carrion Worms \n\nCollect: \n10 Carrion Worm Fang" />
-		<mission name="Complete" storageid="45552" startvalue="2" endvalue="2" description="You have completed this quest" />
+<quest name="Pick it, Pick it good." startstorageid="45560" startstoragevalue="1">
+		<mission name="Search & destroy" storageid="45560" startvalue="1" endvalue="2" description="Kill: \n10 Carrion Worms \n\nCollect: \n10 Carrion Worm Fang" />
+		<mission name="Complete" storageid="45560" startvalue="2" endvalue="2" description="You have completed this quest" />
 	</quest>
 	
 	<quest name="Rat, tat, tat...Tits" startstorageid="45553" startstoragevalue="1">

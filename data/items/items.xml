@@ -8124,8 +8124,8 @@
 	<item fromid="4796" toid="4819" name="dirt" />
 	<item fromid="4820" toid="4825" name="shallow water">
 		<attribute key="effect" value="bluebubble" />
-		<attribute key="allowpickupable" value="1" />
 		<attribute key="fluidSource" value="water" />
+		<attribute key="type" value="trashholder" />
 	</item>
 	<item fromid="4826" toid="4827" article="a" name="mountain" />
 	<item fromid="4828" toid="4831" name="shallow water">
@@ -21114,7 +21114,7 @@
 		<attribute key="weight" value="134" />
 	</item>
 	<item id="12413" article="a" name="dragon's tail" plural="dragon tails">
-		<attribute key="weight" value="250" />
+		<attribute key="description" value="It is said to make a dragon hatchling mount." />
 	</item>
 	<item id="12414" article="a" name="geomancer's robe" plural="geomancer robes">
 		<attribute key="description" value="It's too tiny to be worn by humans." />
@@ -35419,7 +35419,7 @@
 	</item>
 	<item id="26101" article="a" name="Hamster in a Wheel">
 		<attribute key="decayTo" value="26100" />
-		<attribute key="duration" value="40" />
+		<attribute key="duration" value="10" />
 	</item>
 	<item id="26104" article="a" name="Lordly Tapestry">
 		<attribute key="weight" value="1000" />

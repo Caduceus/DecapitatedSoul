@@ -39,7 +39,7 @@ local effects = {
 	{position = Position(549, 1331, 10), text = 'Defense'}, --FH quest club
 	{position = Position(551, 1331, 10), text = 'Pure Damage'}, --FH quest sword
 	{position = Position(553, 1331, 10), text = 'Healing'}, --FH quest templar sword
-	{position = Position(1010, 926, 8), text = 'Take A Ride!', effect = CONST_ME_THUNDER}, -- Temple Train
+	{position = Position(1011, 926, 8), text = 'Take A Ride!', effect = CONST_ME_THUNDER}, -- Temple Train
 	{position = Position(1041, 903, 8), text = 'WARNING!'}, --Catacombs Entrance
 }
 

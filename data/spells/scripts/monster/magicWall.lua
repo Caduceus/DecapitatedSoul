@@ -1,3 +1,10 @@
+local combat = Combat()
+combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_ENERGY)
+combat:setParameter(COMBAT_PARAM_CREATEITEM, ITEM_MAGICWALL)
+
+function onCastSpell(creature, var, isHotkey)
+	return combat:execute(creature, var)
+end
 local id = 8753
 local combat = Combat()
 combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_ENERGY)
@@ -17,26 +24,10 @@ function tile_timer(id, pos, delay, color)
 		return true
 	end
 	
-	for i = 1, #people do
-		people[i]:sendTextMessage(MESSAGE_EXPERIENCE, "Magic wall will disappear in " .. delay .. " second" .. (delay > 1 and "s" or "") .. ".", pos, delay, color)
-	end
-end
-
-function removeMw(pos, mw, wall)
-	local tile = Tile(pos)
-	mw = tile:getItemById(mw)
-	wall = tile:getItemById(wall)
-	if mw then mw:remove() end
-	if wall then wall:remove() end
-end
-
 function onCastSpell(creature, var, isHotkey)
 	local c = combat:execute(creature, var)
 	if c then
 		local pos = variantToPosition(var)
-		local wall = Game.createItem(12003, 1, pos)
-		addEvent(removeMw, 20000, pos, id, wall:getId())
-		tile_timer(id, pos, 20, TEXTCOLOR_LIGHTBLUE)
 	end
 	return c
 end

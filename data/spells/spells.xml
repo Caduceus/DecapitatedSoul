@@ -140,6 +140,12 @@
         <vocation name="Warlord Templar"/>
 	</instant>
 	
+	<instant group="attack" spellid="112" name="heavy holy Strike" words="heavy light hammer" lvl="150" mana="200" prem="1" range="3" casterTargetOrDirection="1" blockwalls="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="attack/heavy light hammer.lua">
+		<vocation name="Templar"/>
+        <vocation name="Noble Templar"/>
+        <vocation name="Warlord Templar"/>
+	</instant>
+	
 	<!--End of Custom Spells-->
 	
 	<instant group="attack" spellid="62" name="Annihilation" words="exori gran ico" lvl="110" mana="300" prem="1" range="1" needtarget="1" blockwalls="1" needweapon="1" cooldown="30000" groupcooldown="4000" needlearn="0" script="attack/annihilation.lua">
@@ -853,8 +859,8 @@
         <vocation name="Royal Paladin"/>
         <vocation name="Warlord Paladin"/>
 	</conjure>
-	<conjure group="support" spellid="95" name="Conjure Power Bolt" words="exevo con vis" lvl="59" mana="700" soul="4" prem="1" conjureId="2547" conjureCount="10" cooldown="2000" groupcooldown="2000" needlearn="0" function="conjureItem">
-	</conjure>
+	<!--conjure group="support" spellid="95" name="Conjure Power Bolt" words="exevo con vis" lvl="59" mana="700" soul="4" prem="1" conjureId="2547" conjureCount="10" cooldown="2000" groupcooldown="2000" needlearn="0" function="conjureItem">
+	</conjure-->
 	<conjure name="Poison Field" words="adevo grav pox" lvl="14" mana="200" soul="1" reagentId="2260" conjureId="2285" conjureCount="3" cooldown="2000" groupcooldown="2000" needlearn="0" function="conjureRune">
 		<vocation name="Sorcerer"/>
         <vocation name="Master Sorcerer"/>
@@ -1153,4 +1159,5 @@
 	<instant name="medusa wave" words="medusa sister wave" direction="1" aggressive="1" blockwalls="1" needtarget="0" needlearn="1" script="monster/medusa_sister_wave.lua"/>
 	<instant name="medusa swirl" words="medusa sister swirl" direction="1" aggressive="1" blockwalls="1" needtarget="0" needlearn="1" script="monster/medusa_sister_swirl.lua"/>
 	<instant name="stun" words="stun" aggressive="1" blockwalls="1" needtarget="1" needlearn="1" script="monster/stun.lua"/>
+	<instant name="rapid" words="rapid" direction="1" aggressive="1" needtarget="0" needlearn="1" script="monster/rapid.lua"/>
 </spells>

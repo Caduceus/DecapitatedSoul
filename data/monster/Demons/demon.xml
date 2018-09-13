@@ -31,8 +31,7 @@
 		<attack name="lifedrain" interval="1500" chance="40" length="8" spread="3" min="-550" max="-690">
 			<attribute key="areaEffect" value="purpleenergy"/>
 		</attack>
-		<attack name="energy strike" interval="2000" chance="30" range="1" min="-210" max="-300">
-		</attack>
+		<attack name="energy strike" interval="2000" chance="30" range="1" min="-210" max="-300"/>
 	</attacks>
 	<defenses armor="50" defense="40">
 		<defense name="healing" interval="2000" chance="15" min="180" max="250">

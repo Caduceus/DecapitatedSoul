@@ -41,8 +41,11 @@ local config = {
         [8961] = { { value = 5000, newItem = 7487 }, { value = 10000, newItem = 7737 }, { value = 20000, 6492 }, { value = 30000, newItem = 8860 }, { value = 45000, newItem = 2683 }, { value = 60000, newItem = 2096 }, { value = 90000, newItem = 9005, amount = 50 } },
 
         -- Marble
-        [11343] = { {value = 10000, newItem = 11345, desc = "This shoddy work was made by |PLAYERNAME|." }, {value = 35000, newItem = 11345, desc = "This little figurine made by |PLAYERNAME| has some room for improvement." }, { value = 60000, newItem = 11346, desc = "This little figurine of Tibiasula was masterfully sculpted by |PLAYERNAME|." } },
-
+        --[11343] = { {value = 10000, newItem = 11344}, {value = 35000, newItem = 11345}, { value = 60000, newItem = 11346} },
+        [11343] = {value = 25000, newItem = 11344},
+        [11344] = {value = 25000, newItem = 11345},
+        [11345] = {value = 25000, newItem = 11346},
+		
         -- Ice Cube
         [7441] = {value = 25000, newItem = 7442},
         [7442] = {value = 25000, newItem = 7444},
@@ -88,7 +91,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
             if random <= _skin.value then
                 if target.itemid == 11343 then
 					effect = CONST_ME_ICEAREA
-                    added = false
+                    added = true
                 elseif isInArray({7441, 7442, 7444, 7445}, target.itemid) then
                     player:addItem(_skin.newItem, _skin.amount or 1)
                     effect = CONST_ME_HITAREA

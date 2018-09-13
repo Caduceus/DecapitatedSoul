@@ -75,7 +75,7 @@ if target.uid == 9012 then
 	return false
 	end
 end
-	 local player = Player(cid)
+	local player = Player(cid)
     if not player then
         return true
     end

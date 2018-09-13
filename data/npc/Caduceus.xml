@@ -1,6 +1,6 @@
 <npc name="Caduceus" script="default.lua" walkinterval="2000" floorchange="0" speechbubble="0">
   	<health now="150" max="150"/>
-	<look type="309" head="85" body="7" legs="12" feet="19" addons="2"/>
+	<look type="537" head="85" body="7" legs="12" feet="19" addons="2"/>
 	<parameters>
 		<parameter key="message_greet" value="Goddamnit |PLAYERNAME|! What the {FUCK} do you want?"/>
 		<parameter key="message_sell" value="Do you want to sell |ITEMCOUNT| |ITEMNAME| for |TOTALCOST| gold coins? "/>
