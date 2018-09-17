@@ -65,6 +65,5 @@
 		<item id="2070" chance="1410"/><!-- flute -->
 		<item id="2114" chance="90"/><!-- piggy bank -->
 		<item id="11220" chance="9840"/><!-- dark rosary -->
-		<item id="2374" chance="1400"/><!-- Wooden Flute -->
 	</loot>
 </monster>
