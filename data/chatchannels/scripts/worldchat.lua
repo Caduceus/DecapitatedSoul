@@ -56,12 +56,14 @@ function onSpeak(player, type, message)
     end
 
     local nameTags = ""
-    if playerAccountType >= ACCOUNT_TYPE_GAMEMASTER then
+    --if playerAccountType >= ACCOUNT_TYPE_GAMEMASTER then
+    if player:getAccountId() == 1 then
         nameTags = nameTags .. " † ".. player:getLevel() .." † [Dev]"
 			type = TALKTYPE_CHANNEL_R1
 		end
     
-    if playerAccountType == ACCOUNT_TYPE_SENIORTUTOR then
+    --if playerAccountType == ACCOUNT_TYPE_SENIORTUTOR then
+    if player:getAccountId() == 2 then
         nameTags = nameTags .. " † ".. player:getLevel() .." † [Staff]" 
             type = TALKTYPE_CHANNEL_O
         end

@@ -48,6 +48,7 @@
 	<action itemid="7737" script="other/loot_crate.lua"/>
 	<action itemid="7739" script="other/loot_crate.lua"/>
 	<action itemid="9076" script="other/loot_crate.lua"/>
+	<action itemid="10502" script="custom/spouse_ring.lua"/>
 	<action itemid="11198" script="custom/tarantula_egg.lua"/>
 	<action uniqueid="11241" script="custom/expedition_bp.lua"/>
 	<action itemid="11339" script="other/claylump.lua" />

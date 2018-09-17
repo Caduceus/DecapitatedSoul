@@ -19344,6 +19344,9 @@
 	</item>
 	<item id="10562" article="a" name="black hood">
 		<attribute key="weight" value="175" />
+		<attribute key="magiclevelpoints" value="5" />
+		<attribute key="slotType" value="head" />
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="10563" article="a" name="book of prayers" plural="books of prayers">
 		<attribute key="weight" value="150" />

@@ -161,7 +161,7 @@
     <movevent event="Equip" itemid="2092" script="skeleton_key.lua"/>
 	
 	<!-- Set Bonus-->
-	<movevent event="Equip" fromid="7900" toid="7903" slot="head" script="setbonus.lua" >
+	<movevent event="Equip" fromid="7900" toid="7903" slot="head" function="onEquipItem"> <!--script="setbonus.lua" -->
 		<vocation name="Sorcerer"/>
 		<vocation name="Master Sorcerer" showInDescription="0"/>
 		<vocation name="Warlord Sorcerer" showInDescription="0"/>
@@ -169,14 +169,24 @@
 		<vocation name="Elder Druid" showInDescription="0"/>
         <vocation name="Warlord Druid" showInDescription="0"/>
 	</movevent>
-	<movevent event="Equip" itemid="7897;7898;7899;7884" slot="armor" script="setbonus.lua"/>
-	<movevent event="Equip" itemid="7894;7895;7896;7885" slot="legs" script="setbonus.lua"/>
-	<movevent event="Equip" itemid="7891;7892;7893;7886" slot="feet" script="setbonus.lua"/>
+	<movevent event="Equip" itemid="7897;7898;7899;7884" slot="armor" function="onEquipItem"/>
+	<movevent event="Equip" itemid="7894;7895;7896;7885" slot="legs" function="onEquipItem"/>
+	<movevent event="Equip" itemid="7891;7892;7893;7886" slot="feet" function="onEquipItem"/>
 
-	<movevent event="DeEquip" fromid="7900" toid="7903" slot="head" script="setbonus.lua"/>
-	<movevent event="DeEquip" itemid="7897;7898;7899;7884" slot="armor" script="setbonus.lua"/>
-	<movevent event="DeEquip" itemid="7894;7895;7896;7885" slot="legs" script="setbonus.lua"/>
-	<movevent event="DeEquip" itemid="7891;7892;7893;7886" slot="feet" script="setbonus.lua"/>
+	<movevent event="DeEquip" fromid="7900" toid="7903" slot="head" function="onDeEquipItem"/>
+	<movevent event="DeEquip" itemid="7897;7898;7899;7884" slot="armor" function="onDeEquipItem"/>
+	<movevent event="DeEquip" itemid="7894;7895;7896;7885" slot="legs" function="onDeEquipItem"/>
+	<movevent event="DeEquip" itemid="7891;7892;7893;7886" slot="feet" function="onDeEquipItem"/>
+	
+	<movevent event="Equip" itemid="10562" slot="head" script="setbonus.lua">
+		<vocation name="Sorcerer"/>
+		<vocation name="Master Sorcerer" showInDescription="0"/>
+		<vocation name="Warlord Sorcerer" showInDescription="0"/>
+		<vocation name="Druid"/>
+		<vocation name="Elder Druid" showInDescription="0"/>
+        <vocation name="Warlord Druid" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="10562" slot="head" script="setbonus.lua"/>
 	
 	<!-- Frozen Hell Rewards-->
 	
@@ -853,6 +863,7 @@
 	<movevent event="StepIn" itemid="3211" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="3214" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="3590" script="citizen.lua"/>
+	<movevent event="StepIn" itemid="4574" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="9224" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="10398" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="19788" script="citizen.lua"/>

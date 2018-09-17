@@ -32,19 +32,8 @@
     <item id="2456" chance="10090"/>
     <item id="2661" chance="10000"/>
     <item id="2681" chance="10000"/>
-    <item id="2121" chance="6666"/>
     <item id="2666" countmax="3" chancemax="0" chance1="20000"/>
     <item id="1987" chance="10000">
-      <inside>
-        <item id="2392" chance="4000"/>
-        <item id="2519" chance="4000"/>
-        <item id="2488" chance="4000"/>
-        <item id="2487" chance="4000"/>
-        <item id="2071" chance="10000"/>
-        <item id="2544" countmax="10" chancemax="0" chance1="20000"/>
-        <item id="2744" chance="6696"/>
-      </inside>
-    </item>
     <item id="2210" chance="10000"/>
     <item id="2432" chance="4000"/>
   </loot>

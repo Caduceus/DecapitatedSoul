@@ -1,6 +1,6 @@
 local config = {
-	requiredLevel = 80,
-	requiredMaxLevel = 150,
+	requiredLevel = 100,
+	requiredMaxLevel = 200,
 	daily = true,
 	centerIslandPosition = Position(72, 195, 7),
 	playerPositions = {
@@ -74,7 +74,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				return true
 			end
 			
-			if playerTile:getLevel() < config.requiredLevel or playerTile:getLevel() > config.requiredMaxLevel then 
+			if playerTile:getLevel() < config.requiredLevel or playerTile:getLevel() > config.requiredMaxLevel then
 				player:sendTextMessage(MESSAGE_STATUS_SMALL, "Both players need to be between level ".. config.requiredLevel .." and ".. config.requiredMaxLevel ..".")
 				return true
 			end

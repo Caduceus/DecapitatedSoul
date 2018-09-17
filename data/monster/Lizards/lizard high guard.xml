@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Lizard High Guard" nameDescription="a lizard high guard" race="blood" experience="1450" speed="240" manacost="0">
-	<health now="1800" max="1800"/>
+	<health now="18000" max="18000"/>
 	<look type="337" corpse="11272"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
@@ -17,7 +17,10 @@
 		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" skill="75" attack="72"/>
+		<attack name="melee" interval="2000" skill="175" attack="272"/>
+		
+				
+	
 	</attacks>
 	<defenses armor="35" defense="35">
 		<defense name="healing" interval="2000" chance="10" min="25" max="75">

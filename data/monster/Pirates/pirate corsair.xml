@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Pirate Corsair" nameDescription="a pirate corsair" race="blood" experience="3500" speed="250" manacost="775">
+<monster name="Pirate Corsair" nameDescription="a pirate corsair" race="blood" experience="2000" speed="250" manacost="775">
 	<health now="6750" max="6750"/>
 	<look type="98" corpse="20475"/>
 	<targetchange interval="4000" chance="15"/>
@@ -17,8 +17,8 @@
 		<flag runonhealth="40"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" skill="125" attack="40"/>
-		<attack name="physical" interval="2000" chance="30" range="4" min="-900" max="-1500">
+		<attack name="melee" interval="2000" skill="105" attack="40"/>
+		<attack name="physical" interval="2000" chance="30" range="4" min="-500" max="-800">
 			<attribute key="shootEffect" value="throwingstar"/>
 		</attack>
 		<attack name="pirate corsair skill reducer" interval="2000" chance="25"/>

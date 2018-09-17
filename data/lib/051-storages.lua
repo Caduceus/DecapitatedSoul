@@ -312,6 +312,7 @@ Storage = {
 		cromwellCastle = 99598,
 		warlockSection = 99599
 	},
+	spouseRing = 100100,
 	addPointTimer = 455577,
 	
 	-- Not sure how many of these are used in server. if at all. 

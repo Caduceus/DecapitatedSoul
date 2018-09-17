@@ -585,6 +585,7 @@
 	<monster name="Battlemaster Zunzu" file="Lizards/battlemaster zunzu.xml"/>
 	<monster name="Draken Abomination" file="Lizards/draken abomination.xml"/>
 	<monster name="Draken Elite" file="Lizards/draken elite.xml"/>
+	<monster name="Draken King" file="Lizards/draken king.xml"/>
 	<monster name="Draken Spellweaver" file="Lizards/draken spellweaver.xml"/>
 	<monster name="Draken Warmaster" file="Lizards/draken warmaster.xml"/>
 	<monster name="Lizard Abomination" file="Lizards/lizard abomination.xml"/>

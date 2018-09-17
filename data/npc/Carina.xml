@@ -12,7 +12,11 @@
 		<parameter key="keywords" value="job;" />
 		<parameter key="keyword_reply1" value="I sell some of the most beautiful jewels in Tibia." />
 		<parameter key="module_shop" value="1" />
-		<parameter key="shop_buyable" value="			Golden Amulet,2130,6600;			Ruby Necklace,2133,3560;			Wedding Ring,2121,990		" />
-		<parameter key="shop_sellable" value="			Wedding Ring,2121,100		" />
+		<parameter key="shop_buyable" value=" Wedding Ring,2121,100000" />
+		<parameter key="shop_sellable" value="engraved wedding ring,10502,10000;
+											  platinum amulet,2171,2500;
+											  ring of the sky,2123,20000;
+											  ruby necklace,2133,9000
+											  "/>
 	</parameters>
 </npc>

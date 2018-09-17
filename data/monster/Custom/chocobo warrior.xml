@@ -52,7 +52,7 @@
 		<item id="2430" chance="3857"/><!-- knight axe -->
 		<item id="2383" chance="3500"/><!-- spike sword -->
 		<item id="2517" chance="500"/><!-- shield of honour -->
-		<item id="18454" chance="200"/><!-- Mythical bow -->
+		<item id="18454" chance="100"/><!-- Mythical bow -->
 		<item id="5891" countmax="1" chance="300" /><!-- enchanted chicken wing -->
 		
 	</loot>
