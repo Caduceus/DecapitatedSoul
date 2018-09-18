@@ -1144,12 +1144,16 @@ void Creature::onGainExperience(uint64_t gainExp, Creature* target)
 		return;
 	}
 
-	gainExp /= 2;
+	//gainExp /= 2;
 	master->onGainExperience(gainExp, target);
 
 	SpectatorVec list;
 	g_game.map.getSpectators(list, position, false, true);
 	if (list.empty()) {
+		return;
+	}
+
+	if (this->getMonster() || master->getMonster()) {
 		return;
 	}
 
