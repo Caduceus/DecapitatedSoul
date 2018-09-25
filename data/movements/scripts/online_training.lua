@@ -5,7 +5,7 @@ local training_exit = {
 }
 local confirm = false -- anti-exit
 local usecode = false -- confirm with code
-local antiafk_interval = 15 * 60 * 1000 -- 20 minutes after training started
+local antiafk_interval = 15 * 60 * 1000 -- 15 minutes after training started
 local words = "!continue" -- command to continue
 local prefix = "[AntiAfk]: "
 local minutes_to_reply = 5 -- minutes to rewrite code
@@ -202,7 +202,6 @@ function skillAntiExit(cid, pos, nsid)
    return true
 end
 
-local waitTime = os.time() + 10
 function onStepIn(player, item, position, fromPosition)
 
 if player:getGroup():getAccess() then

@@ -5,6 +5,8 @@
 	<monster name="Mnemosyne" file="Custom/Mnemosyne.xml"/>
 	<monster name="Sthenno" file="Custom/Sthenno.xml"/>
 	<monster name="captain hook" file="Bosses/captain hook.xml"/>
+	<monster name="beelzabubba" file="Custom/Beelzabubba.xml"/>
+	<monster name="elite hero" file="Custom/Elite Hero.xml"/>
 	<monster name="templar" file="Custom/templar.xml"/>
 	<monster name="Prison Guard" file="Custom/Prison_Guard.xml"/>
 	<monster name="Chocobo Warrior" file="Custom/chocobo warrior.xml"/>
@@ -20,8 +22,9 @@
 	<monster name="ice demon" file="Custom/Ice Demon.xml"/>
 	<monster name="soul reaper" file="Custom/soul reaper.xml"/>
 	<monster name="Fire Lord" file="Custom/fire lord.xml"/>
-	<monster name="Jesus" file="Custom/jesus.xml"/>
-	<monster name="Lucifer" file="Custom/Lucifer.xml"/>
+	<monster name="jesus" file="Custom/jesus.xml"/>
+	<monster name="lucifer" file="Custom/Lucifer.xml"/>
+	<monster name="spawn" file="Custom/spawn.xml"/>
 	<monster name="Vanir" file="Custom/Vanir.xml"/>
 	<monster name="Lestat de Lioncourt" file="Undead Humanoids/lestat.xml"/>
 	<monster name="angel of death" file="Undead Humanoids/angel of death.xml"/>

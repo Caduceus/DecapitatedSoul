@@ -26,11 +26,4 @@
     <voice sentence="I am creator of DEATH!"/>
     <voice sentence="You will never see the blade I guard!"/>
   </voices>
-  <loot>
-  <item id="2147" countmax="1" chance1="3000" chancemax="0" /> small ruby
-  <item id="2520" chance="100000"/>
-  <item id="2494" chance="10000"/>
-  <item id="2495" chance="10000"/>
-  <item id="2273" chance="200000"/>
-  </loot>
 </monster>

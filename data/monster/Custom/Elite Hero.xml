@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<monster name="Elite Hero" nameDescription="an Elite Hero" level="0" experience="4500" manacost="0" speed="278" race="2">
-  <health now="9500" max="9500"/>
-  <strategy attack="100" defense="0"/>
+<monster name="Elite Hero" nameDescription="an Elite Hero" experience="4500" manacost="0" speed="278" race="2">
+  <health now="19500" max="19500"/>
+  <level min="1" max="20"/>
+  <strategy attack="100" defense="100"/>
   <targetchange speed="0" chance="0"/>
   <flags canpushitems="1" summonable="0" hostile="1" attackable="1" illusionable="1" convinceable="0" pushable="0" staticattack="50" targetdistance="1" runonhealth="0"/>
   <look type="75" head="75" body="30" legs="40" feet="50" addons="0" corpse="3128"/>
   <attacks>
     <attack name="melee" chance="100" speed="2000" skill="450" attack="100" min="-200" max="-470" range="6"/>
-    <attack name="arrow" chance="100" speed="3000" min="-200" max="-450"/>
   </attacks>
   <defenses defense="42" armor="41">
     <defense name="Ultimate Healing" chance="100" speed="2000" min="500" max="900"/>
@@ -24,17 +24,4 @@
     <voice sentence="My will remains unbroken!"/>
     <voice sentence="My legend will live on!"/>
   </voices>
-  <loot>
-    <item id="2491" chance="4000"/>
-    <item id="2487" chance="4000"/>
-    <item id="2148" countmax="100" chancemax="0" chance1="100000"/>
-    <item id="1949" chance="10009"/>
-    <item id="2456" chance="10090"/>
-    <item id="2661" chance="10000"/>
-    <item id="2681" chance="10000"/>
-    <item id="2666" countmax="3" chancemax="0" chance1="20000"/>
-    <item id="1987" chance="10000">
-    <item id="2210" chance="10000"/>
-    <item id="2432" chance="4000"/>
-  </loot>
 </monster>

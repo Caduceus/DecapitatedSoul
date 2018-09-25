@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Golanth" nameDescription="Golanth" race="undead" experience="80000" speed="660" manacost="7000">
+<monster name="Golanth" nameDescription="Golanth" race="undead" experience="80000" speed="360" manacost="7000">
 	<health now="100000" max="100000"/>
-	<look type="351" corpse="11362"/>
+	<look type="938" corpse="11362"/>
 	<targetchange interval="4000" chance="5"/>
 	<flags>
 		<flag summonable="0"/>

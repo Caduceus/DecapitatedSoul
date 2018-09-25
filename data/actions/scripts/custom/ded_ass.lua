@@ -1,10 +1,16 @@
-local destination = Position(1040, 952, 8)
+local maleDestination = Position(1037, 952, 8)
+local femaleDestination = Position(1037, 953, 8)
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-  if isInArray({3058, 3059, 3065, 3066}, target.itemid) then
-    target:moveTo(destination, false)
-    player:sendTextMessage(MESSAGE_INFO_DESCR, "Corpse sent to storage.")
+    if isInArray({3058, 3059}, target.itemid) then
+		target:moveTo(maleDestination, false)
+		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_RED, "Male Corpse sent to storage.")
+		player:getPosition():sendMagicEffect(CONST_ME_BLUE_STATIC)
     return true
-  end
-  return false
+    elseif isInArray({3065, 3066}, target.itemid) then
+		target:moveTo(femaleDestination, false)
+		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_RED, "Female Corpse sent to storage.")
+		player:getPosition():sendMagicEffect(CONST_ME_RED_STATIC)
+	return true
+    end
 end

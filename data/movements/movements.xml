@@ -864,6 +864,7 @@
 	<movevent event="StepIn" itemid="3214" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="3590" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="4574" script="citizen.lua"/>
+	<movevent event="StepIn" itemid="4972" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="9224" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="10398" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="19788" script="citizen.lua"/>

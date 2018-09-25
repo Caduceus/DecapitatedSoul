@@ -84,7 +84,13 @@
 	<action itemid="26109" script="other/folded_carpet.lua"/>
 	<action itemid="26110" script="other/folded_carpet.lua"/>
 	<action itemid="26111" script="other/folded_carpet.lua"/>
+	<action itemid="28434" script="other/folded_carpet.lua"/>
+	<action itemid="28435" script="other/folded_carpet.lua"/>
 	
+		<!-- transformTo-->
+	<action itemid="18551" script="other/transformTo.lua"/>
+	<action itemid="27667" script="other/transformTo.lua"/>
+
 		<!--Elemental Wand-->
 	<action itemid="2188" script="wand_rod/weapon_damage.lua"/>	
 	<action itemid="2190" script="wand_rod/weapon_damage.lua"/>

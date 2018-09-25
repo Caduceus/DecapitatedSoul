@@ -26279,11 +26279,13 @@
 	</item>
 	<item id="18550" article="a" name="noble sword">
 		<attribute key="weight" value="5000" />
-		<attribute key="description" value="This sword was forged with the enthusiasm and dreams of the Rookgaardians." />
+		<attribute key="duration" value="300" />
+		<attribute key="decayTo" value="18551" />
+		<attribute key="description" value="This sword was forged with the enthusiasm and dreams." />
 	</item>
 	<item id="18551" article="a" name="noble sword">
 		<attribute key="weight" value="5000" />
-		<attribute key="description" value="This sword was forged with the enthusiasm and dreams of the Rookgaardians." />
+		<attribute key="description" value="This sword was forged with the enthusiasm and dreams." />
 	</item>
 	<item id="18554" name="crystal rubbish" />
 	<item fromid="18560" toid="18579" name="muddy floor" />
@@ -33492,9 +33494,10 @@
 	</item>
 	<item id="25392" article="a" name="Rift Carpet">
 		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="100" />
 	</item>
 	<item id="25393" article="a" name="Folded Rift Carpet">
-		<attribute key="weight" value="1000" />
+		<attribute key="weight" value="100" />
 	</item>
 	<item id="25395" article="a" name="mysterious metal egg">
 		<attribute key="weight" value="80" />
@@ -35444,13 +35447,16 @@
 		<attribute key="wrapTo" value="26112" />
 	</item>
 	<item id="26109" article="a" name="Yalaharian Carpet">
-	<attribute key="forceSerialize" value="1" />
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26110" article="a" name="White Fur Carpet">
-	<attribute key="forceSerialize" value="1" />
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26111" article="a" name="Bamboo Mat">
-	<attribute key="forceSerialize" value="1" />
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26112" article="a" name="sleeping cat kit">
 		<attribute key="description" value="Use it in your house to construct a sleeping cat." />
@@ -35730,7 +35736,8 @@
 		<attribute key="description" value="This carpet is extremely soft to the touch - and forever will be." />
 	</item>
 	<item id="26193" article="a" name="Void Carpet">
-	<attribute key="forceSerialize" value="1" />
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26194" article="a" name="vibrant egg">
 		<attribute key="weight" value="800" />
@@ -36188,6 +36195,69 @@
 	<item id="26343" article="a" name="burnt out devourer core">
 		<attribute key="slotType" value="ammo" />
 		<attribute key="weight" value="500" />
+	</item>
+	<item id="26349" article="a" name="Dog House">
+		<attribute key="decayTo" value="26361" />
+		<attribute key="duration" value="15" />
+	</item>
+	<item id="26360" article="a" name="Dog House">
+		<attribute key="decayTo" value="26349" />
+		<attribute key="duration" value="300" />
+	</item>
+	<item id="26361" article="a" name="Dog House">
+		<attribute key="decayTo" value="26360" />
+		<attribute key="duration" value="10" />
+	</item>
+	<item id="27665" article="a" name="Vengothic Lamp">
+		<attribute key="decayTo" value="27666" />
+		<attribute key="duration" value="300" />
+	</item>	
+	<item id="27666" article="a" name="Vengothic Lamp">
+		<attribute key="decayTo" value="27667" />
+		<attribute key="duration" value="300" />
+	</item>	
+	<item id="27667" article="a" name="Vengothic Lamp" />
+	<item id="27676" article="a" name="Vengothic Chair">
+		<attribute key="rotateTo" value="27677" />
+	</item>
+	<item id="27677" article="a" name="Vengothic Chair">
+		<attribute key="rotateTo" value="27678" />
+	</item>
+	<item id="27678" article="a" name="Vengothic Chair">
+		<attribute key="rotateTo" value="27679" />
+	</item>
+	<item id="27679" article="a" name="Vengothic Chair">
+		<attribute key="rotateTo" value="27676" />
+	</item>
+	<item id="27680" article="a" name="Vengothic Table">
+		<attribute key="rotateTo" value="27681" />
+	</item>
+	<item id="27681" article="a" name="Vengothic Table">
+		<attribute key="rotateTo" value="27680" />
+	</item>
+	<item id="27682" article="a" name="Vengothic Cabinet">
+		<attribute key="containerSize" value="30" />
+		<attribute key="rotateTo" value="27683" />
+	</item>
+	<item id="27683" article="a" name="Vengothic Cabinet">
+		<attribute key="containerSize" value="30" />
+		<attribute key="rotateTo" value="27682" />
+	</item>
+	<item id="27684" article="a" name="Vengothic Chest">  
+		<attribute key="rotateTo" value="27685" />
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item id="27685" article="a" name="Vengothic Chest">
+		<attribute key="rotateTo" value="27686" />
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item id="27686" article="a" name="Vengothic Chest">
+		<attribute key="rotateTo" value="27687" />
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item id="27687" article="a" name="Vengothic Chest">
+		<attribute key="rotateTo" value="27684" />
+		<attribute key="containerSize" value="20" />
 	</item>
 		
 	

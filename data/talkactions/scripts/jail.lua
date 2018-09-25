@@ -49,11 +49,13 @@ function onSay(player, words, param)
     local toPosition
     if words == '/jail' then
         toPosition = config.jailPosition
+        targetPlayer:setTown(Town(14))
     elseif words == '/unjail' then
         if config.unjailToTemple then
             toPosition = targetPlayer:getTown():getTemplePosition()
         else
             toPosition = config.unjailPosition
+            targetPlayer:setTown(Town(1))
         end
     end
     
