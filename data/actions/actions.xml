@@ -368,6 +368,7 @@
 	<action fromid="1728" toid="1731" script="other/watch.lua"/>
 	<action fromid="20239" toid="20240" script="other/watch.lua"/>
 	<action itemid="6572" script="other/partytrumpet.lua"/>
+	<action itemid="2005" script="tools/bucket.lua"/>
 	<action itemid="2785" script="other/blueberrybush.lua"/>
 	<action itemid="2579" script="other/trap.lua"/>
 	<action itemid="2148" script="other/changegold.lua"/>
@@ -427,7 +428,7 @@
 	<action fromid="2376" toid="2404" script="other/destroy.lua"/>
 	<action fromid="2406" toid="2419" script="other/destroy.lua"/>
 	<action fromid="2421" toid="2453" script="other/destroy.lua"/>
-	<action fromid="2005" toid="2009" script="other/fluids.lua"/>
+	<action fromid="2006" toid="2009" script="other/fluids.lua"/>
 	<action fromid="2011" toid="2015" script="other/fluids.lua"/>
 	<action itemid="2023" script="other/fluids.lua"/>
 	<action itemid="1775" script="other/fluids.lua"/>
