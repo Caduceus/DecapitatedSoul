@@ -9,9 +9,8 @@ local time = 1*60*60 -- 1s*60s = 60s * 60s = 60min
 		player:save()
 		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "For every 1 hour online, you will receive 1 coin to use in the store. Your current coin balance is ".. player:getCoinsBalance() ..".")
 	elseif offlineTime < 300 then
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your coin timer did not reset! Use command !coin to see your time remaining.")
+		player:sendTextMessage(MESSAGE_INFO_DESCR, "Your coin timer did not reset! Use command !coin to see your time remaining.")
 		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "Your current coin balance is ".. player:getCoinsBalance() ..".")
-		print(player:getName())
 	else
 		player:setAccountStorageValue(accountStorage.addCoinTimer, os.time() + time)
 		player:save()
