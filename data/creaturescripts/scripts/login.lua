@@ -73,6 +73,10 @@ setPlayerStorageValue(player, estr, -1)
 		stats.playerId = player:getId()
 	end
 	
+	if player:getAccountStorageValue(accountStorage.accountLastLogout) == false then
+		player:setAccountStorageValue(accountStorage.accountLastLogout, 0)
+	end
+	
 	-- Events
 	player:registerEvent("addCoinTimer")
 	player:registerEvent("PlayerDeath")

@@ -5,6 +5,8 @@ accountStorage = {
 	workShop = 666,
 	doubleXpGrant = 1000,
 	returnPlayerPromo = 1001,
+	addCoinTimer = 455577,
+	accountLastLogout = 455578,
 	}
 Storage = {
 	
@@ -313,7 +315,7 @@ Storage = {
 		warlockSection = 99599
 	},
 	spouseRing = 100100,
-	addPointTimer = 455577,
+	
 	
 	-- Not sure how many of these are used in server. if at all. 
 	TravellingTrader = {

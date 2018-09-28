@@ -20,10 +20,10 @@ if(not checkExhausted(player, 554, 10)) then
     return false
 end
 	
-	if player:getStorageValue(455577)== -1 then
+	if player:getAccountStorageValue(accountStorage.addCoinTimer) == false then
 		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "Something went wrong or Admin.")
-	elseif player:getStorageValue(455577) > os.time() then
-         local time = player:getStorageValue(455577) - os.time()
+	elseif player:getAccountStorageValue(accountStorage.addCoinTimer) > os.time() then
+         local time = player:getAccountStorageValue(accountStorage.addCoinTimer) - os.time()
          local hours, minutes, seconds = math.floor (time / 3600), math.floor ((time - ((math.floor (time / 3600)) * 3600))/ 60), time - ((math.floor (time/60)) * 60)
          if time >= 3600 then
              text = hours.." "..(hours == 1 and "hour" or "hours")..", "..minutes.." "..(minutes == 1 and "minute" or "minutes").." and "..seconds.." "..(seconds == 1 and "second" or "seconds")

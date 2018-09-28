@@ -10,6 +10,11 @@ function onLogin(player)
 		if player:getVocation():getBase():getId() == 2 then
 			player:setStorageValue(10009, 6)
 		end
+		if player:getAccountStorageValue(accountStorage.accountLastLogout) == false then
+			player:setAccountStorageValue(accountStorage.accountLastLogout, 0)
+		elseif player:getAccountStorageValue(accountStorage.accountLastLogout) == true then
+		end
+		
 		for i = 1, #firstItems do
 			player:addItem(firstItems[i], 1)
 		end

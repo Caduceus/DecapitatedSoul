@@ -18,7 +18,8 @@ function onLogout(player)
 			stats.stamina = player:getStamina()
 		end
 	end
-
+	
+	player:setAccountStorageValue(accountStorage.accountLastLogout, os.time())
 	print("" .. os.date("%H:%M:%S") .. " - " .. player:getName() .. " logged out.")
 	return true
 end
