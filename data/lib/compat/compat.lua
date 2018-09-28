@@ -1065,6 +1065,32 @@ function Player.setAccountStorageValue(self, key, value)
     return db.query(query)
 end
 
+
+function Player.getAccountLastLogout(self, value)
+    if type(value) ~= "number" then
+		print(value)
+        return false
+    end
+    local query = db.storeQuery("SELECT `value` FROM `account_lastlogout` WHERE `account_id` = ".. self:getAccountId() .." AND `value = ".. value)
+    if not query then
+        return false
+    end
+ 
+    local value = result.getDataInt(query, "value")
+    result.free(query)
+    return value
+end
+
+function Player.setAccountLastLogout(self, value)
+    if type(value) ~= "number" then
+        return false
+    end
+    local query = ""
+    --if self:getAccountStorageValue(value) then
+        query = ("INSERT INTO `account_lastlogout` (`account_id`, `value`) VALUES (%d, %d)"):format(self:getAccountId(), value)
+    return db.query(query)
+end
+
 function Player.doRemoveSummon(self)
     local summons = self:getSummons()
     local summon = Creature(summons[1])
@@ -1145,4 +1171,3 @@ function getPlayerNameById(id)
     end
     return 0
 end
-
