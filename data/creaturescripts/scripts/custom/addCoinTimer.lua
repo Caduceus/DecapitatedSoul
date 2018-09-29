@@ -15,8 +15,8 @@ function onThink(creature)
 end
  
 	local playerName = result.getString(resultId, "playerName")
-	local logs = string.format("" ..creature:getName().. " gained 1 coin", logs, playerName)
-	local logsBonus = string.format("" ..creature:getName().. " gained 1 coin and 1 tibia coin", logsBonus, playerName)
+	local logs = string.format("Account Id:" .. creature:getAccountId() .. " Account Name:" .. creature:getAccountNameById() .. " Character:" ..creature:getName().. " gained 1 coin", logs, playerName)
+	local logsBonus = string.format("Account Id:" .. creature:getAccountId() .. " Account name:" .. creature:getAccountNameById() .. " Character:" ..creature:getName().. " gained 1 coin and 1 tibia coin", logsBonus, playerName)
 	local random = math.random(10)
 	
     if creature:getAccountStorageValue(accountStorage.addCoinTimer) == os.time() then 
@@ -27,16 +27,16 @@ end
 			creature:addItem(24774, 1)
 			creature:save()
 			doWriteLogFile(file, logsBonus)
-			sendChannelMessage(9, TALKTYPE_CHANNEL_R1, ">> Coin and bonus awarded: " .. creature:getName() .. " recieved " .. count .. " coin and 1 tibia coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
-			print(">> Coin and bonus awarded: " .. creature:getName() .. " recieved " .. count .. " coin and 1 tibia coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
+			sendChannelMessage(9, TALKTYPE_CHANNEL_R1, ">> Coin awarded: Account Id: " .. creature:getAccountId() .. " " .. creature:getName() .. " recieved " .. count .. " coin and 1 tibia coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
+			print(">> Coin and bonus awarded: Account Id:" .. creature:getAccountId() .. " " .. creature:getName() .. " recieved " .. count .. " coin and 1 tibia coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
 		elseif random <= 9 then
 			db.query("UPDATE `accounts` SET `coins` = `coins` + " .. count .. " WHERE `id` = " .. creature:getAccountId() .. ";")
 			creature:sendTextMessage(MESSAGE_EVENT_ORANGE, "You gained " .. count .. " coin for being online for 1 hour. Your new coin balance is ".. creature:getCoinsBalance() ..".")
 			creature:setAccountStorageValue(accountStorage.addCoinTimer, os.time() + time)
 			creature:save()
 			doWriteLogFile(file, logs)
-			sendChannelMessage(9, TALKTYPE_CHANNEL_R1, ">> Coin awarded: " .. creature:getName() .. " recieved " .. count .. " coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
-			print(">> Coin awarded: " .. creature:getName() .. " recieved " .. count .. " coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
+			sendChannelMessage(9, TALKTYPE_CHANNEL_R1, ">> Coin awarded: Account Id: " .. creature:getAccountId() .. " " .. creature:getName() .. " recieved " .. count .. " coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
+			print(">> Coin awarded: Account Id:" .. creature:getAccountId() .. " " .. creature:getName() .. " recieved " .. count .. " coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
 		end
     end
 end

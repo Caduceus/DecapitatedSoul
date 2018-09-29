@@ -17,7 +17,13 @@ function onSay(player, words, param)
 		player:sendCancelMessage("Thing not found.")
 		return false
 	end
-
+	
+	if thing:isPlayer() and thing:getAccountId() == 1 then
+		player:sendCancelMessage("You may not remove " .. thing:getName() .. ".")
+		thing:sendCancelMessage("" .. player:getName() .. " tried to remove you.")
+		return false
+	end
+	
 	if thing:isCreature() then
 		thing:remove()
 	elseif thing:isItem() then

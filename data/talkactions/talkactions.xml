@@ -90,7 +90,7 @@
 	<talkaction words="!god" script="commands_god.lua"/>
 	<talkaction words="!cast" separator=" " script="start_cast.lua" />
 	<talkaction words="!stopcast" script="stop_cast.lua" />
-	<talkaction words="!shop" script="znoteshop.lua"/>
+	<!--talkaction words="!shop" script="znoteshop.lua"/-->
 	<talkaction words="!save" script="playerSave.lua"/>
 	<talkaction words="!t" script="temple.lua"/>
 	<talkaction words="!zombie" separator=" " script="zombieEventCommands.lua" />

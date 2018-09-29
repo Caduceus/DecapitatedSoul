@@ -3,7 +3,7 @@ function onSay(player, words, param)
 		return true
 	end
 
-	if player:getAccountType() < ACCOUNT_TYPE_GOD then
+	if not player:getAccountId() == 1 then
 		return false
 	end
 	
