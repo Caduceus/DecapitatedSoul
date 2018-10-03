@@ -1,4 +1,4 @@
-local outfit = 28407
+local outfit = 28743
 
 function onStepIn(creature, item, position, fromPosition)
 	if not creature:isPlayer() then

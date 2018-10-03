@@ -59,8 +59,13 @@
 	<outfit type="0" looktype="929" name="Festive" premium="yes" unlocked="0" enabled="1" />
 	<outfit type="0" looktype="956" name="Pharaoh" premium="yes" unlocked="0" enabled="1" />
 	<outfit type="0" looktype="958" name="Trophy Hunter" premium="yes" unlocked="0" enabled="1" />
-	<outfit type="0" looktype="1022" name="Herbalist" premium="yes" unlocked="0" enabled="1" />
-	<outfit type="0" looktype="1026" name="Sun Priestess" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="0" looktype="1021" name="Herbalist" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="0" looktype="1024" name="Sun Priestess" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="0" looktype="1051" name="Siege Master" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="0" looktype="1057" name="Mercenary" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="0" looktype="1070" name="Battle Mage" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="0" looktype="1095" name="Discoverer" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="0" looktype="1103" name="Sinister Archer" premium="yes" unlocked="0" enabled="1" />
 
 	<!-- Male outfits -->
 	<outfit type="1" looktype="128" name="Citizen" premium="no" unlocked="yes" enabled="yes" /> 
@@ -120,6 +125,11 @@
 	<outfit type="1" looktype="931" name="Festive" premium="yes" unlocked="0" enabled="1" />
 	<outfit type="1" looktype="955" name="Pharaoh" premium="yes" unlocked="0" enabled="1" />
 	<outfit type="1" looktype="957" name="Trophy Hunter" premium="yes" unlocked="0" enabled="1" />
-	<outfit type="1" looktype="1023" name="Herbalist" premium="yes" unlocked="0" enabled="1" />
-	<outfit type="1" looktype="1025" name="Sun Priest" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="1" looktype="1020" name="Herbalist" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="1" looktype="1023" name="Sun Priest" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="1" looktype="1050" name="Siege Master" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="1" looktype="1056" name="Mercenary" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="1" looktype="1069" name="Battle Mage" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="1" looktype="1094" name="Discoverer" premium="yes" unlocked="0" enabled="1" />
+	<outfit type="1" looktype="1102" name="Sinister Archer" premium="yes" unlocked="0" enabled="1" />
 </outfits>

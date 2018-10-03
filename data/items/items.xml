@@ -1760,10 +1760,14 @@
 	<item id="2036" article="a" name="watch">
 		<attribute key="weight" value="50" />
 	</item>
-	<item id="2037" article="a" name="wall lamp" />
-	<item id="2038" article="a" name="lit wall lamp" />
-	<item id="2039" article="a" name="wall lamp" />
-	<item id="2040" article="a" name="lit wall lamp" />
+	<item id="2037" article="a" name="wall lamp">
+	</item>
+	<item id="2038" article="a" name="lit wall lamp">
+	</item>
+	<item id="2039" article="a" name="wall lamp">
+	</item>
+	<item id="2040" article="a" name="lit wall lamp">
+	</item>
 	<item id="2041" article="a" name="candelabrum">
 		<attribute key="slotType" value="ammo" />
 		<attribute key="weight" value="5000" />
@@ -13595,6 +13599,8 @@
     <item id="7678" name="flower pot">
         <attribute key="description" value="The plant in there sprouted, but only gardeners might recognise what it will develop into."/>
         <attribute key="weight" value="150"/>
+        <attribute key="decayTo" value="7655"/>
+        <attribute key="duration" value="86400"/>
     </item>
     <item id="7679" name="flower pot">
         <attribute key="description" value="Something has been planted in there, but you cannot see what it is yet."/>
@@ -29391,8 +29397,12 @@
 	<item fromid="21132" toid="21133" article="a" name="tree branch" />
 	<item id="21134" article="an" name="enormous tree" />
 	<item id="21135" article="a" name="tree branch" />
-	<item fromid="21155" toid="21170" article="a" name="small brook" />
-	<item fromid="21171" toid="21178" article="a" name="small stream" />
+	<item fromid="21155" toid="21170" article="a" name="small brook">
+		<attribute key="fluidSource" value="water" />
+	</item>
+	<item fromid="21171" toid="21178" article="a" name="small stream">
+		<attribute key="fluidSource" value="water" />
+	</item>
 	<item fromid="21179" toid="21182" article="an" name="enormous glowing fruit" />
 	<item fromid="21183" toid="21191" name="ferns" />
 	<item id="21192" name="teal leaves" />
@@ -36196,70 +36206,492 @@
 		<attribute key="slotType" value="ammo" />
 		<attribute key="weight" value="500" />
 	</item>
-	<item id="26349" article="a" name="Dog House">
-		<attribute key="decayTo" value="26361" />
+	<item id="26349" article="a" name="Rustic Chair">
+		<attribute key="rotateTo" value="26350" />
+    </item>
+     <item id="26350" article="a" name="Rustic Chair">
+		<attribute key="rotateTo" value="26351"/>
+    </item>
+	<item id="26351" article="a" name="Rustic Chair">
+		<attribute key="rotateTo" value="26352" />
+    </item>
+	<item id="26352" article="a" name="Rustic Chair">
+		<attribute key="rotateTo" value="26349" />
+	</item>
+	<item id="26353" article="a" name="Dog House">
+		<attribute key="decayTo" value="26359" />
 		<attribute key="duration" value="15" />
 	</item>
-	<item id="26360" article="a" name="Dog House">
-		<attribute key="decayTo" value="26349" />
-		<attribute key="duration" value="300" />
+	<item id="26354" article="a" name="Rustic Table">
+		<attribute key="rotateTo" value="26355" />
 	</item>
-	<item id="26361" article="a" name="Dog House">
-		<attribute key="decayTo" value="26360" />
-		<attribute key="duration" value="10" />
+	<item id="26355" article="a" name="Rustic Table">
+	    <attribute key="rotateto" value="26354" />
 	</item>
-	<item id="27665" article="a" name="Vengothic Lamp">
+	<item id="26356" article="a" name="Rustic Cabinet">
+		<attribute key="containerSize" value="30" />
+		<attribute key="rotateTo" value="26357" />
+	</item>
+	<item id="26357" article="a" name="Rustic Cabinet">
+		<attribute key="containerSize" value="30" />
+		<attribute key="rotateTo" value="26356" />
+	</item>		
+	<item id="26358" article="a" name="Rustic Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="26360" />
+	</item>	
+	<item id="26359" article="a" name="Dog House">
+		<attribute key="decayTo" value="26364" />
+		<attribute key="duration" value="5" />
+	</item>
+	<item id="26360" article="a" name="Rustic Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="26361" />
+	</item>		
+	<item id="26361" article="a" name="Rustic Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="26362" />
+	</item>		
+	<item id="26362" article="a" name="Rustic Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="26358" />
+	</item>
+	<item id="26363" article="a" name="Rolled-up Crimson Carpet">
+	</item>
+	<item id="26364" article="a" name="Dog House">
+		<attribute key="decayTo" value="26365" />
+		<attribute key="duration" value="15" />
+	</item>
+	<item id="26365" article="a" name="Dog House">
+		<attribute key="decayTo" value="26353" />
+		<attribute key="duration" value="15" />
+	</item>
+	<item id="26366" article="a" name="Rolled-up Azure Carpet">
+	</item>
+	<item id="26367" article="a" name="Rolled-up Emerald Carpet">
+	</item>
+	<item id="26368" article="a" name="Rolled-up Light Parquet">
+	</item>
+	<item id="26369" article="a" name="Rolled-up Dark Parquet">
+	</item>
+	<item id="26370" article="a" name="Rolled-up Marble Floor">
+	</item>
+	<item id="26371" article="a" name="Crimson Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="26372" article="a" name="Azure Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="26373" article="a" name="Emerald Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="26374" article="a" name="Light Parquet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="26375" article="a" name="Dark Parquet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="26376" article="a" name="Marble Floor">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>  
+	
+	<item id="27072" article="a" name="Rolled-up Colorful Carpet" />
+	<item id="27073" article="a" name="Rolled-up Flowery Carpet" />
+	<item id="27074" article="a" name="Rolled-up Striped Carpet" />
+	<item id="27075" article="a" name="Rolled-up Fur Carpet" />
+	<item id="27076" article="a" name="Rolled-up Diamond Carpet" />
+	<item id="27077" article="a" name="Rolled-up Patterned Carpet" />
+	<item id="27078" article="a" name="Rolled-up Night Sky Carpet" />
+	<item id="27079" article="a" name="Rolled-up Star Carpet" />                
+	<item id="27080" article="a" name="Colorful Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="27081" article="a" name="Flowery Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" /> 
+	</item>
+	<item id="27082" article="a" name="Striped Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="27083" article="a" name="Fur Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="27084" article="a" name="Diamond Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="27085" article="a" name="Patterned Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="27086" article="a" name="Night Sky Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="27087" article="a" name="Star Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />       
+	</item>
+	<item id="27088" article="a" name="Parrot" />
+	<item id="27089" article="a" name="Parrot" />
+	<item id="27866" article="a" name="Vengothic Lamp">
 		<attribute key="decayTo" value="27666" />
 		<attribute key="duration" value="300" />
 	</item>	
-	<item id="27666" article="a" name="Vengothic Lamp">
+	<item id="27867" article="a" name="Vengothic Lamp">
 		<attribute key="decayTo" value="27667" />
 		<attribute key="duration" value="300" />
 	</item>	
-	<item id="27667" article="a" name="Vengothic Lamp" />
-	<item id="27676" article="a" name="Vengothic Chair">
-		<attribute key="rotateTo" value="27677" />
+	<item id="27868" article="a" name="Vengothic Lamp" />
+	<item id="27877" article="a" name="Vengothic Chair">
+		<attribute key="rotateTo" value="27878" />
 	</item>
-	<item id="27677" article="a" name="Vengothic Chair">
-		<attribute key="rotateTo" value="27678" />
+	<item id="27878" article="a" name="Vengothic Chair">
+		<attribute key="rotateTo" value="27879" />
 	</item>
-	<item id="27678" article="a" name="Vengothic Chair">
-		<attribute key="rotateTo" value="27679" />
+	<item id="27879" article="a" name="Vengothic Chair">
+		<attribute key="rotateTo" value="27880" />
 	</item>
-	<item id="27679" article="a" name="Vengothic Chair">
-		<attribute key="rotateTo" value="27676" />
+	<item id="27880" article="a" name="Vengothic Chair">
+		<attribute key="rotateTo" value="27877" />
 	</item>
-	<item id="27680" article="a" name="Vengothic Table">
-		<attribute key="rotateTo" value="27681" />
+	<item id="27881" article="a" name="Vengothic Table">
+		<attribute key="rotateTo" value="27882" />
 	</item>
-	<item id="27681" article="a" name="Vengothic Table">
-		<attribute key="rotateTo" value="27680" />
+	<item id="27882" article="a" name="Vengothic Table">
+		<attribute key="rotateTo" value="27881" />
 	</item>
-	<item id="27682" article="a" name="Vengothic Cabinet">
+	<item id="27883" article="a" name="Vengothic Cabinet">
 		<attribute key="containerSize" value="30" />
-		<attribute key="rotateTo" value="27683" />
+		<attribute key="rotateTo" value="27884" />
 	</item>
-	<item id="27683" article="a" name="Vengothic Cabinet">
+	<item id="27884" article="a" name="Vengothic Cabinet">
 		<attribute key="containerSize" value="30" />
-		<attribute key="rotateTo" value="27682" />
+		<attribute key="rotateTo" value="27883" />
 	</item>
-	<item id="27684" article="a" name="Vengothic Chest">  
-		<attribute key="rotateTo" value="27685" />
+	<item id="27885" article="a" name="Vengothic Chest">  
+		<attribute key="rotateTo" value="27886" />
 		<attribute key="containerSize" value="20" />
 	</item>
-	<item id="27685" article="a" name="Vengothic Chest">
-		<attribute key="rotateTo" value="27686" />
+	<item id="27886" article="a" name="Vengothic Chest">
+		<attribute key="rotateTo" value="27887" />
 		<attribute key="containerSize" value="20" />
 	</item>
-	<item id="27686" article="a" name="Vengothic Chest">
-		<attribute key="rotateTo" value="27687" />
+	<item id="27887" article="a" name="Vengothic Chest">
+		<attribute key="rotateTo" value="27888" />
 		<attribute key="containerSize" value="20" />
 	</item>
-	<item id="27687" article="a" name="Vengothic Chest">
-		<attribute key="rotateTo" value="27684" />
+	<item id="27888" article="a" name="Vengothic Chest">
+		<attribute key="rotateTo" value="27885" />
 		<attribute key="containerSize" value="20" />
 	</item>
-		
+	<item id="28732" article="an" name="empty bath tub">
+	</item>
+	<item id="28733" article="a" name="full bath tub">
+		<attribute key="description" value="A very inviting bath tub." />
+		<attribute key="forceSerialize" value="1" />
+	</item>
+	<item id="28734" article="a" name="Terrarium Spider">
+		<attribute key="decayTo" value="28735" />
+		<attribute key="duration" value="5" />
+	</item>
+	<item id="28735" article="a" name="Terrarium Spider">
+		<attribute key="decayTo" value="28736" />
+		<attribute key="duration" value="60" />
+	</item>
+	<item id="28736" article="a" name="Terrarium Spider">
+		<attribute key="decayTo" value="28734" />
+		<attribute key="duration" value="60" />
+	</item>
+	<item id="28737" article="a" name="Hrodmiran Weapons Rack">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="28738" />	
+	</item>	
+	<item id="28738" article="a" name="Hrodmiran Weapons Rack">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="28737" />	
+	</item>	
+	<item id="28739" article="a" name="Hrodmiran Weapons Rack">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="28740" />
+	</item>
+	<item id="28740" article="a" name="Hrodmiran Weapons Rack">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="28739" />
+	</item>
+	<item id="28757" article="a" name="Verdant Chair">
+		<attribute key="rotateTo" value="28758" />
+	</item>		
+	<item id="28758" article="a" name="Verdant Chair">
+		<attribute key="rotateTo" value="28759" />
+	</item>	
+	<item id="28759" article="a" name="Verdant Chair">
+		<attribute key="rotateTo" value="28760" />
+	</item>		
+	<item id="28760" article="a" name="Verdant Chair">
+		<attribute key="rotateTo" value="28757" />
+	</item>					
+	<item id="28761" article="a" name="Verdant Cabinet">
+		<attribute key="containerSize" value="30" />
+		<attribute key="rotateTo" value="28762" />
+	</item>	
+	<item id="28762" article="a" name="Verdant Cabinet">
+		<attribute key="containerSize" value="30" />
+		<attribute key="rotateTo" value="28761" />
+	</item>		
+	<item id="28763" article="a" name="Verdant Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="28764" />
+	</item>		
+	<item id="28764" article="a" name="Verdant Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="28765" />
+	</item>		
+	<item id="28765" article="a" name="Verdant Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="28766" />
+	</item>		
+	<item id="28766" article="a" name="Verdant Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="28763" />
+	</item>
+	<item id="28767" article="a" name="Verdant Table" />
+	<item id="28768" article="a" name="Venorean Clock">
+		<attribute key="rotateTo" value="28769" />
+	</item>		
+	<item id="28769" article="a" name="Venorean Clock">
+		<attribute key="rotateTo" value="28768" />
+	</item>	
+	<item id="28770" article="a" name="Rolled-up Verdant Carpet">
+	</item>
+	<item id="28771" article="a" name="Verdant Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="28772" article="a" name="Rolled-up Shaggy Carpet">
+	</item>
+	<item id="28773" article="a" name="Shaggy Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="28774" article="a" name="Rolled-up Mystic Carpet">
+	</item>
+	<item id="28775" article="a" name="Mystic Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="28776" article="a" name="Rolled-up Pile of Stone Tiles">
+	</item>
+	<item id="28777" article="a" name="Pile of Stone Tiles">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="28778" article="a" name="Rolled-up Wooden Planks">
+		<attribute key="forceserialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="28779" article="a" name="Wooden Planks">>
+	</item>
+	<item id="28806" article="a" name="Wheat Carpet">
+	</item>
+	<item id="28807" article="a" name="Rolled-up Wheat Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="28808" article="a" name="Rolled-up Crested Carpet">
+	</item>
+	<item id="28809" article="a" name="Crested Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="28810" article="a" name="Rolled-up Decorated Carpet">
+	</item>
+	<item id="28811" article="a" name="Decorated Carpet">
+		<attribute key="forceSerialize" value="1" />
+		<attribute key="weight" value="1000" />
+	</item>	
+	<item id="28812" article="a" name="Ornate Chair">
+		<attribute key="rotateTo" value="28813" />
+	</item>
+	<item id="28813" article="a" name="Ornate Chair">
+		<attribute key="rotateTo" value="28814" />
+	</item>
+	<item id="28814" article="a" name="Ornate Chair">
+		<attribute key="rotateTo" value="28812" />
+	</item>
+	<item id="28816" article="a" name="Ornate Table">
+	    <attribute key="rotateto" value="28817" />	
+	</item>
+	<item id="28817" article="a" name="Ornate Table">
+	    <attribute key="rotateto" value="28816" /> 
+	</item>
+	<item id="28818" article="a" name="Ornate Cabinet">
+		<attribute key="containerSize" value="30" />
+		<attribute key="rotateTo" value="28819" />   
+	</item>
+	<item id="28819" article="a" name="Ornate Cabinet">
+		<attribute key="containerSize" value="30" />
+		<attribute key="rotateTo" value="28818" />	
+	</item>
+	<item id="28820" article="a" name="Ornate Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="28821" />
+	</item>
+	<item id="28821" article="a" name="Ornate Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="28822" />	
+	</item>
+	<item id="28822" article="a" name="Ornate Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="28823" />	
+	</item>
+	<item id="28823" article="a" name="Ornate Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="28820" />	
+	</item>
+	<item id="28825" article="a" name="Terrarium Snake">
+		<attribute key="decayTo" value="28828" />
+		<attribute key="duration" value="5" />
+	</item>
+	<item id="28826" article="a" name="Terrarium Snake">
+		<attribute key="decayTo" value="28827" />
+		<attribute key="duration" value="300" />
+	</item>
+	<item id="28827" article="a" name="Terrarium Snake">
+		<attribute key="decayTo" value="28825" />
+		<attribute key="duration" value="300" />
+	</item>
+	<item id="28828" article="a" name="Terrarium Snake">
+		<attribute key="decayTo" value="28826" />
+		<attribute key="duration" value="300" />
+	</item>
+	<item id="29617" article="a" name="Alchemistic Chair">
+		<attribute key="rotateTo" value="29618" />
+	</item>
+	<item id="29618" article="a" name="Alchemistic Chair">
+		<attribute key="rotateTo" value="29617" />
+	</item>
+	<item id="29619" article="a" name="Alchemistic Cabinet">
+		<attribute key="containerSize" value="30" />
+		<attribute key="rotateTo" value="29620" />	
+	</item>
+	<item id="29620" article="a" name="Alchemistic Cabinet">
+		<attribute key="containerSize" value="30" />
+		<attribute key="rotateTo" value="29619" />
+	</item>	
+	<item id="29621" article="a" name="Alchemistic Table">
+	    <attribute key="rotateto" value="29622" />	
+	</item>
+	<item id="29622" article="a" name="Alchemistic Table">
+	    <attribute key="rotateto" value="29621" />	
+	</item>       			
+	
+	<item id="30677" article="a" name="Skeletal Chair">
+	    <attribute key="rotateto" value="30679" />
+    </item>
+    <item id="30678" article="a" name="Skeletal Chair">
+	    <attribute key="rotateto" value="30677" />
+    </item>
+    <item id="30679" article="a" name="Skeletal Chair">
+        <attribute key="rotateto" value="30680" />
+    </item>
+    <item id="30680" article="a" name="Skeletal Chair">
+        <attribute key="rotateto" value="30678" />
+    </item>
+    <item id="30681" article="a" name="Skeletal Table">
+        <attribute key="rotateto" value="30682" />
+    </item>
+    <item id="30682" article="a" name="Skeletal Table">  
+        <attribute key="rotateto" value="30681" />
+    </item>
+    
+    <item id="30683" artilce="a" name="Skeletal Trunk">
+		 <attribute key="containerSize" value="20" />
+		 <attribute key="rotateto" value="30684" />
+	</item>	 
+    <item id="30684" article="a" name="Skeletal Trunk">
+	    <attribute key="containerSize" value="20" />
+        <attribute key="rotateto" value="30685" />
+    </item>
+    <item id="30685" article="a" name="Skeletal Trunk">
+	    <attribute key="containerSize" value="20" />
+	    <attribute key="rotateto" value="30686" />
+    </item>
+    <item id="30686" article="a" name="Skeletal Trunk">
+	    <attribute key="containerSize" value="20" />
+	    <attribute key="rotateto" value="30683" />
+    </item>
+    <item id="30687" article="a" name="Skeletal Cabinet">
+	    <attribute key="containerSize" value="30" />
+	    <attribute key="rotateto" value="30688" /> 
+    </item>
+    <item id="30688" article="a" name="Skeletal Cabinet">
+	    <attribute key="containerSize" value="30" />
+	    <attribute key="rotateto" value="30687" />
+    </item>
+	
+	<item id="30691" article="a" name="Pet Rotworm">
+		<attribute key="decayTo" value="30692" />
+		<attribute key="duration" value="15" />
+	</item>
+	<item id="30692" article="a" name="Pet Rotworm">
+		<attribute key="decayTo" value="30693" />
+		<attribute key="duration" value="2" />
+	</item>
+	<item id="30693" article="a" name="Pet Rotworm">
+		<attribute key="decayTo" value="30694" />
+		<attribute key="duration" value="10" />
+	</item>
+	<item id="30694" article="a" name="Pet Rotworm">
+		<attribute key="decayTo" value="30691" />
+		<attribute key="duration" value="2" />
+	</item>
+	
+	<item id="30933" article="a" name="Comfy Chair">
+	    <attribute key="rotateto" value="30934" />
+    </item>
+    <item id="30934" article="a" name="Comfy Chair">
+	    <attribute key="rotateto" value="30935" /> 
+    </item>
+    <item id="30937" article="a" name="Comfy Table">
+	    <attribute key="rotateto" value="30938" />   
+    </item>
+    <item id="30938" article="a" name="Comfy Table">
+	    <attribute key="rotateto" value="30937" />
+    </item>
+    <item id="30939" article="a" name="Comfy Trunk">
+	    <attribute key="containerSize" value="20" />
+	    <attribute key="rotateto" value="30940" />
+    </item>
+    <item id="30940" article="a" name="Comfy Trunk">
+	    <attribute key="containerSize" value="20" />
+		<attribute key="rotateto" value="30941" />
+	</item>
+	<item id="30941" article="a" name="Comfy Trunk">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateto" value="30942" />
+	</item>
+	<item id="30942" article="a" name="Comfy Trunk">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateto" value="30939" />
+	</item>
+	<item id="30943" article="a" name="Comfy Cabinet">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateto" value="30944" />
+	</item>
+	<item id="30944" article="a" name="Comfy Cabinet">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateto" value="30943" />
+	</item>
 	
 	<item id="30001" name="water" />
 	<item id="30002" name="blood" />

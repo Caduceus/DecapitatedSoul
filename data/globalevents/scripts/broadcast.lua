@@ -7,6 +7,7 @@ local t, i = {
 "[Server]: Blessings - [Free until level 80] Blessing Runes can be purchased from Brevans, located in the bottom of Purgatory Isle Temple. ", 
 "[Server]: Daily Tokens can be used to purchase Bless and VIP. See Adonai or Zagorim to earn tokens!",
 "[Server]: Coin timer will reset if logged out for more than 5 minutes. ",
+"[Server]: Please check our downloads page for up to date spr/dat packs. OTC launcher will not update sprites. http://decapitatedsoul.servegame.com/downloads.php ",
 }, 1
 
 function onThink(interval)

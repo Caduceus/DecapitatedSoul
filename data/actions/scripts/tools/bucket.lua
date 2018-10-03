@@ -17,18 +17,18 @@ local fluidMessage = {"Aah...", "Urgh!", "Mmmh.", "Aaaah...", "Aaaah...", "Urgh!
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 local chance = math.random (1,10)
-	if target.itemid == 28396 and item.type == 1 then
+	if target.itemid == 28732 and item.type == 1 then
 		item:transform(item.itemid, item.type - 1)
 		if chance <= 5 then
-			target:transform(28397)
-			player:sendTextMessage(MESSAGE_INFO_DESCR, "Your bathtub is full!")
+			target:transform(28733)
+			player:sendTextMessage(MESSAGE_INFO_DESCR, "Your bath tub is full!")
 		return true
 	end
-	elseif target.itemid == 28397 and item.type == 0 then
+	elseif target.itemid == 28733 and item.type == 0 then
 		item:transform(item.itemid, 1)
 		if chance <= 5 then
-			target:transform(28396)
-			player:sendTextMessage(MESSAGE_INFO_DESCR, "Your bathtub is empty!")
+			target:transform(28732)
+			player:sendTextMessage(MESSAGE_INFO_DESCR, "Your bath tub is empty!")
 		end
 		return true
 	end

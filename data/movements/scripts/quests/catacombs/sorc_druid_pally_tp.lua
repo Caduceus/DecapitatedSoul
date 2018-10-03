@@ -11,6 +11,7 @@ function onStepIn(cid, item, position, fromPosition)
 	  elseif isInArray({1,2,3}, player:getVocation():getBase():getId()) then 
             player:sendTextMessage(MESSAGE_INFO_DESCR, "You have completed the Catacombs Quest!")
             player:teleportTo(pos)
+            player:setStorageValue(Storage.sorayaMission.stormblast, 1)
    			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
    end
 end

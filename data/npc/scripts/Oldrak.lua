@@ -73,7 +73,7 @@ local function creatureSayCallback(cid, type, msg)
 		end
 	elseif msgcontains(msg, 'yes') and npcHandler.topic[cid] == 2 then
 		if player:getStorageValue(Storage.DemonOak.Progress) == 2 then
-			if player:getMoney() >= 1000 then
+			if player:getBankBalance() >= 1000 then
 				if player:removeItem(2386, 1) and player:removeMoneyNpc(1000) then
 					npcHandler:say("Let's see....<mumbles a prayer>....here we go. The blessing on this axe will be absorbed by all the demonic energy around here. I presume it will not last very long, so better hurry. Actually, I can refresh the blessing as often as you like.",cid)
 					player:addItem(8293, 1)
@@ -84,7 +84,7 @@ local function creatureSayCallback(cid, type, msg)
 					npcHandler.topic[cid] = 0
 				end
 			else
-				npcHandler:say("There is not enough of money with you.",cid)
+				npcHandler:say("You do not have enough money.",cid)
 				npcHandler.topic[cid] = 0
 			end
 		end

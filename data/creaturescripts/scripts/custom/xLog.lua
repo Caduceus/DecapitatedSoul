@@ -3,6 +3,7 @@ function onThink(creature)
 	if creature:getIp() == 0 then
 		creature:teleportTo(creature:getTown():getTemplePosition())
 		--creature:addSoul(-soul)
+		creature:setAccountStorageValue(accountStorage.accountLastLogout, os.time())
 		sendChannelMessage(9, TALKTYPE_CHANNEL_R1, ">> " .. creature:getName() .. " was kicked for X log or lost connection. " .. os.date("%m/%d/%Y at %H:%M:%S") .. "")
 		print(">> " .. creature:getName() .. " was kicked for X log or lost connection. " .. os.date("%m/%d/%Y at %H:%M:%S") .. "")
 		creature:remove()

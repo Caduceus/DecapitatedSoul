@@ -14,7 +14,7 @@ function onDeath(player, corpse, killer, mostDamageKiller, unjustified, mostDama
 	print("" .. os.date("%H:%M:%S") .. " - " .. player:getName() .. " has died.")
 	player:setAccountStorageValue(accountStorage.accountLastLogout, os.time())
 	player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "You are dead. Do not fret, failure is part of succeeding. Get up and try again.")
-	player:getPosition():sendMagicEffect(CONST_ME_BLOOD_DRIP)
+	--player:getPosition():sendMagicEffect(CONST_ME_BLOOD_DRIP)
 	if not deathListEnabled then
 		return
 	end

@@ -45,9 +45,9 @@
     <action itemid="9019" script="custom/modalMD.lua"/-->
 	<action uniqueid="9928" script="custom/hydra_scale_legs.lua"/>
 	<action itemid="9930" script="other/rustremover.lua"/>
-	<action itemid="7737" script="other/loot_crate.lua"/>
-	<action itemid="7739" script="other/loot_crate.lua"/>
-	<action itemid="9076" script="other/loot_crate.lua"/>
+	<action itemid="7737" script="other/treat_bags.lua"/>
+	<action itemid="7739" script="other/treat_bags.lua"/>
+	<action itemid="9076" script="other/treat_bags.lua"/>
 	<action itemid="10502" script="custom/spouse_ring.lua"/>
 	<action itemid="11198" script="custom/tarantula_egg.lua"/>
 	<action uniqueid="11241" script="custom/expedition_bp.lua"/>

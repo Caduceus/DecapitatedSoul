@@ -11,7 +11,7 @@
         <parameter key="keyword_reply3" value="I have an special watering can that will help you to water the pot, its recomanded to put the seeds in the pot, then water it to make it sprout." />
         <parameter key="keyword_reply4" value="In order to take care of your flower, you need a pot, some seeds which will become the flower, and a watering can in order to water the pot." />
 <parameter key="module_shop" value="1"/>
-    <parameter key="shop_buyable" value="flower pot,7655,50000;watering can,7734,50000;seeds,7732,50000"/>
+    <parameter key="shop_buyable" value="flower pot,7655,50000;watering can,7734,50000,0;seeds,7732,50000"/>
     <parameter key="message_needmoremoney" value="You need more money"/>
 </parameters>
 </npc>

@@ -13,10 +13,24 @@
 		<parameter key="keyword_reply1" value="I sell some of the most beautiful jewels in Tibia." />
 		<parameter key="module_shop" value="1" />
 		<parameter key="shop_buyable" value=" Wedding Ring,2121,100000" />
-		<parameter key="shop_sellable" value="engraved wedding ring,10502,10000;
+		
+		<parameter key="shop_sellable" value="club ring,2209,20000;
+											  bronze amulet,2172,5000; 
+											  crystal ring,2124,5000;
+											  dark rosary,11220,5000;
+											  death ring,6300,5500;
+											  engraved wedding ring,10502,10000;
+											  energy ring,2167,5000;
+											  emerald bangle,2127,5000;
+											  garlic necklace,2199,5500;
+											  might ring,2164,5500;
 											  platinum amulet,2171,2500;
+											  ring of healing,2214,5000;
 											  ring of the sky,2123,20000;
-											  ruby necklace,2133,9000
-											  "/>
+											  ruby necklace,2133,9000;
+											  stealth ring,2165,5000;
+											  silver amulet,2170,5500;
+											  wolf tooth chain,2129,5500
+										   "/><!--keep in alphabetical order-->
 	</parameters>
 </npc>
