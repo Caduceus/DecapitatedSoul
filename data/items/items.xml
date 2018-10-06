@@ -36595,102 +36595,108 @@
 	    <attribute key="rotateto" value="29621" />	
 	</item>       			
 	
-	<item id="30677" article="a" name="Skeletal Chair">
-	    <attribute key="rotateto" value="30679" />
+	<item id="30732" article="a" name="Skeletal Chair">
+	    <attribute key="rotateto" value="30734" />
     </item>
-    <item id="30678" article="a" name="Skeletal Chair">
-	    <attribute key="rotateto" value="30677" />
+    <item id="30733" article="a" name="Skeletal Chair">
+	    <attribute key="rotateto" value="30732" />
     </item>
-    <item id="30679" article="a" name="Skeletal Chair">
-        <attribute key="rotateto" value="30680" />
+    <item id="30734" article="a" name="Skeletal Chair">
+        <attribute key="rotateto" value="30735" />
     </item>
-    <item id="30680" article="a" name="Skeletal Chair">
-        <attribute key="rotateto" value="30678" />
+    <item id="30735" article="a" name="Skeletal Chair">
+        <attribute key="rotateto" value="30733" />
     </item>
-    <item id="30681" article="a" name="Skeletal Table">
-        <attribute key="rotateto" value="30682" />
+    <item id="30736" article="a" name="Skeletal Table">
+        <attribute key="rotateto" value="30737" />
     </item>
-    <item id="30682" article="a" name="Skeletal Table">  
-        <attribute key="rotateto" value="30681" />
+    <item id="30737" article="a" name="Skeletal Table">  
+        <attribute key="rotateto" value="30736" />
     </item>
     
-    <item id="30683" artilce="a" name="Skeletal Trunk">
+    <item id="30738" artilce="a" name="Skeletal Trunk">
 		 <attribute key="containerSize" value="20" />
-		 <attribute key="rotateto" value="30684" />
+		 <attribute key="rotateto" value="30739" />
 	</item>	 
-    <item id="30684" article="a" name="Skeletal Trunk">
+    <item id="30739" article="a" name="Skeletal Trunk">
 	    <attribute key="containerSize" value="20" />
-        <attribute key="rotateto" value="30685" />
+        <attribute key="rotateto" value="30740" />
     </item>
-    <item id="30685" article="a" name="Skeletal Trunk">
+    <item id="30740" article="a" name="Skeletal Trunk">
 	    <attribute key="containerSize" value="20" />
-	    <attribute key="rotateto" value="30686" />
+	    <attribute key="rotateto" value="30741" />
     </item>
-    <item id="30686" article="a" name="Skeletal Trunk">
+    <item id="30741" article="a" name="Skeletal Trunk">
 	    <attribute key="containerSize" value="20" />
-	    <attribute key="rotateto" value="30683" />
+	    <attribute key="rotateto" value="30738" />
     </item>
-    <item id="30687" article="a" name="Skeletal Cabinet">
+    <item id="30742" article="a" name="Skeletal Cabinet">
 	    <attribute key="containerSize" value="30" />
-	    <attribute key="rotateto" value="30688" /> 
+	    <attribute key="rotateto" value="30743" /> 
     </item>
-    <item id="30688" article="a" name="Skeletal Cabinet">
+    <item id="30743" article="a" name="Skeletal Cabinet">
 	    <attribute key="containerSize" value="30" />
-	    <attribute key="rotateto" value="30687" />
+	    <attribute key="rotateto" value="30742" />
     </item>
 	
-	<item id="30691" article="a" name="Pet Rotworm">
-		<attribute key="decayTo" value="30692" />
+	<item id="30746" article="a" name="Pet Rotworm">
+		<attribute key="decayTo" value="30747" />
 		<attribute key="duration" value="15" />
 	</item>
-	<item id="30692" article="a" name="Pet Rotworm">
-		<attribute key="decayTo" value="30693" />
+	<item id="30747" article="a" name="Pet Rotworm">
+		<attribute key="decayTo" value="30748" />
 		<attribute key="duration" value="2" />
 	</item>
-	<item id="30693" article="a" name="Pet Rotworm">
-		<attribute key="decayTo" value="30694" />
+	<item id="30748" article="a" name="Pet Rotworm">
+		<attribute key="decayTo" value="30749" />
 		<attribute key="duration" value="10" />
 	</item>
-	<item id="30694" article="a" name="Pet Rotworm">
-		<attribute key="decayTo" value="30691" />
+	<item id="30749" article="a" name="Pet Rotworm">
+		<attribute key="decayTo" value="30746" />
 		<attribute key="duration" value="2" />
 	</item>
 	
-	<item id="30933" article="a" name="Comfy Chair">
-	    <attribute key="rotateto" value="30934" />
+	<item id="30972" article="a" name="Comfy Chair">
+	    <attribute key="rotateto" value="30973" />
     </item>
-    <item id="30934" article="a" name="Comfy Chair">
-	    <attribute key="rotateto" value="30935" /> 
+    <item id="30973" article="a" name="Comfy Chair">
+	    <attribute key="rotateto" value="30974" /> 
     </item>
-    <item id="30937" article="a" name="Comfy Table">
-	    <attribute key="rotateto" value="30938" />   
+    <item id="30974" article="a" name="Comfy Chair">
+	    <attribute key="rotateto" value="30975" />   
     </item>
-    <item id="30938" article="a" name="Comfy Table">
-	    <attribute key="rotateto" value="30937" />
+    <item id="30975" article="a" name="Comfy Chair">
+	    <attribute key="rotateto" value="30972" />
     </item>
-    <item id="30939" article="a" name="Comfy Trunk">
+    <item id="30976" article="a" name="Comfy Table">
+	    <attribute key="rotateto" value="30977" />
+    </item>
+    <item id="30977" article="a" name="Comfy Table">
+	    <attribute key="rotateto" value="30976" />
+    </item>
+    <item id="30978" article="a" name="Comfy Trunk">
 	    <attribute key="containerSize" value="20" />
-	    <attribute key="rotateto" value="30940" />
+	    <attribute key="rotateto" value="30980" />
     </item>
-    <item id="30940" article="a" name="Comfy Trunk">
+    <item id="30979" article="a" name="Comfy Trunk">
 	    <attribute key="containerSize" value="20" />
-		<attribute key="rotateto" value="30941" />
+		<attribute key="rotateto" value="30978" />
 	</item>
-	<item id="30941" article="a" name="Comfy Trunk">
+	<item id="30980" article="a" name="Comfy Trunk">
 		<attribute key="containerSize" value="20" />
-		<attribute key="rotateto" value="30942" />
+		<attribute key="rotateto" value="30981" />
 	</item>
-	<item id="30942" article="a" name="Comfy Trunk">
+	<item id="30981" article="a" name="Comfy Trunk">
 		<attribute key="containerSize" value="20" />
-		<attribute key="rotateto" value="30939" />
+		<attribute key="rotateto" value="30979" />
 	</item>
-	<item id="30943" article="a" name="Comfy Cabinet">
+	<item id="30982" article="a" name="Comfy Cabinet">
 		<attribute key="containerSize" value="20" />
-		<attribute key="rotateto" value="30944" />
+		<attribute key="rotateto" value="30983" />
 	</item>
-	<item id="30944" article="a" name="Comfy Cabinet">
+	<item id="30983" article="a" name="Comfy Cabinet">
 		<attribute key="containerSize" value="20" />
-		<attribute key="rotateto" value="30943" />
+		<attribute key="rotateto" value="30982" />
 	</item>
 	
 	<item id="30001" name="water" />
