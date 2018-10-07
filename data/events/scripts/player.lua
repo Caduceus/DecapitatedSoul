@@ -9,6 +9,25 @@ function Player:onLook(thing, position, distance)
             description = description .. self:getMarriageDescription(thing)
         end
     end
+    local itemBonus = itemBonusConfig[thing:getId()]
+			if itemBonus then
+				local vocBonuses = itemBonus[self:getVocation():getBase():getId()]
+				if vocBonuses then
+					for _, v in pairs(vocBonuses) do
+						if v.string then
+							description = string.format("%s\n%d %s", description, v.value, v.string) --("%s\n+%d %s", description, v.value, v.string)
+						elseif v.strings then
+							local strings = {"+".. v.value .." "}
+							local size = #v.strings
+							for i = 1, size do
+								local string = v.strings[i]
+								strings[#strings+1] = string .. (i ~= size and ", " or "")
+							end
+							description = string.format("%s\n%s", description, table.concat(strings))
+						end
+					end
+				end
+			end
 	if self:getGroup():getAccess() then
 		if thing:isItem() then
 			description = string.format("%s\nItem ID: %d", description, thing:getId())
@@ -36,25 +55,6 @@ function Player:onLook(thing, position, distance)
 			local decayId = itemType:getDecayId()
 			if decayId ~= -1 then
 				description = string.format("%s\nDecays to: %d", description, decayId)
-			end
-			local itemBonus = itemBonusConfig[thing:getId()]
-			if itemBonus then
-				local vocBonuses = itemBonus[self:getVocation():getBase():getId()]
-				if vocBonuses then
-					for _, v in pairs(vocBonuses) do
-						if v.string then
-							description = string.format("%s\n%d %s", description, v.value, v.string) --("%s\n+%d %s", description, v.value, v.string)
-						elseif v.strings then
-							local strings = {"+".. v.value .." "}
-							local size = #v.strings
-							for i = 1, size do
-								local string = v.strings[i]
-								strings[#strings+1] = string .. (i ~= size and ", " or "")
-							end
-							description = string.format("%s\n%s", description, table.concat(strings))
-						end
-					end
-				end
 			end
 		elseif thing:isCreature() then
 			local str = "%s\nHealth: %d / %d"

@@ -84,8 +84,11 @@
 	<action itemid="26109" script="other/folded_carpet.lua"/>
 	<action itemid="26110" script="other/folded_carpet.lua"/>
 	<action itemid="26111" script="other/folded_carpet.lua"/>
-	<action itemid="28434" script="other/folded_carpet.lua"/>
-	<action itemid="28435" script="other/folded_carpet.lua"/>
+	<action itemid="26363" script="other/folded_carpet.lua"/>
+	<action fromid="26366" toid="26376" script="other/folded_carpet.lua"/>
+	<action fromid="27072" toid="27087" script="other/folded_carpet.lua"/>
+	<action fromid="28770" toid="28779" script="other/folded_carpet.lua"/>
+	<action fromid="28806" toid="28811" script="other/folded_carpet.lua"/>
 	
 		<!-- transformTo-->
 	<action itemid="18551" script="other/transformTo.lua"/>

@@ -18300,6 +18300,7 @@
 	</item>
 	<item id="10048" article="a" name="Buckethead">
 		<attribute key="weight" value="600" />
+		<attribute key="armor" value="4" />
 		<attribute key="slotType" value="head" />
 		<attribute key="description" value="Drives you crazy in the rain." />
 	</item>
@@ -35177,6 +35178,7 @@
 	<item id="26005" name="crater" />
 	<item id="26006" name="crater" />
 	<item id="26007" name="crater" />
+	<item id="26016" article="a" name="floor" />
 	<item id="26020" article="a" name="hole">
 		<attribute key="floorchange" value="down" />
 	</item>
@@ -36394,6 +36396,7 @@
 		<attribute key="rotateTo" value="27885" />
 		<attribute key="containerSize" value="20" />
 	</item>
+	<item id="28412" article="a" name="floor" />
 	<item id="28732" article="an" name="empty bath tub">
 	</item>
 	<item id="28733" article="a" name="full bath tub">
@@ -36595,6 +36598,7 @@
 	    <attribute key="rotateto" value="29621" />	
 	</item>       			
 	
+	<item fromid="30207" toid="30226" article="a" name="sectional couch" />
 	<item id="30732" article="a" name="Skeletal Chair">
 	    <attribute key="rotateto" value="30734" />
     </item>
