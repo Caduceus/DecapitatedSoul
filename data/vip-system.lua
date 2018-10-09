@@ -20,7 +20,7 @@
 local config = {
     -- true = player will be teleported to this position if Vip runs out
     -- false = player will not be teleported
-    useTeleport = true,
+    useTeleport = false,
     expirationPosition = Position(1018, 936, 7),
 
     -- true = player will received the message you set
