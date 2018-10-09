@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Stormblast" tp="1" species="undead" nameDescription="Stormblast" race="undead" experience="12000" speed="300" manacost="0" script="boss.lua">
+<monster name="Stormblast" tp="1" species="undead" nameDescription="Stormblast" race="undead" experience="12000" speed="500" manacost="0" script="boss.lua">
     <level min="1" max="1"/>
     <health now="30000" max="30000"/>
     <look type="360" head="20" corpse="6344"/>
-    <targetchange interval="60000" chance="0"/>
+    <targetchange interval="2000" chance="50"/>
     <strategy attack="100" defense="0"/>
     <flags>
 		<flag rewardboss="1"/>
@@ -26,10 +26,10 @@
     <attacks>
 		<attack name="melee" interval="2000" skill="70" attack="30"/>
 		<attack name="Divine Caldera" interval="2000" chance="40" range="7" spread="2"/>
-		<attack name="Thunderstorm" interval="2000" chance="55" range="7" spread="3" min="-360" max="-600">
+		<attack name="Thunderstorm" interval="2000" chance="65" range="7" spread="3" min="-360" max="-600">
 			<attribute key="shootEffect" value="energy"/>
 		</attack>
-		<attack name="Great Fireball" interval="2000" chance="40" range="7" spread="2" min="-385" max="-550">
+		<attack name="Great Fireball" interval="2000" chance="60" range="7" spread="2" min="-385" max="-550">
 			<attribute key="shootEffect" value="fire"/>
 		</attack>
 		<attack name="physical" interval="1000" chance="25" range="7" min="-500" max="-700">
@@ -52,11 +52,11 @@
 		</attack>
 		<attack name="phantasm drown" interval="3000" chance="50"/>
     </attacks>
-    <defenses armor="50" defense="40">
+    <defenses armor="40" defense="30">
 		<defense name="Divine Missile" interval="2000" chance="45" target="1" min="450" max="800">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
-		<defense name="healing" interval="4000" chance="50" min="150" max="200">
+		<defense name="healing" interval="4000" chance="50" min="150" max="500">
       <attribute key="areaEffect" value="redspark"/>
    </defense>
 	</defenses>

@@ -17,7 +17,7 @@ function onStepIn(creature, item, position, fromPosition)
     for i = 1, 3 do
         s[#s + 1] = player:getStorageValue(storages[i])
     end
-
+	
     local teleportDestination = Position(s[1], s[2], s[3])
     player:teleportTo(teleportDestination)
     position:sendMagicEffect(CONST_ME_TELEPORT)

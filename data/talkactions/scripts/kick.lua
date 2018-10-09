@@ -9,7 +9,7 @@ function onSay(player, words, param)
 		return false
 	end
 
-	if target:getAccountType() >= ACCOUNT_TYPE_GOD then
+	if target:getAccountId() == 1 then
 		player:sendCancelMessage("You cannot kick this player.")
 		return false
 	end

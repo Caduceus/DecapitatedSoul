@@ -98,7 +98,7 @@
         <vocation name="Warlord Templar"/>
 	</instant>
 	
-	<instant group="healing" spellid="9" name="Aura Sphere" words="aura of protection" lvl="80" mana="400" params="0" aggressive="0" cooldown="180000" groupcooldown="5000" needlearn="0" script="support/aura_knight_templar.lua">
+	<instant group="healing" spellid="9" name="Aura Sphere" words="aura of protection" lvl="80" mana="400" params="0" aggressive="0" cooldown="180000" groupcooldown="5000" needlearn="0" script="support/aura_templar.lua">
 		<vocation name="Templar"/>
         <vocation name="Noble Templar"/>
         <vocation name="Warlord Templar"/>

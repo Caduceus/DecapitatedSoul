@@ -308,6 +308,7 @@
 	<action itemid="22875" function="decreaseItemId"/>
 	<action itemid="24331" function="increaseItemId"/>
 	<action itemid="24809" function="increaseItemId"/>
+	<action itemid="24810" function="decreaseItemId"/>
 	<action itemid="25390" function="increaseItemId"/>
 	<action itemid="25391" function="decreaseItemId"/>
 	<action itemid="25392" function="increaseItemId"/>

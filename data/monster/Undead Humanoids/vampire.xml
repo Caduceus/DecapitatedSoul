@@ -21,7 +21,7 @@
 		<attack name="lifedrain" interval="2000" chance="40" target="1" range="1" min="-100" max="-120">
 			<attribute key="areaEffect" value="smallclouds"/>
 		</attack>
-		<attack name="bleedcondition" interval="2000" chance="30" radius="6" min="-50" max="-100">
+		<attack name="bleedcondition" interval="2000" chance="30" radius="6" min="-250" max="-300">
 			<attribute key="areaEffect" value="bats"/>
 		</attack>
 	</attacks>

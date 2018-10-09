@@ -13,8 +13,9 @@ local effects = {
 	{position = Position(1028, 1022, 15), text = 'Queimada'}, --Teleport Room
 	{position = Position(1031, 1022, 15), text = 'Purgatory Isle'}, --Teleport Room
 	{position = Position(1035, 1022, 15), text = 'Frozen Wastes'}, --Teleport Room
-	{position = Position(1038, 1022, 15), text = 'Checkers'}, --Teleport Room
+	{position = Position(1038, 1022, 15), text = 'Port Lonrich'}, --Teleport Room
 	{position = Position(1041, 1022, 15), text = 'PVP Arena'}, -- Teleport Room
+	{position = Position(1047, 939, 10), text = 'Checkers'}, -- Game Room | depot
 	{position = Position(1101, 1199, 7), text = '', effect = CONST_ME_FIREATTACK},  --Demon Oak
 	{position = Position(1088, 1215, 7), text = '', effect = CONST_ME_FIREATTACK},  --Demon Oak
 	{position = Position(1074, 1205, 7), text = '', effect = CONST_ME_FIREATTACK}, --Demon Oak

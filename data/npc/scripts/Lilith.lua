@@ -21,7 +21,7 @@ local missions = {
     monsters = {
        {name = "Hydra", count = 100, storage = 21908}
      },
-     message = "For your first stop, use the gargoyle statue just above {Riona}. Make your way to Queimada.",
+     message = "For your first stop, you will to make your way through the lush lands of Queimada.",
      level = 100, -- minimum level for this mission
      rewarditems = {
        {id = 2160, count = 5}

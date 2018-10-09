@@ -3967,20 +3967,23 @@
 	<item id="2493" article="a" name="demon helmet">
 		<attribute key="description" value="You hear an evil whispering from inside." />
 		<attribute key="weight" value="2950" />
-		<attribute key="armor" value="10" />
-		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="armor" value="20" />
+		<attribute key="absorbPercentIce" value="-30" />
+		<attribute key="absorbPercentFire" value="30" />
 		<attribute key="slotType" value="head" />
 	</item>
 	<item id="2494" article="a" name="demon armor">
 		<attribute key="weight" value="8000" />
-		<attribute key="armor" value="16" />
-		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="armor" value="20" />
+		<attribute key="absorbPercentIce" value="-30" />
+		<attribute key="absorbPercentFire" value="30" />
 		<attribute key="slotType" value="body" />
 	</item>
 	<item id="2495" name="demon legs">
 		<attribute key="weight" value="7000" />
-		<attribute key="armor" value="9" />
-		<attribute key="absorbPercentFire" value="5" />
+		<attribute key="armor" value="20" />
+		<attribute key="absorbPercentIce" value="-30" />
+		<attribute key="absorbPercentFire" value="30" />
 		<attribute key="slotType" value="legs" />
 	</item>
 	<item id="2496" article="a" name="horned helmet">
@@ -32280,7 +32283,14 @@
 		<attribute key="maxHitChance" value="91" />
 	</item>
 	<item fromid="23846" toid="23868" name="lava" />
-	<item fromid="23857" toid="23851" name="lava" />
+	<item fromid="23857" toid="23851" name="lava" >
+		<attribute key="field" value="fire">
+			<attribute key="damage" value="20" />
+			<attribute key="ticks" value="4000" />
+			<attribute key="count" value="2" />
+			<attribute key="damage" value="10" />
+		</attribute>
+	</item>
 	<item id="23877" article="a" name="sea wall" />
 	<item id="23878" article="a" name="sea wall" />
 	<item id="23879" article="a" name="sea wall" />
@@ -33071,10 +33081,11 @@
 	</item>
 	<item id="24809" article="a" name="dark wizard's crown">
 		<attribute key="weight" value="1500" />
+		<attribute key="armor" value="40" />
+		<attribute key="slotType" value="head" />
 	</item>
 	<item id="24810" article="a" name="dark wizard's crown">
 		<attribute key="weight" value="1500" />
-		<attribute key="duration" value="20" />
 	</item>
 	<item id="24827" article="a" name="ogre klubba">
 		<attribute key="weight" value="9700" />
@@ -33817,11 +33828,7 @@
 		<attribute key="range" value="3" />		
 	</item>
 	<item id="25888" article="a" name="Rod of Mayhem">
-		<attribute key="description" value="This weapon can be charged." />
-		<attribute key="weight" value="3500" />
-		<attribute key="weaponType" value="wand" />
-		<attribute key="shootType" value="smallice" />
-		<attribute key="range" value="3" />		
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="25889" article="a" name="Blade of Mayhem (charged)">
 		<attribute key="weight" value="5000" />
@@ -36208,6 +36215,11 @@
 		<attribute key="slotType" value="ammo" />
 		<attribute key="weight" value="500" />
 	</item>
+	
+	<item id="26347" article="a" name="Fish in a tank">
+		<attribute key="weight" value="1000" />
+	</item>
+	
 	<item id="26349" article="a" name="Rustic Chair">
 		<attribute key="rotateTo" value="26350" />
     </item>
@@ -36301,7 +36313,48 @@
 	<item id="26376" article="a" name="Marble Floor">
 		<attribute key="forceSerialize" value="1" />
 		<attribute key="weight" value="1000" />
-	</item>  
+	</item> 
+	<item id="26377" article="a" name="Gold Pouch">
+		<attribute key="weight" value="1800" />
+		<attribute key="containerSize" value="8" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	
+	<item id="26379" article="a" name="Golden Dragon Tapestry">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="26380" article="a" name="Sword Tapestry">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="26381" article="a" name="Brocade Tapestry">
+		<attribute key="weight" value="1000" />
+	</item>
+	
+	<item id="27049" article="a" name="pillow backpack">
+		<attribute key="weight" value="1800" />
+		<attribute key="containerSize" value="20" />
+		<attribute key="slotType" value="backpack" />
+	</item>
+	<item id="27051" article="a" name="birthday backpack">
+		<attribute key="weight" value="1800" />
+		<attribute key="containerSize" value="25" />
+		<attribute key="slotType" value="backpack" />	
+	</item> 
+	<item id="27052" article="a" name="Birthday cake">
+		<attribute key="weight" value="1000" />
+	</item>	
+	<item id="27065" article="a" name="Filthy Bunnyslippers">
+		<attribute key="weight" value="600" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="27060" article="a" name="Tatty Dragon Scale Legs">
+		<attribute key="weight" value="600" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="27061" article="a" name="Rusty Winged Helmet">
+		<attribute key="weight" value="600" />
+		<attribute key="slotType" value="head" />
+	</item>
 	
 	<item id="27072" article="a" name="Rolled-up Colorful Carpet" />
 	<item id="27073" article="a" name="Rolled-up Flowery Carpet" />
@@ -36345,6 +36398,35 @@
 	</item>
 	<item id="27088" article="a" name="Parrot" />
 	<item id="27089" article="a" name="Parrot" />
+	
+	<item id="27606" article="a" name="Framed Birthday Card">
+		<attribute key="description" value="A birthday card lovingly framed to show they care about you" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="27607" article="a" name="Gilded Birthday Cup">
+		<attribute key="weight" value="1000" />
+	</item>
+	
+	<item id="27744" article="a" name="Porcelain Mask">
+		<attribute key="weight" value="600" />
+		<attribute key="slotType" value="head" />
+	</item>
+	
+	<item id="27861" article="a" name="Tapestry of Honour">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="27862" article="a" name="Tapestry of Honour">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="27863" article="a" name="Tapestry of Honour">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="27864" article="a" name="Tapestry of Honour">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="27865" article="a" name="Tapestry of Honour">
+		<attribute key="weight" value="1000" />
+	</item>
 	<item id="27866" article="a" name="Vengothic Lamp">
 		<attribute key="decayTo" value="27666" />
 		<attribute key="duration" value="300" />
@@ -36354,6 +36436,35 @@
 		<attribute key="duration" value="300" />
 	</item>	
 	<item id="27868" article="a" name="Vengothic Lamp" />
+	   	<item id="27869" article="a" name="Chameleon">
+		<attribute key="weight" value="1000" />
+   	</item>
+   	<item id="27870" article="a" name="Chameleon">
+		<attribute key="weight" value="1000" />
+   	</item>
+   	<item id="27871" article="a" name="Chameleon">
+		<attribute key="weight" value="1000" />
+   	</item>
+    <item id="27872" article="a" name="Blooming Cactus">
+		<attribute key="description" value="A beautiful cactus in bloom"/>
+		<attribute key="weight" value="1000" />
+   	</item>
+   	<item id="27873" article="a" name="Bitter-smack Leaf">
+		<attribute key="description" value="A fine bitter-smack plant"/>
+		<attribute key="weight" value="1000" />
+   	</item>
+   	<item id="27874" article="a" name="Pink Rose Bush">
+		<attribute key="description" value="A fully bloomed sweet smelling pink rose bush."/>
+		<attribute key="weight" value="1000" />	
+   	</item>
+   	<item id="27875" article="a" name="Red Rose Bush">
+		<attribute key="description" value="A fully bloomed sweet smelling red rose bush."/>
+		<attribute key="weight" value="1000" />
+   	</item>
+   	<item id="27876" article="a" name="Yellow Rose Bush">
+		<attribute key="description" value="A fully bloomed sweet smelling yellow rose bush."/>
+		<attribute key="weight" value="1000" />
+   	</item>
 	<item id="27877" article="a" name="Vengothic Chair">
 		<attribute key="rotateTo" value="27878" />
 	</item>
@@ -36396,7 +36507,32 @@
 		<attribute key="rotateTo" value="27885" />
 		<attribute key="containerSize" value="20" />
 	</item>
+	
+	<item id="28288" article="a" name="Loremaster Doll">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="28289" article="a" name="Loremaster Doll">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="28290" article="a" name="Loremaster Doll">
+		<attribute key="weight" value="1000" />
+	</item>
+	
+	<item id="28376" article="a" name="Reward Shrine">
+		<attribute key="rotateto" value="28377" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="28377" article="a" name="Reward Shrine">
+		<attribute key="rotateto" value="28376" />
+		<attribute key="weight" value="1000" />		
+	</item>
+	
 	<item id="28412" article="a" name="floor" />
+	<item id="28436" article="a" name="blossom bag">
+		<attribute key="weight" value="1800" />
+		<attribute key="containerSize" value="20" />
+		<attribute key="slotType" value="backpack" />	
+	</item>
 	<item id="28732" article="an" name="empty bath tub">
 	</item>
 	<item id="28733" article="a" name="full bath tub">
@@ -36431,6 +36567,10 @@
 		<attribute key="containerSize" value="20" />
 		<attribute key="rotateTo" value="28739" />
 	</item>
+	<item id="28741" article="a" name="Goromaphone">
+		<attribute key="weight" value="1000" />
+	</item>
+	
 	<item id="28757" article="a" name="Verdant Chair">
 		<attribute key="rotateTo" value="28758" />
 	</item>		
@@ -36577,6 +36717,13 @@
 		<attribute key="decayTo" value="28826" />
 		<attribute key="duration" value="300" />
 	</item>
+	
+	<item id="29478" article="a" name="Blue Spectacles">
+		<attribute key="weight" value="3000" />
+		<attribute key="armor" value="20" />
+		<attribute key="slotType" value="head" />
+	</item>
+	
 	<item id="29617" article="a" name="Alchemistic Chair">
 		<attribute key="rotateTo" value="29618" />
 	</item>
@@ -36596,9 +36743,76 @@
 	</item>
 	<item id="29622" article="a" name="Alchemistic Table">
 	    <attribute key="rotateto" value="29621" />	
-	</item>       			
+	</item> 
+	
+	<item id="29635" article="a" name="Alchemistic Bookstand">
+		<attribute key="weight" value="1000" />	
+	</item>
+	
+	<item id="29639" article="a" name="Alchemistic Scales">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="29640" article="a" name="Alchemistic Scales">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="29641" article="a" name="Alchemistic Scales">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="29642" article="a" name="Alchemistic Scales">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="29643" article="a" name="Unlit Pile of Alchemistic Books">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="29644" article="a" name="Lit Pile of Alchemistic Books">
+		<attribute key="weight" value="1000" />
+	</item>
+	
+	<item id="29648" article="a" name="Ferumbras Bust">
+		<attribute key="rotateto" value="29650" />
+		<attribute key="weight" value="1000" />
+	</item>
+	
+	<item id="29650" article="a" name="Ferumbras Bust">
+		<attribute key="rotateto" value="29648" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="29651" article="a" name="Queen Eloise Bust">
+		<attribute key="rotateto" value="29652" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="29652" article="a" name="Queen Eloise Bust">
+		<attribute key="rotateto" value="29651" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="29653" article="a" name="Dungeon Scene Painting">
+	<attribute key="weight" value="1000" />
+	</item>
+	<item id="29654" article="a" name="Arrival at Thais Painting">	
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="29655" article="a" name="Tibia Streets Painting">
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="29656" article="a" name="Ferumbras Portrait">
+		<attribute key="weight" value="1000" />
+	</item> 
+	
+	<item id="29658" article="a" name="King Tibianus Bust">
+		<attribute key="rotateto" value="29659" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="29659" article="a" name="King Tibianus Bust">
+		<attribute key="rotateto" value="29658" />
+		<attribute key="weight" value="1000" />
+	</item> 
+	
+	<item id="29662" article="a" name="Werefox Trophy">
+		<attribute key="weight" value="1000" />
+	</item>   			
 	
 	<item fromid="30207" toid="30226" article="a" name="sectional couch" />
+	<item fromid="30231" toid="30237" article="a" name="banner" />
 	<item id="30732" article="a" name="Skeletal Chair">
 	    <attribute key="rotateto" value="30734" />
     </item>
@@ -36660,6 +36874,30 @@
 		<attribute key="duration" value="2" />
 	</item>
 	
+	<item id="30956" article="a" name="demon boots">
+		<attribute key="weight" value="8000" />
+		<attribute key="armor" value="20" />
+		<attribute key="absorbPercentIce" value="-30" />
+		<attribute key="absorbPercentFire" value="30" />
+		<attribute key="slotType" value="feet" />
+	</item>
+	
+	<item id="30968" article="a" name="Stuffed Bear Display">
+		<attribute key="rotateto" value="30969"/>
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="30969" article="a" name="Stuffed Bear Display">
+		<attribute key="rotateto" value="30968"/>
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="30970" article="a" name="Stuffed Teddy Display">
+		<attribute key="rotateto" value="30971"/>
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="30971" article="a" name="Stuffed Teddy Display">
+		<attribute key="rotateto" value="30970"/> 
+		<attribute key="weight" value="1000" />
+	</item> 
 	<item id="30972" article="a" name="Comfy Chair">
 	    <attribute key="rotateto" value="30973" />
     </item>
@@ -36701,6 +36939,14 @@
 	<item id="30983" article="a" name="Comfy Cabinet">
 		<attribute key="containerSize" value="20" />
 		<attribute key="rotateto" value="30982" />
+	</item>
+	<item id="30987" article="a" name="Painting of Tibiasula">
+		<attribute key="description" value="Tibiasula pictured on this canvas" />
+		<attribute key="weight" value="1000" />
+	</item>
+	<item id="30988" article="a" name="Painting of Tibiasula">
+		<attribute key="description" value="Zathroth pictured on this canvas" />
+		<attribute key="weight" value="1000" />
 	</item>
 	
 	<item id="30001" name="water" />

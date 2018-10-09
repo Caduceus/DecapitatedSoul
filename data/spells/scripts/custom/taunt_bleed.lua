@@ -17,8 +17,8 @@ condition:addDamage(15, 2000, -50)
 combat:setCondition(condition)
 
 function onGetFormulaValues(player, skill, attack, factor)
-	local min = (player:getLevel() / 5) + (skill * attack * 0.06) + 13
-    local max = (player:getLevel() / 5) + (skill * attack * 0.14) + 34
+	local min = (player:getLevel() / 10) + (skill * attack * 0.06) + 13
+    local max = (player:getLevel() / 10) + (skill * attack * 0.14) + 34
     return -min, -max
 end 
 

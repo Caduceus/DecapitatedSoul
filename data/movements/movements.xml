@@ -188,6 +188,9 @@
 	</movevent>
 	<movevent event="DeEquip" itemid="10562" slot="head" script="setbonus.lua"/>
 	
+	<!--Other-->
+	<movevent event="StepIn" actionid="16025" script="other/training_chair.lua"/>
+	
 	<!-- Frozen Hell Rewards-->
 	
 	<movevent event="Equip" itemid="18390" slot="hand" level="250" script="onEquip_fh.lua">
@@ -870,7 +873,9 @@
 	<movevent event="StepIn" itemid="19788" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="19790" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="19825" script="citizen.lua"/>
+	<movevent event="StepIn" itemid="21155" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="22906" script="citizen.lua"/>
+	<movevent event="StepIn" itemid="28412" script="citizen.lua"/>
 
 	<!-- Walkback when walking on quest chest -->
 	<movevent event="StepIn" itemid="1738" script="walkback.lua"/>
@@ -1178,6 +1183,8 @@
         <vocation name="Warlord Druid" showInDescription="0"/>
 	</movevent>
 	<movevent event="DeEquip" itemid="21708" slot="feet" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="30956" slot="feet" level="200" function="onEquipItem"/>
+	<movevent event="DeEquip" itemid="30956" slot="feet" level="200" function="onDeEquipItem"/>
 
 	<!-- Amulets -->
 	<movevent event="Equip" itemid="2129" slot="necklace" level="30" function="onEquipItem"/>
@@ -1586,6 +1593,9 @@
         <vocation name="Warlord Druid" showInDescription="0"/>
 	</movevent>
 	<movevent event="DeEquip" itemid="13756" slot="head" function="onDeEquipItem"/>
+	
+	<movevent event="Equip" itemid="24809" slot="head" level="400" function="onEquipItem"/>
+	<movevent event="DeEquip" itemid="24809" slot="head" function="onDeEquipItem"/>
 
 	<!-- Armors -->
 	<movevent event="Equip" itemid="2466" slot="armor" function="onEquipItem">
