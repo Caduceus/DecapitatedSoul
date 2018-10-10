@@ -502,6 +502,8 @@ if (!empty($_GET)) {
 				<input name="update_thread_id" type="hidden" value="<?php echo $thread['id']; ?>">
 				<input name="update_thread_title" type="text" value="<?php echo $thread['title']; ?>" style="width: 500px;"><br><br>
 				<textarea name="update_thread_text" style="width: 610px; height: 300px"><?php echo $thread['text']; ?></textarea><br>
+				<p style="font-size: 13px; padding-left: 10px; padding-top: 10px; height: 5px; width: 600px; border-top: 1px solid black;"><b>[b]Bold Text[/b]</b>, [img]<a href="http://www.imgland.net/">Direct Image Link</a>[/img], [center]Cented Text[/center],<br> [link]<a href="http://youtube.com/" target="_BLANK">http://youtube.com/</a>[/link], [color=<font color="green">GREEN</font>]<font color="green">Green Text!</font>[/color], [*] - Dotted [/*]</p><br>
+				<br>
 				<input type="submit" value="Update Thread" class="btn btn-success">
 			</form>
 			<?php
@@ -715,7 +717,8 @@ if (!empty($_GET)) {
 							<input name="reply_thread" type="hidden" value="<?php echo $threadData['id']; ?>"><br>
 
 <p style="font-size: 13px; padding-left: 10px; padding-top: 10px; height: 5px; width: 600px; border-top: 1px solid black;"><b>[b]Bold Text[/b]</b>, [img]<a href="http://www.imgland.net/">Direct Image Link</a>[/img], [center]Cented Text[/center],<br> [link]<a href="http://youtube.com/" target="_BLANK">http://youtube.com/</a>[/link], [color=<font color="green">GREEN</font>]<font color="green">Green Text!</font>[/color], [*] - Dotted [/*]</p><br>
-
+<br>
+<br>
 							<textarea class="forumReply" name="reply_text" style="width: 610px; height: 150px"></textarea><br>
 							<select name="reply_cid" multiple="multiple">
 								<?php
