@@ -18,16 +18,19 @@ end
 local function secondServerSaveWarning()
 	broadcastMessage("Server will be performing the daily restart in 1 minute. Please be prepared for shutdown.", MESSAGE_STATUS_WARNING)
 	broadcastMessage("Server will be performing the daily restart in 1 minute. Please be prepared for shutdown.", MESSAGE_STATUS_CONSOLE_RED)
+	sendChannelMessage(3, TALKTYPE_CHANNEL_R1, "Server will be performing the daily restart in 1 minute. Please be prepared for shutdown.")
 	addEvent(serverSave, 60000)
 end
 
 local function firstServerSaveWarning()
 	broadcastMessage("Server will be performing the daily restart in 3 minutes. Please be prepared for shutdown.", MESSAGE_STATUS_WARNING)
+	sendChannelMessage(3, TALKTYPE_CHANNEL_R1, "Server will be performing the daily restart in 3 minutes. Please be prepared for shutdown.")
 	addEvent(secondServerSaveWarning, 120000)
 end
 
 function onTime(interval)
 	broadcastMessage("Server will be performing the daily restart in 5 minutes. Please be prepared for shutdown.", MESSAGE_STATUS_WARNING)
+	sendChannelMessage(3, TALKTYPE_CHANNEL_R1, "Server will be performing the daily restart in 5 minutes. Please be prepared for shutdown.")
 	Game.setGameState(GAME_STATE_STARTUP)
 	addEvent(firstServerSaveWarning, 120000)
 	return not shutdownAtServerSave

@@ -20,7 +20,8 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="-600" max="-750"/>
+		<attack name="melee" interval="2000" min="-800" max="-950"/>
+		<attack name="melee" interval="4000" min="-400" max="-650"/>
 		<attack name="fire" interval="1500" chance="30" range="7" radius="7" target="1" min="-450" max="-600">
 			<attribute key="shootEffect" value="fire"/>
 			<attribute key="areaEffect" value="firearea"/>
@@ -28,7 +29,7 @@
 		<attack name="firefield" interval="2000" chance="30" range="4" radius="4" target="1">
 			<attribute key="shootEffect" value="fire"/>
 		</attack>
-		<attack name="lifedrain" interval="1500" chance="40" length="8" spread="3" min="-550" max="-690">
+		<attack name="lifedrain" interval="1500" chance="40" length="8" spread="3" min="-350" max="-490">
 			<attribute key="areaEffect" value="purpleenergy"/>
 		</attack>
 		<attack name="energy strike" interval="2000" chance="30" range="1" min="-210" max="-300"/>

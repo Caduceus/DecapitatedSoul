@@ -12,7 +12,7 @@
         combat[i] = Combat()
         combat[i]:setParameter(COMBAT_PARAM_TYPE, COMBAT_HOLYDAMAGE)
         combat[i]:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_HOLYDAMAGE)
-        combat[i]:setFormula(COMBAT_FORMULA_LEVELMAGIC, -0.3, -0.5, -0.5, 0)
+        combat[i]:setFormula(COMBAT_FORMULA_LEVELMAGIC, -0.3, -0.5, -0.4, 0)
     end
 	
     local area = {

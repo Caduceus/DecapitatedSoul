@@ -1302,7 +1302,6 @@
 	<item fromid="1803" toid="1808" article="an" name="oriental carpet" />
 	<item id="1809" article="a" name="painting" />
 	<item id="1810" article="a" name="blackboard">
-		<attribute key="writeable" value="1" />
 		<attribute key="maxTextLen" value="1023" />
 	</item>
 	<item id="1811" article="a" name="blackboard">
@@ -1312,7 +1311,6 @@
 	<item fromid="1812" toid="1813" article="a" name="tapestry" />
 	<item id="1814" article="a" name="painting" />
 	<item id="1815" article="a" name="blackboard">
-			<attribute key="writeable" value="1" />
 			<attribute key="maxTextLen" value="1023" />
 	</item>
 	<item fromid="1816" toid="1817" article="a" name="wall mirror">
@@ -4043,7 +4041,7 @@
 	</item>
 	<item id="2506" article="a" name="dragon scale helmet">
 		<attribute key="weight" value="3250" />
-		<attribute key="armor" value="9" />
+		<attribute key="armor" value="12" />
 		<attribute key="slotType" value="head" />
 	</item>
 	<item id="2507" name="elven legs">

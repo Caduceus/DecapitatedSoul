@@ -9,10 +9,10 @@ tp_pads = {
    [8307] = {price = 50000, name = "Ghastly Dragon Section", storage = 99592},
    [8308] = {price = 50000, name = "Frost Dragon Section", storage = 99593},
    [8309] = {price = 100000, name = "Frozen Hell Inn", storage = 99594},
-   [8310] = {price = 50000, name = "Apocalypse Portal", storage = 99595},
+   [8310] = {price = 50000, name = "Cauldron Portal", storage = 99595},
    [8311] = {price = 50000, name = "Trigama Section", storage = 99596},
    [8312] = {price = 10000, name = "Demodras Section", storage = 99597},
-   [8313] = {price = 10000, name = "Warlock Section", storage = 99599},
+   [8313] = {price = 10000, name = "OUT OF ORDER", storage = 99599},
    
 
 }

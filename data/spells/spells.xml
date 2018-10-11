@@ -110,7 +110,7 @@
         <vocation name="Warlord Templar"/>
 	</instant>
 	
-	<instant group="attack" name="Holy Smokes" words="exevo san hur" lvl="50" mana="160" range="4" needtarget="0" needweapon="1" direction="1" aggressive="1" cooldown="4000" groupcooldown="4000" needlearn="0" script="custom/holy_smokes.lua">
+	<instant group="attack" name="Holy Smokes" words="exevo san hur" lvl="50" mana="160" range="4" needtarget="0" needweapon="1" direction="1" aggressive="1" cooldown="6000" groupcooldown="6000" needlearn="0" script="custom/holy_smokes.lua">
 		<vocation name="Templar"/>
         <vocation name="Noble Templar"/>
         <vocation name="Warlord Templar"/>

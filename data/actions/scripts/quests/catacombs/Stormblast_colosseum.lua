@@ -68,9 +68,9 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			player:sendTextMessage(MESSAGE_INFO_DESCR, "Good luck, ".. player:getName() .."!")
 			addEvent(broadcastMessage, 1 * 1000, "".. player:getName() .." started a solo battle on Stormblast!", MESSAGE_STATUS_WARNING)
 		end
-		if isInArray({4,9}, player:getVocation():getBase():getId()) then
+		if isInArray({3,4,9}, player:getVocation():getBase():getId()) then
             Game.createMonster(config.monsterName[2], config.monsterSpawnPosition)
-        elseif isInArray({1,2,3}, player:getVocation():getBase():getId()) then
+        elseif isInArray({1,2}, player:getVocation():getBase():getId()) then
 			Game.createMonster(config.monsterName[1], config.monsterSpawnPosition)
 		end
 

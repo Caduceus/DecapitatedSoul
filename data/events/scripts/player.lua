@@ -30,13 +30,10 @@ function Player:onLook(thing, position, distance)
 			end
 	if self:getGroup():getAccess() then
 		if thing:isItem() then
-			description = string.format("%s\nItem ID: %d", description, thing:getId())
+		local itemType = ItemType(thing:getId())
+			description = string.format("%s\nItem ID: %d - Client ID: %d" , description, thing:getId(),itemType:getClientId())
 			
-			local itemType = ItemType(thing:getId())
-			if thing:isItem() then
-				description = string.format("%s\nClient ID: %d", description, itemType:getClientId())
-			end
-			
+						
 			local actionId = thing:getActionId()
 			if actionId ~= 0 then
 				description = string.format("%s, Action ID: %d", description, actionId)

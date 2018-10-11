@@ -61,7 +61,7 @@
 		<item id="5944" chance="2300"/><!-- soul orb -->
 		<item id="7591" countmax="2" chance="1000"/><!-- great health potion -->
 		<item id="7590" countmax="2" chance="1830"/><!-- great mana potion -->
-		<item id="2645" chance="5050"/><!-- steel boots -->
+		<item id="2645" chance="2000"/><!-- steel boots -->
 		<item id="9971" chance="3140"/><!-- gold ingot -->
 		<item id="6500" chance="20"/><!-- demonic essence -->
 		<item id="2558" chance="5250"/><!-- saw -->

@@ -23,6 +23,7 @@ local config = {
         [2844] = {value = 15000, newItem = 5877},
 
         -- Dragon Lords
+        [5984] = {value = 15000, newItem = 5948},
         [2881] = {value = 60000, newItem = 5948},
        
         -- Demon

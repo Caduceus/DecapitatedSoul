@@ -88,7 +88,7 @@ function creatureSayCallback(cid, type, msg)
                  selfSay("The mission I gave you is for level "..x.level..", come back later.", cid)
              end
          else
-             selfSay("I recommend you go speak with {Soraya}. She may have more for you to do.", cid)
+             selfSay("Make your way to {Drogheda Temple}. Several others may need your assistance along the way. Good Luck!", cid)
              npcHandler:releaseFocus(cid)
          end
      elseif msgcontains(msg, 'yes') and npcHandler.topic[cid] == 1 then

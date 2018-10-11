@@ -29,7 +29,7 @@ local quests = {
      message = "Great, for your first quest you need to collect some items, I need",
      level = 12, -- minimum level for this quest15
      rewarditems = {
-       {id = 2160, count = 5}
+       {id = 2160, count = 2}
      },
      rewardexp = 4000
    },
@@ -41,7 +41,7 @@ local quests = {
      message = "Thanks, for your next quest kill",
      level = 25,
      rewarditems = {
-       {id = 2160, count = 10},
+       {id = 2160, count = 5},
        {id = 5908, count = 1}
      },
      rewardexp = 6000
@@ -54,7 +54,7 @@ local quests = {
      message = "Now that you've taken care of those pesky hatchlings. Go slay some Dragons! Be sure to take your new knife, it may be useful.",
      level = 40,
      rewarditems = {
-       {id = 2160, count = 15}
+       {id = 2160, count = 7}
      },
      rewardexp = 15000
    },
@@ -69,7 +69,7 @@ local quests = {
      message = "Good job, now kill off those damned blood suckers and bring me",
      level = 60,
      rewarditems = {
-       {id = 2160, count = 25}
+       {id = 2160, count = 15}
      },
      rewardexp = 30000
    },
@@ -81,7 +81,7 @@ local quests = {
      message = "Good, there are a few more items you need to get,",
      level = 75,
      rewarditems = {
-       {id = 2160, count = 50}
+       {id = 2160, count = 25}
      },
      rewardexp = 45000
    },
@@ -92,7 +92,7 @@ local quests = {
      message = "Locate the Catacombs to rid us of",
      level = 90,
      rewarditems = {
-       {id = 2160, count = 100}
+       {id = 2160, count = 50}
      },
      rewardexp = 200000
    },

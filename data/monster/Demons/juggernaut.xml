@@ -18,6 +18,7 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="200" attack="140" poison="100"/>
+		<attack name="melee" interval="4000" min="-800" max="-950"/>
 		<attack name="terra_exori" interval="4000" chance="30" target="0" min="-600" max="-1200"/>
 		<attack name="physical" interval="2000" chance="25" range="5" min="-700" max="-900">
 			<attribute key="shootEffect" value="largerock"/>

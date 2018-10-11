@@ -18,6 +18,7 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="-900" max="-1100"/>
+		<attack name="melee" interval="4000" min="-800" max="-950"/>
 		<attack name="lifedrain" interval="2000" chance="10" target="0" length="8" spread="3" min="-575" max="-880">
 			<attribute key="areaEffect" value="poff"/>
 		</attack>

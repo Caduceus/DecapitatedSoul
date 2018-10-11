@@ -19,6 +19,7 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="1000" min="-500" max="-700"/>
+		<attack name="melee" interval="2000" min="-800" max="-950"/>
 		<attack name="teleport to player" interval="5000" chance="50"/>
 		<attack name="death" interval="1500" chance="55" radius="3" range="6" target="1" min="-800" max="-1200">
 			<attribute key="shootEffect" value="death"/>

@@ -5,7 +5,7 @@ function onStepIn(creature, item, position, fromPosition)
 	end
 
 		if player:getItemCount(6500) > 0 then
-			player:teleportTo(Position(424, 524, 8))
+			player:teleportTo(Position(807, 667, 7))
 			player:removeItem(6500, 10)
 		else
 			player:teleportTo(fromPosition)

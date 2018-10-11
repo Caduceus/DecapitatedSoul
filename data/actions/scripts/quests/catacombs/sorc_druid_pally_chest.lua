@@ -9,7 +9,6 @@ local vocations = {
 
 local msg = ''
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-local book = player:addItem(6103, 1)
     if player:getStorageValue(storage) < 1 then
         for vocId, items in ipairs(vocations) do
             if player:getVocation():getBase():getId() == vocId then
@@ -20,6 +19,7 @@ local book = player:addItem(6103, 1)
                 msg = 'You earned a new weapon.'
             end
         end
+        local book = player:addItem(6103, 1)
         player:addItem(24774, 1)
         book:setAttribute(ITEM_ATTRIBUTE_TEXT, "Congrats ".. player:getName() ..", on the completion of the Catacombs Quest on " .. os.date("%B %d, %Y") .. "! Thank you for playing with us on Decapitated Soul!")
         player:setStorageValue(storage, 1)

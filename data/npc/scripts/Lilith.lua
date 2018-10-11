@@ -71,7 +71,7 @@ local missions = {
      message = "The figures from the past stand tall within Purgatory Isle.",
      level = 140, -- minimum level for this mission
      rewarditems = {
-       {id = 2160, count = 25}
+       {id = 2160, count = 20}
      },
      rewardexp = 85000
    },

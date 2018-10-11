@@ -5,7 +5,7 @@ local marks = {
     [3]={{x=1054,y=1158,z=7},"Hatchlings",MAPMARK_STAR},
     [4]={{x=1136,y=1152,z=7},"Dragons",MAPMARK_STAR},
     [5]={{x=941,y=1136,z=7},"Vampires",MAPMARK_STAR},
-    [6]={{x=1163,y=1184,z=7},"Dragon Lords",MAPMARK_STAR},
+    [6]={{x=1140,y=1153,z=7},"Dragon Lords",MAPMARK_STAR},
     [7]={{x=1041,y=903,z=8},"Catacombs Entrance",MAPMARK_EXCLAMATION},
     [8]={{x=970,y=1050,z=7},"Heros",MAPMARK_STAR},
     [9]={{x=1015,y=933,z=7},"Shops - Upstairs",MAPMARK_BAG},

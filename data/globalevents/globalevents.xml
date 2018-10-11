@@ -12,7 +12,7 @@
 	<!--globalevent type="startup" name="CleanHouses" script="cleanhouses.lua" /-->
 	<!--globalevent type="startup" name="CleanPlayers" script="cleanplayers.lua"/-->
 	<!--globalevent name="effect" interval="3000" script="effect.lua"/-->
-	<!--globalevent name="Server Save" time="23:55:00" script="serversave.lua" /> --reactivate
+	<globalevent name="Server Save" time="23:55:00" script="serversave.lua" /> <!--reactivate-->
 	<!--globalevent name="zombieEvent" interval="14400000" script="zombieEvent.lua"/>
 	
 	<!-- Demon Oak Quest -->

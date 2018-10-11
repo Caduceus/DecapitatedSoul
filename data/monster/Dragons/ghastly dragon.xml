@@ -18,6 +18,7 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="1500" min="-800" max="-1200"/>
+		<attack name="melee" interval="2000" min="-800" max="-950"/>
 		<attack name="fire" interval="3000" chance="45" range="7" radius="7" target="1" min="-1000" max="-1500">
 			<attribute key="shootEffect" value="suddendeath"/>
 			<attribute key="areaEffect" value="mortarea"/>
@@ -62,8 +63,6 @@
 		<item id="2150" countmax="1" chance="3000"/><!-- small amethyst -->
 		<item id="11366" chance="50" /><!-- ghastly dragon head -->
 		<item id="2672" countmax="3" chance="65500"/><!-- dragon ham -->
-		<item id="7591" countmax="100" chance="4440"/><!-- great mana potion -->
-		<item id="7590" countmax="100" chance="4440"/><!-- great health potion -->
 		<item id="11368" chance="1000" /><!-- jade hat -->
 		<item id="11323" chance="8525" /><!-- zaoan halberd -->
 		<item id="2160" countmax="25" chance="200" /><!-- crystal coin -->
