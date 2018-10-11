@@ -174,3 +174,4 @@ data/items/item attribute list.lua
 data/actions/scripts/quests/screwup.lua
 data/items/items.otb.rar
 data/items/backup.rar
+data/logs/playerCoinReward.txt
