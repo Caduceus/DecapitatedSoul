@@ -1,2 +1,11 @@
 <?xml version="1.0"?>
-<FileList />
+<FileList>
+  <Fileinfo>
+    <File>data/images/game/minimap/flag9.png</File>
+    <Hash>aac23f67dc8a0136e7864d6928d87af4</Hash>
+  </Fileinfo>
+  <Fileinfo>
+    <File>data/things/1095/Tibia.dat</File>
+    <Hash>0271bac375c1f51fd55b2ea76eca728a</Hash>
+  </Fileinfo>
+</FileList>

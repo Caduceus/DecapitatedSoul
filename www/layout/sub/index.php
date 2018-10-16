@@ -31,6 +31,10 @@ if ($infoCache->hasExpired()) {
 }
 ?>
 
+<b><center> Join us on Discord</center></b>
+    <center><iframe src="https://discordapp.com/widget?id=500101864357101578&theme=dark" width="520" height="400" allowtransparency="true" frameborder="0"></iframe></center>
+<br>
+	
 <!-- Render HTML for server information -->
 <table border="0" cellspacing="0">
     <!--tr class="yellow">
@@ -42,7 +46,7 @@ if ($infoCache->hasExpired()) {
 			<?php
 			echo nl2br("\n");
 			?>
-            <center>There are <b><?php echo $data['playerCount']; ?> characters</b> on <b><?php echo $data['accountCount']; ?> accounts</b> who play on <b>decapitatedsoul.servegame.com</b> </center>
+            <center>There are <b><?php echo $data['playerCount']; ?> characters</b> on <b><?php echo $data['accountCount']; ?> accounts</b> registered on <b>decapitatedsoul.servegame.com</b> </center>
             <?php
 			echo nl2br("\n");
 			?>
@@ -80,7 +84,6 @@ if ($infoCache->hasExpired()) {
     </tr-->
 
 </table>
-
 <?php
 if ($config['UseChangelogTicker']) {
 	//////////////////////
@@ -106,9 +109,11 @@ if ($config['UseChangelogTicker']) {
 			}
 			?>
 		</table>
+
 		<?php
 	} else echo "No changelogs submitted.";
 }
+
 $cache = new Cache('engine/cache/news');
 if ($cache->hasExpired()) {
 	$news = fetchAllNews();

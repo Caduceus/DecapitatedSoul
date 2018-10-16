@@ -5,7 +5,7 @@
 
 <p>Download IP changer <a href="https://github.com/jo3bingham/tibia-ip-changer/releases/latest"><font color="red">Here</a></font>.</p>
 <p>Download Tibia client <a href="http://decapitatedsoul.servegame.com/download/decapitated_soul_tibiaClient.rar?>"><font color="red">Here</a></font>.</p>
-<p>Download dat|spr replacements: <a href="http://decapitatedsoul.servegame.com/download/1095.rar"><font color="red"> Latest update 10_8_18</a></font></p>
+<p>Download dat|spr replacements: <a href="http://decapitatedsoul.servegame.com/download/1095.rar"><font color="red"> Latest update 10_13_18</a></font></p>
 
 <h2>How to connect and play: Tibia Client</h2>
 <ol>
