@@ -40,7 +40,7 @@
 	<action itemid="7734" script="custom/watering_can.lua" />
 	<action itemid="20136" script="custom/second_promo.lua" />
 	<action itemid="7735" script="custom/ded_ass.lua"/>
-	<action itemid="8300" script="other/upgrading.lua"/>
+	<!--action itemid="8300" script="other/upgrading.lua"/-->
 	<!--action itemid="8982" script="custom/modalAD.lua"/>
     <action itemid="9019" script="custom/modalMD.lua"/-->
 	<action uniqueid="9928" script="custom/hydra_scale_legs.lua"/>

@@ -140,8 +140,8 @@
 	
 	<!-- Catacombs-->
 	<movevent event="StepIn" actionid="15101" script="quests/catacombs/catacombs_check_entrance.lua" />
-	<movevent event="StepIn" actionid="15102" script="quests/catacombs/knight_templar_tp.lua" />
-	<movevent event="StepIn" actionid="15103" script="quests/catacombs/sorc_druid_pally_tp.lua" />
+	<movevent event="StepIn" actionid="15102" script="quests/catacombs/reward_tp.lua" />
+	<!--actionid="15103" is void /-->
 		
 	<!-- Frozen Hell-->
 	<movevent event="StepIn" actionid="1502" script="quests/frozen hell/FH_random_tile.lua"/>

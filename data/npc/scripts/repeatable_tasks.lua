@@ -17,7 +17,7 @@ local monsters = {
    ["Carrion Worms"] = {exstorage = 6011, storage = 5011, mstorage = 19001, amount = 50, rewardexp = 1000, items = { {id = 2160, count = 1},{id = 18422, count = 1}}},
    ["Amazons"] = {exstorage = 6012, storage = 5012, mstorage = 19002, amount = 50, rewardexp = 1000, items = { {id = 2160, count = 1},{id = 18422, count = 1}}},
    ["Cyclops"] = {exstorage = 6013, storage = 5013, mstorage = 19003, amount = 50, rewardexp = 1000, items = { {id = 2160, count = 1},{id = 18422, count = 1}}},
-   ["Dragon Hatchlings"] = {exstorage = 6014, storage = 5014, mstorage = 19004, amount = 50, rewardexp = 1000, items = { {id = 2160, count = 1},{id = 18422, count = 1}}},
+   ["Hatchlings"] = {exstorage = 6014, storage = 5014, mstorage = 19004, amount = 50, rewardexp = 1000, items = { {id = 2160, count = 1},{id = 18422, count = 1}}},
    ["Heroes"] = {exstorage = 6015, storage = 5015, mstorage = 19005, amount = 50, rewardexp = 1000, items = { {id = 2160, count = 1},{id = 18422, count = 1}}},
    ["Dragons"] = {exstorage = 6016, storage = 5016, mstorage = 19006, amount = 50, rewardexp = 5000, items = { {id = 2160, count = 3},{id = 18422, count = 1}}},
    ["Dragon Lords"] = {exstorage = 6017, storage = 5017, mstorage = 19007, amount = 50, rewardexp = 8000, items = { {id = 2160, count = 5},{id = 18422, count = 1}}},

@@ -16,7 +16,7 @@ setPlayerStorageValue(player, estr, -1)
 		end
 		
 		loginStr = string.format("Your last visit was on %s.", os.date("%a %b %d %Y %X", player:getLastLoginSaved()))
-		player:getPosition():sendMagicEffect(CONST_ME_THUNDER)
+		player:getPosition():sendMagicEffect(CONST_ME_BATS)
 		player:openChannel(3)
 		player:addHealth(player:getMaxHealth())
 		player:addMana(player:getMaxMana())

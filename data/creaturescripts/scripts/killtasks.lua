@@ -4,6 +4,7 @@ local config = {
 	 ['amazon'] = {amount = 50, storage = 19002, startstorage = 5012, startvalue = 1},
 	 ['cyclops'] = {amount = 50, storage = 19003, startstorage = 5013, startvalue = 1},
 	 ['dragon hatchling'] = {amount = 50, storage = 19004, startstorage = 5014, startvalue = 1},
+	 ['dragon lord hatchling'] = {amount = 50, storage = 19004, startstorage = 5014, startvalue = 1},
 	 ['hero'] = {amount = 50, storage = 19005, startstorage = 5015, startvalue = 1},
      ['dragon'] = {amount = 50, storage = 19006, startstorage = 5016, startvalue = 1},
      ['dragon lord'] = {amount = 50, storage = 19007, startstorage = 5017, startvalue = 1},

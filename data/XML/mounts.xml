@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mounts> <!-- slot 83 is open-->
+<mounts> 
 	<mount id="1" clientid="368" name="Widow Queen" speed="40" premium="yes" />
 	<mount id="2" clientid="369" name="Chocobo" speed="100" premium="yes" />
 	<mount id="3" clientid="370" name="War Bear" speed="40" premium="yes" />
@@ -82,6 +82,7 @@
 	<mount id="80" clientid="734" name="Sea Devil" speed="100" premium="yes" />
 	<mount id="81" clientid="735" name="Coralripper" speed="100" premium="yes" />
 	<mount id="82" clientid="736" name="Plumfish" speed="100" premium="yes" />
+	<!-- slot 83 is open-->
 	<mount id="84" clientid="738" name="Gorongra" speed="100" premium="yes" />
 	<mount id="85" clientid="739" name="Noctungra" speed="100" premium="yes" />
 	<mount id="86" clientid="740" name="Silverneck" speed="100" premium="yes" />
@@ -102,31 +103,34 @@
 	<mount id="101" clientid="888" name="Reed Lurker" speed="100" premium="yes" />
 	<mount id="102" clientid="889" name="Neon Sparkid" speed="100" premium="yes" />
 	<mount id="103" clientid="890" name="Vortexion" speed="100" premium="yes" />
-	<mount id="104" clientid="901" name="Ivory Fang" speed="100" premium="yes" />
-	<mount id="105" clientid="902" name="Shadow Claw" speed="100" premium="yes" />
-	<mount id="106" clientid="903" name="Snow Pelt" speed="100" premium="yes" />
-	<mount id="107" clientid="905" name="Jackalope" speed="100" premium="yes" />
-	<mount id="108" clientid="906" name="Wolpertinger" speed="100" premium="yes" />
-	<mount id="109" clientid="907" name="Dreadhare" speed="100" premium="yes" />
-	<mount id="110" clientid="937" name="Stone Rhino " speed="100" premium="yes" />
-	<mount id="111" clientid="950" name="Gold Sphinx" speed="100" premium="yes" />
-	<mount id="112" clientid="951" name="Emerald Sphinx" speed="100" premium="yes" />
-	<mount id="113" clientid="952" name="Shadow Sphinx" speed="100" premium="yes" />
-	<mount id="114" clientid="959" name="Jungle Saurian" speed="100" premium="yes" />
-	<mount id="115" clientid="960" name="Ember Saurian" speed="100" premium="yes" />
-	<mount id="116" clientid="961" name="Lagoon Saurian" speed="100" premium="yes" />
-	<mount id="117" clientid="1017" name="Blazing Unicorn" speed="100" premium="yes" />
-	<mount id="118" clientid="1018" name="Arctic Unicorn" speed="100" premium="yes" />
-	<mount id="119" clientid="1019" name="Prismatic Unicorn" speed="100" premium="yes" />
-	<mount id="120" clientid="1025" name="Cranium Spider" speed="100" premium="yes" />
-	<mount id="121" clientid="1026" name="Cave Tarantula" speed="100" premium="yes" />
-	<mount id="122" clientid="1027" name="Gloom Widow" speed="100" premium="yes" />
-	<mount id="123" clientid="1049" name="Mole" speed="100" premium="yes" />
-	<mount id="124" clientid="1052" name="Marsh Toad" speed="100" premium="yes" />
-	<mount id="125" clientid="1053" name="Sanguine Frog" speed="100" premium="yes" />
-	<mount id="126" clientid="1054" name="Toxic Toad" speed="100" premium="yes" />
-	<mount id="127" clientid="1091" name="Ebony Tiger" speed="100" premium="yes" />
-	<mount id="128" clientid="1092" name="Feral Tiger" speed="100" premium="yes" />
-	<mount id="129" clientid="1093" name="Jungle Tiger" speed="100" premium="yes" />
-	<mount id="130" clientid="1101" name="Fleeting Knowledge" speed="100" premium="yes" />
+	<mount id="104" clientid="901" name="Ivory Fang" speed="120" premium="yes" />
+	<mount id="105" clientid="902" name="Shadow Claw" speed="120" premium="yes" />
+	<mount id="106" clientid="903" name="Snow Pelt" speed="120" premium="yes" />
+	<mount id="107" clientid="905" name="Jackalope" speed="120" premium="yes" />
+	<mount id="108" clientid="906" name="Wolpertinger" speed="120" premium="yes" />
+	<mount id="109" clientid="907" name="Dreadhare" speed="120" premium="yes" />
+	<mount id="110" clientid="937" name="Stone Rhino " speed="120" premium="yes" />
+	<mount id="111" clientid="950" name="Gold Sphinx" speed="120" premium="yes" />
+	<mount id="112" clientid="951" name="Emerald Sphinx" speed="120" premium="yes" />
+	<mount id="113" clientid="952" name="Shadow Sphinx" speed="120" premium="yes" />
+	<mount id="114" clientid="959" name="Jungle Saurian" speed="120" premium="yes" />
+	<mount id="115" clientid="960" name="Ember Saurian" speed="120" premium="yes" />
+	<mount id="116" clientid="961" name="Lagoon Saurian" speed="120" premium="yes" />
+	<mount id="117" clientid="1017" name="Blazing Unicorn" speed="120" premium="yes" />
+	<mount id="118" clientid="1018" name="Arctic Unicorn" speed="120" premium="yes" />
+	<mount id="119" clientid="1019" name="Prismatic Unicorn" speed="120" premium="yes" />
+	<mount id="120" clientid="1025" name="Cranium Spider" speed="120" premium="yes" />
+	<mount id="121" clientid="1026" name="Cave Tarantula" speed="120" premium="yes" />
+	<mount id="122" clientid="1027" name="Gloom Widow" speed="120" premium="yes" />
+	<mount id="123" clientid="1049" name="Mole" speed="120" premium="yes" />
+	<mount id="124" clientid="1052" name="Marsh Toad" speed="120" premium="yes" />
+	<mount id="125" clientid="1053" name="Sanguine Frog" speed="120" premium="yes" />
+	<mount id="126" clientid="1054" name="Toxic Toad" speed="120" premium="yes" />
+	<mount id="127" clientid="1091" name="Ebony Tiger" speed="120" premium="yes" />
+	<mount id="128" clientid="1092" name="Feral Tiger" speed="120" premium="yes" />
+	<mount id="129" clientid="1093" name="Jungle Tiger" speed="120" premium="yes" />
+	<mount id="130" clientid="1101" name="Fleeting Knowledge" speed="120" premium="yes" />
+	<mount id="131" clientid="1104" name="Snowy Owl" speed="120" premium="yes" />
+	<mount id="132" clientid="1105" name="Tawny Owl" speed="120" premium="yes" />
+	<mount id="133" clientid="1106" name="Boreal Owl" speed="120" premium="yes" />
 </mounts>

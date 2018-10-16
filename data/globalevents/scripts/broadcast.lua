@@ -8,7 +8,7 @@ local t, i = {
 "[Server]: Daily Tokens can be used to purchase Bless and VIP. See Adonai or Zagorim to earn tokens!",
 "[Server]: Coin timer will reset if logged out for more than 5 minutes. ",
 "[Server]: Please check our downloads page for up to date spr/dat packs. OTC launcher will not update sprites. http://decapitatedsoul.servegame.com/downloads.php ",
-"[Server]: Daily restarts at 12am server time. Check the clock in Drogheda temple for our current time. ",
+--"[Server]: Daily restarts at 12am server time. Check the clock in Drogheda temple for our current time. ",
 }, 1
 
 function onThink(interval)

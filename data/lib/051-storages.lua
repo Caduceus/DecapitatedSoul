@@ -258,7 +258,7 @@ Storage = {
 		storage = 45396,
 		exstorage = 40826
 	},
-	lowLevelGear = 45561,
+	lowLevelGear = 45561, --no longer used. Error with damon chest
 	vocationAddon = 45554,
 	rewardSkill = {
 		skillMagicLevel = {

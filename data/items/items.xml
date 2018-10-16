@@ -15508,10 +15508,10 @@
 		<attribute key="weight" value="250" />
 		<attribute key="showcount" value="0" />
 	</item>
-	<item id="8300" article="a" name="Upgrade Stone">
+	<!--item id="8300" article="a" name="Upgrade Stone">
 		<attribute key="description" value="Every +1 = 5% better stats. The more upgrades you use, less chance for next upgrade. " />
 		<attribute key="weight" value="250" />
-	</item>
+	</item-->
 	<item id="8301" name="holy soil">
 		<attribute key="description" value="It has been extracted from an inactive lava hole." />
 		<attribute key="weight" value="50" />
@@ -36269,6 +36269,7 @@
 		<attribute key="rotateTo" value="26358" />
 	</item>
 	<item id="26363" article="a" name="Rolled-up Crimson Carpet">
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26364" article="a" name="Dog House">
 		<attribute key="decayTo" value="26365" />
@@ -36279,38 +36280,37 @@
 		<attribute key="duration" value="15" />
 	</item>
 	<item id="26366" article="a" name="Rolled-up Azure Carpet">
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26367" article="a" name="Rolled-up Emerald Carpet">
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26368" article="a" name="Rolled-up Light Parquet">
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26369" article="a" name="Rolled-up Dark Parquet">
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26370" article="a" name="Rolled-up Marble Floor">
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26371" article="a" name="Crimson Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26372" article="a" name="Azure Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26373" article="a" name="Emerald Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26374" article="a" name="Light Parquet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26375" article="a" name="Dark Parquet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="26376" article="a" name="Marble Floor">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item> 
 	<item id="26377" article="a" name="Gold Pouch">
 		<attribute key="weight" value="1800" />
@@ -36354,45 +36354,53 @@
 		<attribute key="slotType" value="head" />
 	</item>
 	
-	<item id="27072" article="a" name="Rolled-up Colorful Carpet" />
-	<item id="27073" article="a" name="Rolled-up Flowery Carpet" />
-	<item id="27074" article="a" name="Rolled-up Striped Carpet" />
-	<item id="27075" article="a" name="Rolled-up Fur Carpet" />
-	<item id="27076" article="a" name="Rolled-up Diamond Carpet" />
-	<item id="27077" article="a" name="Rolled-up Patterned Carpet" />
-	<item id="27078" article="a" name="Rolled-up Night Sky Carpet" />
-	<item id="27079" article="a" name="Rolled-up Star Carpet" />                
+	<item id="27072" article="a" name="Rolled-up Colorful Carpet">
+		<attribute key="weight" value="1000" /> 
+	</item>
+	<item id="27073" article="a" name="Rolled-up Flowery Carpet">
+		<attribute key="weight" value="1000" />
+	</item> 
+	<item id="27074" article="a" name="Rolled-up Striped Carpet">
+		<attribute key="weight" value="1000" />
+	</item> 
+	<item id="27075" article="a" name="Rolled-up Fur Carpet">
+		<attribute key="weight" value="1000" />
+	</item> 
+	<item id="27076" article="a" name="Rolled-up Diamond Carpet">
+		<attribute key="weight" value="1000" />
+	</item> 
+	<item id="27077" article="a" name="Rolled-up Patterned Carpet">
+		<attribute key="weight" value="1000" />
+	</item> 
+	<item id="27078" article="a" name="Rolled-up Night Sky Carpet">
+		<attribute key="weight" value="1000" />
+	</item> 
+	<item id="27079" article="a" name="Rolled-up Star Carpet">  
+		<attribute key="weight" value="1000" />
+	</item> 
 	<item id="27080" article="a" name="Colorful Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="27081" article="a" name="Flowery Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" /> 
 	</item>
 	<item id="27082" article="a" name="Striped Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="27083" article="a" name="Fur Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="27084" article="a" name="Diamond Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="27085" article="a" name="Patterned Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="27086" article="a" name="Night Sky Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="27087" article="a" name="Star Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />       
 	</item>
 	<item id="27088" article="a" name="Parrot" />
 	<item id="27089" article="a" name="Parrot" />
@@ -36613,48 +36621,49 @@
 		<attribute key="rotateTo" value="28768" />
 	</item>	
 	<item id="28770" article="a" name="Rolled-up Verdant Carpet">
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="28771" article="a" name="Verdant Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="28772" article="a" name="Rolled-up Shaggy Carpet">
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="28773" article="a" name="Shaggy Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="28774" article="a" name="Rolled-up Mystic Carpet">
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="28775" article="a" name="Mystic Carpet">
 		<attribute key="forceSerialize" value="1" />
+	</item>
+	<item id="28776" article="a" name="Rolled-up Pile of Stones">
 		<attribute key="weight" value="1000" />
 	</item>
-	<item id="28776" article="a" name="Rolled-up Pile of Stone Tiles">
-	</item>
-	<item id="28777" article="a" name="Pile of Stone Tiles">
+	<item id="28777" article="a" name="Stone Tile" plural="Pile of Stone Tiles">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
-	<item id="28778" article="a" name="Rolled-up Wooden Planks">
+	<item id="28778" article="a" name="Wooden Planks">
 		<attribute key="forceserialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
-	<item id="28779" article="a" name="Wooden Planks">>
+	<item id="28779" article="a" name="Rolled-up Wooden Planks">
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="28806" article="a" name="Wheat Carpet">
+		<attribute key="forceSerialize" value="1" />
 	</item>
 	<item id="28807" article="a" name="Rolled-up Wheat Carpet">
-		<attribute key="forceSerialize" value="1" />
 		<attribute key="weight" value="1000" />
 	</item>
 	<item id="28808" article="a" name="Rolled-up Crested Carpet">
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="28809" article="a" name="Crested Carpet">
 		<attribute key="forceSerialize" value="1" />
-		<attribute key="weight" value="1000" />
 	</item>
 	<item id="28810" article="a" name="Rolled-up Decorated Carpet">
+		<attribute key="weight" value="1000" />
 	</item>
 	<item id="28811" article="a" name="Decorated Carpet">
 		<attribute key="forceSerialize" value="1" />
@@ -36742,6 +36751,12 @@
 	<item id="29622" article="a" name="Alchemistic Table">
 	    <attribute key="rotateto" value="29621" />	
 	</item> 
+	
+	<item id="30627" article="a" name="Philosophers backpack">
+		<attribute key="weight" value="1800" />
+		<attribute key="containerSize" value="30" />
+		<attribute key="slotType" value="backpack" />
+	</item>
 	
 	<item id="29635" article="a" name="Alchemistic Bookstand">
 		<attribute key="weight" value="1000" />	
