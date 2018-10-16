@@ -1589,7 +1589,7 @@ void Player::setNextActionTask(SchedulerTask* task)
 
 	if (task) {
 		actionTaskEvent = g_scheduler.addEvent(task);
-		resetIdleTime();
+		//resetIdleTime(); disabled
 	}
 }
 
@@ -1613,12 +1613,15 @@ void Player::onThink(uint32_t interval)
 	if (!getTile()->hasFlag(TILESTATE_NOLOGOUT) && !isAccessPlayer()) {
 		idleTime += interval;
 		const int32_t kickAfterMinutes = g_config.getNumber(ConfigManager::KICK_AFTER_MINUTES);
+		
 		if (idleTime > (kickAfterMinutes * 60000) + 60000) {
 			kickPlayer(true);
+			std::cout << name << " was afk kicked." << std::endl;
 		} else if (client && idleTime == 60000 * kickAfterMinutes) {
 			std::ostringstream ss;
-			ss << "You have been idle for " << kickAfterMinutes << " minutes. You will be disconnected in one minute if you are still idle then.";
+			ss << "You have been idle for " << kickAfterMinutes << " minutes. You will be disconnected in 1 minute if you are still idle.";
 			client->sendTextMessage(TextMessage(MESSAGE_STATUS_WARNING, ss.str()));
+			client->sendTextMessage(TextMessage(MESSAGE_STATUS_CONSOLE_RED, ss.str()));
 		}
 	}
 

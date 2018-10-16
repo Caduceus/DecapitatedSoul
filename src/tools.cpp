@@ -614,6 +614,26 @@ MagicEffectNames magicEffectNames[] = {
 	{"lightning",		CONST_ME_LIGHTNING },
 	{"ragiazbonecapsule",		CONST_ME_RAGIAZ_BONE_CAPSULE},
 	{"criticalhit",		CONST_ME_CRITICAL_HIT},
+	{"jumpinggoldfish",	CONST_ME_JUMPING_GOLDFISH},
+	{"bluestatic",		CONST_ME_BLUE_STATIC},
+	{"orangestatic",	CONST_ME_ORANGE_STATIC},
+	{"greenstatic",		CONST_ME_GREEN_STATIC},
+	{"redstatic",		CONST_ME_RED_STATIC },
+	{"whitestatic",		CONST_ME_WHITE_STATIC},
+	{"yellowstatic",	CONST_ME_YELLOW_STATIC },
+	{"magicyellow",		CONST_ME_MAGIC_YELLOW},
+	{"fairydust",		CONST_ME_FAIRY_DUST},
+	{"fairyto",			CONST_ME_FAIRY_TO},
+	{"fairyaway",		CONST_ME_FAIRY_AWAY},
+	{"stormcloud",		CONST_ME_STORM_CLOUD},
+	{"fallingstone",	CONST_ME_FALLING_STONE},
+	{"ghostblue",		CONST_ME_GHOST_BLUE},
+	{"pinkring",		CONST_ME_PINK_RING},
+	{"scroll",			CONST_ME_SCROLL},
+	{"pinkcrash",		CONST_ME_PINK_CRASH},
+	{"blooddrip",		CONST_ME_BLOOD_DRIP},
+	{"bloodburst",		CONST_ME_BLOOD_BURST},
+	{"purpleexplosion",	CONST_ME_PURPLE_EXPLOSION},
 };
 
 ShootTypeNames shootTypeNames[] = {
@@ -667,6 +687,10 @@ ShootTypeNames shootTypeNames[] = {
 	{"envenomedarrow",	CONST_ANI_ENVENOMEDARROW},
 	{"gloothspear",		CONST_ANI_GLOOTHSPEAR},
 	{"simplearrow",		CONST_ANI_SIMPLEARROW},
+	{"leafstar",		CONST_ANI_LEAFSTAR},
+	{"diamondarrow",	CONST_ANI_DIAMONDARROW},
+	{"spectralbolt",	CONST_ANI_SPECTRALBOLT},
+	{"royalstar",		CONST_ANI_ROYALSTAR},
 };
 
 CombatTypeNames combatTypeNames[] = {

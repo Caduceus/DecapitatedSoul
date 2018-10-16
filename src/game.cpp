@@ -2019,7 +2019,7 @@ void Game::playerUseItemEx(uint32_t playerId, const Position& fromPos, uint8_t f
 		return;
 	}
 
-	player->resetIdleTime();
+	//player->resetIdleTime();
 	player->setNextActionTask(nullptr);
 
 	g_actions->useItemEx(player, fromPos, toPos, toStackPos, item, isHotkey);
@@ -2079,7 +2079,7 @@ void Game::playerUseItem(uint32_t playerId, const Position& pos, uint8_t stackPo
 		return;
 	}
 
-	player->resetIdleTime();
+	//player->resetIdleTime();
 	player->setNextActionTask(nullptr);
 
 	g_actions->useItem(player, pos, index, item, isHotkey);
