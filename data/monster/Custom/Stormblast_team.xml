@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Stormblast" tp="1" species="undead" nameDescription="Stormblast" race="undead" experience="12000" speed="700" manacost="0" script="boss.lua">
+<monster name="Stormblast" tp="1" species="undead" nameDescription="Stormblast" race="undead" experience="12000" speed="800" manacost="0" script="boss.lua">
     <level min="1" max="1"/>
     <health now="30000" max="30000"/>
     <look type="360" head="20" corpse="6344"/>
@@ -37,8 +37,8 @@
 			<attribute key="shootEffect" value="suddendeath"/>
 			<attribute key="areaEffect" value="mortarea"/>
 		</attack>
-		<attack name="speed" interval="1000" chance="8" range="7" speedchange="-850" duration="2000">
-			<attribute key="areaEffect" value="redshimmer"/>
+		<attack name="speed" interval="1000" chance="20" range="7" speedchange="-850" duration="2000">
+			<attribute key="areaEffect" value="lightning"/>
 		</attack>
 		<attack name="lifedrain" interval="1000" chance="80" spread="3" min="-75" max="-85">
 			<attribute key="areaEffect" value="redshimmer"/>
@@ -46,19 +46,18 @@
 		<attack name="death" interval="2000" chance="40" range="7" min="-350" max="-410">
 			<attribute key="shootEffect" value="suddendeath"/>
 			<attribute key="areaEffect" value="mortarea"/>
-			<attribute key="areaEffect" value="smallclouds"/>
 		</attack>
-		<attack name="manadrain" interval="3000" chance="40" target="1" radius="3" min="-200" max="-300">
-			<attribute key="areaEffect" value="yellowbubble"/>
+		<attack name="manadrain" interval="2000" chance="60" radius="10" target="0" min="-800" max="-1000">
+			<attribute key="areaEffect" value="bluestatic"/>
 		</attack>
 		<attack name="phantasm drown" interval="3000" chance="50"/>
     </attacks>
-    <defenses armor="40" defense="30">
+    <defenses armor="60" defense="60">
 		<defense name="Divine Missile" interval="2000" chance="45" target="1" min="450" max="800">
-			<attribute key="areaEffect" value="blueshimmer"/>
+			<attribute key="areaEffect" value="fairydust"/>
 		</defense>
-		<defense name="healing" interval="4000" chance="50" min="150" max="500">
-      <attribute key="areaEffect" value="redspark"/>
+		<defense name="healing" interval="2000" chance="50" min="150" max="500">
+      <attribute key="areaEffect" value="greenstatic"/>
    </defense>
 	</defenses>
     	<elements>
