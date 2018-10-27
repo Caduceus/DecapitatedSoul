@@ -317,6 +317,10 @@
 	<action itemid="26108" function="decreaseItemId"/>
 	<action itemid="26192" function="increaseItemId"/>
 	<action itemid="26193" function="decreaseItemId"/>
+	<action itemid="30329" function="increaseItemId"/>
+	<action itemid="30330" function="decreaseItemId"/>
+	<action itemid="30331" function="increaseItemId"/>
+	<action itemid="29332" function="decreaseItemId"/>
 
 	<!-- Food -->
 	<action itemid="2362" script="other/food.lua"/>
