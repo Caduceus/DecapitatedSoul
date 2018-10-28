@@ -105,6 +105,7 @@ function creatureSayCallback(cid, type, msg)
          if player:getStorageValue(monsters[cmsg].storage) == -1 then
              npcHandler:say("Good luck, come back when you have killed "..monsters[cmsg].amount.." "..cmsg..".", cid)
              player:setStorageValue(storage, 1)
+             player:setStorageValue(exstorage, os.time() + 24*60*60)
              player:setStorageValue(monsters[cmsg].storage, 1)
          else
              npcHandler:say("You already did the "..cmsg.." mission.", cid)
