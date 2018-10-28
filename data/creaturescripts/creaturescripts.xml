@@ -11,6 +11,7 @@
     <event type="login" name="tp_pad_register" script="tp_pad.lua"/>
     <event type="kill" name="Missions" script="killmissions.lua"/>
     <event type="kill" name="Tasks" script="killtasks.lua"/>
+    <event type="think" name="tasksReset" script="killtasks.lua"/>
     <event type="preparedeath" name="pvparena" script="pvparena.lua"/>
 	<event type="login" name="pvparena_r" script="pvparena.lua"/>
 	<event type="preparedeath" name="CaduceusArena" script="CaduceusArena.lua"/>
