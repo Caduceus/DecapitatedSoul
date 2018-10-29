@@ -46,7 +46,7 @@
 		<item id="2804" chance="100000"/><!-- shadow herb -->
 		<item id="2149" countmax="4" chance="100000"/><!-- small emerald -->
 		<item id="2792" chance="50000"/><!-- dark mushroom -->
-		<!--item id="7732" chance="50000"/><!-- seeds -->
+		<!--item id="7732" chance="50000"/--><!-- seeds -->
 		<item id="7887" chance="50000"/><!--terra amulet-->
 		<item id="7886" chance="50000"/><!-- terra boots -->
 		<item id="8912" chance="50000"/><!--springsprout rod-->

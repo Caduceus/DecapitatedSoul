@@ -126,9 +126,7 @@
 		<skill id="5" multiplier="1.1"/>
 		<skill id="6" multiplier="1.1"/>
 	</vocation>
-	<!------------------------------------------>
-	<!-----------THIRD VOCATION----------------->
-	<!------------------------------------------>
+	<!--THIRD VOCATION-->
 	<vocation id="11" clientid="3" name="Warlord Sorcerer" description="a Warlord Sorcerer" gaincap="35" gainhp="5" gainmana="30" gainhpticks="4" gainhpamount="10" gainmanaticks="20" gainmanaamount="10" manamultiplier="1.1" attackspeed="500" basespeed="220" soulmax="200" gainsoulticks="10" fromvoc="1">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.5" armor="1.0"/>
 		<skill id="0" multiplier="1.5"/>

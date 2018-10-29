@@ -35,7 +35,7 @@
 		<item id="2376" chance="550"/><!-- sword -->
 		<item id="2449" chance="960"/><!-- bone club -->
 		<item id="2229" chance="4460"/><!-- skull -->
-		<!--item id="10559" chance="4730"/><!-- Spooky Blue Eye -->
+		<!--item id="10559" chance="4730"/--><!-- Spooky Blue Eye -->
 		<item id="5926" chance="430"/><!-- pirate backpack -->
 	</loot>
 </monster>

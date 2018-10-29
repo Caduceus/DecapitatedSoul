@@ -59,13 +59,6 @@
 	<script>
                 <event name ="medusaHealth"/>
     </script>
-    <!-- Loot Chance --
-	100 - x =   rare
-	500 - 800   semi rare
-	1000 - 1200 common
-	2000 - 2500 almost all the time
-	3000 > All the time
-	-- Loot Chance --> 
 	<loot>
 		<item id="2160" countmax="10" chance="3000"/> <!-- Crystal Coin -->
 		<item id="2536" chance="2500" /><!-- medusa shield -->

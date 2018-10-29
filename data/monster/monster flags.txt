@@ -1,3 +1,11 @@
 <flag canwalkonenergy="0" />
 <flag canwalkonfire="0" />
 <flag canwalkonpoison="0" />
+
+    <!-- Loot Chance --
+	100 - x =   rare
+	500 - 800   semi rare
+	1000 - 1200 common
+	2000 - 2500 almost all the time
+	3000 > All the time
+	-- Loot Chance -->

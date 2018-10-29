@@ -71,7 +71,7 @@
 		<item id="2442" chance="5000"/><!-- heavy machete -->
 		<item id="2063" chance="160"/><!-- small oil lamp -->
 		<item id="2149" chance="7000"/><!-- small emerald -->
-		<!--item id="7732" countmax="2" chance="2000"/><!-- seeds -->
+		<!--item id="7732" countmax="2" chance="2000"/--><!-- seeds -->
 		<item id="1860" chance="2200"/><!-- green tapestry -->
 		<item id="5910" chance="3000"/><!-- green piece of cloth -->
 		<item id="2187" chance="390"/><!-- wand of inferno -->

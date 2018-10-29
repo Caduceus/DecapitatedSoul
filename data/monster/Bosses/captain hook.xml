@@ -68,13 +68,6 @@
 		<voice sentence="Arg!"/>
 		<voice sentence="Dieee land lover!"/>
 	</voices>
-	<!-- Loot Chance --
-	100 - x =   rare
-	500 - 800   semi rare
-	1000 - 1200 common
-	2000 - 2500 almost all the time
-	3000 > All the time
-	-- Loot Chance -->
 	<loot>
 		<item id="2160" countmax="5" chance="30000"/><!-- crystal coin -->
 		<item id="6097" chance="90000"/><!-- hook -->

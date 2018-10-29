@@ -53,7 +53,7 @@
 		<item id="2148" countmax="100" chance="60000"/><!-- gold coin -->
 		<item id="2148" countmax="100" chance="60000"/><!-- gold coin -->
 		<item id="2148" countmax="36" chance="60000"/><!-- gold coin -->
-		<!--item id="11221" chance="20000"/><!-- hellspawn tail -->
+		<!--item id="11221" chance="20000"/--><!-- hellspawn tail -->
 		<item id="2413" chance="10000"/><!-- battle shield -->
 		<item id="2394" chance="10000"/><!-- morning star -->
 		<item id="2788" countmax="2" chance="7692"/><!-- red mushroom -->

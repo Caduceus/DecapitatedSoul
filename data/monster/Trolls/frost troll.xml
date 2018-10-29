@@ -39,8 +39,8 @@
 		<item id="2389" chance="21500"/>				<!-- spear -->
 		<item id="2667" countmax="5" chance="18000"/>	<!-- fish -->
 		<item id="2396" chance="5500"/>					<!-- ice rapier -->
-		<!--item id="2245" chance="8300"/>					<!-- twigs -->
-		<!--item id="10565" chance="2000"/>				<!-- frosty ear of a troll -->
+		<!--item id="2245" chance="8300"/-->			<!-- twigs -->
+		<!--item id="10565" chance="2000"/-->			<!-- frosty ear of a troll -->
 		<item id="2651" chance="1200"/>					<!-- coat -->
 	</loot>
 </monster>

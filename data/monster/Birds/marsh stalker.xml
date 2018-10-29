@@ -39,7 +39,7 @@
 		<item id="19740" chance="7180"/><!-- Marsh Stalker Beak -->
 		<item id="19741" chance="9300"/><!-- Marsh Stalker Feather -->
 		<item id="2397" chance="7180"/><!-- Longsword -->
-		<!--item id="7732" chance="120"/><!-- seeds -->
+		<!--item id="7732" chance="120"/--><!-- seeds -->
 		<item id="2120" chance="4530"/><!-- rope -->
 	</loot>
 </monster>

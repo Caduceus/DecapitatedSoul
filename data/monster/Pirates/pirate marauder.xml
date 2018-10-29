@@ -46,7 +46,7 @@
 		<item id="2464" chance="3000"/><!-- chain armor -->
 		<item id="5553" subtype="27" chance="110"/><!-- rum flask -->
 		<item id="5927" chance="100"/><!-- pirate bag -->
-		<!--item id="11219" chance="9720"/><!-- compass -->
+		<!--item id="11219" chance="9720"/--><!-- compass -->
 		<item id="6095" chance="10"/><!-- pirate shirt -->
 		<item id="6126" chance="10"/><!-- peg leg -->
 		<item id="6098" chance="1500"/><!-- eye patch -->

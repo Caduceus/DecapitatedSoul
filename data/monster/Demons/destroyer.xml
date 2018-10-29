@@ -58,7 +58,7 @@
 		<item id="2546" countmax="12" chance="12500"/><!-- burst arrow -->
 		<item id="2489" chance="10000"/><!-- dark armor -->
 		<item id="2150" countmax="2" chance="7692"/><!-- small amethyst -->
-		<!--item id="11215" chance="7142"/><!-- metal spike -->
+		<!--item id="11215" chance="7142"/--><!-- metal spike -->
 		<item id="5944" chance="6666"/><!-- soul orb-->
 		<item id="2553" chance="6250"/><!-- pick -->
 		<item id="2463" chance="4347"/><!-- plate armor -->

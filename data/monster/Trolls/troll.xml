@@ -36,17 +36,10 @@
 		<voice sentence="Hmmm, bugs"/>
 		<voice sentence="Hmmm, dogs"/>
 	</voices>
-	<!-- Loot Chance --
-	100 - x =   rare
-	500 - 800   semi rare
-	1000 - 1200 common
-	2000 - 2500 almost all the time
-	3000 > All the time
-	-- Loot Chance -->
 	<loot>
-		<!--item id="2148" countmax="1" chance="65300"/>	<!-- gold coin -->
+		<!--item id="2148" countmax="1" chance="65300"/-->	<!-- gold coin -->
 		<item id="2380" chance="100"/>				<!-- hand axe -->
-		<!--item id="2666" chance="3500"/>				<!-- meat -->
+		<!--item id="2666" chance="3500"/-->				<!-- meat -->
 		<item id="2389" chance="500"/>				<!-- spear -->
 		<item id="2461" chance="800"/>				<!-- leather helmet -->
 		<item id="2643" chance="1000"/>				<!-- leather boots -->

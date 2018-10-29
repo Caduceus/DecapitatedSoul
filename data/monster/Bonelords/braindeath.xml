@@ -75,10 +75,10 @@
 		<item id="2450" chance="8000"/><!-- bone sword -->
 		<item id="2423" chance="2000"/><!-- clerical mace -->
 		<item id="2509" chance="6000"/><!-- steel shield -->
-		<!--item id="5898" chance="3380"/><!-- beholder eye -->
+		<!--item id="5898" chance="3380"/--><!-- beholder eye -->
 		<item id="7407" chance="1500"/><!-- haunted blade -->
 		<item id="7452" chance="950"/><!-- spiked squelcher-->
-		<!--item id="3972" chance="180"/><!-- beholder helmet -->
+		<!--item id="3972" chance="180"/--><!-- beholder helmet -->
 		<item id="10580" chance="4725"/><!-- piece of dead brain -->
 	</loot>
 </monster>

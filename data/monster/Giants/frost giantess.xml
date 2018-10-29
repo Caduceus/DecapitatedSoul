@@ -51,7 +51,7 @@
 	<loot>
 		<item id="2152" countmax="50" chance="100000"/><!-- platinum coin -->
 		<item id="2671" countmax="2" chance="20990"/><!-- ham -->
-		<!--item id="10575" chance="4800"/><!-- Frost Giant Pelt -->
+		<!--item id="10575" chance="4800"/--><!-- Frost Giant Pelt -->
 		<item id="7441" chance="2008"/><!-- ice cube -->
 		<item id="7460" chance="2000"/><!-- norse shield -->
 		<item id="8911" chance="5500"/><!-- northwind rod -->

@@ -542,7 +542,6 @@
 	<monster name="Goblin Leader" file="Goblins/goblin leader.xml"/>
 	<monster name="Goblin Scavenger" file="Goblins/goblin scavenger.xml"/>
 	<monster name="Grynch Clan Goblin" file="Goblins/grynch clan goblin.xml"/>
-	<monster name="Demon (Goblin)" file="Goblins/demon (goblin).xml"/>
 
 	<!-- Hydro-Elementals -->
 	<monster name="Massive Water Elemental" file="Hydro-Elementals/massive water elemental.xml"/>

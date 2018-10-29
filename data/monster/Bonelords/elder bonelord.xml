@@ -64,8 +64,8 @@
 		<item id="2148" countmax="86" chance="30000"/><!-- gold coin -->
 		<item id="2377" chance="6000"/><!-- two handed sword -->
 		<item id="3972" chance="150"/><!-- beholder helmet -->
-		<!--item id="12468" chance="10025"/><!-- small flask of eyedrops -->
-		<!--item id="11193" chance="21725"/><!-- elder bonelord tentacle -->
-		<!--item id="11197" chance="850"/><!-- giant eye -->
+		<!--item id="12468" chance="10025"/--><!-- small flask of eyedrops -->
+		<!--item id="11193" chance="21725"/--><!-- elder bonelord tentacle -->
+		<!--item id="11197" chance="850"/--><!-- giant eye -->
 	</loot>
 </monster>

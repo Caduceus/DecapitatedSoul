@@ -49,7 +49,7 @@
 	</voices>
 	<loot>
 		<item id="2152" countmax="15" chance="48000"/><!-- plat coin -->
-		<!--item id="10601" chance="4300"/><!-- Tattered Piece of Robe -->
+		<!--item id="10601" chance="4300"/--><!-- Tattered Piece of Robe -->
 		<item id="2165" chance="6500"/><!-- stealth ring -->
 		<item id="1951" chance="910"/><!-- parchment -->
 		<item id="2383" chance="3300"/><!-- spike sword -->
