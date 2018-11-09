@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Evil Sheep Lord" nameDescription="an evil sheep lord" race="blood" experience="340" speed="300" manacost="0">
-	<health now="400" max="400"/>
+<monster name="Evil Sheep Lord" nameDescription="an evil sheep lord" race="blood" experience="60000" speed="300" manacost="0">
+	<health now="120000" max="120000"/>
 	<look type="13" corpse="5994"/>
 	<targetchange interval="2000" chance="20"/>
 	<flags>
@@ -23,7 +23,7 @@
 		</attack>
 	</attacks>
 	<defenses armor="30" defense="35">
-		<defense name="healing" interval="2000" chance="20" min="50" max="100">
+		<defense name="healing" interval="2000" chance="10" min="1000" max="4000">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 		<defense name="outfit" interval="1500" chance="50" monster="Werewolf" duration="3000">
@@ -37,8 +37,9 @@
 		<element firePercent="-5"/>
 		<element physicalPercent="-20"/>
 	</elements>
-	<summons maxSummons="3">
+	<summons maxSummons="10">
 		<summon name="Evil Sheep" interval="2000" chance="30"/>
+		<summon name="Werewolf" interval="1000" chance="10"/>
 	</summons>
 	<voices interval="5000" chance="10">
 		<voice sentence="You can COUNT on us!"/>
@@ -46,6 +47,9 @@
 		<voice sentence="I feel you're getting sleepy! Maeh!"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="60" chance="75000"/>	<!-- gold coins -->
+		<item id="24774" countmax="2" chance="7500"/>	<!-- tibia coin -->
+		<item id="10521" chance="7500"/>	<!-- moon backpack -->
+		<item id="13567" chance="1000"/>	<!-- Evilina -->
+		<item id="1948" chance="500"/>	<!-- double xp grant -->
 	</loot>
 </monster>

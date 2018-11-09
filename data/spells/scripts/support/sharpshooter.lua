@@ -4,15 +4,10 @@ combat:setParameter(COMBAT_PARAM_AGGRESSIVE, 0)
 
 local condition = Condition(CONDITION_ATTRIBUTES)
 condition:setParameter(CONDITION_PARAM_TICKS, 10000)
-condition:setParameter(CONDITION_PARAM_SKILL_DISTANCEPERCENT, 150)
-condition:setParameter(CONDITION_PARAM_SKILL_SHIELDPERCENT, -100)
+condition:setParameter(CONDITION_PARAM_SKILL_DISTANCE, 75)
+condition:setParameter(CONDITION_PARAM_SKILL_SHIELD, -75)
 condition:setParameter(CONDITION_PARAM_BUFF_SPELL, 1)
 combat:setCondition(condition)
-
-local speed = Condition(CONDITION_PARALYZE)
-speed:setParameter(CONDITION_PARAM_TICKS, 10000)
-speed:setFormula(-0.7, 56, -0.7, 56)
-combat:setCondition(speed)
 
 local exhaustHealGroup = Condition(CONDITION_SPELLGROUPCOOLDOWN)
 exhaustHealGroup:setParameter(CONDITION_PARAM_SUBID, 2)

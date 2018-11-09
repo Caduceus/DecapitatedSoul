@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Werewolf" nameDescription="a werewolf" experience="1900" speed="200" race="blood" manacost="0">
-	<health now="1955" max="1955"/>
+<monster name="Werewolf" nameDescription="a werewolf" experience="19000" speed="200" race="blood" manacost="0">
+	<health now="19000" max="19000"/>
 	<targetchange interval="4000" chance="10"/>
 	<look type="308" corpse="20380"/>
 	<flags>
@@ -17,11 +17,11 @@
 		<flag runonhealth="300"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" skill="90" attack="70"/>
+		<attack name="melee" interval="2000" skill="90" attack="170"/>
 		<attack name="outfit" interval="2000" chance="1" target="1" radius="1" monster="werewolf" duration="2000">
 			<attribute key="areaeffect" value="bluenote"/>
 		</attack>
-		<attack name="lifedrain" interval="2000" chance="10" length="4" spread="2" target="0" min="-80" max="-200">
+		<attack name="lifedrain" interval="2000" chance="10" length="4" spread="2" target="0" min="-800" max="-2000">
 			<attribute key="areaEffect" value="rednote"/>
 		</attack>
 		<attack name="physical" interval="2000" chance="40" radius="3" target="0">
@@ -30,10 +30,10 @@
 		<attack name="physical" interval="2000" chance="10" radius="1" target="0">
 			<attribute key="areaEffect" value="greennote"/>
 		</attack>
-		<attack name="werewolf skill reducer" interval="2000" range="1" chance="15"/>
+		<attack name="werewolf skill reducer" interval="2000" range="1" chance="50"/>
 	</attacks>
 	<defenses armor="40" defense="40">
-		<defense name="healing" interval="2000" chance="15" min="120" max="225">
+		<defense name="healing" interval="2000" chance="50" min="1200" max="2250">
 			<attribute key="areaEffect" value="greenshimmer"/>
 		</defense>
 		<defense name="speed" interval="2000" chance="15" range="7" speedchange="400" duration="5000">
@@ -82,5 +82,6 @@
 		<item id="7419" chance="160"/><!-- dreaded cleaver -->
 		<item id="11234" chance="10650"/><!-- werewolf fur -->
 		<item id="2789" chance="6940"/><!-- brown mushroom -->
+		<item id="24740" chance="5000"/><!-- wolf backpack -->
 	</loot>
 </monster>

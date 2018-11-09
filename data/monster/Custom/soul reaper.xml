@@ -41,7 +41,6 @@
 	<elements>
 		<element firePercent="50"/>
 		<element earthPercent="40"/>
-		<element holyPercent="30"/>
 		<element energyPercent="-10"/>
 		<element deathPercent="-10"/>
 	</elements>

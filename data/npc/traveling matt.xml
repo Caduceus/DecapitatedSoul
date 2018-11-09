@@ -10,8 +10,11 @@
 		<parameter key="message_walkaway_female" value="Cheerio! Madam. Do come again."/>
 <!--SHOP-->
 <parameter key="module_shop" value="1" />
-		<parameter key="shop_buyable" value="stone skin amulet,2197,250000,1000" />
-		
+		<parameter key="shop_buyable" value="stone skin amulet,2197,250000,1000;
+											 Bonfire amulet,10218,250000,1000;
+											 sacred tree amulet,10219,250000,1000;
+											 leviathan's amulet,10220,250000,1000;
+											 shockwave amulet,10221,250000,1000" />
 		<parameter key="shop_sellable" value="platinum amulet,2171,3000;
 											  ring of the sky,2123,30000;
 											  ruby necklace,2133,10000

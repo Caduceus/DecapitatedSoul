@@ -2,6 +2,7 @@ local t, i = {
 --"[Server]: Please refrain from the use of Cavebots. If you choose to break the rules, then your character becomes fair game to any and all forms of Admin Power Abuse.",
 --"[Server]: Set your Ambient Light to approximately 10-15%, for best visual experience.",
 --"[Server]: Decapitated Soul needs your help! The server cannot continue without donations to cover host cost. Without your help, we cannot stay alive! ",
+"[Server]: New weapons are rewarded on skill levels {30,50,70}. With skill level {100} being rewarded with a new trinket item (varies with skill). ",
 "[Server]: Melee weapons are setup as follows: Axe (pure dmg), Club (defensive), & Sword (neutral)",
 "[Server]: Wands|Rods allow the use of several damage types by right clicking on the weapon. ", 
 "[Server]: Blessings - [Free until level 80] Blessing Runes can be purchased from Brevans, located in the bottom of Purgatory Isle Temple. ", 

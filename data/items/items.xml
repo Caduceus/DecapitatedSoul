@@ -16767,14 +16767,14 @@
 		<attribute key="weight" value="40000" />
 		<attribute key="containerSize" value="10" />
 		<attribute key="decayTo" value="8961" />
-		<attribute key="duration" value="10" />
+		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="undead" />
 	</item>
 	<item id="8961" article="a" name="slain mutated pumpkin">
 		<attribute key="weight" value="30000" />
 		<attribute key="containerSize" value="10" />
 		<attribute key="decayTo" value="8962" />
-		<attribute key="duration" value="900" />
+		<attribute key="duration" value="300" />
 		<attribute key="corpseType" value="undead" />
 	</item>
 	<item id="8962" article="a" name="slain mutated pumpkin">
@@ -18655,39 +18655,41 @@
 		<attribute key="description" value="It engulfs you in flames - fire against fire." />
 		<attribute key="weight" value="700" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="charges" value="5" />
+		<attribute key="charges" value="1000" />
 		<attribute key="showcharges" value="1" />
-		<attribute key="absorbPercentPhysical" value="60" />
-		<attribute key="absorbPercentFire" value="40" />
+		<attribute key="absorbPercentPhysical" value="25" />
+		<attribute key="absorbPercentFire" value="25" />
 		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="10219" article="a" name="sacred tree amulet">
 		<attribute key="description" value="Its leaves stretch out to cover your whole body if you receive earth damage." />
 		<attribute key="weight" value="700" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="charges" value="20" />
+		<attribute key="charges" value="1000" />
 		<attribute key="showcharges" value="1" />
-		<attribute key="absorbPercentPhysical" value="60" />
-		<attribute key="absorbPercentEarth" value="40" />
+		<attribute key="absorbPercentPhysical" value="25" />
+		<attribute key="absorbPercentEarth" value="25" />
 		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="10220" article="a" name="leviathan's amulet">
 		<attribute key="description" value="It holds the last breath of Leviathan." />
 		<attribute key="weight" value="700" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="charges" value="5" />
+		<attribute key="charges" value="1000" />
 		<attribute key="showcharges" value="1" />
-		<attribute key="absorbPercentPhysical" value="60" />
-		<attribute key="absorbPercentIce" value="40" />
+		<attribute key="absorbPercentPhysical" value="25" />
+		<attribute key="absorbPercentIce" value="25" />
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="10221" article="a" name="shockwave amulet">
 		<attribute key="description" value="It tickles your neck in a rather pleasant way and absorbs loads of damage." />
 		<attribute key="weight" value="700" />
 		<attribute key="slotType" value="necklace" />
-		<attribute key="charges" value="5" />
+		<attribute key="charges" value="1000" />
 		<attribute key="showcharges" value="1" />
-		<attribute key="absorbPercentPhysical" value="60" />
-		<attribute key="absorbPercentEnergy" value="40" />
+		<attribute key="absorbPercentPhysical" value="25" />
+		<attribute key="absorbPercentEnergy" value="25" />
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="10223" article="a" name="mechanical fishing rod">
 		<attribute key="weight" value="920" />
@@ -22751,6 +22753,8 @@
 		<attribute key="weight" value="600" />
 	</item>
 	<item id="13567" name="Evilina">
+		<attribute key="decayTo" value="13571" />
+		<attribute key="duration" value="500" />
 		<attribute key="weight" value="600" />
 	</item>
 	<item id="13568" name="Whinona">
@@ -22763,6 +22767,8 @@
 		<attribute key="weight" value="600" />
 	</item>
 	<item id="13571" name="Evilina">
+		<attribute key="decayTo" value="13567" />
+		<attribute key="duration" value="500" />
 		<attribute key="weight" value="600" />
 	</item>
 	<item fromid="13572" toid="13575" article="a" name="mysterious machine" />
@@ -30992,7 +30998,7 @@
 		<attribute key="floorchange" value="west" />
 	</item>
 	<item id="22589" article="a" name="stair">
-		<attribute key="floorchange" value="east" />
+		<attribute key="floorchange" value="eastalt" />
 	</item>
 	<item id="22590" article="a" name="stair">
 		<attribute key="floorchange" value="south" />

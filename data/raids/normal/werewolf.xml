@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+<announce delay="1000" type="event" message="Werewolves are taking over Drogheda!" />
+
+  <areaspawn delay="1000" fromx="961" fromy="937" fromz="7" tox="1080" toy="1038" toz="7">
+    <monster name="werewolf" amount="10" />
+    <monster name="evil sheep lord" amount="4" />
+    <monster name="ghost" amount="10" />
+  </areaspawn>
+
+</raid>

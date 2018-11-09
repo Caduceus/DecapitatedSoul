@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <raids>
 	<raid name="demon" file="normal/demonPurg.xml" interval2="9999990" margin="1"/>
-	<!--raid name="RatsDrogheda" file="normal/ratsDrogheda.xml" interval2="250" margin="60"/>
+	<raid name="horseman" file="normal/horseman.xml" interval2="9999990" margin="1"/>
+	<raid name="werewolf" file="normal/werewolf.xml" interval2="9999990" margin="1"/>
+	<raid name="rats" file="normal/ratsDrogheda.xml" interval2="250" margin="60"/>
 	<!--
 		<raid name="Testraid" file="testraid.xml" interval2="30" margin="0"/>
 		executed on average once every 30 minutes

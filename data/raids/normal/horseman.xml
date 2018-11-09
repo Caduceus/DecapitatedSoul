@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+
+<announce delay="1000" type="event" message="Your time is nigh, for tonight the horseman flies." />
+<announce delay="10000" type="event" message="The sky is dark. The fire burns. You strive in vain as Fate's wheel turns." />
+
+  <areaspawn delay="15000" fromx="961" fromy="937" fromz="7" tox="1080" toy="1038" toz="7">
+    <monster name="headless horseman" amount="1" />
+    <monster name="mutatated pumpkin" amount="20" />
+  </areaspawn>
+
+</raid>

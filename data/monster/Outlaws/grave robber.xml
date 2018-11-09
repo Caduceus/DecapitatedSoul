@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Grave Robber" nameDescription="a grave robber" race="blood" experience="65" speed="205" manacost="355">
-	<health now="165" max="165"/>
+	<health now="1650" max="1650"/>
 	<look type="146" head="114" body="95" legs="76" feet="38" addons="3" corpse="20411"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
@@ -20,8 +20,8 @@
         <event name="playerSummon"/>
     </script>
 	<attacks>
-		<attack name="melee" interval="2000" skill="35" attack="40"/>
-		<attack name="poisoncondition" interval="2000" chance="15" range="7" radius="1" target="1" min="-100" max="-160">
+		<attack name="melee" interval="2000" skill="50" attack="60"/>
+		<attack name="poisoncondition" interval="2000" chance="15" range="7" radius="1" target="1" min="-300" max="-500">
 			<attribute key="shooteffect" value="poison" />
 		</attack>
 	</attacks>
@@ -41,7 +41,7 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="38" chance="54260"/><!-- gold coin -->
-		<item id="2386" chance="2500"/><!-- axe -->
+		<item id="2386" chance="5000"/><!-- axe -->
 		<item id="2398" chance="1700"/><!-- mace -->
 		<item id="2465" chance="1700"/><!-- brass armor -->
 		<item id="2509" chance="500"/><!-- steel shield -->

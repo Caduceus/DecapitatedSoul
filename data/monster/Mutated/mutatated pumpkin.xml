@@ -93,14 +93,14 @@
         <voice sentence="DON'T BE AFRAID! I AM COMING IN PEACE!" yell="1"/> 
     </voices> 
     <loot>
-		<item id="2160" countmax="1" chance="98900"/> <!-- crystal coin--> 
+		<item id="2160" countmax="1" chance="8900"/> <!-- crystal coin--> 
         <item id="2112" countmax="1" chance="14500"/> <!-- teddy bear--> 
-      	<item id="2160" countmax="1" chance="88800"/> <!-- crystal coin--> 
-      	<item id="6569" countmax="100" chance="99900"/> <!-- candy--> 
-        <item id="6574" countmax="1" chance="4000"/> <!-- bar of chocolate-->
+      	<item id="2160" countmax="1" chance="800"/> <!-- crystal coin--> 
+      	<item id="6569" countmax="13" chance="99900"/> <!-- candy--> 
+        <item id="6574" countmax="10" chance="4000"/> <!-- bar of chocolate-->
         <item id="2683" countmax="1" chance="11000"/> <!-- pumpkin-->
-		<item id="7910" countmax="8" chance="6600"/> <!-- peanuts-->	 
-        <item id="2674" countmax="100" chance="88800"/> <!-- apple--> 
-        <item id="2687" countmax="100" chance="77700"/> <!-- cookie-->
+		<item id="7910" countmax="100" chance="6600"/> <!-- peanuts-->	 
+        <item id="2674" countmax="1" chance="88800"/> <!-- apple--> 
+        <item id="2687" countmax="10" chance="77700"/> <!-- cookie-->
 	</loot>
 </monster>
