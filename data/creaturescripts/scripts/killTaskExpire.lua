@@ -19,7 +19,11 @@ local monsters = {
      ['frost dragon'] = {storage = 19016, startstorage = 5026},
      ['grim reaper'] = {storage = 19017, startstorage = 5027},
      ['juggernaut'] = {storage = 19018, startstorage = 5028},
-     ['vampire'] = {storage = 19019, startstorage = 5029}
+     ['vampire'] = {storage = 19019, startstorage = 5029},
+     ['apocalypse'] = {storage = 19020, startstorage = 5030},
+     ['morgaroth'] = {storage = 19021, startstorage = 5031},
+     ['infernatil'] = {storage = 19022, startstorage = 5032},
+     ['trigama'] = {storage = 19023, startstorage = 5033}
 }
 function onThink(player)
 	if player:getStorageValue(62004) == -1 then
@@ -27,9 +31,10 @@ else
 	if player:getStorageValue(62004) < os.time() then
 		player:sendTextMessage(MESSAGE_INFO_DESCR, 'Your Daily Quest Has Expired.')
 	for k, x in pairs(monsters) do
-		player:setStorageValue(62003, -1)
-		player:setStorageValue(62004, -1)
-		player:setStorageValue(62005, -1)
+		player:setStorageValue(62003, -1) -- Adonai
+		player:setStorageValue(62004, -1) -- Expire Storage
+		player:setStorageValue(62005, -1) -- Zagorim
+		player:setStorageValue(62006, -1) -- Willy
 		player:setStorageValue(x.storage, -1)
 		player:setStorageValue(x.startstorage, -1)
 		player:save()

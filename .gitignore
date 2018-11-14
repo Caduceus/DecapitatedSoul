@@ -175,3 +175,4 @@ data/actions/scripts/quests/screwup.lua
 data/items/items.otb.rar
 data/items/backup.rar
 data/logs/playerCoinReward.txt
+*.out

@@ -19,7 +19,12 @@ local config = {
      ['frost dragon'] = {amount = 50, storage = 19016, startstorage = 5026, startvalue = 1},
      ['grim reaper'] = {amount = 50, storage = 19017, startstorage = 5027, startvalue = 1},
      ['juggernaut'] = {amount = 50, storage = 19018, startstorage = 5028, startvalue = 1},
-     ['vampire'] = {amount = 50, storage = 19019, startstorage = 5029, startvalue = 1}
+     ['vampire'] = {amount = 50, storage = 19019, startstorage = 5029, startvalue = 1},
+     ['apocalypse'] = {amount = 50, storage = 19020, startstorage = 5030, startvalue = 1},
+     ['morgaroth'] = {amount = 50, storage = 19021, startstorage = 5031, startvalue = 1},
+     ['infernatil'] = {amount = 50, storage = 19022, startstorage = 5032, startvalue = 1},
+     ['trigama'] = {amount = 50, storage = 19023, startstorage = 5033, startvalue = 1}
+     
 }
 function onKill(player, target)
     local monster = config[target:getName():lower()]

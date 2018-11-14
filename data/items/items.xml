@@ -22413,6 +22413,7 @@
 		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="blood" />
 	</item>
+	<item id="13452" article="an" name="Alura Doll"/>
 	<item id="13472" name="pharaoh banner">
 		<attribute key="weight" value="1000" />
 	</item>

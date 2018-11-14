@@ -10,22 +10,25 @@ function onCreatureSay(cid, type, msg)  npcHandler:onCreatureSay(cid, type, msg)
 function onThink()  npcHandler:onThink()  end
 
 local exstorage = 62004 --expire storage
-local storage = 62005
+local storage = 62006
 
-local monsters = {
-   ["Hydras"] = {exstorage = 6019, storage = 5019, mstorage = 19009, amount = 50, rewardexp = 12000, items = { {id = 2160, count = 10},{id = 18422, count = 2}}},
-   ["Demons"] = {exstorage = 6020, storage = 5020, mstorage = 19010, amount = 50, rewardexp = 18000, items = { {id = 2160, count = 10},{id = 18422, count = 2}}},
-   ["Warlocks"] = {exstorage = 6021, storage = 5021, mstorage = 19011, amount = 50, rewardexp = 15000, items = { {id = 2160, count = 10},{id = 18422, count = 2}}},
-   ["Orshabaals"] = {exstorage = 6022, storage = 5022, mstorage = 19012, amount = 50, rewardexp = 22000, items = { {id = 2160, count = 10},{id = 18422, count = 2}}},
-   ["Lost Souls"] = {exstorage = 6023, storage = 5023, mstorage = 19013, amount = 50, rewardexp = 20000, items = { {id = 2160, count = 10},{id = 18422, count = 2}}},
-   ["Chocobo Warriors"] = {exstorage = 6024, storage = 5024, mstorage = 19014, amount = 50, rewardexp = 18000, items = { {id = 2160, count = 10},{id = 18422, count = 2}}},
-   ["Ghastly Dragons"] = {exstorage = 6025, storage = 5025, mstorage = 19015, amount = 50, rewardexp = 28000, items = { {id = 2160, count = 10},{id = 18422, count = 2}}},
-   ["Frost Dragons"] = {exstorage = 6026, storage = 5026, mstorage = 19016, amount = 50, rewardexp = 30000, items = { {id = 2160, count = 10},{id = 18422, count = 2}}},
-   ["Grim Reapers"] = {exstorage = 6027, storage = 5027, mstorage = 19017, amount = 50, rewardexp = 25000, items = { {id = 2160, count = 10},{id = 18422, count = 2}}},
-   ["Juggernauts"] = {exstorage = 6028, storage = 5028, mstorage = 19018, amount = 50, rewardexp = 25000, items = { {id = 2160, count = 10},{id = 18422, count = 2}}},
-   
-}
+local monsters = {  
+   ["Trigama"] = {exstorage = 6033, storage = 5033, mstorage = 19023, amount = 50, rewardexp = 50000, items = {{id = 18423, count = 3}}},
+   ["Apocalypse"] = {exstorage = 6030, storage = 5030, mstorage = 19020, amount = 50, rewardexp = 75000, items = {{id = 18423, count = 3}}},
+   ["Morgaroth"] = {exstorage = 6031, storage = 5031, mstorage = 19021, amount = 50, rewardexp = 100000, items = {{id = 18423, count = 3}}},
+   ["Infernatil"] = {exstorage = 6032, storage = 5032, mstorage = 19022, amount = 50, rewardexp = 100000, items = {{id = 18423, count = 3}}}
+   }
 
+local lastSound = 0
+function onThink()
+    if lastSound < os.time() then
+        lastSound = (os.time() + 5)
+        if math.random(100) < 20 then
+            Npc():say("Looking for some action?! I got your action!", TALKTYPE_MONSTER_SAY)
+        end
+    end
+    npcHandler:onThink()
+end
 
 local function getItemsFromTable(itemtable)
      local text = ""

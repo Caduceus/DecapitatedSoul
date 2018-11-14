@@ -24,7 +24,7 @@ Storage = {
 	camoBp = 3940,
 	repeatableTask = {
 		storage = 62003,
-		exstorage = 62004,
+		exstorage = 62004, --expire
 		exstorage = {
 			rotworm = 6010,
 			carrionWorm = 6011,
@@ -59,9 +59,12 @@ Storage = {
 			dragon = 19006,
 			dragonLord = 19007,
 			demodra = 19008,
-			vampire = 19019
-		}
-	},
+			vampire = 19019,
+			apocalypse = 19020,
+			morgaroth = 19021,
+			infernatil = 19022,
+			trigama = 19023
+		},
 	repeatableTask2 = {
 		storage = 62005,
 		exstorage = {
@@ -75,8 +78,8 @@ Storage = {
 			frostDragon = 6026,
 			grimReaper = 6027,
 			juggernaut = 6028
-		},
-
+		}
+	},
 		storage = {
 			hydra = 5019,
 			demon = 5020,
