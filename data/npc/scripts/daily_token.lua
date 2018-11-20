@@ -87,7 +87,7 @@ local function getItemsFromTable(itemtable)
      end
      return text
 end
-keywordHandler:addKeyword({'help'}, StdModule.say, {npcHandler = npcHandler, text = "The items I offer are: {1 vip day}, {5 vip day}, {10 vip day}, {lottery ticket}, {bless rune}, {pirate backpack}, {buggy backpack}, {dragon backpack}, and {double xp grant}"})
+keywordHandler:addKeyword({'help'}, StdModule.say, {npcHandler = npcHandler, text = "The items I offer are: {1 vip day}, {5 vip day}, {10 vip day}, {lottery ticket}, {bless rune}, {pirate backpack}, {buggy backpack}, {dragon backpack}, and {double xp grant}. Now, are you going to buy something or waste my time?!"})
  
 function creatureSayCallback(cid, type, msg)
  
@@ -98,7 +98,7 @@ function creatureSayCallback(cid, type, msg)
      local talkUser = NPCHANDLER_CONVBEHAVIOR == CONVERSATION_DEFAULT and 0 or cid
  
      if msgcontains(msg, "exchange") then
-         selfSay("You can exchange your daily tokens for various items. If you are unsure what I offer, please ask for {help} or check the board to your right!", cid)
+         selfSay("You can exchange your daily tokens for various items. If you are unsure what I offer, ask for {help} or check the board you lazy bum!", cid)
          talkState[talkUser] = 1
      elseif items[msg:lower()] and talkState[talkUser] == 1 then
          local x = items[msg:lower()]

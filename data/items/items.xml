@@ -17454,8 +17454,8 @@
 	<item id="9734" article="an" name="animal cure">
 		<attribute key="weight" value="180" />
 	</item>
-	<item id="9735" name="Morik's helmet">
-		<attribute key="description" value="It belonged to a famous gladiator." />
+	<item id="9735" name="gladiator helmet">
+		<attribute key="slotType" value="head" />
 		<attribute key="weight" value="4600" />
 	</item>
 	<item id="9736" article="an" name="armor">
@@ -18255,6 +18255,12 @@
 		<attribute key="description" value="They can be recharged with an enchanted ruby." />
 		<attribute key="weight" value="950" />
 		<attribute key="slotType" value="feet" />
+	</item>
+	<item id="10023" article="a" name="yalahari boots">
+		<attribute key="weight" value="7000" />
+		<attribute key="armor" value="16" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="absorbPercentDeath" value="3" />
 	</item>
 	<item id="10024" article="a" name="crystal ball">
 		<attribute key="weight" value="3400" />
@@ -36211,6 +36217,13 @@
 		<attribute key="skillcriticalchance" value="25" />
 		<attribute key="skillcriticaldamage" value="45" />
 	</item>	
+	<item id="26324" article="a" name="grasshopper boots">
+		<attribute key="weight" value="3200" />
+		<attribute key="armor" value="7" />
+		<attribute key="slotType" value="feet" />
+		<attribute key="speed" value="20" />
+		<attribute key="showattributes" value="1" />
+	</item>
 	<item id="26342" article="a" name="devourer core">
 		<attribute key="slotType" value="ammo" />
 		<attribute key="description" value="The core of the devourer has the power to provide you with a powerfull charge that allows you to challenge him again immediately." />

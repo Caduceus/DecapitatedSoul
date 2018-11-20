@@ -208,11 +208,11 @@
 	</movevent>
 	<movevent event="DeEquip" itemid="9777" slot="legs" function="onDeEquipItem"/>
 
-	<movevent event="Equip" itemid="6132" slot="feet" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="10023" slot="feet" level="400" function="onEquipItem">
 		<vocation name="Warlord Sorcerer"/>
         <vocation name="Warlord Druid"/>
 	</movevent>
-	<movevent event="DeEquip" itemid="6132" slot="feet" function="onDeEquipItem"/>
+	<movevent event="DeEquip" itemid="10023" slot="feet" function="onDeEquipItem"/>
 	
 	<!-- Pally-->
 	<movevent event="Equip" itemid="9735" slot="head" level="400" function="onEquipItem">
@@ -230,10 +230,10 @@
 	</movevent>
 	<movevent event="DeEquip" itemid="15490" slot="legs" function="onDeEquipItem"/>
 
-	<movevent event="Equip" itemid="26133" slot="feet" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="26324" slot="feet" level="400" function="onEquipItem">
 		<vocation name="Warlord Paladin"/>
 	</movevent>
-	<movevent event="DeEquip" itemid="26133" slot="feet" function="onDeEquipItem"/>
+	<movevent event="DeEquip" itemid="26324" slot="feet" function="onDeEquipItem"/>
 	
 	<!-- Knight-->
 	<movevent event="Equip" itemid="23536" slot="head" level="400" function="onEquipItem">
@@ -1169,6 +1169,8 @@
 	<movevent event="DeEquip" itemid="22385" slot="feet" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="2640" slot="feet" function="onEquipItem"/>
 	<movevent event="DeEquip" itemid="2640" slot="feet" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="6132" slot="feet" level="200" function="onEquipItem"/>
+	<movevent event="DeEquip" itemid="6132" slot="feet" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="2646" slot="feet" level="170" function="onEquipItem">
 		<vocation name="Paladin"/>
 		<vocation name="Royal Paladin" showInDescription="0"/>
