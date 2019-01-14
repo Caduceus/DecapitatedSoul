@@ -1038,11 +1038,13 @@ void Player::sendPing()
 		setAttackedCreature(nullptr);
 	}
 
-	if (noPongTime >= 60000 && canLogout()) {
+	//if (noPongTime >= 60000 && canLogout()) {
+	if (noPongTime >= 10000) {
 		if (g_creatureEvents->playerLogout(this)) {
 			if (client) {
 				client->logout(true, true);
 			} else {
+				//std::cout << getName() << " has lost connection or x logged." << std::endl;
 				g_game.removeCreature(this, true);
 			}
 		}

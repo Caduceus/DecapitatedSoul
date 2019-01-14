@@ -310,7 +310,6 @@ const uint8_t clientToServerFluidMap[] = {
 	FLUID_MANA,
 	FLUID_BEER,
 	FLUID_MUD,
-	FLUID_COFFEE,
 	FLUID_BLOOD,
 	FLUID_SLIME,
 	FLUID_RUM,
@@ -324,6 +323,7 @@ const uint8_t clientToServerFluidMap[] = {
 	FLUID_COCONUTMILK,
 	FLUID_TEA,
 	FLUID_MEAD,
+	FLUID_COFFEE,
 };
 
 enum ClientFluidTypes_t : uint8_t {
