@@ -1,4 +1,5 @@
 local storage = 15009
+--550, 1338, 10
 
 local chests = {
 	[15006] = {itemid = 12649, count = 1},
@@ -20,8 +21,8 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			local article = itemType:getArticle()
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'You have found ' .. (#article > 0 and article .. ' ' or '') .. itemType:getName() .. '.')
 		end
+		local weapon = player:addItem(chest.itemid, chest.count)
 		if player:getVocation():getBase():getId() == 9 then
-			local weapon = player:addItem(chest.itemid, chest.count)
 			local tempWeapon = player:addItem(8932, 1)
 			tempWeapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for the completion of Frozen Hell on " .. os.date("%B %d, %Y") .. ".")
 			weapon:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "This weapon was awarded to ".. player:getName() ..", for the completion of Frozen Hell on " .. os.date("%B %d, %Y") .. ".")

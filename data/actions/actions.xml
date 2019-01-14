@@ -344,12 +344,18 @@
 	<action itemid="8847" script="other/food.lua"/>
 	<action itemid="9005" script="other/food.lua"/>
 	<action itemid="9114" script="other/food.lua"/>
-	<action itemid="9996" script="other/food.lua"/>
+	<action fromid="9992" toid="9997" script="other/food.lua"/>
+	<action itemid="9999" script="other/food.lua"/>
+	<action itemid="10001" script="other/food.lua"/>
 	<action itemid="10454" script="other/food.lua"/>
+	<action itemid="11135" script="other/food.lua"/>
+	<action itemid="11136" script="other/food.lua"/>
 	<action itemid="11246" script="other/food.lua"/>
 	<action itemid="11370" script="other/food.lua"/>
 	<action itemid="11429" script="other/food.lua"/>
 	<action fromid="12415" toid="12418" script="other/food.lua"/>
+	<action itemid="12540" script="other/food.lua"/>
+	<action itemid="12542" script="other/food.lua"/>
 	<action fromid="12637" toid="12639" script="other/food.lua"/>
 	<action itemid="13297" script="other/food.lua"/>
 	<action itemid="15405" script="other/food.lua"/>
@@ -358,6 +364,8 @@
 	<action itemid="18397" script="other/food.lua"/>
 	<action itemid="19737" script="other/food.lua"/>
 	<action fromid="20100" toid="20101" script="other/food.lua"/>
+	<action itemid="24843" script="other/food.lua"/>
+	<action itemid="26191" script="other/food.lua"/>
 
 	<!-- Spellbooks -->
 	<action itemid="2175" script="other/spellbook.lua"/>
@@ -523,5 +531,9 @@
 	<action fromid="22815" toid="22822" script="other/doors.lua" />
 	<action fromid="22824" toid="22831" script="other/doors.lua" />
 	<action fromid="25283" toid="25296" script="other/doors.lua" />
+	<action fromid="31423" toid="31428" script="other/doors.lua" />
+	<action fromid="31437" toid="31442" script="other/doors.lua" />
+	<action fromid="31451" toid="31486" script="other/doors.lua" />
+	<action fromid="31641" toid="31844" script="other/doors.lua" />
 	
 </actions>

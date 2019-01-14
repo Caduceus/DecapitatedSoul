@@ -33,6 +33,9 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="5" chance="100000"/><!-- gold coin -->
-		<item id="2696" chance="30000"/><!-- cheese -->
+		<item id="1987" chance="3000000"><!-- bag -->
+			<item id="2260" chance="3000000"/><!-- cheese -->
+			<item id="2696" chance="30000"/><!-- blank rune -->
+		</item>
 	</loot>
 </monster>

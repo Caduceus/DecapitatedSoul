@@ -5,7 +5,7 @@ local t, i = {
 "[Server]: New weapons are rewarded on skill levels {30,50,70}. With skill level {100} being rewarded with a new trinket item (varies with skill). ",
 "[Server]: Melee weapons are setup as follows: Axe (pure dmg), Club (defensive), & Sword (neutral)",
 "[Server]: Wands|Rods allow the use of several damage types by right clicking on the weapon. ", 
-"[Server]: Blessings - [Free until level 80] Blessing Runes can be purchased from Brevans, located in the bottom of Purgatory Isle Temple. ", 
+"[Server]: Blessings - [Free until level 80] Blessing Runes can be purchased from Brevans, located in Northeastern Port Lonrich. ", 
 "[Server]: Daily Tokens can be used to purchase Bless and VIP. See Adonai or Zagorim to earn tokens!",
 "[Server]: Coin timer will reset if logged out for more than 5 minutes. ",
 "[Server]: Please check our downloads page for up to date spr/dat packs. OTC launcher will not update sprites. http://decapitatedsoul.servegame.com/downloads.php ",

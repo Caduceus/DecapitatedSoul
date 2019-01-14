@@ -2,7 +2,7 @@ function onSay(player, words, param)
 	if not player:getAccountId() == 1 then
 		return false
 	end
-	local time = 1552917600 - os.time()
+	local time = 1552910400 - os.time()
         local days, hours, minutes, seconds = math.floor (time / 86400), math.floor ((time - ((math.floor (time / 86400)) * 86400))/ 3600), math.floor ((time - ((math.floor (time / 3600)) * 3600))/ 60), time - ((math.floor (time/60)) * 60)
         if time >= 86400 then
             text = days.." "..(days == 1 and "day" or "days")..", "..hours.." "..(hours == 1 and "hour" or "hours")..", "..minutes.." "..(minutes == 1 and "minute" or "minutes").." and "..seconds.." "..(seconds == 1 and "second" or "seconds")

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+  <monster name="Giand Serpent"  race="blood" experience="7255806"  speed="510">
+     <health now="3000000" max="3000000"/>
+     <look type="220" head="20" body="30" legs="40" feet="50" corpse="4323"/>
+<targetchange interval="4000" chance="10"/>
+    <flags>
+        <flag summonable="0"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="0"/>
+        <flag convinceable="0"/>
+        <flag pushable="0"/>
+        <flag canpushitems="1"/>
+        <flag canpushcreatures="1"/>
+        <flag staticattack="40"/>
+        <flag targetdistance="1"/>
+        <flag runonhealth="0"/>
+    </flags>
+
+    <attacks>
+        <attack name="melee" interval="2000" skill="70" attack="63"/> <!-- add monster spells -->
+    </attacks>
+ 
+    <defenses armor="35" defense="35">
+        <defense name="healing" interval="2000" chance="15" min="25000" max="50000">
+            <attribute key="areaEffect" value="blueshimmer"/>
+        </defense>
+        <defense name="speed" interval="2000" chance="15" speedchange="340" duration="5000">
+            <attribute key="areaEffect" value="redshimmer"/>
+        </defense>
+    </defenses>
+ 
+    <immunities>
+        <immunity energy="1"/>
+        <immunity fire="1"/>
+        <immunity poison="1"/>
+        <immunity paralyze="1"/>
+        <immunity invisible="1"/>
+        <immunity drunk="1"/>
+    </immunities>
+
+    <voices interval="5000" chance="100">
+       <voice sentence="No to juz po tobie!"/>
+       <voice sentence="Odesle cie na tamten gorszy swiat!"/>
+       <voice sentence="Fajnie bylo??"/>
+       <voice sentence="Alez ty spamujesz za to padasz!"/>
+    </voices>
+ 
+     <summons maxSummons="2">
+       <summon name="Undead Mastash" chance="1000"/>
+        <summon name="Penigas" chance="1000"/>
+  </summons>
+
+   <loot>
+       <item id="2152" countmax="100" chance1="100000" chancemax="1000"/>
+       <item id="2160" countmax="40" chance1="100000" chancemax="900"/>
+       <item id="2353" chance="1000"/>
+       <item id="2471" chance="500"/>
+       <item id="2507" chance="1538"/>
+       <item id="3968" chance="433"/>
+       <item id="1998" chance="33333">
+       <item id="2678" countmax="3" chance1="10000" chancemax="800"/>
+       <item id="2152" countmax="100" chance1="100000" chancemax="600"/>
+       <item id="2151" countmax="4" chance1="4000" chancemax="800"/>
+       <item id="2474" chance="1055"/>
+       <item id="2149" countmax="3" chance1="1428" chancemax="1000"/>
+       <item id="2471" chance="1333"/>
+       <item id="2493" chance="6666"/>
+       <item id="3983" chance="600"/>
+       <item id="2400" chance="866"/>
+       <item id="2390" chance="3333"/>
+       </item>
+  </loot>
+</monster>

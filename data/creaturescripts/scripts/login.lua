@@ -5,8 +5,8 @@ setPlayerStorageValue(player, aurastr, -1)
 setPlayerStorageValue(player, estr, -1)
 	local loginStr = "Thank you for playing on " .. configManager.getString(configKeys.SERVER_NAME) .. ", " .. player:getName() .. "!"
 	if player:getLastLoginSaved() <= 0 then
-		loginStr = loginStr .. " Please choose your outfit."
-		player:sendOutfitWindow()
+		--loginStr = loginStr .. " Please choose your outfit."
+		--player:sendOutfitWindow()
 		else
 		if loginStr ~= "" then
 			player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, loginStr)
@@ -106,7 +106,7 @@ setPlayerStorageValue(player, estr, -1)
 	player:registerEvent("removeSummon")
 	player:registerEvent("chestTimer")
 	player:registerEvent("lightBearer")
-	player:registerEvent("xLog")
+	--player:registerEvent("xLog")
 	player:setStorageValue(MAY_NOT_MOVE, -1)
 	player:setOutfit(player:getOutfit())
 	return true

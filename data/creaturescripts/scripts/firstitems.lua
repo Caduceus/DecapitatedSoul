@@ -21,6 +21,7 @@ function onLogin(player)
 		print("" .. os.date("%H:%M:%S") .. " - New Player: " .. player:getName() .. " logged in.")
 		sendChannelMessage(9, TALKTYPE_CHANNEL_O, "" .. os.date("%H:%M:%S") .. " - New Player: " .. player:getName() .. " logged in.")
 		sendChannelMessage(2, TALKTYPE_CHANNEL_Y, "Welcome Our Newest Player: " .. player:getName() .. "")
+		player:setStorageValue(111111, os.time() + 10) --logout timer
 		player:addItem(player:getSex() == 0 and 2651 or 2650, 1)
 		player:addItem(3960, 1):addItem(2671, 10)
 		player:openChannel(3)

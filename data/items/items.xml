@@ -1611,7 +1611,8 @@
 	<item id="1995" article="a" name="blue bag">
 		<attribute key="weight" value="800" />
 		<attribute key="containerSize" value="8" />
-		<attribute key="slotType" value="backpack" />
+		<!--attribute key="slotType" value="backpack" /-->
+		<attribute key="slotType" value="ammo" />
 	</item>
 	<item id="1996" article="a" name="grey bag">
 		<attribute key="weight" value="800" />
@@ -20716,7 +20717,7 @@
 	<item id="11428" article="a" name="bowl of evergreen flowers">
 		<attribute key="weight" value="1100" />
 	</item>
-	<item id="11429" article="a" name="crocodile steak">
+	<item id="11429" article="a" name="corned crocodile steak">
 		<attribute key="weight" value="440" />
 	</item>
 	<item id="11430" article="a" name="dead killer caiman">
@@ -36980,6 +36981,64 @@
 	<item id="30988" article="a" name="Painting of Tibiasula">
 		<attribute key="description" value="Zathroth pictured on this canvas" />
 		<attribute key="weight" value="1000" />
+	</item>
+	<item id="30990" article="a" name="dead cat">
+		<attribute key="containerSize" value="10" />
+		<attribute key="containerSize" value="5" />
+		<attribute key="decayTo" value="30991" />
+		<attribute key="duration" value="300" />
+		<attribute key="corpseType" value="blood" />
+		<attribute key="fluidSource" value="blood" />
+	</item>
+	<item id="30991" article="a" name="dead cat">
+		<attribute key="containerSize" value="5" />
+		<attribute key="decayTo" value="30992" />
+		<attribute key="duration" value="300" />
+		<attribute key="corpseType" value="blood" />
+	</item>
+	<item id="30992" article="a" name="dead cat">
+		<attribute key="decayTo" value="0" />
+		<attribute key="duration" value="200" />
+		<attribute key="corpseType" value="blood" />
+	</item>
+	<item id="31008" article="a" name="buttress" />
+	<item id="31009" article="a" name="buttress" />
+	<item id="31010" article="a" name="archway" />
+	<item id="31011" article="a" name="archway" />
+	
+	
+	<item fromid="31423" toid="31424" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item id="31425" article="a" name="open door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item fromid="31426" toid="31427" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item id="31428" article="a" name="open door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	
+	<item fromid="31641" toid="31642" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item id="31643" article="a" name="open door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item fromid="31644" toid="31645" article="a" name="closed door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
+	</item>
+	<item id="31646" article="a" name="open door">
+		<attribute key="type" value="door" />
+		<attribute key="blockprojectile" value="1" />
 	</item>
 	
 	<item id="30001" name="water" />

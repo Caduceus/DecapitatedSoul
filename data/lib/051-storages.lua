@@ -318,6 +318,7 @@ Storage = {
 		warlockSection = 99599
 	},
 	spouseRing = 100100,
+	timedLogout = 111111,
 	
 	
 	-- Not sure how many of these are used in server. if at all. 

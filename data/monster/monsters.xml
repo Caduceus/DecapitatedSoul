@@ -458,6 +458,7 @@
 	<monster name="Lord of the Elements" file="Elemental Lords/lord of the elements.xml"/>
 
 	<!-- Felines -->
+	<monster name="Black Cat" file="Felines/black cat.xml"/>
 	<monster name="Cat" file="Felines/cat.xml"/>
 	<monster name="Lion" file="Felines/lion.xml"/>
 	<monster name="Tiger" file="Felines/tiger.xml"/>
@@ -746,6 +747,7 @@
 
 	<!-- Serpents -->
 	<monster name="Cobra" file="Serpents/cobra.xml"/>
+	<monster name="Giant Serpent" file="Serpents/giant serpent.xml"/>
 	<monster name="Sea Serpent" file="Serpents/sea serpent.xml"/>
 	<monster name="Serpent Spawn" file="Serpents/serpent spawn.xml"/>
 	<monster name="Medusa Snake" file="Serpents/medusa_snake.xml"/>
