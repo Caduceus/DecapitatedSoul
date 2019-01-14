@@ -98,13 +98,13 @@ if ($house !== false && $config['TFSVersion'] === 'TFS_10') {
 		<li><b>Beds</b>: <?php echo $house['beds']; ?></li>
 		<li><b>Owner</b>: <?php
 		if ($house['owner'] > 0) echo "<a href='characterprofile.php?name=". $house['ownername'] ."' target='_BLANK'>". $house['ownername'] ."</a>";
-		else echo "Available for auction.";
+		else echo "Unowned";
 		?></li>
 		<li><b>Rent</b>: <?php echo $house['rent']; ?></li>
 	</ul>
 	<?php
 	// AUCTION MARKUP INIT
-	if ($house['owner'] == 0) {
+	if ($house['owner'] == 100) { //default is 0, 100 disables auction system
 		?>
 		<h2>This house is up on auction!</h2>
 		<?php

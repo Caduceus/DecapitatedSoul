@@ -60,7 +60,7 @@ require_once 'engine/init.php'; include 'layout/overall/header.php';
 					'[center]{$1}[/center]' => '<center>$1</center>',
 					'[b]{$1}[/b]' => '<b>$1</b>',
 					'[size={$1}]{$2}[/size]' => '<font size="$1">$2</font>',
-					'[img]{$1}[/img]'    => '<a href="$1" target="_BLANK"><img src="$1" alt="image" style="width: 100%"></a>',
+					'[img]{$1}[/img]'    => '<a href="$1" target="_BLANK"><img src="$1" alt="image"</a>',
 					'[link]{$1}[/link]'    => '<a href="$1">$1</a>',
 					'[link={$1}]{$2}[/link]'   => '<a href="$1" target="_BLANK">$2</a>',
 					'[color={$1}]{$2}[/color]' => '<font color="$1">$2</font>',
