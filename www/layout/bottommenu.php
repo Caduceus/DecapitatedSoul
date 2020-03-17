@@ -6,6 +6,10 @@
                     FORUM
                 </div>
                 <div class="Sep"><img src="layout/images/sep.png" alt="" ></div>
+                <div class="BotText" onclick="location.href='https://discord.gg/ySYkwJ5/';" >
+                    DISCORD
+                </div>
+                <div class="Sep"><img src="layout/images/sep.png" alt="" ></div>
                 <div class="BotText" onclick="location.href='register.php';" >
                     CREATE ACCOUNT
                 </div>
@@ -16,8 +20,4 @@
                 <div class="Sep"><img src="layout/images/sep.png" alt="" ></div>
                 <div class="BotText" onclick="location.href='changelog.php';" >
                     CHANGELOG
-                </div>
-                <div class="Sep"><img src="layout/images/sep.png" alt="" ></div>
-                <div class="BotText" onclick="location.href='helpdesk.php';" >
-                    HELP
                 </div>

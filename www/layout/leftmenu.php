@@ -190,7 +190,7 @@
                     </div>
                 </div>-->
                 <div class="ItemLast">
-					<div class="Item" onclick="location.href='helpdesk.php';" onmouseover="show(29)" onmouseout="hide(29)">
+					<div class="Item" onclick="location.href='https://discord.gg/AageFzQ'" onmouseover="show(29)" onmouseout="hide(29)">
 						<div class="Img">
                         	<img id="29img" src="layout/images/dot_light.png" alt="">
                     	</div>

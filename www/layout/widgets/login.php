@@ -8,8 +8,8 @@
                 	<input class="LoginInput2" type="password" name="password">
                     <!--<input class="LoginInput2" type="password" name="password_login" value="Account password" onfocus="this.value=''" onblur="if(this.value=='') { this.value='Account password'};"> -->
                 </div>
-                <div class="LoginInput3" onclick="location.href='recovery.php';">
-                    <b><font color="white">Lost Account?</font></b>
+                <div class="LoginInput3" onclick="location.href='https://discord.gg/AageFzQ'">
+                    <b><font color="white"> Need Help?</font></b>
                 </div>
                 <input type="submit" name="Submit" class="LoginInput4" value=""/>                                   
 			<?php

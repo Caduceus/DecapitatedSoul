@@ -1,2 +1,8 @@
 *.cache.php
-engine/cache/*
+engine/cache/
+animatedOutfitsDecap/
+animatedOutfitsDecap/libs/
+animatedOutfitsDecap/outfitsAnimDecap/
+animatedOutfitsDecap/outfitsIdleDecap/
+LunaUpdater/
+items/*

@@ -36,12 +36,12 @@
                 
                 <div class="BotTxt1">
                     &copy; <?php echo $config['site_title'];?>.
-                    <?php 
+                    <!--?php 
                         echo 'Server date and clock is: '. getClock(false, true) .' Page generated in '. elapsedTime() .' seconds. Q: '.$aacQueries;
-                    ?>
+                    ?-->
                     
 
-                    <br>Engine: <a href="credits.php"><font color="white">Znote AAC</font></a>  | Converted to ZnoteAAC by <a href="https://otland.net/members/halfaway.142275/"><font color="white">HalfAway</font></a> | Modified by <a href="https://otland.net/members/decapitated-sou.86434/"><font color="white">Caduceus</a></font>
+                    <!--br>Engine: <a href="credits.php"><font color="white">Znote AAC</font></a>  | Converted to ZnoteAAC by <a href="https://otland.net/members/halfaway.142275/"><font color="white">HalfAway</font></a> | Modified by <a href="https://otland.net/members/decapitated-sou.86434/"><font color="white">Caduceus</a></font-->
                 </div>
                 
                 <div class="BotTxt2">
