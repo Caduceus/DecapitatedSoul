@@ -4,6 +4,13 @@
   <look type="136" head="116" body="19" legs="87" feet="57" addons="2" />
 <parameters>
 <parameter key="module_shop" value="1" />
-		<parameter key="shop_buyable" value="canvas,16018,10000;easelkit,16075,15000;brush,16016,50000;palette,16017,50000;" />
+		<parameter key="shop_buyable" value="
+											brush,16016,50000;
+											canvas,16018,10000;
+											claylump,11339,500000;
+											easelkit,16075,15000;
+											palette,16017,50000;
+											pieceofmarblerock,11343,500000
+											"/>
 </parameters>
 </npc>

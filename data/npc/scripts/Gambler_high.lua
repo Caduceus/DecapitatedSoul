@@ -9,8 +9,8 @@ function onCreatureSay(cid, type, msg)      npcHandler:onCreatureSay(cid, type, 
 npcHandler:setMessage(MESSAGE_GREET, "Greetings, |PLAYERNAME|. If you are in the mood to wager some hard cash (Physical money), place a bet on the table and state {high} or {low} to begain.")
 
 local config = {
-    bonusPercent = 2,
-    minimumBet = 1000000,
+    bonusPercent = 0,
+    minimumBet = 10000,
     maximumBet = 100000000
 }
 

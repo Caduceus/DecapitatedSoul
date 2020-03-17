@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<npc name="[Greeter]" script="addon_mission.lua" walkinterval="0" speed="100" walkradius="0" floorchange="0" speechbubble="3">
+<npc name="[Greeter]" script="Greeter.lua" walkinterval="0" speed="100" walkradius="0" floorchange="0" speechbubble="3">
 	<health max="100" now="100"/>
 	<look type="432" head="76" body="87" legs="1" feet="95" addons="1" mount="0"/>
 	<parameters>

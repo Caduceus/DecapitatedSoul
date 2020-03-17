@@ -10,5 +10,11 @@
 		<parameter key="message_walkaway_female" value="Good Day, Madam."/>
 		<!--SHOP-->
 		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_sellable" value="  hatchet,2388,20;
+											    katana,2412,50;
+											    mace,2398,30;
+											    sword,2376,25;
+												vikinghelmet,2473,30
+												"/>
 	</parameters>
 </npc>
