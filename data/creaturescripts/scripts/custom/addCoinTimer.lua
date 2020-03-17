@@ -21,20 +21,27 @@ end
 	
     if creature:getAccountStorageValue(accountStorage.addCoinTimer) == os.time() then 
 		if random == 20 then
-			db.query("UPDATE `accounts` SET `coins` = `coins` + " .. count .. " WHERE `id` = " .. creature:getAccountId() .. ";")
-			creature:sendTextMessage(MESSAGE_EVENT_ORANGE, "You gained " .. count .. " coin and 1 tibia coin, for being online for 1 hour. Your new coin balance is ".. creature:getCoinsBalance() ..".")
+			--db.query("UPDATE `accounts` SET `coins` = `coins` + " .. count .. " WHERE `id` = " .. creature:getAccountId() .. ";")
+			--db.query("UPDATE `accounts` SET `coins_career` = `coins` + " .. count .. " WHERE `id` = " .. creature:getAccountId() .. ";")
+			creature:addCoinsCareer(1)
+			creature:addCoinsBalance(1)
 			creature:setAccountStorageValue(accountStorage.addCoinTimer, os.time() + time)
 			creature:addItem(24774, 1)
 			creature:save()
 			doWriteLogFile(file, logsBonus)
+			creature:sendTextMessage(MESSAGE_EVENT_ORANGE, "You gained " .. count .. " coin and 1 tibia coin, for being online for 1 hour. Your new coin balance is ".. creature:getCoinsBalance() ..".")
 			sendChannelMessage(9, TALKTYPE_CHANNEL_R1, ">> Coin awarded: ~ " .. creature:getAccountId() .. " ~ [" .. creature:getName() .. "] recieved " .. count .. " coin and 1 tibia coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
 			print(">> Coin and bonus awarded: " .. creature:getAccountId() .. " [" .. creature:getName() .. "] recieved " .. count .. " coin and 1 tibia coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
+
 		elseif random <= 19 then
-			db.query("UPDATE `accounts` SET `coins` = `coins` + " .. count .. " WHERE `id` = " .. creature:getAccountId() .. ";")
-			creature:sendTextMessage(MESSAGE_EVENT_ORANGE, "You gained " .. count .. " coin for being online for 1 hour. Your new coin balance is ".. creature:getCoinsBalance() ..".")
+			--db.query("UPDATE `accounts` SET `coins` = `coins` + " .. count .. " WHERE `id` = " .. creature:getAccountId() .. ";")
+			--db.query("UPDATE `accounts` SET `coins_career` = `coins` + " .. count .. " WHERE `id` = " .. creature:getAccountId() .. ";")
+			creature:addCoinsCareer(1)
+			creature:addCoinsBalance(1)
 			creature:setAccountStorageValue(accountStorage.addCoinTimer, os.time() + time)
 			creature:save()
 			doWriteLogFile(file, logs)
+			creature:sendTextMessage(MESSAGE_EVENT_ORANGE, "You gained " .. count .. " coin for being online for 1 hour. Your new coin balance is ".. creature:getCoinsBalance() ..".")
 			sendChannelMessage(9, TALKTYPE_CHANNEL_R1, ">> Coin awarded: ~ " .. creature:getAccountId() .. " ~ [" .. creature:getName() .. "]  recieved " .. count .. " coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
 			print(">> Coin awarded: " .. creature:getAccountId() .. " [" .. creature:getName() .. "] recieved " .. count .. " coin on " .. os.date("%m/%d/%Y at %H:%M:%S") .. ".")
 		end

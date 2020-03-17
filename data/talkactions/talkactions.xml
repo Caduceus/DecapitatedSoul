@@ -72,6 +72,7 @@
 	<!--talkaction words="!buypremium" script="buyprem.lua"/-->
 	<talkaction words="!buyhouse" script="buyhouse.lua"/>
 	<talkaction words="!coin" script="coinTime.lua"/>
+	<talkaction words="!coinCareer" script="coinCareer.lua"/>
 	<talkaction words="!leavehouse" script="leavehouse.lua"/>
 	<!--talkaction words="!changesex" script="changesex.lua"/-->
 	<talkaction words="!uptime" script="uptime.lua"/>

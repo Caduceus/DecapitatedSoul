@@ -658,6 +658,7 @@ GameStore.addPromotionToPlayer = function(player, promotion)
 	return true
 end
 --==Player==--
+--==Coin Balance==--
 function Player.getCoinsBalance(self)
 	resultId = db.storeQuery("SELECT `coins` FROM `accounts` WHERE `id` = " .. self:getAccountId())
 	if not resultId then return 0 end
@@ -680,11 +681,30 @@ function Player.removeCoinsBalance(self, coins)
 	
 	return false
 end
+
 function Player.addCoinsBalance(self, coins, update)
 	self:setCoinsBalance(self:getCoinsBalance() + coins)
 	if update then sendCoinBalanceUpdating(self, true) end
 	return true
 end
+
+--==Coin Total Career==--
+function Player.getCoinsCareer(self)
+	resultId = db.storeQuery("SELECT `coins_career` FROM `accounts` WHERE `id` = " .. self:getAccountId())
+	if not resultId then return 0 end
+	return result.getDataInt(resultId, "coins_career")
+end
+function Player.setCoinsCareer(self, coins)
+	db.asyncQuery("UPDATE `accounts` SET `coins_career` = " .. coins .. " WHERE `id` = " .. self:getAccountId())
+	return true
+end
+
+function Player.addCoinsCareer(self, coins, update)
+	self:setCoinsCareer(self:getCoinsCareer() + coins)
+	if update then sendCoinCareerUpdating(self, true) end
+	return true
+end
+
 function Player.toggleSex(self)
 	local currentSex = self:getSex()
 	local playerOutfit = self:getOutfit()

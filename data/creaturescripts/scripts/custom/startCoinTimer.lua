@@ -3,7 +3,7 @@ local lastLogout = player:getAccountStorageValue(accountStorage.accountLastLogou
 local offlineTime = lastLogout ~= false and math.min(os.time() - lastLogout, 86400 * 21) or false
 local time = 1*60*60 -- 1s*60s = 60s * 60s = 60min
 	if player:getAccountId() == 1 or player:getAccountId() == 2 then
-		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "[Admin Account]: Your current coin balance is ".. player:getCoinsBalance() ..".")
+		player:sendTextMessage(MESSAGE_STATUS_CONSOLE_RED, "[Admin Account]: Current coin balance: ".. player:getCoinsBalance() .. " | Career Coin Total: " .. player:getCoinsCareer() .."")
 	elseif player:getAccountStorageValue(accountStorage.addCoinTimer) == false or player:getAccountStorageValue(accountStorage.addCoinTimer) < os.time() then
 		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "For every 1 hour online, you will receive 1 coin to use in the store. Your current coin balance is ".. player:getCoinsBalance() ..".")
 		player:setAccountStorageValue(accountStorage.addCoinTimer, os.time() + time)
@@ -14,7 +14,7 @@ local time = 1*60*60 -- 1s*60s = 60s * 60s = 60min
 	else
 		player:setAccountStorageValue(accountStorage.addCoinTimer, os.time() + time)
 		player:save()
-		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "For every 1 hour online, you will receive 1 coin to use in the store. Your current coin balance is ".. player:getCoinsBalance() ..".")
+		player:sendTextMessage(MESSAGE_EVENT_ORANGE, "For every (1) hour online, you will receive 1 coin to use in the store. Your current coin balance is ".. player:getCoinsBalance() ..".")
 	end
 	return true
 end
