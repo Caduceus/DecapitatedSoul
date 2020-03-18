@@ -13,7 +13,9 @@ function onSay(player, words, param)
 	end
 	
 	house:setOwnerGuid(0)
-	player:sendTextMessage(MESSAGE_INFO_DESCR, "You have successfully left your house.")
+	player:sendTextMessage(MESSAGE_INFO_DESCR, "You have successfully left your house. Total Houses owned on this Account is " .. player:getHousesOwned() .. ".")
+	player:addHousesOwned(-1)
+	player:save()
 	player:getPosition():sendMagicEffect(CONST_ME_POFF)
 	return false
 end

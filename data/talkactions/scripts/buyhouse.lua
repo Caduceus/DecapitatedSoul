@@ -15,6 +15,11 @@ function onSay(player, words, param)
         player:sendCancelMessage("You must be level 100 to purchase a house.")
         return true
     end
+    
+    if player:getHousesOwned() >= 2 then
+        player:sendTextMessage(MESSAGE_STATUS_CONSOLE_RED,"You may only own two houses per Account. You must first leave one of your other houses.")
+        return false
+    end
  
     local position = player:getPosition()
     position:getNextPosition(player:getDirection())
@@ -65,14 +70,16 @@ function onSay(player, words, param)
    
     if player:removeMoneyNpc(price) then
         house:setOwnerGuid(player:getGuid())
-        player:sendTextMessage(MESSAGE_INFO_DESCR, "You have successfully bought this house, be sure to have the money for the rent in the bank.")
+        player:addHousesOwned(1)
+        player:save()
+        player:sendTextMessage(MESSAGE_INFO_DESCR, "You have successfully bought this house! Total Houses owned on this Account is " .. player:getHousesOwned() .. ".")
     else
         if player:getItemCount(2157) * 1000000 >= price then
             local nuggs_left = (price / 1000000) - player:getItemCount(2157)
             player:removeItem(2157, player:getItemCount(2157))
             player:addItem(2157, nuggs_left)
             house:setOwnerGuid(player:getGuid())
-            player:sendTextMessage(MESSAGE_INFO_DESCR, "You have successfully bought this house, be sure to have the money for the rent in the bank.")
+            player:sendTextMessage(MESSAGE_INFO_DESCR, "You have successfully bought this house! Total Houses owned on this Account is " .. player:getHousesOwned() .. ".")
         else
             player:sendCancelMessage("You do not have enough money.")
         return false

@@ -705,6 +705,23 @@ function Player.addCoinsCareer(self, coins, update)
 	return true
 end
 
+--==Houses Owned==--
+function Player.getHousesOwned(self)
+	resultId = db.storeQuery("SELECT `houses_owned` FROM `accounts` WHERE `id` = " .. self:getAccountId())
+	if not resultId then return 0 end
+	return result.getDataInt(resultId, "houses_owned")
+end
+function Player.setHousesOwned(self, coins)
+	db.asyncQuery("UPDATE `accounts` SET `houses_owned` = " .. coins .. " WHERE `id` = " .. self:getAccountId())
+	return true
+end
+
+function Player.addHousesOwned(self, coins, update)
+	self:setHousesOwned(self:getHousesOwned() + coins)
+	if update then sendHousesOwnedUpdating(self, true) end
+	return true
+end
+
 function Player.toggleSex(self)
 	local currentSex = self:getSex()
 	local playerOutfit = self:getOutfit()
