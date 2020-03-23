@@ -14,17 +14,16 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 
 	table.sort(spells, function(a, b) return a.level < b.level end)
 
-	local prevLevel = -1
 	for i, spell in ipairs(spells) do
 		local line = ""
-		if prevLevel ~= spell.level then
+		if spell.level <= player:getLevel() then
 			if i ~= 1 then
 				line = "\n"
 			end
 			line = line .. "Spells for Level " .. spell.level .. "\n"
 			prevLevel = spell.level
 		end
-		text = text .. line .. "  " .. spell.words .. " - " .. spell.name .. " : " .. spell.mana .. "\n"
+		text = text .. line .. "  " .. spell.words .. " - " .. spell.name .. "\n"
 	end
 
 	player:showTextDialog(item:getId(), text)

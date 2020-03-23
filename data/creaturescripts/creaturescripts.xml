@@ -49,6 +49,8 @@
     <event type="think" name="lightBearer" script="custom/lightBearer.lua"/>
     <!--event type="think" name="xLog" script="custom/xLog.lua" /-->
     <event type="logout" name="timedlogout" script="custom/timed_logout.lua" />
+    <event type="healthchange" name="EventDPS" script="dps.lua" />
+    <event type="advance" name="SpellNotifier" script="custom/spellnotifier.lua"/>
     
     <!-- Thieves Guild Quest -->
 	<event type="kill" name="ThievesGuildNomad" script="quests/the thieves guild/nomad.lua" />
