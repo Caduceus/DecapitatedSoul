@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monsters>
+	<!-- Training Dummy -->
+	<monster name="training dummy" file="Training-Dummy/trainingDummy.xml"/>
 	<!-- Custom -->
 	<monster name="Euryale" file="Custom/Euryale.xml"/>
 	<monster name="Mnemosyne" file="Custom/Mnemosyne.xml"/>

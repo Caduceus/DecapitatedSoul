@@ -154,6 +154,10 @@ function Creature:onTargetCombat(target)
 		return true
 	end
 	
+	if target:getName() == "Training Dummy" then
+		target:registerEvent("EventDPS")
+	end
+	
 	if not self then return true end
 	if self:isPlayer() and target:isMonster() then
 		target:registerEvent("extra_loot_d")
