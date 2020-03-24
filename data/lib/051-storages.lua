@@ -8,6 +8,10 @@ accountStorage = {
 	addCoinTimer = 455577,
 	accountLastLogout = 455578,
 	}
+serverRecord = {
+	playerRecordDps = 50393,
+	dps = 50394,
+	}
 Storage = {
 	
 	zombieEvent = {
@@ -154,7 +158,7 @@ Storage = {
 	HatchlingMount = 15003,
 	frozenHell = {
 		chest1 = 15007,
-		chest1 = 15008,
+		chest2 = 15008,
 		complete = 15009
 	},
 	setBonus = 17181,

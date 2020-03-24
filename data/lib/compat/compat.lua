@@ -300,6 +300,7 @@ function getPlayerFood(cid)
 		
 	local c = player:getCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT) return c ~= nil and math.floor(c:getTicks() / 1000) or 0
 end
+
 function canPlayerLearnInstantSpell(cid, name) local p = Player(cid) return p ~= nil and p:canLearnSpell(name) or false end
 function getPlayerLearnedInstantSpell(cid, name) local p = Player(cid) return p ~= nil and p:hasLearnedSpell(name) or false end
 function isPlayerGhost(cid) local p = Player(cid) return p ~= nil and p:isInGhostMode() or false end
@@ -1154,4 +1155,46 @@ local resultName = db.storeQuery("SELECT `name` FROM `accounts` WHERE `id` = " .
         return name
     end
     return 0
+end
+
+function Player.getServerRecord(self, key)
+    if type(key) ~= "number" then
+        return false
+    end
+    local query = db.storeQuery("SELECT `value` FROM `server_records` WHERE `key` = ".. key .."")
+    if not query then
+        return false
+    end
+ 
+    local value = result.getDataInt(query, "value")
+    result.free(query)
+    return value
+end
+ 
+function Player.setServerRecord(self, key, value)
+    if type(key) ~= "number" then
+        return false
+    end
+    local query = ""
+    if self:getServerRecord(key) then
+        query = ("UPDATE `server_records` SET `value` = %d, `player_id` = %d WHERE `key` = " .. key):format(value, self:getGuid(), key)
+    else
+        query = ("INSERT INTO `server_records` (`player_id`, `key`, `value`) VALUES (%d, %d, %d)"):format(self:getGuid(), key, value)
+    end
+    return db.query(query)
+end
+
+function Player.getGuidByStorage(playerId, key)
+	local player = Player(player_id)
+	if player ~= nil then
+		return player:getGuid()
+	end
+
+	local resultId = db.storeQuery("SELECT `player_id` FROM `server_records` WHERE `key` = " .. key)
+	if resultId ~= false then
+		local guid = result.getDataInt(resultId, "player_id")
+		result.free(resultId)
+		return guid
+	end
+	return 0
 end
