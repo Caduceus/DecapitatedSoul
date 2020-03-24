@@ -47,7 +47,7 @@ deathLosePercent = 5
 
 -- Houses
 -- NOTE: set housePriceEachSQM to -1 to disable the ingame buy house functionality
-housePriceEachSQM = 20000
+housePriceEachSQM = 40000
 -- NOTE: valid values for houseRentPeriod are: never, daily, weekly, monthly and yearly --Still up in the air.. weekly
 houseRentPeriod = "never" 
 
