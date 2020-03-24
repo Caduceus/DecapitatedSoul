@@ -1,5 +1,5 @@
-DPS_STORAGE = 50393
-DPS_SERVER_RECORD = 50394
+DPS_STORAGE = serverRecord.playerRecordDps
+DPS_SERVER_RECORD = serverRecord.dps
 PLAYER_DPS = {}
 PLAYER_EVENTS = {}
 
