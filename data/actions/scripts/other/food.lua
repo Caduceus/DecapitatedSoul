@@ -119,6 +119,11 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 	
 	local condition = player:getCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT)
+	if condition == nil then
+		player:feed(food[1] * 2)
+		item:remove(1)
+		return true
+	end
 	if condition and math.floor(condition:getTicks() / 1000 + food[1]) > 1500 then
 		player:sendTextMessage(MESSAGE_STATUS_SMALL, "You current nutrition is " .. condition:getTicks() / 1000 .. "/1500. You are full.")
 	else
