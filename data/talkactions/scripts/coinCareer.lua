@@ -24,4 +24,3 @@ function onSay(player, words, param)
          player:sendTextMessage(MESSAGE_EVENT_ORANGE, "Career Coin Total: " .. player:getCoinsCareer() .. "")
          return false
      end
- 
