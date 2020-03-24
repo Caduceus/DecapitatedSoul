@@ -36,9 +36,9 @@ local FOODS = {
 	[2792] = {6, "Munch."}, -- dark mushroom
 	[2793] = {12, "Munch."}, -- some mushrooms
 	[2794] = {3, "Munch."}, -- some mushrooms
-	[2795] = {36, "Munch."}, -- fire mushroom
+	[2795] = {50, "Munch."}, -- fire mushroom
 	[2796] = {5, "Munch."}, -- green mushroom
-	[5097] = {80, "Yum."}, -- mango
+	[5097] = {120, "Yum."}, -- mango
 	[6125] = {8, "Gulp."}, -- tortoise egg
 	[6278] = {10, "Mmmm."}, -- cake
 	[6279] = {15, "Mmmm."}, -- decorated cake
@@ -100,14 +100,14 @@ local FOODS = {
 	[12639] = {2, "Munch."}, -- peas
 	[13297] = {20, "Crunch."}, -- haunch of boar
 	[15405] = {55, "Munch."}, -- sandfish
-	[15487] = {75, "Crunch"}, -- larvae
+	[15487] = {80, "Crunch"}, -- larvae
 	[15488] = {15, "Munch."}, -- deepling filet
 	[16014] = {60, "Mmmm."}, -- anniversary cake
 	[18397] = {33, "Munch."}, -- mushroom pie
 	[19737] = {10, "Urgh."}, -- insectoid eggs
 	[20100] = {15, "Smack."}, -- soft cheese
 	[20101] = {12, "Smack."}, -- rat cheese
-	[24843] = {100, "Munch."}, -- roasted meat
+	[24843] = {-100, "Munch."}, -- roasted meat
 	[26191] = {90, "Crunch."} --energy bar
 	
 }
@@ -117,14 +117,14 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if food == nil then
 		return false
 	end
-
+	
 	local condition = player:getCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT)
-		
-	if condition and math.floor(condition:getTicks() / 1000 + food[1]) >= 1200 then
-		player:sendTextMessage(MESSAGE_STATUS_SMALL, "You are full.")
+	if condition and math.floor(condition:getTicks() / 1000 + food[1]) > 1500 then
+		player:sendTextMessage(MESSAGE_STATUS_SMALL, "You current nutrition is " .. condition:getTicks() / 1000 .. "/1500. You are full.")
 	else
-		player:feed(food[1] * 12)
+		player:feed(food[1] * 2)
 		player:say(food[2], TALKTYPE_MONSTER_SAY)
+		player:sendTextMessage(MESSAGE_STATUS_SMALL, "You current nutrition is " .. condition:getTicks() / 1000 .. "/1500.")
 		item:remove(1)
 	end
 	return true
