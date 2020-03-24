@@ -29,8 +29,8 @@ try {
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Welcome to Decapitated Soul!';
-    $mail->Body    = 'Thank you for choosing <b>Decapitatedsoul.servegame.com!</b>';
-    $mail->AltBody = 'Thank you for choosing Decapitatedsoul.servegame.com!';
+    $mail->Body    = 'Thank you for choosing <b>Server Name!</b>';
+    $mail->AltBody = 'Thank you for choosing Server Name!';
 
     $mail->send();
     echo 'Email has been sent';
