@@ -76,7 +76,7 @@ setPlayerStorageValue(player, estr, -1)
 	if player:getAccountStorageValue(accountStorage.accountLastLogout) == false then
 		player:setAccountStorageValue(accountStorage.accountLastLogout, 0)
 	end
-	
+		
 	-- Events
 	player:registerEvent("addCoinTimer")
 	player:registerEvent("PlayerDeath")
@@ -107,6 +107,7 @@ setPlayerStorageValue(player, estr, -1)
 	player:registerEvent("chestTimer")
 	player:registerEvent("lightBearer")
 	player:registerEvent("SpellNotifier")
+	player:registerEvent("Starve")
 	--player:registerEvent("xLog")
 	player:setStorageValue(MAY_NOT_MOVE, -1)
 	player:setOutfit(player:getOutfit())

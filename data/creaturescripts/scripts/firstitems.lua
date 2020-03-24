@@ -24,6 +24,7 @@ function onLogin(player)
 		player:setStorageValue(111111, os.time() + 10) --logout timer
 		player:addItem(player:getSex() == 0 and 2651 or 2650, 1)
 		player:addItem(3960, 1):addItem(2671, 10)
+		player:feed(1500)
 		player:openChannel(3)
 		player:setDirection(DIRECTION_WEST)
 		player:popupFYI("Welcome to Decapitated Soul, " .. player:getName() .. "! Basic info can be found in your READ ME item, equipt in your ring slot. If you have any questions, please use our World Chat. Enjoy your Free Blessing until level 80!")

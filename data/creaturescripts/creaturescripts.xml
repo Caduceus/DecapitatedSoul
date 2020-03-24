@@ -51,6 +51,7 @@
     <event type="logout" name="timedlogout" script="custom/timed_logout.lua" />
     <event type="healthchange" name="EventDPS" script="dps.lua" />
     <event type="advance" name="SpellNotifier" script="custom/spellnotifier.lua"/>
+    <event type="think" name="Starve" script="custom/starve.lua" />
     
     <!-- Thieves Guild Quest -->
 	<event type="kill" name="ThievesGuildNomad" script="quests/the thieves guild/nomad.lua" />
