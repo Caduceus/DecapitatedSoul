@@ -46,6 +46,8 @@
 	<talkaction words="/mccheck" script="mccheck.lua" />
 	<talkaction words="/ghost" script="ghost.lua" />
 	<talkaction words="/clean" script="clean.lua" />
+	<talkaction words="/addCoinCareer" separator=" " script="addCoinCareer.lua" />
+    <talkaction words="/clearCoinCareer" separator=" " script="addCoinCareer.lua" />
 	<talkaction words="/houseclean" script="house_clean.lua" />
 	<talkaction words="/hide" script="hide.lua" />
 	<talkaction words="/vip" separator=" " script="vipcommand.lua" />
@@ -73,6 +75,7 @@
 	<talkaction words="!buyhouse" script="buyhouse.lua"/>
 	<talkaction words="!coin" script="coinTime.lua"/>
 	<talkaction words="!coinCareer" script="coinCareer.lua"/>
+	<talkaction words="!dps" script="dps.lua"/>
 	<talkaction words="!leavehouse" script="leavehouse.lua"/>
 	<!--talkaction words="!changesex" script="changesex.lua"/-->
 	<talkaction words="!uptime" script="uptime.lua"/>

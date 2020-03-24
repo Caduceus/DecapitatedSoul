@@ -34,6 +34,7 @@ local config = {
 		'!coin',
 		'!checkvip',
 		'!deathlist playerName',
+		'!dps',
 		'!cast (pasword optional)',
 		'!kills',
         '!leavehouse',
