@@ -63,6 +63,19 @@
         <vocation name="Master Sorcerer"/>
         <vocation name="Warlord Sorcerer"/>
 	</instant>
+	<!--EDIT need learn 1>
+	</-->
+	<instant group="attack" spellid="177" name="magic missile" words="magic missile" lvl="250" mana="1000" prem="1" cooldown="3000" groupcooldown="4000" range="5" aggressive="1" blockwalls="1" needtarget="1" needlearn="0" script="custom/magic_missile.lua"> 
+        <vocation name="Master Sorcerer"/>
+        <vocation name="Warlord Sorcerer"/>
+	</instant>
+	
+	<instant group="support" name="Thunder Storm" words="thunder storm" lvl="30" mana="250" cooldown="120000" prem="1" aggressive="1" needlearn="0" script="custom/thunderstorm.lua">
+		<vocation name="Sorcerer"/>
+        <vocation name="Master Sorcerer"/>
+        <vocation name="Warlord Sorcerer"/>
+	</instant>
+
 	
 	<!--Custom Druid Spells-->
 	<instant group="healing" spellid="173" name="Natures Love" words="utura sio" lvl="150" mana="350" prem="1" aggressive="0" blockwalls="1" needtarget="1" playernameparam="1" params="1" exhaustion="10000" groupcooldown="1000" needlearn="0" script="custom/natures love.lua">
@@ -97,13 +110,13 @@
 	</instant>
 	
 	<!--Custom Templar Spells-->
-	<instant group="special" spellid="9" name="Summon Templar" words="guardian angel" lvl="150" mana="1000" params="1" aggressive="0" cooldown="3000" groupcooldown="3000" needlearn="0" script="support/summon_templar.lua">
+	<instant group="special" spellid="9" name="Summon Templar" words="guardian angel" lvl="150" mana="1000" params="1" aggressive="0" cooldown="90000" groupcooldown="9000" needlearn="0" script="support/summon_templar.lua">
 		<vocation name="Templar"/>
         <vocation name="Noble Templar"/>
         <vocation name="Warlord Templar"/>
 	</instant>
 	
-	<instant group="healing" spellid="9" name="Aura Sphere" words="aura of protection" lvl="80" mana="400" params="0" aggressive="0" cooldown="180000" groupcooldown="5000" needlearn="0" script="support/aura_templar.lua">
+	<instant group="healing" spellid="9" name="Aura Sphere" words="aura of protection" lvl="80" mana="400" params="0" aggressive="0" cooldown="90000" groupcooldown="5000" needlearn="0" script="support/aura_templar.lua">
 		<vocation name="Templar"/>
         <vocation name="Noble Templar"/>
         <vocation name="Warlord Templar"/>
@@ -114,7 +127,7 @@
         <vocation name="Noble Templar"/>
         <vocation name="Warlord Templar"/>
 	</instant>
-	
+		
 	<instant group="attack" name="Holy Smokes" words="exevo san hur" lvl="50" mana="160" range="4" needtarget="0" needweapon="1" direction="1" aggressive="1" cooldown="6000" groupcooldown="6000" needlearn="0" script="custom/holy_smokes.lua">
 		<vocation name="Templar"/>
         <vocation name="Noble Templar"/>

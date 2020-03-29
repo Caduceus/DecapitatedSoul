@@ -3,7 +3,7 @@ function onCastSpell(player, variant)
         local config = { 
 			playerPos = player:getPosition(),
             guardian = "templar",
-            deSpawn = 2 * 60
+            deSpawn = 2 * 15
             }
             local pos = player:getPosition()
 				if getTilePzInfo(pos) == true then

@@ -14,7 +14,15 @@ function onCastSpell(creature, variant, isHotkey)
 				if monster then
 					corpse:remove()
 					monster:setMaster(creature)
-					position:sendMagicEffect(CONST_ME_MAGIC_BLUE)
+					local hp = monster:getMaster():getMaxHealth()
+					 local outfit = monster:getMaster():getOutfit()
+					 local speed = monster:getMaster():getBaseSpeed()
+						if hp > monster:getMaxHealth() then
+							monster:setMaxHealth(hp)
+							monster:addHealth(hp)
+							monster:changeSpeed(speed)
+							position:sendMagicEffect(CONST_ME_MAGIC_BLUE)
+						end
 					return true
 				end
 			end
