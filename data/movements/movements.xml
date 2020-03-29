@@ -12,6 +12,10 @@
 	<movevent event="Equip" itemid="10555" slot="head" level="300" function="onEquipItem"/> <!--cultish mask-->
 	<movevent event="DeEquip" itemid="10555" slot="head" level="300" function="onDeEquipItem"/>
 	
+	<!--Golanth axe loot-->
+	<movevent event="Equip" itemid="3962" slot="hand" level="275" function="onEquipItem"/>
+	<movevent event="DeEquip" itemid="3962" slot="hand" levl="275" function="onDeEquipItem"/>
+	
 	<!--Gamble Table-->
 	<movevent event="StepIn" actionid="15000" script="Table_full.lua"/>
 	<movevent event="StepIn" actionid="15001" script="Table_full2.lua"/>
@@ -230,10 +234,10 @@
 	</movevent>
 	<movevent event="DeEquip" itemid="15490" slot="legs" function="onDeEquipItem"/>
 
-	<movevent event="Equip" itemid="26324" slot="feet" level="400" function="onEquipItem">
+	<movevent event="Equip" itemid="26133" slot="feet" level="400" function="onEquipItem">
 		<vocation name="Warlord Paladin"/>
 	</movevent>
-	<movevent event="DeEquip" itemid="26324" slot="feet" function="onDeEquipItem"/>
+	<movevent event="DeEquip" itemid="26133" slot="feet" function="onDeEquipItem"/>
 	
 	<!-- Knight-->
 	<movevent event="Equip" itemid="23536" slot="head" level="400" function="onEquipItem">
@@ -632,6 +636,14 @@
 		<vocation name="Elder Druid" showInDescription="0"/>
         <vocation name="Warlord Druid" showInDescription="0"/>
 	</movevent>
+	
+	<!--quiver-->
+	<movevent event="Equip" itemid="12425" slot="ammo" level="80" function="onEquipItem">
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin" showInDescription="0"/>
+        <vocation name="Warlord Paladin" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="12425" slot="ammo" function="onDeEquipItem"/>
 	
 	<!--ammo-->
 	<movevent event="Equip" itemid="2545" slot="ammo" level="15" function="onEquipItem"/>
@@ -1169,8 +1181,6 @@
 	<movevent event="DeEquip" itemid="22385" slot="feet" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="2640" slot="feet" function="onEquipItem"/>
 	<movevent event="DeEquip" itemid="2640" slot="feet" function="onDeEquipItem"/>
-	<movevent event="Equip" itemid="6132" slot="feet" level="200" function="onEquipItem"/>
-	<movevent event="DeEquip" itemid="6132" slot="feet" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="2646" slot="feet" level="170" function="onEquipItem">
 		<vocation name="Paladin"/>
 		<vocation name="Royal Paladin" showInDescription="0"/>
@@ -1283,6 +1293,15 @@
 	<movevent event="DeEquip" itemid="21708" slot="feet" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="30956" slot="feet" level="200" function="onEquipItem"/>
 	<movevent event="DeEquip" itemid="30956" slot="feet" level="200" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="6132" slot="feet" level="250" function="onEquipItem">
+	    <vocation name="Sorcerer"/>
+		<vocation name="Master Sorcerer" showInDescription="0"/>
+		<vocation name="Warlord Sorcerer" showInDescription="0"/>
+		<vocation name="Druid"/>
+		<vocation name="Elder Druid" showInDescription="0"/>
+        <vocation name="Warlord Druid" showInDescription="0"/>
+    </movevent> 
+    <movevent event="DeEquip" itemid="6132" slot="feet" level="250" function="onDeEquipItem"/>
 
 	<!-- Amulets -->
 	<movevent event="Equip" itemid="2129" slot="necklace" level="30" function="onEquipItem"/>
@@ -1676,7 +1695,21 @@
 	
 	<movevent event="Equip" itemid="24809" slot="head" level="400" function="onEquipItem"/>
 	<movevent event="DeEquip" itemid="24809" slot="head" function="onDeEquipItem"/>
-
+    <movevent event="Equip" itemid="32798" slot="head" level="10" function="onEquipItem">
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin" showInDescription="0"/>
+        <vocation name="Warlord Paladin" showInDescription="0"/>
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+        <vocation name="Templar" />
+		<vocation name="Noble Templar" showInDescription="0" />
+		<vocation name="Warlord Templar" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="32798" slot="head" function="onDeEquipitem"/>	
+	<movevent event="Equip" itemid="32801" slot="head" function="onEquipItem"/>
+	<movevent event="DeEquip" itemid="32801" slot="head" function="onDeEquipitem"/>
+		
 	<!-- Armors -->
 	<movevent event="Equip" itemid="2466" slot="armor" function="onEquipItem">
 		<vocation name="Paladin"/>
@@ -1806,10 +1839,13 @@
         <vocation name="Warlord Druid" showInDescription="0"/>
 	</movevent>
 	<movevent event="DeEquip" itemid="8866" slot="armor" function="onDeEquipItem"/>
-	<movevent event="Equip" itemid="8867" slot="armor" level="75" function="onEquipItem">
+	<movevent event="Equip" itemid="8867" slot="armor" level="275" function="onEquipItem">
 		<vocation name="Sorcerer"/>
 		<vocation name="Master Sorcerer" showInDescription="0"/>
 		<vocation name="Warlord Sorcerer" showInDescription="0"/>
+		<vocation name="Druid"/>
+		<vocation name="Elder Druid" showInDescription="0"/>
+        <vocation name="Warlord Druid" showInDescription="0"/>
 	</movevent>
 	<movevent event="DeEquip" itemid="8867" slot="armor" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="8868" slot="armor" level="75" function="onEquipItem">
@@ -1921,9 +1957,12 @@
 	</movevent>
 	<movevent event="DeEquip" itemid="8884" slot="armor" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="8885" slot="armor" level="75" function="onEquipItem">
-		<vocation name="Paladin"/>
-		<vocation name="Royal Paladin" showInDescription="0"/>
-        <vocation name="Warlord Paladin" showInDescription="0"/>
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+        <vocation name="Templar" />
+		<vocation name="Noble Templar" showInDescription="0" />
+		<vocation name="Warlord Templar" showInDescription="0"/>
 	</movevent>
 	<movevent event="DeEquip" itemid="8885" slot="armor" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="8886" slot="armor" level="75" function="onEquipItem">
@@ -2063,6 +2102,26 @@
         <vocation name="Warlord Templar" showInDescription="0"/>
 	</movevent>
 	<movevent event="DeEquip" itemid="21725" slot="armor" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="25410" slot="armor" function="onEquipItem">
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+        <vocation name="Templar" />
+		<vocation name="Noble Templar" showInDescription="0" />
+		<vocation name="Warlord Templar" showInDescription="0"/>
+	</movevent>
+	<movevent event="Equip" itemid="32751" slot="armor" level="10" function="onEquipItem">
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin" showInDescription="0"/>
+        <vocation name="Warlord Paladin" showInDescription="0"/>
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+        <vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+        <vocation name="Warlord Templar" showInDescription="0"/>
+    </movevent>
+    <movevent event="DeEquip" itemid="32751" slot="armor" function="onDeEquipItem"/>    
 
 	<!-- Legs -->
 	<movevent event="Equip" itemid="2477" slot="legs" function="onEquipItem">
@@ -2202,6 +2261,18 @@
         <vocation name="Warlord Druid" showInDescription="0"/>
 	</movevent>
 	<movevent event="DeEquip" itemid="21700" slot="legs" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="32859" slot="legs" function="onEquipItem">
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin" showInDescription="0"/>
+        <vocation name="Warlord Paladin" showInDescription="0"/>
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+        <vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+        <vocation name="Warlord Templar" showInDescription="0"/>
+    </movevent>
+    <movevent event="DeEquip" itemid="32859" slot="legs" function="onDeEquipItem"/>    
 
 	<!-- Weapons -->
 	<movevent event="Equip" itemid="2649" slot="hand" level="2" function="onEquipItem"/>
@@ -2220,6 +2291,16 @@
 	<movevent event="DeEquip" itemid="2448" slot="hand" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="7381" slot="hand" level="100" function="onEquipItem"/>
 	<movevent event="DeEquip" itemid="7381" slot="hand" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="7391" slot="hand" level="350" function="onEquipItem">
+	    <vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+		<vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+        <vocation name="Warlord Templar" showInDescription="0"/>
+    </movevent>
+    <movevent event="DeEquip" itemid="7391" slot="hand" function="onEquipItem"/>    
+	
 	<movevent event="Equip" itemid="7405" slot="hand" level="300" function="onEquipItem">
 		<vocation name="Knight"/>
 		<vocation name="Elite Knight" showInDescription="0"/>
@@ -2334,7 +2415,9 @@
 	<movevent event="DeEquip" itemid="18451" slot="hand" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="18465" slot="hand" level="120" function="onEquipItem"/>
 	<movevent event="DeEquip" itemid="18465" slot="hand" function="onDeEquipItem"/>
-	<movevent event="Equip" itemid="20108" slot="hand" level="400" function="onEquipItem"> <!-- Vlad weapon-->
+	
+	<!-- Vlad Weapons -->
+	<movevent event="Equip" itemid="20108" slot="hand" level="400" function="onEquipItem"> 
 		<vocation name="Knight"/>
 		<vocation name="Elite Knight" showInDescription="0"/>
         <vocation name="Warlord Knight" showInDescription="0"/>
@@ -2343,7 +2426,7 @@
         <vocation name="Warlord Templar" showInDescription="0"/>
 		</movevent>
 	<movevent event="DeEquip" itemid="20108" slot="hand" function="onDeEquipItem"/>
-	<movevent event="Equip" itemid="24341" slot="hand" level="400" function="onEquipItem"> <!-- Vlad weapon-->
+	<movevent event="Equip" itemid="24341" slot="hand" level="400" function="onEquipItem"> 
 		<vocation name="Knight"/>
 		<vocation name="Elite Knight" showInDescription="0"/>
         <vocation name="Warlord Knight" showInDescription="0"/>
@@ -2352,7 +2435,16 @@
         <vocation name="Warlord Templar" showInDescription="0"/>
 		</movevent>
 	<movevent event="DeEquip" itemid="24341" slot="hand" function="onDeEquipItem"/>
-
+	<movevent event="Equip" itemid="33013" slot="hand" level="400" function="onEquipItem"> 
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+		<vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+        <vocation name="Warlord Templar" showInDescription="0"/>
+		</movevent>
+	<movevent event="DeEquip" itemid="33013" slot="hand" function="onDeEquipItem"/>
+	
 	<!-- Shields -->
 	<movevent event="Equip" itemid="2120" slot="shield" level="2" function="onEquipItem"/> <!-- rope -->
 	<movevent event="DeEquip" itemid="2120" slot="shield" function="onDeEquipItem"/>
@@ -2601,4 +2693,16 @@
         <vocation name="Warlord Druid" showInDescription="0"/>
 	</movevent>
 	<movevent event="DeEquip" itemid="22424" slot="shield" function="onDeEquipItem"/>
+	<movevent event="DeEquip" itemid="32895" slot="shield" level="10" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="32895" slot="shield" level="10" function="onEquipItem">
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin" showInDescription="0"/>
+        <vocation name="Warlord Paladin" showInDescription="0"/>
+		<vocation name="Knight"/>
+		<vocation name="Elite Knight" showInDescription="0"/>
+        <vocation name="Warlord Knight" showInDescription="0"/>
+        <vocation name="Templar"/>
+		<vocation name="Noble Templar" showInDescription="0"/>
+        <vocation name="Warlord Templar" showInDescription="0"/>
+    </movevent>    
 </movements>

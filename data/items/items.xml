@@ -1611,8 +1611,7 @@
 	<item id="1995" article="a" name="blue bag">
 		<attribute key="weight" value="800" />
 		<attribute key="containerSize" value="8" />
-		<!--attribute key="slotType" value="backpack" /-->
-		<attribute key="slotType" value="ammo" />
+		<attribute key="slotType" value="backpack" />
 	</item>
 	<item id="1996" article="a" name="grey bag">
 		<attribute key="weight" value="800" />
@@ -21184,6 +21183,10 @@
 	</item>
 	<item id="12425" article="a" name="hunter's quiver" plural="hunter quivers">
 		<attribute key="weight" value="132" />
+		<attribute key="skillDist" value="20"/>
+		<attribute key="containerSize" value="8" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="12426" article="a" name="jewelled belt">
 		<attribute key="weight" value="124" />
@@ -32193,8 +32196,9 @@
 		<attribute key="weight" value="1800" />
 	</item>
 	<item id="23816" article="a" name="war backpack">
+		<attribute key="containerSize" value="20" />
+		<attribute key="slotType" value="backpack" />
 		<attribute key="weight" value="1800" />
-		<attribute key="writeable" value="0" />
 		<attribute key="description" value="Carry all you need for battle in it." />
 	</item>
 	<item id="23817" article="a" name="dead woodling">
