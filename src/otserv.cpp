@@ -1,6 +1,7 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2018  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2020  Mark Samman <mark.samman@gmail.com>
+ * Modifications made by Caduceus <decapitatedsoulot@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -147,7 +148,8 @@ void mainLoader(int, char*[], ServiceManager* services)
 	std::cout << std::endl;
 
 	std::cout << "A server developed by " << STATUS_SERVER_DEVELOPERS << std::endl;
-	std::cout << "Visit our forum for updates, support, and resources: http://otland.net/." << std::endl;
+	std::cout << "Visit our forum: http://decapitatedsoul.servegame.com/" << std::endl;
+	std::cout << "Contact: Caduceus <decapitatedsoulot@gmail.com>." << std::endl;
 	std::cout << std::endl;
 
 	// read global config

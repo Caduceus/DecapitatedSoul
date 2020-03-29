@@ -1,6 +1,7 @@
 /**
  * The Forgotten Server - a free and open-source MMORPG server emulator
- * Copyright (C) 2018  Mark Samman <mark.samman@gmail.com>
+ * Copyright (C) 2020  Mark Samman <mark.samman@gmail.com>
+ * Modifications made by Caduceus <decapitatedsoulot@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -3443,21 +3444,26 @@ void Player::doAttacking(uint32_t)
 
 		Item* tool = getWeapon();
 		const Weapon* weapon = g_weapons->getWeapon(tool);
+		uint32_t delay = getAttackSpeed();
+		bool classicSpeed = g_config.getBoolean(ConfigManager::CLASSIC_ATTACK_SPEED);
+		
 		if (weapon) {
-			//*if (!weapon->interruptSwing()) {
-			uint32_t delay;
- 
- 			if (!weapon->interruptSwing() || canDoAction()) {
+			if (!weapon->interruptSwing()) {
 				result = weapon->useWeapon(this, tool, attackedCreature);
-					delay = getAttackSpeed();
-			} else {
+ 			} else if (!classicSpeed && !canDoAction()) {
 				delay = getNextActionTime();
+			} else {
+				result = weapon->useWeapon(this, tool, attackedCreature);
 			}
-			SchedulerTask* task = createSchedulerTask(delay, std::bind(&Game::checkCreatureAttack,
- 									 &g_game, getID()));
- 			setNextActionTask(task);
 		} else {
 			result = Weapon::useFist(this, attackedCreature);
+		}
+
+		SchedulerTask* task = createSchedulerTask(std::max<uint32_t>(SCHEDULER_MINTICKS, delay), std::bind(&Game::checkCreatureAttack, &g_game, getID()));
+		if (!classicSpeed) {
+			setNextActionTask(task);
+		} else {
+			g_scheduler.addEvent(task);
 		}
 
 		if (result) {

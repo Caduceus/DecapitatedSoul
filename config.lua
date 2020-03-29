@@ -76,12 +76,16 @@ mysqlSock = ""
 passwordType = "sha1"
 
 -- Misc.
+-- NOTE: classicAttackSpeed set to true makes players constantly attack at regular
+-- intervals regardless of other actions such as item (potion) use. This setting
+-- may cause high CPU usage with many players and potentially affect performance!
 allowChangeOutfit = true
 freePremium = true
 kickIdlePlayerAfterMinutes = 15
 maxMessageBuffer = 4
 emoteSpells = true
 classicEquipmentSlots = false
+classicAttackSpeed = false
 
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages in data/XML/stages.xml -- working on offlineTrainingSkill --offlinetraining.lua
