@@ -23,14 +23,18 @@ local config = {
 -- End Config
  
     -- Damage Table
-    [1] = {element = "Holy"},
-    [2] = {element = "Fire"},
-    [3] = {element = "Death"},
-    [4] = {element = "Poison"},
-    [5] = {element = "Energy"},
-    [6] = {element = "Earth"},
-    [7] = {element = "Ice"},
+    [1] = {element = "Death"},
+    [2] = {element = "Earth"},
+    [3] = {element = "Energy"},
+    [4] = {element = "Fire"},
+    [5] = {element = "Holy"},
+    [6] = {element = "Ice"},
+    [7] = {element = "Poison"},
 }
+ 
+ 
+
+ 
  
 function onUse(player, item, fromPosition, itemEx, toPosition, isHotkey)
     player:sendDamageWindow(config)

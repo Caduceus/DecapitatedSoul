@@ -1,16 +1,16 @@
 local DamageTypes = {
-    [1] = {DamageType = COMBAT_HOLYDAMAGE, DamageEffect = CONST_ANI_HOLY},
-    [2] = {DamageType = COMBAT_FIREDAMAGE, DamageEffect = CONST_ANI_FIRE},
-    [3] = {DamageType = COMBAT_DEATHDAMAGE, DamageEffect = CONST_ANI_DEATH},
-    [4] = {DamageType = COMBAT_POISONDAMAGE, DamageEffect = CONST_ANI_POISON},
-    [5] = {DamageType = COMBAT_ENERGYDAMAGE, DamageEffect = CONST_ANI_ENERGY},
-    [6] = {DamageType = COMBAT_EARTHDAMAGE, DamageEffect = CONST_ANI_EARTH},
-    [7] = {DamageType = COMBAT_ICEDAMAGE, DamageEffect = CONST_ANI_ICE}
+	[1] = {DamageType = COMBAT_DEATHDAMAGE, DamageEffect = CONST_ANI_DEATH},
+	[2] = {DamageType = COMBAT_EARTHDAMAGE, DamageEffect = CONST_ANI_EARTH},
+	[3] = {DamageType = COMBAT_ENERGYDAMAGE, DamageEffect = CONST_ANI_ENERGY},
+	[4] = {DamageType = COMBAT_FIREDAMAGE, DamageEffect = CONST_ANI_FIRE},
+    [5] = {DamageType = COMBAT_HOLYDAMAGE, DamageEffect = CONST_ANI_HOLY},
+    [6] = {DamageType = COMBAT_ICEDAMAGE, DamageEffect = CONST_ANI_ICE},
+    [7] = {DamageType = COMBAT_POISONDAMAGE, DamageEffect = CONST_ANI_POISON}
 }
  
 function onGetFormulaValues(player, level, maglevel)
-		min = -((level / 2) + (maglevel * 0.5) + 3) 
-        max = -((level / 1.2) + (maglevel * 1.1) + 12) 
+		min = -((level / 6) + (maglevel * 3) + 25) 
+        max = -((level / 4) + (maglevel * 4.5) + 45) 
 	return min, max
 end
  

@@ -5,11 +5,11 @@ for x = 1, #types do
      combat[x]:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_FIREATTACK)
      combat[x]:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_FIRE)
 
-     function onGetFormulaValues(cid, level, maglevel)
+    function onGetFormulaValues(cid, level, maglevel)
          min = -1600
          max = -2000
          return min, max
-     end
+     end     
      combat[x]:setCallback(CALLBACK_PARAM_LEVELMAGICVALUE, "onGetFormulaValues")
 end
 

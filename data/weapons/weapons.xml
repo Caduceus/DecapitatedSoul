@@ -25,74 +25,74 @@
         <vocation name="Warlord Sorcerer" showInDescription="0" />
         </wand>
 
-	<wand id="2190" level="1" mana="2" script="weapon_damage_scripts/wands/wand_of_vortex.lua"> <!-- Wand of Vortex -->
+	<wand id="2190" level="1" mana="2" script="weapon_damage_scripts/magic_base/01_vortex_snakebite.lua"> <!-- Wand of Vortex -->
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
         <vocation name="Warlord Sorcerer" showInDescription="0" />
     </wand>
         
-	<wand id="2191" level="1" mana="5" script="weapon_damage_scripts/wands/wand_of_dragonbreath.lua"> <!-- Wand of Dragonbreath -->
+	<wand id="2191" level="1" mana="5" script="weapon_damage_scripts/magic_base/02_dragonbreath_moonlight.lua"> <!-- Wand of Dragonbreath -->
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
         <vocation name="Warlord Sorcerer" showInDescription="0" />
     </wand>
     
-	<wand id="2188" level="30" mana="15" script="weapon_damage_scripts/wands/wand_of_decay.lua"> <!-- Wand of Decay -->
+	<wand id="2188" level="30" mana="15" script="weapon_damage_scripts/magic_base/03_decay_necrotic.lua"> <!-- Wand of Decay -->
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
         <vocation name="Warlord Sorcerer" showInDescription="0" />
     </wand>
     
-	<wand id="8922" level="60" mana="30" script="weapon_damage_scripts/wands/wand_of_voodoo.lua"> <!-- Wand of Voodoo -->
+	<wand id="8922" level="60" mana="30" script="weapon_damage_scripts/magic_base/04_voodoo_northwind.lua"> <!-- Wand of Voodoo -->
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
         <vocation name="Warlord Sorcerer" showInDescription="0" />
     </wand>
     
-	<wand id="8920" level="100" mana="75" script="weapon_damage_scripts/wands/wand_of_stormblast.lua">
+	<wand id="8920" level="100" mana="75" script="weapon_damage_scripts/magic_base/05_stormblast.lua">
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
         <vocation name="Warlord Sorcerer" showInDescription="0" />
     </wand>
 	
-	<wand id="18390" level="250" mana="125" script="weapon_damage_scripts/wands/wand_of_defiance.lua">
+	<wand id="18390" swing="true" level="250" mana="125" script="weapon_damage_scripts/magic_base/06_defiance_underworld.lua">
 		<vocation name="Sorcerer" />
 		<vocation name="Master Sorcerer" showInDescription="0" />
         <vocation name="Warlord Sorcerer" showInDescription="0" />
 	</wand>
 	
 	<!-- Elemental Rods -->
-	<wand id="2182" level="1" mana="2" script="weapon_damage_scripts/rods/snakebite_rod.lua"> <!-- Snakebit Rod -->
+	<wand id="2182" level="1" mana="2" script="weapon_damage_scripts/magic_base/01_vortex_snakebite.lua"> <!-- Snakebit Rod -->
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
         <vocation name="Warlord Druid" showInDescription="0" />
 	</wand>
 	
-	<wand id="2186" level="1" script="weapon_damage_scripts/rods/moonlight_rod.lua"> <!-- Moonlight Rod -->
+	<wand id="2186" level="1" script="weapon_damage_scripts/magic_base/02_dragonbreath_moonlight.lua"> <!-- Moonlight Rod -->
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
         <vocation name="Warlord Druid" showInDescription="0" />
 	</wand>
 	
-	<wand id="2185" level="30" script="weapon_damage_scripts/rods/necrotic_rod.lua"> <!-- Necrotic Rod -->
+	<wand id="2185" level="30" script="weapon_damage_scripts/magic_base/03_decay_necrotic.lua"> <!-- Necrotic Rod -->
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
         <vocation name="Warlord Druid" showInDescription="0" />
 	</wand>
 	
-	<wand id="8911" level="60" mana="15" script="weapon_damage_scripts/rods/northwind_rod.lua"> <!-- Northwind Rod -->
+	<wand id="8911" level="60" mana="15" script="weapon_damage_scripts/magic_base/04_voodoo_northwind.lua"> <!-- Northwind Rod -->
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
         <vocation name="Warlord Druid" showInDescription="0" />
 	</wand>
 	
-	<wand id="7414" level="100" mana="75" script="weapon_damage_scripts/rods/stormblast_rod.lua">
+	<wand id="7414" level="100" mana="75" script="weapon_damage_scripts/magic_base/05_stormblast.lua">
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
         <vocation name="Warlord Druid" showInDescription="0" />
 	</wand>
 	
-	<wand id="8910" level="250" mana="125" script="weapon_damage_scripts/rods/underworld_rod.lua">
+	<wand id="8910" level="250" mana="125" script="weapon_damage_scripts/magic_base/06_defiance_underworld.lua"> <!--Underworld Rod -->
 		<vocation name="Druid" />
 		<vocation name="Elder Druid" showInDescription="0" />
         <vocation name="Warlord Druid" showInDescription="0" />
@@ -906,123 +906,123 @@
 	</melee>
 
 	<!-- Bows and Crossbows -->
-	<distance id="5803" level="60" unproperly="1"> <!-- Arbalest -->
+	<distance id="5803" swing="true" level="60" unproperly="1"> <!-- Arbalest -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="8849" level="45" unproperly="1"> <!-- Modified Crossbow -->
+	<distance id="8849" swing="true" level="45" unproperly="1"> <!-- Modified Crossbow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="8850" level="60" unproperly="1"> <!-- Chain Bolter -->
+	<distance id="8850" swing="true" level="60" unproperly="1"> <!-- Chain Bolter -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="8853" level="80" unproperly="1"> <!-- Ironworker -->
+	<distance id="8853" swing="true" level="80" unproperly="1"> <!-- Ironworker -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="8852" level="100" unproperly="1"> <!-- Devileye -->
+	<distance id="8852" swing="true" level="100" unproperly="1"> <!-- Devileye -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="8851" level="300" unproperly="1"> <!-- Royal Crossbow -->
+	<distance id="8851" swing="true" level="300" unproperly="1"> <!-- Royal Crossbow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="8857" level="350" unproperly="1"> <!-- Silkweaver Bow -->
+	<distance id="8857" swing="true" level="350" unproperly="1"> <!-- Silkweaver Bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="8855" level="50" unproperly="1"> <!-- Composite Hornbow -->
+	<distance id="8855" swing="true" level="50" unproperly="1"> <!-- Composite Hornbow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="8856" level="60" unproperly="1"> <!-- Yol's Bow -->
+	<distance id="8856" swing="true" level="60" unproperly="1"> <!-- Yol's Bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="8858" level="100" unproperly="1"> <!-- Elemental Bow -->
+	<distance id="8858" swing="true" level="100" unproperly="1"> <!-- Elemental Bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="8854" level="80" unproperly="1"> <!-- Warsinger Bow -->
+	<distance id="8854" swing="true" level="80" unproperly="1"> <!-- Warsinger Bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="13873" level="40" unproperly="1"> <!-- Shimmer Bow -->
+	<distance id="13873" swing="true" level="40" unproperly="1"> <!-- Shimmer Bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="15643" level="85" unproperly="1"> <!-- Hive Bow -->
+	<distance id="15643" swing="true" level="85" unproperly="1"> <!-- Hive Bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="15644" level="250" unproperly="1"> <!-- Ornate Crossbow -->
+	<distance id="15644" swing="true" level="250" unproperly="1"> <!-- Ornate Crossbow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="16111" level="150" unproperly="1"> <!-- Thorn Spitter -->
+	<distance id="16111" swing="true" level="150" unproperly="1"> <!-- Thorn Spitter -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="18453" level="90" unproperly="1"> <!-- Crystal Crossbow -->
+	<distance id="18453" swing="true" level="90" unproperly="1"> <!-- Crystal Crossbow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="18454" level="105" unproperly="1"> <!-- Mycological Bow -->
+	<distance id="18454" swing="true" level="105" unproperly="1"> <!-- Mycological Bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="21690" level="70" unproperly="1"> <!-- Triple Bolt Crossbow -->
+	<distance id="21690" swing="true" level="70" unproperly="1"> <!-- Triple Bolt Crossbow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="21696" unproperly="1" /> <!-- Icicle Bow -->
-	<distance id="22416" level="75" unproperly="1"> <!-- Crude Umbral Bow -->
+	<distance id="21696" swing="true" unproperly="1" /> <!-- Icicle Bow -->
+	<distance id="22416" swing="true" level="75" unproperly="1"> <!-- Crude Umbral Bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="22417" level="150" unproperly="1"> <!-- Umbral Bow -->
+	<distance id="22417" swing="true" level="150" unproperly="1"> <!-- Umbral Bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="22418" level="250" unproperly="1"> <!-- Umbral Master Bow -->
+	<distance id="22418" swing="true" level="250" unproperly="1"> <!-- Umbral Master Bow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="22419" level="75" unproperly="1"> <!-- Crude Umbral Crossbow -->
+	<distance id="22419" swing="true" level="75" unproperly="1"> <!-- Crude Umbral Crossbow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="22420" level="150" unproperly="1"> <!-- Umbral Crossbow -->
+	<distance id="22420" swing="true" level="150" unproperly="1"> <!-- Umbral Crossbow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="22421" level="250" unproperly="1"> <!-- Umbral Master Crossbow -->
+	<distance id="22421" swing="true" level="250" unproperly="1"> <!-- Umbral Master Crossbow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
@@ -1030,54 +1030,54 @@
 
  	<!-- Ammunition -->
  	<!-- action="removecount" was removed from some ammo-->
-	<distance id="1294" action="removecount" /> <!-- small stone -->
-	<distance id="2111" action="removecount" /> <!-- snowball -->
-	<distance id="2389" breakchance="0" /> <!-- spear -->
-	<distance id="2399" breakchance="0" /> <!-- throwing star -->
-	<distance id="2410" breakchance="0" /> <!-- throwing knife -->
-	<distance id="2543" breakchance="0" /> <!-- bolt -->
-	<distance id="2544" breakchance="0" /> <!-- arrow -->
-	<distance id="2545" script="poison_arrow.lua" /> 
-	<distance id="2546" level="30" script="burst_arrow.lua" /> 
-	<distance id="2547" unproperly="1" level="55" />	<!-- Power Bolt -->
-	<distance id="3965" breakchance="0" unproperly="1" level="20" />	<!-- Hunting Spear -->
-	<distance id="6529" breakchance="0" unproperly="1" level="60" />	<!-- Infernal Bolt -->
-	<distance id="7363" unproperly="1" level="30" />	<!-- Piercing Bolt -->
-	<distance id="7364" level="100" unproperly="1"> <!-- Sniper Arrow -->
+	<distance id="1294" swing="true" action="removecount" /> <!-- small stone -->
+	<distance id="2111" swing="true" action="removecount" /> <!-- snowball -->
+	<distance id="2389" swing="true" breakchance="0" /> <!-- spear -->
+	<distance id="2399" swing="true" breakchance="0" /> <!-- throwing star -->
+	<distance id="2410" swing="true" breakchance="0" /> <!-- throwing knife -->
+	<distance id="2543" swing="true" breakchance="0" /> <!-- bolt -->
+	<distance id="2544" swing="true" breakchance="0" /> <!-- arrow -->
+	<distance id="2545" swing="true" script="poison_arrow.lua" /> 
+	<distance id="2546" swing="true" level="30" script="burst_arrow.lua" /> 
+	<distance id="2547" swing="true" unproperly="1" level="55" />	<!-- Power Bolt -->
+	<distance id="3965" swing="true" breakchance="0" unproperly="1" level="20" />	<!-- Hunting Spear -->
+	<distance id="6529" swing="true" breakchance="0" unproperly="1" level="60" />	<!-- Infernal Bolt -->
+	<distance id="7363" swing="true" unproperly="1" level="30" />	<!-- Piercing Bolt -->
+	<distance id="7364" swing="true" level="100" unproperly="1"> <!-- Sniper Arrow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>	
-	<distance id="7365" unproperly="1" level="40" />	<!-- Onyx Arrow -->
-	<distance id="7366" breakchance="0" script="viper_star.lua" />
-	<distance id="7367" breakchance="0" unproperly="1" level="42" />	<!-- Enchanted Spear -->
-	<distance id="7378" breakchance="0" unproperly="1" level="25" />	<!-- Royal Spear -->
-	<distance id="7838" level="100" breakchance="3" unproperly="1"> <!-- Flash Arrow -->
+	<distance id="7365" swing="true" unproperly="1" level="40" />	<!-- Onyx Arrow -->
+	<distance id="7366" swing="true" breakchance="0" script="viper_star.lua" />
+	<distance id="7367" swing="true" breakchance="0" unproperly="1" level="42" />	<!-- Enchanted Spear -->
+	<distance id="7378" swing="true" breakchance="0" unproperly="1" level="25" />	<!-- Royal Spear -->
+	<distance id="7838" swing="true" level="100" breakchance="3" unproperly="1"> <!-- Flash Arrow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="7839" level="100"  breakchance="3" unproperly="1"> <!-- Shiver Arrow -->
+	<distance id="7839" swing="true" level="100"  breakchance="3" unproperly="1"> <!-- Shiver Arrow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="7840" level="100"  breakchance="3" unproperly="1"> <!-- Flaming Arrow -->
+	<distance id="7840" swing="true" level="100"  breakchance="3" unproperly="1"> <!-- Flaming Arrow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="7850" level="100"  breakchance="3" unproperly="1"> <!-- Earth Arrow -->
+	<distance id="7850" swing="true" level="100"  breakchance="3" unproperly="1"> <!-- Earth Arrow -->
 		<vocation name="Paladin" />
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
-	<distance id="15648" unproperly="1" level="30" />	<!-- Tarsal Arrow -->
-	<distance id="15649" unproperly="1" level="40" />	<!-- Vortex Bolt -->
-	<distance id="18303" breakchance="0" />	<!-- crystal bolt -->
-	<distance id="18304" unproperly="1" level="90" />	<!-- Crystalline Arrow -->
-	<distance id="18435" unproperly="1" level="250" />	<!-- Prismatic Bolt -->
-	<distance id="18436" unproperly="1" level="70" />	<!-- Drill Bolt -->
-	<distance id="18437" unproperly="1" level="70" />	<!-- Envenomed Arrow -->
-	<distance id="23839" unproperly="1" level="1" /> <!-- Simple Arrow -->
+	<distance id="15648" swing="true" unproperly="1" level="30" />	<!-- Tarsal Arrow -->
+	<distance id="15649" swing="true" unproperly="1" level="40" />	<!-- Vortex Bolt -->
+	<distance id="18303" swing="true" breakchance="0" />	<!-- crystal bolt -->
+	<distance id="18304" swing="true" unproperly="1" level="90" />	<!-- Crystalline Arrow -->
+	<distance id="18435" swing="true" unproperly="1" level="250" />	<!-- Prismatic Bolt -->
+	<distance id="18436" swing="true" unproperly="1" level="70" />	<!-- Drill Bolt -->
+	<distance id="18437" swing="true" unproperly="1" level="70" />	<!-- Envenomed Arrow -->
+	<distance id="23839" swing="true" unproperly="1" level="1" /> <!-- Simple Arrow -->
 </weapons>
