@@ -23,7 +23,7 @@ function onLogin(player)
 		sendChannelMessage(2, TALKTYPE_CHANNEL_Y, "Welcome Our Newest Player: " .. player:getName() .. "")
 		player:setStorageValue(111111, os.time() + 10) --logout timer
 		player:addItem(player:getSex() == 0 and 2651 or 2650, 1)
-		player:addItem(3960, 1):addItem(2671, 10)
+		player:addItem(3960, 1):addItem(2671, 100)
 		player:feed(1500)
 		player:openChannel(3)
 		player:setDirection(DIRECTION_WEST)
