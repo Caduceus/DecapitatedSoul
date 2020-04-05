@@ -635,6 +635,13 @@ MagicEffectNames magicEffectNames[] = {
 	{"blooddrip",		CONST_ME_BLOOD_DRIP},
 	{"bloodburst",		CONST_ME_BLOOD_BURST},
 	{"purpleexplosion",	CONST_ME_PURPLE_EXPLOSION},
+	{"holyjudgement",	CONST_ME_HOLY_JUDGEMENT},
+	{"floatingbox",		CONST_ME_FLOATING_BOX},
+	{"hitbydeath",		CONST_ME_HITBYDEATH},
+	{"magicmulti",		CONST_ME_MAGIC_MULTI},
+	{"unknown",			CONST_ME_UNKNOWN},
+	{"unknown2",		CONST_ME_UNKNOWN2},
+	{"spiritrelease",	CONST_ME_SPIRIT_RELEASE},
 };
 
 ShootTypeNames shootTypeNames[] = {
