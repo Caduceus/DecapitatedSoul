@@ -40,6 +40,7 @@ local config = {
 		'/vip addinfinite, playerName',
 		'/jail playerName',
         '/unjail playerName',
+        '/queryhouse item#',
         '!zombie start, min,max,start time',
         ' '
     }

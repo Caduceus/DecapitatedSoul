@@ -32,6 +32,7 @@ local config = {
 		'!autoloot clear',
 		'!buyhouse',
 		'!coin',
+		'!coincareer',
 		'!checkvip',
 		'!deathlist playerName',
 		'!dps',
