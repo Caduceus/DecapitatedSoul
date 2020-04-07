@@ -1,5 +1,6 @@
-local storage = 45554
-
+local chestOpened = 45554
+local gateKeeper = Position(1047, 906, 6)
+local time_ = 4 -- in seconds
 local outfits = {
     [1] = {female = 138, male = 130, addon = 3}, -- 1
     [2] = {female = 148, male = 144, addon = 3}, -- 2
@@ -10,12 +11,26 @@ local outfits = {
 
 local msg = ''
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
-    if player:getStorageValue(storage) == 2 then
+
+	local function instruction()
+		player:sendTextMessage(MESSAGE_INFO_DESCR, "Make your way through the gate tower.")
+	end
+	
+	local function greeterPort()
+		if player:getStorageValue(chestOpened) == 3 then
+			player:teleportTo(gateKeeper)
+			addEvent(instruction, time_ * 1000)
+		end
+	end
+	
+    if player:getStorageValue(chestOpened) == 2 then
         local outfit = outfits[player:getVocation():getBase():getId()]
         player:addOutfitAddon(outfit.female, outfit.addon)
         player:addOutfitAddon(outfit.male, outfit.addon)
-        msg = "You received a free addon!"
-        player:setStorageValue(storage, 3)
+        msg = "You received a free addon! Now on to your next Adventure!"
+        player:setStorageValue(chestOpened, 3)
+        player:save()
+        addEvent(greeterPort, time_ * 1000)
     else
         msg = " The chest seems to be locked."
     end

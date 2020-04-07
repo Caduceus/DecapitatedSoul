@@ -56,11 +56,12 @@
 	<action itemid="12543" script="quests/candy_ball.lua"/>
 	<action uniqueid="15483" script="custom/Starter_weapon_voc_based.lua"/>
 	<action uniqueid="15484" script="custom/Low_level_gear.lua"/>
-	<action uniqueid="15485" script="custom/Vocation_addon_custom_voc.lua"/>
+	<action uniqueid="15485" script="custom/greeterChest.lua"/>
 	<action uniqueid="15100" script="custom/jugg_switch.lua"/>
 	<action uniqueid="15104" script="custom/test_room.lua"/>
 	<action uniqueid="15107" script="custom/warlock_tp.lua"/>
 	<action actionid="15108" script="custom/Lilith_Piano.lua"/>
+	<action actionid="15109" script="custom/vlad_passage.lua"/>
 	<action uniqueid="15110" script="quests/medusa/entrance.lua"/>
 	<action uniqueid="15111" script="quests/medusa/medusa_arena.lua"/>
 	<action actionid="15113" script="quests/keatonsDoor.lua"/>
@@ -89,6 +90,7 @@
 	<action fromid="27072" toid="27087" script="other/folded_carpet.lua"/>
 	<action fromid="28770" toid="28779" script="other/folded_carpet.lua"/>
 	<action fromid="28806" toid="28811" script="other/folded_carpet.lua"/>
+	<action fromid="34435" toid="34438" script="other/folded_carpet.lua"/>
 	
 		<!-- transformTo-->
 	<action itemid="18551" script="other/transformTo.lua"/>
@@ -112,6 +114,9 @@
 	
 		<!--god staff-->
 	<action itemid="7451" script="wand_rod/weapon_damage.lua"/> 
+	
+		<!-- Hero Prison -->
+	<action uniqueid="9016" script="quests/hero_prison/openDoors.lua"/>
 	
 		<!-- DHQ -->
 	<action uniqueid="2209" script="quests/demon_helm_quest/dhq_lever.lua"/>
@@ -321,6 +326,23 @@
 	<action itemid="30330" function="decreaseItemId"/>
 	<action itemid="30331" function="increaseItemId"/>
 	<action itemid="29332" function="decreaseItemId"/>
+	<action itemid="34673" function="increaseItemId"/>
+	<action itemid="34674" function="decreaseItemId"/>
+	<action itemid="35356" function="increaseItemId"/>
+	<action itemid="35357" function="decreaseItemId"/>
+	<action itemid="35358" function="increaseItemId"/>
+	<action itemid="35359" function="decreaseItemId"/>
+	<action itemid="35360" function="increaseItemId"/>
+	<action itemid="35361" function="decreaseItemId"/>
+	<action itemid="35362" function="increaseItemId"/>
+	<action itemid="35363" function="decreaseItemId"/>
+	<action itemid="35364" function="increaseItemId"/>
+	<action itemid="35365" function="decreaseItemId"/>
+	<action itemid="35366" function="increaseItemId"/>
+	<action itemid="35367" function="decreaseItemId"/>
+	<action itemid="35368" function="increaseItemId"/>
+	<action itemid="35369" function="decreaseItemId"/>
+	
 
 	<!-- Food -->
 	<action itemid="2362" script="other/food.lua"/>
@@ -454,6 +476,7 @@
 	<action itemid="5553" script="other/fluids.lua"/>
 	<action fromid="5792" toid="5797" script="other/dice.lua"/>
 	<action itemid="10150" script="other/fluids.lua"/>
+	<action itemid="32606" script="other/fluids.lua"/>
 	<action itemid="7588" script="other/potions.lua"/>
 	<action itemid="7589" script="other/potions.lua"/>
 	<action itemid="7590" script="other/scaling_health_potions.lua"/>
