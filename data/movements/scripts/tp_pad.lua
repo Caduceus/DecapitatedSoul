@@ -1,5 +1,5 @@
 tp_pads = {
-    [8300] = {price = 0, name = "Caduceus Manor", storage = 99586},
+   [8300] = {price = 0, name = "Caduceus Manor", storage = 99586},
    [8301] = {price = 0, name = "Targovista", storage = 99587},
    [8302] = {price = 0, name = "Poenari", storage = 99598},
    [8303] = {price = 250, name = "Temple", storage = 99588},
@@ -20,7 +20,7 @@ tp_pads = {
 function onStepIn(player, item, position, fromPosition)
     if not tp_pads[item.uid] then return true end
     if not player:isVip() then 
-		player:sendTextMessage(MESSAGE_STATUS_WARNING,"You do not have a VIP account.")
+		player:sendTextMessage(MESSAGE_STATUS_WARNING,"You do not have a VIP account, therefore this portal was not saved.")
     return true 
 end
 
@@ -36,6 +36,7 @@ end
    if tp_pads[item.uid].storage then
      if player:getStorageValue(tp_pads[item.uid].storage) < 1 then
        player:setStorageValue(tp_pads[item.uid].storage, 1)
+       player:save()
        player:say("New portal unlocked.", TALKTYPE_MONSTER_SAY, true, player, player:getPosition())
      end
    end
