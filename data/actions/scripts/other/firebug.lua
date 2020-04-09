@@ -28,11 +28,12 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				toPosition:sendMagicEffect(CONST_ME_HITBYFIRE)
 				target:transform(1484)
 				player:setStorageValue(Storage.lightBearer, storage +1)
+				player:save()
 				player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'Task message: '..(stor +1)..'/100 '..target:getName()..'s lit.')
 			else
 				toPosition:sendMagicEffect(CONST_ME_HITBYFIRE)
 				target:transform(1484)
-				player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'The all mighty Light Bearer. Still lighting up the day.')
+				player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'The all mighty Light Bearer, '.. player:getName() .. '! Still lighting up the day.')
 			end
 		elseif target.actionid == 12550 or target.actionid == 12551 then -- Secret Service Quest
 			if player:getStorageValue(Storage.secretService.TBIMission01) == 1 then
