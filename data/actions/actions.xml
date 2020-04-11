@@ -89,6 +89,7 @@
 	<action fromid="26366" toid="26376" script="other/folded_carpet.lua"/>
 	<action fromid="27072" toid="27087" script="other/folded_carpet.lua"/>
 	<action fromid="28770" toid="28779" script="other/folded_carpet.lua"/>
+	<action fromid="28768" toid="28769" script="other/watch.lua"/>
 	<action fromid="28806" toid="28811" script="other/folded_carpet.lua"/>
 	<action fromid="34435" toid="34438" script="other/folded_carpet.lua"/>
 	
