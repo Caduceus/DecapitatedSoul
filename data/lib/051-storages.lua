@@ -161,6 +161,7 @@ Storage = {
 		chest2 = 15008,
 		complete = 15009
 	},
+	heroPrisonSwitch = 15011,
 	setBonus = 17181,
 	superVocTransRing = {
 		vocationStorage = 18009,

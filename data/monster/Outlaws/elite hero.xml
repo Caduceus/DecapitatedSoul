@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elite Hero" nameDescription="an elite hero" race="blood" experience="2000" speed="220" manacost="0">
+	<health now="2500" max="2500"/>
+	<level min="1" max="1"/>
+	<look type="75" head="75" body="30" legs="40" feet="50" addons="0" corpse="3128"/>
+	<targetchange interval="4000" chance="10"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="80" attack="80"/>
+		<attack name="melee" interval="2000" chance="60" skill="86" attack="100" />
+		<attack name="physical" interval="2000" chance="40" range="7" min="-100" max="-180">
+			<attribute key="shootEffect" value="energy"/>
+		</attack>
+		<attack name="Heavy Magic Missile" chance="50" speed="4000" min="-50" max="-100" range="2"/>
+	</attacks>
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="5000" chance="50" min="200" max="500">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element energyPercent="40"/>
+		<element icePercent="10"/>
+		<element firePercent="30"/>
+		<element holyPercent="50"/>
+		<element earthPercent="50"/>
+		<element physicalPercent="30"/>
+		<element deathPercent="-20"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="My will remains unbroken!"/>
+		<voice sentence="My legend will live on!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="100" chance="59500"/><!-- gold coin -->
+		<item id="2666" countmax="3" chance="8200"/><!-- meat -->
+		<item id="2377" chance="6500"/><!-- two handed sword -->
+		<item id="2391" chance="4500"/><!-- war hammer -->
+		<item id="2487" chance="3000"/><!-- crown armor -->
+		<item id="2519" chance="3000"/><!-- crown shield -->
+		<item id="2491" chance="3000"/><!-- crown helmet -->
+		<item id="2392" chance="12500"/><!-- fire sword -->
+		<item id="7591" chance="5720"/><!-- great health potion -->
+		<item id="2488" chance="4500"/><!-- crown legs -->
+	</loot>
+</monster>
+
