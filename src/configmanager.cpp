@@ -104,7 +104,7 @@ bool ConfigManager::load()
 	string[STORE_IMAGES_URL] = getGlobalString(L, "storeImagesUrl", "");
 
 	integer[MAX_PLAYERS] = getGlobalNumber(L, "maxPlayers");
-	integer[PZ_LOCKED] = getGlobalNumber(L, "pzLocked", 60000);
+	integer[PZ_LOCKED] = getGlobalNumber(L, "pzLocked", 60);
 	integer[DEFAULT_DESPAWNRANGE] = getGlobalNumber(L, "deSpawnRange", 2);
 	integer[DEFAULT_DESPAWNRADIUS] = getGlobalNumber(L, "deSpawnRadius", 50);
 	integer[RATE_EXPERIENCE] = getGlobalNumber(L, "rateExp", 5);

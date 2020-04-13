@@ -2097,7 +2097,7 @@ void Player::death(Creature* lastHitCreature)
 
 			if (lastHitPlayer) {
 				uint32_t sumLevels = 0;
-				uint32_t inFightTicks = g_config.getNumber(ConfigManager::PZ_LOCKED);
+				int32_t inFightTicks = g_config.getNumber(ConfigManager::PZ_LOCKED) * 1000;
 				for (const auto& it : damageMap) {
 					CountBlock_t cb = it.second;
 					if ((OTSYS_TIME() - cb.ticks) <= inFightTicks) {
@@ -2318,7 +2318,7 @@ void Player::addInFightTicks(bool pzlock /*= false*/)
 		pzLocked = true;
 	}
 
-	Condition* condition = Condition::createCondition(CONDITIONID_DEFAULT, CONDITION_INFIGHT, g_config.getNumber(ConfigManager::PZ_LOCKED), 0);
+	Condition* condition = Condition::createCondition(CONDITIONID_DEFAULT, CONDITION_INFIGHT, g_config.getNumber(ConfigManager::PZ_LOCKED) * 1000, 0);
 	addCondition(condition);
 }
 
@@ -3789,7 +3789,7 @@ bool Player::onKilledCreature(Creature* target, bool lastHit/* = true*/)
 
 				if (lastHit && hasCondition(CONDITION_INFIGHT)) {
 					pzLocked = true;
-					Condition* condition = Condition::createCondition(CONDITIONID_DEFAULT, CONDITION_INFIGHT, g_config.getNumber(ConfigManager::WHITE_SKULL_TIME), 0);
+					Condition* condition = Condition::createCondition(CONDITIONID_DEFAULT, CONDITION_INFIGHT, g_config.getNumber(ConfigManager::WHITE_SKULL_TIME) * 1000, 0);
 					addCondition(condition);
 				}
 			}
