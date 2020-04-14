@@ -67,7 +67,8 @@ Storage = {
 			apocalypse = 19020,
 			morgaroth = 19021,
 			infernatil = 19022,
-			trigama = 19023
+			trigama = 19023,
+			bullWorm = 19024
 		},
 	repeatableTask2 = {
 		storage = 62005,

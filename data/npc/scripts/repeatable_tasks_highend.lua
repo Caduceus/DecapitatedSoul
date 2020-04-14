@@ -16,7 +16,8 @@ local monsters = {
    ["Trigama"] = {exstorage = 6033, storage = 5033, mstorage = 19023, amount = 50, rewardexp = 50000, items = {{id = 18423, count = 3}}},
    ["Apocalypse"] = {exstorage = 6030, storage = 5030, mstorage = 19020, amount = 50, rewardexp = 75000, items = {{id = 18423, count = 3}}},
    ["Morgaroth"] = {exstorage = 6031, storage = 5031, mstorage = 19021, amount = 50, rewardexp = 100000, items = {{id = 18423, count = 3}}},
-   ["Infernatil"] = {exstorage = 6032, storage = 5032, mstorage = 19022, amount = 50, rewardexp = 100000, items = {{id = 18423, count = 3}}}
+   ["Infernatil"] = {exstorage = 6032, storage = 5032, mstorage = 19022, amount = 50, rewardexp = 100000, items = {{id = 18423, count = 3}}},
+   ["Bull Worm"] = {exstorage = 6034, storage = 503, mstorage = 19024, amount = 50, rewardexp = 100000, items = {{id = 18423, count = 3}}}
    }
 
 local lastSound = 0

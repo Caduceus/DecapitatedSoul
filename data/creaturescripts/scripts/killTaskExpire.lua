@@ -23,7 +23,8 @@ local monsters = {
      ['apocalypse'] = {storage = 19020, startstorage = 5030},
      ['morgaroth'] = {storage = 19021, startstorage = 5031},
      ['infernatil'] = {storage = 19022, startstorage = 5032},
-     ['trigama'] = {storage = 19023, startstorage = 5033}
+     ['trigama'] = {storage = 19023, startstorage = 5033},
+     ['bull worm'] = {storage = 19024, startstorage = 5034}
 }
 function onThink(player)
 	if player:getStorageValue(62004) == -1 then

@@ -23,7 +23,8 @@ local config = {
      ['apocalypse'] = {amount = 50, storage = 19020, startstorage = 5030, startvalue = 1},
      ['morgaroth'] = {amount = 50, storage = 19021, startstorage = 5031, startvalue = 1},
      ['infernatil'] = {amount = 50, storage = 19022, startstorage = 5032, startvalue = 1},
-     ['trigama'] = {amount = 50, storage = 19023, startstorage = 5033, startvalue = 1}
+     ['trigama'] = {amount = 50, storage = 19023, startstorage = 5033, startvalue = 1},
+     ['bull worm'] = {amount = 50, storage = 19024, startstorage = 5034, startvalue = 1}
      
 }
 function onKill(player, target)
