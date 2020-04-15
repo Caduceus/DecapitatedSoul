@@ -13,6 +13,11 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if not ground then
 		return false
 	end
+	
+	if ground:getId() == 8060 then
+		player:sendTextMessage(MESSAGE_INFO_DESCR, "A shovel is useless against this stone pile. Try a pick!")
+		return false
+	end
 
 	local groundId = ground:getId()
 	if isInArray(holes, groundId) then
