@@ -65,6 +65,7 @@
 	<action uniqueid="15110" script="quests/medusa/entrance.lua"/>
 	<action uniqueid="15111" script="quests/medusa/medusa_arena.lua"/>
 	<action actionid="15113" script="quests/keatonsDoor.lua"/>
+	<action actionid="15114" script="tools/pick.lua"/>
 	<action itemid="25376" script="quests/screwup.lua"/>
 	<action itemid="19663" script="other/counter.lua"/>
 	<action itemid="19666" script="other/counter.lua"/>
@@ -95,7 +96,7 @@
 	
 		<!-- transformTo-->
 	<action itemid="18551" script="other/transformTo.lua"/>
-	<action itemid="27667" script="other/transformTo.lua"/>
+	<action fromid="27866" toid="27868" script="other/transformTo.lua"/>
 
 		<!--Elemental Wand-->
 	<action itemid="2188" script="wand_rod/weapon_damage.lua"/>	
@@ -329,6 +330,8 @@
 	<action itemid="29332" function="decreaseItemId"/>
 	<action itemid="34673" function="increaseItemId"/>
 	<action itemid="34674" function="decreaseItemId"/>
+	<action itemid="35335" function="increaseItemId"/>
+	<action itemid="35336" function="decreaseItemId"/>
 	<action itemid="35356" function="increaseItemId"/>
 	<action itemid="35357" function="decreaseItemId"/>
 	<action itemid="35358" function="increaseItemId"/>
@@ -343,7 +346,6 @@
 	<action itemid="35367" function="decreaseItemId"/>
 	<action itemid="35368" function="increaseItemId"/>
 	<action itemid="35369" function="decreaseItemId"/>
-	
 
 	<!-- Food -->
 	<action itemid="2362" script="other/food.lua"/>
