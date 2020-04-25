@@ -28,7 +28,8 @@
 											 shovel,2554,2000;
 											 torch,2050,2000;
 											 obsidianknife,5908,50000;
-											 rope,2120,5000"
+											 rope,2120,5000;
+											 pick,2553,10000"
 											 />
 	</parameters>
 </npc>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Server Assistant - [Info]" script="assistant.lua" walkinterval="0" floorchange="0" speechbubble="0">
+    <health now="100" max="100" />
+    <look type="1292" head="127" body="103" legs="41" feet="89" addons="2" mount="0" />
+</npc>

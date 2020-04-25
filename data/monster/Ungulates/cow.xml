@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Cow" nameDescription="a cow" race="blood" experience="0" speed="70" manacost="255">
+	<health now="2500" max="2500"/>
+	<look type="1253" corpse="34863"/>
+	<targetchange interval="4000" chance="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag passive="1" />
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="5"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="2000"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="20"/>
+	</attacks>
+	<voices interval="5000" chance="30">
+		<voice sentence="Moooo"/>
+		<voice sentence="Moooo Y'all, Mooo"/>
+	</voices>
+	<loot>
+		<item id="2671" countmax="10" chance="64000"/>	<!-- steak -->
+		<item id="33895" chance="950"/>					<!--cowbell -->
+	</loot>
+</monster>

@@ -17,7 +17,7 @@
 		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
-      <attack name="melee" interval="2000" skill="200" attack="650"/>
+      <attack name="melee" interval="2000" skill="130" attack="550"/>
       <attack name="physical" interval="2000" chance="20" radius="14" target="0" min="-900" max="-1050">
 			<attribute key="areaEffect" value="bluebubble"/>
 			</attack>
@@ -83,25 +83,12 @@
 		<voice sentence="I WILL FEAST ON YOUR SOUL MORTALS!" yell="1"/>
 	</voices>
 	<loot>
-		<item id="5919" chance="20000" />
-		<item id="2469" chance="500" />
-		<item id="2201" chance="10000" />  
-		<item id="2414" chance="6666" />  
-		<item id="2434" chance="1333" />   
-		<item id="2492" chance="18000" />  
-		<item id="2506" chance="1000" /> 
-		<item id="2522" chance="10000" />  
-		<item id="3940" chance="600" />  
-		<item id="2415" chance="2000" />  
-		<item id="2387" chance="4000" /> 
-		<item id="2390" chance="6000" />
-		<item id="2546" countmax="10" chance="4000" />
-		<item id="1987" chance="100000" />
-		<item id="2645" chance="5000" />
-		<item id="2145" countmax="3" chance="1538" />
-		<item id="2309" chance="2000" />
-		<item id="5920" chance="100000" />
-		<item id="2413" chance="6666" />
-		<item id="2409" chance="909" />
+		<item id="11116" chance="20000" />
+		<item id="11264" chance="20000" />
+		<item id="11394" chance="20000" />
+		<item id="8867" chance="10000" />
+		<item id="3962" chance="10000" />
+		<item id="18527" chance="1000" />
+		<item id="12638" chance="10000" />
 	</loot>
 </monster>

@@ -18,8 +18,9 @@
 												battleshield,2513,500;
 												battlehammer,2417,60;
 												beholdershield,2518,1500000;
-												belted cape,8872,30000;
-												blessedshield,2523,150000;
+												beltedcape,8872,200000;
+												blackhood,10562,15000;
+												blessedshield,2523,400000;
 												bluerobe,2656,15000;
 												boneshield,2541,10000;
 												bonesword,2450,25000;
@@ -46,6 +47,7 @@
 												darkarmor,2489,1500;
 												darkhelmet,2490,1000;
 												darkshield,2521,20000;
+												defenderhelmet,32798,300000;
 												demonarmor,2494,90000;
 												demonhelmet,2493,75000;
 												demonlegs,2495,90000;
@@ -167,6 +169,7 @@
 												terramantle,7884,80000;
 												thunderhammer,2421,500000;
 												towershield,2528,4000;
+												twinaxe,2447,150000;
 												twinhooks,11309,15000;
 												twohandedsword,2377,400;
 												vampireshield,2534,45000;

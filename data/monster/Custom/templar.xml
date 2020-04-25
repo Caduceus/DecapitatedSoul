@@ -25,13 +25,13 @@
     </script>
 
     <attacks>
-    <attack name="holy Strike" interval="2000" chance="40" min="-100" max="-200"/>
-    <attack name="physical" interval="2000" chance="100" min="-20" max="-50">
+    <attack name="holy Strike" interval="2000" chance="40" min="-200" max="-500"/>
+    <attack name="physical" interval="2000" chance="100" min="-200" max="-500">
 			<attribute key="shootEffect" value="holy"/>
 		</attack>
     </attacks>
-    <defenses armor="150" defense="250">
-		<defense name="healing" interval="2000" chance="80" min="400" max="700">
+    <defenses armor="250" defense="450">
+		<defense name="healing" interval="2000" chance="80" min="800" max="1000">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 	</defenses>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Orusula" nameDescription="an Orusula" race="fire" experience="40000" speed="280" manacost="0">
-	<health now="40500 " max="40500 "/>
+	<health now="400500 " max="400500 "/>
 	<look type="418" corpse="13969"/>
 	<targetchange interval="2000" chance="9"/>
 	<strategy attack="100" defense="0"/>
@@ -28,8 +28,6 @@
 			<attribute key="shootEffect" value="fire"/>
 			<attribute key="areaEffect" value="firearea"/>
 		</attack>
-		<attack name="dragon firebomb" interval="7000" chance="40" min="-800" max="-1800"/>
-		<attack name="Orusula burst" interval="4000" chance="100" min="-1000" max="-1800"/>
 	</attacks>
 	<defenses armor="80" defense="180">
 		<defense name="healing" interval="4000" chance="40"  min="4500" max="7500">

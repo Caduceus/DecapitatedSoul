@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Bull Worm" nameDescription="a bull worm" race="blood" experience="180000" speed="400" manacost="0">
+  <!--level min="1" max="1000"/-->
+    <health now="150000" max="150000"/>
+    <look type="1272" head="0" body="0" legs="0" feet="0" corpse="35259"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="50"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="2"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+		<attack name="melee" interval="2000" min="-1600" max="-1000"/>
+		<attack name="poison field" interval="1000" chance="100" min="-1900" max="-2300"/>
+		<attack name="poisoncondition" interval="2000" chance="50" length="0" spread="0" min="-800" max="-1500">
+			<attribute key="areaEffect" value="greenspark"/>
+		</attack>
+		<attack name="earth" interval="1000" chance="60" range="7" target="1" radius="4" min="-1500" max="-2000">
+			<attribute key="areaEffect" value="hitbydeath"/>
+			<attribute key="shootEffect" value="death"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="100" radius="6" min="-1250" max="-2750">
+			<attribute key="areaEffect" value="hitbydeath"/>
+		</attack>
+    </attacks>
+    <defenses armor="100" defense="100">
+      <defense name="healing" interval="1000" chance="30" min="5000" max="10000">
+        <attribute key="areaEffect" value="magicmulti"/>
+      </defense>
+      <defense name="speed" interval="2000" chance="8" speedchange="360" duration="6000">
+        <attribute key="areaEffect" value="redshimmer"/>
+      </defense>
+    </defenses>
+    <elements>
+		<element firePercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity poison="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity outfit="1"/>
+		<immunity drunk="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+    <loot>
+		<item id="2160" countmax="2" chance="8000"/><!-- crystal coin -->
+		<item id="2398" chance="50000"/> <!-- mace -->
+        <item id="2376" chance="50000"/> <!-- sword -->
+        <item id="2447" chance="2000"/> <!-- twin axe -->
+        <item id="2408" chance="800"/> <!-- warlord sword -->
+        <item id="2523" chance="800"/> <!-- blessed shield -->
+        <item id="8872" chance="800"/> <!-- belted cape -->
+        <item id="10562" chance="800"/> <!-- black hood -->
+        <item id="32798" chance="500"/> <!-- defender helmet -->
+    </loot>
+  </monster>

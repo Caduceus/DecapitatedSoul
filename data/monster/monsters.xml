@@ -8,15 +8,14 @@
 	<monster name="Sthenno" file="Custom/Sthenno.xml"/>
 	<monster name="captain hook" file="Bosses/captain hook.xml"/>
 	<monster name="beelzabubba" file="Custom/Beelzabubba.xml"/>
-	<monster name="elite hero" file="Custom/Elite Hero.xml"/>
 	<monster name="templar" file="Custom/templar.xml"/>
 	<monster name="Prison Guard" file="Custom/Prison_Guard.xml"/>
 	<monster name="Chocobo Warrior" file="Custom/chocobo warrior.xml"/>
 	<monster name="Golanth" file="Custom/Golanth.xml"/>
 	<monster name="Diablo" file="Custom/Diablo.xml"/>
 	<monster name="Dark Force" file="Custom/dark force.xml"/>
-	<monster name="Bull Worm" file="Custom/bull worm.xml"/>
 	<monster name="Lost Barbarian Queen" file="Bosses/lost barbarian queen.xml"/>
+	<monster name="Orusula" file="Custom/Orusula.xml"/> 
 	<monster name="Stormblast" file="Custom/Stormblast.xml"/>
 	<monster name="Stormblast2" file="Custom/Stormblast_caster.xml"/>
 	<monster name="Stormblast3" file="Custom/Stormblast_team.xml"/>
@@ -50,6 +49,7 @@
 	<monster name="Drillworm" file="Annelids/drillworm.xml"/>
 	<monster name="Rotworm" file="Annelids/rotworm.xml"/>
 	<monster name="Rift Worm" file="Annelids/rift worm.xml"/>
+	<monster name="Bull Worm" file="Annelids/bull worm.xml"/>
 
 	<!-- Apes -->
 	<monster name="Kongra" file="Apes/kongra.xml"/>
@@ -302,7 +302,7 @@
 	<monster name="Hellhound" file="Canines/hellhound.xml"/>
 	<monster name="Hot Dog" file="Canines/hot dog.xml"/>
 	<monster name="Husky" file="Canines/husky.xml"/>
-	<monster name="Poodle" file="Canines/poodle.xml"/>
+	<monster name="Poop Coon" file="Canines/poop coon.xml"/>
 	<monster name="Starving Wolf" file="Canines/starving wolf.xml"/>
 	<monster name="Thornfire Wolf" file="Canines/thornfire wolf.xml"/>
 	<monster name="War wolf" file="Canines/war wolf.xml"/>
@@ -683,7 +683,9 @@
 	<monster name="Bandit" file="Outlaws/bandit.xml"/>
 	<monster name="Black Knight" file="Outlaws/black knight.xml"/>
 	<monster name="Crazed Beggar" file="Outlaws/crazed beggar.xml"/>
+	<monster name="elite hero" file="Outlaws/elite hero.xml"/>
 	<monster name="Gang Member" file="Outlaws/gang member.xml"/>
+	<monster name="General" file="Outlaws/general.xml"/>
 	<monster name="Gladiator" file="Outlaws/gladiator.xml"/>
 	<monster name="Grave Robber" file="Outlaws/grave robber.xml"/>
 	<monster name="Hero" file="Outlaws/hero.xml"/>
@@ -840,6 +842,7 @@
 	<!-- Ungulates -->
 	<monster name="Black Sheep" file="Ungulates/black sheep.xml"/>
 	<monster name="Boar" file="Ungulates/boar.xml"/>
+	<monster name="Cow" file="Ungulates/cow.xml"/>
 	<monster name="Deer" file="Ungulates/deer.xml"/>
 	<monster name="Desperate White Deer" file="Ungulates/desperate white deer.xml"/>
 	<monster name="Doom Deer" file="Ungulates/doom deer.xml"/>

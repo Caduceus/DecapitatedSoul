@@ -47,7 +47,6 @@
 	<loot>
 		<item id="2148" countmax="100" chance="44000"/><!-- gold coin -->
 		<item id="2148" countmax="48" chance="50500"/><!-- gold coin -->
-		<item id="8872" chance="5000"/><!-- belted cape -->
 		<item id="2465" chance="4700"/><!-- brass armor -->
 		<item id="2478" chance="5500"/><!-- brass legs -->
 		<item id="3965" chance="4200"/><!-- hunting spear -->
