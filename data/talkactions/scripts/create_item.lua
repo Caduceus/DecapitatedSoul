@@ -40,6 +40,7 @@ function onSay(player, words, param)
 				end
 			else
 				result:decay()
+				result:setAttribute(ITEM_ATTRIBUTE_WRAPID,26054)
 			end
 		end
 		player:getPosition():sendMagicEffect(CONST_ME_MAGIC_GREEN)
