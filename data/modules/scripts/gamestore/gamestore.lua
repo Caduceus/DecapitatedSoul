@@ -4,7 +4,7 @@ dofile('data/modules/scripts/gamestore/init.lua')
 GameStore.Categories = {
 {    name = "Containers",
         state = GameStore.States.STATE_NEW,
-        icons = {"decap.png"},
+        icons = {"Crown_bp.png"},
         offers = {
             -- Item Example : thingId = itemId
             {name = "Anniversary Backpack (Vol:15)", thingId = 16007, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Anniversary_bp.png"}, description = "Buy this backpack to hold items!"},
@@ -19,7 +19,7 @@ GameStore.Categories = {
     },
 {    name = "Enhancements",
         state = GameStore.States.STATE_NEW,
-        icons = {"decap.png"},
+        icons = {"double_experience_grant.png"},
         offers = {
             -- Item Example : thingId = itemId 1948 - Double XP Scroll (1 hour) - 15 
             {name = "Berserk Potion", thingId = 7439, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 1, icons = {"berserk_potion.png"}, description = "Drinking this potion temporarily increases your fighting skill while decreasing your defense."},
@@ -30,46 +30,52 @@ GameStore.Categories = {
     },
 {    name = "Furniture",
         state = GameStore.States.STATE_NEW,
-        icons = {"decap.png"},
+        icons = {"Alchemistic_Cabinet.png"},
         offers = {
             -- Item Example : thingId = itemId
-            {name = "Ferocious Cabinet", thingId = 24345, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Ferocious_Cabinet.png"}, description = "a Ferocious Cabinet (Vol:30)."},
-            {name = "Ferocious Chair", thingId = 26113, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Ferocious_Chair.png"}, description = "a Ferocious Chair."},
-            {name = "Ferocious Table", thingId = 26114, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Ferocious_Table.png"}, description = "a Ferocious Table."},
-            {name = "Ferocious Trunk", thingId = 26129, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Ferocious_Trunk.png"}, description = "a Ferocious Trunk (Vol:20)."},
-            {name = "Kidney Table", thingId = 24348, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Kidney_Table.png"}, description = "a Kidney Table."},
-            {name = "Magnificent Cabinet", thingId = 24346, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Magnificent_Cabinet.png"}, description = "a Magnificent Cabinet (Vol:30)."},
-            {name = "Magnificent Chair", thingId = 26114, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Magnificent_Chair.png"}, description = "a Magnificent Chair."},
-            {name = "Magnificent Table", thingId = 7498, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Magnificent_Table.png"}, description = "a Magnificent Table."},
-            {name = "Magnificent Trunk", thingId = 24353, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Magnificent_Trunk.png"}, description = "a Magnificent Trunk (Vol:20)."},
-            {name = "Timber Chair", thingId = 24350, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Timber_Chair.png"}, description = "a timber chair."},
-            {name = "Timber Stool", thingId = 24351, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Timber_Stool.png"}, description = "a timber stool."},
-            {name = "Timber Taboret", thingId = 24352, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Timber_Taboret.png"}, description = "a timber taboret."},
-            {name = "Venorean Chair", thingId = 24347, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Venorean_Chair.png"}, description = "a Venorean Chair."},
-            {name = "Venorean Stool", thingId = 24349, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Venorean_Stool.png"}, description = "a Venorean Stool."}
+            {name = "Alchemistic Bookstand", thingId = 29635, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Alchemistic_Bookstand.png"}, description = "a Alchemistic Bookstand."},
+            {name = "Alchemistic Cabinet", thingId = 29619, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 10, icons = {"Alchemistic_Cabinet.png"}, description = "a Alchemistic Cabinet (Vol:30)."},
+            {name = "Alchemistic Chair", thingId = 29618, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Alchemistic_Chair.png"}, description = "a Alchemistic Chair."},
+            {name = "Alchemistic Scale", thingId = 29639, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Alchemistic_Scales.png"}, description = "a Alchemistic Scale."},
+            {name = "Alchemistic Table", thingId = 29621, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Alchemistic_Table.png"}, description = "a Alchemistic Table."},
+            {name = "Comfy Cabinet", thingId = 30982, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 15, icons = {"Comfy_Cabinet.png"}, description = " a Comfy Cabinet (Vol:20)."},
+            {name = "Comfy Chair", thingId = 30978, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Comfy_Chair.png"}, description = "a Comfy Chair."},
+            {name = "Comfy Trunk", thingId = 30978, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 10, icons = {"Comfy_Chest.png"}, description = "a Comfy Trunk (Vol:10)."},
+            {name = "Comfy Table", thingId = 30976, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Comfy_Table.png"}, description = "a Comfy Table."},
+            {name = "Dwarven Stone Cabinet", thingId = 34365, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 15, icons = {"Dwarven_Stone_Cabinet.png"}, description = " a Dwarven Stone Cabinet (Vol:20)."},
+            {name = "Dwarven Stone Chair", thingId = 34358, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Dwarven_Stone_Chair.png"}, description = "a Stone Dwarven Chair"},
+            {name = "Dwarven Stone Chest", thingId = 34360, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 10, icons = {"Dwarven_Stone_Chest.png"}, description = "a Dwarven Stone Chest (Vol:10)."},
+            {name = "Dwarven Stone Table", thingId = 34364, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Dwarven_Stone_Table.png"}, description = "a Dwarven Stone Table."},
+          
+            {name = "Ferocious Cabinet", thingId = 26077, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 15, icons = {"Ferocious_Cabinet.png"}, description = "a Ferocious Cabinet (Vol:30)."},
+            {name = "Ferocious Chair", thingId = 26065, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Ferocious_Chair.png"}, description = "a Ferocious Chair."},
+            {name = "Ferocious Table", thingId = 26070, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Ferocious_Table.png"}, description = "a Ferocious Table."},
+            {name = "Ferocious Trunk", thingId = 26079, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 10, icons = {"Ferocious_Trunk.png"}, description = "a Ferocious Trunk (Vol:20)."},
+            {name = "Kidney Table", thingId = 19647, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Kidney_Table.png"}, description = "a Kidney Table."},
+            {name = "Magnificent Cabinet", thingId = 26075, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 15, icons = {"Magnificent_Cabinet.png"}, description = "a Magnificent Cabinet (Vol:30)."},
+            {name = "Magnificent Chair", thingId = 26061, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Magnificent_Chair.png"}, description = "a Magnificent Chair."},
+            {name = "Magnificent Table", thingId = 26073, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Magnificent_Table.png"}, description = "a Magnificent Table."},
+            {name = "Magnificent Trunk", thingId = 26083, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 10, icons = {"Magnificent_Trunk.png"}, description = "a Magnificent Trunk (Vol:20)."},
+            {name = "Timber Chair", thingId = 12789, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Timber_Chair.png"}, description = "a timber chair."},
+            {name = "Timber Stool", thingId = 12793, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Timber_Stool.png"}, description = "a timber stool."},
+            {name = "Timber Taboret", thingId = 12795, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Timber_Taboret.png"}, description = "a timber taboret."},
+            {name = "Venorean Chair", thingId = 19641, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Venorean_Chair.png"}, description = "a Venorean Chair."},
+            {name = "Venorean Stool", thingId = 19645, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 5, icons = {"Venorean_Stool.png"}, description = "a Venorean Stool."},
+            {name = "Wooden Bookcase", thingId = 34367, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 15, icons = {"Wooden_Bookcase.png"}, description = "a Wooden Bookcase (Vol:20)."}
         }
     },
 {    name = "House Deco",
         state = GameStore.States.STATE_NEW,
-        icons = {"decap.png"},
+        icons = {"rift_carpet.png"},
         offers = {
         	{name = "Blood Herbs", thingId = 2798, count = 10, type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, price = 5, icons = {"Blood_Herb.png"}, description = "Buy these blood herbs, some nice decoration!"},
             {name = "Blood Herbs", thingId = 2798, count = 20, type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, price = 10, icons = {"Blood_Herb.png"}, description = "Buy these blood herbs, some nice decoration!"},
-            {name = "Crystal Lamp", thingId = 18389, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Crystal_Lamp.png"}, description = "Buy this item to explore the dark caves!"},
-            {name = "Glowing Mushroom", thingId = 18392, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Glowing_Mushroom.png"}, description = "Buy this item to explore the dark caves!"},
-            {name = "Green Light", thingId = 23588, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Green_Light.png"}, description = "Buy this item to explore the dark caves!"},
             {name = "Hamster In A Wheel", thingId = 7503, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Hamster.png"}, description = "a hamster in a wheel."},
 			{name = "Memory Box", thingId = 21731, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Memory_Box.png"}, description = "It is said to freeze time itself to capture your fondest memories."},
 			{name = "Music Box", thingId = 13032, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Music_Box_(TibiaSpace).png"}, description = "a Music Box."},
 			{name = "Music Box", thingId = 22647, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Music_Box.png"}, description = "a Music Box."},
-			{name = "Predator Lamp", thingId = 24344, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Lamp_Leopard.png"}, description = "a Predator Lamp."},
-            {name = "Protectress Lamp", thingId = 26116, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Lamp_Goddess.png"}, description = "a Protectress Lamp."},
-			{name = "Pumpkinhead (unlit)", thingId = 24342, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Pumpkinhead.png"}, description = "an unlit Pumpkinhead."},
-			{name = "Rift Lamp", thingId = 25390, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Rift_Lamp_(Charging).png"}, description = "Buy this item to explore the dark caves!"},
 			{name = "Sleeping Cat", thingId = 26112, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Sleeping_Cat.png"}, description = "a sleeping cat."},
-			{name = "Small Lamp", thingId = 24354, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Small_Lamp.png"}, description = "a small lamp."},
 			{name = "Snow Globe", thingId = 22645, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Snow_Globe.png"}, description = "a Snow Globe."},
-			{name = "Trapped Lightning", thingId = 21699, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Trapped_Lightning.png"}, description = "Buy this item to explore the dark caves!"},
 			{name = "Rift Carpet", thingId = 25393, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"rift_carpet.png"}, description = "a Rift Carpet."},
 			{name = "Void Carpet", thingId = 26192, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"void_carpet.png"}, description = "a Void Carpet."},
 			{name = "Yalaharian Carpet", thingId = 26087, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"yalaharian_carpet.png"}, description = "a Yalaharian Carpet."},
@@ -98,10 +104,33 @@ GameStore.Categories = {
 			{name = "Crested Carpet", thingId = 28808, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"crested_carpet.png"}, description = "a Crested Carpet."},
 			{name = "Decorated Carpet", thingId = 28810, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"decorated_carpet.png"}, description = "a Decorated Carpet."},
         }
+    },  
+    
+    {    name = "Lighting",
+        state = GameStore.States.STATE_NEW,
+        icons = {"Rift_Lamp_(Charging).png"},
+        offers = {
+ 			{name = "Black Skull Lamp", thingId = 27090, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 20, icons = {"Lit_Skull_Lamp.png"}, description = "Black Skull Lamp!"},
+			{name = "Barrel & Anchor Lamp", thingId = 34720, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 20, icons = {"Barrel_and_Anchor_Lamp.png"}, description = "Barrel & Anchor Lamp!"},
+            {name = "Crystal Lamp", thingId = 18389, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Crystal_Lamp.png"}, description = "Buy this item to explore the dark caves!"},
+            {name = "Glowing Mushroom", thingId = 18392, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Glowing_Mushroom.png"}, description = "Buy this item to explore the dark caves!"},
+            {name = "Green Light", thingId = 23588, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Green_Light.png"}, description = "Buy this item to explore the dark caves!"},
+			{name = "Little Big Flower Lamp", thingId = 34654, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 20, icons = {"Little_Big_Flower_Lamp.png"}, description = "Little Big Flower Lamp!"},
+			{name = "Model Ship Lamp", thingId = 34725, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_WRAP, price = 20, icons = {"Model_Ship_Lamp.png"}, description = "Model Ship Lamp!"},
+			{name = "Predator Lamp", thingId = 24344, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Lamp_Leopard.png"}, description = "a Predator Lamp."},
+            {name = "Protectress Lamp", thingId = 26116, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"Lamp_Goddess.png"}, description = "a Protectress Lamp."},
+			{name = "Pumpkinhead (unlit)", thingId = 24342, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Pumpkinhead.png"}, description = "an unlit Pumpkinhead."},
+			{name = "Rift Lamp", thingId = 25390, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Rift_Lamp_(Charging).png"}, description = "Buy this item to explore the dark caves!"},
+			{name = "Small Lamp", thingId = 24354, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 5, icons = {"Small_Lamp.png"}, description = "a small lamp."},
+			{name = "Trapped Lightning", thingId = 21699, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 10, icons = {"Trapped_Lightning.png"}, description = "Buy this item to explore the dark caves!"},
+			
+
+			
+        }
     },   
 {    name = "Mounts",
         state = GameStore.States.STATE_NEW,
-        icons = {"decap.png"},
+        icons = {"Product_Mount_WidowQueen.png"},
         offers = {
             -- Item Example : thingId = itemId all mounts price 10 less than speed
             {name = "Widow Queen", thingId = 1, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 10, icons = {"Product_Mount_WidowQueen.png"}, description = "Widow Queen Mount! +20 speed"},
@@ -225,19 +254,46 @@ GameStore.Categories = {
             {name = "Ebony Tiger", thingId = 127, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 50, icons = {"Product_Mount_EbonyTiger.png"}, description = "Ebony Tiger Mount! +60 Speed"},
             {name = "Feral Tiger", thingId = 128, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 50, icons = {"Product_Mount_FeralTiger.png"}, description = "Feral Tiger Mount! +60 Speed"},
             {name = "Jungle Tiger", thingId = 129, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 50, icons = {"Product_Mount_JungleTiger.png"}, description = "Jungle Tiger Mount! +60 Speed"},
-            --{name = "Fleeting Knowledge", thingId = 130, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 50, icons = {"Product_Mount_FleetingKnowledge.png"}, description = "Fleeting Knowledge Mount! +60 Speed"},
+            {name = "Fleeting Knowledge", thingId = 130, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 50, icons = {"Product_Mount_Fleeting_Knowledge.png"}, description = "Fleeting Knowledge Mount! +60 Speed"},
             {name = "Snowy Owl", thingId = 131, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 50, icons = {"Product_Mount_SnowyOwl.png"}, description = "Snowy Owl Mount! +60 Speed"},
             {name = "Tawny Owl", thingId = 132, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 50, icons = {"Product_Mount_TawnyOwl.png"}, description = "Tawny Owl Mount! +60 Speed"},
-            {name = "Boreal Owl", thingId = 133, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 50, icons = {"Product_Mount_BorealOwl.png"}, description = "Boreal Owl Mount! +60 Speed"}
-            
-            
-            
-            
+            {name = "Boreal Owl", thingId = 133, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 50, icons = {"Product_Mount_BorealOwl.png"}, description = "Boreal Owl Mount! +60 Speed"},
+            {name = "Lacewing Moth", thingId = 134, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Lacewing_Moth.png"}, description = "Lacewing Moth Mount! +60 Speed"},
+            {name = "Hibernal Moth", thingId = 135, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Hibernal_Moth.png"}, description = "Hibernal Moth Mount! +60 Speed"},
+			{name = "Cold Percht Sleigh", thingId = 136, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Cold_Percht_Sleigh.png"}, description = "Cold Percht Sleigh Mount! +60 Speed"},
+			{name = "Bright Percht Sleigh", thingId = 137, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Bright_Percht_Sleigh.png"}, description = "Bright Percht Sleigh Mount! +60 Speed"},
+			{name = "Dark Percht Sleigh", thingId = 138, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Dark_Percht_Sleigh.png"}, description = "Dark Percht Sleigh Mount! +60 Speed"},
+			{name = "Festive Snowman", thingId = 139, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Festive_Snowman.png"}, description = "Festive Snowman Mount! +60 Speed"},
+			{name = "Muffled Snowman", thingId = 140, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Muffled_Snowman.png"}, description = "Muffled Snowman Mount! +60 Speed"},
+			{name = "Caped Snowman", thingId = 141, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Caped_Snowman.png"}, description = "Caped Snowman Mount! +60 Speed"},
+            {name = "Rabbit Rickshaw", thingId = 142, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Rabbit_Rickshaw.png"}, description = "Rabbit Rickshaw Mount! +60 Speed"},
+            {name = "Bunny Dray", thingId = 143, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Bunny_Dray.png"}, description = "Bunny Dray Mount! +60 Speed"},
+            {name = "Cony Cart", thingId = 144, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Cony_Cart.png"}, description = "Cony Cart Mount! +60 Speed"},
+            {name = "River Crocovile", thingId = 145, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_River_Crocovile.png"}, description = "River Crocovile Mount! +60 Speed"},
+            {name = "Swamp Crocovile", thingId = 146, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Swamp_Crocovile.png"}, description = "Swamp Crocovile Mount! +60 Speed"},
+            {name = "Nightmarish Crocovile", thingId = 147, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Nightmarish_Crocovile.png"}, description = "Nightmarish Crocovile Mount! +60 Speed"},
+            {name = "Jousting Eagle", thingId = 148, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Jousting_Eagle.png"}, description = "Jousting Eagle Mount! +60 Speed"},
+            {name = "Cerberus Champion", thingId = 149, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Cerberus_Champion.png"}, description = "Cerberus Champion Mount! +60 Speed"},
+            {name = "Battle Badger", thingId = 150, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Battle_Badger.png"}, description = "Battle Badger Mount! +60 Speed"},
+            {name = "Ether Badger", thingId = 151, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Ether_Badger.png"}, description = "Ether Badger Mount! +60 Speed"},
+            {name = "Zaoan Badger", thingId = 152, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Zaoan_Badger.png"}, description = "Zaoan Badger Mount! +60 Speed"},
+            {name = "Floating Sage", thingId = 156, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Floating_Sage.png"}, description = "Floating Sage Mount! +60 Speed"},
+            {name = "Floating Scholar", thingId = 157, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Floating_Scholar.png"}, description = "Floating Scholar Mount! +60 Speed"},
+            {name = "Floating Augur", thingId = 158, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Floating_Augur.png"}, description = "Floating Augur Mount! +60 Speed"},
+            {name = "Haze", thingId = 159, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Haze.png"}, description = "Haze Mount! +60 Speed"},
+            {name = "Antelope", thingId = 160, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Antelope.png"}, description = "Antelope Mount! +60 Speed"},
+            {name = "Snow Strider", thingId = 161, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Snow_Strider.png"}, description = "Snow Strider Mount! +60 Speed"},
+            {name = "Dusk Pryer", thingId = 162, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Dusk_Pryer.png"}, description = "Dusk Pryer Mount! +60 Speed"},
+            {name = "Dawn Strayer", thingId = 163, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Dawn_Strayer.png"}, description = "Dawn Strayer Mount! +60 Speed"},
+            {name = "Benevolent Savanna Ostrich", thingId = 164, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Benevolent_Savanna_Ostrich.png"}, description = "Benevolent Savanna Ostrich Mount! +60 Speed"},
+            {name = "Benevolent Coral Rhea", thingId = 165, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Benevolent_Coral_Rhea.png"}, description = "Benevolent Coral Rhea Mount! +60 Speed"},
+            {name = "Benevolent Eventide Nandu", thingId = 166, type = GameStore.OfferTypes.OFFER_TYPE_MOUNT, price = 60, icons = {"Product_Mount_Benevolent_Eventide_Nandu.png"}, description = "Benevolent Eventide Nandu Mount! +60 Speed"},
+
         }
     },
 {    name = "Other Items",
         state = GameStore.States.STATE_NEW,
-        icons = {"decap.png"},
+        icons = {"starlight_portal.png"},
         offers = {
             -- Item Example : thingId = itemId
             {name = "Crystal Coin", thingId = 2160, count = 50, type = GameStore.OfferTypes.OFFER_TYPE_STACKABLE, price = 15, icons = {"Crystal_Coin.png"}, description = "Become rich!"},
@@ -249,7 +305,7 @@ GameStore.Categories = {
     },    
 {    name = "Outfits", -- druid hunter warrior mage knight pirate not included
         state = GameStore.States.STATE_NEW,
-        icons = {"decap.png"},
+        icons = {"Product_Outfit_Citizen_Male.png"},
         offers = {
             -- Addon Example : thingId = lookType, addon = ( 1 = addon 1, 2 = addon 2, 3 = both addons)
             {name = "Citizen Addon", thingId = {male=128,female=136}, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 0, icons = {"Product_Outfit_Citizen_Male.png", "Product_Outfit_Citizen_Female.png"}},
@@ -319,12 +375,14 @@ GameStore.Categories = {
 			{name = "Battle Mage Addon", thingId = {male=1069,female=1070}, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 90, icons = {"Product_Outfit_BattleMage_Male.png", "Product_Outfit_BattleMage_Female.png"}},
 			{name = "Discoverer Addon", thingId = {male=1094,female=1095}, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 90, icons = {"Product_Outfit_Discoverer_Male.png", "Product_Outfit_Discoverer_Female.png"}},
 			{name = "Sinister Archer Addon", thingId = {male=1102,female=1103}, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 90, icons = {"Product_Outfit_SinisterArcher_Male.png", "Product_Outfit_SinisterArcher_Female.png"}},
+			{name = "Trailblazer Addon", thingId = {male=1292,female=1293}, addon = 3, type = GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON, price = 100, icons = {"Product_Outfit_Trailblazer_Male.png", "Product_Outfit_Trailblazer_Female.png"}},
+
         }
     },
 
 {   name = "VIP Tokens",
         state = GameStore.States.STATE_NEW,
-        icons = {"decap.png"},
+        icons = {"gold_medal.png"},
         offers = {
             -- Item Example : thingId = itemId
             {name = "Bronze Medal [1 day VIP]", thingId = 10135, count = 1, type = GameStore.OfferTypes.OFFER_TYPE_ITEM, price = 15, icons = {"bronze_medal.png"}, description = "Buy this item to grant your account VIP privileges!"},
@@ -334,7 +392,7 @@ GameStore.Categories = {
     },
 {   name = "Extra Services",
         state = GameStore.States.STATE_NEW,
-        icons = {"decap.png"},
+        icons = {"Name_Change.png"},
         offers = {
             -- NameChange example
             {name = "Character Name Change", type = GameStore.OfferTypes.OFFER_TYPE_NAMECHANGE, price = 25, icons = {"Name_Change.png"}},
