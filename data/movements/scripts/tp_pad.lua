@@ -12,7 +12,7 @@ tp_pads = {
    [8310] = {price = 50000, name = "Cauldron Portal", storage = 99595},
    [8311] = {price = 50000, name = "Trigama Section", storage = 99596},
    [8312] = {price = 10000, name = "Demodras Section", storage = 99597},
-   [8313] = {price = 10000, name = "OUT OF ORDER", storage = 99599},
+   [8313] = {price = 10000, name = "Infernitil", storage = 99599},
    
 
 }
