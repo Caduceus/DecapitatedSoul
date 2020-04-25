@@ -218,6 +218,7 @@ class ProtocolGame final : public ProtocolGameBase
 		void parseUpdateContainer(NetworkMessage& msg);
 		void parseTextWindow(NetworkMessage& msg);
 		void parseHouseWindow(NetworkMessage& msg);
+		void parseWrapItem(NetworkMessage& msg);
 
 		void parseLookInShop(NetworkMessage& msg);
 		void parsePlayerPurchase(NetworkMessage& msg);
@@ -255,7 +256,6 @@ class ProtocolGame final : public ProtocolGameBase
 		void parseEditVip(NetworkMessage& msg);
 
 		void parseRotateItem(NetworkMessage& msg);
-		void parseWrapItem(NetworkMessage& msg);
 
 		//Channel tabs
 		void parseChannelInvite(NetworkMessage& msg);

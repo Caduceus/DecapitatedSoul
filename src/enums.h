@@ -61,6 +61,7 @@ enum itemAttrTypes : uint32_t {
 	ITEM_ATTRIBUTE_FLUIDTYPE = 1 << 21,
 	ITEM_ATTRIBUTE_DOORID = 1 << 22,
 	ITEM_ATTRIBUTE_FORCESERIALIZE = 1 << 23,
+	ITEM_ATTRIBUTE_WRAPID = 1 << 24,
 };
 
 enum VipStatus_t : uint8_t {

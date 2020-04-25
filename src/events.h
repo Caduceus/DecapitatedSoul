@@ -53,7 +53,6 @@ class Events
 		bool eventPlayerOnLookInShop(Player* player, const ItemType* itemType, uint8_t count);
 		bool eventPlayerOnMoveItem(Player* player, Item* item, uint16_t count, const Position& fromPosition, const Position& toPosition, Cylinder* fromCylinder, Cylinder* toCylinder);
 		bool eventPlayerOnMoveCreature(Player* player, Creature* creature, const Position& fromPosition, const Position& toPosition);
-		bool eventPlayerOnWrapItem(Player* player, Item* item);
 		bool eventPlayerOnTurn(Player* player, Direction direction);
 		bool eventPlayerOnTradeRequest(Player* player, Player* target, Item* item);
 		bool eventPlayerOnTradeAccept(Player* player, Player* target, Item* item, Item* targetItem);
@@ -61,6 +60,7 @@ class Events
 		void eventPlayerOnLoseExperience(Player* player, uint64_t& exp);
 		void eventPlayerOnGainSkillTries(Player* player, skills_t skill, uint64_t& tries);
 		bool eventPlayerOnMove(Player* player, Direction direction);
+		void eventPlayerOnWrapItem(Player* player, Item* item);
 
 	private:
 		LuaScriptInterface scriptInterface;
@@ -83,7 +83,6 @@ class Events
 		int32_t playerOnLookInShop;
 		int32_t playerOnMoveItem;
 		int32_t playerOnMoveCreature;
-		int32_t playerOnWrapItem = -1;
 		int32_t playerOnTurn;
 		int32_t playerOnTradeRequest;
 		int32_t playerOnTradeAccept;
@@ -91,6 +90,7 @@ class Events
 		int32_t playerOnLoseExperience;
 		int32_t playerOnGainSkillTries;
 		int32_t playerOnMove; 
+		int32_t playerOnWrapItem = -1;
 };
 
 #endif

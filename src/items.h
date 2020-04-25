@@ -240,7 +240,6 @@ class ItemType
  		uint16_t slotPosition;
  		uint16_t speed;
  		uint16_t wareId;
-		uint16_t wrapTo;
 		uint16_t rotateTo;
 
 		MagicEffectClasses magicEffect;

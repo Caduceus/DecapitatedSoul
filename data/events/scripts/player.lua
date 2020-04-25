@@ -117,7 +117,7 @@ function Player:onLookInShop(itemType, count)
 end
 
 function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, toCylinder)
-	if item:getActionId() == NOT_MOVEABLE_ACTION or item:getActionId() == LILITH_PIANO then
+	if item:getActionId() == NOT_MOVEABLE_ACTION or item:getActionId() == LILITH_PIANO or item:getActionId() == VLAD_PASSAGE then
 		self:sendCancelMessage('Quit trying to thieve the ' .. item:getName() .. '!')
 		self:say('The ' .. item:getName() .. ' is not yours!', TALKTYPE_MONSTER_SAY)
 		return false
@@ -189,18 +189,6 @@ end
 
 function Player:onMoveCreature(creature, fromPosition, toPosition)
 	return true
-end
-
-function Player:onWrapItem(item)
-	local pos = item:getPosition()
-	local house = Tile(pos):getHouse()
-	
-	if house then
-		return true
-	end
-	
-	self:sendTextMessage(MESSAGE_STATUS_SMALL, "You can only wrap and unwrap this item inside a house.")
-	return false
 end
 
 function Player:onTurn(direction)
@@ -296,6 +284,36 @@ function Player:onGainSkillTries(skill, tries)
 		return tries * configManager.getNumber(configKeys.RATE_MAGIC)
 	end
 	return tries * configManager.getNumber(configKeys.RATE_SKILL)
+end
+
+function Player:onWrapItem(item, position)
+	local topCylinder = item:getTopParent()
+	if not topCylinder then
+		return
+	end
+
+	local tile = Tile(topCylinder:getPosition())
+	if not tile then
+		return
+	end
+
+	if not tile:getHouse() then
+		self:sendCancelMessage("You can only wrap and unwrap this item inside a house.")
+		return
+	end
+
+	local wrapId = item:getAttribute("wrapid")
+	if wrapId == 0 then
+		return
+	end
+	
+	local oldId = item:getId()
+	--local kit = self:addItem(wrapId) 
+	local kit = Game.createItem(wrapId, 1, item:getPosition())
+	if kit then
+		kit:setAttribute(ITEM_ATTRIBUTE_WRAPID, oldId)
+		item:remove(1)
+	end
 end
 
 function Player:onGainExperience(source, experience, rawExperience)

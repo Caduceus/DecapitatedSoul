@@ -98,6 +98,7 @@ enum AttrTypes_t {
 	ATTR_ARMOR = 31,
 	ATTR_HITCHANCE = 32,
 	ATTR_SHOOTRANGE = 33,
+	ATTR_WRAPID = 34
 };
 
 enum Attr_ReadValue {
@@ -284,12 +285,20 @@ class ItemAttributes
 		const Attribute* getExistingAttr(itemAttrTypes type) const;
 		Attribute& getAttr(itemAttrTypes type);
 
+		const static uint32_t intAttributeTypes = ITEM_ATTRIBUTE_ACTIONID | ITEM_ATTRIBUTE_UNIQUEID | ITEM_ATTRIBUTE_DATE
+			| ITEM_ATTRIBUTE_WEIGHT | ITEM_ATTRIBUTE_ATTACK | ITEM_ATTRIBUTE_DEFENSE | ITEM_ATTRIBUTE_EXTRADEFENSE
+			| ITEM_ATTRIBUTE_ARMOR | ITEM_ATTRIBUTE_HITCHANCE | ITEM_ATTRIBUTE_SHOOTRANGE | ITEM_ATTRIBUTE_OWNER
+			| ITEM_ATTRIBUTE_DURATION | ITEM_ATTRIBUTE_DECAYSTATE | ITEM_ATTRIBUTE_CORPSEOWNER | ITEM_ATTRIBUTE_CHARGES
+			| ITEM_ATTRIBUTE_FLUIDTYPE | ITEM_ATTRIBUTE_DOORID | ITEM_ATTRIBUTE_WRAPID;
+		const static uint32_t stringAttributeTypes = ITEM_ATTRIBUTE_DESCRIPTION | ITEM_ATTRIBUTE_TEXT | ITEM_ATTRIBUTE_WRITER
+			| ITEM_ATTRIBUTE_NAME | ITEM_ATTRIBUTE_ARTICLE | ITEM_ATTRIBUTE_PLURALNAME;
+
 	public:
 		inline static bool isIntAttrType(itemAttrTypes type) {
-			return (type & 0x7FFE13) != 0;
+			return (type & intAttributeTypes) == type;
 		}
 		inline static bool isStrAttrType(itemAttrTypes type) {
-			return (type & 0x1EC) != 0;
+			return (type & stringAttributeTypes) == type;
 		}
 
 		const std::forward_list<Attribute>& getList() const {
@@ -648,9 +657,7 @@ class Item : virtual public Thing
 			const ItemType& it = items[id];
 			return it.rotatable && it.rotateTo;
 		}
-		bool isWrappable() const {
-			return items[id].wrapTo != 0;
-		}
+
 		bool hasWalkStack() const {
 			return items[id].walkStack;
 		}

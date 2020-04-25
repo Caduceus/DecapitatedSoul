@@ -171,7 +171,7 @@ class Monster final : public Creature
 
 		bool isTarget(const Creature* creature) const;
 		bool isFleeing() const {
-			return getHealth() <= mType->runAwayHealth;
+			return !isSummon() && getHealth() <= mType->runAwayHealth && challengeFocusDuration <= 0;
 		}
 
 		bool getDistanceStep(const Position& targetPos, Direction& direction, bool flee = false);
@@ -196,18 +196,19 @@ class Monster final : public Creature
 		MonsterType* mType;
 		Spawn* spawn;
 
-		int64_t lastMeleeAttack;
+		int64_t lastMeleeAttack =0;
 
-		uint32_t attackTicks;
-		uint32_t targetTicks;
-		uint32_t targetChangeTicks;
-		uint32_t defenseTicks;
-		uint32_t yellTicks;
-		int32_t minCombatValue;
-		int32_t maxCombatValue;
-		int32_t targetChangeCooldown;
-		int32_t stepDuration;
-		uint16_t level;
+		uint32_t attackTicks =0;
+		uint32_t targetTicks =0;
+		uint32_t targetChangeTicks =0;
+		uint32_t defenseTicks =0;
+		uint32_t yellTicks =0;
+		int32_t minCombatValue =0;
+		int32_t maxCombatValue =0;
+		int32_t targetChangeCooldown =0;
+		int32_t challengeFocusDuration =0;
+		int32_t stepDuration = 0;
+		uint16_t level = 0;
 
 		Position masterPos;
 

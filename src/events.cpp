@@ -131,8 +131,6 @@ bool Events::load()
 				playerOnMoveItem = event;
 			} else if (methodName == "onMoveCreature") {
 				playerOnMoveCreature = event;
-			} else if (methodName == "onWrapItem") {
-				playerOnWrapItem = event;
 			} else if (methodName == "onTurn") {
 				playerOnTurn = event;
 			} else if (methodName == "onMove") {
@@ -143,6 +141,8 @@ bool Events::load()
 				playerOnLoseExperience = event;
 			} else if (methodName == "onGainSkillTries") {
 				playerOnGainSkillTries = event;
+			}else if (methodName == "onWrapItem") {
+				playerOnWrapItem = event;
 			} else {
 				std::cout << "[Warning - Events::load] Unknown player method: " << methodName << std::endl;
 			}
@@ -588,33 +588,6 @@ bool Events::eventPlayerOnMoveCreature(Player* player, Creature* creature, const
 	return scriptInterface.callFunction(4);
 }
 
-bool Events::eventPlayerOnWrapItem(Player* player, Item* item)
-{
-	// Player:onWrapItem(item) or Player.onWrapItem(self, item)
-	if (playerOnWrapItem == -1) {
-		return true;
-	}
-
-	if (!scriptInterface.reserveScriptEnv()) {
-		std::cout << "[Error - Events::eventPlayerOnWrapItem] Call stack overflow" << std::endl;
-		return false;
-	}
-
-	ScriptEnvironment* env = scriptInterface.getScriptEnv();
-	env->setScriptId(playerOnWrapItem, &scriptInterface);
-
-	lua_State* L = scriptInterface.getLuaState();
-	scriptInterface.pushFunction(playerOnWrapItem);
-
-	LuaScriptInterface::pushUserdata<Player>(L, player);
-	LuaScriptInterface::setMetatable(L, -1, "Player");
-
-	LuaScriptInterface::pushUserdata<Item>(L, item);
-	LuaScriptInterface::setItemMetatable(L, -1, item);
-
-	return scriptInterface.callFunction(2);
-}
-
 bool Events::eventPlayerOnTurn(Player* player, Direction direction)
 {
 	// Player:onTurn(direction) or Player.onTurn(self, direction)
@@ -811,4 +784,31 @@ void Events::eventPlayerOnGainSkillTries(Player* player, skills_t skill, uint64_
 	}
 
 	scriptInterface.resetScriptEnv();
+}
+
+void Events::eventPlayerOnWrapItem(Player* player, Item* item)
+{
+	// Player:onWrapItem(item)
+	if (playerOnWrapItem == -1) {
+		return;
+	}
+
+	if (!scriptInterface.reserveScriptEnv()) {
+		std::cout << "[Error - Events::eventPlayerOnWrapItem] Call stack overflow" << std::endl;
+		return;
+	}
+
+	ScriptEnvironment* env = scriptInterface.getScriptEnv();
+	env->setScriptId(playerOnWrapItem, &scriptInterface);
+
+	lua_State* L = scriptInterface.getLuaState();
+	scriptInterface.pushFunction(playerOnWrapItem);
+
+	LuaScriptInterface::pushUserdata<Player>(L, player);
+	LuaScriptInterface::setMetatable(L, -1, "Player");
+
+	LuaScriptInterface::pushUserdata<Item>(L, item);
+	LuaScriptInterface::setItemMetatable(L, -1, item);
+
+	scriptInterface.callVoidFunction(2);
 }
