@@ -25,8 +25,7 @@
 	<action fromaid="5000" toaid="5003" script="custom/wagon.lua" />
 	<action itemid="5468" script="other/firebug.lua" />
 	<action itemid="5908" script="tools/skinning.lua"/>
-	<action itemid="5957" script="other/wrap.lua"/>
-	<!--action itemid="5957" script="other/lottery_ticket.lua"/-->
+	<action itemid="5957" script="other/lottery_ticket.lua"/>
 	<action itemid="5958" script="custom/minor_expboost.lua"/>
 	<action uniqueid="6040" script="custom/arenapvp.lua"/>	
 	<action fromuid="6297" touid="6303" script="custom/Slot_Machine.lua"/>
