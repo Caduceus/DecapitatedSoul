@@ -1198,3 +1198,83 @@ function Player.getGuidByStorage(playerId, key)
 	end
 	return 0
 end
+
+--==Player==--
+--==Coin Balance==--
+function Player.getCoinsBalance(self)
+	resultId = db.storeQuery("SELECT `coins` FROM `accounts` WHERE `id` = " .. self:getAccountId())
+	if not resultId then return 0 end
+	return result.getDataInt(resultId, "coins")
+end
+function Player.setCoinsBalance(self, coins)
+	db.asyncQuery("UPDATE `accounts` SET `coins` = " .. coins .. " WHERE `id` = " .. self:getAccountId())
+	return true
+end
+function Player.canRemoveCoins(self, coins)
+	if self:getCoinsBalance() < coins then
+		return false
+	end
+	return true
+end
+function Player.removeCoinsBalance(self, coins)
+	if self:canRemoveCoins(coins) then
+		return self:setCoinsBalance(self:getCoinsBalance() - coins)
+	end
+	
+	return false
+end
+
+function Player.addCoinsBalance(self, coins, update)
+	self:setCoinsBalance(self:getCoinsBalance() + coins)
+	if update then sendCoinBalanceUpdating(self, true) end
+	return true
+end
+
+--==Coin Total Career==--
+function Player.getCoinsCareer(self)
+	resultId = db.storeQuery("SELECT `coins_career` FROM `accounts` WHERE `id` = " .. self:getAccountId())
+	if not resultId then return 0 end
+	return result.getDataInt(resultId, "coins_career")
+end
+function Player.setCoinsCareer(self, coins)
+	db.asyncQuery("UPDATE `accounts` SET `coins_career` = " .. coins .. " WHERE `id` = " .. self:getAccountId())
+	return true
+end
+
+function Player.addCoinsCareer(self, coins, update)
+	self:setCoinsCareer(self:getCoinsCareer() + coins)
+	if update then sendCoinCareerUpdating(self, true) end
+	return true
+end
+
+--==Houses Owned==--
+function Player.getHousesOwned(self)
+	resultId = db.storeQuery("SELECT `houses_owned` FROM `accounts` WHERE `id` = " .. self:getAccountId())
+	if not resultId then return 0 end
+	return result.getDataInt(resultId, "houses_owned")
+end
+function Player.setHousesOwned(self, coins)
+	db.asyncQuery("UPDATE `accounts` SET `houses_owned` = " .. coins .. " WHERE `id` = " .. self:getAccountId())
+	return true
+end
+
+function Player.addHousesOwned(self, coins, update)
+	self:setHousesOwned(self:getHousesOwned() + coins)
+	if update then sendHousesOwnedUpdating(self, true) end
+	return true
+end
+
+function Player.toggleSex(self)
+	local currentSex = self:getSex()
+	local playerOutfit = self:getOutfit()
+	
+	if currentSex == PLAYERSEX_FEMALE then
+		self:setSex(PLAYERSEX_MALE)
+		playerOutfit.lookType = 128
+	else
+		self:setSex(PLAYERSEX_FEMALE)
+		playerOutfit.lookType = 136
+	end
+	self:setOutfit(playerOutfit)
+end
+

@@ -6,16 +6,17 @@ GameStore = {
 	LastUpdated = "[CEST] 25-05-2016 07:00AM"
 }
 --== Enums ==--
-GameStore.OfferTypes						= {
+GameStore.OfferTypes					= {
 	OFFER_TYPE_NONE						= 0, -- (this will disable offer)
 	OFFER_TYPE_ITEM						= 1,
-	OFFER_TYPE_STACKABLE					= 2,
-	OFFER_TYPE_OUTFIT						= 3,
+	OFFER_TYPE_STACKABLE				= 2,
+	OFFER_TYPE_OUTFIT					= 3,
 	OFFER_TYPE_OUTFIT_ADDON				= 4,
-	OFFER_TYPE_MOUNT						= 5,
+	OFFER_TYPE_MOUNT					= 5,
 	OFFER_TYPE_NAMECHANGE				= 6,
-	OFFER_TYPE_SEXCHANGE					= 7,
-	OFFER_TYPE_PROMOTION					= 8
+	OFFER_TYPE_SEXCHANGE				= 7,
+	OFFER_TYPE_PROMOTION				= 8,
+	OFFER_TYPE_WRAP				= 9
 }
 GameStore.ClientOfferTypes				= {
 	CLIENT_STORE_OFFER_OTHER			= 0,
@@ -186,17 +187,20 @@ function parseBuyStoreOffer(player, msg)
 		local message = "You have purchased " .. offerCountStr .. offer.name .. " for " .. offer.price .. " coins."
 		
 		-- If offer is item.
-		if offer.type == GameStore.OfferTypes.OFFER_TYPE_ITEM then
+		if offer.type == GameStore.OfferTypes.OFFER_TYPE_WRAP then
 			local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
 			if inbox and inbox:getEmptySlots() > offer.count then
 				for t = 1,offer.count do
-					inbox:addItem(offer.thingId, offer.count or 1)
+				local decoKit = inbox:addItem(26054, 1)
+				local decoItemName = ItemType(offer.thingId):getName()
+						decoKit:setAttribute(ITEM_ATTRIBUTE_WRAPID,offer.thingId)
+						decoKit:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "You bought this item in the Store.\nUnwrap it in your own house to create a " .. decoItemName .. ".")
 				end
 			else
 				return addPlayerEvent(sendStoreError, 250, player, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free slots in your store inbox.")
 			end
 		-- If offer is Stackable.
-		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_STACKABLE then
+		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_STACKABLE or offer.type == GameStore.OfferTypes.OFFER_TYPE_ITEM then
 			local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
 			if inbox and inbox:getEmptySlots() > 0 then
 				local parcel = inbox:addItem(2596, 1)
@@ -656,82 +660,4 @@ GameStore.addPromotionToPlayer = function(player, promotion)
 	
 	player:sendTextMessage(MESSAGE_INFO_DESCR, "You have been promoted to " .. newVoc:getName())
 	return true
-end
---==Player==--
---==Coin Balance==--
-function Player.getCoinsBalance(self)
-	resultId = db.storeQuery("SELECT `coins` FROM `accounts` WHERE `id` = " .. self:getAccountId())
-	if not resultId then return 0 end
-	return result.getDataInt(resultId, "coins")
-end
-function Player.setCoinsBalance(self, coins)
-	db.asyncQuery("UPDATE `accounts` SET `coins` = " .. coins .. " WHERE `id` = " .. self:getAccountId())
-	return true
-end
-function Player.canRemoveCoins(self, coins)
-	if self:getCoinsBalance() < coins then
-		return false
-	end
-	return true
-end
-function Player.removeCoinsBalance(self, coins)
-	if self:canRemoveCoins(coins) then
-		return self:setCoinsBalance(self:getCoinsBalance() - coins)
-	end
-	
-	return false
-end
-
-function Player.addCoinsBalance(self, coins, update)
-	self:setCoinsBalance(self:getCoinsBalance() + coins)
-	if update then sendCoinBalanceUpdating(self, true) end
-	return true
-end
-
---==Coin Total Career==--
-function Player.getCoinsCareer(self)
-	resultId = db.storeQuery("SELECT `coins_career` FROM `accounts` WHERE `id` = " .. self:getAccountId())
-	if not resultId then return 0 end
-	return result.getDataInt(resultId, "coins_career")
-end
-function Player.setCoinsCareer(self, coins)
-	db.asyncQuery("UPDATE `accounts` SET `coins_career` = " .. coins .. " WHERE `id` = " .. self:getAccountId())
-	return true
-end
-
-function Player.addCoinsCareer(self, coins, update)
-	self:setCoinsCareer(self:getCoinsCareer() + coins)
-	if update then sendCoinCareerUpdating(self, true) end
-	return true
-end
-
---==Houses Owned==--
-function Player.getHousesOwned(self)
-	resultId = db.storeQuery("SELECT `houses_owned` FROM `accounts` WHERE `id` = " .. self:getAccountId())
-	if not resultId then return 0 end
-	return result.getDataInt(resultId, "houses_owned")
-end
-function Player.setHousesOwned(self, coins)
-	db.asyncQuery("UPDATE `accounts` SET `houses_owned` = " .. coins .. " WHERE `id` = " .. self:getAccountId())
-	return true
-end
-
-function Player.addHousesOwned(self, coins, update)
-	self:setHousesOwned(self:getHousesOwned() + coins)
-	if update then sendHousesOwnedUpdating(self, true) end
-	return true
-end
-
-function Player.toggleSex(self)
-	local currentSex = self:getSex()
-	local playerOutfit = self:getOutfit()
-	
-	if currentSex == PLAYERSEX_FEMALE then
-		self:setSex(PLAYERSEX_MALE)
-		playerOutfit.lookType = 128
-	else
-		self:setSex(PLAYERSEX_FEMALE)
-		playerOutfit.lookType = 136
-	end
-	self:setOutfit(playerOutfit)
 end
