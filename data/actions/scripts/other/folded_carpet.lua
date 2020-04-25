@@ -50,9 +50,13 @@ local foldedCarpet = {
     [28806] = 28807,     --wheat Carpet
     [28807] = 28806,      --wheat Carpet  
     [28809] = 28808,     --crested Carpet
-    [28808] = 28809,      --crested Carpet 
+    [28808] = 28809,	 --crested Carpet
+    [28810] = 28811,     --decorated Carpet       
     [28811] = 28810,     --decorated Carpet
-    [28810] = 28811      --decorated Carpet   
+    [34435] = 34437,      --unknown Carpet 
+    [34437] = 34435,      --unknown Carpet  
+    [34436] = 34438,
+    [34438] = 34436
 }
  
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)

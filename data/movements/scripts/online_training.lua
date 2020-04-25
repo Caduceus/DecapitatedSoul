@@ -26,8 +26,8 @@ function onlineTraining_talkaction(cid, words, param)
      p:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, prefix .. "Training time extended.")
      local ground = Tile(pos):getGround():getActionId()
      if training_exit[ground] then
-       addEvent(skillAntiExit, antiafk_interval, cid, pos, p:getStorageValue(sid))
-       p:addSoul(-1)
+        addEvent(skillAntiExit, antiafk_interval, cid, pos, p:getStorageValue(sid))
+        p:addSoul(-1)
        checkTrainingTile(cid, pos, p:getStorageValue(sid), ground)
      end
      return true
@@ -103,34 +103,31 @@ function showTimeLeft(number, usewords)
      if #text > 1 then
        countdown_text = countdown_text .. " and " .. text[#text]
      end
-   else
+    else
      countdown_text = "expired"
-   end
-return countdown_text
+    end
+    return countdown_text
 end
 
 function checkTrainingTile(cid, pos, nsid, actionid)
-   local p = Player(cid)
-   if not p then return true end
-   local condition = p:getCondition(CONDITION_REGENERATION, CONDITIONID_DEFAULT)
-    if condition and math.floor(condition:getTicks() / 1000 + 30 * 20) < 1200 then
-		p:say('Chomp Chomp Chomp!', TALKTYPE_MONSTER_SAY)
-		p:feed(30 * 20)
-	end
-   if getTopCreature(pos).uid == p:getId() and p:getStorageValue(sid) == nsid then
-     if p:getSoul() < 1 then
-       p:teleportTo(training_exit[actionid], false)
-       Position(pos):sendMagicEffect(CONST_ME_TELEPORT)
-       p:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "You have used all of your available Soul Points.")
-       Position(p:getPosition()):sendMagicEffect(CONST_ME_TELEPORT)
-       p:remove()
-       return true
-     end
-     p:addSoul(-1)
-     addEvent(checkTrainingTile, 60000, cid, pos, nsid, actionid)
-     return true
-   end
-   return true
+    local p = Player(cid)
+		if not p then return true end
+			if getTopCreature(pos).uid == p:getId() and p:getStorageValue(sid) == nsid then
+				if p:getSoul() < 1 then
+				   p:teleportTo(training_exit[actionid], false)
+				   Position(pos):sendMagicEffect(CONST_ME_TELEPORT)
+				   p:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, "You have used all of your available Soul Points.")
+				   Position(p:getPosition()):sendMagicEffect(CONST_ME_TELEPORT)
+				   p:remove()
+				return true
+			end
+				p:addSoul(-1)
+				p:feed(60)
+				p:sendTextMessage(MESSAGE_INFO_DESCR, "You gained 60 nutrition ticks. Save your food.")
+				addEvent(checkTrainingTile, 60000, cid, pos, nsid, actionid)
+			return true
+		end
+    return true
 end
 
 function checkTrainingPlayer(cid, minutes, pos, nsid)

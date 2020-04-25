@@ -14,7 +14,7 @@ local storage = accountStorage.workShop
                 -- remove stairs
                 for _, pos in ipairs(stairPos) do
                    doRemoveItem(getTileThingByPos(pos).uid)
-                   Game.createItem(23259, 1, stairPos[2])
+                   Game.createItem(35786, 1, stairPos[2])
                 end
             end
 
@@ -33,7 +33,7 @@ local storage = accountStorage.workShop
            addEvent(reset, time_ * 1000)
       
            -- create steps, send message and effect
-           Game.createItem(433, 1, stairPos[1])
+           Game.createItem(4835, 1, stairPos[1])
            player:sendTextMessage(MESSAGE_INFO_DESCR, "Access Granted!")
            return true
         end

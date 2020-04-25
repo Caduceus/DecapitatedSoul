@@ -1,14 +1,19 @@
 function onStepIn(creature, item, position, fromPosition)
-if creature:isMonster() then
-	return false
-end
+
+	if creature:isMonster() then
+		return 
+	end
+
+	if Tile(position):hasFlag(TILESTATE_PROTECTIONZONE) then
+		return false
+	end
 
 local min = creature:getMaxHealth() / 20
 local max = creature:getMaxHealth() / 10
 local traps = {
 	[1510] = {transformTo = 1511, damage = {-min, -max}},
 	[1512] = {transformTo = 1513, damage = {-min, -max}},
-	[2579] = {transformTo = 2578, damage = {-min, -max}, ignorePlayer = true},
+	[2579] = {transformTo = 2578, damage = {-min, -max}, ignorePlayer = false},
 	[4208] = {transformTo = 4209, damage = {-min, -max}, type = COMBAT_EARTHDAMAGE}
 }
 	local trap = traps[item.itemid]

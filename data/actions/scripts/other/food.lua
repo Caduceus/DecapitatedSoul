@@ -125,11 +125,11 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		return true
 	end
 	if condition and math.floor(condition:getTicks() / 1000 + food[1]) > 1500 then
-		player:sendTextMessage(MESSAGE_STATUS_SMALL, "You current nutrition is " .. condition:getTicks() / 1000 .. "/1500. You are full.")
+		player:sendTextMessage(MESSAGE_STATUS_SMALL, "Your current nutrition is " .. condition:getTicks() / 1000 .. "/1500. You are full.")
 	else
 		player:feed(food[1] * 2)
 		player:say(food[2], TALKTYPE_MONSTER_SAY)
-		player:sendTextMessage(MESSAGE_STATUS_SMALL, "You current nutrition is " .. condition:getTicks() / 1000 .. "/1500.")
+		player:sendTextMessage(MESSAGE_STATUS_SMALL, "Your current nutrition is " .. condition:getTicks() / 1000 .. "/1500.")
 		item:remove(1)
 	end
 	return true

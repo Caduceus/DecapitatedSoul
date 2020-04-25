@@ -52,7 +52,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 		end
 		return true
 	end
-
+	
 	if doors[itemId] then
 		if item.actionid == 0 then
 			item:transform(doors[itemId])

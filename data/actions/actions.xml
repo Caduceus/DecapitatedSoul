@@ -25,7 +25,8 @@
 	<action fromaid="5000" toaid="5003" script="custom/wagon.lua" />
 	<action itemid="5468" script="other/firebug.lua" />
 	<action itemid="5908" script="tools/skinning.lua"/>
-	<action itemid="5957" script="other/lottery_ticket.lua"/>
+	<action itemid="5957" script="other/wrap.lua"/>
+	<!--action itemid="5957" script="other/lottery_ticket.lua"/-->
 	<action itemid="5958" script="custom/minor_expboost.lua"/>
 	<action uniqueid="6040" script="custom/arenapvp.lua"/>	
 	<action fromuid="6297" touid="6303" script="custom/Slot_Machine.lua"/>
@@ -92,11 +93,20 @@
 	<action fromid="28770" toid="28779" script="other/folded_carpet.lua"/>
 	<action fromid="28768" toid="28769" script="other/watch.lua"/>
 	<action fromid="28806" toid="28811" script="other/folded_carpet.lua"/>
+	<action fromid="33928" toid="33930" script="other/festiveTable.lua"/>
 	<action fromid="34435" toid="34438" script="other/folded_carpet.lua"/>
 	
 		<!-- transformTo-->
 	<action itemid="18551" script="other/transformTo.lua"/>
 	<action fromid="27866" toid="27868" script="other/transformTo.lua"/>
+	<action fromid="28829" toid="28832" script="other/transformTo.lua"/>
+	<action fromid="30329" toid="30332" script="other/transformTo.lua"/>
+	<action fromid="34719" toid="34722" script="other/transformTo.lua"/>
+	<action fromid="34723" toid="34726" script="other/transformTo.lua"/>
+	<action fromid="34913" toid="34924" script="other/transformTo.lua"/>
+	<action fromid="35593" toid="35596" script="other/transformTo.lua"/>
+	<action fromid="35364" toid="35369" script="other/transformTo.lua"/>
+	<action fromid="35890" toid="35892" script="other/transformTo.lua"/>
 
 		<!--Elemental Wand-->
 	<action itemid="2188" script="wand_rod/weapon_damage.lua"/>	
@@ -303,6 +313,8 @@
 	<action itemid="21731" function="increaseItemId"/>
 	<action itemid="21382" function="increaseItemId"/>
 	<action itemid="21383" function="decreaseItemId"/>
+	<action itemid="22614" function="increaseItemId"/>
+	<action itemid="22615" function="decreaseItemId"/>
 	<action itemid="22645" function="increaseItemId"/>
 	<action itemid="22647" function="increaseItemId"/>
 	<action itemid="22868" function="increaseItemId"/>
@@ -324,10 +336,38 @@
 	<action itemid="26108" function="decreaseItemId"/>
 	<action itemid="26192" function="increaseItemId"/>
 	<action itemid="26193" function="decreaseItemId"/>
-	<action itemid="30329" function="increaseItemId"/>
-	<action itemid="30330" function="decreaseItemId"/>
-	<action itemid="30331" function="increaseItemId"/>
-	<action itemid="29332" function="decreaseItemId"/>
+	<action itemid="27090" function="increaseItemId"/>
+	<action itemid="27091" function="decreaseItemId"/>
+	<action itemid="29643" function="increaseItemId"/>
+	<action itemid="29644" function="decreaseItemId"/>
+	<action itemid="30730" function="increaseItemId"/>
+	<action itemid="30731" function="decreaseItemId"/>
+	<action itemid="31521" function="increaseItemId"/>
+	<action itemid="31522" function="decreaseItemId"/>
+	<action itemid="33932" function="increaseItemId"/>
+	<action itemid="33933" function="decreaseItemId"/>
+	<action itemid="33934" function="increaseItemId"/>
+	<action itemid="33935" function="decreaseItemId"/>
+	<action itemid="33936" function="increaseItemId"/>
+	<action itemid="33937" function="decreaseItemId"/>
+	<action itemid="33947" function="increaseItemId"/>
+	<action itemid="33948" function="decreaseItemId"/>
+	<action itemid="30960" function="increaseItemId"/>
+	<action itemid="30961" function="decreaseItemId"/>
+	<action itemid="30962" function="increaseItemId"/>
+	<action itemid="30963" function="decreaseItemId"/>
+	<action itemid="30964" function="increaseItemId"/>
+	<action itemid="30965" function="decreaseItemId"/>
+	<action itemid="30966" function="increaseItemId"/>
+	<action itemid="30967" function="decreaseItemId"/>
+	<action itemid="34369" function="increaseItemId"/>
+	<action itemid="34370" function="decreaseItemId"/>
+	<action itemid="34639" function="increaseItemId"/>
+	<action itemid="34640" function="decreaseItemId"/>
+	<action itemid="34651" function="increaseItemId"/>
+	<action itemid="34652" function="decreaseItemId"/>
+	<action itemid="34653" function="increaseItemId"/>
+	<action itemid="34654" function="decreaseItemId"/>
 	<action itemid="34673" function="increaseItemId"/>
 	<action itemid="34674" function="decreaseItemId"/>
 	<action itemid="35335" function="increaseItemId"/>
@@ -340,12 +380,6 @@
 	<action itemid="35361" function="decreaseItemId"/>
 	<action itemid="35362" function="increaseItemId"/>
 	<action itemid="35363" function="decreaseItemId"/>
-	<action itemid="35364" function="increaseItemId"/>
-	<action itemid="35365" function="decreaseItemId"/>
-	<action itemid="35366" function="increaseItemId"/>
-	<action itemid="35367" function="decreaseItemId"/>
-	<action itemid="35368" function="increaseItemId"/>
-	<action itemid="35369" function="decreaseItemId"/>
 
 	<!-- Food -->
 	<action itemid="2362" script="other/food.lua"/>
@@ -557,9 +591,18 @@
 	<action fromid="22815" toid="22822" script="other/doors.lua" />
 	<action fromid="22824" toid="22831" script="other/doors.lua" />
 	<action fromid="25283" toid="25296" script="other/doors.lua" />
+	<action fromid="26529" toid="26534" script="other/doors.lua" />
+	<action fromid="30425" toid="30430" script="other/doors.lua" />
 	<action fromid="31423" toid="31428" script="other/doors.lua" />
 	<action fromid="31437" toid="31442" script="other/doors.lua" />
 	<action fromid="31451" toid="31486" script="other/doors.lua" />
 	<action fromid="31641" toid="31844" script="other/doors.lua" />
+	<action fromid="33753" toid="33768" script="other/doors.lua" />
+	<action fromid="34127" toid="34132" script="other/doors.lua" />
+	<action fromid="34188" toid="34193" script="other/doors.lua" />
+	<action fromid="34204" toid="34211" script="other/doors.lua" />
+	<action fromid="34463" toid="34466" script="other/doors.lua" />
+	<action itemid="34871" script="other/fluids.lua"/>
+	<action fromid="35766" toid="35771" script="other/doors.lua" />
 	
 </actions>
