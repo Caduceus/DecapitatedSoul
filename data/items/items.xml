@@ -29232,7 +29232,12 @@
 	<item fromid="20771" toid="20775" name="branches" />
 	<item fromid="20776" toid="20781" name="forest floor" />
 	<item fromid="20787" toid="20797" name="branches" />
-	<item fromid="20799" toid="20802" name="bookcase">
+	<item id="20799" article="a" name="bookcase" />
+	<item id="20800" article="a" name="bookcase">
+		<attribute key="containerSize" value="40" />
+	</item>
+	<item id="20801" article="a" name="bookcase" />
+	<item id="20802" article="a" name="bookcase">
 		<attribute key="containerSize" value="40" />
 	</item>
 	<item fromid="20803" toid="20827" article="a" name="tree branch" />
@@ -32484,9 +32489,9 @@
 		<attribute key="weight" value="4000" />
 		<attribute key="description" value="Use it in your house to construct a predator lamp." />
 	</item>
-	<item id="24345" article="a" name="ferocious cabinet kit">
+	<item id="24345" article="a" name="Empty kit">
 		<attribute key="weight" value="4000" />
-		<attribute key="description" value="Use it in your house to construct a ferocious cabinet." />
+		<attribute key="description" value="Empty." />
 	</item>
 	<item id="24346" article="a" name="magnificent cabinet kit">
 		<attribute key="weight" value="4000" />
@@ -32850,7 +32855,7 @@
 		<attribute key="description" value="This little fellow has faced many dangers. He will follow you anywhere. Awarded by TibiaGuias." />
 	</item>
 	<item id="24774" article="a" name="Tibia Coin" plural="Tibia Coins">
-		<attribute key="description" value="Tibia Coins are needed to shop exclusive products in the Store, including fabulous mounts, classy outfits, a Name Change or even VIP Time." />
+		<attribute key="description" value="Tibia Coins are needed to purchase products in the Shop, including fabulous mounts, classy outfits, a Name Change or even VIP Time." />
 	</item>
 	<item id="24777" name="little adventurer doll">
 		<attribute key="description" value="This little fellow has faced many dangers. He will follow you anywhere." />
@@ -35329,16 +35334,16 @@
 		<attribute key="description" value="Use it in your house to construct a sleeping cat." />
 		<attribute key="weight" value="2500" />
 	</item>
-	<item id="26113" article="a" name="ferocious chair kit">
-		<attribute key="description" value="Use it in your house to construct a ferocious chair." />
+	<item id="26113" article="a" name="Empty kit">
+		<attribute key="description" value="Empty." />
 		<attribute key="weight" value="2500" />
 	</item>
 	<item id="26114" article="a" name="magnificent chair kit">
 		<attribute key="description" value="Use it in your house to construct a magnificent chair." />
 		<attribute key="weight" value="2500" />
 	</item>
-	<item id="26115" article="a" name="ferocious table kit">
-		<attribute key="description" value="Use it in your house to construct a ferocious table." />
+	<item id="26115" article="a" name="Skeletal Bed Kit">
+		<attribute key="description" value="Use it on your bed to transform it into a Skeletal Bed." />
 		<attribute key="weight" value="2500" />
 	</item>
 	<item id="26116" article="a" name="protectress lamp kit">
@@ -35348,8 +35353,8 @@
 	<item id="26125" name="vortex" />
 	<item id="26126" name="vortex" />
 	<item id="26127" name="vortex" />
-	<item id="26129" article="a" name="ferocious trunk kit">
-		<attribute key="description" value="Use it in your house to construct a ferocious trunk." />
+	<item id="26129" article="a" name="Festive Bed Kit">
+		<attribute key="description" value="Use it on your bed to transform it into a Festive Bed." />
 		<attribute key="weight" value="2500" />
 	</item>
 	<item id="26130" article="a" name="Tiara of Power">
@@ -36533,7 +36538,70 @@
 	<item id="28741" article="a" name="Goromaphone">
 		<attribute key="weight" value="1000" />
 	</item>
-	
+	<item id="28744" article="a" name="bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+		<attribute key="maleSleeper" value="28752" />
+	</item>
+	<item id="28745" article="a" name="bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+		<attribute key="maleSleeper" value="28753" />
+	</item>
+	<item id="28746" article="a" name="bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+		<attribute key="maleSleeper" value="28754" />
+	</item>
+	<item id="28747" article="a" name="bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+		<attribute key="maleSleeper" value="28755" />
+	</item>
+	<item id="28748" article="a" name="bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+		<attribute key="femaleSleeper" value="28752" />
+	</item>
+	<item id="28749" article="a" name="bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+		<attribute key="femaleSleeper" value="28753" />
+	</item>
+	<item id="28750" article="a" name="bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+		<attribute key="femaleSleeper" value="28754" />
+	</item>
+	<item id="28751" article="a" name="bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+		<attribute key="femaleSleeper" value="28755" />
+	</item>
+	<item id="28752" article="a" name="bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="south" />
+		<attribute key="maleSleeper" value="28744" />
+		<attribute key="femaleSleeper" value="28748" />
+	</item>
+	<item id="28753" article="a" name="bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="north" />
+		<attribute key="maleSleeper" value="28745" />
+		<attribute key="femaleSleeper" value="28749" />
+	</item>
+	<item id="28754" article="a" name="bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="east" />
+		<attribute key="maleSleeper" value="28746" />
+		<attribute key="femaleSleeper" value="28750" />
+	</item>
+	<item id="28755" article="a" name="bed">
+		<attribute key="type" value="bed" />
+		<attribute key="partnerDirection" value="west" />
+		<attribute key="maleSleeper" value="28747" />
+		<attribute key="femaleSleeper" value="28751" />
+	</item>
 	<item id="28757" article="a" name="Verdant Chair">
 		<attribute key="rotateTo" value="28758" />
 	</item>		
@@ -36626,42 +36694,45 @@
 		<attribute key="forceSerialize" value="1" />
 		<attribute key="weight" value="1000" />
 	</item>	
-	<item id="28812" article="a" name="Ornate Chair">
+	<item id="28812" article="an" name="Ornate Chair">
 		<attribute key="rotateTo" value="28813" />
 	</item>
-	<item id="28813" article="a" name="Ornate Chair">
+	<item id="28813" article="an" name="Ornate Chair">
 		<attribute key="rotateTo" value="28814" />
 	</item>
-	<item id="28814" article="a" name="Ornate Chair">
+	<item id="28814" article="an" name="Ornate Chair">
+		<attribute key="rotateTo" value="28815" />
+	</item>
+	<item id="28815" article="an" name="Ornate Chair">
 		<attribute key="rotateTo" value="28812" />
 	</item>
-	<item id="28816" article="a" name="Ornate Table">
+	<item id="28816" article="an" name="Ornate Table">
 	    <attribute key="rotateto" value="28817" />	
 	</item>
-	<item id="28817" article="a" name="Ornate Table">
+	<item id="28817" article="an" name="Ornate Table">
 	    <attribute key="rotateto" value="28816" /> 
 	</item>
-	<item id="28818" article="a" name="Ornate Cabinet">
+	<item id="28818" article="an" name="Ornate Cabinet">
 		<attribute key="containerSize" value="30" />
 		<attribute key="rotateTo" value="28819" />   
 	</item>
-	<item id="28819" article="a" name="Ornate Cabinet">
+	<item id="28819" article="an" name="Ornate Cabinet">
 		<attribute key="containerSize" value="30" />
 		<attribute key="rotateTo" value="28818" />	
 	</item>
-	<item id="28820" article="a" name="Ornate Chest">
+	<item id="28820" article="an" name="Ornate Chest">
 		<attribute key="containerSize" value="20" />
 		<attribute key="rotateTo" value="28821" />
 	</item>
-	<item id="28821" article="a" name="Ornate Chest">
+	<item id="28821" article="an" name="Ornate Chest">
 		<attribute key="containerSize" value="20" />
 		<attribute key="rotateTo" value="28822" />	
 	</item>
-	<item id="28822" article="a" name="Ornate Chest">
+	<item id="28822" article="an" name="Ornate Chest">
 		<attribute key="containerSize" value="20" />
 		<attribute key="rotateTo" value="28823" />	
 	</item>
-	<item id="28823" article="a" name="Ornate Chest">
+	<item id="28823" article="an" name="Ornate Chest">
 		<attribute key="containerSize" value="20" />
 		<attribute key="rotateTo" value="28820" />	
 	</item>
@@ -36790,7 +36861,9 @@
 	    <attribute key="rotateto" value="29621" />	
 	</item> 
 	<item fromid="30207" toid="30226" article="a" name="sectional couch" />
-	<item fromid="30231" toid="30237" article="a" name="banner" />
+	<item fromid="30227" toid="30228" name="Cozy Fireplace" />
+	<item fromid="30230" toid="30237" article="a" name="banner" />
+	<item fromid="30239" toid="30242" name="Ghastly Bookshelf" />
 	<item id="30246" article="a" name="Book Cart">
 		<attribute key="rotateto" value="30247" />
 	</item>
@@ -36991,11 +37064,11 @@
 		<attribute key="rotateto" value="30979" />
 	</item>
 	<item id="30982" article="a" name="Comfy Cabinet">
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="30" />
 		<attribute key="rotateto" value="30983" />
 	</item>
 	<item id="30983" article="a" name="Comfy Cabinet">
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="30" />
 		<attribute key="rotateto" value="30982" />
 	</item>
 	<item id="30984" article="a" name="Unimaginable Riches" />
@@ -38512,11 +38585,11 @@
 		<attribute key="weight" value="3400" />
 	</item>
 	<item id="34365" article="a" name="Dwarven Stone Cabinet">
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="30" />
 		<attribute key="rotateto" value="34366" />
 	</item>
 	<item id="34366" article="a" name="Dwarven Stone Cabinet">
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="30" />
 		<attribute key="rotateto" value="34365" />		
 	</item>
 	<item id="34367" article="a" name="Wooden Bookcase">
@@ -38656,11 +38729,11 @@
 		<attribute key="duration" value="10" />
 	</item>
 	<item id="34657" article="a" name="Hrodmir Cabinet">
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="30" />
 		<attribute key="rotateto" value="34658" />
 	</item>
 	<item id="34658" article="a" name="Hrodmir Cabinet">
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="30" />
 		<attribute key="rotateto" valuve="34657"/>
 	</item>
 	<item id="34673" article="a" name="Wall Lamp" />
@@ -39090,39 +39163,39 @@
 	<item id="35282" article="a" name="Spectral Silver Nugget" /> <!--left off-->
 	<item id="35312" article="a" name="Mini Nanbot" />
 	<item id="35313" article="a" name="Mini Nanbot" />
-	<item id="35326" article="a" name="Ice Cabinet">
-		<attribute key="containerSize" value="20" />
+	<item id="35326" article="an" name="Ice Cabinet">
+		<attribute key="containerSize" value="30" />
 		<attribute key="rotateto" value="35327" />
 	</item>
-	<item id="35327" article="a" name="Ice Cabinet">
-		<attribute key="containerSize" value="20" />
+	<item id="35327" article="an" name="Ice Cabinet">
+		<attribute key="containerSize" value="30" />
 		<attribute key="rotateto" value="35326" />
 	</item>
-	<item id="35328" article="a" name="Ice Table" />
-	<item id="35329" article="a" name="Ice Stool">
+	<item id="35328" article="an" name="Ice Table" />
+	<item id="35329" article="an" name="Ice Stool">
 		<attribute key="rotateto" value="35330" />
 	</item>
-	<item id="35330" article="a" name="Ice Stool">
+	<item id="35330" article="an" name="Ice Stool">
 		<attribute key="rotateto" value="35329" />
 	</item>
-	<item id="35331" article="a" name="Ice Chest">
+	<item id="35331" article="an" name="Ice Chest">
 		<attribute key="containerSize" value="20" />
 		<attribute key="rotateto" value="35332" />
 	</item>
-	<item id="35332" article="a" name="Ice Chest">
+	<item id="35332" article="an" name="Ice Chest">
 		<attribute key="containerSize" value="20" />
 		<attribute key="rotateto" value="35333" />
 	</item>
-	<item id="35333" article="a" name="Ice Chest">
+	<item id="35333" article="an" name="Ice Chest">
 		<attribute key="containerSize" value="20" />
 		<attribute key="rotateto" value="35334" />
 	</item>
-	<item id="35334" article="a" name="Ice Chest">
+	<item id="35334" article="an" name="Ice Chest">
 		<attribute key="containerSize" value="20" />
 		<attribute key="rotateto" value="35331" />
 	</item>
-	<item id="35335" article="a" name="Unlit Ice Chandelier" />
-	<item id="35336" article="a" name="Ice Chandelier" />
+	<item id="35335" article="an" name="Unlit Ice Chandelier" />
+	<item id="35336" article="an" name="Ice Chandelier" />
 	<item id="35337" article="a" name="Ferumbras Snowman">
 		<attribute key="rotateto" value="35338" />
 	</item>
@@ -39212,11 +39285,11 @@
 	<item id="35368" article="a" name="Small Sweetheart Lamp" />
 	<item id="35369" article="a" name="Lit Small Sweetheart Lamp" />
 	<item id="35370" article="a" name="Sweetheart Cabinet">
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="30" />
 		<attribute key="rotateto" value="35371" />
 	</item>
 	<item id="35371" article="a" name="Sweetheart Cabinet">
-		<attribute key="containerSize" value="20" />
+		<attribute key="containerSize" value="30" />
 		<attribute key="rotateto" value="35370" />
 	</item>
 	<item id="35372" article="a" name="Sweetheart Table">
@@ -39300,6 +39373,7 @@
 	<item id="35718" article="a" name="Black Raven" />
 	<item id="35719" article="a" name="Grey Raven" />
 	<item id="35720" article="a" name="White Raven" />
+	<item fromid="35852" toid="35871" name="Cozy Couch" />
 	<item id="35890" article="a" name="Sweetheart Table Lamp" >
 		<attribute key="decayTo" value="35365" />
 		<attribute key="duration" value="3" />

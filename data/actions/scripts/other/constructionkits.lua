@@ -11,10 +11,9 @@ local constructionKits = {
 	[7498] = 26074, [7503] = 26100, [8692] = 8688, [9974] = 9975, [11126] = 11127, 
 	[11133] = 11129, [11124] = 11125, [11205] = 11203, [14328] = 1616, [14329] = 1615, 
 	[16075] = 16020, [16099] = 16098, [20254] = 20295, [20255] = 20297, [20256] = 12800, 
-	[20257] = 20299,[24344] = 26092, [24345] = 26077, [24346] = 26075, [24347] = 19641, 
+	[20257] = 20299,[24344] = 26092, [24346] = 26075, [24347] = 19641, 
 	[24348] = 19647, [24349] = 19645, [24350] = 12787, [24351] = 12792, [24352] = 12795, 
-	[24353] = 26083, [24354] = 9973, [26112] = 26108, [26113] = 26065, [26114] = 26061, 
-	[26115] = 26070, [26116] = 26096, [26129] = 26079
+	[24353] = 26083, [24354] = 9973, [26112] = 26108, [26114] = 26061, [26116] = 26096
 }
 
 function onUse(player, item, fromPosition, target, toPosition, isHotkey)
@@ -28,7 +27,9 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	elseif not Tile(fromPosition):getHouse() then
 		player:sendTextMessage(MESSAGE_STATUS_SMALL, "You may construct this only inside a house.")
 	else
+		local oldId = item:getId()
 		item:transform(kit)
+		item:setAttribute(ITEM_ATTRIBUTE_WRAPID, oldId)
 		fromPosition:sendMagicEffect(CONST_ME_POFF)
 	end
 	return true
