@@ -99,6 +99,7 @@
 	<action itemid="18551" script="other/transformTo.lua"/>
 	<action fromid="27866" toid="27868" script="other/transformTo.lua"/>
 	<action fromid="28829" toid="28832" script="other/transformTo.lua"/>
+	<action fromid="29629" toid="29631" script="other/transformTo.lua"/>
 	<action fromid="30329" toid="30332" script="other/transformTo.lua"/>
 	<action fromid="34719" toid="34722" script="other/transformTo.lua"/>
 	<action fromid="34723" toid="34726" script="other/transformTo.lua"/>
@@ -369,6 +370,8 @@
 	<action itemid="34654" function="decreaseItemId"/>
 	<action itemid="34673" function="increaseItemId"/>
 	<action itemid="34674" function="decreaseItemId"/>
+	<action itemid="35312" function="increaseItemId"/>
+	<action itemid="35313" function="decreaseItemId"/>
 	<action itemid="35335" function="increaseItemId"/>
 	<action itemid="35336" function="decreaseItemId"/>
 	<action itemid="35356" function="increaseItemId"/>
@@ -595,6 +598,7 @@
 	<action fromid="22824" toid="22831" script="other/doors.lua" />
 	<action fromid="25283" toid="25296" script="other/doors.lua" />
 	<action fromid="26529" toid="26534" script="other/doors.lua" />
+	<action fromid="29623" toid="29626" script="other/light_of_change.lua" />
 	<action fromid="30425" toid="30430" script="other/doors.lua" />
 	<action fromid="31423" toid="31428" script="other/doors.lua" />
 	<action fromid="31437" toid="31442" script="other/doors.lua" />
