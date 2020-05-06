@@ -56,7 +56,7 @@
         <vocation name="Noble Templar"/>
         <vocation name="Warlord Templar"/>
 	</instant>
-	
+		
 	<!--Custom Sorcerer Spells-->
 	<instant group="attack" spellid="177" name="Static wave" words="exori mas vis" lvl="250" mana="1000" prem="1" cooldown="6000" groupcooldown="4000" selftarget="1" needlearn="1" script="custom/static_wave.lua">
 		<vocation name="Sorcerer"/>
@@ -65,12 +65,18 @@
 	</instant>
 	<!--EDIT need learn 1>
 	</-->
-	<instant group="attack" spellid="177" name="magic missile" words="magic missile" lvl="250" mana="1000" prem="1" cooldown="3000" groupcooldown="4000" range="5" aggressive="1" blockwalls="1" needtarget="1" needlearn="0" script="custom/magic_missile.lua"> 
+	<instant group="attack" spellid="177" name="magic missile" words="magic missile" lvl="250" mana="1000" prem="1" cooldown="4000" groupcooldown="4000" range="5" aggressive="1" blockwalls="1" needtarget="1" needlearn="0" script="custom/magic_missile.lua"> 
         <vocation name="Master Sorcerer"/>
         <vocation name="Warlord Sorcerer"/>
 	</instant>
 	
 	<instant group="support" name="Thunder Storm" words="thunder storm" lvl="30" mana="250" cooldown="120000" prem="1" aggressive="1" needlearn="0" script="custom/thunderstorm.lua">
+		<vocation name="Sorcerer"/>
+        <vocation name="Master Sorcerer"/>
+        <vocation name="Warlord Sorcerer"/>
+	</instant>
+	
+	<instant group="support" name="Blink" words="blink" lvl="30" mana="250" cooldown="30000" aggressive="0" needlearn="0" script="custom/blink.lua">
 		<vocation name="Sorcerer"/>
         <vocation name="Master Sorcerer"/>
         <vocation name="Warlord Sorcerer"/>
