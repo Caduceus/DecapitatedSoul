@@ -4,7 +4,7 @@ function onDeath(monster, corpse, killer, mostDamage, unjustified, mostDamage_un
     monster:getPosition():sendMagicEffect(CONST_ME_MORTAREA)
 
     -- Remove zombie count, when it dies
-    Game.setStorageValue(ze_zombieCountGlobalStorage, getZombieEventZombieCount() - 1)
+    Game.setStorageValue(GlobalStorage.ze_zombieCountGlobalStorage, getZombieEventZombieCount() - 1)
 
     -- Store player kills
     local killerId = killer:getId()
@@ -20,7 +20,7 @@ end
 function onPrepareDeath(player, killer)
     -- Remove player from count
     local count = getZombieEventJoinedCount()
-    Game.setStorageValue(ze_joinCountGlobalStorage, count - 1)
+    Game.setStorageValue(GlobalStorage.ze_joinCountGlobalStorage, count - 1)
 
     -- Reset player after death
     player:teleportTo(player:getTown():getTemplePosition())

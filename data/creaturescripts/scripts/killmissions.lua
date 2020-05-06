@@ -31,7 +31,10 @@ local config = {
 	['captain hook'] = {amount = 1, storage = 21923, startstorage = 2239, startvalue = 4},
 	--Keaton
 	['black knight'] = {amount = 20, storage = 21927, startstorage = 45559, startvalue = 1},
-							
+	--plushie	
+	['hydra'] = {amount = 200, storage = 19025, startstorage = 45561, startvalue = 1},
+	['demon'] = {amount = 200, storage = 19026, startstorage = 45561, startvalue = 2}		 			
+						
 
 }
 function onKill(player, target)
