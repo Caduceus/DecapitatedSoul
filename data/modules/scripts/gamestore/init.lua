@@ -16,7 +16,9 @@ GameStore.OfferTypes					= {
 	OFFER_TYPE_NAMECHANGE				= 6,
 	OFFER_TYPE_SEXCHANGE				= 7,
 	OFFER_TYPE_PROMOTION				= 8,
-	OFFER_TYPE_WRAP				= 9
+	OFFER_TYPE_WRAP						= 9,
+	OFFER_TYPE_MULTI_ITEM				=10,
+	OFFER_TYPE_MULTI_ITEM_WRAP			=11
 }
 GameStore.ClientOfferTypes				= {
 	CLIENT_STORE_OFFER_OTHER			= 0,
@@ -209,6 +211,41 @@ function parseBuyStoreOffer(player, msg)
 						parcel:setAttribute(ITEM_ATTRIBUTE_NAME, packagename)
 						for e = 1,offer.count do
 							parcel:addItem(offer.thingId, 1)
+					end
+				end
+			else
+				return addPlayerEvent(sendStoreError, 250, player, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free slots in your store inbox.")
+		end
+		-- If offer is Multiple Items. does not do furniture at this time	
+		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_MULTI_ITEM then
+            local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
+            if inbox and inbox:getEmptySlots() > 0 then
+                local parcel = inbox:addItem(2596, 1)
+                local packagename = ''.. offer.name ..' package.'
+                    if parcel then
+                        parcel:setAttribute(ITEM_ATTRIBUTE_NAME, packagename)
+                        for i = 1, #offer.thingId do
+                            parcel:addItem(offer.thingId[i], 1)
+                    end
+                end
+            else
+                return addPlayerEvent(sendStoreError, 250, player, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free slots in your store inbox.")
+        end
+		-- If offer is furniture package.
+		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_MULTI_ITEM_WRAP then
+			local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
+			if inbox and inbox:getEmptySlots() > 0 then
+				local parcel = inbox:addItem(2596, 1)
+				local packagename = ''.. offer.name ..' package.'
+					if parcel then
+						parcel:setAttribute(ITEM_ATTRIBUTE_NAME, packagename)
+						for i = 1, #offer.thingId do
+						local decoKit = parcel:addItem(26054, 1)
+						local decoItemName = ItemType(offer.thingId[i]):getName()
+							decoKit:setAttribute(ITEM_ATTRIBUTE_WRAPID,offer.thingId[i])
+							decoKit:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "You bought this item in the Store.\nUnwrap it in your own house to create a " .. decoItemName .. ".")
+							 --print(offer.thingId[i])
+							parcel:addItem(decokit, 1)
 					end
 				end
 			else
