@@ -45,18 +45,18 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	end
 end
 
-	if player:getStorageValue(Storage.TheirMastersVoice.SlimeGobblerTimeout) < os.time() then
+	if player:getStorageValue(Storage.riseOfDeath.lightTorch) < os.time() then
 		item:transform(3698)
 		addEvent(reset, time_ * 1000)
-		player:setStorageValue(Storage.TheirMastersVoice.SlimeGobblerTimeout, os.time() + 15)
+		player:setStorageValue(Storage.riseOfDeath.lightTorch, os.time() + 15)
 		toPosition:sendMagicEffect(CONST_ME_POFF)
 			for i = 1, #position do
 				addEvent(summonMonster, 5 * 1000, creatureNames[math.random(#creatureNames)], position[i])
 			end
 			player:getPosition():sendMagicEffect(CONST_ME_FIREWORK_RED)
 			player:say('COME! My servants! RISE!', TALKTYPE_MONSTER_SAY)
-			Game.setStorageValue(GlobalStorage.TheirMastersVoice.ServantsKilled, 0)
-			Game.setStorageValue(GlobalStorage.TheirMastersVoice.CurrentServantWave, 0)
+			Game.setStorageValue(GlobalStorage.riseOfDeath.ServantsKilled, 0)
+			Game.setStorageValue(GlobalStorage.riseOfDeath.CurrentServantWave, 0)
 	end
 	return true
 end

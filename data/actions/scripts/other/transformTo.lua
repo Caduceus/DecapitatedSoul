@@ -1,6 +1,6 @@
 local transformTo = {
     [18551] = 18550,    				 -- Noble Sword
-    [27867] = 27868,[27868] = 27866,     -- Vengothic Lamp
+    [27867] = 27889,[27868] = 27866,     -- Vengothic Lamp
     [28829] = 28831,[28830] = 28832,     -- Demon Pet
     [29629] = 29630,[29630] = 29631,	 -- torch of change
     [29631] = 29629,	 				 -- torch of change
