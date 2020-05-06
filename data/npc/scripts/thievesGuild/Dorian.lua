@@ -5,7 +5,12 @@ NpcSystem.parseParameters(npcHandler)
 function onCreatureAppear(cid)			npcHandler:onCreatureAppear(cid)			end
 function onCreatureDisappear(cid)		npcHandler:onCreatureDisappear(cid)			end
 function onCreatureSay(cid, type, msg)		npcHandler:onCreatureSay(cid, type, msg)		end
-function onThink()				npcHandler:onThink()					end
+function onThink()
+    if not npcHandler:isFocused(cid) then
+            Npc():setDirection(DIRECTION_SOUTH)
+        end
+    npcHandler:onThink()
+end
 
 local function creatureSayCallback(cid, type, msg)
 	if not npcHandler:isFocused(cid) then
@@ -13,12 +18,28 @@ local function creatureSayCallback(cid, type, msg)
 	end
 
 	local player = Player(cid)
-
-	if msgcontains(msg, "mission") then
-		if player:getStorageValue(Storage.thievesGuild.Quest) == 1 and player:getStorageValue(Storage.thievesGuild.Mission01) < 1 then
+	
+	if msgcontains(msg, "mission") and player:getStorageValue(Storage.thievesGuild.Quest) == -1 then
+		npcHandler:say({
+				'I think you have me confused with someone else.',
+				'Please, leave me alone.'
+			}, cid)
+	elseif msgcontains(msg, "mission") and player:getStorageValue(Storage.thievesGuild.Quest) == 1 and player:getItemCount(1968) ~= 1 then
+		npcHandler:say({
+				'mission?',
+				'What type of mission?',
+				'Is this some kind of joke?'
+			}, cid)
+	elseif msgcontains(msg, "mission") then
+		if player:getItemCount(1968) == 1 and player:getStorageValue(Storage.thievesGuild.Quest) == 1 and player:getStorageValue(Storage.thievesGuild.Mission01) < 1 then
 			player:setStorageValue(Storage.thievesGuild.Mission01, 1)
+			player:removeItem(1968, 1)
 			npcHandler:say({
-				'Your first job is quite easy. The Thaian officials are unwilling to share the wealth they\'ve accumulated in their new town Port Hope. ...',
+				'Oh my sweet Amica, I begged you not to go out alone.',
+				'Thank you for delivering this note to me.. I am positive that Amica would never stear me wrong.',
+				'So, I suppose you want to join our guild, young adventurer.',
+				'Alright then, but you must first prove yourself!',
+				'Your first job is quite easy. The Drogheda officials are unwilling to share the wealth they\'ve accumulated in their new town Port Lonrich. ...',
 				'They insist that most resources belong to the crown. This is quite sad, especially ivory is in high demand. Collect 10 elephant tusks and bring them to me.'
 			}, cid)
 		elseif player:getStorageValue(Storage.thievesGuild.Mission01) == 1 then
@@ -31,12 +52,13 @@ local function creatureSayCallback(cid, type, msg)
 				'We, on the other hand, would gladly sell him the vase. Therefore, it would come in handy if we get this vase in our hands. ...',
 				'Luckily, the walls of the owner\'s house are covered with vines, that will make a burglary quite easy. ...',
 				'You\'ll still need some lock picks to get the chest open in which the vase is stored. Must be your lucky day, as I\'m selling lock picks for a fair price. ...',
-				'You might need some of them to get that chest open. The soon to be ex-owner of that vase is Sarina, the proprietor of Carlin\'s general store.'
+				'They are a bit flimsy, you may want to buy several just in case.',
+				'The soon to be ex-owner of that vase is Alfreda, the proprietor of Drogheda\'s boot repair shop.'
 			}, cid)
 		elseif player:getStorageValue(Storage.thievesGuild.Mission02) == 2 then
 			npcHandler:say('Have you finished your mission?', cid)
 			npcHandler.topic[cid] = 3
-		elseif player:getStorageValue(Storage.thievesGuild.Quest) == 3 and player:getStorageValue(Storage.thievesGuild.Mission03) < 1 then
+		elseif player:getStorageValue(Storage.thievesGuild.Quest) == 3 and player:getStorageValue(Storage.thievesGuild.Mission03) < 1 then --left off
 			player:setStorageValue(Storage.thievesGuild.Mission03, 1)
 			npcHandler:say({
 				'Our beloved king will hold a great festivity at the end of the month. Unfortunately he forgot to invite one of our guild\'s representatives. ...',
@@ -170,11 +192,6 @@ local function creatureSayCallback(cid, type, msg)
 			}, cid)
 			npcHandler.topic[cid] = 0
 		end
-	elseif msgcontains(msg, 'thieves') then
-		if player:getStorageValue(Storage.thievesGuild.Quest) < 1 then
-			npcHandler:say('Hm. Well, we could use some fresh blood. Ahum. Do you want to join the thieves guild, |PLAYERNAME|?', cid)
-			npcHandler.topic[cid] = 1
-		end
 	elseif msgcontains(msg, 'lock pick') then
 		npcHandler:say('Yes, I sell lock picks. Ask me for a trade.', cid)
 	end
@@ -183,6 +200,6 @@ end
 
 npcHandler:setMessage(MESSAGE_WALKAWAY, 'Good bye, |PLAYERNAME|!')
 npcHandler:setMessage(MESSAGE_FAREWELL, 'Good bye, |PLAYERNAME|!')
-npcHandler:setMessage(MESSAGE_GREET, 'Greetings, |PLAYERNAME|!')
+npcHandler:setMessage(MESSAGE_GREET, "Good day, |PLAYERNAME|, may I help you?")
 npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new())

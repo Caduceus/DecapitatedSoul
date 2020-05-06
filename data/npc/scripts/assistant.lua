@@ -25,7 +25,7 @@ end
 
 --main menus
 keywordHandler:addKeyword({'monsters'}, StdModule.say, {npcHandler = npcHandler, text = "Would you like info on {low}, {mid}, or {upper} level monsters?"})
-keywordHandler:addKeyword({'info'}, StdModule.say, {npcHandler = npcHandler, text = "Info: {autoloot}, {vip}, {portals}, {trainers}, {store}, {quest} or {more}?"})
+keywordHandler:addKeyword({'info'}, StdModule.say, {npcHandler = npcHandler, text = "Info: {autoloot}, {vip}, {portals}, {trainers}, {shop}, {quest} or {more}?"})
 keywordHandler:addKeyword({'quest'}, StdModule.say, {npcHandler = npcHandler, text = "Quest: Looking for {Oldrak} or can't figure out how to do {Demon Oak}?"})
 
 
@@ -66,7 +66,7 @@ keywordHandler:addKeyword({'autoloot'}, StdModule.say, {npcHandler = npcHandler,
 keywordHandler:addKeyword({'vip'}, StdModule.say, {npcHandler = npcHandler, text = "\nVIP: Applied to your whole account! \n• {Double Experience} \n• {Bonus Gold} on loot \n• {VIP Commands} [!aol, !bless, !t, !portal] \n• {Portal System}"}) 
 keywordHandler:addKeyword({'portals'}, StdModule.say, {npcHandler = npcHandler, text = "Portals: Applied on a Player basis, not whole Account. \nOnce you discover, as a {VIP} player, you gain use of that portal. \nPortals {will not} save to that player, if Account is non-VIP. Once Portal is discovered, as a VIP, it will not reset once VIP runs out."}) 
 keywordHandler:addKeyword({'trainers'}, StdModule.say, {npcHandler = npcHandler, text = "Trainers: You have to complete the first quest for {Soraya}, to use trainers. \nIt will cost you {1 Soul} per minute, in order to train."}) 
-keywordHandler:addKeyword({'store'}, StdModule.say, {npcHandler = npcHandler, text = "The Decapitated Soul version of OTClient is Experimental. \nThere is not a functioning ingame store within OTClient at this time. \nYou will have to use the Tibia Client (found on our downloads page), in order to redeem your coins."}) 
+keywordHandler:addKeyword({'shop'}, StdModule.say, {npcHandler = npcHandler, text = "In order to redeem your coins, use the shop icon, on top right of client (default layout)."}) 
 keywordHandler:addKeyword({'more'}, StdModule.say, {npcHandler = npcHandler, text = "If you would like info on a topic and cannot find it here, please ask in {World Chat} or suggest info on our website."}) 
 
 -- Quest info
