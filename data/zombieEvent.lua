@@ -49,25 +49,25 @@ ze_trophiesTable = {
  
 -- Get methods
 function getZombieEventZombieCount()
-    return Game.getStorageValue(ze_zombieCountGlobalStorage)
+    return Game.getStorageValue(GlobalStorage.ze_zombieCountGlobalStorage)
 end
  
 function getZombieEventJoinedCount()
-    return Game.getStorageValue(ze_joinCountGlobalStorage)
+    return Game.getStorageValue(GlobalStorage.ze_joinCountGlobalStorage)
 end
  
 function setZombieEventState(value)
-    Game.setStorageValue(ze_stateGlobalStorage, value)
+    Game.setStorageValue(GlobalStorage.ze_stateGlobalStorage, value)
 end
  
 function getZombieEventState()
-    return Game.getStorageValue(ze_stateGlobalStorage) or ze_EVENT_CLOSED
+    return Game.getStorageValue(GlobalStorage.ze_stateGlobalStorage) or ze_EVENT_CLOSED
 end
  
 function resetZombieEvent()
     -- Reset variables
-    Game.setStorageValue(ze_zombieCountGlobalStorage, 0)
-    Game.setStorageValue(ze_joinCountGlobalStorage, 0)
+    Game.setStorageValue(GlobalStorage.ze_zombieCountGlobalStorage, 0)
+    Game.setStorageValue(GlobalStorage.ze_joinCountGlobalStorage, 0)
     setZombieEventState(ze_EVENT_CLOSED)
  
     -- Clear the arena from zombies
@@ -112,7 +112,7 @@ function startZombieInvasion()
         local random = math.random
         local zombie = Game.createMonster(ze_zombieName, Position(random(ze_arenaFromPosition.x, ze_arenaToPosition.x), random(ze_arenaFromPosition.y, ze_arenaToPosition.y), random(ze_arenaFromPosition.z, ze_arenaToPosition.z)))
         if zombie then
-            Game.setStorageValue(ze_zombieCountGlobalStorage, getZombieEventZombieCount() + 1)
+            Game.setStorageValue(GlobalStorage.ze_zombieCountGlobalStorage, getZombieEventZombieCount() + 1)
         end
  
         addEvent(startZombieInvasion, ze_zombieSpawnInerval * 1000)
@@ -127,7 +127,7 @@ function Player.joinZombieEvent(self)
  
     -- Add count and broadcast
     local count = getZombieEventJoinedCount()
-    Game.setStorageValue(ze_joinCountGlobalStorage, count + 1)
+    Game.setStorageValue(GlobalStorage.ze_joinCountGlobalStorage, count + 1)
     Game.broadcastMessage(string.format("%s has joined the Zombie Event! [%d/%d].", self:getName(), count + 1, ze_maxPlayers))
 end
  
@@ -149,8 +149,8 @@ function setupZombieEvent(minPlayers, maxPlayers, waitTime)
     ze_waitTime = waitTime
  
     -- Set the counts, state, broadcast and delay the start of the event.
-    Game.setStorageValue(ze_zombieCountGlobalStorage, 0)
-    Game.setStorageValue(ze_joinCountGlobalStorage, 0)
+    Game.setStorageValue(GlobalStorage.ze_zombieCountGlobalStorage, 0)
+    Game.setStorageValue(GlobalStorage.ze_joinCountGlobalStorage, 0)
     setZombieEventState(ze_EVENT_STATE_STARTUP)
     Game.broadcastMessage(string.format("The Zombie Event will start in %d minutes. The event requires atleast %d players and max %d players. Join by using !zombie join.", waitTime, minPlayers, maxPlayers))
     addEvent(startZombieEvent, waitTime * 60 * 1000)
