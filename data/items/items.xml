@@ -4174,6 +4174,8 @@
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="shootType" value="bolt" />
 		<attribute key="maxHitChance" value="90" />
+		<attribute key="range" value="5" />
+		<attribute key="showattributes" value="1" />
 	</item>
 	<item id="2544" article="an" name="arrow">
 		<attribute key="weight" value="70" />
@@ -7961,7 +7963,23 @@
 	</item>
 	<item fromid="4362" toid="4372" name="" />
 	<item id="4373" name="sand" />
-	<item fromid="4375" toid="4393" name="" />
+	<item fromid="4375" toid="4390" name="" />
+	<item id="4391" article="a" name="Bullet type 1" plural="Bullets type 1">
+		<attribute key="weight" value="70" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="attack" value="100" />
+		<attribute key="attackSpeed" value="500" />
+		<attribute key="weaponType" value="ammunition" />
+		<attribute key="shootType" value="slug" />
+		<attribute key="ammoType" value="bullet" />
+		<attribute key="maxHitChance" value="100" />
+	</item>
+	<item id="4392" article="a" name="Ammo Box">
+		<attribute key="weight" value="132" />
+		<attribute key="containerSize" value="10" />
+		<attribute key="slotType" value="ammo" />
+	</item>
+	<item id="4393" name="" />
 	<item fromid="4394" toid="4402" article="a" name="red carpet" />
 	<item id="4403" article="a" name="mast" />
 	<item id="4404" article="a" name="bamboo lamp" />
@@ -14443,12 +14461,9 @@
 		<attribute key="attack" value="10" />
 		<attribute key="weaponType" value="ammunition" />
 		<attribute key="shootType" value="eartharrow" />
-		<attribute key="ammoType" value="arrow" />
+		<attribute key="ammoType" value="bolt" />
 		<attribute key="maxHitChance" value="100" />
 		<attribute key="elementEarth" value="100" />
-		<!--attribute key="decayTo" value="7364" />
-		<attribute key="duration" value="1200" />
-		<attribute key="showduration" value="1" /-->
 	</item>
 	<item fromid="7851" toid="7853" article="an" name="archway" />
 	<item id="7854" article="an" name="earth spike sword">
@@ -15214,7 +15229,23 @@
 		<attribute key="decayTo" value="2235" />
 		<attribute key="duration" value="1800" />
 	</item>
-	<item fromid="8113" toid="8116" name="" />
+	<item id="8113" article="a" name="Bullet type 2" plural="Bullets type 2">
+		<attribute key="weight" value="70" />
+		<attribute key="slotType" value="ammo" />
+		<attribute key="attack" value="200" />
+		<attribute key="attackSpeed" value="400" />
+		<attribute key="weaponType" value="ammunition" />
+		<attribute key="shootType" value="slug" />
+		<attribute key="ammoType" value="bullet" />
+		<attribute key="maxHitChance" value="100" />
+		<attribute key="elementDeath" value="100" />
+	</item>
+	<item id="8114" article="a" name="Ammo Box">
+		<attribute key="weight" value="132" />
+		<attribute key="containerSize" value="10" />
+		<attribute key="slotType" value="ammo" />
+	</item>
+	<item fromid="8115" toid="8116" name="" />
 	<item fromid="8117" toid="8138" name="earth" />
 	<item id="8139" article="a" name="snowy birch tree" />
 	<item fromid="8140" toid="8159" name="grass" />
@@ -21068,7 +21099,7 @@
 		<attribute key="maxhitpointspercent" value="120"/>
 		<attribute key="showattributes" value="1" />
 	</item>
-	<item id="12425" article="a" name="hunter's quiver" plural="hunter quivers">
+	<item id="12425" article="a" name="hunter's quiver">
 		<attribute key="weight" value="132" />
 		<attribute key="skillDist" value="20"/>
 		<attribute key="containerSize" value="8" />
@@ -24184,6 +24215,7 @@
 	<item id="15414" article="an" name="ornate mace">
 		<attribute key="weight" value="14900" />
 		<attribute key="attack" value="49" />
+		<attribute key="attackspeed" value="350" />
 		<attribute key="defense" value="24" />
 		<attribute key="weaponType" value="club" />
 	</item>
@@ -25571,6 +25603,7 @@
 		<attribute key="shootType" value="energy" />
 		<attribute key="range" value="5" />
 		<attribute key="magiclevelpoints" value="1" />
+		<attribute key="attackSpeed" value="350" />
 	</item>
 	<item id="18391" article="a" name="glowing mushroom">
 		<attribute key="weight" value="1000" />
@@ -25800,6 +25833,7 @@
 		<attribute key="skillmanaamount" value="40" />
 		<attribute key="slotType" value="ammo" />
 		<attribute key="attack" value="700" />
+		<attribute key="attackSpeed" value="350" />
 		<attribute key="weaponType" value="ammunition" />
 		<attribute key="ammoType" value="bolt" />
 		<attribute key="shootType" value="prismaticbolt" />
@@ -30020,6 +30054,18 @@
 	<item id="21482" name="Omrabas' bone key">
 		<attribute key="description" value="It is delicately carved out of the bone of some animal and bears strange inscriptions." />
 		<attribute key="weight" value="100" />
+	</item>
+	<item id="21483" article="a" name="Health Potion Bag">
+		<attribute key="slotType" value="backpack" />
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item id="21484" article="a" name="Mana Potion Bag">
+		<attribute key="slotType" value="backpack" />
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item id="21485" article="a" name="Spirit Potion Bag">
+		<attribute key="slotType" value="backpack" />
+		<attribute key="containerSize" value="20" />
 	</item>
 	<item id="21489" name="Omrabas' copper key">
 		<attribute key="weight" value="100" />
@@ -35270,30 +35316,31 @@
 	</item>
 	<item id="26089" article="a" name="Rolled-up Bamboo Mat">
 	</item>
-	<item id="26090" article="a" name=" Predator Lamp">
+	<item id="26090" article="a" name="Predator Lamp">
 		<attribute key="rotateTo" value="26091" />
 	</item>
-	<item id="26091" article="a" name=" Predator Lamp">
+	<item id="26091" article="a" name="Predator Lamp">
 		<attribute key="rotateTo" value="26090" />
 	</item>
-	<item id="26092" article="a" name=" Predator Lamp">
+	<item id="26092" article="a" name="Predator Lamp">
 		<attribute key="rotateTo" value="26093" />
 	</item>
-	<item id="26093" article="a" name=" Predator Lamp">
+	<item id="26093" article="a" name="Predator Lamp">
 		<attribute key="rotateTo" value="26092" />
 	</item>
-	<item id="26094" article="a" name=" Protectress Lamp">
+	<item id="26094" article="a" name="Protectress Lamp">
 		<attribute key="rotateTo" value="26095" />
 	</item>
-	<item id="26095" article="a" name=" Protectress Lamp">
+	<item id="26095" article="a" name="Protectress Lamp">
 		<attribute key="rotateTo" value="26094" />
 	</item>
-	<item id="26096" article="a" name=" Protectress Lamp">
+	<item id="26096" article="a" name="Protectress Lamp">
 		<attribute key="rotateTo" value="26097" />
 	</item>
-	<item id="26097" article="a" name=" Protectress Lamp">
+	<item id="26097" article="a" name="Protectress Lamp">
 		<attribute key="rotateTo" value="26096" />
 	</item>
+	<item id="26098" article="a" name="Baby Dragon" />
 	<item id="26100" article="a" name="Hamster in a Wheel">
 	</item>
 	<item id="26101" article="a" name="Hamster in a Wheel">
@@ -36194,6 +36241,12 @@
 	<item id="26381" article="a" name="Brocade Tapestry">
 		<attribute key="weight" value="1000" />
 	</item>
+	<item id="26396" article="a" name="Treasure Chest">
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item id="26397" article="a" name="Treasure Chest">
+		<attribute key="containerSize" value="20" />
+	</item>
 	<item id="26513" article="a" name="stair"/>
 	<item id="26514" article="a" name="stair">
 		<attribute key="floorchange" value="north" />
@@ -36312,6 +36365,7 @@
 	<item id="27089" article="a" name="Parrot" />
 	<item id="27090" article="a" name="Black Skull Candle" />
 	<item id="27091" article="a" name="Lit Black Skull Candle" />
+	<item id="27312" article="a" name="marble floor" />
 	<item id="27462" article="a" name="ramp">
 		<attribute key="floorchange" value="east" />
 	</item>
@@ -36328,7 +36382,33 @@
 		<attribute key="floorchange" value="south" />
 	</item>
 	<item id="27469" article="a" name="ramp" />
-	
+	<item id="27517" article="a" name="Treasure Chest">
+		<attribute key="rotateTo" value="27518" />
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item id="27518" article="a" name="Treasure Chest">
+		<attribute key="rotateTo" value="27517" />
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item id="27519" article="a" name="Treasure Chest">
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item id="27520" article="a" name="Treasure Chest">
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item id="27531" article="a" name="Treasure Chest">
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item id="27533" article="a" name="Treasure Chest">
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item fromid="27535" toid="27542" article="a" name="scattered gold" />
+	<item id="27819" article="a" name="Treasure Chest">
+		<attribute key="containerSize" value="20" />
+	</item>
+	<item id="27820" article="a" name="Treasure Chest">
+		<attribute key="containerSize" value="20" />
+	</item>
 	<item id="27606" article="a" name="Framed Birthday Card">
 		<attribute key="description" value="A birthday card lovingly framed to show they care about you" />
 		<attribute key="weight" value="1000" />
@@ -36461,7 +36541,10 @@
 		<attribute key="rotateTo" value="27885" />
 		<attribute key="containerSize" value="20" />
 	</item>
-	
+	<item id="27889" article="a" name="Vengothic Lamp">
+		<attribute key="decayTo" value="27868" />
+		<attribute key="duration" value="2" />
+	</item>
 	<item id="28068" article="a" name="stair">
 		<attribute key="floorchange" value="west" />
 	</item>
@@ -36779,20 +36862,35 @@
 		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="head" />
 	</item>
+	<item fromid="29623" toid="29626" article="a" name="Light of Change" />
+	<item fromid="29629" toid="29631" article="a" name="Torch of Change" />
 	<item id="29635" article="a" name="Alchemistic Bookstand">
-		<attribute key="weight" value="1000" />	
+		<attribute key="rotateto" value="29636" />
 	</item>
-	<item id="29639" article="a" name="Alchemistic Scales">
-		<attribute key="weight" value="1000" />
+	<item id="29636" article="a" name="Alchemistic Bookstand">
+		<attribute key="rotateto" value="29637" />
 	</item>
-	<item id="29640" article="a" name="Alchemistic Scales">
-		<attribute key="weight" value="1000" />
+	<item id="29637" article="a" name="Alchemistic Bookstand">
+		<attribute key="rotateto" value="29638" />
 	</item>
-	<item id="29641" article="a" name="Alchemistic Scales">
-		<attribute key="weight" value="1000" />
+	<item id="29638" article="a" name="Alchemistic Bookstand">
+		<attribute key="rotateto" value="29635" />
 	</item>
-	<item id="29642" article="a" name="Alchemistic Scales">
-		<attribute key="weight" value="1000" />
+	<item id="29639" article="a" name="Alchemistic Scales" >
+		<attribute key="decayTo" value="29640" />
+		<attribute key="duration" value="3" />
+	</item>
+	<item id="29640" article="a" name="Alchemistic Scales" >
+		<attribute key="decayTo" value="29639" />
+		<attribute key="duration" value="3" />
+	</item>
+	<item id="29641" article="a" name="Alchemistic Scales" >
+		<attribute key="decayTo" value="29642" /><!--glitched-->
+		<attribute key="duration" value="3" />
+	</item>
+	<item id="29642" article="a" name="Alchemistic Scales" >
+		<attribute key="decayTo" value="29641" />
+		<attribute key="duration" value="3" />
 	</item>
 	<item id="29643" article="a" name="Unlit Pile of Alchemistic Books">
 		<attribute key="weight" value="1000" />
@@ -36860,6 +36958,12 @@
 	<item id="29622" article="a" name="Alchemistic Table">
 	    <attribute key="rotateto" value="29621" />	
 	</item> 
+	<item fromid="29838" toid="29849" article="a" name="counter" />
+	<item fromid="29891" toid="29900" article="a" name="torn banner" />
+	<item id="29621" article="a" name="bird" />
+	<item fromid="29920" toid="29941" article="a" name="carpet" />
+	<item fromid="29974" toid="29995" article="a" name="carpet" />
+	<item fromid="30101" toid="30197" article="a" name="carpet" />
 	<item fromid="30207" toid="30226" article="a" name="sectional couch" />
 	<item fromid="30227" toid="30228" name="Cozy Fireplace" />
 	<item fromid="30230" toid="30237" article="a" name="banner" />
@@ -38160,9 +38264,59 @@
 	<item id="32331" article="a" name="ramp">
 		<attribute key="floorchange" value="west" />
 	</item>
+	<item id="32564" article="a" name="Pipe" />
 	<item id="32606" name="Cup of Coffee">
 		<attribute key="weight" value="1300" />
 		<attribute key="fluidSource" value="coffee" />
+	</item>
+	<item id="32616" article="a" name="retro wooden chair">
+		<attribute key="rotateto" value="32617" />
+	</item>
+	<item id="32617" article="a" name="retro wooden chair">
+		<attribute key="rotateto" value="32618" />
+	</item>
+	<item id="32618" article="a" name="retro wooden chair">
+		<attribute key="rotateto" value="32619" />
+	</item>
+	<item id="32619" article="a" name="retro wooden chair">
+		<attribute key="rotateto" value="32616" />
+	</item>
+	<item id="32620" article="a" name="classic wooden chair">
+		<attribute key="rotateto" value="32621" />
+	</item>
+	<item id="32621" article="a" name="classic wooden chair">
+		<attribute key="rotateto" value="32622" />
+	</item>
+	<item id="32622" article="a" name="classic wooden chair">
+		<attribute key="rotateto" value="32623" />
+	</item>
+	<item id="32623" article="a" name="classic wooden chair">
+		<attribute key="rotateto" value="32620" />
+	</item>
+	<item id="32624" article="a" name="retro timber chair">
+		<attribute key="rotateto" value="32625" />
+	</item>
+	<item id="32625" article="a" name="retro timber chair">
+		<attribute key="rotateto" value="32626" />
+	</item>
+	<item id="32626" article="a" name="retro timber chair">
+		<attribute key="rotateto" value="32627" />
+	</item>
+	<item id="32627" article="a" name="retro timber chair">
+		<attribute key="rotateto" value="32624" />
+	</item>
+	<item id="32630" article="a" name="retro timber table" />
+	<item id="32631" article="a" name="retro timber chest">
+		<attribute key="containersize" value="20" />
+	</item>
+	<item id="32632" article="a" name="retro timber drawers">
+		<attribute key="containersize" value="20" />
+	</item>	
+	<item id="32633" article="a" name="retro timber chest">
+		<attribute key="containersize" value="20" />
+	</item>
+	<item id="32634" article="a" name="retro timber drawers">
+		<attribute key="containersize" value="20" />
 	</item>
 	<item id="32751" article="a" name="Defender armor">
 		<attribute key="weight" value="12000" />
@@ -38210,11 +38364,14 @@
 		<attribute key="weaponType" value="shield" />
 		<attribute key="showattributes" value="1" />
 	</item>
-	<item id="33182" article="a" name="God Gun">
-		<attribute key="weaponType" value="wand" />
-		<attribute key="shootType" value="death" />
-		<attribute key="range" value="4" />
-	</item>	
+	<item id="33182" article="a" name="Test Gun">
+		<attribute key="weight" value="2500" />
+		<attribute key="weaponType" value="distance" />
+		<attribute key="ammoType" value="bullet" />
+		<attribute key="range" value="7" />
+		<attribute key="hitChance" value="5" />
+		<attribute key="attack" value="3" />
+	</item>
 	<item id="33013" article="a" name="Furore">
 		<attribute key="description" value="Vladisfaction." />
 		<attribute key="weight" value="30000" />
@@ -38351,6 +38508,7 @@
 		<attribute key="blockprojectile" value="1" />
 		<attribute key="description" value="It is locked." />
 	</item>
+	<item id="33882" article="a" name="Shield of Endless Search" />
 	<item id="33895" article="a" name="Cowbell" />
 	<item id="33897" article="a" name="Festive Backpack">
 		<attribute key="weight" value="1500" />
@@ -38765,7 +38923,7 @@
 	<item id="34726" article="a" name="Model Ship Lamp">
 		<attribute key="rotateTo" value="34725" />
 	</item>
-	<item id="34727" article="a" name="Pirate Banner" />
+	<item id="34727" article="a" name="Pirate Flag" />
 	<item id="34728" article="a" name="Treasure Map" />
 	<item id="34733" article="a" name="Shark Head" />
 	<item id="34734" article="a" name="Pet Monkey">
@@ -38789,6 +38947,10 @@
 		<attribute key="description" value="It's hot, beefy and delicious. The perfect sausage." />
 		<attribute key="weight" value="1200" />
 	</item>
+	<item id="34846" article="a" name="Morgaroth Plushie" />
+	<item id="34847" article="a" name="Orsula Plushie" />
+	<item id="34848" article="a" name="King Tibianus Plushie" />
+	<item id="34849" article="a" name="Sight of Surrender Plushie" />
 	<item id="34860" article="a" name="slain cow">
 		<attribute key="decayTo" value="0" />
 		<attribute key="duration" value="100" />
@@ -39163,6 +39325,7 @@
 	<item id="35282" article="a" name="Spectral Silver Nugget" /> <!--left off-->
 	<item id="35312" article="a" name="Mini Nanbot" />
 	<item id="35313" article="a" name="Mini Nanbot" />
+	<item id="35317" article="a" name="Hydra Plushie" />
 	<item id="35326" article="an" name="Ice Cabinet">
 		<attribute key="containerSize" value="30" />
 		<attribute key="rotateto" value="35327" />
@@ -39373,7 +39536,92 @@
 	<item id="35718" article="a" name="Black Raven" />
 	<item id="35719" article="a" name="Grey Raven" />
 	<item id="35720" article="a" name="White Raven" />
-	<item fromid="35852" toid="35871" name="Cozy Couch" />
+	<item id="35844" article="a" name="Demon Plushie" />
+	<item id="35852" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35853" />
+	</item>
+	<item id="35853" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35854" />
+	</item>
+	<item id="35854" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35855" />
+	</item>
+	<item id="35855" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35852" />
+	</item>
+	<item id="35856" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35857" />
+	</item>
+	<item id="35857" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35862" />
+	</item>
+	<item id="35858" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35859" />
+	</item>
+	<item id="35859" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35860" />
+	</item>
+	<item id="35860" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35861" />
+	</item>
+	<item id="35861" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35858" />
+	</item>
+	<item id="35862" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35863" />
+	</item>
+	<item id="35863" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35856" />
+	</item>
+	<item id="35864" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35865" />
+	</item>
+	<item id="35865" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35866" />
+	</item>
+	<item id="35866" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35867" />
+	</item>
+	<item id="35867" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35864" />
+	</item>
+	<item id="35868" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35869" />
+	</item>
+	<item id="35869" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35870" />
+	</item>
+	<item id="35870" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35871" />
+	</item>
+	<item id="35871" article="a" name="Cozy Couch">
+		<attribute key="rotateTo" value="35868" />
+	</item>
+	<item id="35872" article="a" name="Carved Table">
+		<attribute key="rotateTo" value="35873" />
+	</item>
+	<item id="35873" article="a" name="Carved Table">
+		<attribute key="rotateTo" value="35874" />
+	</item>
+	<item id="35874" article="a" name="Carved Table">
+		<attribute key="rotateTo" value="35875" />
+	</item>
+	<item id="35875" article="a" name="Carved Table">
+		<attribute key="rotateTo" value="35872" />
+	</item>
+	<item id="35876" article="a" name="Carved Table">
+		<attribute key="rotateTo" value="35877" />
+	</item>
+	<item id="35877" article="a" name="Carved Table">
+		<attribute key="rotateTo" value="35878" />
+	</item>
+	<item id="35878" article="a" name="Carved Table">
+		<attribute key="rotateTo" value="35879" />
+	</item>
+	<item id="35879" article="a" name="Carved Table">
+		<attribute key="rotateTo" value="35876" />
+	</item>
+	<item id="35880" article="a" name="Carved Table" />
 	<item id="35890" article="a" name="Sweetheart Table Lamp" >
 		<attribute key="decayTo" value="35365" />
 		<attribute key="duration" value="3" />
@@ -39386,6 +39634,8 @@
 		<attribute key="decayTo" value="35369" />
 		<attribute key="duration" value="3" />
 	</item>
+	<item fromid="35917" toid="35921" name="Monolith of the Planes" />
+	<item id="35922" article="a" name="Monolilth of the Planes Kit" />
 
 	
 	<item id="30001" name="water" />
