@@ -1364,6 +1364,10 @@ class Player final : public Creature, public Cylinder
 		bool isPromoted() const;
 
 		uint32_t getAttackSpeed() const {
+			Item* weapon = getWeapon(false);
+
+			if (weapon && weapon->getAttackSpeed() > 0)
+				return weapon->getAttackSpeed();
 			return vocation->getAttackSpeed();
 		}
 

@@ -226,6 +226,7 @@ class ItemType
  		int32_t armor;
  		int32_t runeMagLevel;
  		int32_t runeLevel;
+		int32_t attackSpeed;
 
 		CombatType_t combatType;
 

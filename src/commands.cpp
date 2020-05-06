@@ -198,68 +198,87 @@ void Commands::reloadInfo(Player& player, const std::string& param)
 {
 	std::string tmpParam = asLowerCaseString(param);
 	if (tmpParam == "action" || tmpParam == "actions") {
+		std::cout << "  [ .................. Actions Reloaded .................. ]" << std::endl;
 		g_actions->reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Actions Reloaded");
 	} else if (tmpParam == "config" || tmpParam == "configuration") {
+		std::cout << "  [ .................. Config Reloaded ................... ]" << std::endl;
 		g_config.reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Config Reloaded");
 	} else if (tmpParam == "command" || tmpParam == "commands") {
+		std::cout << "  [ .................. Commands Reloaded ................. ]" << std::endl;
 		reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Commands Reloaded");
 	} else if (tmpParam == "creaturescript" || tmpParam == "creaturescripts") {
+		std::cout << "  [ .............. Creaturescripts Reloaded .............. ]" << std::endl;
 		g_creatureEvents->reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Creaturescripts Reloaded");
 	} else if (tmpParam == "monster" || tmpParam == "monsters") {
+		std::cout << "  [ .................. Monsters Reloaded ................. ]" << std::endl;
 		g_monsters.reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Monsters Reloaded");
 	} else if (tmpParam == "move" || tmpParam == "movement" || tmpParam == "movements"
 	           || tmpParam == "moveevents" || tmpParam == "moveevent") {
+		std::cout << "  [ ................. Movements Reloaded ................. ]" << std::endl;
 		g_moveEvents->reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Movements Reloaded");
 	} else if (tmpParam == "npc" || tmpParam == "npcs") {
+		std::cout << "  [ .................... Npcs Reloaded ................... ]" << std::endl;
 		Npcs::reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Npcs Reloaded");
 	} else if (tmpParam == "raid" || tmpParam == "raids") {
+		std::cout << "  [ ................... Raids Reloaded ................... ]" << std::endl;
 		g_game.raids.reload();
 		g_game.raids.startup();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Raids Reloaded");
 	} else if (tmpParam == "spell" || tmpParam == "spells") {
+		std::cout << "  [ .................. Spells Reloaded ................... ]" << std::endl;
 		g_spells->reload();
 		g_monsters.reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Spells Reloaded");
 	} else if (tmpParam == "talk" || tmpParam == "talkaction" || tmpParam == "talkactions") {
+		std::cout << "  [ ................ Talkactions Reloaded ................ ]" << std::endl;
 		g_talkActions->reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Talkactions Reloaded");
 	} else if (tmpParam == "items") {
+		std::cout << "  [ ................... Items Reloaded ................... ]" << std::endl;
 		Item::items.reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Items Reloaded");
 	} else if (tmpParam == "weapon" || tmpParam == "weapons") {
+		std::cout << "  [ .................. Weapons Reloaded .................. ]" << std::endl;
 		g_weapons->reload();
 		g_weapons->loadDefaults();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Weapons Reloaded");
 	} else if (tmpParam == "quest" || tmpParam == "quests") {
+		std::cout << "  [ .................. Quests Reloaded ................... ]" << std::endl;
 		g_game.quests.reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Quests Reloaded");
 	} else if (tmpParam == "mount" || tmpParam == "mounts") {
+		std::cout << "  [ .................. Mounts Reloaded ................... ]" << std::endl;
 		g_game.mounts.reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Mounts Reloaded");
 	} else if (tmpParam == "globalevents" || tmpParam == "globalevent") {
+		std::cout << "  [ ................ Globalevents Reloaded ............... ]" << std::endl;
 		g_globalEvents->reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Globalevents Reloaded");
 	} else if (tmpParam == "events") {
+		std::cout << "  [ .................. Events Reloaded ................... ]" << std::endl;
 		g_events->load();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Events Reloaded");
 	} else if (tmpParam == "modules") {
+		std::cout << "  [ .................. Modules Reloaded .................. ]" << std::endl;
 		g_modules->reload();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Modules Reloaded");
 	} else if (tmpParam == "chat" || tmpParam == "channel" || tmpParam == "chatchannels") {
+		std::cout << "  [ ................ Chatchannels Reloaded ............... ]" << std::endl;
 		g_chat->load();
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Chatchannels Reloaded");
 	} else if (tmpParam == "global") {
+		std::cout << "  [ ................... Global Reloaded .................. ]" << std::endl;
 		g_luaEnvironment.loadFile("data/global.lua");
 		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Global Reloaded");
 	} else {
-		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Reload type not found.. or you fucked up.");
+		player.sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Reload type not found or you fucked up!");
 	}
 	lua_gc(g_luaEnvironment.getLuaState(), LUA_GCCOLLECT, 0);
 }

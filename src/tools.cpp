@@ -687,6 +687,7 @@ ShootTypeNames shootTypeNames[] = {
 	{"eartharrow",		CONST_ANI_EARTHARROW},
 	{"explosion",		CONST_ANI_EXPLOSION},
 	{"cake",		CONST_ANI_CAKE},
+	{"slug",		CONST_ANI_SLUG},
 	{"tarsalarrow",		CONST_ANI_TARSALARROW},
 	{"vortexbolt",		CONST_ANI_VORTEXBOLT},
 	{"prismaticbolt",	CONST_ANI_PRISMATICBOLT},
@@ -739,7 +740,9 @@ AmmoTypeNames ammoTypeNames[] = {
 	{"flasharrow",		AMMO_ARROW},
 	{"flammingarrow",	AMMO_ARROW},
 	{"shiverarrow",		AMMO_ARROW},
-	{"eartharrow",		AMMO_ARROW},
+    {"eartharrow",		AMMO_ARROW},
+	{"slug",		    AMMO_BULLET},
+	{"bullet",		    AMMO_BULLET},
 };
 
 WeaponActionNames weaponActionNames[] = {
@@ -1040,6 +1043,8 @@ itemAttrTypes stringToItemAttribute(const std::string& str)
 		return ITEM_ATTRIBUTE_WEIGHT;
 	} else if (str == "attack") {
 		return ITEM_ATTRIBUTE_ATTACK;
+	} else if (str == "attackSpeed") {
+		return ITEM_ATTRIBUTE_ATTACKSPEED;
 	} else if (str == "defense") {
 		return ITEM_ATTRIBUTE_DEFENSE;
 	} else if (str == "extradefense") {

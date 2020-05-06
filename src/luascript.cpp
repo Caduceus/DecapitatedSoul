@@ -1357,6 +1357,7 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(CONST_ANI_EARTHARROW)
 	registerEnum(CONST_ANI_EXPLOSION)
 	registerEnum(CONST_ANI_CAKE)
+	registerEnum(CONST_ANI_SLUG)
 	registerEnum(CONST_ANI_TARSALARROW)
 	registerEnum(CONST_ANI_VORTEXBOLT)
 	registerEnum(CONST_ANI_PRISMATICBOLT)
@@ -1447,6 +1448,7 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(ITEM_ATTRIBUTE_PLURALNAME)
 	registerEnum(ITEM_ATTRIBUTE_WEIGHT)
 	registerEnum(ITEM_ATTRIBUTE_ATTACK)
+	registerEnum(ITEM_ATTRIBUTE_ATTACKSPEED)
 	registerEnum(ITEM_ATTRIBUTE_DEFENSE)
 	registerEnum(ITEM_ATTRIBUTE_EXTRADEFENSE)
 	registerEnum(ITEM_ATTRIBUTE_ARMOR)
@@ -2478,6 +2480,7 @@ void LuaScriptInterface::registerFunctions()
 	registerMethod("ItemType", "getShootRange", LuaScriptInterface::luaItemTypeGetShootRange);
 
 	registerMethod("ItemType", "getAttack", LuaScriptInterface::luaItemTypeGetAttack);
+	registerMethod("ItemType", "getAttackSpeed", LuaScriptInterface::luaItemTypeGetAttackSpeed);
 	registerMethod("ItemType", "getDefense", LuaScriptInterface::luaItemTypeGetDefense);
 	registerMethod("ItemType", "getExtraDefense", LuaScriptInterface::luaItemTypeGetExtraDefense);
 	registerMethod("ItemType", "getArmor", LuaScriptInterface::luaItemTypeGetArmor);
@@ -10966,6 +10969,19 @@ int LuaScriptInterface::luaItemTypeGetAttack(lua_State* L)
 	if (itemType) {
 		lua_pushnumber(L, itemType->attack);
 	} else {
+		lua_pushnil(L);
+	}
+	return 1;
+}
+
+int LuaScriptInterface::luaItemTypeGetAttackSpeed(lua_State* L)
+{
+	// itemType:getAttackSpeed()
+	const ItemType* itemType = getUserdata<const ItemType>(L, 1);
+	if (itemType) {
+		lua_pushnumber(L, itemType->attackSpeed);
+	}
+	else {
 		lua_pushnil(L);
 	}
 	return 1;

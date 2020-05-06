@@ -547,6 +547,16 @@ Attr_ReadValue Item::readAttr(AttrTypes_t attr, PropStream& propStream)
 			break;
 		}
 
+		case ATTR_ATTACKSPEED: {
+			int32_t attackSpeed;
+			if (!propStream.read<int32_t>(attackSpeed)) {
+				return ATTR_READ_ERROR;
+			}
+
+			setIntAttr(ITEM_ATTRIBUTE_ATTACKSPEED, attackSpeed);
+			break;
+		}
+
 		case ATTR_DEFENSE: {
 			int32_t defense;
 			if (!propStream.read<int32_t>(defense)) {
@@ -763,6 +773,11 @@ void Item::serializeAttr(PropWriteStream& propWriteStream) const
 		propWriteStream.write<int32_t>(getIntAttr(ITEM_ATTRIBUTE_ATTACK));
 	}
 
+	if (hasAttribute(ITEM_ATTRIBUTE_ATTACKSPEED)) {
+		propWriteStream.write<uint8_t>(ATTR_ATTACKSPEED);
+		propWriteStream.write<int32_t>(getIntAttr(ITEM_ATTRIBUTE_ATTACKSPEED));
+	}
+
 	if (hasAttribute(ITEM_ATTRIBUTE_DEFENSE)) {
 		propWriteStream.write<uint8_t>(ATTR_DEFENSE);
 		propWriteStream.write<int32_t>(getIntAttr(ITEM_ATTRIBUTE_DEFENSE));
@@ -889,16 +904,19 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance,
 			}
 		}
 	} else if (it.weaponType != WEAPON_NONE) {
-		if (it.weaponType == WEAPON_DISTANCE && it.ammoType != AMMO_NONE) {
+		if (it.weaponType == WEAPON_DISTANCE && it.ammoType != AMMO_NONE) { 
 			s << " (Range:" << static_cast<uint16_t>(item ? item->getShootRange() : it.shootRange);
 
-			int32_t attack;
+			int32_t attack, attackSpeed;
 			int8_t hitChance;
 			if (item) {
 				attack = item->getAttack();
+				attackSpeed = item->getAttackSpeed();
 				hitChance = item->getHitChance();
-			} else {
+			}
+			else {
 				attack = it.attack;
+				attackSpeed = it.attackSpeed;
 				hitChance = it.hitChance;
 			}
 
@@ -906,21 +924,28 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance,
 				s << ", Atk" << std::showpos << attack << std::noshowpos;
 			}
 
+			if (attackSpeed != 0) {
+				s << ", AtkSpd" << std::showpos << attackSpeed << std::noshowpos;
+			}
+
 			if (hitChance != 0) {
 				s << ", Hit%" << std::showpos << static_cast<int16_t>(hitChance) << std::noshowpos;
 			}
 
 			s << ')';
-		} else if (it.weaponType != WEAPON_AMMO) {
+		} else if (it.weaponType) {  //} else if (it.weaponType != WEAPON_AMMO) { //allows ammo to show attr
 			bool begin = true;
 
-			int32_t attack, defense, extraDefense;
+			int32_t attack, attackSpeed, defense, extraDefense;
 			if (item) {
 				attack = item->getAttack();
+				attackSpeed = item->getAttackSpeed();
 				defense = item->getDefense();
 				extraDefense = item->getExtraDefense();
-			} else {
+			}
+			else {
 				attack = it.attack;
+				attackSpeed = it.attackSpeed;
 				defense = it.defense;
 				extraDefense = it.extraDefense;
 			}
@@ -932,6 +957,17 @@ std::string Item::getDescription(const ItemType& it, int32_t lookDistance,
 				if (it.abilities && it.abilities->elementType != COMBAT_NONE && it.abilities->elementDamage != 0) {
 					s << " physical + " << it.abilities->elementDamage << ' ' << getCombatName(it.abilities->elementType);
 				}
+			}
+
+			if (attackSpeed != 0) {
+				if (begin) {
+					begin = false;
+					s << " (";
+				}
+				else {
+					s << ", ";
+				}
+				s << "AtkSpd:" << attackSpeed;
 			}
 
 			if (defense != 0 || extraDefense != 0) {
