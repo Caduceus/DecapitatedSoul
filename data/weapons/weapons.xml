@@ -1027,6 +1027,11 @@
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
+	<distance id="33182" swing="true" level="100" unproperly="1"> <!-- Gun -->
+		<vocation name="Paladin" />
+		<vocation name="Royal Paladin" showInDescription="0" />
+        <vocation name="Warlord Paladin" showInDescription="0" />
+	</distance>
 
  	<!-- Ammunition -->
  	<!-- action="removecount" was removed from some ammo-->
@@ -1041,6 +1046,7 @@
 	<distance id="2546" swing="true" level="30" script="burst_arrow.lua" /> 
 	<distance id="2547" swing="true" unproperly="1" level="55" />	<!-- Power Bolt -->
 	<distance id="3965" swing="true" breakchance="0" unproperly="1" level="20" />	<!-- Hunting Spear -->
+	<distance id="4391" swing="true" action="removecount" unproperly="1" level="100"/> <!-- bullet type 1 -->
 	<distance id="6529" swing="true" breakchance="0" unproperly="1" level="60" />	<!-- Infernal Bolt -->
 	<distance id="7363" swing="true" unproperly="1" level="30" />	<!-- Piercing Bolt -->
 	<distance id="7364" swing="true" level="100" unproperly="1"> <!-- Sniper Arrow -->
@@ -1072,6 +1078,7 @@
 		<vocation name="Royal Paladin" showInDescription="0" />
         <vocation name="Warlord Paladin" showInDescription="0" />
 	</distance>
+	<distance id="8113" swing="true" action="removecount" unproperly="1" level="150"/> <!-- bullet type 2 -->
 	<distance id="15648" swing="true" unproperly="1" level="30" />	<!-- Tarsal Arrow -->
 	<distance id="15649" swing="true" unproperly="1" level="40" />	<!-- Vortex Bolt -->
 	<distance id="18303" swing="true" breakchance="0" />	<!-- crystal bolt -->
