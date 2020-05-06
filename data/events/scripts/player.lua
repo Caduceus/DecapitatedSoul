@@ -31,7 +31,7 @@ function Player:onLook(thing, position, distance)
 	if self:getGroup():getAccess() then
 		if thing:isItem() then
 		local itemType = ItemType(thing:getId())
-			description = string.format("%s\nItem ID: %d - Client ID: %d" , description, thing:getId(),itemType:getClientId())
+			description = string.format("%s\nItem ID: %d Client ID: %d", description, thing:getId(),itemType:getClientId())
 			
 						
 			local actionId = thing:getActionId()
@@ -131,7 +131,20 @@ function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, 
 	if toPosition.x ~= CONTAINER_POSITION then
 		return true
 	end
-
+	
+	local ARROW_BOLT = {2543,2544,2545,2546,2547,3965,6529,7363,7364,7365,7838,7839,7840,7850,15648,15649,18303,18304,18435,18436,18437,23839}
+	if toCylinder:getId() == 12425 and not isInArray(ARROW_BOLT, item:getId()) then
+        self:sendCancelMessage(RETURNVALUE_NOTPOSSIBLE)
+        return false
+    end
+    
+    local AMMO_BOX = {4392,8114}
+    local BULLETS = {4391,8113}
+	if  isInArray(AMMO_BOX, toCylinder:getId()) and not isInArray(BULLETS, item:getId()) then  
+        self:sendCancelMessage(RETURNVALUE_NOTPOSSIBLE)
+        return false
+    end
+    
 	if item:getTopParent() == self and bit.band(toPosition.y, 0x40) == 0 then	
 		local itemType, moveItem = ItemType(item:getId())
 		if bit.band(itemType:getSlotPosition(), SLOTP_TWO_HAND) ~= 0 and toPosition.y == CONST_SLOT_LEFT then
@@ -308,10 +321,10 @@ function Player:onWrapItem(item, position)
 	end
 	
 	local oldId = item:getId()
-	--local kit = self:addItem(wrapId) 
 	local kit = Game.createItem(wrapId, 1, item:getPosition())
 	if kit then
 		kit:setAttribute(ITEM_ATTRIBUTE_WRAPID, oldId)
+		kit:decay()
 		item:remove(1)
 	end
 end
