@@ -662,26 +662,36 @@
 	<movevent event="Equip" itemid="2545" slot="ammo" level="15" function="onEquipItem"/>
 	<movevent event="Equip" itemid="2546" slot="ammo" level="30" function="onEquipItem"/>
 	<movevent event="DeEquip" itemid="2546" slot="ammo" function="onDeEquipItem"/>
-	<movevent event="Equip" itemid="15648" slot="ammo" level="20" function="onEquipItem">
-		<vocation name="Paladin"/>
+	<movevent event="Equip" itemid="4391" slot="ammo" level="100" function="onEquipItem">
+        <vocation name="Paladin"/>
 		<vocation name="Royal Paladin" showInDescription="0"/>
         <vocation name="Warlord Paladin" showInDescription="0"/>
 	</movevent>
-	<movevent event="DeEquip" itemid="15648" slot="ammo" function="onDeEquipItem"/>
-	
-	<movevent event="Equip" itemid="6529" slot="ammo" level="60" function="onEquipItem">
-		<vocation name="Paladin"/>
-		<vocation name="Royal Paladin" showInDescription="0"/>
-        <vocation name="Warlord Paladin" showInDescription="0"/>
-	</movevent>
-	<movevent event="DeEquip" itemid="6529" slot="ammo" function="onDeEquipItem"/>
-	
+	<movevent event="DeEquip" itemid="4391" slot="ammo" function="onDeEquipItem"/>
 	<movevent event="Equip" itemid="5803" slot="hand" level="60" function="onEquipItem">
 		<vocation name="Paladin"/>
 		<vocation name="Royal Paladin" showInDescription="0"/>
         <vocation name="Warlord Paladin" showInDescription="0"/>
 	</movevent>
 	<movevent event="DeEquip" itemid="5803" slot="hand" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="6529" slot="ammo" level="60" function="onEquipItem">
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin" showInDescription="0"/>
+        <vocation name="Warlord Paladin" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="6529" slot="ammo" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="8113" slot="ammo" level="150" function="onEquipItem">
+        <vocation name="Paladin"/>
+		<vocation name="Royal Paladin" showInDescription="0"/>
+        <vocation name="Warlord Paladin" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="8113" slot="ammo" function="onDeEquipItem"/>
+	<movevent event="Equip" itemid="15648" slot="ammo" level="20" function="onEquipItem">
+		<vocation name="Paladin"/>
+		<vocation name="Royal Paladin" showInDescription="0"/>
+        <vocation name="Warlord Paladin" showInDescription="0"/>
+	</movevent>
+	<movevent event="DeEquip" itemid="15648" slot="ammo" function="onDeEquipItem"/>
 	
 	<!--sword-->
 	<movevent event="Equip" itemid="2419" slot="hand" level="30" function="onEquipItem">
