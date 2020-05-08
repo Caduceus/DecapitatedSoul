@@ -468,8 +468,16 @@ Cylinder* Container::queryDestination(int32_t& index, const Thing &thing, Item**
 			++n;
 		}
 	}
+
+	Cylinder* subCylinder = dynamic_cast<Cylinder*>(*destItem);
+	if (subCylinder) {
+		index = INDEX_WHEREEVER;
+		*destItem = nullptr;
+		return subCylinder;
+	}
 	return this;
 }
+
 void Container::addThing(Thing* thing)
 {
 	return addThing(0, thing);
