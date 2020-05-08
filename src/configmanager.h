@@ -48,6 +48,7 @@ class ConfigManager
 			CLASSIC_EQUIPMENT_SLOTS,
 			CLASSIC_ATTACK_SPEED,
 			ENABLE_LIVE_CASTING,
+			HOUSE_OWNED_BY_ACCOUNT,
 
 			LAST_BOOLEAN_CONFIG /* this must be the last one */
 		};

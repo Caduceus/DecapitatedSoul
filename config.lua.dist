@@ -50,6 +50,7 @@ deathLosePercent = 5
 housePriceEachSQM = 40000
 -- NOTE: valid values for houseRentPeriod are: never, daily, weekly, monthly and yearly --Still up in the air.. weekly
 houseRentPeriod = "never" 
+houseOwnedByAccount = false
 
 -- Item Usage
 timeBetweenActions = 200

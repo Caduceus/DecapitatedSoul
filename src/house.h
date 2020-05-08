@@ -245,10 +245,11 @@ class House
 		time_t paidUntil;
 
 		uint32_t id;
-		uint32_t owner;
-		uint32_t rentWarnings;
-		uint32_t rent;
-		uint32_t townId;
+		uint32_t owner =0;
+		uint32_t ownerAccountId =0;
+		uint32_t rentWarnings =0;
+		uint32_t rent =0;
+		uint32_t townId =0;
 
 		Position posEntry;
 
