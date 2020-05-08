@@ -42,6 +42,6 @@
 		<summon name="gladiator" interval="2000" chance="10" max="2"/>
 	</summons>
 	<loot>
-		<item id="9735" chance="9999999"/><!-- morik helmet -->
+		<item id="9735" chance="100000"/><!-- morik helmet -->
 	</loot>
 </monster>

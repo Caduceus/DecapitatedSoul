@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Warlock" nameDescription="a warlock" race="blood" experience="4000" speed="220" manacost="0">
-	<health now="5500" max="5500"/>
+	<health now="9000" max="9000"/>
 	<look type="130" head="19" body="71" legs="128" feet="128" addons="1" corpse="20527"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
@@ -18,7 +18,7 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="42" attack="50"/>
-		<attack name="energy" interval="2000" chance="25" range="7" min="-290" max="-380">
+		<attack name="energy" interval="2000" chance="25" range="7" min="-290" max="-880">
 			<attribute key="shootEffect" value="energy"/>
 		</attack>
 		<attack name="warlock skill reducer" range="2" interval="3000" chance="20"/>

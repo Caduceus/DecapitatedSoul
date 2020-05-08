@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <monster name="Demodras" nameDescription="demodras" race="blood" experience="4000" speed="230" manacost="0">
-	<health now="9000" max="9000"/>
+	<health now="10000" max="10000"/>
 	<look type="204" corpse="2881"/>
 	<targetchange interval="5000" chance="8"/>
 	<flags>
@@ -20,7 +20,7 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="-360" max="-500"/>
+		<attack name="melee" interval="2000" min="-360" max="-1000"/>
 		<attack name="fire" interval="3000" chance="40" range="4" radius="4" target="1" min="-550" max="-700">
 			<attribute key="shootEffect" value="fire"/>
 			<attribute key="areaEffect" value="firearea"/>
@@ -32,7 +32,7 @@
 			<attribute key="areaEffect" value="firearea"/>
 		</attack>
 	</attacks>
-	<defenses armor="45" defense="25">
+	<defenses armor="45" defense="45">
 		<defense name="healing" interval="3000" chance="25" min="400" max="700">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>

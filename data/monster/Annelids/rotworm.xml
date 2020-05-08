@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Rotworm" nameDescription="a rotworm" race="blood" experience="50" speed="150" manacost="305">
-	<health now="165" max="165"/>
+	<health now="465" max="465"/>
 	<look type="26" corpse="5967"/>
 	<targetchange interval="4000" chance="0"/>
 	<flags>
@@ -17,12 +17,13 @@
 		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="-30" max="-80"/>
+		<attack name="melee" interval="2000" min="-50" max="-100"/>
+		<attack name="melee" interval="3000" min="-20" max="-50"/>
 	</attacks>
 	<defenses armor="15" defense="15"/>
 	<loot>
-		<item id="2148" countmax="17" chance="71760"/><!-- gold coin -->
-		<item id="2152" countmax="5" chance="4000"/><!-- platinum coin -->
+		<item id="2148" countmax="10" chance="71760"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="4000"/><!-- platinum coin -->
 		<item id="3976" countmax="3" chance="3000"/><!-- worm -->
 		<item id="2666" chance="20000"/><!-- meat -->
 		<item id="2671" chance="20120"/><!-- ham -->

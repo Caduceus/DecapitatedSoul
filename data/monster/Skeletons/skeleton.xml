@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Skeleton" nameDescription="a skeleton" race="undead" experience="20" speed="150" manacost="300">
-	<health now="250" max="250"/>
+	<health now="350" max="350"/>
 	<look type="33" corpse="5972"/>
 	<targetchange interval="4000" chance="0"/>
 	<flags>
@@ -21,8 +21,8 @@
         <event name="playerSummon"/>
     </script>
 	<attacks>
-		<attack name="melee" interval="2000" skill="15" attack="15"/>
-		<attack name="lifedrain" interval="2000" chance="15" range="1" min="-15" max="-30"/>
+		<attack name="melee" interval="2000" skill="25" attack="25"/>
+		<attack name="lifedrain" interval="2000" chance="35" range="1" min="-25" max="-50"/>
 	</attacks>
 	<defenses armor="10" defense="5"/>
 	<elements>

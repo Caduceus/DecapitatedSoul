@@ -46,7 +46,7 @@
 		<voice sentence="Crush the intruders!"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="595300"/><!-- gold coin -->
+		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
 		<item id="2148" countmax="99" chance="40000"/><!-- gold coin -->
 		<item id="2152" countmax="5" chance="59800"/><!-- platinum coin-->
 		<item id="2023" chance="100"/><!-- amphora -->

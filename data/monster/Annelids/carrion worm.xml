@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Carrion Worm" nameDescription="a carrion worm" race="blood" experience="75" speed="160" manacost="380">
-	<health now="545" max="545"/>
+	<health now="645" max="645"/>
 	<look type="192" corpse="6069"/>
 	<targetchange interval="4000" chance="0"/>
 	<flags>
@@ -17,9 +17,10 @@
 		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="-40" max="-90"/>
+		<attack name="melee" interval="2000" min="-50" max="-150"/>
+		<attack name="melee" interval="3000" min="-20" max="-80"/>
 	</attacks>
-	<defenses armor="20" defense="20"/>
+	<defenses armor="20" defense="50"/>
 	<elements>
 		<element earthPercent="20"/>
 		<element energyPercent="5"/>
@@ -27,8 +28,8 @@
 		<element icePercent="-5"/>
 	</elements>
 	<loot>
-		<item id="2148" countmax="90" chance="10000"/><!-- gold coin -->
-		<item id="2152" countmax="10" chance="5000"/><!-- platinum coin -->
+		<item id="2148" countmax="40" chance="10000"/><!-- gold coin -->
+		<item id="2152" countmax="2" chance="5000"/><!-- platinum coin -->
 		<item id="2666" countmax="4" chance="10000"/><!-- meat -->
 		<item id="3976" countmax="2" chance="15000"/><!-- worm -->
 		<item id="2412" chance="2500"/><!-- katana -->

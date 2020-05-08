@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Lost Soul" nameDescription="a lost soul" race="undead" experience="3000" speed="220" manacost="0">
-	<health now="5800" max="5800"/>
+	<health now="7000" max="7000"/>
 	<look type="232" corpse="6310"/>
 	<targetchange interval="4000" chance="15"/>
 	<flags>
@@ -17,8 +17,8 @@
 		<flag runonhealth="450"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" skill="90" attack="120"/>
-		<attack name="death" interval="2000" chance="50" length="3" spread="0" target="0" min="-640" max="-810">
+		<attack name="melee" interval="2000" skill="110" attack="120"/>
+		<attack name="death" interval="2000" chance="50" length="3" spread="0" target="0" min="-840" max="-1000">
 			<attribute key="areaEffect" value="redshimmer"/>
 		</attack>
 		<attack name="lifedrain" interval="2000" chance="20" radius="3" target="0" min="-420" max="-600">

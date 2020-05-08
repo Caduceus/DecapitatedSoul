@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Dragon Lord" nameDescription="a dragon lord" race="blood" experience="1500" speed="250" manacost="0">
-	<health now="3000" max="3000"/>
+	<health now="3500" max="3500"/>
 	<look type="39" corpse="2881"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
@@ -20,7 +20,7 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" skill="105" attack="60"/>
+		<attack name="melee" interval="2000" skill="105" attack="70"/>
 		<attack name="fire" interval="2000" chance="40" range="7" radius="4" target="1" min="-400" max="-500">
 			<attribute key="shootEffect" value="fire"/>
 			<attribute key="areaEffect" value="firearea"/>
@@ -32,7 +32,7 @@
 			<attribute key="areaEffect" value="firearea"/>
 		</attack>
 	</attacks>
-	<defenses armor="50" defense="35">
+	<defenses armor="50" defense="50">
 		<defense name="healing" interval="2000" chance="15" min="57" max="93">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Vampire Bride" nameDescription="a vampire bride" race="blood" experience="1500" speed="230" manacost="0">
-	<health now="5200" max="5200"/>
+	<health now="5500" max="5500"/>
 	<look type="312" corpse="9658"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
@@ -17,7 +17,7 @@
 		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-190"/>
+		<attack name="melee" interval="2000" min="-100" max="-290"/>
 		<attack name="lifedrain" interval="3000" chance="45" target="1" range="1" min="160" max="-230">
 			<attribute key="areaEffect" value="redshimmer"/>
 		</attack>
@@ -33,8 +33,8 @@
 			<attribute key="shootEffect" value="energy"/>
 		</attack>
 	</attacks>
-	<defenses armor="20" defense="20">
-		<defense name="healing" interval="2000" chance="15" min="40" max="120">
+	<defenses armor="40" defense="40">
+		<defense name="healing" interval="2000" chance="45" min="80" max="120">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 	</defenses>

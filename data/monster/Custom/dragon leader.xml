@@ -106,7 +106,7 @@
   	<item id="5882" countmax="1" chance1="1400" chancemax="0" /> red dragon scale
   	<item id="2191" chance="6500" /> dragonbreath
   	<item id="2177" chance="8888" /> life crystal
- 	<item id="1987" chance="1000000">
+ 	<item id="1987" chance="100000">
 <inside>
   	<item id="2167" chance="6666" /> energy ring
   	<item id="2149" countmax="2" chance1="6500" chancemax="0" /> small emerald

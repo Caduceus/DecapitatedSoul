@@ -74,6 +74,6 @@
 		<item id="2436" chance="4500"/><!-- ear muffs -->
 		<item id="9971" chance="5000"/><!-- ear muffs -->
 		<item id="2445" chance="4000"/><!-- ear muffs -->
-		<item id="7290" chance="1000000"/><!-- ear muffs -->
+		<item id="7290" chance="100000"/><!-- ear muffs -->
 	</loot>
 </monster>

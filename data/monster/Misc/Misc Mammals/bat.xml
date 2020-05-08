@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Bat" namedescription="a bat" race="blood" experience="15" speed="230" manacost="250">
-	<health now="130" max="130"/>
+	<health now="150" max="150"/>
 	<look type="122" corpse="6053"/>
 	<targetchange interval="4000" chance="0"/>
 	<flags>
@@ -18,7 +18,7 @@
 		<flag runonhealth="3"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" skill="30" attack="20"/>
+		<attack name="melee" interval="2000" skill="30" attack="30"/>
 	</attacks>
 	<defenses armor="5" defense="5"/>
 	<elements>

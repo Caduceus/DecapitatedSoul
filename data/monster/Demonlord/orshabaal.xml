@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Orshabaal" nameDescription="Orshabaal" race="fire" experience="20000" speed="380" manacost="0">
-	<health now="20500" max="20500"/>
+	<health now="25000" max="25000"/>
 	<look type="201" corpse="2916"/>
 	<targetchange interval="2000" chance="10"/>
 	<flags>
@@ -19,8 +19,8 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="1500" min="-560" max="-1000"/>
-		<attack name="manadrain" interval="3000" chance="25" radius="5" target="0" min="-550" max="-850">
+		<attack name="melee" interval="1500" min="-560" max="-1200"/>
+		<attack name="manadrain" interval="3000" chance="25" radius="5" target="0" min="-550" max="-1050">
 			<attribute key="areaEffect" value="poison"/>
 		</attack>
 		<attack name="effect" interval="1000" chance="20" radius="5" target="0">
@@ -37,8 +37,8 @@
 			<attribute key="areaEffect" value="energy"/>
 		</attack>
 	</attacks>
-	<defenses armor="90" defense="111">
-		<defense name="healing" interval="3000" chance="15" min="800" max="1000">
+	<defenses armor="120" defense="120">
+		<defense name="healing" interval="3000" chance="15" min="1200" max="2000">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 		<defense name="speed" interval="1000" chance="5" speedchange="1901" duration="7000">

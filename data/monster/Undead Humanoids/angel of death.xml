@@ -19,7 +19,7 @@
 		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="-700" max="-1000"/>
+		<attack name="melee" interval="2000" min="-700" max="-1500"/>
 		<!--attack name="demon_cleaner" interval="3000" chance="40" target="1" min="-800" max="-1000"/-->
 		<attack name="flam_wave" interval="3000" chance="30" target="0" min="-1500" max="-2000"/>
 		<attack name="physical" interval="2000" chance="60" range="7" min="-400" max="-1700">
@@ -43,6 +43,9 @@
 	</attacks>
 	<defenses armor="50" defense="70">
 		<defense name="healing" interval="2000" chance="60" min="1500" max="1800">
+			<attribute key="areaEffect" value="redspark"/>
+		</defense>
+		<defense name="healing" interval="2000" chance="40" min="1000" max="1200">
 			<attribute key="areaEffect" value="redspark"/>
 		</defense>
 		<defense name="speed" interval="2000" chance="50" speedchange="450" duration="5000">

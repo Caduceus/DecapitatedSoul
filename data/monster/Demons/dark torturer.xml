@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Dark Torturer" nameDescription="a dark torturer" race="undead" experience="4650" speed="240" manacost="0">
-	<health now="10000" max="10000"/>
+	<health now="12000" max="12000"/>
 	<look type="234" corpse="6328"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
@@ -17,7 +17,7 @@
 		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="1000" skill="110" attack="100"/>
+		<attack name="melee" interval="1000" skill="110" attack="120"/>
 		<attack name="physical" interval="2000" chance="50" range="2" min="-800" max="-1000">
 			<attribute key="shootEffect" value="throwingknife"/>
 		</attack>
@@ -29,7 +29,7 @@
 		</attack>
 		<attack name="dark torturer skill reducer" interval="2000" chance="50"/>
 	</attacks>
-	<defenses armor="80" defense="40">
+	<defenses armor="80" defense="50">
 		<defense name="healing" interval="2000" chance="30" min="200" max="250">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>

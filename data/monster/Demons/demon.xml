@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Demon" nameDescription="a demon" race="fire" experience="7000" speed="375" manacost="0">
-	<health now="15000" max="15000"/>
+	<health now="18000" max="18000"/>
 	<look type="35" corpse="2916"/>
 	<targetchange interval="4000" chance="20"/>
 	<flags>
@@ -20,8 +20,8 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="-800" max="-950"/>
-		<attack name="melee" interval="4000" min="-400" max="-650"/>
+		<attack name="melee" interval="2000" min="-800" max="-1000"/>
+		<attack name="melee" interval="3000" min="-400" max="-850"/>
 		<attack name="fire" interval="1500" chance="30" range="7" radius="7" target="1" min="-450" max="-600">
 			<attribute key="shootEffect" value="fire"/>
 			<attribute key="areaEffect" value="firearea"/>
@@ -34,7 +34,7 @@
 		</attack>
 		<attack name="energy strike" interval="2000" chance="30" range="1" min="-210" max="-300"/>
 	</attacks>
-	<defenses armor="50" defense="40">
+	<defenses armor="50" defense="50">
 		<defense name="healing" interval="2000" chance="15" min="180" max="250">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>

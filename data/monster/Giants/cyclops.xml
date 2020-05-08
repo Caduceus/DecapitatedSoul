@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Cyclops" nameDescription="a cyclops" race="blood" experience="150" speed="200" manacost="490">
 	<!--level min="20" max="25"/-->
-	<health now="860" max="860"/>
+	<health now="950" max="950"/>
 	<look type="22" corpse="5962"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
@@ -22,8 +22,9 @@
     </script>
 	<attacks>
 		<attack name="melee" interval="2000" skill="70" attack="40"/>
+		<attack name="melee" interval="3000" skill="20" attack="30"/>
 	</attacks>
-	<defenses armor="20" defense="20"/>
+	<defenses armor="20" defense="50"/>
 	<elements>
 		<element energyPercent="25"/>
 		<element holyPercent="20"/>
@@ -38,7 +39,7 @@
 		<voice sentence="Let da mashing begin!"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="47" chance="10000"/><!-- gold coin -->
+		<item id="2148" countmax="20" chance="10000"/><!-- gold coin -->
 		<item id="7591" countmax="2" chance="4440"/><!-- great mana potion -->
 		<item id="7590" countmax="2" chance="4440"/><!-- great health potion -->
 		<item id="2666" countmax="3" chance="33333"/><!-- meat -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Dragon" nameDescription="a dragon" race="blood" experience="700" speed="185" manacost="0">
-	<health now="2000" max="2000"/>
+	<health now="2500" max="2500"/>
 	<look type="34" corpse="3104"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
@@ -20,7 +20,7 @@
 		<flag canwalkonpoison="0" />
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" skill="50" attack="50"/>
+		<attack name="melee" interval="2000" skill="50" attack="60"/>
 		<attack name="fire" interval="2000" chance="45" range="7" radius="4" target="1" min="-100" max="-300">
 			<attribute key="shootEffect" value="fire"/>
 			<attribute key="areaEffect" value="firearea"/>
@@ -29,7 +29,7 @@
 			<attribute key="areaEffect" value="firearea"/>
 		</attack>
 	</attacks>
-	<defenses armor="30" defense="30">
+	<defenses armor="30" defense="50">
 		<defense name="healing" interval="2000" chance="15" min="40" max="70">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>

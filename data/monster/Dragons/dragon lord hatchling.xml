@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Dragon Lord Hatchling" nameDescription="a dragon lord hatchling" race="blood" experience="645" speed="190" manacost="0">
-	<health now="950" max="950"/>
+	<health now="1200" max="1200"/>
 	<look type="272" corpse="7622"/>
 	<targetchange interval="4000" chance="10"/>
 	<flags>
@@ -17,7 +17,7 @@
 		<flag runonhealth="30"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="1000" skill="30" attack="45"/>
+		<attack name="melee" interval="1000" skill="30" attack="55"/>
 		<attack name="fire" interval="2000" chance="40" length="5" spread="2" min="-90" max="-125">
 			<attribute key="areaEffect" value="firearea"/>
 		</attack>
@@ -29,7 +29,7 @@
 			<attribute key="shootEffect" value="fire"/>
 		</attack>
 	</attacks>
-	<defenses armor="20" defense="20">
+	<defenses armor="20" defense="30">
 		<defense name="healing" interval="2000" chance="15" min="26" max="48">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
