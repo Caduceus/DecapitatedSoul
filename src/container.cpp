@@ -452,8 +452,12 @@ Cylinder* Container::queryDestination(int32_t& index, const Thing &thing, Item**
 	}
 
 	bool autoStack = !hasBitSet(FLAG_IGNOREAUTOSTACK, flags);
-	//try find a suitable item to stack with
-	if (autoStack && item->isStackable() && item->getParent() != this && !(*destItem && (*destItem)->equals(item))) {
+	if (autoStack && item->isStackable() && item->getParent() != this) {
+		if (*destItem && (*destItem)->equals(item) && (*destItem)->getItemCount() < 100) {
+			return this;
+		}
+
+		//try find a suitable item to stack with
 		uint32_t n = 0;
 		for (Item* listItem : itemlist) {
 			if (listItem != item && listItem->equals(item) && listItem->getItemCount() < 100) {
@@ -464,16 +468,8 @@ Cylinder* Container::queryDestination(int32_t& index, const Thing &thing, Item**
 			++n;
 		}
 	}
-
-	Cylinder* subCylinder = dynamic_cast<Cylinder*>(*destItem);
-	if (subCylinder) {
-		index = INDEX_WHEREEVER;
-		*destItem = nullptr;
-		return subCylinder;
-	}
 	return this;
 }
-
 void Container::addThing(Thing* thing)
 {
 	return addThing(0, thing);
