@@ -700,6 +700,7 @@ ShootTypeNames shootTypeNames[] = {
 	{"diamondarrow",	CONST_ANI_DIAMONDARROW},
 	{"spectralbolt",	CONST_ANI_SPECTRALBOLT},
 	{"royalstar",		CONST_ANI_ROYALSTAR},
+	{"fireball",		CONST_ANI_FIREBALL},
 };
 
 CombatTypeNames combatTypeNames[] = {

@@ -1370,6 +1370,7 @@ void LuaScriptInterface::registerFunctions()
 	registerEnum(CONST_ANI_DIAMONDARROW)
 	registerEnum(CONST_ANI_SPECTRALBOLT)
 	registerEnum(CONST_ANI_ROYALSTAR)
+	registerEnum(CONST_ANI_FIREBALL)
 	registerEnum(CONST_ANI_WEAPONTYPE)
 
 	registerEnum(CONST_PROP_BLOCKSOLID)

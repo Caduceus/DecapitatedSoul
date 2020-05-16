@@ -208,6 +208,7 @@ enum ShootType_t : uint8_t {
 	CONST_ANI_DIAMONDARROW = 57,
 	CONST_ANI_SPECTRALBOLT = 58,
 	CONST_ANI_ROYALSTAR = 59,
+	CONST_ANI_FIREBALL = 60,
 
 	// for internal use, don't send to client
 	CONST_ANI_WEAPONTYPE = 0xFE, // 254
