@@ -1,10 +1,8 @@
 function onSay(player, words, param)
 	if not player:getGroup():getAccess() then
+		print(">> System Message: ".. player:getName() ..", is trying to use ".. words .." ".. param ..".")
+		sendChannelMessage(9, TALKTYPE_CHANNEL_R1, "System Message: ".. player:getName() ..", is trying to use ".. words .." ".. param ..".")
 		return true
-	end
-
-	if player:getAccountType() < ACCOUNT_TYPE_GOD then
-		return false
 	end
 
 	local split = param:split(",")
@@ -37,6 +35,7 @@ function onSay(player, words, param)
 			if type(result) == "table" then
 				for _, item in ipairs(result) do
 					item:decay()
+					item:setAttribute(ITEM_ATTRIBUTE_WRAPID,26054)
 				end
 			else
 				result:decay()
