@@ -75,7 +75,7 @@
 	<item id="413" name="stone floor" />
 	<item id="414" name="tiled floor" />
 	<item id="415" name="stone floor" />
-	<item fromid="416" toid="417" article="a" name="stone tile">
+	<item fromid="416" toid="417" article="a" name="stone tile"> 
 		<attribute key="description" value="It seems to be a switch." />
 		<attribute key="walkStack" value="0" />
 	</item>
@@ -213,7 +213,12 @@
 	<item id="1071" name="sandstone" />
 	<item fromid="1072" toid="1088" article="a" name="sandstone wall" />
 	<item fromid="1089" toid="1093" article="a" name="metal wall" />
-	<item id="1094" name="" />
+	<item id="1094" name="water" >
+		<attribute key="type" value="trashholder" />
+		<attribute key="effect" value="bluebubble" />
+		<attribute key="allowpickupable" value="1" />
+		<attribute key="forceSerialize" value="1" />
+	</item>
 	<item fromid="1095" toid="1099" article="a" name="metal wall" />
 	<item fromid="1100" toid="1110" article="a" name="sandstone wall" />
 	<item fromid="1111" toid="1119" article="a" name="white stone wall" />
@@ -6326,8 +6331,8 @@
 	</item>
 	<item id="3058" article="a" name="dead human">
 		<attribute key="containerSize" value="10" />
-		<!--attribute key="decayTo" value="3059" /-->
-		<!--attribute key="duration" value="1200" /-->
+		<attribute key="decayTo" value="3059" />
+		<attribute key="duration" value="1200" />
 		<attribute key="corpseType" value="blood" />
 		<attribute key="fluidSource" value="blood" />
 	</item>
@@ -6354,8 +6359,8 @@
 	</item>
 	<item id="3065" article="a" name="dead human">
 		<attribute key="containerSize" value="10" />
-		<!--attribute key="decayTo" value="3066" /-->
-		<!--attribute key="duration" value="1200" /-->
+		<attribute key="decayTo" value="3066" />
+		<attribute key="duration" value="1200" />
 		<attribute key="corpseType" value="blood" />
 	</item>
 	<item id="3066" article="a" name="dead human">
@@ -7945,8 +7950,12 @@
 		<attribute key="duration" value="120" />
 	</item>
 	<item id="4328" name="" />
-	<item id="4329" article="a" name="stone pile" />
-	<item fromid="4330" toid="4341" name="" />
+	<item id="4329" article="a" name="stone pile" />	
+	<item id="4330" name="" />
+	<item fromid="4331" toid="4332" name="stairs" >
+		<attribute key="floorchange" value="down" />
+	</item>
+	<item fromid="4333" toid="4341" name="" />
 	<item id="4342" name="sand">
 		<attribute key="decayTo" value="4343" />
 		<attribute key="duration" value="900" />
@@ -15160,7 +15169,11 @@
 		<attribute key="duration" value="600" />
 		<attribute key="corpseType" value="blood" />
 	</item>
-	<item fromid="7972" toid="7974" name="" />
+		<item id="7972" article="a" name="Orbital Staff">
+		<attribute key="weaponType" value="wand" />
+		<attribute key="range" value="4" />
+	</item>
+	<item fromid="7973" toid="7974" name="" />
 	<item fromid="7975" toid="7976" name="earth" />
 	<item fromid="7977" toid="7986" name="sparkling gems" />
 	<item fromid="7987" toid="8008" name="earth" />
@@ -26157,6 +26170,7 @@
 		<attribute key="weight" value="45" />
 		<attribute key="description" value="Such crystals are used to charge the teleporters to the warzones." />
 	</item>
+	<item id="18510" article="a" name="tresure chest" />
 	<item id="18511" article="a" name="music box">
 		<attribute key="weight" value="200" />
 		<attribute key="description" value="It may have some charming effects when played to certain creatures, but disappears in the process." />
@@ -27109,6 +27123,7 @@
 	<item id="20185" article="a" name="window" />
 	<item fromid="20190" toid="20192" article="a" name="stone archway" />
 	<item fromid="20193" toid="20194" article="a" name="gate" />
+	<item fromid="20186" toid="20189" article="a" name="canopy bed (unused)" />
 	<item id="20197" article="a" name="canopy bed">
 		<attribute key="type" value="bed" />
 		<attribute key="partnerDirection" value="south" />
@@ -30572,6 +30587,7 @@
 		<attribute key="defense" value="20" />
 		<attribute key="weaponType" value="shield" />
 	</item>
+	<item fromid="24429" toid="24432" name="bamboo wall lamp" />
 	<item id="22438" article="a" name="unknown" />
 	<item id="22444" article="a" name="bad dream" />
 	<item id="22458" article="a" name="ramp">
@@ -33438,12 +33454,8 @@
 	<item id="25386" name="grimeleech wings">
 		<attribute key="weight" value="60" />
 	</item>
-	<item id="25387" article="a" name="Rift Tapestry">
-		<attribute key="weight" value="1000" />
-	</item>
-	<item id="25391" article="a" name="Lit Rift Lamp">
-		<attribute key="weight" value="950" />
-	</item>
+	<item fromid="25387" toid="25389" article="a" name="Rift Tapestry" />
+	<item fromid="25390" toid="25391" article="a" name="Rift Lamp" />
 	<item id="25392" article="a" name="Rift Carpet">
 		<attribute key="forceSerialize" value="1" />
 		<attribute key="weight" value="100" />
@@ -36863,7 +36875,7 @@
 		<attribute key="slotType" value="head" />
 	</item>
 	<item fromid="29623" toid="29626" article="a" name="Light of Change" />
-	<item fromid="29629" toid="29631" article="a" name="Torch of Change" />
+	<item fromid="29628" toid="29631" article="a" name="Torch of Change" />
 	<item id="29635" article="a" name="Alchemistic Bookstand">
 		<attribute key="rotateto" value="29636" />
 	</item>
@@ -36892,12 +36904,7 @@
 		<attribute key="decayTo" value="29641" />
 		<attribute key="duration" value="3" />
 	</item>
-	<item id="29643" article="a" name="Unlit Pile of Alchemistic Books">
-		<attribute key="weight" value="1000" />
-	</item>
-	<item id="29644" article="a" name="Lit Pile of Alchemistic Books">
-		<attribute key="weight" value="1000" />
-	</item>
+	<item fromid="29643" toid="29644" article="a" name="Pile of Alchemistic Books" />
 	<item id="29645" article="a" name="Alchemistic Cupboard" />
 	<item id="29648" article="a" name="Ferumbras Bust">
 		<attribute key="rotateto" value="29650" />
@@ -36974,20 +36981,17 @@
 	<item id="30247" article="a" name="Book Cart">
 		<attribute key="rotateto" value="30246" />
 	</item>
-	<item id="30329" article="a" name="Reading Desk">
-		<attribute key="containerSize" value="20" />
+	<item id="30329" article="a" name="Scholars Desk">
+		<attribute key="forceSerialize" value="1" />
 	    <attribute key="rotateto" value="30330" />	
 	</item>
-	<item id="30330" article="a" name="Reading Desk">
-		<attribute key="containerSize" value="20" />
+	<item id="30330" article="a" name="Scholars Desk">
 	    <attribute key="rotateto" value="30329" />	
 	</item>
-	<item id="30331" article="a" name="Reading Desk">
-		<attribute key="containerSize" value="20" />
+	<item id="30331" article="a" name="Scholars Desk">
 	    <attribute key="rotateto" value="30332" />	
 	</item>
-	<item id="30332" article="a" name="Reading Desk">
-		<attribute key="containerSize" value="20" />
+	<item id="30332" article="a" name="Scholars Desk">
 	    <attribute key="rotateto" value="30331" />	
 	</item>
 	<item id="30627" article="a" name="Philosophers backpack">
@@ -37085,6 +37089,8 @@
 	<item id="30745" article="a" name="Carnivorous Plant">
 		<attribute key="rotateto" value="30744" />
 	</item>	
+	<item id="30753" article="a" name="Bellflower" />
+	<item id="30754" article="a" name="Forget Me Not" />
 	<item id="30755" article="a" name="Red Geranium" />
 	<item id="30746" article="a" name="Pet Rotworm">
 		<attribute key="decayTo" value="30747" />
@@ -37109,14 +37115,10 @@
 		<attribute key="absorbPercentFire" value="30" />
 		<attribute key="slotType" value="feet" />
 	</item>
-	<item id="30960" article="a" name="Unlit Fluorescent Fungi " />
-	<item id="30961" article="a" name="Fluorescent Fungi " />
-	<item id="30962" artilce="a" name="Unlit Luminescent Fungi " />
-	<item id="30963" article="a" name="Luminescent Fungi " />
-	<item id="30964" article="a" name="Unlit Glowing Sulphur Fungi " />
-	<item id="30965" article="a" name="Glowing Sulphur Fungi " />
-	<item id="30966" article="a" name="Unlit Gloomy Sulphur Fungi " />
-	<item id="30967" artilce="a" name="Gloomy Sulphur Fungi " />
+	<item fromid="30960" toid="30961" article="a" name="Fluorescent Fungi" />
+	<item fromid="30962" toid="30963" article="a" name="Luminescent Fungi" />
+	<item fromid="30964" toid="30965" article="a" name="Glowing Sulphur Fungi" />
+	<item fromid="30966" toid="30967" article="a" name="Gloomy Sulphur Fungi" />
 	<item id="30968" article="a" name="Stuffed Bear Display">
 		<attribute key="rotateto" value="30969"/>
 		<attribute key="weight" value="1000" />
@@ -38387,6 +38389,8 @@
 		<attribute key="weaponType" value="club" />
 		<attribute key="showattributes" value="1" />
 	</item>	
+	<item fromid="33239" toid="33249" article="a" name="floor"/>
+	<item id="33267" article="a" name="floor"/>
 	<item id="33268" article="a" name="Defender Boots">
 		<attribute key="weight" value="4700" />
 		<attribute key="defense" value="90" />
@@ -38894,10 +38898,30 @@
 		<attribute key="containerSize" value="30" />
 		<attribute key="rotateto" valuve="34657"/>
 	</item>
-	<item id="34673" article="a" name="Wall Lamp" />
-	<item id="34674" article="a" name="Lit Wall Lamp" />
+	<item id="34673" article="a" name="Sulpher Blossom Lamp" />
+	<item id="34674" article="a" name="Lit Sulpher Blossom Lamp" />
 	<item id="34712" article="a" name=" Untapped Fest Keg">
 		<attribute key="description" value="Tap it drink up" />
+	</item>
+	<item id="34713" article="a" name="Ballista">
+		<attribute key="rotateto" value="34714" />
+	</item>
+	<item id="34714" article="a" name="Ballista">
+		<attribute key="rotateto" value="34715" />
+	</item>
+	<item id="34715" article="a" name="Ballista">
+		<attribute key="rotateto" value="34716" />
+	</item>
+	<item id="34716" article="a" name="Ballista">
+		<attribute key="rotateto" value="34713" />
+	</item>
+	<item id="34717" article="a" name="Pirate Treasure Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateto" value="34718" />
+	</item>
+	<item id="34718" article="a" name="Pirate Treasure Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateto" value="34717" />
 	</item>
 	<item id="34719" article="a" name="Barrel & Anchor Lamp">
 		<attribute key="rotateTo" value="34720" />
@@ -39437,10 +39461,10 @@
 	<item id="35357" article="a" name="Lit Wall Lamp" />
 	<item id="35358" article="a" name="Torch Bearer" />
 	<item id="35359" article="a" name="Lit Torch Bearer" />
-	<item id="35360" article="a" name="Wall Lamp" />
-	<item id="35361" article="a" name="Lit Wall Lamp" />
-	<item id="35362" article="a" name="Candle" />
-	<item id="35363" article="a" name="Lit Candle" />
+	<item id="35360" article="a" name="Bamboo Wall Lamp" />
+	<item id="35361" article="a" name="Lit Bamboo Wall Lamp" />
+	<item id="35362" article="a" name="Wall Candle" />
+	<item id="35363" article="a" name="Lit Wall Candle" />
 	<item id="35364" article="a" name="Sweetheart Table Lamp" />
 	<item id="35365" article="a" name="Lit Sweetheart Table Lamp" />
 	<item id="35366" article="a" name="Sweetheart Floor Lamp" />
