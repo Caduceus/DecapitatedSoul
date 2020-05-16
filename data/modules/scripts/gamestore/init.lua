@@ -7,22 +7,23 @@ GameStore = {
 }
 --== Enums ==--
 GameStore.OfferTypes					= {
-	OFFER_TYPE_NONE						= 0, -- (this will disable offer)
-	OFFER_TYPE_ITEM						= 1,
-	OFFER_TYPE_STACKABLE				= 2,
-	OFFER_TYPE_OUTFIT					= 3,
-	OFFER_TYPE_OUTFIT_ADDON				= 4,
-	OFFER_TYPE_MOUNT					= 5,
-	OFFER_TYPE_NAMECHANGE				= 6,
-	OFFER_TYPE_SEXCHANGE				= 7,
-	OFFER_TYPE_PROMOTION				= 8,
-	OFFER_TYPE_WRAP						= 9,
-	OFFER_TYPE_MULTI_ITEM				=10,
-	OFFER_TYPE_MULTI_ITEM_WRAP			=11
+	OFFER_TYPE_NONE							= 0, -- (this will disable offer)
+	OFFER_TYPE_ITEM							= 1,
+	OFFER_TYPE_STACKABLE					= 2,
+	OFFER_TYPE_OUTFIT						= 3,
+	OFFER_TYPE_OUTFIT_ADDON					= 4,
+	OFFER_TYPE_MOUNT						= 5,
+	OFFER_TYPE_NAMECHANGE					= 6,
+	OFFER_TYPE_SEXCHANGE					= 7,
+	OFFER_TYPE_PROMOTION					= 8,
+	OFFER_TYPE_WRAP							= 9,
+	OFFER_TYPE_MULTI_ITEM					=10,
+	OFFER_TYPE_MULTI_ITEM_WRAP				=11,
+	OFFER_TYPE_WRAPPED_LIGHT				=12
 }
 GameStore.ClientOfferTypes				= {
-	CLIENT_STORE_OFFER_OTHER			= 0,
-	CLIENT_STORE_OFFER_NAMECHANGE		= 1
+	CLIENT_STORE_OFFER_OTHER				= 0,
+	CLIENT_STORE_OFFER_NAMECHANGE			= 1
 }
 GameStore.HistoryTypes					= {
 	HISTORY_TYPE_NONE						= 0,
@@ -37,10 +38,10 @@ GameStore.States							= {
 }
 GameStore.StoreErrors 					= {
 	STORE_ERROR_PURCHASE					= 0,
-	STORE_ERROR_NETWORK					= 1,
-	STORE_ERROR_HISTORY					= 2,
+	STORE_ERROR_NETWORK						= 1,
+	STORE_ERROR_HISTORY						= 2,
 	STORE_ERROR_TRANSFER					= 3,
-	STORE_ERROR_INFORMATION				= 4
+	STORE_ERROR_INFORMATION					= 4
 }
 GameStore.ServiceTypes		 			= {
 	SERVICE_STANDERD						= 0,
@@ -50,24 +51,24 @@ GameStore.ServiceTypes		 			= {
 GameStore.SendingPackets 				= {
 	S_CoinBalance 							= 0xDF, -- 223
 	S_StoreError							= 0xE0, -- 224
-	S_RequestPurchaseData 				= 0xE1, -- 225
-	S_CoinBalanceUpdating 				= 0xF2, -- 242
+	S_RequestPurchaseData 					= 0xE1, -- 225
+	S_CoinBalanceUpdating 					= 0xF2, -- 242
 	S_OpenStore								= 0xFB, -- 251
 	S_StoreOffers							= 0xFC, -- 252
-	S_OpenTransactionHistory			= 0xFD, -- 253
-	S_CompletePurchase					= 0xFE  -- 254
+	S_OpenTransactionHistory				= 0xFD, -- 253
+	S_CompletePurchase						= 0xFE  -- 254
 }
 GameStore.RecivedPackets				= {
 	C_StoreEvent							= 0xE9, -- 233
-	C_TransferCoins						= 0xEF, -- 239
+	C_TransferCoins							= 0xEF, -- 239
 	C_OpenStore								= 0xFA, -- 250
 	C_RequestStoreOffers					= 0xFB, -- 251
-	C_BuyStoreOffer						= 0xFC, -- 252
-	C_OpenTransactionHistory			= 0xFD, -- 253
-	C_RequestTransactionHistory		= 0xFE, -- 254
+	C_BuyStoreOffer							= 0xFC, -- 252
+	C_OpenTransactionHistory				= 0xFD, -- 253
+	C_RequestTransactionHistory				= 0xFE, -- 254
 }
 GameStore.DefaultValues					= {
-	DEFAULT_VALUE_ENTRIES_PER_PAGE	= 16
+	DEFAULT_VALUE_ENTRIES_PER_PAGE			= 16
 }
 GameStore.DefaultDescriptions = {
 	OUTFIT = {"This outfit looks nice. Only high-class people are able to wear it!",
@@ -188,8 +189,8 @@ function parseBuyStoreOffer(player, msg)
 		-- The message which we will send to player!
 		local message = "You have purchased " .. offerCountStr .. offer.name .. " for " .. offer.price .. " coins."
 		
-		-- If offer is item.
-		if offer.type == GameStore.OfferTypes.OFFER_TYPE_WRAP then
+		-- If offer is wrappable.
+		if offer.type == GameStore.OfferTypes.OFFER_TYPE_WRAP then --if player:getStorageValue(Storage.lightBearerComplete) ~= 1 then
 			local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
 			if inbox and inbox:getEmptySlots() > offer.count then
 				for t = 1,offer.count do
@@ -201,7 +202,7 @@ function parseBuyStoreOffer(player, msg)
 			else
 				return addPlayerEvent(sendStoreError, 250, player, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free slots in your store inbox.")
 			end
-		-- If offer is Stackable.
+		-- If offer is nonwrappable.
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_STACKABLE or offer.type == GameStore.OfferTypes.OFFER_TYPE_ITEM then
 			local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
 			if inbox and inbox:getEmptySlots() > 0 then
@@ -216,7 +217,7 @@ function parseBuyStoreOffer(player, msg)
 			else
 				return addPlayerEvent(sendStoreError, 250, player, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free slots in your store inbox.")
 		end
-		-- If offer is Multiple Items. does not do furniture at this time	
+		-- If offer is Multiple Items. 	
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_MULTI_ITEM then
             local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
             if inbox and inbox:getEmptySlots() > 0 then
@@ -251,6 +252,22 @@ function parseBuyStoreOffer(player, msg)
 			else
 				return addPlayerEvent(sendStoreError, 250, player, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free slots in your store inbox.")
 		end
+		-- If offer is wrappable Light.
+		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_WRAPPED_LIGHT and player:getStorageValue(Storage.lightBearerComplete) ~= 1 then
+			--player:send
+			return addPlayerEvent(sendStoreError, 250, player, GameStore.StoreErrors.STORE_ERROR_NETWORK, "SOL.")
+		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_WRAPPED_LIGHT and player:getStorageValue(Storage.lightBearerComplete) == 1 then
+			local inbox = player:getSlotItem(CONST_SLOT_STORE_INBOX)
+			if inbox and inbox:getEmptySlots() > offer.count then
+				for t = 1,offer.count do
+				local decoKit = inbox:addItem(26054, 1)
+				local decoItemName = ItemType(offer.thingId):getName()
+						decoKit:setAttribute(ITEM_ATTRIBUTE_WRAPID,offer.thingId)
+						decoKit:setAttribute(ITEM_ATTRIBUTE_DESCRIPTION, "You bought this item in the Store.\nUnwrap it in your own house to create a " .. decoItemName .. ".")
+				end
+			else
+				return addPlayerEvent(sendStoreError, 250, player, GameStore.StoreErrors.STORE_ERROR_NETWORK, "Please make sure you have free slots in your store inbox.")
+			end
 		-- If offer is outfit/addon
 		elseif offer.type == GameStore.OfferTypes.OFFER_TYPE_OUTFIT or offer.type == GameStore.OfferTypes.OFFER_TYPE_OUTFIT_ADDON then
 			local outfitLookType
