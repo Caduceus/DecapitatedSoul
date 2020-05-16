@@ -1,11 +1,14 @@
 local effects = {
-    --{position = Position(1095, 1053, 7), text = '<-This Way'}, -- text only
+    --{position = Position(1095, 1053, 7), text = '<-This Way'}, -- text only 
+    {position = Position(1037, 904, 6), text = 'Bacchus Landing Gate'},
     {position = Position(832, 878, 6), text = '', effect = CONST_ME_STUN}, --Checkers
     {position = Position(1022, 931, 8), text = 'Teleport Room'},
     {position = Position(1024, 931, 8), text = 'Home'},
     {position = Position(1097, 994, 9), text = 'Teleport Room'},--Test arena portal
     {position = Position(1039, 910, 8), text = '', effect = CONST_ME_TUTORIALARROW},
     {position = Position(1046, 862, 7), text = 'Free Items'}, -- starting area
+    {position = Position(1024, 880, 5), text = 'Skill Rewards'}, --starting rats
+    {position = Position(1046, 880, 5), text = 'Quest Rewards'}, --starting rats
     {position = Position(1062, 995, 6), text = 'Skill Rewards'}, --Caduceus House
     {position = Position(1068, 995, 6), text = 'Quest Rewards'}, --Caduceus House
 	{position = Position(1150, 818, 6), text = '', effect = CONST_ME_STUN},
@@ -15,7 +18,7 @@ local effects = {
 	{position = Position(1035, 1022, 15), text = 'Frozen Wastes'}, --Teleport Room
 	{position = Position(1038, 1022, 15), text = 'Port Lonrich'}, --Teleport Room
 	{position = Position(1041, 1022, 15), text = 'PVP Arena'}, -- Teleport Room
-	{position = Position(1047, 939, 10), text = 'Checkers'}, -- Game Room | depot
+	--{position = Position(1047, 939, 10), text = 'Checkers'}, -- Game Room | depot
 	{position = Position(1101, 1199, 7), text = '', effect = CONST_ME_FIREATTACK},  --Demon Oak
 	{position = Position(1088, 1215, 7), text = '', effect = CONST_ME_FIREATTACK},  --Demon Oak
 	{position = Position(1074, 1205, 7), text = '', effect = CONST_ME_FIREATTACK}, --Demon Oak
