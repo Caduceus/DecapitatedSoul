@@ -185,3 +185,4 @@ www/layout/images/menu_item_bg.psd
 *.psd
 www/~ipn_original.php
 data/actions/scripts/other/wrap.lua
+data/actions/scripts/test.lua
