@@ -12,10 +12,8 @@
     <event type="kill" name="Missions" script="killmissions.lua"/>
     <event type="kill" name="Tasks" script="killtasks.lua"/>
     <event type="think" name="tasksReset" script="killTaskExpire.lua"/>
-    <event type="preparedeath" name="pvparena" script="pvparena.lua"/>
-	<event type="login" name="pvparena_r" script="pvparena.lua"/>
-	<event type="preparedeath" name="CaduceusArena" script="CaduceusArena.lua"/>
-	<event type="login" name="CaduceusArena_r" script="CaduceusArena.lua"/>
+	<event type="preparedeath" name="arena" script="arena.lua"/>
+	<event type="login" name="Arena_r" script="arena.lua"/>
 	<event type="login" name="OfflineTraining" script="offlinetraining.lua" />
 	<event type="healthchange" name="catmageboss_onhp" script="monster/catlordboss.lua"/>
 	<event type="preparedeath" name="catmageboss_resurr" script="monster/catlordboss.lua"/>
