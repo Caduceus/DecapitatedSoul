@@ -21,7 +21,7 @@
         <vocation name="Warlord Druid"/>
 	</rune>
 	
-	<instant group="support" spellid="10" name="Lights Out" words="utevo dis" lvl="8" mana="20" aggressive="0" selftarget="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="custom/cancel_light.lua">
+	<instant group="support" spellid="10" name="Dismiss Light" words="utevo dis" lvl="8" mana="20" aggressive="0" selftarget="1" cooldown="2000" groupcooldown="2000" needlearn="1" script="custom/cancel_light.lua">
 		<vocation name="Sorcerer"/>
         <vocation name="Master Sorcerer"/>
         <vocation name="Warlord Sorcerer"/>
@@ -388,7 +388,7 @@
         <vocation name="Master Sorcerer"/>
         <vocation name="Warlord Sorcerer"/>
 	</instant>
-	<instant group="support" spellid="11" name="Great Light" words="utevo gran lux" lvl="13" mana="60" aggressive="0" selftarget="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="support/great light.lua">
+	<instant group="support" spellid="11" name="Great Light" words="utevo gran lux" lvl="13" mana="60" aggressive="0" selftarget="1" cooldown="2000" groupcooldown="2000" needlearn="1" script="support/great light.lua">
 		<vocation name="Sorcerer"/>
         <vocation name="Master Sorcerer"/>
         <vocation name="Warlord Sorcerer"/>
@@ -510,7 +510,7 @@
         <vocation name="Noble Templar"/>
         <vocation name="Warlord Templar"/>
 	</instant>
-	<instant group="support" spellid="10" name="Light" words="utevo lux" lvl="8" mana="20" aggressive="0" selftarget="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="support/light.lua">
+	<instant group="support" spellid="10" name="Light" words="utevo lux" lvl="8" mana="20" aggressive="0" selftarget="1" cooldown="2000" groupcooldown="2000" needlearn="1" script="support/light.lua">
 		<vocation name="Sorcerer"/>
         <vocation name="Master Sorcerer"/>
         <vocation name="Warlord Sorcerer"/>
@@ -743,14 +743,14 @@
         <vocation name="Elder Druid"/>
         <vocation name="Warlord Druid"/>
 	</instant>
-	<instant group="support" spellid="75" name="Ultimate Light" words="utevo vis lux" lvl="26" mana="140" prem="1" aggressive="0" selftarget="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="support/ultimate light.lua">
+	<!--instant group="support" spellid="75" name="Ultimate Light" words="utevo vis lux" lvl="26" mana="140" prem="1" aggressive="0" selftarget="1" cooldown="2000" groupcooldown="2000" needlearn="0" script="support/ultimate light.lua">
 		<vocation name="Sorcerer"/>
         <vocation name="Master Sorcerer"/>
         <vocation name="Warlord Sorcerer"/>
 		<vocation name="Druid"/>
         <vocation name="Elder Druid"/>
         <vocation name="Warlord Druid"/>
-	</instant>
+	</instant-->
 	<instant group="attack" spellid="157" name="Ultimate Terra Strike" words="exori max tera" lvl="90" mana="100" prem="1" range="3" casterTargetOrDirection="1" blockwalls="1" cooldown="15000" groupcooldown="4000" needlearn="0" script="attack/ultimate terra strike.lua">
 		<vocation name="Druid"/>
         <vocation name="Elder Druid"/>
