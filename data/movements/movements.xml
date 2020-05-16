@@ -1005,6 +1005,8 @@
 	<movevent event="StepIn" itemid="21155" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="22906" script="citizen.lua"/>
 	<movevent event="StepIn" itemid="28412" script="citizen.lua"/>
+	<movevent event="StepIn" itemid="35787" script="citizen.lua"/>
+
 
 	<!-- Walkback when walking on quest chest -->
 	<movevent event="StepIn" itemid="1738" script="walkback.lua"/>
