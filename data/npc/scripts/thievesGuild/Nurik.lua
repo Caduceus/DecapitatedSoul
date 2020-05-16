@@ -47,6 +47,7 @@ local function creatureSayCallback(cid, type, msg)
 					'Excellent! Here is the painting you requested. It\'s quite precious to my father, but imagine his joy when I tell him about my clever deal! ...',
 					'Now leave me alone please. I have to prepare for my departure. Now my family will not call me a squandering fool anymore!'
 				}, cid)
+				npcHandler:releaseFocus(cid)
 				npcHandler.topic[cid] = 0
 				end
 			end

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Lady of the Light" script="Lady of the Light.lua" walkinterval="0" floorchange="0" speechbubble="3">
+	<health now="100" max="100" />
+	<look type="1203" head="28" body="36" legs="5" feet="96" addons="3" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="firebug,5468,6000;" />
+		<parameter key="message_farewell" value="Go with the light." />
+		<parameter key="message_walkaway" value="Go with the light." />
+		<parameter key="message_sendtrade" value="Of course, buy as many fire bugs as you see fit." />
+		<parameter key="message_greet" value="May the {light} be with you Adventurer." />
+	</parameters>
+</npc>

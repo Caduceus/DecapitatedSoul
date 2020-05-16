@@ -7,7 +7,7 @@
 		<parameter key="message_greet" value="Hi there, |PLAYERNAME|! I didn't expect to see you again so soon."/>
 		<parameter key="message_needmoney" value="You don't have enough money for that...sigh."/>
 		<parameter key="message_idletimeout" value="I don't have time to fool with you!"/>
-		<parameter key="message_sendtrade" value="Of course, just browse through my wares. Maybe I can interest you in some &quot;other goods&quot; in the back?"/>
+		<parameter key="message_sendtrade" value="Of course, browse through my wares. Maybe I can interest you in some &quot;other goods&quot; in the back?"/>
 		<parameter key="message_walkaway_male" value="You'll be back."/>
 		<parameter key="message_walkaway_female" value="You'll be back."/>
 		<!--SHOP-->
@@ -15,7 +15,7 @@
 		<parameter key="shop_buyable" value="amuletofloss,2173,25000;
 											 aol,2173,25000;
 											 fishingrod,2580,2000;
-											 fire bug,5468,5000;
+											 firebug,5468,5000;
 											 backpack,1988,2000;
 											 green backpack,1998,10000;
 											 yellow backpack,1999,10000;
