@@ -21,6 +21,7 @@
   <PropertyGroup Label="Globals">
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{A10F9657-129F-0FEF-14CB-CEE0B0E5AA3E}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -114,14 +115,14 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <WarningLevel>Level4</WarningLevel>
-      <AdditionalIncludeDirectories>C:\local\boost_1_60_0;C:\Open Tibia\compile\tfs-sdk-3.2\mysql-connector-c\include;C:\Open Tibia\compile\tfs-sdk-3.2\mpir\include;C:\Open Tibia\compile\tfs-sdk-3.2\LuaJIT\include;C:\Open Tibia\compile\tfs-sdk-3.2\pugixml\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\compile\otclient-sdk-master\boost_1_63_0;C:\Open Tibia\compile\tfs-sdk-3.2\mysql-connector-c\include;C:\Open Tibia\compile\tfs-sdk-3.2\mpir\include;C:\Open Tibia\compile\tfs-sdk-3.2\LuaJIT\include;C:\Open Tibia\compile\tfs-sdk-3.2\pugixml\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>C:\local\boost_1_60_0\lib64-msvc-14.0;C:\Open Tibia\compile\tfs-sdk-3.2\mysql-connector-c\lib64;C:\Open Tibia\compile\tfs-sdk-3.2\mpir\lib64;C:\Open Tibia\compile\tfs-sdk-3.2\LuaJIT\lib64;C:\Open Tibia\compile\tfs-sdk-3.2;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\compile\otclient-sdk-master\boost_1_63_0\lib64-msvc-14.0;C:\Open Tibia\compile\tfs-sdk-3.2\mysql-connector-c\lib64;C:\Open Tibia\compile\tfs-sdk-3.2\mpir\lib64;C:\Open Tibia\compile\tfs-sdk-3.2\LuaJIT\lib64;C:\Open Tibia\compile\tfs-sdk-3.2;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
