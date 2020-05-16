@@ -39,7 +39,7 @@
                 Game.createItem(3220, 1, stairPos[1])
 				Game.createItem(3688, 1, stairPos[2])
 				player:sendTextMessage(MESSAGE_INFO_DESCR, "Admin Access.")
-			return true
+				return true
 			end
 			
            -- transform lever, and add reset

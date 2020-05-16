@@ -1,6 +1,6 @@
 local config = {
 	requiredLevel = 100,
-	requiredMaxLevel = 200,
+	requiredMaxLevel = 250,
 	daily = true,
 	centerIslandPosition = Position(72, 195, 7),
 	playerPositions = {
