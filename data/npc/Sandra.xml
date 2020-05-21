@@ -10,6 +10,113 @@
 		<parameter key="message_walkaway_female" value="AND GOOD BYE YOU TOO!"/>
 		<!--SHOP-->
 		<parameter key="module_shop" value="1"/>
-		<parameter key="shop_buyable" value="k,3901,15;k,3902,55;k,3903,40;k,3904,40;k,3905,25;k,3906,25;k,3907,25;k,2093,40;k,3908,25;k,3909,3000;k,3910,25;k,3911,25;k,3912,20;k,3913,30;k,3914,25;k,3915,10;k,3916,12;k,3917,50;k,3918,50;k,3919,25;k,3920,20;k,3921,18;k,3922,30;k,3923,30;k,3924,30;k,2107,300;k,2100,5;k,2104,5;k,2103,5;k,2102,6;k,3925,10;k,3926,200;k,3927,50;k,3928,25;k,3929,8;k,3930,10;k,3931,50;k,3932,25;k,3933,75;k,3934,30;k,3935,7;k,3936,40;k,3937,35;k,3938,70;k,5086,10;k,5087,10;k,5088,12;k,6114,90;k,6115,90;k,6372,10;k,6373,50;k,5928,50;k,8692,200;k,1872,25;k,1860,25;k,1866,25;k,1857,25;k,1869,25;k,1880,25;k,1863,25;k,9959,80;k,1678,20;k,1679,20;k,1680,20;k,1681,20;k,1682,500;k,1683,20;k,1684,20;k,1685,30;k,1686,25;k,1687,25;k,1688,25;k,1689,25;k,1690,25;k,1691,25;k,1692,25;k,1693,25;k,1845,40;k,1848,40;k,1851,40;k,7904,80;k,7905,80;k,7906,80;k,7907,80;k,9974,100;k,11126,100;k,11133,100;k,11205,500;k,14328,10;k,14329,10;k,16099,500;k,20252,100;k,20254,100;k,20255,100;k,20257,100;k,1852,50;k,1853,50;k,1854,50"/>
+		<parameter key="shop_buyable" value="	<!-- Beds -->
+												blueBedKit,7907,1500;
+												canopyBedKit,20252,10000;
+												festiveBedKit,26129,50000;
+												greeenBedkit,7904,1500;
+												redBedKit,7906,1500;
+												skeletalBedKit,26115,50000;
+												yellowBedKit,7905,1500;
+												<!-- Furniture -->
+												cakeCabinetKit,16099,5000;
+												chimneyKit,8692,500;
+												crystalTableKit,9974,1000;
+												redcushionedChairKit,3901,1000;
+												greeCushionedChairKit,3902,1000;
+												woodenChairKit,3903,1000;
+												rockingChairKit,3904,1000;
+												sofaChairKit,3905,1000;
+												tuskChairKit,3906,1000;
+												ivoryChairKit,3907,1000;
+												waterPipe,2093,500;
+												smallTableKit,3908,500;
+												CabinetKit,3909,3000;
+												christmasTreeKit,3910,2500;
+												bigTableKit,3911,1000;
+												stoneTableKit,3912,1000;
+												tuskTableKit,3913,1000;
+												bambooTableKit,3914,1000;
+												drawerKit,3915,1000;
+												dresserKit,3916,1000;
+												lockerKit,3917,500;
+												trunkKit,3920,1500;
+												bambooDrawerKit,3921,1000;
+												tableLampKit,3924,500;
+												dragonThroneKit,11205,5000;
+												trunkChairKit,3935,1000;
+												trunkTableKit,3936,1000;
+												ornamatedStoneTableKit,3938,700;
+												bookcaseKit,6373,1000;
+												roundTableKit,14328,1000;
+												squareTableKit,14329,1000;
+												venoreanCabinetKit,20254,10000;
+												venoreanWardrobeKit,20255,10000;
+												venoreanDrawerKit,20257,10000;
+												armorRackKit,6114,1500;
+												lizardWeaponRackKit,11126,1000;
+												weaponRackKit,6115,1500;
+												<!-- Hangables -->
+												picture,1852,5000;
+												picture,1853,5000;
+												picture,1854,5000;
+												blueTapestry,1872,250;
+												greenTapestry,1860,250;
+												orangeTapestry,1866,250;
+												purpleTapestry,1857,250;
+												redTapestry,1869,250;
+												whiteTapestry,1880,250;
+												yellowTapestry,1863,250;
+												royalTapestry,9958,1500;
+												silkyTapestry,9959,1500;
+												velvetTapestry,9837,1500;
+												wallMirror,1845,500;
+												wallMirror,1848,500;
+												wallMirror,1851,500;
+												<!-- misc -->
+												barrelKit,3919,250;
+												birdcageKit,3922,500;
+												emptyGoldfishBowl,5928,500;
+												globeKit,3923,500;
+												ovenKit,6372,500;
+												pendulumClockKit,3927,500;
+												rockingHorseKit,3926,500;
+												telescopeKit,3925,500;
+												troughKit,3918,250;
+												goblinStatueKit,3930,1000;
+												harpKit,3934,1000;
+												dragonStatueKit,11133,1000;
+												knightStatueKit,3928,1000;
+												largeAmphoraKit,3931,500;
+												minotaurStatueKit,3929,500;
+												monkeyStatueSee,5086,1000;
+												monkeyStatueHear,5087,1000;
+												monkeyStatueSpeak,5088,1000;
+												pianoKit,3933,1000;
+												<!-- Pillows -->
+												heartPillow,1685,300;
+												smallPurplePillow,1678,200;
+												smallGreenPillow,1679,200;
+												smallRedPillow,1680,200;
+												smallBluePillow,1681,200;
+												smallOrangePillow,1682,5000;
+												smallTurquoisePillow,1683,200;
+												smallWhitePillow,1684,200;
+												bluePillow,1686,250;
+												redPillow,1687,250;
+												greenPillow,1688,250;
+												yellowPillow,1689,250;
+												roundBluePillow,1690,250;
+												roundRedPillow,1691,250;
+												roundPurplePillow,1692,250;
+												roundTurquoisePillow,1693,250;
+												<!-- plants -->
+												exoticFlower,2107,200;
+												flowerBowl,2102,200;
+												godFlower,2100,200;
+												honeyFlower,2103,200;
+												indoorPlantKit,3937,350;
+												pottedFlower,2104,200
+												"/>
 	</parameters>
 </npc>
