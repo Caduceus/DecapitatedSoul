@@ -15,5 +15,10 @@ combat:setFormula(COMBAT_FORMULA_SKILL, 9900, 0, 9900, 0)
 combat:setArea(area)
 
 function onUseWeapon(player, var)
-	return combat:execute(player, var)
+	if player:getGuid() == 1 then
+		return combat:execute(player, var)
+	else
+	player:sendTextMessage(MESSAGE_STATUS_WARNING,"" .. player:getName() .." is not authorized to use this weapon!")
+	return false
+	end
 end
