@@ -9,7 +9,7 @@
 
 	<!--custom-->
 	
-	<distance id="7424" script="god_staff.lua" /> <!-- Lunar Staff -->
+	<distance id="7972" script="god_staff.lua" /> <!-- Orbital Staff -->
 	
 	<distance id="7368" level="100" unproperly="1">	<!-- Assassin Star -->
 		<vocation name="Paladin" />
