@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Rorc" nameDescription="a rorc" race="blood" experience="105" speed="200" manacost="0">
-	<health now="260" max="260"/>
+<monster name="Rorc" nameDescription="a rorc" race="blood" experience="105" speed="600" manacost="0">
+	<health now="260000" max="260000"/>
 	<look type="550" corpse="21223"/>
 	<targetchange interval="5000" chance="0"/>
 	<flags>
@@ -16,10 +16,10 @@
 		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" skill="40" attack="40"/>
+		<attack name="melee" interval="2000" skill="400" attack="400"/>
 	</attacks>
-	<defenses armor="25" defense="25">
-		<defense name="healing" interval="2000" chance="10" min="40" max="55"/>
+	<defenses armor="2500" defense="2500">
+		<defense name="healing" interval="2000" chance="50" min="4000" max="5500"/>
 		<defense name="speed" interval="2000" chance="15" speedchange="300" duration="3000">
 			<attribute key="areaEffect" value="redshimmer" />
 		</defense>

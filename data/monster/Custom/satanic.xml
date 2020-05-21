@@ -63,7 +63,7 @@
     <defense name="healing" interval="1000" chance="25" min="2000" max="10000">
         <attribute key="areaEffect" value="blueshimmer"/>
     </defense>
-    <defense name="invisible" interval="2000" chance="100" duration="6000">
+    <defense name="invisible" interval="2000" chance="10" duration="2000">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 </defenses>
