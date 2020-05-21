@@ -23,7 +23,6 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			target:decay()
 		elseif target.itemid == 1485 then --Light Up empty coal basins
 			if player:getStorageValue(Storage.lightBearerComplete) == 1 then
-				print(player:getName(),(player:getGuid()), player:getStorageValue(Storage.lightBearerComplete))
 				toPosition:sendMagicEffect(CONST_ME_HITBYFIRE)
 				target:transform(1484)
 				player:sendTextMessage(MESSAGE_STATUS_CONSOLE_ORANGE, 'The all mighty Light Bearer, '.. player:getName() .. '! Still lighting up the day.')

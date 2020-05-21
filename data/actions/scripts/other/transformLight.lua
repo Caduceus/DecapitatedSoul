@@ -60,7 +60,8 @@ local transformTo = {
     [27090] = 27091,[27091] = 27090,     -- black skull candle
     [27867] = 27889,[27868] = 27866,     -- Vengothic Lamp
     [29628] = 29629,[29629] = 29630,	 -- torch of change
-    [29630] = 29631,[29631] = 29628,	 -- torch of change
+    [29630] = 29631,[29631] = 29632,	 -- torch of change
+    [29632] = 29628,	 				 -- torch of change
     [29643] = 29644,[29644] = 29643,	 -- pile of alchemistic books
     [30286] = 30269,[30269] = 30286,	 -- Hand lamp
     [30287] = 30285,[30285] = 30287,	 -- Hand lamp
@@ -109,8 +110,8 @@ local transformItem = transformTo[item.itemid]
 		item:transform(transformItem)
 		--player:sendTextMessage(MESSAGE_INFO_DESCR, "Admin Access! No Storage Value.")
 		return true
-	elseif player:getStorageValue(Storage.lightBearerComplete) ~= 1 then
-		player:sendTextMessage(MESSAGE_INFO_DESCR, "SoL! Try after Lightbringer quest!")
+	elseif player:getStorageValue(Storage.lightBearerComplete) ~= 2 then
+		player:sendTextMessage(MESSAGE_INFO_DESCR, "I'm sorry ".. player:getName() ..", you are not worthy of the light, yet!")
 		return false
 	end
 

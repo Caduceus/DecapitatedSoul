@@ -313,7 +313,8 @@
 	<action fromid="27090" toid="27091" script="other/transformLight.lua"/>
 	<action fromid="27866" toid="27868" script="other/transformLight.lua"/>
 	<action itemid="27889" script="other/transformLight.lua"/>
-	<action fromid="29628" toid="29631" script="other/transformLight.lua"/>
+	<action fromid="29623" toid="29627" script="other/light_of_change.lua" />
+	<action fromid="29628" toid="29632" script="other/transformLight.lua"/>
 	<action fromid="29643" toid="29644" script="other/transformLight.lua"/>
 	<action itemid="30269" script="other/transformLight.lua"/>
 	<action fromid="30285" toid="30287" script="other/transformLight.lua"/>
@@ -336,6 +337,7 @@
 	<!-- transformTo-->
 	<action itemid="18551" script="other/transformTo.lua"/>
 	<action fromid="28829" toid="28832" script="other/transformTo.lua"/>
+	<action fromid="35926" toid="35929" script="other/transformTo.lua"/>
 
 	
 	<!-- Weapons enchanting (Gems) -->
@@ -540,7 +542,6 @@
 	<action fromid="22824" toid="22831" script="other/doors.lua" />
 	<action fromid="25283" toid="25296" script="other/doors.lua" />
 	<action fromid="26529" toid="26534" script="other/doors.lua" />
-	<action fromid="29623" toid="29626" script="other/light_of_change.lua" />
 	<action fromid="30425" toid="30430" script="other/doors.lua" />
 	<action fromid="31423" toid="31428" script="other/doors.lua" />
 	<action fromid="31437" toid="31442" script="other/doors.lua" />

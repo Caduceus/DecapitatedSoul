@@ -20,20 +20,20 @@ local storage = accountStorage.workShop
 
            -- check if lever is currently used
            if item.itemid == 15128 then
-             player:sendTextMessage(MESSAGE_INFO_DESCR, "Switch is active.")
+				 player:sendTextMessage(MESSAGE_INFO_DESCR, "Switch is active.")
              return false
            end
       
            -- transform lever, and add reset
-           if player:getAccountStorageValue(storage) < 1 then
-            player:sendTextMessage(MESSAGE_INFO_DESCR, "Access Denied")
+           if player:getAccountStorageValue(storage) ~= 1 then
+				player:sendTextMessage(MESSAGE_INFO_DESCR, "Access Denied")
             
            elseif player:getAccountStorageValue(storage) == 1 then
-           item:transform(15128)
-           addEvent(reset, time_ * 1000)
+			   item:transform(15128)
+			   addEvent(reset, time_ * 1000)
       
            -- create steps, send message and effect
-           Game.createItem(4835, 1, stairPos[1])
+           Game.createItem(4332, 1, stairPos[1])
            player:sendTextMessage(MESSAGE_INFO_DESCR, "Access Granted!")
            return true
         end
