@@ -76,6 +76,7 @@ MagicEffectNames magicEffectNames[] = {
     {"ferumbras",        CONST_ME_FERUMBRAS},
     {"confettihorizontal",    CONST_ME_CONFETTI_HORIZONTAL},
     {"confettivertical",    CONST_ME_CONFETTI_VERTICAL},
+    {"blaze",    		  CONST_ME_BLAZE},
     {"blacksmoke",        CONST_ME_BLACKSMOKE},
     {"redsmoke",        CONST_ME_REDSMOKE},
     {"yellowsmoke",        CONST_ME_YELLOWSMOKE},

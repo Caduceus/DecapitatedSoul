@@ -94,7 +94,7 @@ end
 function onCastSpell(player, var)
 	local magiclevel = player:getMagicLevel()
 	local target = player:getTarget()
-	local missileCount = minMissiles + math.floor(magiclevel / 20) -- extra missile every 20 magic levels
+	local missileCount = minMissiles + math.floor(magiclevel / 50) -- extra missile every 50 magic levels
 	local count = 1
 	if target then
 		for i = 1, missileCount do
