@@ -1,5 +1,5 @@
 function onThink(creature)
-	if creature:getStorageValue(Storage.lightBearerComplete) == 1 then
+	if creature:getStorageValue(Storage.lightBearerComplete) >= 1 then
 		return false
 	elseif creature:getStorageValue(Storage.lightBearer) == 100 then
 	local trophy = creature:addItem(10542, 1) 
