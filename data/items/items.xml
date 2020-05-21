@@ -7955,7 +7955,11 @@
 	<item fromid="4331" toid="4332" name="stairs" >
 		<attribute key="floorchange" value="down" />
 	</item>
-	<item fromid="4333" toid="4341" name="" />
+	<item fromid="4333" toid="4337" name="" />
+	<item id="4338" article="a" name="mallet">
+		<attribute key="description" value="Just lay down a $5 bill and wait." />
+	</item>
+	<item fromid="4339" toid="4341" name="" />
 	<item id="4342" name="sand">
 		<attribute key="decayTo" value="4343" />
 		<attribute key="duration" value="900" />
@@ -7970,9 +7974,18 @@
 		<attribute key="type" value="trashholder" />
 		<attribute key="allowpickupable" value="1" />
 	</item>
-	<item fromid="4362" toid="4372" name="" />
-	<item id="4373" name="sand" />
-	<item fromid="4375" toid="4390" name="" />
+	<item id="4363" article="a" name="lounge chair">
+		<attribute key="rotateto" value="4364" />
+	</item>
+	<item id="4364" article="a" name="lounge chair">
+		<attribute key="rotateto" value="4365" />
+	</item>
+	<item id="4365" article="a" name="lounge chair">
+		<attribute key="rotateto" value="4366" />
+	</item>
+	<item id="4366" article="a" name="lounge chair">
+		<attribute key="rotateto" value="4363" />
+	</item>
 	<item id="4391" article="a" name="Bullet type 1" plural="Bullets type 1">
 		<attribute key="weight" value="70" />
 		<attribute key="slotType" value="ammo" />
@@ -36874,8 +36887,8 @@
 		<attribute key="armor" value="20" />
 		<attribute key="slotType" value="head" />
 	</item>
-	<item fromid="29623" toid="29626" article="a" name="Light of Change" />
-	<item fromid="29628" toid="29631" article="a" name="Torch of Change" />
+	<item fromid="29623" toid="29627" article="a" name="Light of Change" />
+	<item fromid="29628" toid="29632" article="a" name="Torch of Change" />
 	<item id="29635" article="a" name="Alchemistic Bookstand">
 		<attribute key="rotateto" value="29636" />
 	</item>
@@ -39660,8 +39673,138 @@
 	</item>
 	<item fromid="35917" toid="35921" name="Monolith of the Planes" />
 	<item id="35922" article="a" name="Monolilth of the Planes Kit" />
+	<item id="35923" name="floor" />
+	<item fromid="35926" toid="35929" article="a" name="baby Bonelord" />
+	<item id="35930" article="an" name="Artist Shelf">
+		<attribute key="rotateTo" value="35932" />
+	</item>
+	<item id="35931" article="an" name="Artist Shelf (empty)">
+		<attribute key="rotateTo" value="35933" />
+	</item>
+	<item id="35932" article="an" name="Artist Shelf">
+		<attribute key="rotateTo" value="35930" />
+	</item>
+	<item id="35933" article="an" name="Artist Shelf (empty)">
+		<attribute key="rotateTo" value="35931" />
+	</item>
+	<item id="35934" article="an" name="Artist Table" />
+	<item id="35935" article="an" name="Artist Table (empty)" />
+	<item id="35936" article="an" name="Artist Chair">
+		<attribute key="rotateTo" value="35937" />
+	</item>
+	<item id="35937" article="an" name="Artist Chair">
+		<attribute key="rotateTo" value="35938" />
+	</item>
+	<item id="35938" article="an" name="Artist Chair">
+		<attribute key="rotateTo" value="35939" />
+	</item>
+	<item id="35939" article="an" name="Artist Chair">
+		<attribute key="rotateTo" value="35936" />
+	</item>
+	<item id="35940" article="an" name="Artist Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="35941" />
+	</item>	
+	<item id="35941" article="an" name="Artist Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="35942" />
+	</item>	
+	<item id="35942" article="an" name="Artist Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="35943" />
+	</item>	
+	<item id="35943" article="an" name="Artist Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="35940" />
+	</item>	
+	<item id="35944" article="a" name="Sculptor Shelf">
+		<attribute key="rotateTo" value="35946" />
+	</item>
+	<item id="35945" article="a" name="Sculptor Shelf (empty)">
+		<attribute key="rotateTo" value="35947" />
+	</item>
+	<item id="35946" article="a" name="Sculptor Shelf">
+		<attribute key="rotateTo" value="35944" />
+	</item>
+	<item id="35947" article="a" name="Sculptor Shelf (empty)">
+		<attribute key="rotateTo" value="35945" />
+	</item>
+	<item id="35948" article="a" name="Sculptor Table" />
+	<item id="35949" article="a" name="Sculptor Table (empty)" />
+	<item id="35950" article="a" name="Sculptor Chair">
+		<attribute key="rotateTo" value="35951" />
+	</item>
+	<item id="35951" article="a" name="Sculptor Chair">
+		<attribute key="rotateTo" value="35952" />
+	</item>
+	<item id="35952" article="a" name="Sculptor Chair">
+		<attribute key="rotateTo" value="35953" />
+	</item>
+	<item id="35953" article="a" name="Sculptor Chair">
+		<attribute key="rotateTo" value="35950" />
+	</item>
+	<item id="35954" article="a" name="Sculptor Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="35955" />
+	</item>	
+	<item id="35955" article="a" name="Sculptor Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="35956" />
+	</item>	
+	<item id="35956" article="a" name="Sculptor Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="35957" />
+	</item>	
+	<item id="35957" article="a" name="Sculptor Chest">
+		<attribute key="containerSize" value="20" />
+		<attribute key="rotateTo" value="35954" />
+	</item>	
+	<item id="35958" article="a" name="Demon Statue">
+		<attribute key="rotateTo" value="35959" />
+	</item>
+	<item id="35959" article="a" name="Demon Statue">
+		<attribute key="rotateTo" value="35958" />
+	</item>
+	<item id="35960" article="a" name="Sabertooth Statue">
+		<attribute key="rotateTo" value="35961" />
+	</item>
+	<item id="35961" article="a" name="Sabertooth Statue">
+		<attribute key="rotateTo" value="35960" />
+	</item>
+	<item id="35962" article="a" name="Drawing Board">
+		<attribute key="rotateTo" value="35963" />
+	</item>
+	<item id="35963" article="a" name="Drawing Board">
+		<attribute key="rotateTo" value="35962" />
+	</item>
+	<item id="35964" article="a" name="Statue of a Noblewoman">
+		<attribute key="rotateTo" value="35965" />
+	</item>
+	<item id="35965" article="a" name="Statue of a Noblewoman">
+		<attribute key="rotateTo" value="35964" />
+	</item>
+	<item id="35966" article="a" name="Statue of a Noblewoman">
+		<attribute key="rotateTo" value="35967" />
+	</item>
+	<item id="35967" article="a" name="Statue of a Noblewoman">
+		<attribute key="rotateTo" value="35966" />
+	</item>
+	<item id="35968" article="a" name="Statue of a Noblewoman">
+		<attribute key="rotateTo" value="35969" />
+	</item>
+	<item id="35969" article="a" name="Statue of a Noblewoman">
+		<attribute key="rotateTo" value="35968" />
+	</item>
+	<item id="35970" article="a" name="Statue of a Noblewoman">
+		<attribute key="rotateTo" value="35971" />
+	</item>
+	<item id="35971" article="a" name="Statue of a Noblewoman">
+		<attribute key="rotateTo" value="35970" />
+	</item>
+	<item id="35972" article="a" name="ladder">
+		<attribute key="floorchange" value="down" />
+	</item>
 
-	
 	<item id="30001" name="water" />
 	<item id="30002" name="blood" />
 	<item id="30003" name="beer" />
